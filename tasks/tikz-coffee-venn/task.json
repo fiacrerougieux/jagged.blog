@@ -1,0 +1,35 @@
+{
+  "id": "tikz-coffee-venn",
+  "title": "A three-set coffee Venn diagram",
+  "short": "Venn",
+  "version": "v1",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "groundTruth": "Short black is espresso only, flat white espresso and milk, iced long black espresso and cold, iced latte all three, babyccino milk only, milkshake milk and cold, cold brew cold only, and pour-over outside every circle. The circles and words are read back out of the compiled PDF, each word has to be centred in its own region, and no word's box may cross a circle's outline.",
+  "checks": [
+    {
+      "id": "compiles",
+      "label": "Compiles",
+      "how": "pdflatex builds the file offline.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "regions",
+      "label": "Seven regions, three names",
+      "how": "Three circles found in the PDF with every overlap present, and each set name placed by its circle.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "drinks",
+      "label": "Every drink in its region",
+      "how": "Each of the eight words found in the PDF, and the centre of each one inside the region it belongs to.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "clear",
+      "label": "No label on an edge",
+      "how": "No word's box crosses a circle's outline.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Four sets, which three circles cannot draw, so the model has to know to use ellipses."
+}

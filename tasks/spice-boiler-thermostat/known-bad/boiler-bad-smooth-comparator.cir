@@ -1,0 +1,11 @@
+Espresso boiler thermostat, hand-written 2026-09-22 to test spice-boiler.py
+Vambient ambient 0 DC 20
+Cth boiler 0 2000 IC=20
+Rloss boiler ambient 0.25
+Bheater 0 boiler I=1200*V(demand)
+Bdemand demand 0 V=0.5*(1+tanh(50*(94-V(boiler))))
+.control
+tran 0.2 1200 0 0.05 uic
+wrdata boiler_temperature.txt v(boiler)
+.endc
+.end

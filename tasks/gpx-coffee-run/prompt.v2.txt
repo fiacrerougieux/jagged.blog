@@ -1,0 +1,1 @@
+Write a GPX file for a running route through Melbourne's CBD whose GPS trace spells COFFEE. It has to be a route someone could actually run: along the streets, not through the buildings.

@@ -1,0 +1,34 @@
+{
+  "name": "spice-frother-triangle-deepseek-v4.1-flash-s2-r1",
+  "exportedAt": "2026-09-22T04:16:49.077Z",
+  "run": "2026-09-22-spice-frother-triangle-1222",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "1000.0 Hz, 1.993 Vpp, worst bend 0.0003, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "* 1 kHz triangle-wave carrier, 2 V peak-to-peak, self-oscillating\n* Only DC supplies are used; the oscillation comes from the circuit itself.\n*\n* Topology: an inverting integrator (E_int + R_int + C_int) is driven by a\n* Schmitt-trigger comparator (B_cmp with positive feedback Ra/Rb).\n* The comparator output swings between the DC rails (+/-12 V), and the\n* feedback network sets the hysteresis thresholds to +/-1 V, so the\n* integrator output (the carrier) is a 2 Vpp triangle.\n*\n* f = (Vsat) / (4 * Vth * R_int * C_int) = 12 / (4*1*30k*100n) = 1 kHz\n\n* --- DC supplies ---\nVcc  vcc 0 DC  12\nVee  vee 0 DC -12\n\n* --- Integrator (op-amp 1) ---\n* ideal op-amp: V(tri) = -A*V(inv1)\nE_int tri 0 0 inv1 100000\nR_int comp inv1 30k\nC_int tri inv1 100n ic=0.1\nR_dc  tri inv1 1Meg          $ DC feedback path so the bias point exists\n\n* --- Schmitt-trigger comparator (op-amp 2) ---\n* saturating comparator: output is the +/-12 V rail span, soft-clipped\nB_cmp comp 0 V = 0.5*(V(vcc)-V(vee))*tanh(1000*(V(p2)-V(n2)))\nRn2  n2  0  1\n* positive feedback network: V+ = (12*V(tri) + V(comp))/13\nRa   tri p2 1k\nRb   comp p2 12k\nCp2  p2  0  1n\n\n.control\ntran 1u 20m uic\nwrdata carrier.txt v(tri)\n.endc\n.end",
+    "truncated": false,
+    "lines": 36
+  },
+  "output": null,
+  "notes": [
+    "could not parse the netlist (Line: \"R_dc  tri inv1 1Meg          $ DC feedback path so the bias point exists",
+    "no schematic could be drawn from this netlist."
+  ]
+}

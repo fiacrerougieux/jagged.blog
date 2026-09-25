@@ -1,0 +1,31 @@
+* Espresso machine boiler - lumped thermal model as an electrical analogue
+* Analogy: node voltage V(T) = temperature [degC], current = heat flow [W]
+* Ambient is 20 V.  A capacitor on T is the thermal mass (J/K).
+* A resistor T-amb is the heat loss to ambient (K/W).
+* A gated current source is the heater (W); a switch gives thermostat
+* hysteresis: heater ON when T < 92 C, OFF when T > 96 C.
+
+Vamb   amb 0 dc 20
+Rloss  T   amb 0.1
+Cth    T   0   3000
+.ic v(T)=20
+
+* --- thermostat with hysteresis -------------------------------------
+* ctrl = 100 - T.  Switch closes when ctrl > Vt+Vh = 8 (T < 92 C),
+* opens when ctrl < Vt-Vh = 4 (T > 96 C).
+Bctrl  ctrl 0 V = 100 - V(T)
+Vsup   sup  0 dc 1
+S1     gate sup ctrl 0 SWTH
+Rgate  gate 0 1e6
+* heater: 1200 W injected into the thermal node when gate = 1 V
+Bheat  0 T I = 1200 * V(gate)
+
+.model SWTH SW(Ron=1 Roff=1e12 Vt=6 Vh=2)
+
+.tran 0.25 1200 uic
+
+.control
+run
+wrdata boiler_temp.txt v(T)
+.endc
+.end

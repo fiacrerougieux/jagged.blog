@@ -1,0 +1,1 @@
+Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled "Has espresso", "Has milk" and "Served cold". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.

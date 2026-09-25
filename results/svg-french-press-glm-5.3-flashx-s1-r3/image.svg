@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#dfeef2"/>
+      <stop offset="0.35" stop-color="#f7fbfc"/>
+      <stop offset="0.7" stop-color="#cfe3e9"/>
+      <stop offset="1" stop-color="#9fbfca"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#8a9096"/>
+      <stop offset="0.3" stop-color="#d9dee3"/>
+      <stop offset="0.55" stop-color="#aab1b8"/>
+      <stop offset="1" stop-color="#6e757c"/>
+    </linearGradient>
+    <linearGradient id="steelDark" x1="0" x2="1">
+      <stop offset="0" stop-color="#5b6167"/>
+      <stop offset="0.35" stop-color="#9aa2a9"/>
+      <stop offset="1" stop-color="#4c5257"/>
+    </linearGradient>
+    <linearGradient id="grounds" x1="0" x2="1">
+      <stop offset="0" stop-color="#5a3a26"/>
+      <stop offset="0.5" stop-color="#7a5236"/>
+      <stop offset="1" stop-color="#4a2f1e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="900" fill="#f4f1ec"/>
+  <ellipse cx="300" cy="845" rx="200" ry="26" fill="#00000012"/>
+
+  <!-- guide line -->
+  <line x1="300" y1="60" x2="300" y2="820" stroke="#b9b2a6" stroke-width="2" stroke-dasharray="8 8"/>
+
+  <g font-family="Georgia, serif" font-size="17" fill="#6b6154">
+    <text x="36" y="112">1. Knob</text>
+    <text x="36" y="250">2. Plunger rod</text>
+    <text x="36" y="390">3. Mesh filter</text>
+    <text x="36" y="463">4. Spiral plate</text>
+    <text x="36" y="536">5. Lid</text>
+    <text x="36" y="600">6. Handle</text>
+    <text x="36" y="680">7. Carafe</text>
+    <text x="36" y="812">8. Base</text>
+  </g>
+
+  <!-- 1 Knob -->
+  <g>
+    <ellipse cx="300" cy="105" rx="30" ry="20" fill="url(#steel)"/>
+    <rect x="270" y="105" width="60" height="28" fill="url(#steelDark)"/>
+    <ellipse cx="300" cy="133" rx="30" ry="20" fill="url(#steel)"/>
+  </g>
+
+  <!-- 2 Plunger rod -->
+  <g>
+    <rect x="293" y="185" width="14" height="180" rx="4" fill="url(#steelDark)"/>
+    <ellipse cx="300" cy="187" rx="7" ry="5" fill="#d9dee3"/>
+    <!-- cross handle -->
+    <rect x="255" y="230" width="90" height="14" rx="7" fill="url(#steel)"/>
+    <circle cx="300" cy="237" r="10" fill="url(#steel)"/>
+  </g>
+
+  <!-- 3 Mesh filter disc -->
+  <g>
+    <ellipse cx="300" cy="392" rx="90" ry="28" fill="#aab1b8"/>
+    <ellipse cx="300" cy="388" rx="90" ry="28" fill="url(#steel)"/>
+    <g stroke="#7c838a" stroke-width="1">
+      <line x1="230" y1="380" x2="370" y2="380"/>
+      <line x1="222" y1="388" x2="378" y2="388"/>
+      <line x1="230" y1="396" x2="370" y2="396"/>
+      <line x1="262" y1="364" x2="262" y2="412"/>
+      <line x1="300" y1="360" x2="300" y2="416"/>
+      <line x1="338" y1="364" x2="338" y2="412"/>
+    </g>
+    <!-- filter rim + rod socket -->
+    <ellipse cx="300" cy="388" rx="90" ry="28" fill="none" stroke="#6e757c" stroke-width="4"/>
+    <circle cx="300" cy="388" r="9" fill="#5b6167"/>
+  </g>
+
+  <!-- 4 Spiral pressure plate -->
+  <g>
+    <ellipse cx="300" cy="462" rx="82" ry="25" fill="none" stroke="url(#steelDark)" stroke-width="7"/>
+    <path d="M 225 462 q 37 -22 75 0 q 38 22 75 0" fill="none" stroke="url(#steelDark)" stroke-width="6"/>
+  </g>
+
+  <!-- 5 Lid assembly -->
+  <g>
+    <!-- lid plate -->
+    <path d="M 195 545 Q 300 520 405 545 L 405 570 Q 300 545 195 570 Z" fill="url(#steel)"/>
+    <!-- spout bump -->
+    <path d="M 402 552 L 425 548 L 405 566 Z" fill="url(#steel)"/>
+    <!-- rod hole collar -->
+    <ellipse cx="300" cy="551" rx="16" ry="8" fill="#5b6167"/>
+    <!-- handle arc (side frame) -->
+    <path d="M 425 700 Q 490 660 455 580" fill="none" stroke="url(#steelDark)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 175 700 Q 110 660 145 580" fill="none" stroke="url(#steelDark)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- 6 Carafe -->
+  <g>
+    <path d="M 235 595
+             C 215 650 205 720 220 770
+             Q 300 790 380 770
+             C 395 720 385 650 365 595
+             Q 300 608 235 595 Z" fill="url(#glass)" opacity="0.92"/>
+    <!-- coffee grounds -->
+    <path d="M 232 702 Q 300 688 368 702
+             C 376 730 376 750 374 768
+             Q 300 785 226 768
+             C 224 750 224 730 232 702 Z" fill="url(#grounds)"/>
+    <!-- liquid line highlight -->
+    <path d="M 232 702 Q 300 688 368 702" fill="none" stroke="#8a6142" stroke-width="3" opacity="0.8"/>
+    <!-- glass highlight -->
+    <path d="M 248 620 C 236 660 230 700 238 740" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.55" stroke-linecap="round"/>
+  </g>
+
+  <!-- 7 Base -->
+  <g>
+    <path d="M 205 808 Q 300 788 395 808 L 400 826 Q 300 846 200 826 Z" fill="url(#steelDark)"/>
+    <ellipse cx="300" cy="830" rx="100" ry="14" fill="#3f4449"/>
+  </g>
+</svg>

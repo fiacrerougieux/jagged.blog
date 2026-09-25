@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-qwen3.8-flash-s2-r3",
+  "exportedAt": "2026-09-25T07:28:07.593Z",
+  "run": "2026-09-23-tikz-coffee-venn-1151",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "qwen/qwen3.8-flash",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=14pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{calc}\n\n\\begin{document}\n\\begin{tikzpicture}[\n    drink/.style={font=\\sffamily\\bfseries\\fontsize{12}{14}\\selectfont, text=black, align=center, inner sep=1pt},\n    hint/.style ={font=\\sffamily\\itshape\\fontsize{8.5}{10}\\selectfont, text=black!55, align=center, inner sep=1pt},\n    setlab/.style={font=\\sffamily\\bfseries\\fontsize{14}{16}\\selectfont, align=center, inner sep=2pt},\n  ]\n\n  % ---------------- geometry (tuned so every region can hold its text) -----\n  \\def\\R{3.8}                                        % radius of each circle\n  \\def\\C{2.736}                                      % distance of each centre from the origin\n  \\path (0,\\C)   coordinate (cE)                     % \"Has espresso\"  -- top\n        (210:\\C) coordinate (cM)                     % \"Has milk\"      -- bottom left\n        (330:\\C) coordinate (cC);                    % \"Served cold\"   -- bottom right\n\n  % ---------------- the rectangle of \"all these drinks\" --------------------\n  \\node[draw=black!35, line width=0.9pt, rounded corners=8pt, fill=black!1.5,\n        minimum width=19.4cm, minimum height=14.4cm] at (0,1.0) {};\n  \\node[hint, anchor=north west, text=black!45] at (-9.55,8.05) {the drinks on the menu};\n\n  % ---------------- three overlapping circles ------------------------------\n  \\begin{scope}[transparency group]\n    \\fill[orange!75, fill opacity=0.32] (cE) circle (\\R);\n    \\fill[blue!55,   fill opacity=0.32] (cM) circle (\\R);\n    \\fill[cyan!65,   fill opacity=0.32] (cC) circle (\\R);\n  \\end{scope}\n  \\draw[orange!85!black, line width=1.3pt] (cE) circle (\\R);\n  \\draw[blue!65!black,   line width=1.3pt] (cM) circle (\\R);\n  \\draw[teal!60!black,   line width=1.3pt] (cC) circle (\\R);\n\n  % ---------------- names of the three sets, outside each circle -----------\n  \\node[setlab, text=orange!80!black, anchor=south]      at ($(cE)+(90:\\R+0.55)$)  {Has espresso};\n  \\node[setlab, text=blue!60!black,   anchor=25]         at ($(cM)+(210:\\R+1.05)$) {Has milk};\n  \\node[setlab, text=teal!55!black,   anchor=155]        at ($(cC)+(330:\\R+1.05)$) {Served cold};\n\n  % ---------------- the drinks ---------------------------------------------\n  % espresso only  (hot, no milk)\n  \\node[drink] at (0,4.30)      {short black};\n  % milk only      (no coffee at all)\n  \\node[drink] at (-3.65,-2.15) {babyccino};\n  \\node[hint]  at (-3.65,-3.05) {frothed milk,\\\\no coffee};\n  % cold only      (cold, but never an espresso shot)\n  \\node[drink] at (3.65,-2.15)  {cold brew};\n  \\node[hint]  at (3.65,-3.05)  {steeped, not\\\\pulled as espresso};\n  % espresso + milk, served hot\n  \\node[drink] at (-2.05,1.20)  {flat\\\\white};\n  % espresso + cold, no milk\n  \\node[drink] at (2.02,1.15)   {iced\\\\long\\\\black};\n  % milk + cold, no espresso\n  \\node[drink] at (0,-2.32)     {milkshake};\n  % all three\n  \\node[drink] at (0,0.05)      {iced\\\\latte};\n\n  % none of the three: hot filter coffee\n  \\node[drink, anchor=center] at (-7.15,6.55) {pour-over};\n  \\node[hint,  anchor=center] at (-7.15,5.30) {filter coffee:\\\\no espresso, no milk,\\\\served hot};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 63
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    }
+  ]
+}

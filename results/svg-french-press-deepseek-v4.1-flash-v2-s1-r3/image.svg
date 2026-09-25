@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1330" viewBox="0 0 960 1330">
+  <defs>
+    <!-- cylindrical chrome shading (horizontal bands) -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#7f888f"/>
+      <stop offset="0.12" stop-color="#dfe6ea"/>
+      <stop offset="0.28" stop-color="#ffffff"/>
+      <stop offset="0.46" stop-color="#c2ccd3"/>
+      <stop offset="0.68" stop-color="#8b949c"/>
+      <stop offset="0.85" stop-color="#d7dee3"/>
+      <stop offset="1"    stop-color="#6f787f"/>
+    </linearGradient>
+    <linearGradient id="chromeTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#aab3ba"/>
+      <stop offset="0.18" stop-color="#eef3f6"/>
+      <stop offset="0.4"  stop-color="#ffffff"/>
+      <stop offset="0.62" stop-color="#cfd7dc"/>
+      <stop offset="0.85" stop-color="#9aa3aa"/>
+      <stop offset="1"    stop-color="#c6ced4"/>
+    </linearGradient>
+    <radialGradient id="knobGrad" cx="0.34" cy="0.28" r="0.85">
+      <stop offset="0"   stop-color="#ffffff"/>
+      <stop offset="0.32" stop-color="#e2e9ee"/>
+      <stop offset="0.68" stop-color="#9aa3aa"/>
+      <stop offset="1"   stop-color="#545c62"/>
+    </radialGradient>
+    <!-- dark plastic lid -->
+    <linearGradient id="lidGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#15181b"/>
+      <stop offset="0.12" stop-color="#5b6167"/>
+      <stop offset="0.26" stop-color="#8f969d"/>
+      <stop offset="0.42" stop-color="#3a3e42"/>
+      <stop offset="0.62" stop-color="#1b1e21"/>
+      <stop offset="0.82" stop-color="#4a4f54"/>
+      <stop offset="1"    stop-color="#0e1012"/>
+    </linearGradient>
+    <linearGradient id="lidTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#4b5157"/>
+      <stop offset="0.5" stop-color="#2a2e32"/>
+      <stop offset="1"   stop-color="#15181b"/>
+    </linearGradient>
+    <!-- glass -->
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#9fc3d6"/>
+      <stop offset="0.12" stop-color="#e8f4fa"/>
+      <stop offset="0.3"  stop-color="#f9fdff"/>
+      <stop offset="0.52" stop-color="#dceaf2"/>
+      <stop offset="0.74" stop-color="#bcd7e6"/>
+      <stop offset="0.88" stop-color="#eaf4f9"/>
+      <stop offset="1"    stop-color="#9dc0d4"/>
+    </linearGradient>
+    <linearGradient id="glassTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#eef7fc"/>
+      <stop offset="0.5" stop-color="#ffffff"/>
+      <stop offset="1"   stop-color="#cfe4ef"/>
+    </linearGradient>
+    <pattern id="meshPattern" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#9aa3aa"/>
+      <path d="M0 0H6 M0 6H6 M0 0V6 M6 0V6" stroke="#656d74" stroke-width="1"/>
+      <path d="M0 3H6 M3 0V6" stroke="#cdd5da" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- ============ background ============ -->
+  <rect x="0" y="0" width="960" height="1330" fill="#fbfbf9"/>
+  <rect x="10" y="10" width="940" height="1310" rx="10" fill="none" stroke="#e3e3df" stroke-width="1.5"/>
+
+  <!-- ============ title ============ -->
+  <text x="34" y="50" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#22262a">French Press — Exploded Assembly View</text>
+  <text x="34" y="74" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d757c">Standard three-piece plunger filter (top plate · mesh screen · bottom plate)</text>
+
+  <g transform="translate(0,120)">
+  <!-- ============ assembly axis ============ -->
+  <line x1="340" y1="70" x2="340" y2="1110" stroke="#cfcfca" stroke-width="1.2" stroke-dasharray="7 9"/>
+
+  <!-- ============ ground shadow ============ -->
+  <ellipse cx="340" cy="1112" rx="92" ry="12" fill="#c9cfd3" opacity="0.45"/>
+
+  <!-- ============================ CARAFE ============================ -->
+  <g id="carafe">
+    <!-- body -->
+    <path d="M264 760 L264 1105 A76 16 0 0 0 416 1105 L416 760 Z" fill="url(#glass)" stroke="#9dbccd" stroke-width="1.2"/>
+    <!-- bottom ellipse -->
+    <ellipse cx="340" cy="1105" rx="76" ry="16" fill="url(#glass)" stroke="#9dbccd" stroke-width="1.2"/>
+    <!-- reinforce bottom curve -->
+    <path d="M264 1105 A76 16 0 0 0 416 1105" fill="none" stroke="#8fb2c4" stroke-width="2"/>
+    <!-- top rim -->
+    <ellipse cx="340" cy="760" rx="76" ry="16" fill="url(#glassTop)" stroke="#9dbccd" stroke-width="1.2"/>
+    <ellipse cx="340" cy="760" rx="67" ry="13" fill="#eef5f9" stroke="#bcd3e0" stroke-width="1"/>
+    <ellipse cx="340" cy="762" rx="67" ry="13" fill="none" stroke="#cfe2ec" stroke-width="2"/>
+    <!-- glass highlights -->
+    <path d="M283 772 L283 1092" stroke="#ffffff" stroke-width="6" opacity="0.65" stroke-linecap="round"/>
+    <path d="M398 780 L398 1090" stroke="#ffffff" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+    <!-- pouring spout on rim (left) -->
+    <path d="M272 755 C 254 753 240 743 247 729 C 257 743 276 750 302 752 C 290 757 280 757 272 755 Z"
+          fill="url(#glassTop)" stroke="#9dbccd" stroke-width="1.2"/>
+    <path d="M249 733 C 258 744 274 750 298 752" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- ============================ HANDLE ============================ -->
+  <g id="handle">
+    <path d="M412 846 C 508 858, 508 972, 412 986" fill="none" stroke="url(#chrome)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M412 846 C 508 858, 508 972, 412 986" fill="none" stroke="#6f787f" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="413" cy="846" rx="9" ry="11" fill="#3a3e42" stroke="#1c1f22" stroke-width="1"/>
+    <ellipse cx="413" cy="986" rx="9" ry="11" fill="#3a3e42" stroke="#1c1f22" stroke-width="1"/>
+  </g>
+
+  <!-- ============================ PLUNGER / FILTER STACK ============================ -->
+  <!-- BOTTOM PLATE -->
+  <g id="bottom-plate">
+    <path d="M274 636 L274 648 A66 12 0 0 0 406 648 L406 636" fill="url(#chrome)" stroke="#7f888f" stroke-width="0.8"/>
+    <ellipse cx="340" cy="636" rx="66" ry="12" fill="url(#chromeTop)" stroke="#7f888f" stroke-width="0.8"/>
+    <ellipse cx="340" cy="636" rx="11" ry="3.4" fill="#565e64"/>
+    <g fill="#6f787f">
+      <ellipse cx="380" cy="636.5" rx="3.2" ry="1.2"/>
+      <ellipse cx="368.3" cy="641.2" rx="3.2" ry="1.2"/>
+      <ellipse cx="340" cy="643.4" rx="3.2" ry="1.2"/>
+      <ellipse cx="311.7" cy="641.2" rx="3.2" ry="1.2"/>
+      <ellipse cx="300" cy="636.5" rx="3.2" ry="1.2"/>
+      <ellipse cx="311.7" cy="631.8" rx="3.2" ry="1.2"/>
+      <ellipse cx="340" cy="629.6" rx="3.2" ry="1.2"/>
+      <ellipse cx="368.3" cy="631.8" rx="3.2" ry="1.2"/>
+    </g>
+  </g>
+
+  <!-- MESH SCREEN -->
+  <g id="mesh-screen">
+    <path d="M276 596 L276 602 A64 11 0 0 0 404 602 L404 596" fill="url(#chrome)" stroke="#6f787f" stroke-width="0.8"/>
+    <ellipse cx="340" cy="596" rx="64" ry="11" fill="url(#meshPattern)" stroke="#e3e9ed" stroke-width="2"/>
+    <ellipse cx="340" cy="596" rx="64" ry="11" fill="none" stroke="#7f888f" stroke-width="1"/>
+    <ellipse cx="340" cy="596" rx="9" ry="2.8" fill="#565e64"/>
+    <ellipse cx="322" cy="591" rx="16" ry="4" fill="#ffffff" opacity="0.25"/>
+  </g>
+
+  <!-- TOP PLATE -->
+  <g id="top-plate">
+    <path d="M274 560 L274 572 A66 12 0 0 0 406 572 L406 560" fill="url(#chrome)" stroke="#7f888f" stroke-width="0.8"/>
+    <ellipse cx="340" cy="560" rx="66" ry="12" fill="url(#chromeTop)" stroke="#7f888f" stroke-width="0.8"/>
+    <ellipse cx="340" cy="560" rx="10" ry="3.2" fill="#565e64"/>
+    <g fill="#6f787f">
+      <ellipse cx="380" cy="560.5" rx="3.2" ry="1.2"/>
+      <ellipse cx="368.3" cy="565.2" rx="3.2" ry="1.2"/>
+      <ellipse cx="340" cy="567.4" rx="3.2" ry="1.2"/>
+      <ellipse cx="311.7" cy="565.2" rx="3.2" ry="1.2"/>
+      <ellipse cx="300" cy="560.5" rx="3.2" ry="1.2"/>
+      <ellipse cx="311.7" cy="555.8" rx="3.2" ry="1.2"/>
+      <ellipse cx="340" cy="553.6" rx="3.2" ry="1.2"/>
+      <ellipse cx="368.3" cy="555.8" rx="3.2" ry="1.2"/>
+    </g>
+  </g>
+
+  <!-- ============================ LID ============================ -->
+  <g id="lid">
+    <!-- lower ellipse -->
+    <ellipse cx="340" cy="496" rx="80" ry="14" fill="url(#lidGrad)" stroke="#0d0f11" stroke-width="1"/>
+    <!-- side band -->
+    <path d="M260 478 L260 496 A80 14 0 0 0 420 496 L420 478 Z" fill="url(#lidGrad)" stroke="#0d0f11" stroke-width="1"/>
+    <!-- top face -->
+    <ellipse cx="340" cy="478" rx="80" ry="14" fill="url(#lidTop)" stroke="#0d0f11" stroke-width="1"/>
+    <!-- raised collar around rod hole -->
+    <path d="M324 460 L324 478 A16 5 0 0 0 356 478 L356 460 Z" fill="url(#lidGrad)" stroke="#0d0f11" stroke-width="0.8"/>
+    <ellipse cx="340" cy="460" rx="16" ry="5" fill="#4b5157" stroke="#0d0f11" stroke-width="0.8"/>
+    <ellipse cx="340" cy="460" rx="7" ry="2.4" fill="#0a0b0c"/>
+    <!-- pour spout lip -->
+    <path d="M260 478 q-16 -1 -22 -11 q12 3 22 -1 z" fill="url(#lidGrad)" stroke="#0d0f11" stroke-width="0.8"/>
+    <!-- sheen -->
+    <ellipse cx="312" cy="474" rx="26" ry="4" fill="#ffffff" opacity="0.18"/>
+  </g>
+
+  <!-- ============================ PLUNGER ROD ============================ -->
+  <g id="rod">
+    <rect x="334.5" y="112" width="11" height="336" rx="3" fill="url(#chrome)" stroke="#7f888f" stroke-width="0.6"/>
+    <ellipse cx="340" cy="112" rx="5.5" ry="2.4" fill="#cfd7dc"/>
+    <ellipse cx="340" cy="448" rx="5.5" ry="2.4" fill="#8b949c"/>
+    <rect x="336" y="116" width="2" height="326" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- ============================ KNOB ============================ -->
+  <g id="knob">
+    <rect x="332" y="96" width="16" height="28" rx="4" fill="url(#chrome)" stroke="#6f787f" stroke-width="0.7"/>
+    <circle cx="340" cy="80" r="30" fill="url(#knobGrad)" stroke="#6f787f" stroke-width="1"/>
+    <ellipse cx="329" cy="69" rx="9" ry="6" fill="#ffffff" opacity="0.65"/>
+    <path d="M318 92 a30 30 0 0 0 44 0" fill="none" stroke="#6f787f" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- ============================ LEADERS & LABELS ============================ -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#26292d">
+    <g stroke="#8b949c" stroke-width="1.2" fill="none">
+      <line x1="370" y1="66" x2="540" y2="62"/>
+      <line x1="346" y1="300" x2="540" y2="300"/>
+      <line x1="420" y1="482" x2="540" y2="470"/>
+      <line x1="406" y1="560" x2="540" y2="556"/>
+      <line x1="404" y1="596" x2="540" y2="596"/>
+      <line x1="406" y1="636" x2="540" y2="634"/>
+      <line x1="508" y1="915" x2="540" y2="915"/>
+      <line x1="416" y1="1078" x2="540" y2="1078"/>
+    </g>
+    <g fill="#8b949c">
+      <circle cx="370" cy="66" r="2.6"/>
+      <circle cx="346" cy="300" r="2.6"/>
+      <circle cx="420" cy="482" r="2.6"/>
+      <circle cx="406" cy="560" r="2.6"/>
+      <circle cx="404" cy="596" r="2.6"/>
+      <circle cx="406" cy="636" r="2.6"/>
+      <circle cx="508" cy="915" r="2.6"/>
+      <circle cx="416" cy="1078" r="2.6"/>
+    </g>
+    <text x="550" y="68">Plunger knob</text>
+    <text x="550" y="306">Plunger rod</text>
+    <text x="550" y="476">Lid (with rod collar)</text>
+    <text x="550" y="562">Top filter plate</text>
+    <text x="550" y="602">Mesh screen</text>
+    <text x="550" y="640">Bottom filter plate</text>
+    <text x="550" y="921">Carafe handle</text>
+    <text x="550" y="1084">Glass carafe</text>
+  </g>
+
+  </g><!-- /exploded stack -->
+
+  <!-- assembly note -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7a8288">
+    <text x="34" y="1288">Exploded along the vertical axis. Dashed line = assembly axis.</text>
+    <text x="34" y="1308">The rod passes through the lid collar; the top plate, mesh screen and bottom plate stack and fasten onto its lower end.</text>
+  </g>
+</svg>

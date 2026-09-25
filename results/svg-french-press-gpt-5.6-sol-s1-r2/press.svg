@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f5ee"/><stop offset="1" stop-color="#e9eef0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66737a"/><stop offset=".18" stop-color="#f7faf9"/><stop offset=".42" stop-color="#aab4b7"/><stop offset=".68" stop-color="#f9fbfa"/><stop offset="1" stop-color="#505d64"/>
+    </linearGradient>
+    <linearGradient id="darkMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b474c"/><stop offset=".55" stop-color="#141b1f"/><stop offset="1" stop-color="#566267"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d6f3f3" stop-opacity=".55"/><stop offset=".22" stop-color="#ffffff" stop-opacity=".16"/><stop offset=".5" stop-color="#c8e9ea" stop-opacity=".28"/><stop offset=".78" stop-color="#fff" stop-opacity=".62"/><stop offset="1" stop-color="#95c8cd" stop-opacity=".42"/>
+    </linearGradient>
+    <pattern id="mesh" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V8M4 0V8" stroke="#4b5b60" stroke-width="1" opacity=".9"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dy="6"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1 1L7 4 1 7" fill="none" stroke="#b45b38" stroke-width="1.5"/>
+    </marker>
+    <style>
+      .outline{stroke:#26383e;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+      .fine{stroke:#486068;stroke-width:1.5;fill:none}
+      .leader{stroke:#6f7c7f;stroke-width:1.5;fill:none}
+      .label{font:600 17px 'Arial',sans-serif;fill:#26383e;letter-spacing:.3px}
+      .sub{font:13px 'Arial',sans-serif;fill:#6d797b;letter-spacing:.7px}
+      .num{font:700 14px 'Arial',sans-serif;fill:white;text-anchor:middle;dominant-baseline:middle}
+    </style>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bg)"/>
+  <path d="M56 110H1144" stroke="#bdc8c8"/>
+  <text x="58" y="64" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#20343a" letter-spacing="3">FRENCH PRESS</text>
+  <text x="59" y="91" font-family="Arial,sans-serif" font-size="13" fill="#738185" letter-spacing="2.2">EXPLODED ASSEMBLY • PLUNGER &amp; CARAFE</text>
+  <text x="1143" y="78" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#879396">ASSEMBLY  /  01—07</text>
+
+  <!-- central datum -->
+  <path d="M600 122V911" stroke="#9ba9aa" stroke-width="1" stroke-dasharray="7 8" opacity=".75"/>
+
+  <!-- assembly direction arrows -->
+  <g stroke="#b45b38" fill="none" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M477 174v32"/><path d="M477 283v32"/><path d="M477 401v28"/><path d="M477 482v25"/><path d="M477 549v28"/>
+  </g>
+  <text x="465" y="139" transform="rotate(-90 465 139)" font-family="Arial" font-size="10" fill="#b45b38" letter-spacing="1.5">ASSEMBLE</text>
+
+  <!-- 01 knob -->
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="151" rx="60" ry="16" fill="#10191d" class="outline"/>
+    <path d="M541 150v18c1 13 27 23 59 23s58-10 59-23v-18c-5 10-29 17-59 17s-54-7-59-17z" fill="url(#darkMetal)" class="outline"/>
+    <ellipse cx="600" cy="150" rx="56" ry="13" fill="#344248" stroke="#627176" stroke-width="1.5"/>
+    <path d="M561 147c14-7 58-10 77 0" stroke="#8c989a" stroke-width="2" fill="none" opacity=".55"/>
+    <rect x="591" y="189" width="18" height="11" rx="3" fill="url(#steel)" class="outline"/>
+  </g>
+
+  <!-- 02 lid -->
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="244" rx="144" ry="29" fill="#344249" class="outline"/>
+    <path d="M456 243v25c0 17 65 30 144 30s144-13 144-30v-25c-16 15-73 25-144 25s-128-10-144-25z" fill="url(#darkMetal)" class="outline"/>
+    <ellipse cx="600" cy="240" rx="138" ry="25" fill="url(#steel)" class="outline"/>
+    <ellipse cx="600" cy="239" rx="24" ry="10" fill="#182227" stroke="#45555b" stroke-width="3"/>
+    <ellipse cx="600" cy="238" rx="11" ry="5" fill="#d9e0df" stroke="#4e6065" stroke-width="2"/>
+    <path d="M480 238c24-13 68-19 108-20" stroke="#fff" stroke-width="3" opacity=".55" fill="none"/>
+  </g>
+
+  <!-- 03 shaft -->
+  <g filter="url(#softShadow)">
+    <path d="M594 316v116h12V316" fill="url(#steel)" class="outline"/>
+    <ellipse cx="600" cy="316" rx="6" ry="3" fill="#eef2f1" stroke="#31444a" stroke-width="2"/>
+    <path d="M598 322v103" stroke="#fff" stroke-width="2" opacity=".75"/>
+    <rect x="590" y="427" width="20" height="13" rx="3" fill="url(#steel)" class="outline"/>
+  </g>
+
+  <!-- 04 upper filter plate -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="600" cy="462" rx="126" ry="25" fill="url(#steel)" class="outline"/>
+    <path d="M474 462v10c5 14 60 24 126 24s121-10 126-24v-10c-12 12-64 21-126 21s-114-9-126-21z" fill="#6f7c80" class="outline"/>
+    <ellipse cx="600" cy="460" rx="119" ry="21" fill="#aab5b7" stroke="#43565c" stroke-width="2"/>
+    <ellipse cx="600" cy="460" rx="25" ry="9" fill="#56676b" stroke="#2b3e44" stroke-width="2"/>
+    <g fill="none" stroke="#68787c" stroke-width="2" opacity=".75">
+      <path d="M600 440v40M541 443l59 17 59-17M501 451l99 9 99-9M525 474l75-14 75 14"/>
+    </g>
+  </g>
+
+  <!-- 05 mesh screen -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="600" cy="526" rx="130" ry="27" fill="#d5dddc" class="outline"/>
+    <ellipse cx="600" cy="525" rx="123" ry="23" fill="url(#mesh)" stroke="#516267" stroke-width="2"/>
+    <ellipse cx="600" cy="525" rx="116" ry="20" fill="none" stroke="#8c999a" stroke-width="2"/>
+    <ellipse cx="600" cy="525" rx="15" ry="6" fill="#647377" stroke="#30444a" stroke-width="2"/>
+  </g>
+
+  <!-- 06 spring ring / lower support -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="600" cy="575" rx="132" ry="27" fill="none" stroke="#26383e" stroke-width="7"/>
+    <ellipse cx="600" cy="575" rx="124" ry="22" fill="none" stroke="url(#steel)" stroke-width="5"/>
+    <path d="M474 570q8 12 16 0t16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0 16 0" fill="none" stroke="#d7dede" stroke-width="2"/>
+  </g>
+
+  <!-- carafe, behind frame but after parts -->
+  <g filter="url(#shadow)">
+    <!-- handle behind glass -->
+    <path d="M735 674C827 662 868 692 868 757v43c0 68-42 101-124 88l5-39c47 7 69-10 69-51v-38c0-37-22-50-74-44z" fill="url(#darkMetal)" class="outline"/>
+    <path d="M760 710c42-2 59 13 59 47v43c0 35-20 50-61 48" fill="none" stroke="#a7b1b2" stroke-width="5" opacity=".5"/>
+    <!-- glass body -->
+    <path d="M464 642C470 706 476 802 489 876c4 25 52 42 111 42s107-17 111-42c13-74 19-170 25-234z" fill="url(#glass)" class="outline"/>
+    <ellipse cx="600" cy="642" rx="136" ry="31" fill="#d9f0f0" fill-opacity=".4" class="outline"/>
+    <ellipse cx="600" cy="642" rx="125" ry="23" fill="#f8fbf8" fill-opacity=".82" stroke="#64868b" stroke-width="3"/>
+    <ellipse cx="600" cy="645" rx="113" ry="16" fill="#d3e8e7" fill-opacity=".38" stroke="#9eb7b8"/>
+    <path d="M497 675c4 58 8 137 19 190" stroke="#fff" stroke-width="12" opacity=".55" fill="none" stroke-linecap="round"/>
+    <path d="M688 671c-3 57-7 136-15 201" stroke="#7fb0b6" stroke-width="4" opacity=".28" fill="none"/>
+    <ellipse cx="600" cy="878" rx="111" ry="30" fill="#bdd4d4" fill-opacity=".25" stroke="#668287" stroke-width="2"/>
+    <!-- frame top band -->
+    <path d="M459 648v27c18 13 73 22 141 22s123-9 141-22v-27c-23 13-77 21-141 21s-118-8-141-21z" fill="url(#darkMetal)" fill-opacity=".92" class="outline"/>
+    <path d="M481 664c27 8 69 12 119 12s92-4 119-12" fill="none" stroke="#829094" stroke-width="2"/>
+    <!-- vertical supports -->
+    <path d="M471 671l17 202 18 10-12-206M729 671l-17 202-18 10 12-206" fill="#202c31" class="outline"/>
+    <!-- base foot -->
+    <path d="M487 875v25c7 24 55 39 113 39s106-15 113-39v-25c-17 19-61 31-113 31s-96-12-113-31z" fill="url(#darkMetal)" class="outline"/>
+    <ellipse cx="600" cy="875" rx="113" ry="31" fill="none" stroke="#2a3a3f" stroke-width="7"/>
+    <path d="M523 900c27 12 125 13 155 0" stroke="#8c989b" stroke-width="2" fill="none" opacity=".55"/>
+  </g>
+
+  <!-- callouts left -->
+  <g>
+    <path class="leader" d="M540 159H312l-28-13H151"/><circle cx="136" cy="146" r="14" fill="#b45b38"/><text x="136" y="146" class="num">01</text>
+    <text x="165" y="142" class="label">PRESS KNOB</text><text x="165" y="162" class="sub">THERMAL GRIP</text>
+
+    <path class="leader" d="M461 251H325l-28 16H151"/><circle cx="136" cy="267" r="14" fill="#b45b38"/><text x="136" y="267" class="num">02</text>
+    <text x="165" y="263" class="label">LID</text><text x="165" y="283" class="sub">VENTED STEEL COVER</text>
+
+    <path class="leader" d="M591 368H315l-24 17H151"/><circle cx="136" cy="385" r="14" fill="#b45b38"/><text x="136" y="385" class="num">03</text>
+    <text x="165" y="381" class="label">PLUNGER ROD</text><text x="165" y="401" class="sub">STAINLESS SHAFT</text>
+  </g>
+
+  <!-- callouts right -->
+  <g>
+    <path class="leader" d="M719 455h151l28-16h151"/><circle cx="1064" cy="439" r="14" fill="#b45b38"/><text x="1064" y="439" class="num">04</text>
+    <text x="1035" y="435" text-anchor="end" class="label">CROSS PLATE</text><text x="1035" y="455" text-anchor="end" class="sub">LOAD DISTRIBUTOR</text>
+
+    <path class="leader" d="M727 524h143l28 16h151"/><circle cx="1064" cy="540" r="14" fill="#b45b38"/><text x="1064" y="540" class="num">05</text>
+    <text x="1035" y="536" text-anchor="end" class="label">FINE MESH</text><text x="1035" y="556" text-anchor="end" class="sub">FILTER SCREEN</text>
+
+    <path class="leader" d="M725 577h145l28 23h151"/><circle cx="1064" cy="600" r="14" fill="#b45b38"/><text x="1064" y="600" class="num">06</text>
+    <text x="1035" y="596" text-anchor="end" class="label">SPRING RING</text><text x="1035" y="616" text-anchor="end" class="sub">CARAFE SEAL</text>
+
+    <path class="leader" d="M737 741h135l26 23h151"/><circle cx="1064" cy="764" r="14" fill="#26383e"/><text x="1064" y="764" class="num">07</text>
+    <text x="1035" y="760" text-anchor="end" class="label">GLASS CARAFE</text><text x="1035" y="780" text-anchor="end" class="sub">FRAME &amp; HANDLE</text>
+  </g>
+
+  <!-- footer key -->
+  <g transform="translate(58 932)">
+    <rect width="320" height="38" rx="4" fill="#fff" opacity=".68" stroke="#c7d0cf"/>
+    <circle cx="19" cy="19" r="5" fill="#b45b38"/><text x="32" y="23" class="sub">PART INDEX</text>
+    <path d="M127 19h25" stroke="#b45b38" marker-end="url(#arrow)"/><text x="166" y="23" class="sub">ASSEMBLY DIRECTION</text>
+  </g>
+  <text x="1142" y="963" text-anchor="end" font-family="Arial" font-size="11" fill="#879396" letter-spacing="1.2">NOT TO SCALE  •  TECHNICAL ILLUSTRATION</text>
+</svg>

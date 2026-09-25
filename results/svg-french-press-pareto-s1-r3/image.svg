@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1240" font-family="'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="steelV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9d0d7"/>
+      <stop offset="0.25" stop-color="#f4f6f8"/>
+      <stop offset="0.6" stop-color="#aeb7c0"/>
+      <stop offset="1" stop-color="#8e98a2"/>
+    </linearGradient>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6f8"/>
+      <stop offset="0.55" stop-color="#d5dade"/>
+      <stop offset="1" stop-color="#b3bcc5"/>
+    </linearGradient>
+    <radialGradient id="knobGrad" cx="0.35" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#7c838b"/>
+      <stop offset="0.45" stop-color="#4a5057"/>
+      <stop offset="1" stop-color="#1f2327"/>
+    </radialGradient>
+    <pattern id="meshPat" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#e8ebee"/>
+      <path d="M0 7 L7 0 M0 0 L7 7" stroke="#8a939d" stroke-width="1" fill="none"/>
+    </pattern>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0 H0 V36" fill="none" stroke="#ece4d6" stroke-width="1"/>
+    </pattern>
+    <clipPath id="plateClip"><ellipse cx="450" cy="570" rx="130" ry="36"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="900" height="1240" fill="#f7f3ec"/>
+  <rect width="900" height="1240" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- title block -->
+  <text x="60" y="72" font-size="30" font-weight="700" letter-spacing="7" fill="#2f2a26">FRENCH PRESS</text>
+  <text x="60" y="98" font-size="13" letter-spacing="3" fill="#8a7f6f">EXPLODED ASSEMBLY VIEW &#183; 7 PARTS</text>
+  <line x1="60" y1="112" x2="410" y2="112" stroke="#d8cdbb" stroke-width="1.5"/>
+  <text x="840" y="70" font-size="11" letter-spacing="2" fill="#a39684" text-anchor="end">SCALE &#183; NTS</text>
+
+  <!-- assembly axis -->
+  <line x1="450" y1="66" x2="450" y2="1148" stroke="#b9ac97" stroke-width="1.5" stroke-dasharray="7 7"/>
+  <polygon points="450,52 443,68 457,68" fill="#b9ac97"/>
+  <polygon points="450,1162 443,1146 457,1146" fill="#b9ac97"/>
+
+  <!-- 1. knob -->
+  <circle cx="450" cy="130" r="36" fill="url(#knobGrad)" stroke="#171a1d" stroke-width="1.5"/>
+  <ellipse cx="436" cy="114" rx="11" ry="6.5" fill="#ffffff" opacity="0.22" transform="rotate(-30 436 114)"/>
+  <rect x="444" y="163" width="12" height="27" fill="url(#steelV)" stroke="#6f7883" stroke-width="1"/>
+  <ellipse cx="450" cy="191" rx="16" ry="5" fill="#aeb7c0" stroke="#6f7883" stroke-width="1"/>
+
+  <!-- 2. plunger rod -->
+  <rect x="443" y="205" width="14" height="181" rx="3" fill="url(#steelV)" stroke="#6f7883" stroke-width="1"/>
+  <path d="M443 370 H457 M443 374 H457 M443 378 H457 M443 382 H457" stroke="#7d8792" stroke-width="1"/>
+
+  <!-- 3. lid -->
+  <path d="M290 455 L290 470 A160 44 0 0 0 610 470 L610 455" fill="url(#steelV)" stroke="#6f7883" stroke-width="1.5"/>
+  <ellipse cx="450" cy="455" rx="160" ry="44" fill="url(#topFace)" stroke="#6f7883" stroke-width="1.5"/>
+  <ellipse cx="345" cy="452" rx="27" ry="7.5" fill="#dde2e7" stroke="#8a939d" stroke-width="1.2"/>
+  <ellipse cx="345" cy="452" rx="18" ry="4.5" fill="#8f98a2"/>
+  <ellipse cx="450" cy="455" rx="26" ry="8" fill="#c6cdd4" stroke="#8a939d" stroke-width="1.2"/>
+  <ellipse cx="450" cy="455" rx="13" ry="4.5" fill="#3c4147" stroke="#6f7883" stroke-width="1"/>
+
+  <!-- 4. filter cross-plate -->
+  <path d="M320 570 L320 580 A130 36 0 0 0 580 580 L580 570" fill="url(#steelV)" stroke="#6f7883" stroke-width="1.5"/>
+  <ellipse cx="450" cy="570" rx="130" ry="36" fill="url(#topFace)" stroke="#6f7883" stroke-width="1.5"/>
+  <path d="M351 553 Q383 540 423 541 L423 555 Z M477 541 Q517 540 549 553 L477 555 Z M351 586 L423 583 V598 Q383 598 351 586 M477 583 L549 586 Q517 598 477 598 Z" fill="#f7f3ec" stroke="#8a939d" stroke-width="1"/>
+  <g clip-path="url(#plateClip)">
+    <rect x="316" y="561" width="268" height="18" rx="9" fill="#dbe0e5" stroke="#8a939d" stroke-width="1.2"/>
+    <rect x="441" y="535" width="18" height="70" rx="9" fill="#e8ecef" stroke="#8a939d" stroke-width="1.2"/>
+  </g>
+  <ellipse cx="450" cy="570" rx="26" ry="8.5" fill="#b9c1c9" stroke="#8a939d" stroke-width="1.2"/>
+  <ellipse cx="450" cy="570" rx="9" ry="3.5" fill="#3c4147"/>
+
+  <!-- 5. mesh screen -->
+  <path d="M326 660 L326 666 A124 33 0 0 0 574 666 L574 660" fill="#9aa3ac" stroke="#6f7883" stroke-width="1.2"/>
+  <ellipse cx="450" cy="660" rx="124" ry="33" fill="url(#meshPat)" stroke="#6f7883" stroke-width="1.5"/>
+  <ellipse cx="450" cy="660" rx="112" ry="28.5" fill="none" stroke="#9aa3ac" stroke-width="1"/>
+  <ellipse cx="450" cy="660" rx="12" ry="4" fill="#f7f3ec" stroke="#6f7883" stroke-width="2"/>
+
+  <!-- 6. spring plate: radial supports and peripheral sealing coil -->
+  <path d="M320 752 L441 744 L450 720 L459 744 L580 752 L459 760 L450 784 L441 760 Z" fill="url(#topFace)" stroke="#6f7883" stroke-width="1.3"/>
+  <ellipse cx="450" cy="752" rx="128" ry="34" fill="none" stroke="#6f7883" stroke-width="10"/>
+  <ellipse cx="450" cy="752" rx="128" ry="34" fill="none" stroke="#e0e5e8" stroke-width="9" stroke-dasharray="2 4"/>
+  <ellipse cx="450" cy="752" rx="20" ry="7" fill="#b9c1c9" stroke="#6f7883"/>
+  <ellipse cx="450" cy="752" rx="8" ry="3" fill="#3c4147"/>
+
+  <!-- 7. glass carafe -->
+  <path d="M300 850 L300 1130 A150 30 0 0 0 600 1130 L600 850" fill="#cfe3ea" opacity="0.3"/>
+  <ellipse cx="450" cy="1130" rx="150" ry="30" fill="none" stroke="#a8bfca" stroke-width="1.2"/>
+  <path d="M312 1122 A138 26 0 0 0 588 1122" fill="none" stroke="#a8bfca" stroke-width="1"/>
+  <line x1="300" y1="850" x2="300" y2="1130" stroke="#7fa0ad" stroke-width="2"/>
+  <line x1="600" y1="850" x2="600" y2="1130" stroke="#7fa0ad" stroke-width="2"/>
+  <path d="M300 1130 A150 30 0 0 0 600 1130" fill="none" stroke="#7fa0ad" stroke-width="2"/>
+  <!-- open rim with an integrated pouring lip -->
+  <path d="M326 829 C380 800 550 809 590 837 C651 881 427 909 326 871 Q289 862 266 850 Q289 837 326 829 Z" fill="#e6f1f4" fill-opacity="0.5" stroke="#7fa0ad" stroke-width="2"/>
+  <path d="M334 835 C390 809 543 817 579 840 C630 876 429 899 334 865 Q307 857 286 850 Q308 841 334 835 Z" fill="#bcd5dc" fill-opacity="0.35" stroke="#9db8c2" stroke-width="1.2"/>
+  <!-- handle -->
+  <path d="M600 886 C 700 888, 700 1076, 600 1078 L600 1058 C 672 1056, 672 908, 600 906 Z" fill="#dcebf0" fill-opacity="0.5" stroke="#7fa0ad" stroke-width="2" stroke-linejoin="round"/>
+  <!-- glass highlights -->
+  <rect x="322" y="882" width="14" height="228" rx="7" fill="#ffffff" opacity="0.4"/>
+  <rect x="554" y="882" width="8" height="228" rx="4" fill="#ffffff" opacity="0.3"/>
+
+  <!-- callouts -->
+  <g font-size="13.5" font-weight="600" letter-spacing="2" fill="#4a4238">
+    <g stroke="#a39684" stroke-width="1.3">
+      <line x1="265" y1="130" x2="402" y2="130"/>
+      <line x1="265" y1="300" x2="433" y2="300"/>
+      <line x1="265" y1="660" x2="316" y2="660"/>
+      <line x1="265" y1="1000" x2="291" y2="1000"/>
+      <line x1="634" y1="428" x2="582" y2="428"/>
+      <line x1="634" y1="570" x2="588" y2="570"/>
+      <line x1="634" y1="752" x2="590" y2="752"/>
+      <line x1="210" y1="850" x2="258" y2="850"/>
+      <line x1="706" y1="980" x2="683" y2="980"/>
+    </g>
+    <g fill="#a39684">
+      <circle cx="406" cy="130" r="2.6"/>
+      <circle cx="437" cy="300" r="2.6"/>
+      <circle cx="320" cy="660" r="2.6"/>
+      <circle cx="295" cy="1000" r="2.6"/>
+      <circle cx="578" cy="428" r="2.6"/>
+      <circle cx="584" cy="570" r="2.6"/>
+      <circle cx="586" cy="752" r="2.6"/>
+      <circle cx="262" cy="850" r="2.6"/>
+      <circle cx="679" cy="980" r="2.6"/>
+    </g>
+    <g text-anchor="end">
+      <text x="232" y="134.5">KNOB</text>
+      <text x="232" y="304.5">PLUNGER ROD</text>
+      <text x="232" y="664.5">MESH SCREEN</text>
+      <text x="232" y="1004.5">GLASS CARAFE</text>
+      <text x="204" y="861" font-size="12" font-style="italic" font-weight="400" letter-spacing="1" fill="#8a7f6f">spout</text>
+    </g>
+    <g text-anchor="start">
+      <text x="666" y="432.5">LID</text>
+      <text x="666" y="574.5">CROSS-PLATE</text>
+      <text x="666" y="756.5">SPRING PLATE</text>
+      <text x="666" y="777" font-size="11" font-weight="400" letter-spacing="0.5" fill="#8a7f6f">Peripheral sealing coil</text>
+      <text x="712" y="984" font-size="12" font-style="italic" font-weight="400" letter-spacing="1" fill="#8a7f6f">handle</text>
+    </g>
+    <g fill="#2f2a26">
+      <circle cx="252" cy="130" r="12"/>
+      <circle cx="252" cy="300" r="12"/>
+      <circle cx="252" cy="660" r="12"/>
+      <circle cx="252" cy="1000" r="12"/>
+      <circle cx="648" cy="428" r="12"/>
+      <circle cx="648" cy="570" r="12"/>
+      <circle cx="648" cy="752" r="12"/>
+    </g>
+    <g fill="#f7f3ec" font-size="12.5" font-weight="700" text-anchor="middle">
+      <text x="252" y="134.5">1</text>
+      <text x="252" y="304.5">2</text>
+      <text x="252" y="664.5">5</text>
+      <text x="252" y="1004.5">7</text>
+      <text x="648" y="432.5">3</text>
+      <text x="648" y="574.5">4</text>
+      <text x="648" y="756.5">6</text>
+    </g>
+  </g>
+
+  <!-- footnote -->
+  <text x="450" y="1206" font-size="12.5" font-style="italic" fill="#8a7f6f" text-anchor="middle">Filter stack shown separated along the assembly axis. Threaded rod secures the plates and mesh.</text>
+</svg>

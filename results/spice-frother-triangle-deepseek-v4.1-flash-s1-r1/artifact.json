@@ -1,0 +1,32 @@
+{
+  "name": "spice-frother-triangle-deepseek-v4.1-flash-s1-r1",
+  "exportedAt": "2026-09-22T04:16:48.559Z",
+  "run": "2026-09-22-spice-frother-triangle-1222",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "1000.6 Hz, 1.991 Vpp, worst bend 0.0, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "* 1 kHz triangle-wave carrier for a PWM heater drive, 2 V peak-to-peak\n* Self-oscillating relaxation oscillator: a rail-limited inverting Schmitt\n* comparator switches a constant current into/out of a timing capacitor,\n* so the capacitor voltage is a linear triangle.  Powered only by DC rails;\n* no PULSE/SIN source is used, the oscillation comes from the circuit.\n.param VCC=15\n.param VEE=-15\n.param VTH=1.00172        ; comparator threshold -> ~2 Vpp triangle\n.param I0=0.40069m        ; timing current -> ~1 kHz\n.param BETA=0.089042      ; VTH / (0.75*VCC)\n.param A=1e5              ; comparator gain\n\n* DC power rails\nVCC vcc 0 DC {VCC}\nVEE vee 0 DC {VEE}\n\n* Inverting Schmitt trigger; output swing is limited by the DC rails.\nBcomp mid 0 V = max(0.75*V(vee), min(0.75*V(vcc), A*(-V(tri)+BETA*V(sq))))\nRout mid sq 100\nCout sq 0 1n\n\n* Constant-current charge / discharge of the timing capacitor.\nBcur tri 0 I = -(V(sq)/(0.75*VCC))*I0\nCt tri 0 100n IC=0.5\n\n.tran 1u 20m uic\n\n.control\nrun\nwrdata carrier.txt v(tri)\n.endc\n.end",
+    "truncated": false,
+    "lines": 32
+  },
+  "output": null,
+  "notes": []
+}

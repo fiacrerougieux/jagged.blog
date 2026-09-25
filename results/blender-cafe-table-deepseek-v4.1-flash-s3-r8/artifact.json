@@ -1,0 +1,72 @@
+{
+  "name": "blender-cafe-table-deepseek-v4.1-flash-s3-r8",
+  "exportedAt": "2026-09-21T03:10:15.962Z",
+  "run": "2026-09-21-blender-cafe-table-1049",
+  "caseId": "blender-cafe-table",
+  "caseTitle": "Blender: café table from primitives",
+  "category": "3D and CAD",
+  "prompt": "Write a Blender Python script that builds a café table scene: an espresso cup on a saucer, a spoon, sugar cubes and a croissant. Use only primitive meshes (cube, cylinder, cone, sphere, torus).",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 3,
+  "round": 8,
+  "rounds": 8,
+  "grade": null,
+  "recipe": "blender",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "glb": "model.glb",
+    "source": "scene.py"
+  },
+  "source": {
+    "file": "scene.py",
+    "lang": "python",
+    "text": "\"\"\"Café table scene built only from primitive meshes.\n\nespresso cup + saucer, spoon, sugar cubes, croissant.\n\"\"\"\nimport bpy\nimport math\nimport mathutils\n\n# ----------------------------------------------------------------------------\n# helpers\n# ----------------------------------------------------------------------------\nfor obj in list(bpy.data.objects):\n    bpy.data.objects.remove(obj, do_unlink=True)\n\n\ndef mat(name, color, rough=0.5, metal=0.0, spec=0.5):\n    m = bpy.data.materials.new(name)\n    m.use_nodes = True\n    b = m.node_tree.nodes[\"Principled BSDF\"]\n    b.inputs[\"Base Color\"].default_value = (*color, 1.0)\n    b.inputs[\"Roughness\"].default_value = rough\n    b.inputs[\"Metallic\"].default_value = metal\n    if \"Specular\" in b.inputs:\n        b.inputs[\"Specular\"].default_value = spec\n    return m\n\n\ndef setup(obj, material, name, smooth=True, angle=math.radians(40)):\n    obj.name = name\n    if material:\n        obj.data.materials.append(material)\n    if smooth:\n        for p in obj.data.polygons:\n            p.use_smooth = True\n        if hasattr(obj.data, \"use_auto_smooth\"):\n            obj.data.use_auto_smooth = True\n            obj.data.auto_smooth_angle = angle\n    return obj\n\n\ndef cube(name, loc, scale, material, rot=(0, 0, 0)):\n    bpy.ops.mesh.primitive_cube_add(size=1, location=loc, rotation=rot)\n    o = bpy.context.object\n    o.scale = scale\n    return setup(o, material, name, smooth=False)\n\n\ndef cyl(name, loc, radius, depth, material, rot=(0, 0, 0), verts=64):\n    bpy.ops.mesh.primitive_cylinder_add(\n        vertices=verts, radius=radius, depth=depth, location=loc, rotation=rot\n    )\n    return setup(bpy.context.object, material, name)\n\n\ndef cone(name, loc, r1, r2, depth, material, rot=(0, 0, 0), verts=64,\n         caps='NGON'):\n    bpy.ops.mesh.primitive_cone_add(\n        vertices=verts, radius1=r1, radius2=r2, depth=depth,\n        location=loc, rotation=rot, end_fill_type=caps,\n    )\n    return setup(bpy.context.object, material, name)\n\n\ndef sphere(name, loc, scale, material, rot=(0, 0, 0), segs=32, rings=16):\n    bpy.ops.mesh.primitive_uv_sphere_add(\n        segments=segs, ring_count=rings, radius=1.0, location=loc, rotation=rot\n    )\n    o = bpy.context.object\n    o.scale = scale\n    return setup(o, material, name)\n\n\ndef torus(name, loc, major, minor, material, rot=(0, 0, 0), mseg=48, miseg=16):\n    bpy.ops.mesh.primitive_torus_add(\n        major_radius=major, minor_radius=minor, location=loc, rotation=rot,\n        major_segments=mseg, minor_segments=miseg,\n    )\n    return setup(bpy.context.object, material, name)\n\n\n# ----------------------------------------------------------------------------\n# materials\n# ----------------------------------------------------------------------------\nM_TABLE = mat(\"Table\", (0.30, 0.17, 0.09), rough=0.45)\nM_PORCELAIN = mat(\"Porcelain\", (0.95, 0.94, 0.90), rough=0.18, spec=0.7)\nM_COFFEE = mat(\"Coffee\", (0.045, 0.018, 0.008), rough=0.12, spec=0.9)\nM_CREMA = mat(\"Crema\", (0.30, 0.165, 0.075), rough=0.55)\nM_METAL = mat(\"Metal\", (0.85, 0.86, 0.88), rough=0.30, metal=1.0)\nM_SUGAR = mat(\"Sugar\", (0.97, 0.96, 0.93), rough=0.55)\nM_PASTRY = mat(\"Pastry\", (0.52, 0.27, 0.085), rough=0.65)\n\n# ----------------------------------------------------------------------------\n# table\n# ----------------------------------------------------------------------------\ncube(\"Table\", (0, 0, -0.02), (0.9, 0.9, 0.04), M_TABLE)\n\n# ----------------------------------------------------------------------------\n# saucer: wide dish + rim\n# ----------------------------------------------------------------------------\nSAUCER_TOP = 0.011\ncyl(\"SaucerBase\", (0, 0, 0.0055), 0.092, 0.011, M_PORCELAIN)\ntorus(\"SaucerRim\", (0, 0, SAUCER_TOP - 0.001), 0.085, 0.0055, M_PORCELAIN)\ntorus(\"SaucerWellRing\", (0, 0, SAUCER_TOP - 0.0005), 0.048, 0.0035, M_PORCELAIN)\n\n# ----------------------------------------------------------------------------\n# espresso cup\n# ----------------------------------------------------------------------------\nCUP_BOT = SAUCER_TOP - 0.001\nCUP_H = 0.052\nCUP_TOP = CUP_BOT + CUP_H\nCUP_CZ = CUP_BOT + CUP_H / 2\ncone(\"CupWall\", (0, 0, CUP_CZ), 0.026, 0.038, CUP_H, M_PORCELAIN, caps='NOTHING')\ntorus(\"CupRim\", (0, 0, CUP_TOP), 0.038, 0.0032, M_PORCELAIN)\ncyl(\"CupFoot\", (0, 0, CUP_BOT + 0.002), 0.021, 0.006, M_PORCELAIN)\ncyl(\"CupBase\", (0, 0, CUP_BOT + 0.006), 0.026, 0.004, M_PORCELAIN)\n\n# coffee surface just below the rim, with a lighter crema disc\ncyl(\"Coffee\", (0, 0, CUP_TOP - 0.012), 0.0335, 0.008, M_COFFEE)\ncyl(\"Crema\", (0, 0, CUP_TOP - 0.0085), 0.0255, 0.0025, M_CREMA)\n\n# handle\ntorus(\"CupHandle\", (0.053, 0.0, CUP_CZ + 0.002), 0.021, 0.0055,\n      M_PORCELAIN, rot=(math.pi / 2, 0, 0))\n\n# ----------------------------------------------------------------------------\n# spoon on the table to the right of the saucer (bowl + handle)\n# ----------------------------------------------------------------------------\nSP_Y = -0.052\nsphere(\"SpoonBowl\", (0.132, SP_Y, 0.0075), (0.024, 0.015, 0.0048), M_METAL,\n       rot=(0, 0, math.radians(4)))\ncube(\"SpoonHandle\", (0.196, SP_Y - 0.003, 0.0085),\n     (0.082, 0.009, 0.0038), M_METAL, rot=(0, 0, math.radians(-4)))\n\n# ----------------------------------------------------------------------------\n# sugar cubes\n# ----------------------------------------------------------------------------\nfor i, (x, y, z) in enumerate([\n    (-0.128, 0.050, 0.010),\n    (-0.150, 0.050, 0.010),\n    (-0.128, 0.028, 0.010),\n    (-0.150, 0.028, 0.010),\n    (-0.139, 0.039, 0.030),\n]):\n    cube(\"Sugar%d\" % i, (x, y, z), (0.020, 0.020, 0.020), M_SUGAR,\n         rot=(0, 0, math.radians((i % 3 - 1) * 4)))\n\n# ----------------------------------------------------------------------------\n# croissant: spheres swept along a tapering crescent arc\n# ----------------------------------------------------------------------------\nCROT_C = (-0.030, -0.135)\nAMAX = 1.15\nN = 11\nR = 0.052\nrotz = math.radians(25)\n\n\ndef rot2(x, y):\n    c, s = math.cos(rotz), math.sin(rotz)\n    return (x * c - y * s + CROT_C[0], x * s + y * c + CROT_C[1])\n\n\nfor i in range(N):\n    a = -AMAX + 2 * AMAX * i / (N - 1)\n    t = abs(a) / AMAX\n    px = R * math.sin(a)\n    py = R * math.cos(a) - R\n    # taper towards the horns, bulge in the middle\n    r = 0.024 * (1.0 - 0.72 * t ** 1.6) + 0.002\n    x, y = rot2(px, py)\n    sphere(\"Croissant%d\" % i, (x, y, r * 0.72),\n           (r, r, r * 0.72), M_PASTRY, segs=24, rings=12)\n\n# ----------------------------------------------------------------------------\n# camera + lights\n# ----------------------------------------------------------------------------\ncam_data = bpy.data.cameras.new(\"Camera\")\ncam_data.lens = 60\ncam = bpy.data.objects.new(\"Camera\", cam_data)\nbpy.context.scene.collection.objects.link(cam)\ncam.location = mathutils.Vector((0.20, -0.52, 0.40))\nlook = mathutils.Vector((0.0, -0.03, 0.015))\ncam.rotation_euler = (look - cam.location).to_track_quat('-Z', 'Y').to_euler()\nbpy.context.scene.camera = cam\n\n\ndef area(name, loc, energy, size, target=(0, 0, 0)):\n    ld = bpy.data.lights.new(name, 'AREA')\n    ld.energy = energy\n    ld.size = size\n    o = bpy.data.objects.new(name, ld)\n    bpy.context.scene.collection.objects.link(o)\n    o.location = loc\n    o.rotation_euler = (mathutils.Vector(target) - mathutils.Vector(loc)) \\\n        .to_track_quat('-Z', 'Y').to_euler()\n    return o\n\n\narea(\"Key\", (-0.32, -0.38, 0.55), 8, 0.5, (0, 0, 0.03))\narea(\"Fill\", (0.45, -0.12, 0.35), 2.5, 0.6, (0, 0, 0.03))\narea(\"Rim\", (0.10, 0.45, 0.40), 5, 0.6, (0, 0, 0.03))\n\nworld = bpy.context.scene.world\nif world is None:\n    world = bpy.data.worlds.new(\"World\")\n    bpy.context.scene.world = world\nworld.use_nodes = True\nworld.node_tree.nodes[\"Background\"].inputs[0].default_value = (0.07, 0.07, 0.09, 1)\nworld.node_tree.nodes[\"Background\"].inputs[1].default_value = 0.6\nscn = bpy.context.scene\nscn.view_settings.exposure = -0.7\n\n# render settings (harness overrides engine/res but keep sensible values)\nscn = bpy.context.scene\nscn.render.film_transparent = False\nscn.view_settings.look = 'Medium High Contrast' if 'Medium High Contrast' in \\\n    [l.name for l in bpy.types.ColorManagedViewSettings.bl_rna.properties['look'].enum_items] else 'None'",
+    "truncated": false,
+    "lines": 216
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": null
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": null
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": null
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": null
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": null
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": null
+    }
+  ]
+}

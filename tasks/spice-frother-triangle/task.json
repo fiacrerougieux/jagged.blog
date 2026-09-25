@@ -1,0 +1,35 @@
+{
+  "id": "spice-frother-triangle",
+  "title": "Triangle-wave carrier for a milk frother",
+  "short": "Triangle wave",
+  "version": "v1",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "groundTruth": "The netlist, re-run in ngspice offline and the written carrier read back. A triangle comes from integrating a square wave, so a PULSE into an RC, whose ramps curve, fails, and so does any source that is told the time.",
+  "checks": [
+    {
+      "id": "dc",
+      "label": "DC supplies only",
+      "how": "No PULSE, SIN or PWL source, and no behavioural source that reads time.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "frequency",
+      "label": "1 kHz",
+      "how": "It runs, oscillates, and settles within 10% of 1 kHz.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "amplitude",
+      "label": "2 V peak to peak",
+      "how": "Within 10% of 2 V once settled.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "ramps",
+      "label": "Straight, even ramps",
+      "how": "Each ramp fitted to a line with little bend, and rise and fall about equal.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Require a real op-amp model with finite slew and supply rails, so an ideal behavioural comparator is not allowed."
+}

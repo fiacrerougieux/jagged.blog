@@ -1,0 +1,32 @@
+{
+  "id": "lsystem-pruned-coffee-shrub",
+  "title": "A coffee shrub hedge-pruned flat on one side",
+  "short": "Pruned shrub",
+  "version": "v1",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "groundTruth": "The JSON expanded and drawn with turtle graphics offline, and the drawing judged by eye. There is no single right L-system, so nothing here is measured.",
+  "checks": [
+    {
+      "id": "shrub",
+      "label": "Reads as a shrub",
+      "how": "A recognisable branching shrub in the drawing.",
+      "decidedBy": "eye",
+      "rule": "Pass if it reads as one plant with branches coming off stems, without being told what it is. A tangle, a lattice or loops fail it."
+    },
+    {
+      "id": "pruned",
+      "label": "Flat side from the rules",
+      "how": "One side cut flat by branches the rules make shorter, and no clipping.",
+      "decidedBy": "eye",
+      "rule": "Pass if one side ends on a straight line that the rules themselves put there. A box drawn around the plant to cut it fails it."
+    },
+    {
+      "id": "size",
+      "label": "Sensible size",
+      "how": "A sensible number of iterations and segments for what is drawn.",
+      "decidedBy": "eye",
+      "rule": "Pass if the branches can still be followed by eye. So many segments that they merge into a mass fails it."
+    }
+  ],
+  "harder": "Pruned flat on top as well as one side, so two cuts have to come out of the rules at once."
+}

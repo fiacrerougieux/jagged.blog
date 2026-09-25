@@ -1,0 +1,14 @@
+{
+  "axiom": "[P]T",
+  "rules": {
+    "P": "+++++ff-----V",
+    "V": "F[----W]F[---W]F[----W]V",
+    "W": "F[+W]",
+    "T": "F[--A]FF[--A]F[+++++C]F[--A]F[+++++C]F[--A]F[+++++C]F[--A]F[++++C]",
+    "C": "F[--C]",
+    "A": "F[--A][-A]F[--A]-A"
+  },
+  "angle": 18,
+  "iterations": 5,
+  "start_heading": 90
+}

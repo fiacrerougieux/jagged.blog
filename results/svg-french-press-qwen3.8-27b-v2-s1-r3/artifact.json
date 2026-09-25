@@ -1,0 +1,47 @@
+{
+  "name": "svg-french-press-qwen3.8-27b-v2-s1-r3",
+  "exportedAt": "2026-09-22T07:15:24.198Z",
+  "run": "2026-09-22-svg-french-press-1641",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "qwen/qwen3.8-27b",
+  "seed": 1,
+  "round": 3,
+  "rounds": 3,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"780\" height=\"1010\" viewBox=\"0 0 780 1010\" font-family=\"Helvetica, Arial, sans-serif\">\n  <defs>\n    <pattern id=\"mesh\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\">\n      <rect width=\"7\" height=\"7\" fill=\"#efe9df\"/>\n      <path d=\"M0 0H7M0 0V7\" stroke=\"#a39c8e\" stroke-width=\"0.9\"/>\n    </pattern>\n    <pattern id=\"grid\" width=\"18\" height=\"18\" patternUnits=\"userSpaceOnUse\">\n      <rect width=\"18\" height=\"18\" fill=\"#d7dbe0\"/>\n      <path d=\"M0 0H18M0 0V18\" stroke=\"#707a86\" stroke-width=\"2.2\"/>\n    </pattern>\n    <linearGradient id=\"glass\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop offset=\"0\" stop-color=\"#dcecf4\"/>\n      <stop offset=\"0.5\" stop-color=\"#f4fbfe\"/>\n      <stop offset=\"1\" stop-color=\"#cfe4ef\"/>\n    </linearGradient>\n    <linearGradient id=\"metal\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop offset=\"0\" stop-color=\"#8d959f\"/>\n      <stop offset=\"0.5\" stop-color=\"#d9dee4\"/>\n      <stop offset=\"1\" stop-color=\"#7f8791\"/>\n    </linearGradient>\n    <marker id=\"arrow\" markerWidth=\"9\" markerHeight=\"9\" refX=\"4.5\" refY=\"4.5\" orient=\"auto\">\n      <path d=\"M0 0 L9 4.5 L0 9 Z\" fill=\"#5a6068\"/>\n    </marker>\n  </defs>\n\n  <rect width=\"780\" height=\"1010\" fill=\"#ffffff\"/>\n\n  <text x=\"350\" y=\"46\" text-anchor=\"middle\" font-size=\"26\" font-weight=\"bold\" fill=\"#22262b\">French press — exploded assembly</text>\n  <text x=\"350\" y=\"72\" text-anchor=\"middle\" font-size=\"15\" fill=\"#5a6068\">Standard three-piece plunger filter (lid, cross retainer, mesh screen)</text>\n\n  <!-- assembly axis -->\n  <line x1=\"350\" y1=\"96\" x2=\"350\" y2=\"952\" stroke=\"#9aa1a9\" stroke-width=\"1.6\" stroke-dasharray=\"8 6\"/>\n\n  <!-- ===== LID (top) ===== -->\n  <g>\n    <!-- knob -->\n    <path d=\"M332 132 Q350 104 368 132 Z\" fill=\"url(#metal)\" stroke=\"#5f666e\" stroke-width=\"1.5\"/>\n    <ellipse cx=\"350\" cy=\"132\" rx=\"20\" ry=\"5\" fill=\"#9aa2ab\" stroke=\"#5f666e\" stroke-width=\"1.5\"/>\n    <!-- lid body -->\n    <path d=\"M236 140 L230 166 A120 16 0 0 0 470 166 L464 140 Z\" fill=\"url(#metal)\" stroke=\"#5f666e\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"140\" rx=\"114\" ry=\"15\" fill=\"url(#metal)\" stroke=\"#5f666e\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"140\" rx=\"78\" ry=\"9.5\" fill=\"#aeb6bf\" stroke=\"#5f666e\" stroke-width=\"1.2\"/>\n  </g>\n\n  <!-- down arrow below lid -->\n  <line x1=\"350\" y1=\"186\" x2=\"350\" y2=\"212\" stroke=\"#5a6068\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n\n  <!-- ===== PLUNGER ROD ===== -->\n  <g>\n    <rect x=\"344\" y=\"226\" width=\"12\" height=\"158\" fill=\"url(#metal)\" stroke=\"#5f666e\" stroke-width=\"1.4\"/>\n    <rect x=\"337\" y=\"380\" width=\"26\" height=\"10\" rx=\"2\" fill=\"#8d959f\" stroke=\"#5f666e\" stroke-width=\"1.4\"/>\n    <line x1=\"347\" y1=\"234\" x2=\"347\" y2=\"376\" stroke=\"#eef1f4\" stroke-width=\"1.6\"/>\n  </g>\n\n  <line x1=\"350\" y1=\"398\" x2=\"350\" y2=\"420\" stroke=\"#5a6068\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n\n  <!-- ===== CROSS RETAINER (filter frame) ===== -->\n  <g>\n    <path d=\"M262 432 L258 458 A92 12 0 0 0 442 458 L438 432 Z\" fill=\"url(#grid)\" stroke=\"#5f666e\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"432\" rx=\"88\" ry=\"11\" fill=\"#e4e7eb\" stroke=\"#5f666e\" stroke-width=\"1.8\"/>\n    <!-- cross seen from above -->\n    <path d=\"M350 421 L350 443 M300 432 L400 432\" stroke=\"#5f666e\" stroke-width=\"2.4\"/>\n    <circle cx=\"350\" cy=\"432\" r=\"4\" fill=\"#5f666e\"/>\n  </g>\n\n  <line x1=\"350\" y1=\"472\" x2=\"350\" y2=\"492\" stroke=\"#5a6068\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n\n  <!-- ===== MESH SCREEN (filter disc) ===== -->\n  <g>\n    <path d=\"M255 500 L252 514 A98 12 0 0 0 448 514 L445 500 Z\" fill=\"url(#mesh)\" stroke=\"#7c7466\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"500\" rx=\"95\" ry=\"11.5\" fill=\"#f3eee4\" stroke=\"#7c7466\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"500\" rx=\"9\" ry=\"2.4\" fill=\"#ffffff\" stroke=\"#7c7466\" stroke-width=\"1.2\"/>\n  </g>\n\n  <line x1=\"350\" y1=\"530\" x2=\"350\" y2=\"552\" stroke=\"#5a6068\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n\n  <!-- ===== GLASS CARAFE ===== -->\n  <g>\n    <!-- body -->\n    <path d=\"M245 566 L455 566 L449 792 L251 792 Z\" fill=\"url(#glass)\" fill-opacity=\"0.9\" stroke=\"#5a7284\" stroke-width=\"2\"/>\n    <!-- inner wall -->\n    <path d=\"M256 566 L262 786 M444 566 L438 786\" fill=\"none\" stroke=\"#9db4c2\" stroke-width=\"1.6\"/>\n    <!-- spout -->\n    <path d=\"M246 560 L220 534 L251 549 Z\" fill=\"url(#glass)\" fill-opacity=\"0.9\" stroke=\"#5a7284\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n    <!-- rim -->\n    <ellipse cx=\"350\" cy=\"566\" rx=\"105\" ry=\"13\" fill=\"none\" stroke=\"#5a7284\" stroke-width=\"2.2\"/>\n    <ellipse cx=\"350\" cy=\"566\" rx=\"97\" ry=\"10\" fill=\"none\" stroke=\"#9db4c2\" stroke-width=\"1.4\"/>\n    <!-- outer bottom -->\n    <path d=\"M251 792 A99 12 0 0 0 449 792\" fill=\"none\" stroke=\"#5a7284\" stroke-width=\"2\"/>\n    <!-- inner bottom -->\n    <path d=\"M256 788 A94 9 0 0 0 444 788\" fill=\"none\" stroke=\"#9db4c2\" stroke-width=\"1.6\"/>\n    <!-- handle -->\n    <path d=\"M455 606 C548 602 552 708 458 712\" fill=\"none\" stroke=\"#3d434b\" stroke-width=\"13\" stroke-linecap=\"round\"/>\n    <path d=\"M455 611 C540 608 543 703 458 707\" fill=\"none\" stroke=\"#6b727b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <!-- liquid hint -->\n    <path d=\"M262 700 L438 700 L444 786 L256 786 Z\" fill=\"#8a5a2e\" fill-opacity=\"0.35\"/>\n    <ellipse cx=\"350\" cy=\"700\" rx=\"88\" ry=\"9\" fill=\"#a06a35\" fill-opacity=\"0.45\"/>\n  </g>\n\n  <!-- ===== BASE ===== -->\n  <g>\n    <line x1=\"350\" y1=\"800\" x2=\"350\" y2=\"824\" stroke=\"#5a6068\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n    <path d=\"M254 830 L446 830 L452 862 L248 862 Z\" fill=\"#454b53\" stroke=\"#2b3036\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"830\" rx=\"96\" ry=\"11\" fill=\"#5c636c\" stroke=\"#2b3036\" stroke-width=\"1.8\"/>\n    <ellipse cx=\"350\" cy=\"862\" rx=\"102\" ry=\"11\" fill=\"#33383f\" stroke=\"#2b3036\" stroke-width=\"1.8\"/>\n  </g>\n\n  <!-- ===== LABELS ===== -->\n  <g font-size=\"16\" fill=\"#22262b\">\n    <g stroke=\"#8a9099\" stroke-width=\"1.2\">\n      <line x1=\"472\" y1=\"150\" x2=\"540\" y2=\"150\"/>\n      <line x1=\"362\" y1=\"300\" x2=\"540\" y2=\"300\"/>\n      <line x1=\"444\" y1=\"444\" x2=\"540\" y2=\"444\"/>\n      <line x1=\"450\" y1=\"506\" x2=\"540\" y2=\"506\"/>\n      <line x1=\"245\" y1=\"730\" x2=\"180\" y2=\"730\"/>\n      <line x1=\"462\" y1=\"846\" x2=\"540\" y2=\"846\"/>\n    </g>\n    <text x=\"548\" y=\"155\">Lid (finial on plunger)</text>\n    <text x=\"548\" y=\"305\">Plunger rod</text>\n    <text x=\"548\" y=\"449\">Cross retainer (frame)</text>\n    <text x=\"548\" y=\"511\">Mesh filter screen</text>\n    <text x=\"548\" y=\"851\">Base</text>\n  </g>\n  <text x=\"172\" y=\"735\" text-anchor=\"end\" font-size=\"16\" fill=\"#22262b\">Glass carafe</text>\n\n  <!-- note: three-piece group -->\n  <g font-size=\"14\" fill=\"#4a6a4a\">\n    <path d=\"M212 120 L212 522\" stroke=\"#4a6a4a\" stroke-width=\"2\" fill=\"none\"/>\n    <path d=\"M198 120 H212 M198 522 H212\" stroke=\"#4a6a4a\" stroke-width=\"2\" fill=\"none\"/>\n    <text x=\"188\" y=\"310\" transform=\"rotate(-90 188 310)\" text-anchor=\"middle\">plunger filter — 3 pieces</text>\n  </g>\n</svg>\n",
+    "truncated": false,
+    "lines": 133
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.png",
+      "pass": null
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "tikz-coffee-venn-qwen3.8-flash-s1-r7",
+  "exportedAt": "2026-09-25T07:28:06.416Z",
+  "run": "2026-09-23-tikz-coffee-venn-1151",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "qwen/qwen3.8-flash",
+  "seed": 1,
+  "round": 7,
+  "rounds": 7,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[border=12pt,tikz]{standalone}\n\\usetikzlibrary{backgrounds, positioning}\n\\usepackage[T1]{fontenc}\n\\usepackage[scaled=0.98]{helvet}\n\n\\definecolor{colE}{RGB}{160,82,20}   % espresso: brown\n\\definecolor{colM}{RGB}{70,110,190}  % milk: blue\n\\definecolor{colC}{RGB}{0,150,160}   % cold: cyan\n\n\\begin{document}\n\\begin{tikzpicture}[\n    font=\\sffamily,\n    drink/.style={text width=2.4cm, align=center, inner sep=1pt, font=\\small\\sffamily},\n    setlabel/.style={font=\\large\\bfseries\\sffamily, inner sep=2pt},\n  ]\n\n  \\def\\R{2.6cm}   % circle radius\n  \\def\\d{1.5cm}   % distance of each centre from the middle\n\n  \\coordinate (E) at (90:\\d);    %  Has espresso\n  \\coordinate (M) at (210:\\d);   %  Has milk\n  \\coordinate (C) at (330:\\d);   %  Served cold\n\n  % ---- the universe (everything that is not in any circle lives here) ---\n  \\begin{scope}[on background layer]\n    \\fill[black!3, rounded corners=6pt] (-6.7,-4.35) rectangle (6.7,5.15);\n  \\end{scope}\n  \\draw[black!30, line width=0.8pt, rounded corners=6pt] (-6.7,-4.35) rectangle (6.7,5.15);\n\n  % ---- filled circles (behind the labels) -------------------------------\n  \\begin{scope}[on background layer]\n    \\fill[colE, fill opacity=0.35] (E) circle (\\R);\n    \\fill[colM, fill opacity=0.35] (M) circle (\\R);\n    \\fill[colC, fill opacity=0.35] (C) circle (\\R);\n  \\end{scope}\n  \\draw[colE, line width=1pt] (E) circle (\\R);\n  \\draw[colM, line width=1pt] (M) circle (\\R);\n  \\draw[colC, line width=1pt] (C) circle (\\R);\n\n  % ---- set labels -------------------------------------------------------\n  \\node[setlabel, colE] at (0,4.6)     {Has espresso};\n  \\node[setlabel, colM] at (210:5.6cm) {Has milk};\n  \\node[setlabel, colC] at (330:5.6cm) {Served cold};\n\n  % ---- the drinks -------------------------------------------------------\n  % espresso only (hot shot, no milk)\n  \\node[drink] at (90:3.05cm)            {short\\\\ black};\n  % milk only (steamed milk, no coffee)\n  \\node[drink] at (201:2.75cm)           {babyccino};\n  % cold only (brewed black, served over ice)\n  \\node[drink] at (338:2.75cm)           {cold brew};\n  % espresso + milk, served hot\n  \\node[drink] at (139:2.10cm)           {flat white};\n  % espresso + cold, no milk\n  \\node[drink, text width=1.9cm] at (37:2.0cm) {iced long\\\\ black};\n  % milk + cold, no espresso\n  \\node[drink] at (270:1.40cm)           {milkshake};\n  % all three\n  \\node[drink] at (0,-0.15)              {iced latte};\n  % none of the three: hot, brewed (not espresso), no milk\n  \\node[drink, text=black!65] at (-5.0,4.0) {pour-over};\n  \\node[drink, font=\\footnotesize\\itshape, text=black!45, text width=3.2cm]\n       at (-5.0,3.45) {(outside all three)};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 67
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": true
+    }
+  ]
+}

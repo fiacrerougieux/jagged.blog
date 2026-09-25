@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-deepseek-v4.1-flash-s2-r3",
+  "exportedAt": "2026-09-22T04:16:46.782Z",
+  "run": "2026-09-22-tikz-coffee-venn-1219",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "iced latte crosses a circle's edge; milkshake crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}\n  \\def\\r{2.2}\n  \\coordinate (A) at (0,1.6);        % Has espresso\n  \\coordinate (B) at (-1.386,-0.8);  % Has milk\n  \\coordinate (C) at (1.386,-0.8);   % Served cold\n\n  % Circles\n  \\draw[thick] (A) circle (\\r);\n  \\draw[thick] (B) circle (\\r);\n  \\draw[thick] (C) circle (\\r);\n\n  % Set labels\n  \\node[font=\\Large\\bfseries] at (0,4.35) {Has espresso};\n  \\node[font=\\Large\\bfseries] at (-4.1,-2.6) {Has milk};\n  \\node[font=\\Large\\bfseries] at (4.15,-2.6) {Served cold};\n\n  % ---- Drinks in their regions ----\n  % Espresso only\n  \\node[fill=white,inner sep=1.5pt] at (0,2.6) {short black};\n\n  % Milk only\n  \\node[fill=white,inner sep=1.5pt] at (-2.5,-1.7) {babyccino};\n\n  % Served cold only\n  \\node[fill=white,inner sep=1.5pt] at (2.5,-1.7) {cold brew};\n\n  % Espresso + milk (not cold)\n  \\node[fill=white,inner sep=1pt,font=\\footnotesize]\n        at (-1.25,0.95) {flat white};\n\n  % Espresso + cold (not milk)\n  \\node[fill=white,inner sep=1pt,font=\\footnotesize,align=center]\n        at (1.30,0.90) {iced long\\\\ black};\n\n  % Milk + cold (not espresso)\n  \\node[fill=white,inner sep=1.5pt] at (0,-1.75) {milkshake};\n\n  % All three\n  \\node[fill=white,inner sep=1.5pt] at (0,-0.05) {iced latte};\n\n  % Outside all three sets\n  \\node[fill=white,inner sep=1.5pt] at (0,-3.95) {pour-over};\n\\end{tikzpicture}\n\\end{document}",
+    "truncated": false,
+    "lines": 47
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "spice-frother-triangle-deepseek-v4.1-flash-s3-r1",
+  "exportedAt": "2026-09-22T04:16:49.790Z",
+  "run": "2026-09-22-spice-frother-triangle-1222",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "1002.2 Hz, 1.987 Vpp, worst bend 0.0003, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "* 1 kHz triangle-wave carrier for PWM, 2 V peak-to-peak\n*\n* Astable oscillator built from two op-amp stages:\n*   1) an inverting integrator (Rint, Cint) that produces the triangle,\n*   2) a non-inverting Schmitt trigger (R1, R2) that produces the square\n*      wave which drives the integrator.\n* The feedback loop itself sustains the oscillation: no PULSE/SIN/AC\n* source is used, only the two DC supply rails.\n\n* --- DC supply rails (the only independent sources) ---\nVcc  vcc 0 DC  12\nVee  vee 0 DC -12\n\n* --- Inverting integrator: vc -- Rint -- n1, Cint n1->carrier, Rf DC bias ---\nRint vc   n1     25k\nCint n1   carrier 100n\nRf   n1   carrier 1Meg\n* ideal op-amp: gain 1e5, smooth output saturation at +/-10 V\nBint carrier 0 V = 10*(1e5*(0-V(n1)))/(1e-5+abs(1e5*(0-V(n1))))\n\n* --- Non-inverting Schmitt trigger ---\n* vp = (vcarrier/R1 + vc/R2)/(1/R1+1/R2)\n* thresholds are -/+ (R1/R2)*Vsat = -/+1 V, giving a 2 Vpp triangle\nR1  carrier vp 1k\nR2  vc      vp 10k\nCvp vp      0  1p\nBcomp vc 0 V = 10*(1e5*V(vp))/(1e-5+abs(1e5*V(vp)))\n\n* start the integrator off-centre so the astable starts oscillating\n.ic V(carrier)=1\n.tran 1u 20m uic\n\n.control\nrun\nwrdata carrier.txt v(carrier)\n.endc\n.end",
+    "truncated": false,
+    "lines": 37
+  },
+  "output": null,
+  "notes": []
+}

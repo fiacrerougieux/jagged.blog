@@ -1,0 +1,15 @@
+Triangle carrier: Schmitt trigger and integrator, behavioural op-amps
+* Schmitt: comparator with positive feedback, thresholds at +/-1 V
+R1 tri p 10k
+R2 sq p 50k
+B1 sq 0 V = 5*tanh(1e4*V(p))
+* Inverting integrator, RC = 1.25 ms gives 1 kHz
+R3 sq n 12.5k
+C1 n tri 100n ic=0.3
+E1 tri 0 0 n 1e5
+.tran 1u 20m uic
+.control
+run
+wrdata carrier.txt v(tri)
+.endc
+.end

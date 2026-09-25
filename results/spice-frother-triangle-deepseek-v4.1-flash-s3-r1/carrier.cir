@@ -1,0 +1,37 @@
+* 1 kHz triangle-wave carrier for PWM, 2 V peak-to-peak
+*
+* Astable oscillator built from two op-amp stages:
+*   1) an inverting integrator (Rint, Cint) that produces the triangle,
+*   2) a non-inverting Schmitt trigger (R1, R2) that produces the square
+*      wave which drives the integrator.
+* The feedback loop itself sustains the oscillation: no PULSE/SIN/AC
+* source is used, only the two DC supply rails.
+
+* --- DC supply rails (the only independent sources) ---
+Vcc  vcc 0 DC  12
+Vee  vee 0 DC -12
+
+* --- Inverting integrator: vc -- Rint -- n1, Cint n1->carrier, Rf DC bias ---
+Rint vc   n1     25k
+Cint n1   carrier 100n
+Rf   n1   carrier 1Meg
+* ideal op-amp: gain 1e5, smooth output saturation at +/-10 V
+Bint carrier 0 V = 10*(1e5*(0-V(n1)))/(1e-5+abs(1e5*(0-V(n1))))
+
+* --- Non-inverting Schmitt trigger ---
+* vp = (vcarrier/R1 + vc/R2)/(1/R1+1/R2)
+* thresholds are -/+ (R1/R2)*Vsat = -/+1 V, giving a 2 Vpp triangle
+R1  carrier vp 1k
+R2  vc      vp 10k
+Cvp vp      0  1p
+Bcomp vc 0 V = 10*(1e5*V(vp))/(1e-5+abs(1e5*V(vp)))
+
+* start the integrator off-centre so the astable starts oscillating
+.ic V(carrier)=1
+.tran 1u 20m uic
+
+.control
+run
+wrdata carrier.txt v(carrier)
+.endc
+.end

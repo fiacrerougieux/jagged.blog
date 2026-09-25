@@ -1,0 +1,42 @@
+{
+  "name": "svg-french-press-qwen3.8-27b-v2-s3-r2",
+  "exportedAt": "2026-09-22T07:15:25.476Z",
+  "run": "2026-09-22-svg-french-press-1641",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "qwen/qwen3.8-27b",
+  "seed": 3,
+  "round": 2,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 720\" font-family=\"Helvetica, Arial, sans-serif\">\n  <rect width=\"460\" height=\"720\" fill=\"#ffffff\"/>\n\n  <!-- centerline -->\n  <line x1=\"230\" y1=\"28\" x2=\"230\" y2=\"700\" stroke=\"#b6bcc6\" stroke-width=\"1\" stroke-dasharray=\"16 5 3 5\"/>\n\n  <text x=\"14\" y=\"24\" font-size=\"16\" fill=\"#111827\" font-weight=\"bold\">French press &#8212; exploded view</text>\n\n  <!-- ============ 1. Plunger knob ============ -->\n  <g>\n    <path d=\"M216,40 v26 a14,5 0 0 0 28,0 v-26\" fill=\"#4b5563\" stroke=\"#1f2937\" stroke-width=\"1.5\"/>\n    <ellipse cx=\"230\" cy=\"40\" rx=\"14\" ry=\"5\" fill=\"#6b7280\" stroke=\"#1f2937\" stroke-width=\"1.5\"/>\n  </g>\n\n  <!-- ============ 2. Lid ============ -->\n  <g>\n    <path d=\"M135,105 v40 a95,14 0 0 0 190,0 v-40\" fill=\"#52525b\" stroke=\"#27272a\" stroke-width=\"2\"/>\n    <ellipse cx=\"230\" cy=\"105\" rx=\"95\" ry=\"14\" fill=\"#71717a\" stroke=\"#27272a\" stroke-width=\"2\"/>\n    <ellipse cx=\"230\" cy=\"105\" rx=\"16\" ry=\"5.5\" fill=\"#3f3f46\" stroke=\"#27272a\" stroke-width=\"1.5\"/>\n  </g>\n\n  <!-- ============ 3. Plunger stem ============ -->\n  <g>\n    <rect x=\"226\" y=\"172\" width=\"8\" height=\"128\" fill=\"#6b7280\" stroke=\"#374151\" stroke-width=\"1.5\"/>\n    <rect x=\"222\" y=\"168\" width=\"16\" height=\"8\" rx=\"3\" fill=\"#4b5563\" stroke=\"#1f2937\" stroke-width=\"1.5\"/>\n  </g>\n\n  <!-- ============ 4. Wire mesh screen ============ -->\n  <defs>\n    <clipPath id=\"screenClip\">\n      <ellipse cx=\"230\" cy=\"350\" rx=\"92\" ry=\"20\"/>\n    </clipPath>\n  </defs>\n  <g>\n    <g clip-path=\"url(#screenClip)\" stroke=\"#9aa3af\" stroke-width=\"1\">\n      <line x1=\"138\" y1=\"334\" x2=\"322\" y2=\"334\"/>\n      <line x1=\"138\" y1=\"341\" x2=\"322\" y2=\"341\"/>\n      <line x1=\"138\" y1=\"348\" x2=\"322\" y2=\"348\"/>\n      <line x1=\"138\" y1=\"355\" x2=\"322\" y2=\"355\"/>\n      <line x1=\"138\" y1=\"362\" x2=\"322\" y2=\"362\"/>\n      <line x1=\"148\" y1=\"328\" x2=\"148\" y2=\"372\"/>\n      <line x1=\"158\" y1=\"328\" x2=\"158\" y2=\"372\"/>\n      <line x1=\"168\" y1=\"328\" x2=\"168\" y2=\"372\"/>\n      <line x1=\"178\" y1=\"328\" x2=\"178\" y2=\"372\"/>\n      <line x1=\"188\" y1=\"328\" x2=\"188\" y2=\"372\"/>\n      <line x1=\"198\" y1=\"328\" x2=\"198\" y2=\"372\"/>\n      <line x1=\"208\" y1=\"328\" x2=\"208\" y2=\"372\"/>\n      <line x1=\"218\" y1=\"328\" x2=\"218\" y2=\"372\"/>\n      <line x1=\"228\" y1=\"328\" x2=\"228\" y2=\"372\"/>\n      <line x1=\"238\" y1=\"328\" x2=\"238\" y2=\"372\"/>\n      <line x1=\"248\" y1=\"328\" x2=\"248\" y2=\"372\"/>\n      <line x1=\"258\" y1=\"328\" x2=\"258\" y2=\"372\"/>\n      <line x1=\"268\" y1=\"328\" x2=\"268\" y2=\"372\"/>\n      <line x1=\"278\" y1=\"328\" x2=\"278\" y2=\"372\"/>\n      <line x1=\"288\" y1=\"328\" x2=\"288\" y2=\"372\"/>\n      <line x1=\"298\" y1=\"328\" x2=\"298\" y2=\"372\"/>\n      <line x1=\"308\" y1=\"328\" x2=\"308\" y2=\"372\"/>\n    </g>\n    <ellipse cx=\"230\" cy=\"350\" rx=\"92\" ry=\"20\" fill=\"none\" stroke=\"#4b5563\" stroke-width=\"3\"/>\n  </g>\n\n  <!-- ============ 5. Flange disc ============ -->\n  <g>\n    <path d=\"M133,415 v23 a97,16 0 0 0 194,0 v-23\" fill=\"#e5e7eb\" stroke=\"#9ca3af\" stroke-width=\"2\"/>\n    <ellipse cx=\"230\" cy=\"415\" rx=\"97\" ry=\"16\" fill=\"#f3f4f6\" stroke=\"#9ca3af\" stroke-width=\"2\"/>\n    <ellipse cx=\"230\" cy=\"415\" rx=\"7\" ry=\"3\" fill=\"#9ca3af\" stroke=\"#6b7280\" stroke-width=\"1.5\"/>\n  </g>\n\n  <!-- ============ 6. Glass carafe ============ -->\n  <g>\n    <!-- spout -->\n    <path d=\"M143,506 C 122,501 104,504 94,513 C 92,517 97,521 106,521 C 118,521 132,520 143,519 Z\"\n          fill=\"#dbeafe\" fill-opacity=\"0.55\" stroke=\"#64748b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <!-- body -->\n    <path d=\"M138,510 C 133,570 131,636 143,668 Q 230,692 317,668 C 329,636 327,570 322,510 Z\"\n          fill=\"#dbeafe\" fill-opacity=\"0.55\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <ellipse cx=\"230\" cy=\"510\" rx=\"92\" ry=\"13\" fill=\"#eff6ff\" fill-opacity=\"0.7\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <!-- glass highlight -->\n    <path d=\"M162,532 C 158,580 158,620 165,650\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\" fill=\"none\" opacity=\"0.8\"/>\n    <path d=\"M178,528 C 176,560 175,590 177,615\" stroke=\"#ffffff\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\" opacity=\"0.6\"/>\n    <!-- handle -->\n    <path d=\"M322,545 C 366,550 370,625 316,634\" fill=\"none\" stroke=\"#374151\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n    <path d=\"M322,545 C 366,550 370,625 316,634\" fill=\"none\" stroke=\"#9ca3af\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n  </g>\n\n  <!-- ============ labels ============ -->\n  <g font-size=\"13\" fill=\"#374151\">\n    <g stroke=\"#94a3b8\" stroke-width=\"1\">\n      <line x1=\"122\" y1=\"52\"  x2=\"213\" y2=\"52\"/>\n      <line x1=\"122\" y1=\"125\" x2=\"132\" y2=\"125\"/>\n      <line x1=\"122\" y1=\"236\" x2=\"223\" y2=\"236\"/>\n      <line x1=\"122\" y1=\"350\" x2=\"135\" y2=\"350\"/>\n      <line x1=\"122\" y1=\"426\" x2=\"130\" y2=\"426\"/>\n      <line x1=\"122\" y1=\"590\" x2=\"133\" y2=\"590\"/>\n    </g>\n    <text x=\"116\" y=\"56\"  text-anchor=\"end\">Plunger knob</text>\n    <text x=\"116\" y=\"129\" text-anchor=\"end\">Lid</text>\n    <text x=\"116\" y=\"240\" text-anchor=\"end\">Stem</text>\n    <text x=\"116\" y=\"354\" text-anchor=\"end\">Mesh screen</text>\n    <text x=\"116\" y=\"430\" text-anchor=\"end\">Flange disc</text>\n    <text x=\"116\" y=\"594\" text-anchor=\"end\">Glass carafe</text>\n  </g>\n</svg>\n",
+    "truncated": false,
+    "lines": 104
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": null
+    }
+  ]
+}

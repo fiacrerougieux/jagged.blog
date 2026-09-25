@@ -1,0 +1,53 @@
+{
+  "id": "spice-boiler-thermostat",
+  "title": "Espresso boiler thermostat",
+  "short": "Boiler",
+  "version": "v2",
+  "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
+  "oldPrompts": [
+    {
+      "version": "v1",
+      "retired": "2026-09-20",
+      "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue — heater, thermal mass, heat loss — with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
+      "why": "The same style pass as the café table, on the same day: two dashes became brackets. It asks for the same thing, and unlike the café table nothing about the sentence got firmer. It is recorded anyway, because the test of a frozen prompt is whether small changes get written down, whether or not they mattered."
+    }
+  ],
+  "groundTruth": "The netlist itself: re-run in ngspice offline, and the temperature it writes out read back. A thermostat with a dead band is a stateful thing, so a bare comparator on one threshold is wrong however plausible the plot looks.",
+  "checks": [
+    {
+      "id": "analogue",
+      "label": "Complete analogue",
+      "how": "The node the temperature is written from has a capacitor on it, a resistor to a node a DC source holds fixed, and a third element feeding it. The resistor times the capacitor has to be under a day, so a leak nobody meant does not count as the loss.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "hysteresis",
+      "label": "Real hysteresis",
+      "how": "Re-run, once in band the heater switches on low and off high, at least 1 °C apart and at least 2 s per cycle, and the netlist has a switch that remembers: a SW model with a hysteresis voltage, or a source that reads its own output. A single-threshold switch sits at the set point with a swing near zero.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "cold",
+      "label": "Starts cold",
+      "how": "Initial condition at ambient, and the transient run with uic so it is honoured.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "band",
+      "label": "Holds 92–96 °C",
+      "how": "The written temperature re-read: once in band it never leaves it.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "wrdata",
+      "label": "Writes the .txt",
+      "how": "A wrdata line in .control, and the file actually appears.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Add a 30 s espresso draw at ten minutes and hold the band through the refill.",
+  "saturated": {
+    "since": "2026-09-21",
+    "why": "What the checks could not see was the size of boiler each model assumed. DeepSeek chose 5000 J/K on its first run and 3000 and 2500 on the next two, while Astra stayed between 2000 and 2500. A task whose checks all pass while the interesting number moves is a reason to change the question."
+  }
+}

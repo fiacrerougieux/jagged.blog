@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1000" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfe3ea"/>
+      <stop offset="0.25" stop-color="#f2fafc"/>
+      <stop offset="0.55" stop-color="#dceef3"/>
+      <stop offset="1" stop-color="#a9c6d1"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b8f94"/>
+      <stop offset="0.3" stop-color="#d9dde1"/>
+      <stop offset="0.6" stop-color="#b6babf"/>
+      <stop offset="1" stop-color="#7d8186"/>
+    </linearGradient>
+    <linearGradient id="darkmetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55585c"/>
+      <stop offset="0.35" stop-color="#9fa4a9"/>
+      <stop offset="0.7" stop-color="#7c8085"/>
+      <stop offset="1" stop-color="#4a4d51"/>
+    </linearGradient>
+    <linearGradient id="mesh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8ccd1"/>
+      <stop offset="1" stop-color="#9aa0a6"/>
+    </linearGradient>
+    <pattern id="meshpat" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="url(#mesh)"/>
+      <path d="M0 0H8M0 4H8M0 0V8M4 0V8" stroke="#6d7278" stroke-width="1" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="700" height="1000" fill="#f7f5f0"/>
+  <text x="350" y="52" text-anchor="middle" font-size="26" fill="#333" letter-spacing="2">FRENCH PRESS — EXPLODED ASSEMBLY</text>
+
+  <!-- guide line -->
+  <line x1="350" y1="90" x2="350" y2="960" stroke="#c9c4b8" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- ================= KNOB ================= -->
+  <g>
+    <ellipse cx="350" cy="110" rx="34" ry="16" fill="url(#darkmetal)"/>
+    <path d="M316 110 a34 16 0 0 1 68 0 l-8 20 a26 12 0 0 1 -52 0 z" fill="url(#darkmetal)"/>
+    <ellipse cx="350" cy="110" rx="20" ry="9" fill="#8e9296" opacity="0.5"/>
+    <text x="430" y="118" font-size="15" fill="#444">Knob</text>
+    <line x1="386" y1="115" x2="422" y2="115" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- ================= PLUNGER ROD ================= -->
+  <g>
+    <rect x="344" y="140" width="12" height="300" rx="4" fill="url(#metal)"/>
+    <circle cx="350" cy="150" r="10" fill="url(#metal)"/>
+    <text x="430" y="300" font-size="15" fill="#444">Plunger rod</text>
+    <line x1="360" y1="295" x2="422" y2="295" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- ================= THREE-PIECE FILTER STACK ================= -->
+  <!-- top spiral plate -->
+  <g>
+    <ellipse cx="350" cy="470" rx="90" ry="22" fill="url(#metal)"/>
+    <ellipse cx="350" cy="466" rx="90" ry="22" fill="url(#metal)"/>
+    <ellipse cx="350" cy="466" rx="70" ry="16" fill="none" stroke="#6f747a" stroke-width="2"/>
+    <ellipse cx="350" cy="466" rx="48" ry="11" fill="none" stroke="#6f747a" stroke-width="2"/>
+    <ellipse cx="350" cy="466" rx="26" ry="6.5" fill="none" stroke="#6f747a" stroke-width="2"/>
+    <rect x="340" y="444" width="20" height="24" fill="url(#metal)"/>
+    <text x="480" y="468" font-size="15" fill="#444">Spiral cross plate (top)</text>
+    <line x1="444" y1="464" x2="472" y2="464" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- spring disc -->
+  <g>
+    <path d="M275 528 q10 -16 22 0 q10 16 22 0 q10 -16 22 0 q10 16 22 0 q10 -16 22 0 q10 16 22 0 q10 -16 22 0 q10 16 22 0 l0 16 q-10 16 -22 0 q-10 -16 -22 0 q-10 16 -22 0 q-10 -16 -22 0 q-10 16 -22 0 q-10 -16 -22 0 q-10 16 -22 0 q-10 -16 -22 0 z"
+          fill="none" stroke="#8a8f95" stroke-width="4" transform="translate(0,-10)"/>
+    <ellipse cx="350" cy="530" rx="88" ry="14" fill="none" stroke="#8a8f95" stroke-width="2.5"/>
+    <text x="480" y="536" font-size="15" fill="#444">Spring disc (middle)</text>
+    <line x1="442" y1="532" x2="472" y2="532" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- mesh screen -->
+  <g>
+    <ellipse cx="350" cy="590" rx="90" ry="20" fill="url(#meshpat)" stroke="#6d7278" stroke-width="2"/>
+    <ellipse cx="350" cy="584" rx="90" ry="20" fill="url(#meshpat)" stroke="#6d7278" stroke-width="2"/>
+    <text x="480" y="594" font-size="15" fill="#444">Mesh screen (bottom)</text>
+    <line x1="444" y1="590" x2="472" y2="590" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- ================= LID ================= -->
+  <g>
+    <ellipse cx="350" cy="660" rx="108" ry="26" fill="url(#metal)" stroke="#7d8186"/>
+    <ellipse cx="350" cy="654" rx="108" ry="26" fill="url(#metal)"/>
+    <ellipse cx="350" cy="654" rx="96" ry="23" fill="none" stroke="#8f949a" stroke-width="2"/>
+    <rect x="343" y="600" width="14" height="40" rx="3" fill="url(#metal)"/>
+    <text x="480" y="660" font-size="15" fill="#444">Lid with rod guide</text>
+    <line x1="462" y1="655" x2="500" y2="655" stroke="#999" stroke-width="1"/>
+    <text x="480" y="678" font-size="13" fill="#777">(with pouring spout)</text>
+  </g>
+
+  <!-- ================= CARAFE ================= -->
+  <g>
+    <path d="M262 700
+             L262 730
+             C262 760 240 780 240 830
+             C240 900 290 930 350 930
+             C410 930 460 900 460 830
+             C460 780 438 760 438 730
+             L438 700 Z"
+          fill="url(#glass)" fill-opacity="0.85" stroke="#8fb0bc" stroke-width="2.5"/>
+    <!-- coffee inside -->
+    <path d="M268 795
+             C268 858 302 914 350 914
+             C398 914 432 858 432 795 Z" fill="#5b3a26"/>
+    <ellipse cx="350" cy="795" rx="82" ry="9" fill="#6f4930"/>
+    <!-- spout -->
+    <path d="M438 706 L470 718 L438 726 Z" fill="url(#glass)" stroke="#8fb0bc" stroke-width="2"/>
+    <!-- handle -->
+    <path d="M262 715 C212 722 202 790 226 845 C236 866 250 878 262 882"
+          fill="none" stroke="url(#darkmetal)" stroke-width="14" stroke-linecap="round"/>
+    <!-- highlight -->
+    <path d="M285 740 C283 790 272 810 274 850" stroke="#ffffff" stroke-width="5" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <text x="520" y="810" font-size="15" fill="#444">Glass carafe</text>
+    <line x1="452" y1="805" x2="512" y2="805" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- ================= FRAME / CAGE hint ================= -->
+  <g opacity="0.95">
+    <path d="M245 706 L245 700 M455 706 L455 700" stroke="#666" stroke-width="3"/>
+    <text x="520" y="880" font-size="13" fill="#777">Handle &amp; frame</text>
+    <text x="520" y="898" font-size="13" fill="#777">attach to carafe</text>
+  </g>
+
+  <!-- assembly order note -->
+  <text x="60" y="950" font-size="13" fill="#888">Assembly order (top to bottom): knob → rod → spiral plate → spring disc → mesh screen → lid → carafe</text>
+</svg>

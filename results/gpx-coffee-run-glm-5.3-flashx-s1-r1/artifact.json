@@ -1,0 +1,29 @@
+{
+  "name": "gpx-coffee-run-glm-5.3-flashx-s1-r1",
+  "exportedAt": "2026-09-20T03:09:15.296Z",
+  "run": "2026-09-20-gpx-coffee-run",
+  "caseId": "gpx-coffee-run",
+  "caseTitle": "GPX: a run that spells COFFEE",
+  "category": "Geospatial",
+  "prompt": "Write a GPX file for a running route through Melbourne's CBD whose GPS trace spells COFFEE. It has to be a route someone could actually run: along the streets, not through the buildings.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": null,
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "run.gpx"
+  },
+  "source": {
+    "file": "run.gpx",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<gpx version=\"1.1\" creator=\"route-planner\" xmlns=\"http://www.topografix.com/GPX/1/1\">\n<trk><name>COFFEE run - Melbourne CBD</name><trkseg>\n<trkpt lat=\"-37.810000\" lon=\"144.965000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.966500\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.965000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.965000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.966500\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.968000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.968000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.968000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.969500\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.969500\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.971000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.971000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.971000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.972500\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.971000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.971000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.972500\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.974000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.974000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.974000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.975500\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.974000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.974000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.975500\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.978500\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.978500\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.977000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.978500\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.981500\"></trkpt>\n<trkpt lat=\"-37.810000\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.981500\"></trkpt>\n<trkpt lat=\"-37.811500\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.980000\"></trkpt>\n<trkpt lat=\"-37.812500\" lon=\"144.981500\"></trkpt>\n</trkseg></trk></gpx>",
+    "truncated": false,
+    "lines": 46
+  },
+  "output": null,
+  "notes": []
+}

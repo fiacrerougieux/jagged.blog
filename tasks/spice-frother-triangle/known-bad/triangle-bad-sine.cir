@@ -1,0 +1,9 @@
+Carrier
+V1 tri 0 SIN(0 1 1k)
+R1 tri 0 1k
+.tran 1u 20m
+.control
+run
+wrdata carrier.txt v(tri)
+.endc
+.end

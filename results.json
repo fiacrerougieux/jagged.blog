@@ -1,0 +1,2045 @@
+{
+  "results": [
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-s1-r3",
+      "post": "2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack",
+      "date": "2026-09-18",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "capRounds": 20,
+      "cost": 0.259,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "note": "Seven parts, one clean axis, filter stack upside down.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "svg-french-press-gpt-5.6-sol-s1-r2",
+      "post": "2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack",
+      "date": "2026-09-18",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 20,
+      "cost": 0.2407,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "note": "The same inversion, glossier drawing, one round fewer.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "svg-french-press-glm-5.3-flashx-s1-r3",
+      "post": "2026-09-20-glm-5-3-flashx-french-press-no-cross-plate",
+      "date": "2026-09-20",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0206,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "note": "Left the cross-plate out altogether, and still put the spiral plate under the mesh.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "svg-french-press-deepseek-v4.1-flash-s1-r4",
+      "post": null,
+      "date": "2026-09-20",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0401,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "The first press here assembled the right way up, for four cents, but its filter plates are half the width of the glass.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "svg-french-press-qwen3.8-27b-s1-r3",
+      "post": "2026-09-20-bonsai-never-rendered-qwen3-8-27b-rendered-three-times",
+      "date": "2026-09-20",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.1023,
+      "checks": {
+        "parts": false,
+        "order": null,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "physical-plausibility"
+      ],
+      "note": "Mesh drawn, spiral plate and cross-plate missing, and a frame smaller than the carafe it holds.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-v2-s1-r5",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 5,
+      "cost": 0.3558,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "note": "Seven parts, the stack the right way up, and labels on both sides of one axis.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-v2-s2-r4",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.3719,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "note": "The same result in one round fewer, with a handle drawn on the carafe.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-v2-s3-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.4528,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "Cross-plate on top of the mesh again, and plates that are the wrong diameter for the glass. Cut off by provider timeouts after round 2.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "svg-french-press-gpt-5.6-sol-v2-s1-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.2744,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "part-order"
+      ],
+      "note": "The filter stack is in the right order but drawn under the carafe, which is not how it goes together.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "svg-french-press-gpt-5.6-sol-v2-s2-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.1763,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Right order in one round, but the plates are under 80% of the glass width, and the cross-plate is drawn behind the carafe rim.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "svg-french-press-gpt-5.6-sol-v2-s3-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.2093,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Right order in one round, but the plates and mesh are barely over half the width of the carafe they have to seal against.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "svg-french-press-glm-5.3-flashx-v2-s1-r4",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0203,
+      "checks": {
+        "parts": true,
+        "order": null,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Three filter pieces labelled as one assembly, so which plate is which cannot be read, and all three are under 80% of the glass width.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "svg-french-press-glm-5.3-flashx-v2-s2-r3",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0111,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "Calls its top piece a spiral cross plate and puts the mesh at the bottom, with the lid below the whole filter and every plate wider than the carafe.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "svg-french-press-glm-5.3-flashx-v2-s3-r4",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.0191,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "A plate missing, the cross-plate above the mesh, the lid below the filter, and plates wider than the carafe.",
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "svg-french-press-deepseek-v4.1-flash-v2-s1-r3",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0418,
+      "checks": {
+        "parts": true,
+        "order": null,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "note": "Two identical perforated plates either side of the mesh, so the order has nothing to read. No base on the carafe.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "svg-french-press-deepseek-v4.1-flash-v2-s2-r3",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0322,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "note": "Coil spring, then plate, mesh and plate, the same design that passed on 2026-09-20.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "svg-french-press-qwen3.8-27b-v2-s1-r3",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0405,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "note": "No spiral plate and no separate knob, and the cross retainer sits above the mesh.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "svg-french-press-qwen3.8-27b-v2-s2-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0245,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "A coil spring and a mesh, no cross-plate, the lid under the filter, and a mesh wider than the carafe.",
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "svg-french-press-qwen3.8-27b-v2-s3-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.03,
+      "checks": {
+        "parts": false,
+        "order": null,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "note": "Mesh and a flange disc, no spiral plate or cross-plate. Cut off after round 2.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s1-r3",
+      "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
+      "date": "2026-09-23",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.2115,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "failures": [
+        "part-order"
+      ],
+      "note": "The cleanest press on the bench, with the cross-plate on top of the mesh.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s2-r2",
+      "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
+      "date": "2026-09-23",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.2084,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": false,
+        "labels": true
+      },
+      "quality": 4,
+      "note": "The stack the right way up in two rounds, with the frame drawn beside the glass instead of under it.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s3-r3",
+      "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
+      "date": "2026-09-23",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.2209,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "Right in round 1, then it swapped the plates, and its filter is wider than the glass.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "stealth/union-alpha",
+      "label": "Union Alpha",
+      "artifact": "gpx-coffee-run-union-alpha-s1-r3",
+      "post": "2026-09-17-union-alpha-coffee-route-on-real-streets",
+      "date": "2026-09-17",
+      "promptVersion": "v2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "capRounds": 20,
+      "cost": 0,
+      "checks": {
+        "streets": true,
+        "continuous": true,
+        "grid": true,
+        "claims": true,
+        "legible": true
+      },
+      "quality": 4,
+      "note": "10.7 km, every point on a street, and COFFEE tilted with the grid.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "gpx-coffee-run-deepseek-v4.1-flash-s1-r1",
+      "post": null,
+      "date": "2026-09-20",
+      "promptVersion": "v2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.1085,
+      "checks": {
+        "streets": true,
+        "continuous": true,
+        "grid": true,
+        "claims": true,
+        "legible": true
+      },
+      "quality": 4,
+      "note": "10.4 km on real streets, worst point 17.8 m out, and COFFEE with the route along the tops of the letters. One round, because the clock ended it there.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "gpx-coffee-run-glm-5.3-flashx-s1-r1",
+      "post": null,
+      "date": "2026-09-20",
+      "promptVersion": "v2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.014,
+      "checks": {
+        "streets": false,
+        "continuous": false,
+        "grid": false,
+        "claims": false,
+        "legible": false
+      },
+      "quality": 2,
+      "failures": [
+        "geographic-grounding",
+        "physical-plausibility"
+      ],
+      "note": "Drawn north-up across the blocks and out of the grid entirely, and still not readable as COFFEE.",
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "qwen/qwen3.8-max-0902",
+      "label": "Qwen3.8 Max",
+      "artifact": "pdb-caffeine-qwen3.8-max-0902-s1-r6",
+      "post": "2026-09-14-qwen3-8-max-caffeine-molecule-5-of-5-checks-right",
+      "date": "2026-09-14",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 6,
+      "cost": 0.6292,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Textbook caffeine, flat to within a thousandth of an ångström.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "pdb-caffeine-deepseek-v4.1-flash-s1-r3",
+      "post": null,
+      "date": "2026-09-20",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0418,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "The same five checks Qwen3.8 Max passed, right on the first render, for a fifteenth of the price.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "openai/gpt-6-astra",
+      "label": "Astra",
+      "artifact": "spice-boiler-thermostat-gpt-6-astra-s1-r1",
+      "post": "2026-09-16-astra-vs-deepseek-4-1-flash-espresso-boiler-both-right",
+      "date": "2026-09-16",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.1636,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 5,
+      "note": "2000 J/K, and it says why: 0.4 L plus the metal. Right first time.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-boiler-thermostat-deepseek-v4.1-flash-s1-r2",
+      "post": "2026-09-16-astra-vs-deepseek-4-1-flash-espresso-boiler-both-right",
+      "date": "2026-09-16",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0281,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 4,
+      "note": "5000 J/K, a big boiler. 4.8 minutes to temperature.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "blender-cafe-table-deepseek-v4.1-flash-s1-r12",
+      "post": "2026-09-14-deepseek-4-1-flash-cafe-table-spoon-fixed-croissant-not",
+      "date": "2026-09-14",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 12,
+      "capRounds": 14,
+      "stoppedBy": "clock",
+      "cost": 0.0774,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": true,
+        "croissant": false,
+        "scale": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "The spoon took six rounds. Twelve did not fix the croissant, and the clock stopped it rather than the model.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "blender-cafe-table-qwen3.8-flash-s2-r4",
+      "post": null,
+      "date": "2026-09-20",
+      "promptVersion": "v1",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 4,
+      "clockMin": 28,
+      "stoppedBy": "clock",
+      "cost": 0.0673,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": true,
+        "croissant": false,
+        "scale": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "A crude spoon that passes, and a croissant of five balls with a cone at each end.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "blender-cafe-table-deepseek-v4.1-flash-s1-r3",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "stoppedBy": "clock",
+      "cost": 0.0163,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": false,
+        "croissant": false,
+        "scale": true
+      },
+      "quality": 2,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Three rounds before the clock. The spoon does not read as a spoon, and the croissant is a segmented tube that tapers at neither end.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "blender-cafe-table-deepseek-v4.1-flash-s2-r5",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 5,
+      "stoppedBy": "clock",
+      "cost": 0.0222,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": false,
+        "croissant": true,
+        "scale": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "The croissant arrives on the fifth round, scored and tapered at both ends. The spoon is a bowl on the saucer and a separate handle beside it.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "blender-cafe-table-deepseek-v4.1-flash-s3-r8",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.0194,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": false,
+        "croissant": true,
+        "scale": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Eight rounds, stopped by the round cap rather than the clock. The best croissant on the bench, next to a spoon that does not read as one.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "blender-cafe-table-qwen3.8-flash-s1-r1",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "stoppedBy": "clock",
+      "cost": 0.0402,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": true,
+        "croissant": true,
+        "scale": true
+      },
+      "quality": 4,
+      "note": "One render, and it passes all five. The second round was still being written when the clock ended it.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "blender-cafe-table-qwen3.8-flash-s3-r3",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "stoppedBy": "clock",
+      "cost": 0.0293,
+      "checks": {
+        "objects": true,
+        "primitives": true,
+        "spoon": null,
+        "croissant": true,
+        "scale": true
+      },
+      "quality": 4,
+      "note": "The spoon is hidden behind the saucer, so it cannot be judged. The croissant is fine.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "openai/gpt-6-astra",
+      "label": "Astra",
+      "artifact": "spice-boiler-thermostat-gpt-6-astra-s1-r1-v2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.1713,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 5,
+      "note": "Right first time, at 2500 J/K.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "openai/gpt-6-astra",
+      "label": "Astra",
+      "artifact": "spice-boiler-thermostat-gpt-6-astra-s2-r1-v2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.1442,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 5,
+      "note": "Right first time again, at 2000 J/K, which is what it chose in September.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "openai/gpt-6-astra",
+      "label": "Astra",
+      "artifact": "spice-boiler-thermostat-gpt-6-astra-s3-r1-v2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.1192,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 5,
+      "note": "Right first time again, back at 2500 J/K. Three seeds, two different boilers, one passing band.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-boiler-thermostat-deepseek-v4.1-flash-s1-r2-v2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0105,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 4,
+      "note": "Two rounds, 3000 J/K. Nothing like the 5000 it picked in September.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-boiler-thermostat-deepseek-v4.1-flash-s3-r1-v2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.008,
+      "checks": {
+        "analogue": true,
+        "hysteresis": true,
+        "cold": true,
+        "band": true,
+        "wrdata": true
+      },
+      "quality": 4,
+      "note": "Right first time, 2500 J/K, for eight tenths of a cent.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "gpx-coffee-run-glm-5.3-flashx-s1-r8",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.2467,
+      "checks": {
+        "streets": true,
+        "continuous": false,
+        "grid": true,
+        "claims": true,
+        "legible": false
+      },
+      "quality": 2,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "20.5 km of boxes, with two diagonals cut straight across the blocks, and no word.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "gpx-coffee-run-glm-5.3-flashx-s2-r8",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.189,
+      "checks": {
+        "streets": true,
+        "continuous": true,
+        "grid": true,
+        "claims": true,
+        "legible": false
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "9.7 km, every leg on a street, and a lattice of blocks where the letters should be.",
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "gpx-coffee-run-glm-5.3-flashx-s3-r8",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.1063,
+      "checks": {
+        "streets": true,
+        "continuous": false,
+        "grid": true,
+        "claims": true,
+        "legible": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "note": "Twenty-one separate pieces of street, each one a stroke, with nothing joining them into a run.",
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "qwen/qwen3.8-max-0902",
+      "label": "Qwen3.8 Max",
+      "artifact": "pdb-caffeine-qwen3.8-max-0902-s1-r2",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.4734,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Caffeine again, bond for bond, in two rounds.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "qwen/qwen3.8-max-0902",
+      "label": "Qwen3.8 Max",
+      "artifact": "pdb-caffeine-qwen3.8-max-0902-s2-r1",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.5944,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right on the first render, then still checking it when the clock ran out.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "qwen/qwen3.8-max-0902",
+      "label": "Qwen3.8 Max",
+      "artifact": "pdb-caffeine-qwen3.8-max-0902-s3-r1",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.3614,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right on the first render, and it stopped there.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "pdb-caffeine-deepseek-v4.1-flash-s3-r4",
+      "post": null,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "stoppedBy": "clock",
+      "cost": 0.0633,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right on the first render and unchanged through four, until the clock ended it.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "pdb-caffeine-deepseek-v4.1-flash-s1-r4",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0698,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right in four rounds, most of them spent renaming atoms to the standard ligand names.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "pdb-caffeine-deepseek-v4.1-flash-s2-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0428,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right on the first render.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "pdb-caffeine-deepseek-v4.1-flash-s3-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0317,
+      "checks": {
+        "formula": true,
+        "core": true,
+        "methyls": true,
+        "carbonyls": true,
+        "geometry": true
+      },
+      "quality": 5,
+      "note": "Right in two rounds, for three cents.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "smiles-fluorocaffeine-deepseek-v4.1-flash-s1-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0172,
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "note": "The exact molecule on the first render, and it corrected the prompt pack's formula.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "smiles-fluorocaffeine-deepseek-v4.1-flash-s2-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0135,
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "note": "The exact molecule on the first render.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "smiles-fluorocaffeine-deepseek-v4.1-flash-s3-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0219,
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "note": "The exact molecule on the first render.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "tikz-coffee-venn-deepseek-v4.1-flash-s1-r2",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0193,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink in the right region, and six of the eight labels lying across a circle's edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "tikz-coffee-venn-deepseek-v4.1-flash-s2-r3",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0254,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Two labels across an edge, with white boxes behind them that hide the line they cross.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "tikz-coffee-venn-deepseek-v4.1-flash-s3-r5",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 5,
+      "cost": 0.0232,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Every drink in its region and clear of every edge, in five rounds.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "tikz-coffee-venn-qwen3.8-flash-s1-r7",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-23",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 7,
+      "cost": 0.0373,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Every drink in its region and clear of every edge. Round 5 pushed iced long black onto a line and round 6 moved it back.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "tikz-coffee-venn-qwen3.8-flash-s2-r3",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-23",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0287,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Passed on all three of its renders, with a geometry script checking the label positions along the way.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "tikz-coffee-venn-qwen3.8-flash-s3-r1",
+      "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
+      "date": "2026-09-23",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.044,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "One render, and it passes all four. It measured each label in LaTeX and its clearance from each circle in Python first, and the clock ended it while it was still tuning the layout.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-frother-triangle-deepseek-v4.1-flash-s1-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0507,
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 4,
+      "note": "1000.6 Hz and 1.99 V from an ideal comparator and an integrator, on the first render.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-frother-triangle-deepseek-v4.1-flash-s2-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0357,
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 4,
+      "note": "1000.0 Hz and 1.99 V on the first render.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "spice-frother-triangle-deepseek-v4.1-flash-s3-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0542,
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 4,
+      "note": "1002.2 Hz and 1.99 V on the first render.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "mermaid-order-cancel-deepseek-v4.1-flash-s1-r1",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0107,
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 5,
+      "note": "Unpaid cancels abandoned, paid ones refunded, right on the first render.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "mermaid-order-cancel-deepseek-v4.1-flash-s2-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0107,
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 4,
+      "note": "Right refund logic, with no [*] start marker.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "mermaid-order-cancel-deepseek-v4.1-flash-s3-r2",
+      "post": null,
+      "date": "2026-09-22",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0101,
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 4,
+      "note": "Right refund logic through a Refunding state, with no [*] start marker.",
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s1-r8",
+      "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.7113,
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 2,
+      "note": "A wall of repeated stubs on the left and a tangle on the right, 3,559 segments.",
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s2-r5",
+      "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 5,
+      "stoppedBy": "budget",
+      "cost": 0.6444,
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 1,
+      "note": "A flat left edge, and 9,880 segments of loops behind it.",
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s3-r7",
+      "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 7,
+      "stoppedBy": "budget",
+      "cost": 0.6851,
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "note": "A straight left side and branches sweeping right, in 906 segments.",
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    }
+  ],
+  "blank": [
+    {
+      "task": "svg-french-press",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 3,
+      "date": "2026-09-22",
+      "promptVersion": "v2",
+      "cost": 0.0007,
+      "why": "Terminated before its first render, having spent less than a tenth of a cent."
+    },
+    {
+      "task": "blender-cafe-table",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "seed": 2,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "cost": 0.0174,
+      "why": "Twelve minutes, no render call. It wrote a complete 358-line script, which then turns out to crash on a bad argument when run offline, so the clock is not the only reason this is blank."
+    },
+    {
+      "task": "spice-boiler-thermostat",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 2,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "cost": 0.0138,
+      "why": "Twelve minutes, no render call, no netlist written. Cut off mid-sentence working out whether its switch band was right."
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 1,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "cost": 0.0334,
+      "why": "Twelve minutes, no file. It spent them mapping the street grid, calling the renderer directly on its own plots rather than on an answer."
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 2,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "cost": 0.052,
+      "why": "Twelve minutes, no file. Still measuring street angles when the clock ran out."
+    },
+    {
+      "task": "gpx-coffee-run",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 3,
+      "date": "2026-09-21",
+      "promptVersion": "v2",
+      "cost": 0.056,
+      "why": "Wrote an 18.8 km run.gpx on real streets and looked at it by calling the renderer directly, never through render, so the harness recorded no round. Blank by the rule that only a render counts. Offline, every point is on a street, it is one segment, and the word still does not read."
+    }
+  ],
+  "void": [
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 1,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "cost": 0.0388,
+      "why": "Read and ran the grader before answering."
+    },
+    {
+      "task": "pdb-caffeine",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "seed": 2,
+      "date": "2026-09-21",
+      "promptVersion": "v1",
+      "cost": 0.0181,
+      "why": "Read and ran the grader before answering."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+* 1 kHz triangle-wave carrier for a PWM heater drive, 2 V peak-to-peak
+* Self-oscillating relaxation oscillator: a rail-limited inverting Schmitt
+* comparator switches a constant current into/out of a timing capacitor,
+* so the capacitor voltage is a linear triangle.  Powered only by DC rails;
+* no PULSE/SIN source is used, the oscillation comes from the circuit.
+.param VCC=15
+.param VEE=-15
+.param VTH=1.00172        ; comparator threshold -> ~2 Vpp triangle
+.param I0=0.40069m        ; timing current -> ~1 kHz
+.param BETA=0.089042      ; VTH / (0.75*VCC)
+.param A=1e5              ; comparator gain
+
+* DC power rails
+VCC vcc 0 DC {VCC}
+VEE vee 0 DC {VEE}
+
+* Inverting Schmitt trigger; output swing is limited by the DC rails.
+Bcomp mid 0 V = max(0.75*V(vee), min(0.75*V(vcc), A*(-V(tri)+BETA*V(sq))))
+Rout mid sq 100
+Cout sq 0 1n
+
+* Constant-current charge / discharge of the timing capacitor.
+Bcur tri 0 I = -(V(sq)/(0.75*VCC))*I0
+Ct tri 0 100n IC=0.5
+
+.tran 1u 20m uic
+
+.control
+run
+wrdata carrier.txt v(tri)
+.endc
+.end

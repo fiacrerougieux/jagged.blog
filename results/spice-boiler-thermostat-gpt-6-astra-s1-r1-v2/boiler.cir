@@ -1,0 +1,40 @@
+Espresso boiler -- cold start and 92 to 96 degC hysteretic thermostat
+*
+* Thermal/electrical analogy (absolute Celsius temperature):
+*   1 V = 1 degC, 1 A = 1 W, 1 F = 1 J/K, 1 ohm = 1 K/W.
+* Single well-mixed boiler, initially at room temperature (20 degC).
+* Cth = 2500 J/K represents roughly 0.5 L water plus boiler metal.
+* A 1200 W heater injects heat; Rloss = 0.25 K/W gives 4 W/K
+* heat loss to a fixed 20 degC room. No water draw or sensor lag.
+*
+* Energy balance: 2500*dT/dt = 1200*heater_on - (T-20)/0.25.
+Vambient ambient 0 DC 20
+Cthermal boiler 0 2500 IC=20
+Rloss boiler ambient 0.25
+Bheater 0 boiler I = {1200 * (V(heat_call) > 0.5)}
+*
+* Stateful thermostat: control = 94 - T.
+* Switch closes when control > +2 (T < 92 degC), and opens
+* when control < -2 (T > 96 degC); holds its state in between.
+* Cold start therefore calls for heat. This is true hysteresis,
+* not a memoryless comparator at the midpoint of the band.
+Vlogic logic_supply 0 DC 1
+Bcontrol control 0 V = {94 - V(boiler)}
+Sthermostat logic_supply heat_call control 0 thermostat
+Rpulldown heat_call 0 1k
+.model thermostat SW(Ron=1 Roff=1e12 Vt=0 Vh=2)
+*
+* UIC preserves the cold-start thermal capacitor condition rather
+* than starting at a DC thermal equilibrium. Limit timestep to
+* 0.05 s so ideal thermostat threshold overshoot stays <0.02 degC.
+.options reltol=1e-6 abstol=1e-9 vntol=1e-7
+.control
+save v(boiler) v(heat_call)
+tran 0.1 1200 0 0.05 uic
+* Output columns: time in seconds, boiler temperature in degC.
+set wr_vecnames
+set numdgt=9
+wrdata boiler_temperature.txt v(boiler)
+quit
+.endc
+.end

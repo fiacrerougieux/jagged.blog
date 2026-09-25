@@ -1,0 +1,40 @@
+Espresso boiler -- cold start and 92-96 degC hysteretic thermostat
+*
+* Lumped thermal analogue (seconds are real seconds):
+*   1 V = 1 degC, 1 A = 1 W, 1 F = 1 J/K, 1 ohm = 1 K/W.
+*   Cth*dT/dt = Pheater - (T - Tambient)/Rloss.
+* Assumptions: well-mixed boiler, constant room temperature, no water draw,
+* no evaporation, and an ideal heater/thermostat without sensor delay.
+* Cth = 2000 J/K approximates water plus the metal boiler.
+* Heat loss = 4 W/K; at 94 degC this is 296 W into a 20 degC room.
+*
+* Thermal plant: cold means initially at room temperature (20 degC).
+Vambient ambient 0 DC 20
+Cth boiler 0 2000 IC=20
+Rloss boiler ambient 0.25
+Bheater 0 boiler I=1200*V(demand)
+*
+* Thermostat with MEMORY, not a single-threshold comparator:
+* error = 94 - T. Switch closes above +2 V (T < 92 degC),
+* opens below -2 V (T > 96 degC), and retains state in between.
+* The low-temperature initial condition calls for heat immediately.
+* Logic voltage is isolated from the thermal plant by Bheater.
+Vlogic logic 0 DC 1
+Berror error 0 V=94-V(boiler)
+Sthermostat logic demand error 0 thermostat ON
+Rpulldown demand 0 1000
+.model thermostat SW(Ron=0.001 Roff=1e12 Vt=0 Vh=2)
+*
+* Heater power is essentially 1200 W ON, zero OFF (finite switch leakage).
+* UIC preserves the cold initial condition instead of solving a hot DC point.
+* Limit steps to 0.05 s to resolve thermostat transitions to about 0.03 degC.
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=10
+tran 0.2 1200 0 0.05 uic
+* Two columns: time in seconds, boiler temperature in degC.
+wrdata boiler_temperature.txt v(boiler)
+quit
+.endc
+.end

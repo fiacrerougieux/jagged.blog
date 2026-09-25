@@ -1,0 +1,1 @@
+A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.

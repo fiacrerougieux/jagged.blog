@@ -1,0 +1,15 @@
+stateDiagram-v2
+    [*] --> Placed
+    Placed --> Paid : pay
+    Paid --> Queued : queue
+    Queued --> Brewing : start
+    Brewing --> Ready : finish
+    Ready --> Collected : collect
+    Collected --> [*]
+    Placed --> Refunding : cancel
+    Paid --> Refunding : cancel
+    Queued --> Refunding : cancel
+    Brewing --> Refunding : cancel
+    Ready --> Refunding : cancel
+    Refunding --> Cancelled : refund
+    Cancelled --> [*]

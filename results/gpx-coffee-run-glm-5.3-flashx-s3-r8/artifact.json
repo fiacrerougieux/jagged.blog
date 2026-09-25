@@ -1,0 +1,71 @@
+{
+  "name": "gpx-coffee-run-glm-5.3-flashx-s3-r8",
+  "exportedAt": "2026-09-21T13:04:55.918Z",
+  "run": "2026-09-21-gpx-coffee-run-2019",
+  "caseId": "gpx-coffee-run",
+  "caseTitle": "GPX: a run that spells COFFEE",
+  "category": "Geospatial",
+  "prompt": "Write a GPX file for a running route through Melbourne's CBD whose GPS trace spells COFFEE. It has to be a route someone could actually run: along the streets, not through the buildings.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 3,
+  "round": 8,
+  "rounds": 8,
+  "grade": null,
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "run.gpx"
+  },
+  "source": {
+    "file": "run.gpx",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<gpx version=\"1.1\" creator=\"coffee-run\" xmlns=\"http://www.topografix.com/GPX/1/1\">\n<trk><name>COFFEE</name>\n<trkseg><trkpt lat=\"-37.820240\" lon=\"144.957580\"/><trkpt lat=\"-37.819560\" lon=\"144.959900\"/></trkseg>\n<trkseg><trkpt lat=\"-37.818280\" lon=\"144.956670\"/><trkpt lat=\"-37.816410\" lon=\"144.955800\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816410\" lon=\"144.955800\"/><trkpt lat=\"-37.815760\" lon=\"144.958170\"/></trkseg>\n<trkseg><trkpt lat=\"-37.819220\" lon=\"144.961130\"/><trkpt lat=\"-37.818860\" lon=\"144.962400\"/></trkseg>\n<trkseg><trkpt lat=\"-37.818690\" lon=\"144.959540\"/><trkpt lat=\"-37.817710\" lon=\"144.959050\"/></trkseg>\n<trkseg><trkpt lat=\"-37.815570\" lon=\"144.958270\"/><trkpt lat=\"-37.815190\" lon=\"144.959590\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816110\" lon=\"144.961140\"/><trkpt lat=\"-37.815011\" lon=\"144.960632\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816110\" lon=\"144.961140\"/><trkpt lat=\"-37.815011\" lon=\"144.960632\"/></trkseg>\n<trkseg><trkpt lat=\"-37.814970\" lon=\"144.960780\"/><trkpt lat=\"-37.814320\" lon=\"144.963120\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816940\" lon=\"144.961690\"/><trkpt lat=\"-37.816460\" lon=\"144.963370\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816280\" lon=\"144.964020\"/><trkpt lat=\"-37.815050\" lon=\"144.963470\"/></trkseg>\n<trkseg><trkpt lat=\"-37.815100\" lon=\"144.964040\"/><trkpt lat=\"-37.814540\" lon=\"144.965940\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816109\" lon=\"144.964179\"/><trkpt lat=\"-37.815640\" lon=\"144.965780\"/></trkseg>\n<trkseg><trkpt lat=\"-37.815430\" lon=\"144.966520\"/><trkpt lat=\"-37.814500\" lon=\"144.966080\"/></trkseg>\n<trkseg><trkpt lat=\"-37.814390\" lon=\"144.966500\"/><trkpt lat=\"-37.813820\" lon=\"144.968440\"/></trkseg>\n<trkseg><trkpt lat=\"-37.815420\" lon=\"144.966560\"/><trkpt lat=\"-37.814883\" lon=\"144.968417\"/></trkseg>\n<trkseg><trkpt lat=\"-37.817390\" lon=\"144.967430\"/><trkpt lat=\"-37.816850\" lon=\"144.969310\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816690\" lon=\"144.969840\"/><trkpt lat=\"-37.814830\" lon=\"144.968950\"/></trkseg>\n<trkseg><trkpt lat=\"-37.812660\" lon=\"144.968800\"/><trkpt lat=\"-37.812150\" lon=\"144.970510\"/></trkseg>\n<trkseg><trkpt lat=\"-37.814780\" lon=\"144.969091\"/><trkpt lat=\"-37.814450\" lon=\"144.970380\"/></trkseg>\n<trkseg><trkpt lat=\"-37.816655\" lon=\"144.969967\"/><trkpt lat=\"-37.815940\" lon=\"144.972290\"/></trkseg>\n</trk>\n</gpx>\n",
+    "truncated": false,
+    "lines": 27
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": null
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": null
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": null
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.png",
+      "pass": null
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": null
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": null
+    }
+  ]
+}

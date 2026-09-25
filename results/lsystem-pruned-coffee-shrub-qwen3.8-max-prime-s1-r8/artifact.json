@@ -1,0 +1,71 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s1-r8",
+  "exportedAt": "2026-09-25T00:58:27.990Z",
+  "run": "2026-09-25-lsystem-pruned-coffee-shrub-1026",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "qwen/qwen3.8-max-prime",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": null,
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"[+++fffff---S]F[+++L]F[-R][+m]F[+++L]F[--R]F[+++L]F[---R][-m]F[+++L]F[----R][+m]F[+++L]F[---R]F[+++L]F[--R][-m]F[+++L]F[--R]F[-R]\",\n  \"rules\": {\n    \"S\": \"F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F[---s]F\",\n    \"s\": \"FF[-F][+F]\",\n    \"L\": \"F[t][d]F[t][d]F[t][d]F[t][d]F[t][d]F\",\n    \"t\": \"---F[+F][-F]F[+F][-F]F[+F][-F]F\",\n    \"d\": \"+++F[+F][-F]F\",\n    \"m\": \"F[+F]F[-F]F[--F]F[+F]\",\n    \"R\": \"F[+R]-F[-R]++F[--R]-\"\n  },\n  \"angle\": 30,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 16
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": null
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": null
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": null
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": null
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": null
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "spice-boiler-thermostat-deepseek-v4.1-flash-s1-r2-v2",
+  "exportedAt": "2026-09-21T03:17:22.841Z",
+  "run": "2026-09-21-spice-boiler-thermostat-1125",
+  "caseId": "spice-boiler-thermostat",
+  "caseTitle": "ngspice: espresso boiler thermostat",
+  "category": "Electronics and fabrication",
+  "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "boiler.cir"
+  },
+  "source": {
+    "file": "boiler.cir",
+    "lang": "plaintext",
+    "text": "* Espresso machine boiler - lumped thermal model as an electrical analogue\n* Analogy: node voltage V(T) = temperature [degC], current = heat flow [W]\n* Ambient is 20 V.  A capacitor on T is the thermal mass (J/K).\n* A resistor T-amb is the heat loss to ambient (K/W).\n* A gated current source is the heater (W); a switch gives thermostat\n* hysteresis: heater ON when T < 92 C, OFF when T > 96 C.\n\nVamb   amb 0 dc 20\nRloss  T   amb 0.1\nCth    T   0   3000\n.ic v(T)=20\n\n* --- thermostat with hysteresis -------------------------------------\n* ctrl = 100 - T.  Switch closes when ctrl > Vt+Vh = 8 (T < 92 C),\n* opens when ctrl < Vt-Vh = 4 (T > 96 C).\nBctrl  ctrl 0 V = 100 - V(T)\nVsup   sup  0 dc 1\nS1     gate sup ctrl 0 SWTH\nRgate  gate 0 1e6\n* heater: 1200 W injected into the thermal node when gate = 1 V\nBheat  0 T I = 1200 * V(gate)\n\n.model SWTH SW(Ron=1 Roff=1e12 Vt=6 Vh=2)\n\n.tran 0.25 1200 uic\n\n.control\nrun\nwrdata boiler_temp.txt v(T)\n.endc\n.end",
+    "truncated": false,
+    "lines": 31
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "pdb-caffeine",
+  "title": "A caffeine molecule in 3D",
+  "short": "Caffeine",
+  "version": "v1",
+  "prompt": "Write a PDB file with 3D coordinates for a caffeine molecule, hydrogens included.",
+  "groundTruth": "Caffeine, C8H10N4O2: a purine core, a six-membered ring fused to a five-membered ring across two shared carbons, methyls on N1, N3 and N7, carbonyl oxygens at C2 and C6, and the whole ring system flat.",
+  "checks": [
+    {
+      "id": "formula",
+      "label": "C8H10N4O2",
+      "how": "Atom records counted by element: 8 C, 10 H, 4 N, 2 O. 24 atoms in total.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "core",
+      "label": "Fused purine core",
+      "how": "A 6-ring and a 5-ring found in the bond graph, sharing exactly two atoms.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "methyls",
+      "label": "Methyls on N1, N3, N7",
+      "how": "Each CH3 carbon traced to the nitrogen it is bonded to.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "carbonyls",
+      "label": "Carbonyls at C2 and C6",
+      "how": "Both terminal oxygens traced to their ring carbon.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "geometry",
+      "label": "Flat rings, real bond lengths",
+      "how": "Out-of-plane RMS of each ring, and every heavy-atom bond length.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Ask for the crystal conformer, where the methyl hydrogens have a defined rotation.",
+  "saturated": {
+    "since": "2026-09-21",
+    "why": "All five checks are measured, and both models passed all five. It was called on one run per model, so the same evening Qwen3.8 Max had three more runs and passed every check on all three. DeepSeek 4.1 Flash had two valid runs, both perfect, because two more were voided for reading the grader. On 2026-09-22 it had three more with the grader out of reach, and passed every check on all three. A textbook molecule is about what a textbook molecule should cost them. If a new model fails it, it comes back on the board."
+  }
+}

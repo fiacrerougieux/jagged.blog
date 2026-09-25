@@ -1,0 +1,37 @@
+* Espresso machine boiler -- electrical analogue
+*   node T  = boiler temperature in degrees C (1 V == 1 degC)
+*   Vamb    = ambient reference (20 degC)
+*   Cth     = lumped thermal mass (J/degC -> F)
+*   Rth     = heat-loss path to ambient (degC/W -> ohm)
+*   Gheat   = heater: 1200 W switched by the thermostat
+*   Ssw     = thermostat with 4 degC hysteresis (on < 92, off > 96)
+
+.param Tamb = 20
+.param Pheat = 1200
+.param Cth = 2500
+.param Rth = 0.75
+
+* ambient thermal reference
+Vamb amb 0 dc {Tamb}
+
+* boiler thermal mass, cold start at ambient
+Cboiler T 0 {Cth} ic={Tamb}
+* heat loss from boiler to ambient
+Rloss T amb {Rth}
+
+* thermostat: logic high -- switch -- control node 'gate'
+Vlogic hi 0 dc 1
+Rgate gate 0 1k
+* control voltage = Tamb - T ; on when > Vt+Vh (-72 => T<92), off when < Vt-Vh (-76 => T>96)
+Ssw hi gate amb T thermo
+.model thermo SW(Ron=1 Roff=1G Vt=-74 Vh=2)
+
+* voltage-controlled current source: 1200 A into node T when gate = 1 V
+Gheat 0 T gate 0 {Pheat}
+
+* --- simulation / output ---
+.control
+tran 0.1 1200 uic
+wrdata boiler_temp.txt v(T)
+.endc
+.end

@@ -1,0 +1,52 @@
+{
+  "id": "blender-cafe-table",
+  "title": "Café table from primitives",
+  "short": "Café table",
+  "version": "v2",
+  "prompt": "Write a Blender Python script that builds a café table scene: an espresso cup on a saucer, a spoon, sugar cubes and a croissant. Use only primitive meshes (cube, cylinder, cone, sphere, torus).",
+  "oldPrompts": [
+    {
+      "version": "v1",
+      "retired": "2026-09-20",
+      "prompt": "Write a Blender Python script that builds a café table scene — an espresso cup on a saucer, a spoon, sugar cubes and a croissant — using only primitive meshes (cube, cylinder, cone, sphere, torus).",
+      "why": "A style pass reworded the case file and split one sentence into two, which turned a trailing \"using only primitive meshes\" into a standalone \"Use only primitive meshes.\" The case file recorded the change on the day. This file did not, so for a day the site printed the new wording above two results that had been scored on the old one, and `primitives` is one of the scored checks. Nothing was re-scored: both results below stay on the wording they were given. Caught on 2026-09-21 by harness/check-prompts.mjs, which now diffs every published wording against the runs."
+    }
+  ],
+  "groundTruth": "The render, and the script that made it: the objects a person would name unprompted, at sizes a person would accept. A 5 cm spoon and an 11 cm croissant are checkable in the source.",
+  "checks": [
+    {
+      "id": "objects",
+      "label": "All five objects",
+      "how": "Table, cup on saucer, spoon, sugar cubes, croissant. All five present in the scene.",
+      "decidedBy": "eye",
+      "rule": "Pass if all five can be pointed at in the render as separate objects. One missing, or hidden behind another, fails it."
+    },
+    {
+      "id": "primitives",
+      "label": "Primitives only",
+      "how": "Every mesh comes from a primitive_*_add call, as the prompt requires.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "spoon",
+      "label": "Spoon reads as a spoon",
+      "how": "A bowl and a handle on one axis, recognisable in the render.",
+      "decidedBy": "eye",
+      "rule": "Pass if the spoon is one connected piece with a bowl at one end, wider than the handle, and the handle running from it in a line. Loose parts, or no handle, fail it."
+    },
+    {
+      "id": "croissant",
+      "label": "Croissant reads as a croissant",
+      "how": "Recognisable in the render without the filename.",
+      "decidedBy": "eye",
+      "rule": "Pass if it is a crescent that is thickest in the middle and tapers to both tips, with segments or scoring across it. A smooth curved tube fails it, and so does a segmented one with no taper."
+    },
+    {
+      "id": "scale",
+      "label": "Consistent scale",
+      "how": "Object dimensions in the script compared against each other and against life.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Ask for the croissant's layered curl specifically, which is what the primitive set makes hard."
+}

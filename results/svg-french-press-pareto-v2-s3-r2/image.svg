@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1640" viewBox="0 0 1100 1640" font-family="DejaVu Sans, Verdana, sans-serif">
+  <defs>
+    <radialGradient id="knobG" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#565b60"/><stop offset="1" stop-color="#0d0f11"/>
+    </radialGradient>
+    <linearGradient id="steelRod" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6e747a"/><stop offset="0.35" stop-color="#eef0f2"/>
+      <stop offset="0.7" stop-color="#9aa0a6"/><stop offset="1" stop-color="#53585d"/>
+    </linearGradient>
+    <radialGradient id="lidG" cx="0.42" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#fbfcfd"/><stop offset="0.7" stop-color="#d3d8dc"/><stop offset="1" stop-color="#aeb4ba"/>
+    </radialGradient>
+    <linearGradient id="plateG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6066"/><stop offset="1" stop-color="#33383d"/>
+    </linearGradient>
+    <linearGradient id="glassG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f5fa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#bfdde9" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="chromeG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.45" stop-color="#8b9095"/>
+      <stop offset="0.7" stop-color="#e6e8ea"/><stop offset="1" stop-color="#6a6f74"/>
+    </linearGradient>
+    <radialGradient id="baseG" cx="0.45" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#eceef0"/><stop offset="0.75" stop-color="#b9bfc5"/><stop offset="1" stop-color="#8f959b"/>
+    </radialGradient>
+    <clipPath id="meshClip"><ellipse cx="550" cy="930" rx="146" ry="38"/></clipPath>
+  </defs>
+
+  <rect width="1100" height="1640" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="550" y="54" text-anchor="middle" font-size="36" font-weight="bold" letter-spacing="3" fill="#24292e">FRENCH PRESS</text>
+  <text x="550" y="86" text-anchor="middle" font-size="18" fill="#6a7076">Exploded assembly &#183; three-piece plunger filter</text>
+
+  <!-- center axis -->
+  <line x1="550" y1="100" x2="550" y2="1585" stroke="#b3b9bf" stroke-width="2" stroke-dasharray="2 8"/>
+
+  <!-- ===== KNOB ===== -->
+  <g>
+    <rect x="535" y="156" width="30" height="26" fill="#191c1f"/>
+    <ellipse cx="550" cy="182" rx="15" ry="5" fill="#0b0d0f"/>
+    <circle cx="550" cy="128" r="40" fill="url(#knobG)"/>
+    <ellipse cx="534" cy="110" rx="13" ry="9" fill="#ffffff" opacity="0.3" transform="rotate(-30 534 110)"/>
+  </g>
+
+  <!-- ===== PLUNGER ROD ===== -->
+  <g>
+    <rect x="543.5" y="217" width="13" height="278" fill="url(#steelRod)" stroke="#6a7076" stroke-width="0.5"/>
+    <ellipse cx="550" cy="217" rx="9" ry="3.2" fill="#dfe2e5" stroke="#8d949a" stroke-width="0.6"/>
+    <!-- spiral screw tip -->
+    <ellipse cx="550" cy="504" rx="13" ry="4.5" fill="#979ea4" stroke="#6a7076" stroke-width="0.5"/>
+    <ellipse cx="550" cy="512" rx="9.5" ry="3.2" fill="#979ea4" stroke="#6a7076" stroke-width="0.5"/>
+    <ellipse cx="550" cy="519" rx="6" ry="2" fill="#979ea4" stroke="#6a7076" stroke-width="0.5"/>
+    <circle cx="550" cy="523" r="2.5" fill="#7c838a"/>
+  </g>
+
+  <!-- ===== LID ===== -->
+  <g>
+    <ellipse cx="550" cy="623" rx="215" ry="58" fill="#878e94"/>
+    <ellipse cx="550" cy="610" rx="215" ry="58" fill="url(#lidG)" stroke="#8f959b" stroke-width="1.2"/>
+    <path d="M 420 585 A 205 50 0 0 1 640 570" stroke="#ffffff" stroke-width="5" fill="none" opacity="0.45" stroke-linecap="round"/>
+    <path d="M 470 640 A 190 44 0 0 0 690 622" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.3" stroke-linecap="round"/>
+    <!-- pouring spout lip on rim, hugging the edge -->
+    <path d="M 352 590 L 306 611 L 354 633 Z" fill="url(#lidG)" stroke="#9aa1a7" stroke-width="0.8"/>
+    <path d="M 356 599 L 380 611 L 358 625" fill="none" stroke="#7f868c" stroke-width="2" stroke-linecap="round"/>
+    <!-- central hole for rod -->
+    <ellipse cx="550" cy="610" rx="26" ry="7.5" fill="#565c63"/>
+    <ellipse cx="550" cy="610" rx="17" ry="4.6" fill="#22262a"/>
+  </g>
+
+  <!-- ===== FILTER PIECE 1: CROSS PLATE ===== -->
+  <g>
+    <ellipse cx="550" cy="798" rx="155" ry="42" fill="#23272b"/>
+    <ellipse cx="550" cy="790" rx="155" ry="42" fill="url(#plateG)" stroke="#1f2327" stroke-width="1"/>
+    <ellipse cx="550" cy="786" rx="120" ry="26" fill="#ffffff" opacity="0.06"/>
+    <g stroke="#2e3338" stroke-width="11" stroke-linecap="round">
+      <line x1="550" y1="790" x2="698" y2="790"/>
+      <line x1="550" y1="790" x2="402" y2="790"/>
+      <line x1="550" y1="790" x2="550" y2="752"/>
+      <line x1="550" y1="790" x2="550" y2="828"/>
+    </g>
+    <ellipse cx="550" cy="790" rx="27" ry="9.5" fill="#24282c"/>
+    <ellipse cx="550" cy="790" rx="8.5" ry="3" fill="#14171a"/>
+  </g>
+
+  <!-- ===== FILTER PIECE 2: MESH SCREEN ===== -->
+  <g>
+    <ellipse cx="550" cy="936" rx="150" ry="41" fill="#9aa1a7"/>
+    <ellipse cx="550" cy="930" rx="150" ry="41" fill="#cfd6db" stroke="#8a9198" stroke-width="1"/>
+    <g clip-path="url(#meshClip)" stroke="#72797f" stroke-width="1" opacity="0.8">
+      <path d="M406 892V968 M422 892V968 M438 892V968 M454 892V968 M470 892V968 M486 892V968 M502 892V968 M518 892V968 M534 892V968 M550 892V968 M566 892V968 M582 892V968 M598 892V968 M614 892V968 M630 892V968 M646 892V968 M662 892V968 M678 892V968 M694 892V968"/>
+      <path d="M404 894H696 M404 903H696 M404 912H696 M404 921H696 M404 930H696 M404 939H696 M404 948H696 M404 957H696 M404 966H696"/>
+    </g>
+    <ellipse cx="550" cy="930" rx="150" ry="41" fill="none" stroke="#6f767c" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== FILTER PIECE 3: RETAINING DISC ===== -->
+  <g>
+    <ellipse cx="550" cy="1078" rx="150" ry="41" fill="#202428"/>
+    <ellipse cx="550" cy="1070" rx="150" ry="41" fill="url(#plateG)" stroke="#1f2327" stroke-width="1"/>
+    <ellipse cx="550" cy="1066" rx="115" ry="25" fill="#ffffff" opacity="0.06"/>
+    <ellipse cx="550" cy="1070" rx="9" ry="3.2" fill="#101315"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="550" cy="1610" rx="270" ry="24" fill="#000000" opacity="0.07"/>
+
+  <!-- ===== GLASS CARAFE ===== -->
+  <g>
+    <!-- pour lip on carafe rim -->
+    <path d="M 356 1176 L 306 1208 L 358 1240 Z" fill="url(#glassG)" stroke="#9fc2d2" stroke-width="1.2"/>
+    <path d="M 360 1186 L 384 1207 L 362 1229" fill="none" stroke="#a9cddd" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 345 1210 L 372 1450 A 178 45 0 0 0 728 1450 L 755 1210 A 205 56 0 0 1 345 1210 Z"
+          fill="url(#glassG)" stroke="#9fc2d2" stroke-width="1.5"/>
+    <ellipse cx="550" cy="1450" rx="176" ry="44" fill="#cfe7f1" opacity="0.5" stroke="#a9cddd" stroke-width="1"/>
+    <ellipse cx="550" cy="1452" rx="140" ry="34" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+    <ellipse cx="550" cy="1210" rx="186" ry="48" fill="#c3e0ec" opacity="0.5" stroke="#a9cddd" stroke-width="1"/>
+    <ellipse cx="550" cy="1210" rx="205" ry="56" fill="#dceef5" opacity="0.55" stroke="#9fc2d2" stroke-width="1.5"/>
+    <path d="M 380 1250 C 372 1310 378 1370 390 1425" stroke="#ffffff" stroke-width="12" opacity="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M 728 1240 C 736 1300 732 1365 722 1420" stroke="#ffffff" stroke-width="6" opacity="0.35" fill="none" stroke-linecap="round"/>
+    <!-- handle -->
+    <path d="M 752 1236 C 838 1246 862 1302 850 1360 C 840 1408 792 1428 733 1420"
+          fill="none" stroke="url(#chromeG)" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="752" cy="1236" r="7" fill="#6a7076" stroke="#4c5157" stroke-width="1"/>
+    <circle cx="733" cy="1420" r="7" fill="#6a7076" stroke="#4c5157" stroke-width="1"/>
+  </g>
+
+  <!-- ===== CHROME BASE ===== -->
+  <g>
+    <ellipse cx="550" cy="1558" rx="195" ry="40" fill="#60666c"/>
+    <path d="M 355 1545 A 195 40 0 0 0 745 1545 L 745 1558 A 195 40 0 0 1 355 1558 Z" fill="#7d838a"/>
+    <ellipse cx="550" cy="1545" rx="195" ry="40" fill="url(#baseG)" stroke="#84898f" stroke-width="0.8"/>
+    <ellipse cx="550" cy="1543" rx="150" ry="29" fill="#a8aeb4"/>
+    <ellipse cx="550" cy="1542" rx="118" ry="22" fill="#8d939a"/>
+  </g>
+
+  <!-- ===== CALLOUTS ===== -->
+  <g stroke="#8a8f94" stroke-width="1.3">
+    <line x1="602" y1="120" x2="690" y2="120"/>
+    <line x1="774" y1="610" x2="796" y2="610"/>
+    <line x1="338" y1="350" x2="538" y2="350"/>
+    <line x1="338" y1="790" x2="390" y2="790"/>
+    <line x1="338" y1="930" x2="393" y2="930"/>
+    <line x1="338" y1="1070" x2="393" y2="1070"/>
+    <line x1="338" y1="1330" x2="348" y2="1330"/>
+    <line x1="861" y1="1330" x2="887" y2="1330"/>
+    <line x1="752" y1="1553" x2="787" y2="1553"/>
+    <!-- brace grouping the three filter pieces -->
+    <line x1="742" y1="750" x2="742" y2="1118"/>
+    <line x1="730" y1="750" x2="742" y2="750"/>
+    <line x1="730" y1="1118" x2="742" y2="1118"/>
+  </g>
+  <g fill="#8a8f94">
+    <circle cx="596" cy="120" r="3"/>
+    <circle cx="768" cy="610" r="3"/>
+    <circle cx="541" cy="350" r="3"/>
+    <circle cx="393" cy="790" r="3"/>
+    <circle cx="396" cy="930" r="3"/>
+    <circle cx="396" cy="1070" r="3"/>
+    <circle cx="352" cy="1330" r="3"/>
+    <circle cx="855" cy="1330" r="3"/>
+    <circle cx="748" cy="1550" r="3"/>
+  </g>
+  <g fill="#383e44" font-size="21" font-weight="600">
+    <text x="700" y="127" text-anchor="start">Knob</text>
+    <text x="804" y="617" text-anchor="start">Lid</text>
+    <text x="330" y="357" text-anchor="end">Plunger rod</text>
+    <text x="330" y="797" text-anchor="end">Cross plate</text>
+    <text x="330" y="937" text-anchor="end">Mesh screen</text>
+    <text x="330" y="1077" text-anchor="end">Retaining disc</text>
+    <text x="330" y="1337" text-anchor="end">Glass carafe</text>
+    <text x="895" y="1337" text-anchor="start">Handle</text>
+    <text x="795" y="1560" text-anchor="start">Base</text>
+    <text x="775" y="934" text-anchor="middle" transform="rotate(-90 775 934)">3-piece plunger filter</text>
+  </g>
+</svg>

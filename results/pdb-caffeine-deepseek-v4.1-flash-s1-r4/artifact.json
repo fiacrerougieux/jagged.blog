@@ -1,0 +1,55 @@
+{
+  "name": "pdb-caffeine-deepseek-v4.1-flash-s1-r4",
+  "exportedAt": "2026-09-22T04:16:18.132Z",
+  "run": "2026-09-22-pdb-caffeine-1211",
+  "caseId": "pdb-caffeine",
+  "caseTitle": "PDB: a caffeine molecule in 3D",
+  "category": "Chemistry and biology",
+  "prompt": "Write a PDB file with 3D coordinates for a caffeine molecule, hydrogens included.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 4,
+  "rounds": 4,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "snap-pdb",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "caffeine.pdb"
+  },
+  "source": {
+    "file": "caffeine.pdb",
+    "lang": "plaintext",
+    "text": "HEADER    CAFFEINE (1,3,7-TRIMETHYLXANTHINE)\nCOMPND    CAFFEINE\nHET    CFF  A   1      24     CAFFEINE\nREMARK   3D ideal coordinates from the RCSB chemical component dictionary (CFF),\nREMARK   rigidly rotated so the fused-ring plane is the x-y plane.\nREMARK   All 24 atoms are present, including 10 hydrogens.\nREMARK   CONECT records encode bond order by repeating the bonded atom serial.\nHETATM    1  N1  CFF A   1       1.047   1.312  -0.000  1.00  0.00           N\nHETATM    2  C2  CFF A   1      -0.208   1.790  -0.000  1.00  0.00           C\nHETATM    3  C10 CFF A   1       2.176   2.246   0.000  1.00  0.00           C\nHETATM    4  C6  CFF A   1       1.285  -0.016  -0.001  1.00  0.00           C\nHETATM    5  N3  CFF A   1      -1.276   0.971  -0.000  1.00  0.00           N\nHETATM    6  O11 CFF A   1      -0.384   2.993   0.000  1.00  0.00           O\nHETATM    7  C12 CFF A   1      -2.629   1.533  -0.000  1.00  0.00           C\nHETATM    8  C4  CFF A   1      -1.098  -0.402  -0.000  1.00  0.00           C\nHETATM    9  C5  CFF A   1       0.193  -0.911   0.005  1.00  0.00           C\nHETATM   10  N9  CFF A   1      -1.934  -1.444  -0.000  1.00  0.00           N\nHETATM   11  O13 CFF A   1       2.428  -0.437  -0.000  1.00  0.00           O\nHETATM   12  N7  CFF A   1       0.068  -2.286  -0.000  1.00  0.00           N\nHETATM   13  C8  CFF A   1      -1.251  -2.560  -0.000  1.00  0.00           C\nHETATM   14  C14 CFF A   1       1.161  -3.261  -0.000  1.00  0.00           C\nHETATM   15 H101 CFF A   1       1.800   3.269   0.001  1.00  0.00           H\nHETATM   16 H102 CFF A   1       2.783   2.082   0.890  1.00  0.00           H\nHETATM   17 H103 CFF A   1       2.783   2.083  -0.889  1.00  0.00           H\nHETATM   18 H121 CFF A   1      -2.570   2.622  -0.000  1.00  0.00           H\nHETATM   19 H122 CFF A   1      -3.162   1.198  -0.890  1.00  0.00           H\nHETATM   20 H123 CFF A   1      -3.162   1.198   0.889  1.00  0.00           H\nHETATM   21  H81 CFF A   1      -1.679  -3.552   0.000  1.00  0.00           H\nHETATM   22 H141 CFF A   1       1.432  -3.503  -1.028  1.00  0.00           H\nHETATM   23 H142 CFF A   1       2.024  -2.839   0.513  1.00  0.00           H\nHETATM   24 H143 CFF A   1       0.839  -4.167   0.513  1.00  0.00           H\nTER\nCONECT    1    2    3    4\nCONECT    2    1    5    6    6\nCONECT    3    1   15   16   17\nCONECT    4    1    9   11   11\nCONECT    5    2    7    8\nCONECT    6    2    2\nCONECT    7    5   18   19   20\nCONECT    8    5    9    9   10\nCONECT    9    4    8    8   12\nCONECT   10    8   13   13\nCONECT   11    4    4\nCONECT   12    9   13   14\nCONECT   13   10   10   12   21\nCONECT   14   12   22   23   24\nCONECT   15    3\nCONECT   16    3\nCONECT   17    3\nCONECT   18    7\nCONECT   19    7\nCONECT   20    7\nCONECT   21   13\nCONECT   22   14\nCONECT   23   14\nCONECT   24   14\nEND\n",
+    "truncated": false,
+    "lines": 58
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    }
+  ]
+}

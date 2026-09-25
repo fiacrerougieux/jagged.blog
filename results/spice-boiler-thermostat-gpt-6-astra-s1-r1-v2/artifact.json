@@ -1,0 +1,29 @@
+{
+  "name": "spice-boiler-thermostat-gpt-6-astra-s1-r1-v2",
+  "exportedAt": "2026-09-21T03:17:19.829Z",
+  "run": "2026-09-21-spice-boiler-thermostat-1125",
+  "caseId": "spice-boiler-thermostat",
+  "caseTitle": "ngspice: espresso boiler thermostat",
+  "category": "Electronics and fabrication",
+  "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
+  "model": "openai/gpt-6-astra",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": null,
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "boiler.cir"
+  },
+  "source": {
+    "file": "boiler.cir",
+    "lang": "plaintext",
+    "text": "Espresso boiler -- cold start and 92 to 96 degC hysteretic thermostat\n*\n* Thermal/electrical analogy (absolute Celsius temperature):\n*   1 V = 1 degC, 1 A = 1 W, 1 F = 1 J/K, 1 ohm = 1 K/W.\n* Single well-mixed boiler, initially at room temperature (20 degC).\n* Cth = 2500 J/K represents roughly 0.5 L water plus boiler metal.\n* A 1200 W heater injects heat; Rloss = 0.25 K/W gives 4 W/K\n* heat loss to a fixed 20 degC room. No water draw or sensor lag.\n*\n* Energy balance: 2500*dT/dt = 1200*heater_on - (T-20)/0.25.\nVambient ambient 0 DC 20\nCthermal boiler 0 2500 IC=20\nRloss boiler ambient 0.25\nBheater 0 boiler I = {1200 * (V(heat_call) > 0.5)}\n*\n* Stateful thermostat: control = 94 - T.\n* Switch closes when control > +2 (T < 92 degC), and opens\n* when control < -2 (T > 96 degC); holds its state in between.\n* Cold start therefore calls for heat. This is true hysteresis,\n* not a memoryless comparator at the midpoint of the band.\nVlogic logic_supply 0 DC 1\nBcontrol control 0 V = {94 - V(boiler)}\nSthermostat logic_supply heat_call control 0 thermostat\nRpulldown heat_call 0 1k\n.model thermostat SW(Ron=1 Roff=1e12 Vt=0 Vh=2)\n*\n* UIC preserves the cold-start thermal capacitor condition rather\n* than starting at a DC thermal equilibrium. Limit timestep to\n* 0.05 s so ideal thermostat threshold overshoot stays <0.02 degC.\n.options reltol=1e-6 abstol=1e-9 vntol=1e-7\n.control\nsave v(boiler) v(heat_call)\ntran 0.1 1200 0 0.05 uic\n* Output columns: time in seconds, boiler temperature in degC.\nset wr_vecnames\nset numdgt=9\nwrdata boiler_temperature.txt v(boiler)\nquit\n.endc\n.end\n",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}

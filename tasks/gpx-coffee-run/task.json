@@ -1,0 +1,51 @@
+{
+  "id": "gpx-coffee-run",
+  "title": "A run that spells COFFEE",
+  "short": "COFFEE route",
+  "version": "v2",
+  "prompt": "Write a GPX file for a running route through Melbourne's CBD whose GPS trace spells COFFEE. It has to be a route someone could actually run: along the streets, not through the buildings.",
+  "oldPrompts": [
+    {
+      "version": "v1",
+      "retired": "2026-09-16",
+      "prompt": "Write a GPX file for a running route through Melbourne's CBD whose GPS trace spells COFFEE.",
+      "why": "The first wording never said the route had to follow streets, so a trace drawn straight across the blocks was not actually answering the question wrongly. Two runs went out under it on 2026-09-15 and the wording was tightened the next day. Neither of those runs was ever published, so nothing on the board was scored against this version. It is recorded anyway, because a prompt that changes without a record is not a frozen prompt, and this change went unrecorded until 2026-09-21, when a check started diffing every published wording against the runs that used it."
+    }
+  ],
+  "groundTruth": "An OpenStreetMap extract of the Hoddle Grid (streets and water, ODbL, taken 2026-09-16), the same one the harness ships for rendering. Every track point is measured to the nearest street centreline.",
+  "checks": [
+    {
+      "id": "streets",
+      "label": "On real streets",
+      "how": "Share of track points within 25 m of a mapped street centreline.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "continuous",
+      "label": "One continuous route",
+      "how": "A single track segment, with no jump between consecutive points bigger than a city block.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "grid",
+      "label": "Inside the grid",
+      "how": "The whole trace sits within the Hoddle Grid, and does not cross the Yarra.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "claims",
+      "label": "Metadata true",
+      "how": "The streets the file's own description names are the streets the trace actually uses.",
+      "decidedBy": "eye",
+      "rule": "Pass if every street the file's description names is one the trace runs along for at least a block, read off the map under the trace. One named street the route never uses fails it."
+    },
+    {
+      "id": "legible",
+      "label": "Reads as COFFEE",
+      "how": "Six letters recognisable from the plotted trace without being told what to look for.",
+      "decidedBy": "eye",
+      "rule": "Pass if the six letters can be read off the plotted trace in order, by someone not told the word first. In practice that someone is me, and I knew the word, which is the weakness of this check."
+    }
+  ],
+  "harder": "Spell it without retracing any street twice, so the letters cannot be drawn as out-and-back arms."
+}

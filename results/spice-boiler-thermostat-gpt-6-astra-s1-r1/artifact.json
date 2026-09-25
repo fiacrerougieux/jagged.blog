@@ -1,0 +1,29 @@
+{
+  "name": "spice-boiler-thermostat-gpt-6-astra-s1-r1",
+  "exportedAt": "2026-09-16T09:37:40.191Z",
+  "run": "2026-09-16-spice-boiler-thermostat-1045",
+  "caseId": "spice-boiler-thermostat",
+  "caseTitle": "ngspice: espresso boiler thermostat",
+  "category": "Electronics and fabrication",
+  "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
+  "model": "openai/gpt-6-astra",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": null,
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "boiler.cir"
+  },
+  "source": {
+    "file": "boiler.cir",
+    "lang": "plaintext",
+    "text": "Espresso boiler - cold start and 92-96 degC hysteretic thermostat\n*\n* Lumped thermal/electrical analogue (absolute temperature in degC):\n*   1 V = 1 degC, 1 A = 1 W, 1 F = 1 J/K, 1 ohm = 1 K/W.\n*   Cthermal stores heat; Rloss conducts heat to ambient; Bheater adds heat.\n* Assumptions: well-mixed boiler, fixed water mass, no brewing/steam draw,\n* instantaneous heater and temperature sensor, constant ambient at 20 degC.\n* 2000 J/K represents about 0.4 L water plus the metal boiler assembly.\n* 1200 W heater; 0.5 K/W insulation gives 148 W loss at 94 degC.\n*\n.param Tamb=20 Cth=2000 Rth=0.5 Pheater=1200\n\n* Thermal plant: Cth*dT/dt = Pheater*call - (T-Tamb)/Rth.\nVambient ambient 0 DC {Tamb}\nRloss boiler ambient {Rth}\nCthermal boiler 0 {Cth} IC={Tamb}\nBheater 0 boiler I={Pheater}*V(call)\n\n* Stateful thermostat, NOT a single-threshold comparator:\n* error = 94-T; switch closes above +2 (T<92), opens below -2 (T>96),\n* and remembers its previous state throughout the 92-96 degC deadband.\n* ON sets the cold-start state; the cold error also requests heat.\nVlogic logic 0 DC 1\nBerror error 0 V=94-V(boiler)\nSthermostat logic call error 0 TSTAT ON\nRcall call 0 1meg\n.model TSTAT SW(Ron=1m Roff=1e12 Vt=0 Vh=2)\n* Switch/load ratio makes call effectively 1 when on, 0 when off.\n\n.options reltol=1e-5 abstol=1e-9 vntol=1e-6\n.control\nset noaskquit\nset wr_singlescale\nset wr_vecnames\n* Seconds: 1200 s = 20 min; max step 0.05 s resolves switching edges.\n* UIC preserves the capacitor's 20 degC initial condition, avoiding a\n* hot DC operating-point start in this hysteretic feedback system.\ntran 0.1 1200 0 0.05 uic\nlet boiler_temperature_C = v(boiler)\n* Two columns (with header): time in seconds, boiler temperature in degC.\nwrdata boiler_temperature.txt boiler_temperature_C\n.endc\n.end\n",
+    "truncated": false,
+    "lines": 44
+  },
+  "output": null,
+  "notes": []
+}

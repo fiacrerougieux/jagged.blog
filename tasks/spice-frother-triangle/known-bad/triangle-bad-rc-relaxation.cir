@@ -1,0 +1,12 @@
+Relaxation oscillator: DC only, 1 kHz, 2 Vpp, but the ramps are exponential
+R1 p 0 10k
+R2 sq p 10k
+B1 sq 0 V = 2*tanh(1e4*(V(p)-V(cap)))
+R3 sq cap 4.55k
+C1 cap 0 100n ic=0.3
+.tran 1u 20m uic
+.control
+run
+wrdata carrier.txt v(cap)
+.endc
+.end

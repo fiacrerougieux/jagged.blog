@@ -1,0 +1,92 @@
+{
+  "name": "blender-cafe-table-deepseek-v4.1-flash-s1-r12",
+  "exportedAt": "2026-09-19T10:09:24.894Z",
+  "run": "2026-09-14-blender-cafe-table-1905",
+  "caseId": "blender-cafe-table",
+  "caseTitle": "Blender: café table from primitives",
+  "category": "3D and CAD",
+  "prompt": "Write a Blender Python script that builds a café table scene: an espresso cup on a saucer, a spoon, sugar cubes and a croissant. Use only primitive meshes (cube, cylinder, cone, sphere, torus).",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 12,
+  "rounds": 12,
+  "grade": null,
+  "recipe": "blender",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "glb": "model.glb",
+    "source": "scene.py"
+  },
+  "source": {
+    "file": "scene.py",
+    "lang": "python",
+    "text": "\"\"\"Cafe table scene built only from Blender primitive meshes.\"\"\"\n\nimport bpy\nimport bmesh\nimport math\nfrom mathutils import Vector, Euler\n\n# ---------------------------------------------------------------- clean scene\nfor obj in list(bpy.data.objects):\n    bpy.data.objects.remove(obj, do_unlink=True)\nfor block in (bpy.data.meshes, bpy.data.materials, bpy.data.lights,\n              bpy.data.cameras):\n    for item in list(block):\n        block.remove(item)\n\n\n# ---------------------------------------------------------------- materials\ndef make_material(name, color, roughness=0.5, metallic=0.0, specular=0.5):\n    mat = bpy.data.materials.new(name)\n    mat.use_nodes = True\n    bsdf = mat.node_tree.nodes.get(\"Principled BSDF\")\n    bsdf.inputs[\"Base Color\"].default_value = (color[0], color[1], color[2], 1.0)\n    bsdf.inputs[\"Roughness\"].default_value = roughness\n    bsdf.inputs[\"Metallic\"].default_value = metallic\n    if \"Specular\" in bsdf.inputs:\n        bsdf.inputs[\"Specular\"].default_value = specular\n    # keep a recognisable viewport colour too\n    mat.diffuse_color = (color[0], color[1], color[2], 1.0)\n    return mat\n\n\nMAT = {\n    \"porcelain\": make_material(\"Porcelain\", (0.88, 0.87, 0.82), 0.18, 0.0, 0.6),\n    \"table\":     make_material(\"Table\", (0.16, 0.075, 0.028), 0.55),\n    \"metal\":     make_material(\"Metal\", (0.72, 0.72, 0.74), 0.45, 1.0),\n    \"coffee\":    make_material(\"Coffee\", (0.23, 0.095, 0.025), 0.4),\n    \"crema\":     make_material(\"Crema\", (0.29, 0.140, 0.042), 0.5),\n    \"sugar\":     make_material(\"Sugar\", (0.88, 0.87, 0.83), 0.7),\n    \"croissant\": make_material(\"Croissant\", (0.24, 0.095, 0.016), 0.72),\n    \"floor\":     make_material(\"Floor\", (0.30, 0.28, 0.26), 0.75),\n}\n\n\ndef add(obj, material, smooth=True, name=None):\n    if name:\n        obj.name = name\n    obj.data.materials.append(material)\n    if smooth:\n        for poly in obj.data.polygons:\n            poly.use_smooth = True\n    return obj\n\n\n# ---------------------------------------------------------------- table\nbpy.ops.mesh.primitive_cylinder_add(radius=0.34, depth=0.028, location=(0, 0, -0.014))\nadd(bpy.context.active_object, MAT[\"table\"], smooth=False, name=\"TableTop\")\n\nbpy.ops.mesh.primitive_cylinder_add(radius=0.030, depth=0.44, location=(0, 0, -0.248))\nadd(bpy.context.active_object, MAT[\"table\"], name=\"TableColumn\")\n\nbpy.ops.mesh.primitive_cylinder_add(radius=0.135, depth=0.022, location=(0, 0, -0.468))\nadd(bpy.context.active_object, MAT[\"table\"], smooth=False, name=\"TableBase\")\n\n# floor\nbpy.ops.mesh.primitive_cube_add(size=2.0, location=(0, 0, -0.480))\nfloor = bpy.context.active_object\nfloor.scale = (1.0, 1.0, 0.01)\nadd(floor, MAT[\"floor\"], smooth=False, name=\"Floor\")\n\nTOP = 0.0  # table surface height\n\n\n# ---------------------------------------------------------------- saucer\nSAUCER = Vector((-0.055, 0.005, 0.0))\nbpy.ops.mesh.primitive_cylinder_add(radius=0.063, depth=0.006,\n                                    location=SAUCER + Vector((0, 0, 0.003)))\nadd(bpy.context.active_object, MAT[\"porcelain\"], smooth=False, name=\"SaucerBase\")\nbpy.ops.mesh.primitive_cone_add(radius1=0.055, radius2=0.064, depth=0.008,\n                                location=SAUCER + Vector((0, 0, 0.009)))\nadd(bpy.context.active_object, MAT[\"porcelain\"], name=\"SaucerLip\")\nbpy.ops.mesh.primitive_torus_add(major_radius=0.060, minor_radius=0.0035,\n                                 major_segments=64, minor_segments=12,\n                                 location=SAUCER + Vector((0, 0, 0.014)))\nadd(bpy.context.active_object, MAT[\"porcelain\"], name=\"SaucerRim\")\n\n# ---------------------------------------------------------------- cup\nCUP_R1 = 0.023   # bottom\nCUP_R2 = 0.030   # top\nCUP_H = 0.063\ncup_base_z = 0.010\nbpy.ops.mesh.primitive_cone_add(radius1=CUP_R1, radius2=CUP_R2, depth=CUP_H,\n                                vertices=64, end_fill_type='NOTHING',\n                                location=SAUCER + Vector((0, 0, cup_base_z + CUP_H / 2)))\nadd(bpy.context.active_object, MAT[\"porcelain\"], name=\"CupBody\")\n\n# coffee fill\ncup_top = cup_base_z + CUP_H\nbpy.ops.mesh.primitive_cylinder_add(radius=CUP_R2 * 0.86, depth=0.006, vertices=64,\n                                    location=SAUCER + Vector((0, 0, cup_top - 0.006)))\nadd(bpy.context.active_object, MAT[\"crema\"], smooth=False, name=\"Coffee\")\n\n# rolled rim gives the ceramic rim some thickness\nbpy.ops.mesh.primitive_torus_add(major_radius=CUP_R2 - 0.0015, minor_radius=0.0022,\n                                 major_segments=64, minor_segments=12,\n                                 location=SAUCER + Vector((0, 0, cup_top)))\nadd(bpy.context.active_object, MAT[\"porcelain\"], name=\"CupRim\")\n\n# handle\nHANDLE = Euler((math.radians(90), 0, math.radians(15)), 'XYZ')\nbpy.ops.mesh.primitive_torus_add(major_radius=0.0105, minor_radius=0.0028,\n                                 major_segments=48, minor_segments=12,\n                                 location=SAUCER + Vector((0.0295, 0.0, 0.038)),\n                                 rotation=HANDLE)\nadd(bpy.context.active_object, MAT[\"porcelain\"], name=\"CupHandle\")\n\n\n# ---------------------------------------------------------------- spoon\ndef make_spoon(center, phi):\n    rot = (0, 0, phi)\n    d = Vector((math.cos(phi), math.sin(phi), 0))\n    parts = []\n    # bowl (shallow flattened ellipsoid)\n    bowl_loc = Vector(center) + d * 0.036 + Vector((0, 0, 0.0050))\n    bpy.ops.mesh.primitive_uv_sphere_add(segments=40, ring_count=20, radius=1.0,\n                                         location=bowl_loc, rotation=rot)\n    bowl = bpy.context.active_object\n    bowl.scale = (0.0210, 0.0135, 0.0050)\n    parts.append(add(bowl, MAT[\"metal\"], name=\"SpoonBowl\"))\n    # neck joins bowl to handle\n    neck_loc = Vector(center) + d * 0.008 + Vector((0, 0, 0.0042))\n    bpy.ops.mesh.primitive_cube_add(size=1.0, location=neck_loc, rotation=rot)\n    neck = bpy.context.active_object\n    neck.scale = (0.0200, 0.0055, 0.0030)\n    parts.append(add(neck, MAT[\"metal\"], smooth=False, name=\"SpoonNeck\"))\n    # handle\n    handle_loc = Vector(center) - d * 0.026 + Vector((0, 0, 0.0038))\n    bpy.ops.mesh.primitive_cube_add(size=1.0, location=handle_loc, rotation=rot)\n    handle = bpy.context.active_object\n    handle.scale = (0.0480, 0.0048, 0.0030)\n    parts.append(add(handle, MAT[\"metal\"], smooth=False, name=\"SpoonHandle\"))\n    # unify into one object so it reads as a single utensil\n    bpy.ops.object.select_all(action='DESELECT')\n    for p in parts:\n        p.select_set(True)\n    bpy.context.view_layer.objects.active = parts[0]\n    bpy.ops.object.join()\n\n\nmake_spoon(Vector((-0.010, -0.080, 0.0)), math.radians(207))\n\n\n# ---------------------------------------------------------------- sugar cubes\ndef make_sugar_cube(loc, size=0.016, zrot=0.0):\n    bpy.ops.mesh.primitive_cube_add(size=1.0, location=loc,\n                                    rotation=(0, 0, zrot))\n    cube = bpy.context.active_object\n    cube.scale = (size, size, size)\n    # bevel-ish: use a slightly smaller top? keep simple\n    add(cube, MAT[\"sugar\"], smooth=False, name=\"SugarCube\")\n    return cube\n\n\nmake_sugar_cube(Vector((-0.152, 0.090, 0.0080)), zrot=math.radians(5))\nmake_sugar_cube(Vector((-0.136, 0.090, 0.0080)), zrot=math.radians(-8))\nmake_sugar_cube(Vector((-0.144, 0.090, 0.0242)), zrot=math.radians(19))\nmake_sugar_cube(Vector((-0.168, 0.070, 0.0080)), zrot=math.radians(12))\n\n\n# ---------------------------------------------------------------- croissant\ndef make_croissant(center, zrot=0.0, major=0.055, minor=0.021):\n    bpy.ops.mesh.primitive_torus_add(major_radius=major, minor_radius=minor,\n                                     major_segments=96, minor_segments=20,\n                                     location=(0, 0, 0))\n    obj = bpy.context.active_object\n    me = obj.data\n    bm = bmesh.new()\n    bm.from_mesh(me)\n\n    keep_limit = math.radians(148.0)\n\n    # delete the \"back\" arc to open the crescent\n    doomed = []\n    for v in bm.verts:\n        ang = math.atan2(v.co.y, v.co.x)\n        if abs(ang) > keep_limit:\n            doomed.append(v)\n    bmesh.ops.delete(bm, geom=doomed, context='VERTS')\n\n    # taper the arms, arch the body, add baked ridges\n    for v in bm.verts:\n        ang = math.atan2(v.co.y, v.co.x)\n        t = max(-1.0, min(1.0, ang / keep_limit))\n        taper = 0.13 + 0.87 * (math.cos(t * math.pi / 2) ** 0.95)\n        phase = t * math.pi * 6.0\n        ridge = 1.0 + 0.16 * math.cos(phase)\n        ring = Vector((major * math.cos(ang), major * math.sin(ang), 0.0))\n        arch = 0.018 * (1.0 - t * t)\n        offset = v.co - ring\n        v.co = ring + offset * (taper * ridge)\n        v.co.z += arch\n\n    # close the open ends\n    bmesh.ops.holes_fill(bm, edges=bm.edges[:], sides=0)\n    bm.to_mesh(me)\n    bm.free()\n\n    # sit on the table and place it\n    min_z = min((obj.matrix_world @ v.co).z for v in me.vertices)\n    obj.location = Vector(center) - Vector((0, 0, min_z))\n    obj.rotation_euler = (0, 0, zrot)\n    add(obj, MAT[\"croissant\"], name=\"Croissant\")\n\n\nmake_croissant(Vector((0.118, 0.050, 0.0)), zrot=math.radians(28),\n               major=0.048, minor=0.019)\n\n\n# ---------------------------------------------------------------- camera\ncam_data = bpy.data.cameras.new(\"Camera\")\ncam_data.lens = 52\ncam = bpy.data.objects.new(\"Camera\", cam_data)\nbpy.context.collection.objects.link(cam)\ncam.location = Vector((0.045, -0.50, 0.245))\ntarget = Vector((-0.02, 0.02, 0.03))\ndirection = target - cam.location\ncam.rotation_euler = direction.to_track_quat('-Z', 'Y').to_euler()\nbpy.context.scene.camera = cam\n\n\n# ---------------------------------------------------------------- lights\ndef make_area(name, loc, energy, size, rot, color=(1.0, 1.0, 1.0)):\n    data = bpy.data.lights.new(name, 'AREA')\n    data.energy = energy\n    data.size = size\n    data.color = color\n    obj = bpy.data.objects.new(name, data)\n    obj.location = loc\n    obj.rotation_euler = rot\n    bpy.context.collection.objects.link(obj)\n    return obj\n\n\nmake_area(\"KeyLight\", (-0.42, -0.38, 0.52), 18.0, 0.35,\n          (math.radians(52), 0, math.radians(-42)), (1.0, 0.90, 0.78))\nmake_area(\"FillLight\", (0.48, -0.22, 0.34), 6.0, 0.45,\n          (math.radians(62), 0, math.radians(58)), (0.92, 0.95, 1.0))\nmake_area(\"RimLight\", (0.18, 0.50, 0.40), 7.0, 0.30,\n          (math.radians(118), 0, math.radians(200)), (1.0, 0.85, 0.7))\n\nworld = bpy.data.worlds.new(\"World\")\nbpy.context.scene.world = world\nworld.use_nodes = True\nbg = world.node_tree.nodes[\"Background\"]\nbg.inputs[\"Color\"].default_value = (0.09, 0.075, 0.055, 1.0)\nbg.inputs[\"Strength\"].default_value = 0.4\nbpy.context.scene.view_settings.exposure = -0.5\n\n# nice filmic output if available\ntry:\n    bpy.context.scene.view_settings.view_transform = 'Filmic'\nexcept Exception:\n    pass",
+    "truncated": false,
+    "lines": 262
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": null
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": null
+    },
+    {
+      "round": 5,
+      "png": null,
+      "pass": null
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": null
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": null
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": null
+    },
+    {
+      "round": 9,
+      "png": "rounds/009.jpg",
+      "pass": null
+    },
+    {
+      "round": 10,
+      "png": "rounds/010.jpg",
+      "pass": null
+    },
+    {
+      "round": 11,
+      "png": "rounds/011.jpg",
+      "pass": null
+    },
+    {
+      "round": 12,
+      "png": "rounds/012.jpg",
+      "pass": null
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+* Espresso machine boiler -- lumped thermal model as an electrical analogue
+* ---------------------------------------------------------------------------
+* Analogy between the thermal and electrical domains:
+*     voltage      [V]   = temperature        [degC]
+*     current      [A]   = heat flow          [W]
+*     capacitance  [F]   = thermal mass       [J/K]
+*     resistance   [ohm] = thermal resistance [K/W]
+* Node b is the boiler temperature; node amb is the room-temperature reference.
+* ---------------------------------------------------------------------------
+
+.param Tamb    = 20        $ ambient / room temperature (degC)
+.param Cth     = 5000      $ boiler thermal mass (J/K)
+.param Rth     = 0.7       $ boiler-to-ambient thermal resistance (K/W)
+.param Pheater = 1300      $ heater power when energised (W)
+.param Rsense  = 1         $ sense resistor that turns the heater into a current source
+.param Tlow    = 92        $ thermostat lower set point (degC)
+.param Thigh   = 96        $ thermostat upper set point (degC)
+
+* --- Thermal mass: capacitor from boiler node to ground ---------------------
+Cth b 0 {Cth} IC={Tamb}
+
+* --- Ambient reference and heat loss: resistor to the ambient source --------
+Vamb  amb 0 dc {Tamb}
+Rloss b   amb {Rth}
+
+* --- Heater: forces an exact current Pheater into the boiler node b ---------
+* The E source lifts the top of the sense resistor to V(b)+P*Rsense, so while
+* the thermostat switch is closed the current through it is exactly Pheater
+* (1 A of current = 1 W of heat in this analogy).
+Eheat hsup 0 VALUE = { V(b) + Pheater*Rsense }
+Rs    hsup hmid {Rsense}
+
+* --- Thermostat: voltage-controlled switch with hysteresis ------------------
+* Control voltage = 94 - T.  The switch closes when T < 92 and opens when
+* T > 96, which is the 4 degC dead band of a real espresso thermostat.
+Ssw   hmid b ctrl 0 swmod
+Ectrl ctrl 0 VALUE = { (Tlow+Thigh)/2 - V(b) }
+.model swmod sw(vt=0 vh={(Thigh-Tlow)/2} ron=1m roff=1G)
+
+* --- Simulation: first 20 minutes from cold, then save for plotting ---------
+.control
+tran 0.2 1200 uic
+* boiler temperature
+wrdata boiler_temp.txt v(b)
+* flat traces that mark the 92 degC and 96 degC thermostat limits
+let lowset  = 92 + 0*time
+let highset = 96 + 0*time
+wrdata thermostat_band_92_96.txt lowset highset
+.endc
+.end

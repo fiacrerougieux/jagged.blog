@@ -1,0 +1,1 @@
+Draw a Mermaid stateDiagram-v2 for a café coffee order. An order is placed, paid, queued, brewed and collected, and it can be cancelled at any point before it is collected. Money goes back only if it was taken. Label every transition with exactly one of these events: pay, queue, start, finish, collect, cancel, refund.

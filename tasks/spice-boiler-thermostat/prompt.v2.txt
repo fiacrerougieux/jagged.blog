@@ -1,0 +1,1 @@
+Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.

@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:s="https://github.com/nturley/netlistsvg" width="676" height="493">
+  <style>svg {
+    stroke: #000;
+    fill: none;
+  }
+  text {
+    fill: #000;
+    stroke: none;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill: #000;
+  }
+  .symbol {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 2;
+  }
+  .detail {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: #000;
+  }</style>
+  <g s:type="voltage_source" s:width="32" s:height="52" transform="translate(343.03999999999996,32)" id="cell_VAMB">
+    <s:alias val="v"/>
+    <text x="35" y="20" s:attribute="ref" class="cell_VAMB">VAMB</text>
+    <text x="35" y="35" s:attribute="value" class="cell_VAMB">dc 20</text>
+    <circle cx="16" cy="26" r="16" class="symbol cell_VAMB"/>
+    <path d="M16,10 V42" class="detail cell_VAMB"/>
+    <path d="M16,0 V10 M16,42 V52" class="connect cell_VAMB"/>
+    <g s:x="16" s:y="0" s:pid="+" s:position="top"/>
+    <g s:x="16" s:y="52" s:pid="-" s:position="bottom"/>
+  </g>
+  <g s:type="resistor_h" s:width="50" s:height="10" transform="translate(484.03999999999996,396)" id="cell_RLOSS">
+    <s:alias val="r_h"/>
+    <text class="nodelabel cell_RLOSS" x="25" y="-5" s:attribute="ref">RLOSS</text>
+    <text class="nodelabel cell_RLOSS" x="25" y="20" s:attribute="value">0.1</text>
+    <path d="M10,0 H40 V10 H10 Z" class="symbol cell_RLOSS"/>
+    <path d="M0,5 H10 M40,5 H50" class="connect cell_RLOSS"/>
+    <g s:x="0" s:y="5" s:pid="A" s:position="left"/>
+    <g s:x="50" s:y="5" s:pid="B" s:position="right"/>
+  </g>
+  <g s:type="capacitor_v" s:width="30" s:height="50" transform="translate(134.03999999999996,34)" id="cell_CTH">
+    <s:alias val="c_v"/>
+    <text x="25" y="10" s:attribute="ref" class="cell_CTH">CTH</text>
+    <text x="25" y="45" s:attribute="value" class="cell_CTH">3000</text>
+    <path d="M0,20 H30 M0,30 H30" class="symbol cell_CTH"/>
+    <path d="M15,0 V20 M15,30 V50" class="connect cell_CTH"/>
+    <g s:x="15" s:y="0" s:pid="A" s:position="top"/>
+    <g s:x="15" s:y="50" s:pid="B" s:position="bottom"/>
+  </g>
+  <g s:type="voltage_source" s:width="32" s:height="52" transform="translate(237.03999999999996,207)" id="cell_VBCTRL">
+    <s:alias val="v"/>
+    <text x="35" y="20" s:attribute="ref" class="cell_VBCTRL">VBCTRL</text>
+    <text x="35" y="35" s:attribute="value" class="cell_VBCTRL">BCTRL: 100 - V(T)</text>
+    <circle cx="16" cy="26" r="16" class="symbol cell_VBCTRL"/>
+    <path d="M16,10 V42" class="detail cell_VBCTRL"/>
+    <path d="M16,0 V10 M16,42 V52" class="connect cell_VBCTRL"/>
+    <g s:x="16" s:y="0" s:pid="+" s:position="top"/>
+    <g s:x="16" s:y="52" s:pid="-" s:position="bottom"/>
+  </g>
+  <g s:type="voltage_source" s:width="32" s:height="52" transform="translate(67.03999999999996,32)" id="cell_VSUP">
+    <s:alias val="v"/>
+    <text x="35" y="20" s:attribute="ref" class="cell_VSUP">VSUP</text>
+    <text x="35" y="35" s:attribute="value" class="cell_VSUP">dc 1</text>
+    <circle cx="16" cy="26" r="16" class="symbol cell_VSUP"/>
+    <path d="M16,10 V42" class="detail cell_VSUP"/>
+    <path d="M16,0 V10 M16,42 V52" class="connect cell_VSUP"/>
+    <g s:x="16" s:y="0" s:pid="+" s:position="top"/>
+    <g s:x="16" s:y="52" s:pid="-" s:position="bottom"/>
+  </g>
+  <g s:type="generic" s:width="30" s:height="40" transform="translate(178.03999999999996,114)" id="cell_S1">
+    <text x="15" y="-4" class="nodelabel cell_S1" s:attribute="ref">S1</text>
+    <rect width="30" height="60" x="0" y="0" s:generic="body" class="cell_S1"/><text x="15" y="73" text-anchor="middle" font-family="Courier New, monospace" font-size="10" font-weight="bold">switch S1</text>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" s:position="left" id="port_S1~B">
+      <text x="-3" y="-4" class="inputPortLabel cell_S1">B</text>
+    </g>
+    <g transform="translate(0,30)" s:x="0" s:y="10" s:pid="in0" s:position="left" id="port_S1~C">
+      <text x="-3" y="-4" class="inputPortLabel cell_S1">C</text>
+    </g>
+    <g transform="translate(0,50)" s:x="0" s:y="10" s:pid="in0" s:position="left" id="port_S1~D">
+      <text x="-3" y="-4" class="inputPortLabel cell_S1">D</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" s:position="right" id="port_S1~A">
+      <text x="5" y="-4" class="cell_S1">A</text>
+    </g>
+  </g>
+  <g s:type="resistor_h" s:width="50" s:height="10" transform="translate(299.03999999999996,290)" id="cell_RGATE">
+    <s:alias val="r_h"/>
+    <text class="nodelabel cell_RGATE" x="25" y="-5" s:attribute="ref">RGATE</text>
+    <text class="nodelabel cell_RGATE" x="25" y="20" s:attribute="value">1e6</text>
+    <path d="M10,0 H40 V10 H10 Z" class="symbol cell_RGATE"/>
+    <path d="M0,5 H10 M40,5 H50" class="connect cell_RGATE"/>
+    <g s:x="0" s:y="5" s:pid="A" s:position="left"/>
+    <g s:x="50" s:y="5" s:pid="B" s:position="right"/>
+  </g>
+  <g s:type="current_source" s:width="32" s:height="52" transform="translate(133.03999999999996,335)" id="cell_IBHEAT">
+    <s:alias val="i"/>
+    <text x="35" y="20" s:attribute="ref" class="cell_IBHEAT">IBHEAT</text>
+    <text x="35" y="35" s:attribute="value" class="cell_IBHEAT">BHEAT: 1200 * V(gate)</text>
+    <circle cx="16" cy="26" r="16" class="symbol cell_IBHEAT"/>
+    <path d="M0,26 H32" class="detail cell_IBHEAT"/>
+    <path d="M16,0 V10 M16,42 V52" class="connect cell_IBHEAT"/>
+    <g s:x="16" s:y="0" s:pid="+" s:position="top"/>
+    <g s:x="16" s:y="52" s:pid="-" s:position="bottom"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(404.03999999999996,350)" id="cell_GND1">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND1" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND1"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(78.03999999999996,350)" id="cell_GND2">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND2" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND2"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(459.03999999999996,350)" id="cell_GND3">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND3" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND3"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(349.03999999999996,350)" id="cell_GND4">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND4" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND4"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(514.04,350)" id="cell_GND5">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND5" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND5"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(294.03999999999996,350)" id="cell_GND6">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND6" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND6"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <g s:type="gnd" s:width="20" s:height="30" transform="translate(23.039999999999964,350)" id="cell_GND7">
+    <s:alias val="gnd"/>
+    <text x="30" y="20" class="nodelabel cell_GND7" s:attribute="name"></text>
+    <path d="M0,0 H20 M3,5 H17 M7,10 H13 M10,0 V-15" class="cell_GND7"/>
+    <g s:x="10" s:y="-15" s:pid="A" s:position="top"/>
+  </g>
+  <line x1="534.04" x2="544.04" y1="401" y2="401" class="net_2"/>
+  <line x1="544.04" x2="544.04" y1="401" y2="22" class="net_2"/>
+  <line x1="544.04" x2="359.03999999999996" y1="22" y2="22" class="net_2"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="22" y2="32" class="net_2"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="387" y2="401" class="net_4"/>
+  <line x1="149.03999999999996" x2="484.03999999999996" y1="401" y2="401" class="net_4"/>
+  <line x1="484.03999999999996" x2="149.03999999999996" y1="401" y2="401" class="net_4"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="401" y2="401" class="net_4"/>
+  <line x1="149.03999999999996" x2="12.039999999999964" y1="401" y2="401" class="net_4"/>
+  <line x1="12.039999999999964" x2="12.039999999999964" y1="401" y2="12" class="net_4"/>
+  <line x1="12.039999999999964" x2="149.03999999999996" y1="12" y2="12" class="net_4"/>
+  <circle cx="149.03999999999996" cy="401" r="2" style="fill:#000" class="net_4"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="12" y2="34" class="net_4"/>
+  <line x1="178.03999999999996" x2="47.039999999999964" y1="144.5" y2="144.5" class="net_5"/>
+  <line x1="47.039999999999964" x2="47.039999999999964" y1="144.5" y2="197" class="net_5"/>
+  <line x1="47.039999999999964" x2="253.03999999999996" y1="197" y2="197" class="net_5"/>
+  <line x1="253.03999999999996" x2="253.03999999999996" y1="197" y2="207" class="net_5"/>
+  <line x1="178.03999999999996" x2="57.039999999999964" y1="124.5" y2="124.5" class="net_6"/>
+  <line x1="57.039999999999964" x2="57.039999999999964" y1="124.5" y2="22" class="net_6"/>
+  <line x1="57.039999999999964" x2="83.03999999999996" y1="22" y2="22" class="net_6"/>
+  <line x1="83.03999999999996" x2="83.03999999999996" y1="22" y2="32" class="net_6"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="84" y2="94" class="net_3"/>
+  <line x1="359.03999999999996" x2="149.03999999999996" y1="94" y2="94" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="94" y2="164.5" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="178.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="84" y2="295" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="349.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="84" y2="164.5" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="178.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="84" y2="94" class="net_3"/>
+  <line x1="149.03999999999996" x2="359.03999999999996" y1="94" y2="94" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="94" y2="295" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="349.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="253.03999999999996" x2="253.03999999999996" y1="259" y2="269" class="net_3"/>
+  <line x1="253.03999999999996" x2="349.03999999999996" y1="269" y2="269" class="net_3"/>
+  <line x1="349.03999999999996" x2="349.03999999999996" y1="269" y2="187" class="net_3"/>
+  <line x1="349.03999999999996" x2="149.03999999999996" y1="187" y2="187" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="187" y2="164.5" class="net_3"/>
+  <circle cx="349.03999999999996" cy="187" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="349.03999999999996" cy="269" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="178.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="253.03999999999996" x2="253.03999999999996" y1="259" y2="269" class="net_3"/>
+  <line x1="253.03999999999996" x2="359.03999999999996" y1="269" y2="269" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="269" y2="295" class="net_3"/>
+  <circle cx="359.03999999999996" cy="269" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="349.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="83.03999999999996" x2="83.03999999999996" y1="84" y2="94" class="net_3"/>
+  <line x1="83.03999999999996" x2="149.03999999999996" y1="94" y2="94" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="94" y2="164.5" class="net_3"/>
+  <circle cx="149.03999999999996" cy="94" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="178.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="83.03999999999996" x2="83.03999999999996" y1="84" y2="94" class="net_3"/>
+  <line x1="83.03999999999996" x2="359.03999999999996" y1="94" y2="94" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="94" y2="295" class="net_3"/>
+  <circle cx="359.03999999999996" cy="94" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="349.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="187" class="net_3"/>
+  <line x1="149.03999999999996" x2="469.03999999999996" y1="187" y2="187" class="net_3"/>
+  <line x1="469.03999999999996" x2="469.03999999999996" y1="187" y2="325" class="net_3"/>
+  <line x1="469.03999999999996" x2="414.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="149.03999999999996" cy="187" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="414.03999999999996" x2="414.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="325" class="net_3"/>
+  <line x1="149.03999999999996" x2="88.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="88.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="88.03999999999996" x2="88.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="187" class="net_3"/>
+  <line x1="149.03999999999996" x2="469.03999999999996" y1="187" y2="187" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="469.03999999999996" x2="469.03999999999996" y1="187" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="187" class="net_3"/>
+  <line x1="149.03999999999996" x2="469.03999999999996" y1="187" y2="187" class="net_3"/>
+  <line x1="469.03999999999996" x2="469.03999999999996" y1="187" y2="325" class="net_3"/>
+  <line x1="469.03999999999996" x2="359.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="187" class="net_3"/>
+  <line x1="149.03999999999996" x2="469.03999999999996" y1="187" y2="187" class="net_3"/>
+  <line x1="469.03999999999996" x2="469.03999999999996" y1="187" y2="325" class="net_3"/>
+  <line x1="469.03999999999996" x2="524.04" y1="325" y2="325" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="524.04" x2="524.04" y1="325" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="325" class="net_3"/>
+  <line x1="149.03999999999996" x2="304.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="304.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="304.03999999999996" x2="304.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="178.03999999999996" x2="149.03999999999996" y1="164.5" y2="164.5" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="164.5" y2="325" class="net_3"/>
+  <line x1="149.03999999999996" x2="33.039999999999964" y1="325" y2="325" class="net_3"/>
+  <circle cx="149.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="149.03999999999996" cy="164.5" r="2" style="fill:#000" class="net_3"/>
+  <line x1="33.039999999999964" x2="33.039999999999964" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="149.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="359.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="149.03999999999996" x2="149.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="414.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="414.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="414.03999999999996" x2="414.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="88.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="88.03999999999996" x2="88.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="469.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="469.03999999999996" cy="325" r="2" style="fill:#000" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="469.03999999999996" x2="469.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="524.04" y1="325" y2="325" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="524.04" x2="524.04" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="304.03999999999996" y1="325" y2="325" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="304.03999999999996" x2="304.03999999999996" y1="325" y2="335" class="net_3"/>
+  <line x1="349.03999999999996" x2="359.03999999999996" y1="295" y2="295" class="net_3"/>
+  <line x1="359.03999999999996" x2="359.03999999999996" y1="295" y2="325" class="net_3"/>
+  <line x1="359.03999999999996" x2="33.039999999999964" y1="325" y2="325" class="net_3"/>
+  <circle cx="359.03999999999996" cy="295" r="2" style="fill:#000" class="net_3"/>
+  <line x1="33.039999999999964" x2="33.039999999999964" y1="325" y2="335" class="net_3"/>
+  <line x1="209.03999999999996" x2="226.03999999999996" y1="124.5" y2="124.5" class="net_7"/>
+  <line x1="226.03999999999996" x2="226.03999999999996" y1="124.5" y2="295" class="net_7"/>
+  <line x1="226.03999999999996" x2="299.03999999999996" y1="295" y2="295" class="net_7"/>
+</svg>

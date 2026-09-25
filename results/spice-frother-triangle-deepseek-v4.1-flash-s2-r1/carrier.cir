@@ -1,0 +1,36 @@
+* 1 kHz triangle-wave carrier, 2 V peak-to-peak, self-oscillating
+* Only DC supplies are used; the oscillation comes from the circuit itself.
+*
+* Topology: an inverting integrator (E_int + R_int + C_int) is driven by a
+* Schmitt-trigger comparator (B_cmp with positive feedback Ra/Rb).
+* The comparator output swings between the DC rails (+/-12 V), and the
+* feedback network sets the hysteresis thresholds to +/-1 V, so the
+* integrator output (the carrier) is a 2 Vpp triangle.
+*
+* f = (Vsat) / (4 * Vth * R_int * C_int) = 12 / (4*1*30k*100n) = 1 kHz
+
+* --- DC supplies ---
+Vcc  vcc 0 DC  12
+Vee  vee 0 DC -12
+
+* --- Integrator (op-amp 1) ---
+* ideal op-amp: V(tri) = -A*V(inv1)
+E_int tri 0 0 inv1 100000
+R_int comp inv1 30k
+C_int tri inv1 100n ic=0.1
+R_dc  tri inv1 1Meg          $ DC feedback path so the bias point exists
+
+* --- Schmitt-trigger comparator (op-amp 2) ---
+* saturating comparator: output is the +/-12 V rail span, soft-clipped
+B_cmp comp 0 V = 0.5*(V(vcc)-V(vee))*tanh(1000*(V(p2)-V(n2)))
+Rn2  n2  0  1
+* positive feedback network: V+ = (12*V(tri) + V(comp))/13
+Ra   tri p2 1k
+Rb   comp p2 12k
+Cp2  p2  0  1n
+
+.control
+tran 1u 20m uic
+wrdata carrier.txt v(tri)
+.endc
+.end

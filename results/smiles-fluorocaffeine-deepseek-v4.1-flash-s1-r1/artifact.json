@@ -1,0 +1,32 @@
+{
+  "name": "smiles-fluorocaffeine-deepseek-v4.1-flash-s1-r1",
+  "exportedAt": "2026-09-22T04:19:26.570Z",
+  "run": "2026-09-21-smiles-fluorocaffeine-2302",
+  "caseId": "smiles-fluorocaffeine",
+  "caseTitle": "SMILES: caffeine with three CF3 groups",
+  "category": "Chemistry and biology",
+  "prompt": "Give the SMILES for caffeine with all three N-methyl groups replaced by trifluoromethyl groups.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "Correct. Formula C8HF9N4O2, three N-CF3 groups, no N-methyl remaining."
+  },
+  "recipe": "smiles",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "molecule.smi"
+  },
+  "source": {
+    "file": "molecule.smi",
+    "lang": "plaintext",
+    "text": "O=c1c2c(ncn2C(F)(F)F)n(C(F)(F)F)c(=O)n1C(F)(F)F\n",
+    "truncated": false,
+    "lines": 2
+  },
+  "output": null,
+  "notes": []
+}

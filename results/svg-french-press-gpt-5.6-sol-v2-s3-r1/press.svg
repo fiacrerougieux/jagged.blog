@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Exploded assembly of a French press</title>
+  <desc id="desc">Technical illustration showing knob, plunger rod, lid, spiral plate, mesh screen, cross plate, retaining nut, and glass carafe with handle, separated along the assembly axis.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f5ed"/><stop offset="1" stop-color="#eee9dc"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6d7a80"/><stop offset=".2" stop-color="#eef2ef"/><stop offset=".42" stop-color="#89969a"/><stop offset=".67" stop-color="#fafbf7"/><stop offset="1" stop-color="#667379"/></linearGradient>
+    <linearGradient id="darkSteel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#303c42"/><stop offset=".45" stop-color="#aeb8b8"/><stop offset=".65" stop-color="#465359"/><stop offset="1" stop-color="#212c32"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#bcdbe0" stop-opacity=".18"/><stop offset=".18" stop-color="#fff" stop-opacity=".72"/><stop offset=".42" stop-color="#b9d8dc" stop-opacity=".22"/><stop offset=".76" stop-color="#fff" stop-opacity=".54"/><stop offset="1" stop-color="#85b2bb" stop-opacity=".22"/></linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7d4b2a"/><stop offset="1" stop-color="#392218"/></linearGradient>
+    <radialGradient id="knob" cx="38%" cy="28%"><stop stop-color="#667078"/><stop offset=".35" stop-color="#303b42"/><stop offset="1" stop-color="#121b20"/></radialGradient>
+    <pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><path d="M0 0V6M3 0V6" stroke="#3f5056" stroke-width=".55" opacity=".7"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feOffset dy="5"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M1 1L7 4 1 7" fill="none" stroke="#ad6d39" stroke-width="1.4"/></marker>
+    <style>
+      .ink{stroke:#223238;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}.fine{stroke:#4e6268;stroke-width:1.2;fill:none}.ghost{stroke:#a5b0ad;stroke-width:1.2;stroke-dasharray:5 7;fill:none}.leader{stroke:#64767a;stroke-width:1.3;fill:none}.partno{fill:#ad6d39;font:700 13px system-ui,sans-serif;letter-spacing:.1em}.label{fill:#25363b;font:700 16px system-ui,sans-serif;letter-spacing:.035em}.sub{fill:#6d7b7d;font:12px system-ui,sans-serif;letter-spacing:.02em}.tiny{fill:#69787a;font:11px system-ui,sans-serif}.dim{fill:#ad6d39;font:700 11px system-ui,sans-serif;letter-spacing:.1em}.white{fill:#fff}
+    </style>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <path d="M50 63H1150M50 838H1150" stroke="#d7d0c2"/>
+  <text x="58" y="42" fill="#223238" font-family="system-ui,sans-serif" font-size="21" font-weight="800" letter-spacing=".16em">FRENCH PRESS</text>
+  <text x="1143" y="42" text-anchor="end" class="sub">EXPLODED ASSEMBLY • STANDARD 3-PIECE FILTER</text>
+
+  <!-- center assembly axis -->
+  <path d="M600 73V815" class="ghost"/>
+  <path d="M600 218V238M600 326V346M600 395V411M600 447V461M600 494V510M600 541V558" stroke="#ad6d39" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <!-- 01 knob -->
+  <g filter="url(#shadow)">
+    <path d="M573 96C573 78 585 69 600 69s27 9 27 27v19c0 11-12 18-27 18s-27-7-27-18z" fill="url(#knob)" class="ink"/>
+    <ellipse cx="600" cy="96" rx="27" ry="12" fill="#3e4b52" opacity=".55"/>
+    <path d="M580 91c5-13 27-19 39-4" stroke="#8a9498" stroke-width="2" fill="none" opacity=".6"/>
+    <rect x="593" y="130" width="14" height="13" rx="3" fill="url(#darkSteel)" class="ink"/>
+  </g>
+
+  <!-- rod upper and lower, interrupted by lid -->
+  <path d="M595 141h10v85h-10z" fill="url(#steel)" class="ink"/>
+  <path d="M597 146v74" stroke="#fff" opacity=".7"/>
+
+  <!-- 02 lid in perspective -->
+  <g filter="url(#shadow)">
+    <path d="M478 248c8-22 55-38 122-38s114 16 122 38v26c-7 24-55 41-122 41s-115-17-122-41z" fill="url(#darkSteel)" class="ink"/>
+    <ellipse cx="600" cy="248" rx="122" ry="38" fill="url(#steel)" class="ink"/>
+    <ellipse cx="600" cy="247" rx="105" ry="29" fill="#f6f5ee" opacity=".18" stroke="#dfe4e1" stroke-width="1.2"/>
+    <path d="M482 259c31 22 74 29 118 29s89-8 118-29" class="fine" opacity=".8"/>
+    <ellipse cx="600" cy="247" rx="14" ry="7" fill="#253238" class="ink"/>
+    <ellipse cx="600" cy="246" rx="5" ry="3" fill="#dce3e0"/>
+    <!-- lid thumb tab -->
+    <path d="M714 241l26 4c9 1 12 7 7 12l-24 12z" fill="url(#darkSteel)" class="ink"/>
+  </g>
+  <path d="M595 254h10v109h-10z" fill="url(#steel)" class="ink"/>
+  <path d="M597 262v95" stroke="#fff" opacity=".65"/>
+
+  <!-- rod coupling above plates -->
+  <g filter="url(#shadow)"><path d="M589 361h22l-3 17h-16z" fill="url(#darkSteel)" class="ink"/><path d="M591 366h18M591 371h18" class="fine"/></g>
+
+  <!-- 03 spiral plate, top filter element -->
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="417" rx="91" ry="24" fill="url(#steel)" class="ink"/>
+    <ellipse cx="600" cy="417" rx="70" ry="17" fill="#839196" opacity=".58" class="ink"/>
+    <ellipse cx="600" cy="417" rx="55" ry="12" fill="#dce1de" opacity=".5" class="fine"/>
+    <ellipse cx="600" cy="417" rx="10" ry="5" fill="#233137" class="ink"/>
+    <!-- coiled spring rim -->
+    <path d="M510 414q5-11 10 0t10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0 10 0" fill="none" stroke="#26363b" stroke-width="2.2"/>
+  </g>
+
+  <!-- 04 mesh screen -->
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="467" rx="91" ry="24" fill="#b7c2c0" class="ink"/>
+    <ellipse cx="600" cy="467" rx="85" ry="21" fill="url(#mesh)" stroke="#4a5a5e" stroke-width="1.3"/>
+    <ellipse cx="600" cy="467" rx="10" ry="5" fill="#e5e6df" class="ink"/>
+    <path d="M517 460c21 13 53 20 85 20 31 0 61-7 81-19" class="fine" opacity=".8"/>
+  </g>
+
+  <!-- 05 cross plate -->
+  <g filter="url(#shadow)">
+    <ellipse cx="600" cy="516" rx="88" ry="23" fill="url(#steel)" class="ink"/>
+    <ellipse cx="600" cy="516" rx="79" ry="19" fill="#ced5d2" class="fine"/>
+    <path d="M527 510l146 12M532 526l136-20M594 497l12 38" stroke="#405158" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="600" cy="516" rx="10" ry="5" fill="#25343a" class="ink"/>
+    <path d="M539 504l-6 8M661 528l7-8" stroke="#fff" stroke-width="1.2" opacity=".65"/>
+  </g>
+
+  <!-- 06 retaining nut -->
+  <g filter="url(#shadow)">
+    <path d="M587 552l7-7h13l7 7-5 13h-18z" fill="url(#darkSteel)" class="ink"/>
+    <ellipse cx="600" cy="552" rx="13" ry="6" fill="url(#steel)" class="ink"/>
+    <ellipse cx="600" cy="552" rx="4" ry="2" fill="#29383e"/>
+  </g>
+
+  <!-- 07 carafe -->
+  <g filter="url(#shadow)">
+    <!-- handle behind glass -->
+    <path d="M752 627c83-6 117 25 112 84-4 54-37 84-101 78l-5-34c44 4 65-11 69-49 4-34-14-49-69-45z" fill="#243139" class="ink"/>
+    <path d="M773 649c53-1 73 16 69 59-3 39-24 58-72 58l-3-14c36-2 53-15 56-45 3-29-12-40-52-41z" fill="#edeadf" class="ink"/>
+    <!-- glass body -->
+    <path d="M438 607c6 69 11 139 23 189 5 22 58 36 139 36s134-14 139-36c12-50 17-120 23-189z" fill="url(#glass)" class="ink"/>
+    <!-- coffee fill -->
+    <path d="M453 714c3 30 7 60 13 84 5 18 56 29 134 29s129-11 134-29c6-24 10-54 13-84z" fill="url(#coffee)" opacity=".88"/>
+    <ellipse cx="600" cy="714" rx="147" ry="34" fill="#754126" opacity=".96" class="ink"/>
+    <ellipse cx="600" cy="708" rx="137" ry="27" fill="#a66a3d" opacity=".28"/>
+    <!-- rim -->
+    <path d="M430 600v18c0 23 76 42 170 42s170-19 170-42v-18z" fill="url(#steel)" class="ink"/>
+    <ellipse cx="600" cy="600" rx="170" ry="45" fill="url(#darkSteel)" class="ink"/>
+    <ellipse cx="600" cy="598" rx="151" ry="35" fill="#d7ebe9" fill-opacity=".43" class="ink"/>
+    <ellipse cx="600" cy="599" rx="139" ry="30" fill="#f4f1e8" fill-opacity=".72" stroke="#789197" stroke-width="1.2"/>
+    <!-- glass highlights -->
+    <path d="M472 639c4 62 8 100 17 140" stroke="#fff" stroke-width="8" opacity=".46" fill="none" stroke-linecap="round"/>
+    <path d="M710 638c-2 32-4 55-7 76" stroke="#fff" stroke-width="3" opacity=".38" fill="none"/>
+    <!-- bottom base -->
+    <path d="M462 797v16c6 20 59 32 138 32s132-12 138-32v-16c-9 18-61 29-138 29s-129-11-138-29z" fill="url(#darkSteel)" class="ink"/>
+  </g>
+
+  <!-- left labels -->
+  <g>
+    <path d="M572 102H347l-28 0" class="leader"/><circle cx="572" cy="102" r="3" fill="#ad6d39"/>
+    <text x="307" y="98" text-anchor="end" class="partno">01</text><text x="307" y="118" text-anchor="end" class="label">PRESS KNOB</text>
+    <path d="M594 183H389l-28 22h-42" class="leader"/><circle cx="594" cy="183" r="3" fill="#ad6d39"/>
+    <text x="307" y="201" text-anchor="end" class="partno">02</text><text x="307" y="221" text-anchor="end" class="label">PLUNGER ROD</text>
+    <path d="M480 260H390l-27 10h-44" class="leader"/><circle cx="480" cy="260" r="3" fill="#ad6d39"/>
+    <text x="307" y="266" text-anchor="end" class="partno">03</text><text x="307" y="286" text-anchor="end" class="label">VENTED LID</text><text x="307" y="302" text-anchor="end" class="sub">steel collar</text>
+    <path d="M511 414H405l-29-12h-57" class="leader"/><circle cx="511" cy="414" r="3" fill="#ad6d39"/>
+    <text x="307" y="399" text-anchor="end" class="partno">04</text><text x="307" y="419" text-anchor="end" class="label">SPIRAL PLATE</text><text x="307" y="435" text-anchor="end" class="sub">spring-edged top plate</text>
+    <path d="M511 466H405l-29 8h-57" class="leader"/><circle cx="511" cy="466" r="3" fill="#ad6d39"/>
+    <text x="307" y="471" text-anchor="end" class="partno">05</text><text x="307" y="491" text-anchor="end" class="label">MESH SCREEN</text><text x="307" y="507" text-anchor="end" class="sub">fine stainless filter</text>
+  </g>
+
+  <!-- right labels -->
+  <g>
+    <path d="M685 514h104l29-12h52" class="leader"/><circle cx="685" cy="514" r="3" fill="#ad6d39"/>
+    <text x="882" y="499" class="partno">06</text><text x="882" y="519" class="label">CROSS PLATE</text><text x="882" y="535" class="sub">rigid lower support</text>
+    <path d="M612 558h176l30 10h52" class="leader"/><circle cx="612" cy="558" r="3" fill="#ad6d39"/>
+    <text x="882" y="565" class="partno">07</text><text x="882" y="585" class="label">RETAINING NUT</text>
+    <path d="M758 687h62l27-26h23" class="leader"/><circle cx="758" cy="687" r="3" fill="#ad6d39"/>
+    <text x="882" y="657" class="partno">08</text><text x="882" y="677" class="label">GLASS CARAFE</text><text x="882" y="693" class="sub">frame, handle &amp; base</text>
+  </g>
+
+  <!-- assembly key -->
+  <g transform="translate(58 762)">
+    <rect width="276" height="61" rx="5" fill="#f4f0e6" stroke="#d3ccbe"/>
+    <text x="15" y="20" class="dim">ASSEMBLY ORDER</text>
+    <text x="15" y="40" class="tiny">Spiral plate  →  mesh  →  cross plate</text>
+    <text x="15" y="54" class="tiny">Secure from below with retaining nut.</text>
+  </g>
+  <text x="1143" y="865" text-anchor="end" class="tiny">DIAGRAMMATIC • NOT TO SCALE</text>
+</svg>

@@ -1,0 +1,45 @@
+{
+  "name": "mermaid-order-cancel-deepseek-v4.1-flash-s3-r2",
+  "exportedAt": "2026-09-22T04:16:59.694Z",
+  "run": "2026-09-22-mermaid-order-cancel-1230",
+  "caseId": "mermaid-order-cancel",
+  "caseTitle": "Mermaid: a café order that can be cancelled",
+  "category": "Diagram DSLs",
+  "prompt": "Draw a Mermaid stateDiagram-v2 for a café coffee order. An order is placed, paid, queued, brewed and collected, and it can be cancelled at any point before it is collected. Money goes back only if it was taken. Label every transition with exactly one of these events: pay, queue, start, finish, collect, cancel, refund.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 3,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "snap-mermaid",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "order.mmd"
+  },
+  "source": {
+    "file": "order.mmd",
+    "lang": "mermaid",
+    "text": "stateDiagram-v2\n    Placed --> Paid : pay\n    Paid --> Queued : queue\n    Queued --> Brewing : start\n    Brewing --> Brewed : finish\n    Brewed --> Collected : collect\n\n    Placed --> Cancelled : cancel\n    Paid --> Refunding : cancel\n    Queued --> Refunding : cancel\n    Brewing --> Refunding : cancel\n    Brewed --> Refunding : cancel\n    Refunding --> Cancelled : refund",
+    "truncated": false,
+    "lines": 13
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": true
+    }
+  ]
+}

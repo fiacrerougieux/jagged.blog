@@ -1,0 +1,1 @@
+Write a Blender Python script that builds a café table scene: an espresso cup on a saucer, a spoon, sugar cubes and a croissant. Use only primitive meshes (cube, cylinder, cone, sphere, torus).

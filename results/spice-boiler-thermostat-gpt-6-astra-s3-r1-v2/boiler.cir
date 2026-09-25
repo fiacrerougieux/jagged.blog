@@ -1,0 +1,37 @@
+Espresso boiler - 1200 W heater, 92 to 96 degC thermostat
+*
+* Lumped thermal analogue (no water draw during warm-up/idle):
+*   1 V = 1 degC; 1 A = 1 W; 1 F = 1 J/K; 1 ohm = 1 K/W.
+* Effective heat capacity: 2500 J/K (water plus boiler metal).
+* Ambient/cold start: 20 degC. Heat loss: 2 W/K to ambient.
+* Energy balance: 2500*dT/dt = heater_power - (T - 20)/0.5.
+*
+Vambient ambient 0 DC 20
+Cthermal boiler 0 2500 IC=20
+Rloss boiler ambient 0.5
+*
+* Ideal 1200 W heater injects heat into the thermal capacitance.
+* The low-power control circuit below is not part of the thermal mass.
+Bheater 0 boiler I={1200*(v(heater_on)>0.5)}
+*
+* Hysteretic thermostat: control voltage = 94 - boiler temperature.
+* Switch ON above +2 V (T < 92), OFF below -2 V (T > 96).
+* Between thresholds it retains its previous state. Starts ON when cold.
+Vlogic logic 0 DC 1
+Vset setpoint 0 DC 94
+Sthermostat logic heater_on setpoint boiler thermostat ON
+Rlogic heater_on 0 1000
+.model thermostat SW(Ron=0.001 Roff=1e12 Vt=0 Vh=2)
+*
+.options reltol=1e-5 abstol=1e-9 vntol=1e-6 trtol=1
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+* 1200 seconds = first 20 minutes. UIC preserves the cold-start IC.
+* Maximum step 0.05 s resolves thermostat switching to about 0.02 degC.
+tran 0.1 1200 0 0.05 uic
+* Two columns: time in seconds, absolute boiler temperature in degC.
+wrdata boiler_temperature.txt v(boiler)
+.endc
+.end

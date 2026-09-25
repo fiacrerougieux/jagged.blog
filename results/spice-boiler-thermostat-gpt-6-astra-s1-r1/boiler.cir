@@ -1,0 +1,43 @@
+Espresso boiler - cold start and 92-96 degC hysteretic thermostat
+*
+* Lumped thermal/electrical analogue (absolute temperature in degC):
+*   1 V = 1 degC, 1 A = 1 W, 1 F = 1 J/K, 1 ohm = 1 K/W.
+*   Cthermal stores heat; Rloss conducts heat to ambient; Bheater adds heat.
+* Assumptions: well-mixed boiler, fixed water mass, no brewing/steam draw,
+* instantaneous heater and temperature sensor, constant ambient at 20 degC.
+* 2000 J/K represents about 0.4 L water plus the metal boiler assembly.
+* 1200 W heater; 0.5 K/W insulation gives 148 W loss at 94 degC.
+*
+.param Tamb=20 Cth=2000 Rth=0.5 Pheater=1200
+
+* Thermal plant: Cth*dT/dt = Pheater*call - (T-Tamb)/Rth.
+Vambient ambient 0 DC {Tamb}
+Rloss boiler ambient {Rth}
+Cthermal boiler 0 {Cth} IC={Tamb}
+Bheater 0 boiler I={Pheater}*V(call)
+
+* Stateful thermostat, NOT a single-threshold comparator:
+* error = 94-T; switch closes above +2 (T<92), opens below -2 (T>96),
+* and remembers its previous state throughout the 92-96 degC deadband.
+* ON sets the cold-start state; the cold error also requests heat.
+Vlogic logic 0 DC 1
+Berror error 0 V=94-V(boiler)
+Sthermostat logic call error 0 TSTAT ON
+Rcall call 0 1meg
+.model TSTAT SW(Ron=1m Roff=1e12 Vt=0 Vh=2)
+* Switch/load ratio makes call effectively 1 when on, 0 when off.
+
+.options reltol=1e-5 abstol=1e-9 vntol=1e-6
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+* Seconds: 1200 s = 20 min; max step 0.05 s resolves switching edges.
+* UIC preserves the capacitor's 20 degC initial condition, avoiding a
+* hot DC operating-point start in this hysteretic feedback system.
+tran 0.1 1200 0 0.05 uic
+let boiler_temperature_C = v(boiler)
+* Two columns (with header): time in seconds, boiler temperature in degC.
+wrdata boiler_temperature.txt boiler_temperature_C
+.endc
+.end

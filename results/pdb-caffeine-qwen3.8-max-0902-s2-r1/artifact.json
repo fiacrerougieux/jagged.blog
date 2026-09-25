@@ -1,0 +1,33 @@
+{
+  "name": "pdb-caffeine-qwen3.8-max-0902-s2-r1",
+  "exportedAt": "2026-09-21T13:05:23.289Z",
+  "run": "2026-09-21-pdb-caffeine-2129",
+  "caseId": "pdb-caffeine",
+  "caseTitle": "PDB: a caffeine molecule in 3D",
+  "category": "Chemistry and biology",
+  "prompt": "Write a PDB file with 3D coordinates for a caffeine molecule, hydrogens included.",
+  "model": "qwen/qwen3.8-max-0902",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "snap-pdb",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "caffeine.pdb"
+  },
+  "source": {
+    "file": "caffeine.pdb",
+    "lang": "plaintext",
+    "text": "HEADER    SMALL MOLECULE\nCOMPND    CAFFEINE (1,3,7-TRIMETHYLXANTHINE, C8H10N4O2)\nAUTHOR    BUILT GEOMETRICALLY\nHETATM    1  N1  CFF A   1      -0.721   1.463  -0.741  1.00  0.00           N\nHETATM    2  C2  CFF A   1      -1.529   1.167   0.363  1.00  0.00           C\nHETATM    3  N3  CFF A   1      -1.234   0.063   1.171  1.00  0.00           N\nHETATM    4  C4  CFF A   1      -0.129  -0.746   0.875  1.00  0.00           C\nHETATM    5  C5  CFF A   1       0.679  -0.450  -0.229  1.00  0.00           C\nHETATM    6  C6  CFF A   1       0.383   0.654  -1.037  1.00  0.00           C\nHETATM    7  O2  CFF A   1      -2.500   1.877   0.623  1.00  0.00           O\nHETATM    8  O6  CFF A   1       1.087   0.912  -1.999  1.00  0.00           O\nHETATM    9  N7  CFF A   1       1.642  -1.438  -0.204  1.00  0.00           N\nHETATM   10  C8  CFF A   1       1.434  -2.243   0.809  1.00  0.00           C\nHETATM   11  N9  CFF A   1       0.340  -1.860   1.520  1.00  0.00           N\nHETATM   12  C10 CFF A   1      -1.028   2.606  -1.579  1.00  0.00           C\nHETATM   13  C11 CFF A   1      -2.077  -0.246   2.323  1.00  0.00           C\nHETATM   14  C12 CFF A   1       2.740  -1.569  -1.172  1.00  0.00           C\nHETATM   15  H8  CFF A   1       2.050  -3.097   1.047  1.00  0.00           H\nHETATM   16 H10A CFF A   1      -1.510   3.377  -0.978  1.00  0.00           H\nHETATM   17 H10B CFF A   1      -0.106   3.001  -2.005  1.00  0.00           H\nHETATM   18 H10C CFF A   1      -1.698   2.299  -2.382  1.00  0.00           H\nHETATM   19 H11A CFF A   1      -1.476  -0.728   3.094  1.00  0.00           H\nHETATM   20 H11B CFF A   1      -2.504   0.676   2.718  1.00  0.00           H\nHETATM   21 H11C CFF A   1      -2.880  -0.916   2.016  1.00  0.00           H\nHETATM   22 H12A CFF A   1       3.016  -0.582  -1.544  1.00  0.00           H\nHETATM   23 H12B CFF A   1       3.601  -2.027  -0.685  1.00  0.00           H\nHETATM   24 H12C CFF A   1       2.418  -2.194  -2.004  1.00  0.00           H\nCONECT    1    2    6   12\nCONECT    2    1    3    7\nCONECT    3    2    4   13\nCONECT    4    3    5   11\nCONECT    5    4    6    9\nCONECT    6    5    1    8\nCONECT    7    2\nCONECT    8    6\nCONECT    9   10    5   14\nCONECT   10   11    9   15\nCONECT   11    4   10\nCONECT   12    1   16   17   18\nCONECT   13    3   19   20   21\nCONECT   14    9   22   23   24\nCONECT   15   10\nCONECT   16   12\nCONECT   17   12\nCONECT   18   12\nCONECT   19   13\nCONECT   20   13\nCONECT   21   13\nCONECT   22   14\nCONECT   23   14\nCONECT   24   14\nEND\n",
+    "truncated": false,
+    "lines": 53
+  },
+  "output": null,
+  "notes": []
+}

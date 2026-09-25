@@ -1,0 +1,54 @@
+{
+  "id": "svg-french-press",
+  "title": "Exploded French press",
+  "short": "French press",
+  "version": "v2",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "oldPrompts": [
+    {
+      "version": "v1",
+      "retired": "2026-09-20",
+      "prompt": "Draw an exploded assembly diagram of a French press, as an SVG.",
+      "why": "The ground truth only ever described the three-piece plunger, but the prompt never said which press to draw. A model that drew a two-piece travel press, where a retainer sits over the mesh and there is no spiral plate at all, would have failed the stack-order check for answering a question I had not asked. The five results below all ran under v1 and are scored against it."
+    }
+  ],
+  "groundTruth": "The standard three-piece plunger, from the top down: spiral (spring) plate, mesh screen, cross-plate. The cross-plate is the bottom piece, because its threaded stem is what the rod screws into. The spiral plate above the mesh is what presses the mesh edge out against the glass. Checked against the WebstaurantStore anatomy diagram, which is drawn exploded and labelled, and against each part's y coordinate in the SVG rather than its comment. Two-piece travel presses exist and stack differently, which is why v2 of the prompt names the design.",
+  "checks": [
+    {
+      "id": "parts",
+      "label": "All seven parts",
+      "how": "Knob, rod, lid, cross-plate, mesh, spring plate, carafe all drawn and labelled.",
+      "decidedBy": "eye",
+      "rule": "Pass if all seven are drawn as separate shapes and each has a label naming it. A part that is only named in a label or a comment, with nothing drawn, fails it."
+    },
+    {
+      "id": "order",
+      "label": "Stack order",
+      "how": "Knob, lid, spiral plate, mesh, cross-plate and carafe, top to bottom along the axis, read from each part's y coordinate in the SVG. Its comment is ignored. The rod is left out, because it runs through the lid.",
+      "decidedBy": "measured",
+      "rule": "Fail if any two parts that are drawn come in the wrong order. Undecided if nothing is out of order but the spiral plate and cross-plate cannot be told apart, because one is missing or the two are drawn the same."
+    },
+    {
+      "id": "diameter",
+      "label": "Filter fits the glass",
+      "how": "Every filter piece drawn is 80% to 105% of the width of the carafe's glass wall, measured in the SVG.",
+      "decidedBy": "measured",
+      "rule": "Fail if any filter piece is under 80% of the glass width, so it cannot press against the wall, or over 105%, so it cannot go in."
+    },
+    {
+      "id": "axis",
+      "label": "One assembly axis",
+      "how": "Every part centred on a single vertical datum, with leader lines to one side.",
+      "decidedBy": "eye",
+      "rule": "Pass if one vertical line runs through the middle of every part, and every leader line leaves from the same side. One part pushed off to the side fails it."
+    },
+    {
+      "id": "labels",
+      "label": "Labels match",
+      "how": "Each label names the part it points at.",
+      "decidedBy": "eye",
+      "rule": "Pass if following each leader line from its label ends on the part that label names. One label pointing at the wrong part, or at nothing, fails it."
+    }
+  ],
+  "harder": "Draw it in section rather than exploded, so the mesh has to seal against the glass wall."
+}

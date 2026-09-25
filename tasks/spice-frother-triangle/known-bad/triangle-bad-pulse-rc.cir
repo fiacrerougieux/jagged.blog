@@ -1,0 +1,10 @@
+Carrier: square into an RC
+V1 sq 0 PULSE(-5 5 0 1u 1u 0.5m 1m)
+R1 sq tri 1.2k
+C1 tri 0 1u
+.tran 1u 20m
+.control
+run
+wrdata carrier.txt v(tri)
+.endc
+.end
