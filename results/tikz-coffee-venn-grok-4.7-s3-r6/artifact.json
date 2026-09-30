@@ -1,0 +1,66 @@
+{
+  "name": "tikz-coffee-venn-grok-4.7-s3-r6",
+  "exportedAt": "2026-09-25T11:06:50.600Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "x-ai/grok-4.7",
+  "seed": 3,
+  "round": 6,
+  "rounds": 6,
+  "grade": {
+    "pass": false,
+    "detail": "iced long black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=8pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[\n  font=\\sffamily,\n  drink/.style={align=center, font=\\sffamily\\footnotesize, inner sep=0.5pt, text=black},\n  setlabel/.style={font=\\sffamily\\bfseries, align=center}\n]\n\n  % Circle centres and radius. Separation is small enough that\n  % every pairwise lens and the triple overlap is a clear region.\n  \\def\\R{2.55}\n  \\coordinate (E) at (0, 1.15);     % Has espresso\n  \\coordinate (M) at (-1.35,-0.85); % Has milk\n  \\coordinate (C) at ( 1.35,-0.85); % Served cold\n\n  \\fill[red!42,   opacity=0.55] (E) circle (\\R);\n  \\fill[blue!42,  opacity=0.55] (M) circle (\\R);\n  \\fill[green!42, opacity=0.55] (C) circle (\\R);\n  \\draw[thick] (E) circle (\\R);\n  \\draw[thick] (M) circle (\\R);\n  \\draw[thick] (C) circle (\\R);\n\n  % Labels outside, colour-matched to their circle.\n  \\node[setlabel, text=red!65!black]   at (0, 4.05)    {Has espresso};\n  \\node[setlabel, text=blue!65!black]  at (-3.55,-3.55) {Has milk};\n  \\node[setlabel, text=green!45!black] at ( 3.55,-3.55) {Served cold};\n\n  % Exclusive regions\n  \\node[drink] at (0, 2.55)      {short black};   % espresso only\n  \\node[drink] at (-2.55,-1.55)  {babyccino};     % milk only\n  \\node[drink] at ( 2.55,-1.55)  {cold brew};     % cold only\n\n  % Pairwise only\n  \\node[drink] at (-1.42, 0.55) {flat\\\\white};    % espresso + milk\n  \\node[drink] at ( 1.15, 0.85)  {iced\\\\long black}; % espresso + cold\n  \\node[drink] at ( 0,   -1.85)  {milkshake};     % milk + cold\n\n  % Triple overlap\n  \\node[drink] at (0, 0.15) {iced\\\\latte};\n\n  % Complement of all three sets: hot filter coffee, no milk\n  \\node[drink] at (-4.05, 3.15) {pour-over};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 48
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": false
+    }
+  ]
+}

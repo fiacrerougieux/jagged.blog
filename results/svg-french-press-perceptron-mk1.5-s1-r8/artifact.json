@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-perceptron-mk1.5-s1-r8",
+  "exportedAt": "2026-09-27T09:11:32.739Z",
+  "run": "2026-09-27-svg-french-press-1849",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "perceptron/perceptron-mk1.5",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 1200\" width=\"600\" height=\"1200\">\n  <style>\n    .component { fill: none; stroke: #333; stroke-width: 2; }\n    .glass { fill: rgba(200, 220, 255, 0.3); stroke: #4a90d9; stroke-width: 2; }\n    .metal { fill: #e0e0e0; stroke: #666; stroke-width: 1.5; }\n    .wood { fill: #8b5a2b; stroke: #5a3a1b; stroke-width: 1.5; }\n    .mesh { fill: url(#meshPattern); stroke: #333; stroke-width: 1; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }\n    .leader-line { stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }\n  </style>\n\n  <defs>\n    <pattern id=\"meshPattern\" patternUnits=\"userSpaceOnUse\" width=\"6\" height=\"6\">\n      <line x1=\"0\" y1=\"0\" x2=\"6\" y2=\"6\" stroke=\"#333\" stroke-width=\"0.5\"/>\n      <line x1=\"0\" y1=\"6\" x2=\"6\" y2=\"0\" stroke=\"#333\" stroke-width=\"0.5\"/>\n    </pattern>\n  </defs>\n\n  <!-- Title -->\n  <text x=\"300\" y=\"70\" text-anchor=\"middle\" class=\"label\" font-size=\"24\" font-weight=\"bold\">French Press Exploded View</text>\n\n  <!-- Component 1: Lid with Handle (top) -->\n  <g transform=\"translate(300, 160)\">\n    <ellipse cx=\"0\" cy=\"0\" rx=\"70\" ry=\"15\" class=\"metal\"/>\n    <rect x=\"-10\" y=\"-40\" width=\"20\" height=\"40\" class=\"wood\"/>\n    <ellipse cx=\"0\" cy=\"-40\" rx=\"15\" ry=\"10\" class=\"wood\"/>\n    <text x=\"0\" y=\"-55\" text-anchor=\"middle\" class=\"label\">Lid with Handle</text>\n  </g>\n\n  <!-- Component 2: Glass Carafe -->\n  <g transform=\"translate(300, 340)\">\n    <rect x=\"-60\" y=\"-80\" width=\"120\" height=\"160\" rx=\"5\" ry=\"5\" class=\"glass\"/>\n    <rect x=\"-60\" y=\"-80\" width=\"120\" height=\"160\" rx=\"5\" ry=\"5\" class=\"component\"/>\n    <text x=\"0\" y=\"-90\" text-anchor=\"middle\" class=\"label\">Glass Carafe</text>\n  </g>\n\n  <!-- Component 3: Plunger Rod -->\n  <g transform=\"translate(300, 500)\">\n    <rect x=\"-5\" y=\"-60\" width=\"10\" height=\"120\" class=\"metal\"/>\n    <ellipse cx=\"0\" cy=\"-60\" rx=\"20\" ry=\"15\" class=\"wood\"/>\n    <text x=\"0\" y=\"-75\" text-anchor=\"middle\" class=\"label\">Plunger Rod</text>\n  </g>\n\n  <!-- Component 4: Filter Frame -->\n  <g transform=\"translate(300, 660)\">\n    <circle cx=\"0\" cy=\"0\" r=\"55\" class=\"metal\"/>\n    <circle cx=\"0\" cy=\"0\" r=\"45\" class=\"mesh\"/>\n    <text x=\"0\" y=\"-65\" text-anchor=\"middle\" class=\"label\">Filter Frame</text>\n  </g>\n\n  <!-- Component 5: Base Plate -->\n  <g transform=\"translate(300, 820)\">\n    <circle cx=\"0\" cy=\"0\" r=\"50\" class=\"metal\"/>\n    <circle cx=\"0\" cy=\"0\" r=\"30\" class=\"glass\"/>\n    <text x=\"0\" y=\"-60\" text-anchor=\"middle\" class=\"label\">Base Plate</text>\n  </g>\n\n  <!-- Assembly arrows -->\n  <path d=\"M 300 180 L 300 220\" class=\"leader-line\" marker-end=\"url(#arrowhead)\"/>\n  <path d=\"M 300 360 L 300 400\" class=\"leader-line\" marker-end=\"url(#arrowhead)\"/>\n  <path d=\"M 300 520 L 300 560\" class=\"leader-line\" marker-end=\"url(#arrowhead)\"/>\n  <path d=\"M 300 680 L 300 720\" class=\"leader-line\" marker-end=\"url(#arrowhead)\"/>\n\n  <marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"9\" refY=\"3.5\" orient=\"auto\">\n    <polygon points=\"0 0, 10 3.5, 0 7\" fill=\"#999\"/>\n  </marker>\n</svg>\n",
+    "truncated": false,
+    "lines": 69
+  },
+  "output": null,
+  "notes": []
+}

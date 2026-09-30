@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s4-r5",
+  "exportedAt": "2026-09-27T09:10:35.052Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 4,
+  "round": 5,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "iced latte crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[font=, every node/.style={text=black!82}]\n  % A soft, overlapping palette keeps all seven interior regions legible.\n  \\fill[orange!65, fill opacity=.24] (-2.1,1.15) circle (3.05);\n  \\fill[teal!55, fill opacity=.24] (2.1,1.15) circle (3.05);\n  \\fill[blue!60, fill opacity=.24] (0,-1.65) circle (3.05);\n  \\draw[orange!70!black, line width=1.2pt] (-2.1,1.15) circle (3.05);\n  \\draw[teal!65!black, line width=1.2pt] (2.1,1.15) circle (3.05);\n  \\draw[blue!65!black, line width=1.2pt] (0,-1.65) circle (3.05);\n\n  \\node[font=\\bfseries\\Large, text=black!85] at (0,5.05) {WHAT'S IN THE CUP?};\n  \\node[font=\\bfseries\\small, fill=white, rounded corners=3pt,\n        inner xsep=7pt, inner ysep=4pt, text=orange!55!black] at (-4.15,4.05) {Has espresso};\n  \\node[font=\\bfseries\\small, fill=white, rounded corners=3pt,\n        inner xsep=7pt, inner ysep=4pt, text=teal!50!black] at (4.15,4.05) {Has milk};\n  \\node[font=\\bfseries\\small, fill=white, rounded corners=3pt,\n        inner xsep=7pt, inner ysep=4pt, text=blue!55!black] at (0,-5.03) {Served cold};\n\n  \\tikzset{drink/.style={font=\\small\\bfseries, fill=white, fill opacity=.88,\n            text opacity=1, rounded corners=3pt, inner xsep=6pt, inner ysep=4pt,\n            align=center}}\n  \\node[drink] at (-3.55,.65) {short black};\n  \\node[drink] at (3.55,.65) {babyccino};\n  \\node[drink] at (0,2.55) {flat\\\\white};\n  \\node[drink] at (-1.85,-1.18) {iced long\\\\black};\n  \\node[drink] at (1.85,-1.18) {milkshake};\n  \\node[drink] at (0,-.05) {iced latte};\n  \\node[drink] at (0,-3.55) {cold brew};\n  \\node[font=\\scriptsize\\bfseries, text=black!55] at (3.75,-4.12) {NONE OF THE THREE};\n  \\node[drink] at (3.75,-4.62) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 35
+  },
+  "output": null,
+  "notes": []
+}

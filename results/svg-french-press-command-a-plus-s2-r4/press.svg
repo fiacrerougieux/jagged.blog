@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .component { fill: #f8f8f8; stroke: #333; stroke-width: 2; }
+    .metal { fill: #e0e0e0; stroke: #666; stroke-width: 2; }
+    .handle { fill: #8B4513; stroke: #5a3a1a; stroke-width: 2; }
+    .filter { fill: #d9ead3; stroke: #666; stroke-width: 1.5; }
+    .mesh { fill: #e8f4e8; stroke: #666; stroke-width: 1.5; }
+    .gasket { fill: #ffd700; stroke: #666; stroke-width: 1; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; font-weight: bold; }
+    .exploded-line { stroke: #666; stroke-dasharray: 5,5; stroke-width: 1; }
+    .assembly-line { stroke: #333; stroke-width: 1; stroke-opacity: 0.6; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#fafafa"/>
+
+  <!-- Main cylinder body (exploded, front removed to show internals) -->
+  <!-- Back half of body -->
+  <path d="M150,100
+            L645,100
+            L645,445
+            L150,445
+            Z" class="component" fill-opacity="0.9"/>
+  <!-- Side walls -->
+  <path d="M150,95 L645,95 L645,450 L150,450 Z" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="4,4" opacity="0.9"/>
+  
+  <!-- Glass simulation lines on back wall -->
+  <g stroke="#999" stroke-width="0.5" stroke-dasharray="3,3">
+    <line x1="155" y1="105" x2="640" y2="105"/>
+    <line x1="155" y1="440" x2="640" y2="440"/>
+  </g>
+
+  <!-- Lid (exploded up) -->
+  <g transform="translate(400, 50)">
+    <circle cx="0" cy="0" r="60" class="metal"/>
+    <rect x="-40" y="-20" width="80" height="30" class="handle"/>
+    <rect x="-30" y="-10" width="60" height="10" fill="#A0522D"/>
+  </g>
+
+  <!-- Plunger rod (exploded down, with cross-handle) -->
+  <g transform="translate(400, 450)">
+    <rect x="-5" y="-10" width="10" height="190" class="metal"/>
+    <rect x="-37.5" y="-7.5" width="75" height="15" class="handle"/>
+    <rect x="-27.5" y="-2.5" width="55" height="5" fill="#A0522D"/>
+  </g>
+
+  <!-- Filter assembly (exploded down, separated pieces) -->
+  <g transform="translate(400, 320)">
+    <!-- Bottom filter plate -->
+    <circle cx="0" cy="0" r="55" class="filter"/>
+    <circle cx="0" cy="0" r="50" stroke="#666" stroke-width="1.5" fill="none"/>
+    <text x="0" y="-58" text-anchor="middle" class="text">Filter Plate</text>
+  </g>
+
+  <g transform="translate(400, 280)">
+    <!-- Middle mesh plate -->
+    <circle cx="0" cy="0" r="45" class="mesh"/>
+    <g stroke="#666" stroke-width="1.5">
+      <line x1="-45" y1="0" x2="45" y2="0"/>
+      <line x1="0" y1="-45" x2="0" y2="45"/>
+      <line x1="-35" y1="-35" x2="35" y2="-35"/>
+      <line x1="-35" y1="35" x2="35" y2="35"/>
+    </g>
+    <text x="0" y="-48" text-anchor="middle" class="text">Mesh Plate</text>
+  </g>
+
+  <g transform="translate(400, 340)">
+    <!-- Top gasket/plate -->
+    <circle cx="0" cy="0" r="40" fill="#ffe4c4" stroke="#666" stroke-width="1.5"/>
+    <!-- Gasket material visualization -->
+    <path d="M0,-20
+              C0,-35 15,-45 30,-45
+              C45,-45 60,-35 60,-20
+              C60,-5 45,10 30,10
+              C15,10 0,-5 0,-20 Z" fill="#ffd700" opacity="0.9"/>
+    <text x="0" y="-42" text-anchor="middle" class="text">Gasket</text>
+  </g>
+
+  <!-- Cross-piece handle for plunger -->
+  <g transform="translate(400, 410)">
+    <rect x="-37.5" y="-7.5" width="75" height="15" class="handle"/>
+    <rect x="-27.5" y="-2.5" width="55" height="5" fill="#A0522D"/>
+  </g>
+
+  <!-- Exploded positioning visualization -->
+  <g stroke="#666" stroke-dasharray="6,4" stroke-width="1">
+    <!-- Body outline (dashed to show cavity) -->
+    <rect x="150" y="100" width="500" height="345" fill="none" stroke="#ccc" stroke-dasharray="4,4" stroke-width="1"/>
+    
+    <!-- Assembly lines showing relationships -->
+    <line x1="400" y1="120" x2="400" y2="55"/>
+    <line x1="400" y1="395" x2="400" y2="325"/>
+    <line x1="400" y1="315" x2="400" y2="275"/>
+    <line x1="400" y1="270" x2="400" y2="235"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="400" y="85" text-anchor="middle" class="text">Lid</text>
+  <text x="400" y="460" text-anchor="middle" class="text">Plunger Rod</text>
+  <text x="400" y="355" text-anchor="middle" class="text">Filter Plate</text>
+  <text x="400" y="315" text-anchor="middle" class="text">Mesh Plate</text>
+  <text x="400" y="275" text-anchor="middle" class="text">Gasket</text>
+  
+  <!-- Assembly direction arrows -->
+  <g stroke="#333" stroke-width="1.5" fill="none">
+    <path d="M400,130 L395,125 L405,125 Z"/>
+    <path d="M400,395 L395,400 L405,400 Z"/>
+  </g>
+</svg>

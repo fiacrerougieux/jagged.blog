@@ -1,0 +1,1 @@
+{"axiom":"FFA","rules":{"A":"F[-B]F[-FB]F[--B]FA","B":"F[-B][+B]FB"},"angle":30,"iterations":4,"start_heading":90}

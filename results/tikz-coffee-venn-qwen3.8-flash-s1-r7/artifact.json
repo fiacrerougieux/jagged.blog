@@ -55,7 +55,7 @@
     {
       "round": 5,
       "png": "rounds/005.jpg",
-      "pass": false
+      "pass": true
     },
     {
       "round": 6,

@@ -1,0 +1,76 @@
+{
+  "name": "tikz-coffee-venn-grok-4.7-s2-r8",
+  "exportedAt": "2026-09-25T11:06:49.530Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "x-ai/grok-4.7",
+  "seed": 2,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": false,
+    "detail": "milkshake missing; iced long black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{calc}\n\n\\begin{document}\n\\begin{tikzpicture}[\n  font=\\sffamily,\n  drink/.style={\n    align=center,\n    font=\\sffamily\\footnotesize,\n    inner sep=1.5pt,\n    fill=white,\n    fill opacity=0.92,\n    text opacity=1,\n    rounded corners=1.2pt\n  },\n  setlabel/.style={\n    align=center,\n    font=\\sffamily\\bfseries,\n    inner sep=1pt\n  }\n]\n\n  % Equal circles whose centres form an equilateral triangle.\n  \\coordinate (E) at (210:1.7); % Has espresso\n  \\coordinate (M) at (330:1.7); % Has milk\n  \\coordinate (C) at (90:1.7);  % Served cold\n  \\def\\R{3.7}\n\n  \\fill[brown!62,  opacity=0.42] (E) circle (\\R);\n  \\fill[orange!55, opacity=0.40] (M) circle (\\R);\n  \\fill[cyan!65,   opacity=0.40] (C) circle (\\R);\n\n  \\draw[brown!70!black,  line width=1.05pt] (E) circle (\\R);\n  \\draw[orange!75!black, line width=1.05pt] (M) circle (\\R);\n  \\draw[cyan!55!black,   line width=1.05pt] (C) circle (\\R);\n\n  % Set names, just outside each circle.\n  \\node[setlabel, text=brown!65!black,  anchor=east]  at (210:5.65) {Has\\\\espresso};\n  \\node[setlabel, text=orange!70!black, anchor=west]  at (330:5.65) {Has\\\\milk};\n  \\node[setlabel, text=cyan!45!black,   anchor=south] at (90:5.55)  {Served cold};\n\n  % Exclusive crescents.\n  \\node[drink] at ($(E)+(210:2.55)$) {short black};\n  \\node[drink] at ($(M)+(330:2.55)$) {babyccino};\n  \\node[drink] at ($(C)+(90:2.55)$)  {cold brew};\n\n  % Pairwise lenses. Labels are small and sit on each lens midline,\n  % outside the third circle.\n  \\node[drink] at ($(E)!0.5!(C)+(150:1.78)$) {iced\\\\long black};\n  \\node[drink] at ($(M)!0.5!(C)+(30:1.78)+(0.16,0)$) {milk\\\\shake};\n  \\node[drink] at ($(E)!0.5!(M)+(270:1.55)$) {flat white};\n\n  % All three sets.\n  \\node[drink] at (0,0.28) {iced latte};\n\n  % None of the three.\n  \\node[drink, draw=black!40] at (0,-5.75) {pour-over};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 62
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": false
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": false
+    }
+  ]
+}

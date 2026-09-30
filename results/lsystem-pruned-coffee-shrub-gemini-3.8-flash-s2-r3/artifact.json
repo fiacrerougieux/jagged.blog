@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-gemini-3.8-flash-s2-r3",
+  "exportedAt": "2026-09-29T01:42:39.571Z",
+  "run": "2026-09-29-lsystem-pruned-coffee-shrub-1112",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "google/gemini-3.8-flash",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "the right side is a drawn line: one straight stroke 30.0 long on a side 33.1 high"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"F F F F F F [ ++++++ J ] [ ------ b ] F F [ ++++++ G ] [ ------ R ] F F [ ++++++ M ] [ ------ R ] F F [ ++++++ A ] [ ------ R ] F F [ ++++++ A ] [ ------ R ] F F [ ++++++ A ] [ ------ R ] F F [ ++++++ A ] [ ------ R ] F F [ ++++++ M ] [ ------ R ] F F [ ++++++ M ] [ ------ R ] F F [ ++++++ G ] [ ------ R ] F F [ ++++++ G ] [ ------ R ] F F [ ++++++ J ] [ ------ R ] F F [ ++++++ U ] [ ------ R ] F F [ ++++++ U ] [ ------ R ] F F [ ++++++ Z ] [ ------ t ] F F [ +++ Z ] F F F L\",\n  \"rules\": {\n    \"A\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] B\",\n    \"B\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] C\",\n    \"C\": \"F F [ +++ S ] [ --- S ] + F F [ +++ S ] [ --- S ] D\",\n    \"D\": \"F F [ +++ S ] [ --- S ] + F F [ +++ S ] [ --- S ] E\",\n    \"E\": \"+ F F [ +++ S ] [ --- S ] F F L\",\n    \"M\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] N\",\n    \"N\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] O\",\n    \"O\": \"F F [ +++ S ] [ --- S ] + F F [ +++ S ] [ --- S ] P\",\n    \"P\": \"+ F F [ +++ S ] [ --- S ] F F L\",\n    \"G\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] H\",\n    \"H\": \"F F [ +++ S ] [ --- S ] + F F [ +++ S ] [ --- S ] I\",\n    \"I\": \"+ F F [ +++ S ] [ --- S ] F F L\",\n    \"J\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] K\",\n    \"K\": \"+ F F [ +++ S ] [ --- S ] F F L\",\n    \"U\": \"F F [ +++ S ] [ --- S ] + F F [ +++ S ] [ --- S ] F F L\",\n    \"Z\": \"F F [ +++ S ] [ --- S ] F F L\",\n    \"S\": \"F [ ++ V ] [ -- V ] F [ +++ W ] [ --- W ] F L\",\n    \"W\": \"F [ ++ L ] [ -- L ] F\",\n    \"V\": \"[ +++ F - F ] [ --- F + F ] [ F ]\",\n    \"L\": \"[ ++ F ] [ -- F ] [ ++++ F ] [ ---- F ] F\",\n    \"b\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] F F [ +++ P ] [ --- P ] F F [ ++++++ Y ] [ ------ Y ] F F [ ++++++ F F ]\",\n    \"R\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] F F [ +++ P ] [ --- P ] F F [ ++++++ Y ] [ ------ Y ] F F [ ++++++ F F ] [ ------ F F ]\",\n    \"t\": \"F F [ +++ S ] [ --- S ] F F [ +++ S ] [ --- S ] F F [ +++ P ] [ --- P ] F F [ ++++++ Y ] [ ------ Y ] F F [ ------ F F ]\",\n    \"P\": \"F [ ++ V ] [ -- V ] F\",\n    \"Y\": \"F [ +++ F ] [ --- F ]\"\n  },\n  \"angle\": 15,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 34
+  },
+  "output": null,
+  "notes": []
+}

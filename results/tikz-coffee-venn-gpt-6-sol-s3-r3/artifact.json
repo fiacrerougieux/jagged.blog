@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s3-r3",
+  "exportedAt": "2026-09-25T11:06:40.325Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 3,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage[T1]{fontenc}\n\n\\definecolor{ink}{HTML}{253341}\n\\definecolor{espresso}{HTML}{A56A43}\n\\definecolor{milk}{HTML}{5689B4}\n\\definecolor{cold}{HTML}{38A99B}\n\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, text=ink]\n  % Three ingredients / serving attributes; transparent fills show overlaps.\n  \\fill[espresso,opacity=.16] (-2,1.2) circle (3.05);\n  \\fill[milk,opacity=.16] (2,1.2) circle (3.05);\n  \\fill[cold,opacity=.16] (0,-1.55) circle (3.05);\n  \\draw[espresso,line width=1.25pt] (-2,1.2) circle (3.05);\n  \\draw[milk,line width=1.25pt] (2,1.2) circle (3.05);\n  \\draw[cold,line width=1.25pt] (0,-1.55) circle (3.05);\n\n  % Circle names sit just beyond the edges, leaving the contents uncluttered.\n  \\node[font=\\sffamily\\bfseries\\small,espresso] at (-3.0,4.58) {Has espresso};\n  \\node[font=\\sffamily\\bfseries\\small,milk] at (3.0,4.58) {Has milk};\n  \\node[font=\\sffamily\\bfseries\\small,cold] at (0,-5.04) {Served cold};\n\n  % One drink in each of the seven interior regions.\n  \\tikzset{drink/.style={font=\\sffamily\\small,align=center,fill=white,fill opacity=.87,text opacity=1,rounded corners=3pt,inner xsep=5pt,inner ysep=3pt}}\n  \\node[drink] at (-3.48,1.72) {short black};\n  \\node[drink] at (3.48,1.72) {babyccino};\n  \\node[drink] at (0,-3.25) {cold brew};\n  \\node[drink] at (0,2.21) {flat white};\n  \\node[drink] at (-2.0,-1.02) {iced long\\\\black};\n  \\node[drink] at (2.04,-1.00) {milkshake};\n  \\node[drink] at (0,-.13) {iced latte};\n\n  % A pour-over is neither espresso-based, milky, nor served cold.\n  \\node[drink] at (-4.1,-3.67) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 38
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    }
+  ]
+}

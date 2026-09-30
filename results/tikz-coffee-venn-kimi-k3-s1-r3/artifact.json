@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-kimi-k3-s1-r3",
+  "exportedAt": "2026-09-25T11:06:30.978Z",
+  "run": "2026-09-25-tikz-coffee-venn-1828",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "moonshotai/kimi-k3",
+  "seed": 1,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "milkshake crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n  % bounding box / outside region\n  \\draw[rounded corners] (-4.2,-4.1) rectangle (6.2,4.0);\n\n  % circles\n  \\draw[thick,fill=red!25,fill opacity=0.6]    (-1.1,0.6) circle (2.2);\n  \\draw[thick,fill=blue!25,fill opacity=0.6]   ( 1.1,0.6) circle (2.2);\n  \\draw[thick,fill=green!25,fill opacity=0.6]  ( 0.0,-1.2) circle (2.2);\n\n  % labels\n  \\node[font=\\bfseries] at (-2.6,2.5) {Has espresso};\n  \\node[font=\\bfseries] at ( 2.6,2.5) {Has milk};\n  \\node[font=\\bfseries] at ( 0.0,-3.7) {Served cold};\n\n  % drinks\n  \\node at (-1.9, 1.2) {short black};       % espresso only\n  \\node at ( 1.9, 1.2) {babyccino};         % milk only\n  \\node at ( 0.0,-2.3) {cold brew};         % cold only\n  \\node at ( 0.0, 1.35) {flat white};       % espresso + milk\n  \\node[align=center] at (-1.35,-0.95) {iced long\\\\black};  % espresso + cold\n  \\node at ( 1.15,-0.9) {milkshake};        % milk + cold\n  \\node at ( 0.0,-0.25) {iced latte};       % all three\n  \\node at ( 4.6,-2.8) {pour-over};         % outside all\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 28
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    }
+  ]
+}

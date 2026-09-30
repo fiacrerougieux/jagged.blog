@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-perceptron-mk1.5-s2-r3",
+  "exportedAt": "2026-09-27T09:11:33.384Z",
+  "run": "2026-09-27-svg-french-press-1849",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "perceptron/perceptron-mk1.5",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 950\" width=\"600\" height=\"950\">\n  <style>\n    .component { fill: #e0e0e0; stroke: #333; stroke-width: 2; }\n    .glass { fill: rgba(200, 220, 255, 0.3); stroke: #4a6fa5; stroke-width: 2; }\n    .metal { fill: #c0c0c0; stroke: #333; stroke-width: 2; }\n    .mesh { fill: url(#meshPattern); stroke: #333; stroke-width: 1; }\n    .line { stroke: #666; stroke-width: 1; stroke-dasharray: 4,4; }\n    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }\n  </style>\n  \n  <defs>\n    <pattern id=\"meshPattern\" patternUnits=\"userSpaceOnUse\" width=\"8\" height=\"8\">\n      <path d=\"M0,0 L8,8 M8,0 L0,8\" stroke=\"#333\" stroke-width=\"0.5\"/>\n    </pattern>\n  </defs>\n  \n  <!-- Title -->\n  <text x=\"300\" y=\"40\" text-anchor=\"middle\" class=\"label\" font-size=\"24\" font-weight=\"bold\">French Press Exploded View</text>\n  \n  <!-- Connecting lines for exploded view -->\n  <line x1=\"300\" y1=\"100\" x2=\"300\" y2=\"800\" class=\"line\"/>\n  \n  <!-- Component 1: Lid with Handle (top) -->\n  <g transform=\"translate(250, 100)\">\n    <rect x=\"0\" y=\"0\" width=\"100\" height=\"20\" rx=\"5\" ry=\"5\" class=\"metal\"/>\n    <rect x=\"40\" y=\"-30\" width=\"20\" height=\"30\" rx=\"3\" ry=\"3\" class=\"metal\"/>\n    <circle cx=\"50\" cy=\"-35\" r=\"8\" class=\"metal\"/>\n    <text x=\"50\" y=\"-50\" text-anchor=\"middle\" class=\"label\">Lid</text>\n  </g>\n  \n  <!-- Component 2: Plunger Rod -->\n  <g transform=\"translate(280, 200)\">\n    <rect x=\"0\" y=\"0\" width=\"40\" height=\"150\" rx=\"5\" ry=\"5\" class=\"metal\"/>\n    <text x=\"20\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Rod</text>\n  </g>\n  \n  <!-- Component 3: Filter Frame -->\n  <g transform=\"translate(220, 350)\">\n    <rect x=\"0\" y=\"0\" width=\"160\" height=\"40\" rx=\"3\" ry=\"3\" class=\"metal\"/>\n    <text x=\"80\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Filter Frame</text>\n  </g>\n  \n  <!-- Component 4: Mesh Filter -->\n  <g transform=\"translate(220, 420)\">\n    <rect x=\"0\" y=\"0\" width=\"160\" height=\"30\" class=\"mesh\"/>\n    <text x=\"80\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Mesh Filter</text>\n  </g>\n  \n  <!-- Component 5: Base Plate -->\n  <g transform=\"translate(220, 480)\">\n    <rect x=\"0\" y=\"0\" width=\"160\" height=\"20\" rx=\"3\" ry=\"3\" class=\"metal\"/>\n    <text x=\"80\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Base Plate</text>\n  </g>\n  \n  <!-- Component 6: Carafe Body (main glass vessel) -->\n  <g transform=\"translate(200, 550)\">\n    <path d=\"M0,0 L160,0 L140,200 L20,200 Z\" class=\"glass\"/>\n    <text x=\"80\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Carafe</text>\n  </g>\n  \n  <!-- Component 7: Carafe Handle -->\n  <g transform=\"translate(150, 600)\">\n    <path d=\"M0,0 Q-20,50 0,100\" stroke=\"#4a6fa5\" stroke-width=\"8\" fill=\"none\"/>\n    <text x=\"-50\" y=\"50\" text-anchor=\"middle\" class=\"label\">Handle</text>\n  </g>\n  \n  <!-- Component 8: Carafe Base -->\n  <g transform=\"translate(200, 750)\">\n    <ellipse cx=\"80\" cy=\"10\" rx=\"80\" ry=\"15\" class=\"glass\"/>\n    <text x=\"80\" y=\"-20\" text-anchor=\"middle\" class=\"label\">Base</text>\n  </g>\n  \n  <!-- Assembly arrows -->\n  <text x=\"350\" y=\"150\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"280\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"380\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"450\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"520\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"600\" class=\"label\">↓</text>\n  <text x=\"350\" y=\"680\" class=\"label\">↓</text>\n</svg>\n",
+    "truncated": false,
+    "lines": 83
+  },
+  "output": null,
+  "notes": []
+}

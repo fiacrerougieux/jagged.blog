@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-command-a-plus-s2-r4",
+  "exportedAt": "2026-09-27T09:11:28.243Z",
+  "run": "2026-09-27-tikz-coffee-venn-1852",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "cohere/command-a-plus",
+  "seed": 2,
+  "round": 4,
+  "rounds": 4,
+  "grade": {
+    "pass": false,
+    "detail": "babyccino crosses a circle's edge; flat white crosses a circle's edge; iced latte crosses a circle's edge; iced long black crosses a circle's edge; milkshake crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=5pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[scale=1.0, every node/.style={font=\\sffamily}]\n% Circle parameters\n\\def\\radius{1.5}\n\\coordinate (A) at (0,0);   % Has espresso\n\\coordinate (B) at (2,0);   % Has milk\n\\coordinate (C) at (1,{sqrt(3)}); % Served cold\n\n% Draw circles\n\\draw[thick] (A) circle (\\radius);\n\\draw[thick] (B) circle (\\radius);\n\\draw[thick] (C) circle (\\radius);\n\n% Circle labels (outside circles)\n\\node at (-2.5, 1) {\\large Has espresso};\n\\node at (4, 1) {\\large Has milk};\n\\node at (1, 4) {\\large Served cold};\n\n% Drink names in appropriate regions\n% Outside all circles\n\\node at (1,-2) {\\small pour-over};\n\n% A only (espresso only)\n\\node at (-1.2,0) {\\small short black};\n\n% B only (milk only)\n\\node at (3.2,0.5) {\\small babyccino};\n\n% C only (cold only)\n\\node at (1,2.3) {\\small cold brew};\n\n% A∩B only (espresso + milk)\n\\node at (1,-0.6) {\\small flat white};\n\n% A∩C only (espresso + cold)\n\\node at (0.3,0.9) {\\small iced long black};\n\n% B∩C only (milk + cold)\n\\node at (2.2,1.2) {\\small milkshake};\n\n% A∩B∩C (espresso + milk + cold)\n\\node at (1,{sqrt(3)/3}) {\\small iced latte};\n\\end{tikzpicture}\n\\end{document}",
+    "truncated": false,
+    "lines": 47
+  },
+  "output": null,
+  "notes": []
+}

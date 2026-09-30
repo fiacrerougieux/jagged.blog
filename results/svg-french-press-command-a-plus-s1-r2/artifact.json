@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-command-a-plus-s1-r2",
+  "exportedAt": "2026-09-27T09:11:34.208Z",
+  "run": "2026-09-27-svg-french-press-1130",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "cohere/command-a-plus",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- French press exploded assembly diagram (three-piece plunger filter) -->\n  <defs>\n    <!-- No gradients needed for this simple diagram -->\n  </defs>\n\n  <!-- Main carafe body -->\n  <rect x=\"80\" y=\"100\" width=\"120\" height=\"400\" rx=\"8\" ry=\"8\" fill=\"#e0e0e0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Base of carafe -->\n  <rect x=\"80\" y=\"580\" width=\"120\" height=\"20\" fill=\"#d0d0d0\" stroke=\"#333\" stroke-width=\"1\"/>\n  <!-- Small foot for stability -->\n  <rect x=\"90\" y=\"610\" width=\"100\" height=\"10\" fill=\"#666\" stroke=\"#333\" stroke-width=\"1\"/>\n\n  <!-- Lid with handle -->\n  <circle cx=\"140\" cy=\"50\" r=\"30\" fill=\"#f0f0f0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Lid handle -->\n  <rect x=\"130\" y=\"20\" width=\"20\" height=\"10\" fill=\"#666\" stroke=\"#333\" stroke-width=\"1\"/>\n  <!-- Line showing lid attaches to plunger rod -->\n  <line x1=\"140\" y1=\"50\" x2=\"140\" y2=\"100\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Plunger rod (vertical metal rod) -->\n  <rect x=\"130\" y=\"100\" width=\"20\" height=\"400\" fill=\"#666\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Top cap of rod (also acts as lid interface) -->\n  <circle cx=\"140\" cy=\"100\" r=\"10\" fill=\"#666\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Bottom cap of rod -->\n  <circle cx=\"140\" cy=\"500\" r=\"10\" fill=\"#666\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Upper filter plate (perforated) -->\n  <circle cx=\"140\" cy=\"150\" r=\"40\" fill=\"#e0e0e0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Perforation holes -->\n  <circle cx=\"140\" cy=\"110\" r=\"3\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"0.5\"/>\n  <circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"0.5\"/>\n  <circle cx=\"140\" cy=\"190\" r=\"3\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"0.5\"/>\n  <circle cx=\"100\" cy=\"150\" r=\"3\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"0.5\"/>\n\n  <!-- Sealing ring (between upper and lower filter) -->\n  <circle cx=\"140\" cy=\"250\" r=\"40\" fill=\"none\" stroke=\"#666\" stroke-width=\"6\"/>\n  <circle cx=\"140\" cy=\"250\" r=\"30\" fill=\"#ccc\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Lower filter mesh -->\n  <circle cx=\"140\" cy=\"350\" r=\"40\" fill=\"#e0e0e0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Mesh pattern lines -->\n  <line x1=\"100\" y1=\"350\" x2=\"180\" y2=\"350\" stroke=\"#666\" stroke-width=\"0.5\"/>\n  <line x1=\"140\" y1=\"310\" x2=\"140\" y2=\"390\" stroke=\"#666\" stroke-width=\"0.5\"/>\n  <line x1=\"120\" y1=\"330\" x2=\"160\" y2=\"370\" stroke=\"#666\" stroke-width=\"0.5\"/>\n  <line x1=\"160\" y1=\"330\" x2=\"120\" y2=\"370\" stroke=\"#666\" stroke-width=\"0.5\"/>\n\n  <!-- Dashed lines showing rod passes through filter components -->\n  <line x1=\"140\" y1=\"100\" x2=\"140\" y2=\"150\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"140\" y1=\"500\" x2=\"140\" y2=\"350\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/>\n</svg>",
+    "truncated": false,
+    "lines": 52
+  },
+  "output": null,
+  "notes": []
+}

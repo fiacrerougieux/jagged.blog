@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1200" width="600" height="1200">
+  <style>
+    .component { fill: none; stroke: #333; stroke-width: 2; }
+    .glass { fill: rgba(200, 220, 255, 0.3); stroke: #4a90d9; stroke-width: 2; }
+    .metal { fill: #e0e0e0; stroke: #666; stroke-width: 1.5; }
+    .wood { fill: #8b5a2b; stroke: #5a3a1b; stroke-width: 1.5; }
+    .mesh { fill: url(#meshPattern); stroke: #333; stroke-width: 1; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }
+    .leader-line { stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <defs>
+    <pattern id="meshPattern" patternUnits="userSpaceOnUse" width="6" height="6">
+      <line x1="0" y1="0" x2="6" y2="6" stroke="#333" stroke-width="0.5"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#333" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="70" text-anchor="middle" class="label" font-size="24" font-weight="bold">French Press Exploded View</text>
+
+  <!-- Component 1: Lid with Handle (top) -->
+  <g transform="translate(300, 160)">
+    <ellipse cx="0" cy="0" rx="70" ry="15" class="metal"/>
+    <rect x="-10" y="-40" width="20" height="40" class="wood"/>
+    <ellipse cx="0" cy="-40" rx="15" ry="10" class="wood"/>
+    <text x="0" y="-55" text-anchor="middle" class="label">Lid with Handle</text>
+  </g>
+
+  <!-- Component 2: Glass Carafe -->
+  <g transform="translate(300, 340)">
+    <rect x="-60" y="-80" width="120" height="160" rx="5" ry="5" class="glass"/>
+    <rect x="-60" y="-80" width="120" height="160" rx="5" ry="5" class="component"/>
+    <text x="0" y="-90" text-anchor="middle" class="label">Glass Carafe</text>
+  </g>
+
+  <!-- Component 3: Plunger Rod -->
+  <g transform="translate(300, 500)">
+    <rect x="-5" y="-60" width="10" height="120" class="metal"/>
+    <ellipse cx="0" cy="-60" rx="20" ry="15" class="wood"/>
+    <text x="0" y="-75" text-anchor="middle" class="label">Plunger Rod</text>
+  </g>
+
+  <!-- Component 4: Filter Frame -->
+  <g transform="translate(300, 660)">
+    <circle cx="0" cy="0" r="55" class="metal"/>
+    <circle cx="0" cy="0" r="45" class="mesh"/>
+    <text x="0" y="-65" text-anchor="middle" class="label">Filter Frame</text>
+  </g>
+
+  <!-- Component 5: Base Plate -->
+  <g transform="translate(300, 820)">
+    <circle cx="0" cy="0" r="50" class="metal"/>
+    <circle cx="0" cy="0" r="30" class="glass"/>
+    <text x="0" y="-60" text-anchor="middle" class="label">Base Plate</text>
+  </g>
+
+  <!-- Assembly arrows -->
+  <path d="M 300 180 L 300 220" class="leader-line" marker-end="url(#arrowhead)"/>
+  <path d="M 300 360 L 300 400" class="leader-line" marker-end="url(#arrowhead)"/>
+  <path d="M 300 520 L 300 560" class="leader-line" marker-end="url(#arrowhead)"/>
+  <path d="M 300 680 L 300 720" class="leader-line" marker-end="url(#arrowhead)"/>
+
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+  </marker>
+</svg>

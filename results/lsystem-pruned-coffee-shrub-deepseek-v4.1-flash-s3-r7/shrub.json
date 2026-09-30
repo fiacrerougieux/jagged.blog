@@ -1,0 +1,13 @@
+{
+  "axiom": "I",
+  "rules": {
+    "I": "G[+A][-B]I",
+    "A": "G[+A][-A][++A][--A]G",
+    "B": "--GGGGGG+++W",
+    "W": "G[+L]GW",
+    "L": "G[+G]G"
+  },
+  "angle": 20,
+  "iterations": 5,
+  "start_heading": 90
+}

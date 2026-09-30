@@ -4,7 +4,7 @@
   "short": "Venn",
   "version": "v1",
   "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
-  "groundTruth": "Short black is espresso only, flat white espresso and milk, iced long black espresso and cold, iced latte all three, babyccino milk only, milkshake milk and cold, cold brew cold only, and pour-over outside every circle. The circles and words are read back out of the compiled PDF, each word has to be centred in its own region, and no word's box may cross a circle's outline.",
+  "groundTruth": "Short black is espresso only, flat white espresso and milk, iced long black espresso and cold, iced latte all three, babyccino milk only, milkshake milk and cold, cold brew cold only, and pour-over outside every circle. The circles and words are read back out of the compiled PDF, each word has to be centred in its own region, and no letter may touch a circle's outline, with the line's width counted.",
   "checks": [
     {
       "id": "compiles",
@@ -27,7 +27,7 @@
     {
       "id": "clear",
       "label": "No label on an edge",
-      "how": "No word's box crosses a circle's outline.",
+      "how": "No letter touches a circle's outline, with the line's width counted.",
       "decidedBy": "measured"
     }
   ],

@@ -1722,6 +1722,631 @@
       }
     },
     {
+      "task": "tikz-coffee-venn",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "tikz-coffee-venn-kimi-k3-s1-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0769,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink in its region, with milkshake across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "tikz-coffee-venn-kimi-k3-s2-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0373,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Four labels across an edge after one render, which it called done.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "tikz-coffee-venn-kimi-k3-s3-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0578,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Three labels across an edge after one render.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "fireworks/ember-1",
+      "label": "Ember 1",
+      "artifact": "tikz-coffee-venn-ember-1-s1-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0416,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Circles turned on their side, and four labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "fireworks/ember-1",
+      "label": "Ember 1",
+      "artifact": "tikz-coffee-venn-ember-1-s2-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0445,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Plain outlines, every drink right, and three labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "fireworks/ember-1",
+      "label": "Ember 1",
+      "artifact": "tikz-coffee-venn-ember-1-s3-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0365,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, with iced long black and milkshake on a line.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s1-r4",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0625,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 3,
+      "note": "Every drink right and every label clear, with flat white close to both lines. It said the render looked correct.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s2-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0659,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and iced latte across a line.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s3-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0558,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 3,
+      "note": "White boxes behind every label, and every letter clear of the lines.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "tikz-coffee-venn-gpt-6-luna-s1-r4",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0054,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and five labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "tikz-coffee-venn-gpt-6-luna-s2-r4",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0054,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and three labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "tikz-coffee-venn-gpt-6-luna-s3-r5",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 5,
+      "cost": 0.0081,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and three labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "tikz-coffee-venn-glm-5.3-flashx-s1-r4",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0132,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and four labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "tikz-coffee-venn-glm-5.3-flashx-s2-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0106,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Served cold on top, every drink right, and four labels across an edge.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "tikz-coffee-venn-glm-5.3-flashx-s3-r2",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0066,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 3,
+      "note": "Every drink right and every label clear, with iced latte and iced long black close to a line.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "x-ai/grok-4.7",
+      "label": "Grok 4.7",
+      "artifact": "tikz-coffee-venn-grok-4.7-s1-r4",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.1461,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": true
+      },
+      "quality": 1,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Pour-over inside Has espresso and milkshake in milk only.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "x-ai/grok-4.7",
+      "label": "Grok 4.7",
+      "artifact": "tikz-coffee-venn-grok-4.7-s2-r8",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.498,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Eight rounds, with milkshake broken over two lines as \"milk shake\" and iced long black on a line.",
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "x-ai/grok-4.7",
+      "label": "Grok 4.7",
+      "artifact": "tikz-coffee-venn-grok-4.7-s3-r6",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 6,
+      "cost": 0.131,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 4,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and only iced long black touching a line.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "tikz-coffee-venn-gemini-3.8-flash-s1-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.2047,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Passed all four in three rounds, without measuring anything.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "tikz-coffee-venn-gemini-3.8-flash-s2-r3",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.2632,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Passed all four, after working out each label's distance from every circle in Python.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "xiaomi/mimo-v2.6-pro",
+      "label": "MiMo v2.6 Pro",
+      "artifact": "tikz-coffee-venn-mimo-v2.6-pro-s1-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.0068,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and two labels across an edge. The clock ended it after one render.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "xiaomi/mimo-v2.6-pro",
+      "label": "MiMo v2.6 Pro",
+      "artifact": "tikz-coffee-venn-mimo-v2.6-pro-s2-r1",
+      "post": "2026-09-25-ten-models-on-the-coffee-venn",
+      "date": "2026-09-25",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.0061,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Every drink right, and two labels across an edge. The clock ended it after one render.",
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
       "task": "spice-frother-triangle",
       "model": "deepseek/deepseek-v4.1-flash",
       "label": "DeepSeek 4.1 Flash",
@@ -1953,6 +2578,1257 @@
       "note": "A straight left side and branches sweeping right, in 906 segments.",
       "score": {
         "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s1-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0555,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s2-r3-1859",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0666,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s3-r3-1859",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0418,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s4-r5",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 5,
+      "cost": 0.1126,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "geographic-grounding"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s5-r4",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 5,
+      "rounds": 4,
+      "cost": 0.0589,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s6-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 6,
+      "rounds": 3,
+      "cost": 0.0465,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s7-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 7,
+      "rounds": 3,
+      "cost": 0.0494,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s8-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 8,
+      "rounds": 3,
+      "cost": 0.0496,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s9-r5",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 9,
+      "rounds": 5,
+      "cost": 0.0902,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "tikz-coffee-venn-gpt-6-sol-s10-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 10,
+      "rounds": 3,
+      "cost": 0.0627,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "tikz-coffee-venn-perceptron-mk1.5-s1-r4",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.1062,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 1,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "tikz-coffee-venn-perceptron-mk1.5-s2-r8",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.0476,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "tikz-coffee-venn-perceptron-mk1.5-s3-r2",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.1688,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "tikz-coffee-venn-command-a-plus-s1-r6",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 6,
+      "cost": 0.0753,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "tikz-coffee-venn-command-a-plus-s2-r4",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0569,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "tikz-coffee-venn-command-a-plus-s3-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.034,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 2,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "svg-french-press-perceptron-mk1.5-s1-r8",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.0593,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "note": "Terrible",
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "svg-french-press-perceptron-mk1.5-s2-r3",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0978,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "physical-plausibility",
+        "labelling"
+      ],
+      "note": "Not great and off axis",
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "svg-french-press-perceptron-mk1.5-s3-r6",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 6,
+      "cost": 0.0592,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "physical-plausibility",
+        "labelling"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "svg-french-press-command-a-plus-s1-r2",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0252,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "physical-plausibility",
+        "labelling"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "svg-french-press-command-a-plus-s2-r4",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0398,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "physical-plausibility",
+        "labelling"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "svg-french-press-command-a-plus-s3-r1",
+      "post": null,
+      "date": "2026-09-27",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0209,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "physical-plausibility",
+        "labelling"
+      ],
+      "note": "Terrible",
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "svg-french-press-claude-sonnet-5.5-s1-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0639,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "svg-french-press-claude-sonnet-5.5-s2-r1",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0449,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "svg-french-press-claude-sonnet-5.5-s3-r1",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0371,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "tikz-coffee-venn-claude-sonnet-5.5-s1-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0618,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "tikz-coffee-venn-claude-sonnet-5.5-s2-r3",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0721,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "note": "Looking good.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "tikz-coffee-venn-claude-sonnet-5.5-s3-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0452,
+      "checks": {
+        "compiles": true,
+        "regions": false,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 4,
+      "failures": [
+        "labelling"
+      ],
+      "note": "Overlaping labels with lines.",
+      "score": {
+        "passed": 1,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-deepseek-v4.1-flash-s1-r8",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.2663,
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-deepseek-v4.1-flash-s2-r1",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.3146,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-flash",
+      "label": "Qwen3.8 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-flash-s2-r3",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "stoppedBy": "clock",
+      "cost": 0.0434,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-6-luna-s1-r8",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.0099,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-6-luna-s2-r8",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.0093,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-6-luna-s3-r8",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.0081,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-gemini-3.8-flash-s2-r3",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.6792,
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "topology"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-gemini-3.8-flash-s1-r1",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.4512,
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "topology"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "lsystem-pruned-coffee-shrub-deepseek-v4.1-flash-s3-r7",
+      "post": "2026-09-29-cheap-models-grow-half-a-shrub",
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 7,
+      "stoppedBy": "budget",
+      "cost": 0.1768,
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "topology"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "tikz-coffee-venn-claude-opus-5.5-s1-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0933,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "tikz-coffee-venn-claude-opus-5.5-s2-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0952,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "tikz-coffee-venn-claude-opus-5.5-s3-r1",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0537,
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-sonnet-5.5-s1-r6",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 6,
+      "cost": 0.0876,
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-sonnet-5.5-s2-r8",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.1243,
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-sonnet-5.5-s3-r3",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.049,
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-opus-5.5-s1-r2",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0917,
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-opus-5.5-s2-r3",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0934,
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-opus-5.5-s3-r4",
+      "post": null,
+      "date": "2026-09-29",
+      "promptVersion": "v1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.1336,
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 2,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 1,
         "of": 3,
         "undecided": 0
       }

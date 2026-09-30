@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <pattern id="meshPattern" patternUnits="userSpaceOnUse" width="10" height="10">
+      <path d="M0 10 L10 0 M-5 5 L5 -5 M5 5 L-5 -5" stroke="#ccc" stroke-width="0.5" fill="none"/>
+    </pattern>
+  </defs>
+
+  <!-- Glass beaker -->
+  <rect x="50" y="50" width="120" height="300" fill="#e6f3ff" stroke="#333" stroke-width="2"/>
+  <!-- Lid -->
+  <rect x="50" y="10" width="120" height="30" fill="#606060" stroke="#333" stroke-width="2"/>
+  <!-- Plunger rod -->
+  <rect x="200" y="80" width="20" height="250" fill="#a0a0a0" stroke="#333" stroke-width="2"/>
+  <!-- Filter top piece -->
+  <rect x="230" y="90" width="80" height="20" fill="#d0d0d0" stroke="#333" stroke-width="2"/>
+  <!-- Filter mesh -->
+  <rect x="230" y="130" width="80" height="20" fill="url(#meshPattern)" stroke="#333" stroke-width="2"/>
+  <!-- Filter bottom piece -->
+  <rect x="230" y="250" width="80" height="20" fill="#c0c0c0" stroke="#333" stroke-width="2"/>
+
+  <!-- Assembly guide lines (dashed) -->
+  <g stroke="#999" stroke-dasharray="5,5" stroke-width="1">
+    <!-- Lid alignment -->
+    <line x1="50" y1="40" x2="170" y2="40"/>
+    <!-- Plunger insertion into glass -->
+    <line x1="210" y1="80" x2="210" y2="330"/>
+    <!-- Filter pieces onto plunger -->
+    <line x1="230" y1="90" x2="210" y2="90"/>
+    <line x1="230" y1="130" x2="210" y2="130"/>
+    <line x1="230" y1="250" x2="210" y2="250"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="85" y="20" font-size="12" fill="#333" text-anchor="middle">Lid</text>
+  <text x="85" y="370" font-size="12" fill="#333" text-anchor="middle">Glass Beaker</text>
+  <text x="210" y="200" font-size="12" fill="#333" text-anchor="middle">Plunger Rod</text>
+  <text x="270" y="100" font-size="10" fill="#333" text-anchor="middle">Filter Top</text>
+  <text x="270" y="140" font-size="10" fill="#333" text-anchor="middle">Filter Mesh</text>
+  <text x="270" y="260" font-size="10" fill="#333" text-anchor="middle">Filter Bottom</text>
+</svg>

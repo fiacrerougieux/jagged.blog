@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" font-family="Arial" font-size="17">
+<rect width="800" height="1200" fill="#fafaf7"/>
+<text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">French Press – Exploded View</text>
+<line x1="330" y1="45" x2="330" y2="1180" stroke="#999" stroke-dasharray="8 5"/>
+<g stroke="#222" stroke-width="2" fill="#ccc">
+<!-- knob -->
+<circle cx="330" cy="75" r="22" fill="#222"/>
+<rect x="318" y="97" width="24" height="12" fill="#888"/>
+<!-- lid -->
+<path d="M225 165 Q225 130 330 128 Q435 130 435 165 Z" fill="#333"/>
+<rect x="225" y="165" width="210" height="16" rx="4" fill="#555"/>
+<rect x="315" y="128" width="30" height="8" fill="#111"/>
+<!-- rod -->
+<rect x="322" y="200" width="16" height="190" fill="#bbb"/>
+<rect x="318" y="200" width="24" height="14" fill="#999"/>
+<!-- filter top plate -->
+<path d="M240 440 Q330 395 420 440 Z" fill="#aaa"/>
+<circle cx="330" cy="418" r="4" fill="#666"/>
+<!-- spring -->
+<g fill="none"><ellipse cx="330" cy="475" rx="85" ry="9"/><ellipse cx="330" cy="485" rx="85" ry="9"/><ellipse cx="330" cy="495" rx="85" ry="9"/></g>
+<!-- mesh -->
+<ellipse cx="330" cy="550" rx="100" ry="14" fill="#e6e6e6"/>
+<ellipse cx="330" cy="550" rx="100" ry="14" fill="url(#m)"/>
+<!-- bottom plate -->
+<ellipse cx="330" cy="610" rx="95" ry="12" fill="#aaa"/>
+<path d="M240 610 L420 610 M330 598 L330 622" stroke="#555"/>
+<ellipse cx="330" cy="610" rx="12" ry="5" fill="#777"/>
+<!-- carafe -->
+<path d="M230 665 L230 950 Q230 975 255 975 L405 975 Q430 975 430 950 L430 665 Z" fill="#cfe6ee" fill-opacity=".6"/>
+<ellipse cx="330" cy="665" rx="100" ry="10" fill="#e8f4f8"/>
+<path d="M230 665 L215 655 L230 650" fill="none"/>
+<!-- frame -->
+<path d="M240 1040 L240 1140 M420 1040 L420 1140 M330 1040 L330 1140" fill="none" stroke-width="0"/>
+<ellipse cx="330" cy="1045" rx="108" ry="12" fill="none" stroke-width="5"/>
+<path d="M222 1045 L232 1130 M438 1045 L428 1130 M262 1055 L268 1135 M398 1055 L392 1135" fill="none" stroke-width="5"/>
+<path d="M222 1130 Q222 1150 330 1150 Q438 1150 438 1130 L438 1120 L222 1120 Z" fill="#777"/>
+<rect x="236" y="1148" width="26" height="16" fill="#333"/><rect x="398" y="1148" width="26" height="16" fill="#333"/>
+<path d="M438 1050 Q520 1040 515 1085 Q510 1120 432 1120 L432 1105 Q490 1100 490 1085 Q490 1065 438 1068 Z" fill="#333"/>
+</g>
+<defs><pattern id="m" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0L6 6M6 0L0 6" stroke="#777" stroke-width=".8"/></pattern></defs>
+<g stroke="#666" stroke-width="1"><path d="M352 75H580M435 160H580M342 300H580M400 425H580M415 485H580M430 550H580M425 610H580M430 800H580M530 1090H580" fill="none"/></g>
+<g>
+<text x="588" y="80">1 Knob</text>
+<text x="588" y="165">2 Lid</text>
+<text x="588" y="305">3 Plunger rod</text>
+<text x="588" y="430">4 Top filter plate</text>
+<text x="588" y="490">5 Spring coil</text>
+<text x="588" y="555">6 Mesh screen</text>
+<text x="588" y="615">7 Bottom plate</text>
+<text x="588" y="805">8 Glass carafe</text>
+<text x="588" y="1095">9 Frame &amp; handle</text>
+<text x="588" y="510" font-size="13" fill="#555">(4–7: 3-piece filter)</text>
+</g>
+</svg>

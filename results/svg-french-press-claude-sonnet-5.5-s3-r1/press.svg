@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1000" font-family="sans-serif" font-size="14">
+<rect width="700" height="1000" fill="#fff"/>
+<g stroke="#222" stroke-width="2" stroke-linejoin="round">
+<line x1="300" y1="20" x2="300" y2="980" stroke="#888" stroke-dasharray="8 5" stroke-width="1.5"/>
+<!-- knob -->
+<path d="M270 90 Q270 40 300 40 Q330 40 330 90 Z" fill="#222"/>
+<rect x="288" y="90" width="24" height="14" fill="#555"/>
+<!-- rod -->
+<rect x="293" y="104" width="14" height="250" fill="#ccc"/>
+<!-- lid -->
+<path d="M225 215 L375 215 L375 235 L365 235 L365 250 L235 250 L235 235 L225 235 Z" fill="#2b2b2b"/>
+<rect x="282" y="190" width="36" height="25" fill="#444"/>
+<!-- filter upper plate -->
+<ellipse cx="300" cy="400" rx="105" ry="10" fill="#bbb"/>
+<rect x="293" y="354" width="14" height="46" fill="#ccc"/>
+<!-- spring/mesh -->
+<ellipse cx="300" cy="450" rx="105" ry="10" fill="#e8e8e8" />
+<g stroke-width="1" stroke="#666"><line x1="215" y1="450" x2="385" y2="450"/><line x1="240" y1="443" x2="240" y2="457"/><line x1="265" y1="441" x2="265" y2="459"/><line x1="300" y1="440" x2="300" y2="460"/><line x1="335" y1="441" x2="335" y2="459"/><line x1="360" y1="443" x2="360" y2="457"/></g>
+<!-- lower cross plate -->
+<ellipse cx="300" cy="505" rx="105" ry="10" fill="#bbb"/>
+<circle cx="300" cy="505" r="6" fill="#888"/>
+<!-- beaker -->
+<path d="M215 560 L385 560 L380 790 Q300 805 220 790 Z" fill="#cfe8f2" fill-opacity=".6"/>
+<path d="M205 552 L395 552 L395 560 L205 560 Z" fill="#ddd"/>
+<!-- frame -->
+<path d="M210 850 L390 850 L400 900 L200 900 Z" fill="#a33"/>
+<rect x="215" y="900" width="30" height="20" fill="#a33"/><rect x="355" y="900" width="30" height="20" fill="#a33"/>
+<path d="M395 850 Q470 850 470 880 Q470 930 400 900" fill="none" stroke-width="12" stroke="#a33"/>
+<path d="M210 850 L390 850" stroke-width="4"/>
+</g>
+<g fill="#111">
+<text x="350" y="70">1 Knob</text>
+<text x="315" y="290">2 Plunger rod</text>
+<text x="390" y="215" dy="20">3 Lid</text>
+<text x="415" y="405">4 Upper plate</text>
+<text x="415" y="455">5 Mesh screen</text>
+<text x="415" y="510">6 Lower cross plate + screw</text>
+<text x="410" y="680">7 Glass beaker</text>
+<text x="200" y="950" text-anchor="end">8 Frame base + handle</text>
+<text x="20" y="30" font-size="18" font-weight="bold">French press – exploded view</text>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-claude-sonnet-5.5-s1-r2",
+  "exportedAt": "2026-09-28T22:54:40.263Z",
+  "run": "2026-09-29-svg-french-press-0854",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "anthropic/claude-sonnet-5.5",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 1000\" font-family=\"Helvetica,Arial,sans-serif\">\n<rect width=\"800\" height=\"1000\" fill=\"#fafafa\"/>\n<text x=\"400\" y=\"30\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\" fill=\"#222\">French Press – Exploded View</text>\n<g stroke=\"#333\" stroke-width=\"2\">\n<!-- axis -->\n<line x1=\"400\" y1=\"50\" x2=\"400\" y2=\"960\" stroke=\"#999\" stroke-dasharray=\"8 5\" stroke-width=\"1.5\"/>\n<!-- rod -->\n<rect x=\"394\" y=\"100\" width=\"12\" height=\"350\" fill=\"#c8ccd0\"/>\n<!-- knob -->\n<path d=\"M368 92 Q368 50 400 50 Q432 50 432 92 Z\" fill=\"#2b2b2b\"/>\n<!-- lid -->\n<ellipse cx=\"400\" cy=\"148\" rx=\"135\" ry=\"16\" fill=\"#3a3a3a\"/>\n<path d=\"M265 148 L265 132 Q265 116 400 116 Q535 116 535 132 L535 148 Q535 164 400 164 Q265 164 265 148Z\" fill=\"#555\"/>\n<ellipse cx=\"400\" cy=\"132\" rx=\"135\" ry=\"16\" fill=\"#666\"/>\n<ellipse cx=\"400\" cy=\"132\" rx=\"14\" ry=\"5\" fill=\"#222\"/>\n\n<!-- rod redrawn over -->\n<rect x=\"394\" y=\"98\" width=\"12\" height=\"352\" fill=\"#c8ccd0\"/>\n<!-- filter: top spring plate -->\n<ellipse cx=\"400\" cy=\"480\" rx=\"108\" ry=\"18\" fill=\"#b8bcc2\"/>\n<ellipse cx=\"400\" cy=\"480\" rx=\"80\" ry=\"11\" fill=\"none\"/>\n<ellipse cx=\"400\" cy=\"480\" rx=\"10\" ry=\"3\" fill=\"#777\"/>\n<!-- mesh -->\n<path d=\"M292 555 L292 563 A108 18 0 0 0 508 563 L508 555Z\" fill=\"#9ea3aa\"/>\n<ellipse cx=\"400\" cy=\"555\" rx=\"108\" ry=\"18\" fill=\"#d9dde0\"/>\n<g stroke=\"#888\" stroke-width=\"0.7\" fill=\"none\"><ellipse cx=\"400\" cy=\"555\" rx=\"90\" ry=\"14\"/><ellipse cx=\"400\" cy=\"555\" rx=\"65\" ry=\"10\"/><ellipse cx=\"400\" cy=\"555\" rx=\"40\" ry=\"6\"/><line x1=\"400\" y1=\"541\" x2=\"400\" y2=\"569\"/><line x1=\"310\" y1=\"555\" x2=\"490\" y2=\"555\"/><line x1=\"340\" y1=\"545\" x2=\"460\" y2=\"565\"/><line x1=\"340\" y1=\"565\" x2=\"460\" y2=\"545\"/></g>\n<!-- cross plate -->\n<ellipse cx=\"400\" cy=\"640\" rx=\"108\" ry=\"18\" fill=\"#b8bcc2\"/>\n<g stroke-width=\"5\" stroke=\"#555\"><line x1=\"330\" y1=\"640\" x2=\"470\" y2=\"640\"/><line x1=\"400\" y1=\"625\" x2=\"400\" y2=\"655\"/></g>\n<ellipse cx=\"400\" cy=\"640\" rx=\"10\" ry=\"3\" fill=\"#777\"/>\n<!-- carafe -->\n<path d=\"M290 700 L290 900 Q290 925 315 925 L485 925 Q510 925 510 900 L510 700\" fill=\"#cfe8f0\" fill-opacity=\"0.6\"/>\n<ellipse cx=\"400\" cy=\"700\" rx=\"110\" ry=\"16\" fill=\"#e6f4f8\" fill-opacity=\"0.8\"/>\n<path d=\"M290 700 L280 690\" />\n<path d=\"M310 760 L310 890\" stroke=\"#fff\" stroke-width=\"5\" opacity=\".8\"/>\n<!-- frame -->\n<path d=\"M510 720 L560 720 Q590 720 590 750 L590 850 Q590 880 560 880 L510 880\" fill=\"none\" stroke=\"#222\" stroke-width=\"12\"/>\n<path d=\"M283 700 Q400 730 517 700\" fill=\"none\" stroke=\"#222\" stroke-width=\"6\"/>\n<rect x=\"285\" y=\"925\" width=\"230\" height=\"14\" rx=\"4\" fill=\"#222\"/>\n</g>\n<!-- labels -->\n<g font-size=\"15\" fill=\"#222\" stroke=\"none\">\n<g stroke=\"#555\" stroke-width=\"1\"><line x1=\"432\" y1=\"70\" x2=\"580\" y2=\"70\"/><line x1=\"535\" y1=\"132\" x2=\"580\" y2=\"132\"/><line x1=\"406\" y1=\"300\" x2=\"580\" y2=\"300\"/><line x1=\"508\" y1=\"480\" x2=\"580\" y2=\"480\"/><line x1=\"508\" y1=\"555\" x2=\"580\" y2=\"555\"/><line x1=\"508\" y1=\"640\" x2=\"580\" y2=\"640\"/><line x1=\"590\" y1=\"800\" x2=\"620\" y2=\"800\"/><line x1=\"290\" y1=\"820\" x2=\"170\" y2=\"820\"/><line x1=\"285\" y1=\"932\" x2=\"170\" y2=\"932\"/></g>\n<text x=\"586\" y=\"75\">1. Knob</text>\n<text x=\"586\" y=\"137\">2. Lid</text>\n<text x=\"586\" y=\"305\">3. Plunger rod</text>\n<text x=\"586\" y=\"470\">4. Spring plate (top)</text>\n<text x=\"586\" y=\"560\">5. Mesh screen</text>\n<text x=\"586\" y=\"645\">6. Cross plate (bottom)</text>\n<text x=\"624\" y=\"805\">7. Handle</text>\n<text x=\"165\" y=\"815\" text-anchor=\"end\">8. Glass carafe</text>\n<text x=\"165\" y=\"937\" text-anchor=\"end\">9. Frame base</text>\n<text x=\"165\" y=\"555\" text-anchor=\"end\" font-size=\"13\" fill=\"#555\">3-piece filter</text>\n<text x=\"165\" y=\"573\" text-anchor=\"end\" font-size=\"13\" fill=\"#555\">stack (4–6)</text>\n</g>\n<path d=\"M170 470 Q180 470 180 480 L180 630 Q180 640 170 640\" fill=\"none\" stroke=\"#555\" stroke-width=\"1.5\" transform=\"translate(-10 0)\"/>\n</svg>\n",
+    "truncated": false,
+    "lines": 58
+  },
+  "output": null,
+  "notes": []
+}

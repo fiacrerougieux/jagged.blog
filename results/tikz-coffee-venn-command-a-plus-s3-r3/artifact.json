@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-command-a-plus-s3-r3",
+  "exportedAt": "2026-09-27T09:11:32.024Z",
+  "run": "2026-09-27-tikz-coffee-venn-1852",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "cohere/command-a-plus",
+  "seed": 3,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "short black in no circle; babyccino in no circle; flat white in Has espresso; iced latte in Served cold; cold brew crosses a circle's edge; flat white crosses a circle's edge; iced latte crosses a circle's edge; iced long black crosses a circle's edge; milkshake crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}[scale=1]\n  % Parameters for Venn diagram\n  \\def\\radius{2} % radius of circles\n  \\def\\distanceEM{3} % distance between espresso and milk centers (horizontal)\n  \\def\\distanceMC{3} % distance between milk and cold centers (used for equilateral triangle)\n  % Circle positions forming an equilateral triangle\n  \\coordinate (E) at (0,0); % Has espresso\n  \\coordinate (M) at (\\distanceEM,0); % Has milk\n  \\coordinate (C) at ({\\distanceEM/2},{\\distanceMC*sqrt(3)/2}); % Served cold\n\n  % Draw circles with light fills for clarity\n  \\fill[blue!10] (E) circle (\\radius);\n  \\fill[red!10] (M) circle (\\radius);\n  \\fill[green!10] (C) circle (\\radius);\n\n  % Draw circle outlines and labels\n  \\draw (E) circle (\\radius) node[left=10pt] {Has espresso};\n  \\draw (M) circle (\\radius) node[right=10pt] {Has milk};\n  \\draw (C) circle (\\radius) node[above=10pt] {Served cold};\n\n  % Place drink names in appropriate Venn regions\n  % Region definitions (approximate centers):\n  % None of the sets (pour-over)\n  \\node at (-5,-2.5) {pour-over};\n  % Only espresso (short black)\n  \\node at (-2.5,-0.5) {short black};\n  % Only milk (babyccino)\n  \\node at (5.5,-0.5) {babyccino};\n  % Only cold (cold brew)\n  \\node at (1.5,4.6) {cold brew};\n  % Espresso + milk (not cold) (flat white)\n  \\node at (1.4,-1.3) {flat white};\n  % Espresso + cold (not milk) (iced long black)\n  \\node at (0.3,1.7) {iced long black};\n  % Milk + cold (not espresso) (milkshake)\n  \\node at (3,1.7) {milkshake};\n  % All three (iced latte)\n  \\node at (1.5,1.4) {iced latte};\n\\end{tikzpicture}\n\\end{document}",
+    "truncated": false,
+    "lines": 43
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s8-r3",
+  "exportedAt": "2026-09-27T09:10:51.583Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 8,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=13pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n  \\definecolor{espresso}{HTML}{98674F}\n  \\definecolor{milk}{HTML}{568A8B}\n  \\definecolor{cold}{HTML}{5876AD}\n  \\definecolor{ink}{HTML}{26323B}\n  \\def\\r{2.75}\n  % Transparent fills leave every intersection visible.\n  \\fill[espresso,opacity=.16] (-1.65,.95) circle (\\r);\n  \\fill[milk,opacity=.16] (1.65,.95) circle (\\r);\n  \\fill[cold,opacity=.16] (0,-1.55) circle (\\r);\n  \\draw[espresso,line width=1.3pt] (-1.65,.95) circle (\\r);\n  \\draw[milk,line width=1.3pt] (1.65,.95) circle (\\r);\n  \\draw[cold,line width=1.3pt] (0,-1.55) circle (\\r);\n\n  \\node[font=\\bfseries\\small,text=espresso] at (-2.95,4.04) {Has espresso};\n  \\node[font=\\bfseries\\small,text=milk] at (2.95,4.04) {Has milk};\n  \\node[font=\\bfseries\\small,text=cold] at (0,-4.66) {Served cold};\n\n  \\tikzset{drink/.style={text=ink,font=\\sffamily\\small,align=center}}\n  \\node[drink] at (-3.02,1.43) {short black};\n  \\node[drink] at (3.02,1.43) {babyccino};\n  \\node[drink] at (0,2.31) {flat white};\n  \\node[drink] at (-1.69,-1.10) {iced long\\\\black};\n  \\node[drink] at (1.69,-1.10) {milkshake};\n  \\node[drink] at (0,.02) {iced latte};\n  \\node[drink] at (0,-3.30) {cold brew};\n  \\node[drink] at (4.74,-3.24) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 33
+  },
+  "output": null,
+  "notes": []
+}

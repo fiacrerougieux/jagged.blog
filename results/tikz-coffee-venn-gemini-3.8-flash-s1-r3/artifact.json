@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-gemini-3.8-flash-s1-r3",
+  "exportedAt": "2026-09-25T11:06:51.736Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "google/gemini-3.8-flash",
+  "seed": 1,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[border=12pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{shapes,backgrounds,positioning}\n\n\\begin{document}\n\\sffamily\n\\begin{tikzpicture}[thick]\n  % Define harmonious colors for the three sets\n  \\definecolor{cEspresso}{RGB}{205, 92, 92}   % Indian Red\n  \\definecolor{cMilk}{RGB}{70, 130, 180}       % Steel Blue\n  \\definecolor{cCold}{RGB}{60, 179, 113}       % Sea Green\n\n  % Bounding box representing universal set of drinks\n  \\draw[rounded corners=14pt, fill=gray!4, draw=gray!35, line width=1pt] (-5.8, -5.6) rectangle (5.8, 4.8);\n\n  % Circle coordinates: r0 = 1.65, R = 2.85\n  % C1 (Espresso): 150 deg -> (-1.429, 0.825)\n  % C2 (Milk):      30 deg -> ( 1.429, 0.825)\n  % C3 (Cold):     270 deg -> ( 0.000, -1.650)\n\n  % Circle fills with transparency\n  \\begin{scope}[fill opacity=0.22]\n    \\fill[cEspresso] (-1.429, 0.825) circle (2.85);\n    \\fill[cMilk]      (1.429, 0.825) circle (2.85);\n    \\fill[cCold]      (0.000, -1.650) circle (2.85);\n  \\end{scope}\n\n  % Circle outlines\n  \\draw[cEspresso!85!black, line width=1.6pt] (-1.429, 0.825) circle (2.85);\n  \\draw[cMilk!85!black,     line width=1.6pt] ( 1.429, 0.825) circle (2.85);\n  \\draw[cCold!85!black,     line width=1.6pt] ( 0.000, -1.650) circle (2.85);\n\n  % Circle Headings / Labels\n  \\node[cEspresso!90!black, font=\\bfseries\\large] at (-2.6, 4.1) {Has espresso};\n  \\node[cMilk!90!black,     font=\\bfseries\\large] at ( 2.6, 4.1) {Has milk};\n  \\node[cCold!90!black,     font=\\bfseries\\large] at ( 0.0, -4.9) {Served cold};\n\n  % Drinks placement: exactly one per Venn diagram region\n  % 1. Has espresso only\n  \\node[align=center, font=\\bfseries] at (-2.65, 1.38) {short black};\n\n  % 2. Has milk only\n  \\node[align=center, font=\\bfseries] at (2.65, 1.38) {babyccino};\n\n  % 3. Served cold only\n  \\node[align=center, font=\\bfseries] at (0.00, -3.05) {cold brew};\n\n  % 4. Has espresso + Has milk (not cold)\n  \\node[align=center, font=\\bfseries] at (0.00, 2.22) {flat white};\n\n  % 5. Has espresso + Served cold (no milk)\n  \\node[align=center, font=\\bfseries] at (-1.75, -1.00) {iced\\\\long black};\n\n  % 6. Has milk + Served cold (no espresso)\n  \\node[align=center, font=\\bfseries] at (1.75, -1.00) {milkshake};\n\n  % 7. Has espresso + Has milk + Served cold (center)\n  \\node[align=center, font=\\bfseries] at (0.00, 0.00) {iced latte};\n\n  % 8. Outside all three circles (Universal set)\n  \\node[align=center, font=\\bfseries] at (-4.00, -3.80) {pour-over};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 65
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    }
+  ]
+}

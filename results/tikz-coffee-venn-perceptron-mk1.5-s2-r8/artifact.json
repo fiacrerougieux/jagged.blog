@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-perceptron-mk1.5-s2-r8",
+  "exportedAt": "2026-09-27T09:11:14.325Z",
+  "run": "2026-09-27-tikz-coffee-venn-1855",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "perceptron/perceptron-mk1.5",
+  "seed": 2,
+  "round": 8,
+  "rounds": 4,
+  "grade": {
+    "pass": false,
+    "detail": "cold brew in Has espresso; flat white in Has espresso & Has milk & Served cold; iced long black in Has espresso & Has milk & Served cold; milkshake in Has espresso & Has milk; pour-over in Has espresso; babyccino crosses a circle's edge; cold brew crosses a circle's edge; iced long black crosses a circle's edge; milkshake crosses a circle's edge; pour-over crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{positioning,shapes.geometric}\n\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n\n% Draw circles with labels\n\\draw[fill=blue!10] (0,0) circle (2.5cm);\n\\draw[fill=red!10] (2.5,0) circle (2.5cm);\n\\draw[fill=green!10] (1.25,1.5) circle (2.5cm);\n\n% Circle labels (placed outside the circles)\n\\node at (-1.5,1.5) {Has espresso};\n\\node at (4.0,1.5) {Has milk};\n\\node at (1.25,3.5) {Served cold};\n\n% Add drink names in appropriate regions\n% Only espresso (left crescent)\n\\node at (-0.8,0) {short black};\n\\node at (-0.8,-0.5) {pour-over};\n\n% Espresso + milk (top intersection of left and right circles)\n\\node at (1.25,1.0) {flat white};\n\n% All three (center)\n\\node at (1.25,0.2) {iced latte};\n\n% Espresso + cold (bottom-left intersection)\n\\node at (0.3,-0.8) {iced long black};\n\\node at (0.3,-1.3) {cold brew};\n\n% Only milk (right crescent)\n\\node at (3.3,0) {babyccino};\n\n% Milk + cold (bottom-right intersection)\n\\node at (2.2,-0.8) {milkshake};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}

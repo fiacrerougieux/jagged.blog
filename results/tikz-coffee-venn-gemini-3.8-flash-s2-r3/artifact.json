@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-gemini-3.8-flash-s2-r3",
+  "exportedAt": "2026-09-25T11:06:52.914Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "google/gemini-3.8-flash",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=20pt]{standalone}\n\\usepackage[scaled=0.92]{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage[T1]{fontenc}\n\\usepackage{xcolor}\n\n% Refined, distinct color palette for the three sets\n\\definecolor{colEspresso}{RGB}{185, 65, 30}   % Warm terracotta / espresso\n\\definecolor{colMilk}{RGB}{35, 130, 95}       % Fresh forest / sage green\n\\definecolor{colCold}{RGB}{30, 110, 185}      % Crisp ocean blue\n\\definecolor{darkText}{RGB}{30, 30, 35}\n\\definecolor{bgBox}{RGB}{249, 250, 251}\n\\definecolor{boxBorder}{RGB}{215, 220, 228}\n\n\\begin{document}\n\\begin{tikzpicture}[>=latex]\n\n  % Universe / Bounding box (symmetric and balanced margins)\n  \\draw[rounded corners=18pt, fill=bgBox, draw=boxBorder, line width=1.5pt]\n    (-5.8, -6.25) rectangle (5.8, 5.40);\n\n  % Circles setup:\n  % Centers at d=1.8, R=3.2\n  % E: 150 deg (-1.5588,  0.900)\n  % M:  30 deg ( 1.5588,  0.900)\n  % C: 270 deg ( 0.0000, -1.800)\n  \\coordinate (cE) at (150:1.8);\n  \\coordinate (cM) at (30:1.8);\n  \\coordinate (cC) at (270:1.8);\n\n  \\def\\R{3.2}\n\n  % Filled circles with soft opacity for overlapping region distinction\n  \\begin{scope}[fill opacity=0.12]\n    \\fill[colEspresso] (cE) circle (\\R);\n    \\fill[colMilk]     (cM) circle (\\R);\n    \\fill[colCold]     (cC) circle (\\R);\n  \\end{scope}\n\n  % Circle outlines\n  \\draw[colEspresso, line width=2pt, draw opacity=0.9] (cE) circle (\\R);\n  \\draw[colMilk,     line width=2pt, draw opacity=0.9] (cM) circle (\\R);\n  \\draw[colCold,     line width=2pt, draw opacity=0.9] (cC) circle (\\R);\n\n  % Circle labels (Category names, centered over/under respective circle crests)\n  \\node[font=\\bfseries\\Large, text=colEspresso, anchor=south] at (-1.56, 4.25) {Has espresso};\n  \\node[font=\\bfseries\\Large, text=colMilk, anchor=south]     at ( 1.56, 4.25) {Has milk};\n  \\node[font=\\bfseries\\Large, text=colCold, anchor=north]     at ( 0.00, -5.15) {Served cold};\n\n  % Helper style for drink nodes\n  \\tikzset{\n    drink/.style={\n      font=\\bfseries\\normalsize,\n      text=darkText,\n      align=center\n    }\n  }\n\n  % --- 8 Drinks in their respective regions ---\n\n  % 1. Has espresso ONLY: short black\n  \\node[drink] at (150:3.35) {short black};\n\n  % 2. Has milk ONLY: babyccino\n  \\node[drink] at (30:3.35) {babyccino};\n\n  % 3. Served cold ONLY: cold brew\n  \\node[drink] at (270:3.40) {cold brew};\n\n  % 4. Has espresso + Has milk (not cold): flat white\n  \\node[drink] at (90:2.40) {flat white};\n\n  % 5. Has espresso + Served cold (no milk): iced long black\n  \\node[drink] at (210:2.40) {iced long\\\\[-1pt]black};\n\n  % 6. Has milk + Served cold (no espresso): milkshake\n  \\node[drink] at (330:2.40) {milkshake};\n\n  % 7. Has espresso + Has milk + Served cold (all three): iced latte\n  \\node[drink] at (0, 0.0) {iced latte};\n\n  % 8. Outside all three circles: pour-over\n  \\node[drink] at (-3.9, -4.2) {pour-over};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 87
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    }
+  ]
+}

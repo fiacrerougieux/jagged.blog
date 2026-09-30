@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-kimi-k3-s3-r1",
+  "exportedAt": "2026-09-25T11:06:33.116Z",
+  "run": "2026-09-25-tikz-coffee-venn-1828",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "moonshotai/kimi-k3",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "flat white crosses a circle's edge; iced long black crosses a circle's edge; milkshake crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[thick]\n  % Bounding box\n  \\draw (-4.6,-3.8) rectangle (4.6,4.2);\n\n  % Circles\n  \\begin{scope}\n    \\fill[red!30,   fill opacity=0.45] (-1.3, 0.75) circle (2.1);\n    \\fill[green!35, fill opacity=0.45] ( 1.3, 0.75) circle (2.1);\n    \\fill[blue!30,  fill opacity=0.45] ( 0.0,-1.20) circle (2.1);\n  \\end{scope}\n  \\draw[red!70!black,   very thick] (-1.3, 0.75) circle (2.1);\n  \\draw[green!50!black, very thick] ( 1.3, 0.75) circle (2.1);\n  \\draw[blue!70!black,  very thick] ( 0.0,-1.20) circle (2.1);\n\n  % Circle labels\n  \\node[red!60!black,   font=\\bfseries\\large] at (-2.2, 3.1) {Has espresso};\n  \\node[green!40!black, font=\\bfseries\\large] at ( 2.2, 3.1) {Has milk};\n  \\node[blue!60!black,  font=\\bfseries\\large] at ( 0.0,-3.6) {Served cold};\n\n  % Drinks\n  \\node[font=\\small] at (-2.2, 1.1)  {short black};      % espresso only\n  \\node[font=\\small] at ( 2.2, 1.1)  {babyccino};        % milk only\n  \\node[font=\\small] at ( 0.0,-2.2)  {cold brew};        % cold only\n  \\node[font=\\small] at ( 0.0, 1.85) {flat white};       % espresso + milk\n  \\node[font=\\small] at (-1.45,-0.85){iced long black};  % espresso + cold\n  \\node[font=\\small] at ( 1.45,-0.85){milkshake};        % milk + cold\n  \\node[font=\\small] at ( 0.0, 0.15) {iced latte};       % all three\n  \\node[font=\\small] at ( 0.0, 3.8)  {pour-over};        % outside all\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 33
+  },
+  "output": null,
+  "notes": []
+}

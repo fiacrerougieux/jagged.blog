@@ -1,0 +1,56 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-luna-s2-r4",
+  "exportedAt": "2026-09-25T11:06:43.161Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-luna",
+  "seed": 2,
+  "round": 4,
+  "rounds": 4,
+  "grade": {
+    "pass": false,
+    "detail": "flat white crosses a circle's edge; iced long black crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\usetikzlibrary{backgrounds}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n  % Three sets: espresso, milk, and served cold.\n  \\begin{scope}[on background layer]\n    \\fill[blue!45, fill opacity=.10] (-1.25,.55) circle (2.2);\n    \\fill[orange!65, fill opacity=.10] (1.25,.55) circle (2.2);\n    \\fill[cyan!65, fill opacity=.12] (0,-.95) circle (2.2);\n  \\end{scope}\n  \\draw[blue!70!black, line width=1.2pt] (-1.25,.55) circle (2.2);\n  \\draw[orange!75!black, line width=1.2pt] (1.25,.55) circle (2.2);\n  \\draw[cyan!60!black, line width=1.2pt] (0,-.95) circle (2.2);\n\n  % Set labels\n  \\node[blue!70!black, font=\\sffamily\\bfseries, anchor=south west] at (-3.25,2.7) {Has espresso};\n  \\node[orange!75!black, font=\\sffamily\\bfseries, anchor=south east] at (3.25,2.7) {Has milk};\n  \\node[cyan!45!black, font=\\sffamily\\bfseries, anchor=north] at (0,-3.2) {Served cold};\n\n  % Drinks in their respective regions\n  \\node[align=center, font=\\sffamily\\small] at (-2.3,.65) {short black};\n  \\node[align=center, font=\\sffamily\\small] at (2.3,.65) {babyccino};\n  \\node[align=center, font=\\sffamily\\small] at (0,1.7) {flat white};\n  \\node[align=center, font=\\sffamily\\scriptsize] at (-1.2,-.35) {iced\\\\long black};\n  \\node[align=center, font=\\sffamily\\scriptsize] at (1.2,-.35) {milkshake};\n  \\node[align=center, font=\\sffamily\\scriptsize] at (0,-.15) {iced\\\\latte};\n  \\node[align=center, font=\\sffamily\\small] at (0,-2.45) {cold brew};\n  \\node[align=center, font=\\sffamily\\small] at (0,-3.8) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 32
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    }
+  ]
+}

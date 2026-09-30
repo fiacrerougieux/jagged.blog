@@ -1,0 +1,1 @@
+{"axiom": "FT", "rules": {"T": "F[++++B]F[+++B]T", "B": "F[+B]F[-B]"}, "angle": 20, "iterations": 5, "start_heading": 90}

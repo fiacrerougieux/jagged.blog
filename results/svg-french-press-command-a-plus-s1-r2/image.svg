@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- French press exploded assembly diagram (three-piece plunger filter) -->
+  <defs>
+    <!-- No gradients needed for this simple diagram -->
+  </defs>
+
+  <!-- Main carafe body -->
+  <rect x="80" y="100" width="120" height="400" rx="8" ry="8" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+  <!-- Base of carafe -->
+  <rect x="80" y="580" width="120" height="20" fill="#d0d0d0" stroke="#333" stroke-width="1"/>
+  <!-- Small foot for stability -->
+  <rect x="90" y="610" width="100" height="10" fill="#666" stroke="#333" stroke-width="1"/>
+
+  <!-- Lid with handle -->
+  <circle cx="140" cy="50" r="30" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <!-- Lid handle -->
+  <rect x="130" y="20" width="20" height="10" fill="#666" stroke="#333" stroke-width="1"/>
+  <!-- Line showing lid attaches to plunger rod -->
+  <line x1="140" y1="50" x2="140" y2="100" stroke="#333" stroke-width="2"/>
+
+  <!-- Plunger rod (vertical metal rod) -->
+  <rect x="130" y="100" width="20" height="400" fill="#666" stroke="#333" stroke-width="2"/>
+  <!-- Top cap of rod (also acts as lid interface) -->
+  <circle cx="140" cy="100" r="10" fill="#666" stroke="#333" stroke-width="2"/>
+  <!-- Bottom cap of rod -->
+  <circle cx="140" cy="500" r="10" fill="#666" stroke="#333" stroke-width="2"/>
+
+  <!-- Upper filter plate (perforated) -->
+  <circle cx="140" cy="150" r="40" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+  <!-- Perforation holes -->
+  <circle cx="140" cy="110" r="3" fill="#fff" stroke="#333" stroke-width="0.5"/>
+  <circle cx="180" cy="150" r="3" fill="#fff" stroke="#333" stroke-width="0.5"/>
+  <circle cx="140" cy="190" r="3" fill="#fff" stroke="#333" stroke-width="0.5"/>
+  <circle cx="100" cy="150" r="3" fill="#fff" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Sealing ring (between upper and lower filter) -->
+  <circle cx="140" cy="250" r="40" fill="none" stroke="#666" stroke-width="6"/>
+  <circle cx="140" cy="250" r="30" fill="#ccc" stroke="#333" stroke-width="2"/>
+
+  <!-- Lower filter mesh -->
+  <circle cx="140" cy="350" r="40" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+  <!-- Mesh pattern lines -->
+  <line x1="100" y1="350" x2="180" y2="350" stroke="#666" stroke-width="0.5"/>
+  <line x1="140" y1="310" x2="140" y2="390" stroke="#666" stroke-width="0.5"/>
+  <line x1="120" y1="330" x2="160" y2="370" stroke="#666" stroke-width="0.5"/>
+  <line x1="160" y1="330" x2="120" y2="370" stroke="#666" stroke-width="0.5"/>
+
+  <!-- Dashed lines showing rod passes through filter components -->
+  <line x1="140" y1="100" x2="140" y2="150" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="140" y1="500" x2="140" y2="350" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>

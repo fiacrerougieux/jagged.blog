@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-perceptron-mk1.5-s3-r2",
+  "exportedAt": "2026-09-27T09:11:18.093Z",
+  "run": "2026-09-27-tikz-coffee-venn-1855",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "perceptron/perceptron-mk1.5",
+  "seed": 3,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": false,
+    "detail": "babyccino in no circle; iced long black missing; milkshake in Has milk; pour-over in Has espresso; babyccino crosses a circle's edge; flat white crosses a circle's edge; iced latte crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, every node/.style={font=\\sffamily\\small}]\n  % Define circle centers\n  \\coordinate (A) at (0,0);   % Has espresso\n  \\coordinate (B) at (2,0);    % Has milk\n  \\coordinate (C) at (1,1.732); % Served cold\n\n  % Draw circles with labels\n  \\draw[fill=blue!10] (A) circle (1.5cm) node[pos=0.5, below left] {Has espresso};\n  \\draw[fill=red!10] (B) circle (1.5cm) node[pos=0.5, below right] {Has milk};\n  \\draw[fill=green!10] (C) circle (1.5cm) node[pos=0.5, above] {Served cold};\n\n  % Place drinks in correct regions\n  % Espresso only (left, not overlapping)\n  \\node at (-0.8, -0.2) {short black};\n  \\node at (-0.8, 0.2) {pour-over};\n  \n  % Milk only (right, not overlapping)\n  \\node at (2.8, -0.2) {milkshake};\n  \n  % Cold only (top, not overlapping)\n  \\node at (1, 2.8) {cold brew};\n  \n  % Espresso ∩ Milk (bottom overlap)\n  \\node at (1, -0.8) {flat white};\n  \\node at (1, -1.2) {babyccino};\n  \n  % Espresso ∩ Cold (left-top overlap)\n  \\node at (0.2, 1.2) {iced long black};\n  \n  % Milk ∩ Cold (right-top overlap)\n  \\node at (1.8, 1.2) {milkshake};\n  \n  % All three (center)\n  \\node at (1, 0.5) {iced latte};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}

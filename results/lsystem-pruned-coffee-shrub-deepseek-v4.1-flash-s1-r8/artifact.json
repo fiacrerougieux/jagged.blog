@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-deepseek-v4.1-flash-s1-r8",
+  "exportedAt": "2026-09-29T01:42:28.544Z",
+  "run": "2026-09-29-lsystem-pruned-coffee-shrub-1112",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": true,
+    "detail": "no drawn edge; the sides stray left 0.0% and right 10.2% of the width from straight"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"F\",\n  \"rules\": {\n    \"F\": \"F[+G+G][-F][-F][-F]F\"\n  },\n  \"angle\": 35,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 10
+  },
+  "output": null,
+  "notes": []
+}

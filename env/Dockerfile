@@ -170,4 +170,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends libosmesa6 \
     && /opt/checkenv/bin/pip install --no-cache-dir mujoco==3.13.0
 ENV MUJOCO_GL=osmesa
 
+# Vector Type 1 versions of the EC fonts. Without them a TeX source that loads
+# \usepackage[T1]{fontenc} gets bitmap letters, which the SVG export turned into
+# one <rect> per pixel and the Venn checker read as blocks. Added 2026-09-28;
+# runs before then were rendered and graded with the bitmaps.
+RUN apt-get update && apt-get install -y --no-install-recommends cm-super \
+    && rm -rf /var/lib/apt/lists/*
+
 CMD ["pi", "--version"]

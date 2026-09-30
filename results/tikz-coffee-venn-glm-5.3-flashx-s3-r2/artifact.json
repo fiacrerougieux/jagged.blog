@@ -1,0 +1,46 @@
+{
+  "name": "tikz-coffee-venn-glm-5.3-flashx-s3-r2",
+  "exportedAt": "2026-09-25T11:06:47.412Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 3,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[drink/.style={font=\\small}]\n  \\def\\r{2.6}\n  \\def\\sep{1.7}\n  \\coordinate (A) at (-\\sep,0);\n  \\coordinate (B) at (\\sep,0);\n  \\coordinate (C) at (0,-2.0);\n  \\begin{scope}[fill opacity=0.12]\n    \\fill[red]   (A) circle (\\r);\n    \\fill[green] (B) circle (\\r);\n    \\fill[blue]  (C) circle (\\r);\n  \\end{scope}\n  \\draw[thick] (A) circle (\\r);\n  \\draw[thick] (B) circle (\\r);\n  \\draw[thick] (C) circle (\\r);\n\n  \\node[font=\\bfseries] at (-3.1,1.9) {Has espresso};\n  \\node[font=\\bfseries] at (3.1,1.9) {Has milk};\n  \\node[font=\\bfseries] at (0,-4.7) {Served cold};\n\n  \\node[drink] at (-2.7,0.3) {short black};\n  \\node[drink] at (2.7,0.3) {babyccino};\n  \\node[drink] at (0,-3.0) {cold brew};\n  \\node[drink] at (0,0.8) {flat white};\n  \\node[drink,align=center] at (-1.0,-1.85) {iced\\\\long black};\n  \\node[drink] at (1.0,-1.85) {milkshake};\n  \\node[drink] at (0,-0.9) {iced latte};\n  \\node at (0,4.3) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 32
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    }
+  ]
+}

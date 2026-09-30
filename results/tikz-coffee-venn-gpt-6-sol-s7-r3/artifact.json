@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s7-r3",
+  "exportedAt": "2026-09-27T09:10:47.955Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 7,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n  % Sets: espresso (left), milk (right), cold (bottom).\n  \\definecolor{espresso}{HTML}{A76A42}\n  \\definecolor{milk}{HTML}{537FA4}\n  \\definecolor{cold}{HTML}{47A695}\n  \\coordinate (E) at (-2.1,1.3);\n  \\coordinate (M) at ( 2.1,1.3);\n  \\coordinate (C) at ( 0,-2.0);\n  \\def\\r{3.45}\n  \\fill[espresso,opacity=.12] (E) circle (\\r);\n  \\fill[milk,opacity=.12] (M) circle (\\r);\n  \\fill[cold,opacity=.12] (C) circle (\\r);\n  \\draw[espresso,line width=1.6pt] (E) circle (\\r);\n  \\draw[milk,line width=1.6pt] (M) circle (\\r);\n  \\draw[cold,line width=1.6pt] (C) circle (\\r);\n\n  \\tikzset{drink/.style={align=center, text=black!85, font=\\sffamily\\bfseries\\large}}\n  \\node[drink] at (-3.95,1.25) {short black};\n  \\node[drink] at ( 3.95,1.25) {babyccino};\n  \\node[drink] at ( 0,2.35) {flat white};\n  \\node[drink] at (-2.20,-1.15) {iced\\\\long black};\n  \\node[drink] at ( 2.08,-1.25) {milkshake};\n  \\node[drink] at ( 0,-.05) {iced latte};\n  \\node[drink] at ( 0,-4.05) {cold brew};\n  \\node[drink] at ( 4.48,-4.3) {pour-over};\n\n  % Set names sit just beyond their outer arcs.\n  \\node[font=\\sffamily\\bfseries\\Large,espresso,anchor=east] at (-4.4,4.6) {Has espresso};\n  \\node[font=\\sffamily\\bfseries\\Large,milk,anchor=west] at (4.4,4.6) {Has milk};\n  \\node[font=\\sffamily\\bfseries\\Large,cold] at (0,-5.95) {Served cold};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 37
+  },
+  "output": null,
+  "notes": []
+}

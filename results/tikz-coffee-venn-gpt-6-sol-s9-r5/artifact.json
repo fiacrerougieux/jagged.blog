@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s9-r5",
+  "exportedAt": "2026-09-27T09:10:59.646Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 9,
+  "round": 5,
+  "rounds": 4,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\begin{document}\n\\begin{tikzpicture}[every node/.style={align=center}]\n  % Three overlapping properties\n  \\definecolor{espresso}{HTML}{A36238}\n  \\definecolor{milk}{HTML}{4979A6}\n  \\definecolor{cold}{HTML}{46A39A}\n  \\filldraw[draw=espresso, line width=1.3pt, fill=espresso, fill opacity=.15] (-1.45,1.05) circle (2.65);\n  \\filldraw[draw=milk, line width=1.3pt, fill=milk, fill opacity=.15] (1.45,1.05) circle (2.65);\n  \\filldraw[draw=cold, line width=1.3pt, fill=cold, fill opacity=.15] (0,-1.65) circle (2.65);\n\n  \\node[font=\\bfseries\\large, text=espresso] at (-1.45,4.05) {Has espresso};\n  \\node[font=\\bfseries\\large, text=milk] at (1.45,4.05) {Has milk};\n  \\node[font=\\bfseries\\large, text=cold] at (0,-4.65) {Served cold};\n\n  \\node at (-3.15,1.35) {short black};\n  \\node at (3.15,1.35) {babyccino};\n  \\node at (0,1.9) {flat white};\n  \\node[font=\\small] at (-1.55,-1.02) {iced long\\\\black};\n  \\node[font=\\small] at (1.55,-1.02) {milkshake};\n  \\node[font=\\bfseries] at (0,.18) {iced latte};\n  \\node at (0,-3.42) {cold brew};\n\n  \\node[draw=black!35, rounded corners=4pt, inner sep=7pt, text=black!75] at (5.1,-2.75) {Outside all three\\\\pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 28
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,51 @@
+{
+  "name": "tikz-coffee-venn-glm-5.3-flashx-s2-r3",
+  "exportedAt": "2026-09-25T11:06:46.345Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "babyccino crosses a circle's edge; flat white crosses a circle's edge; milkshake crosses a circle's edge; short black crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[border=10pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}\n  \\def\\r{2.2}\n  \\draw[thick,fill=red!20,fill opacity=0.5] (-1.1,0) circle (\\r);\n  \\draw[thick,fill=blue!20,fill opacity=0.5] (1.1,0) circle (\\r);\n  \\draw[thick,fill=green!20,fill opacity=0.5] (0,1.9) circle (\\r);\n  \\node at (-2.8,2.9) {\\textbf{Has espresso}};\n  \\node at (2.8,2.9) {\\textbf{Has milk}};\n  \\node at (0,4.5) {\\textbf{Served cold}};\n  \\node[align=center] at (-2.4,-0.9) {short black};\n  \\node[align=center] at (-1.15,1.55) {iced long\\\\black};\n  \\node[align=center] at (1.15,1.55) {milkshake};\n  \\node[align=center] at (0,0.6) {iced latte};\n  \\node[align=center] at (0,-1.15) {flat white};\n  \\node[align=center] at (2.4,-0.9) {babyccino};\n  \\node[align=center] at (0,3.4) {cold brew};\n  \\node[align=center] at (0,-3.4) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 22
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    }
+  ]
+}

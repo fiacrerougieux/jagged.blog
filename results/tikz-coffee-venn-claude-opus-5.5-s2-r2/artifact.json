@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-claude-opus-5.5-s2-r2",
+  "exportedAt": "2026-09-29T05:40:19.470Z",
+  "run": "2026-09-29-tikz-coffee-venn-1539",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[border=5pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily\\small]\n  \\def\\r{2.3}\n  \\coordinate (A) at (0,0);      % espresso\n  \\coordinate (B) at (2.8,0);    % milk\n  \\coordinate (C) at (1.4,-2.4); % cold\n  \\draw[rounded corners, thick] (-3.2,-5.6) rectangle (6.0,3.3);\n  \\node[anchor=north west] at (-3.1,3.25) {All drinks};\n  \\fill[red!60!black, opacity=.18] (A) circle (\\r);\n  \\fill[blue!60, opacity=.18] (B) circle (\\r);\n  \\fill[cyan!70!green, opacity=.18] (C) circle (\\r);\n  \\draw[thick, red!60!black] (A) circle (\\r);\n  \\draw[thick, blue!70] (B) circle (\\r);\n  \\draw[thick, cyan!60!black] (C) circle (\\r);\n  % circle labels\n  \\node[font=\\sffamily\\bfseries, red!60!black] at (-0.6,2.6) {Has espresso};\n  \\node[font=\\sffamily\\bfseries, blue!70!black] at (3.4,2.6) {Has milk};\n  \\node[font=\\sffamily\\bfseries, cyan!40!black] at (1.4,-5.0) {Served cold};\n  % drinks\n  \\node at (-0.8,0.5) {short black};\n  \\node at (3.6,0.5) {babyccino};\n  \\node at (1.4,-3.5) {cold brew};\n  \\node at (1.4,0.9) {flat white};\n  \\node at (1.4,-0.8) {iced latte};\n  \\node[align=center] at (0.05,-1.75) {iced\\\\long black};\n  \\node at (2.62,-1.62) {milkshake};\n  \\node at (4.9,-4.8) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 32
+  },
+  "output": null,
+  "notes": []
+}

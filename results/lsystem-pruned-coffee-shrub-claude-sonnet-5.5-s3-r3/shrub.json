@@ -1,0 +1,1 @@
+{"axiom":"FFT","rules":{"T":"F[-F][+R]F[-F][+R]F[-F][+R]T","R":"F[+R][-F]F[R]"},"angle":35,"iterations":4,"start_heading":90}

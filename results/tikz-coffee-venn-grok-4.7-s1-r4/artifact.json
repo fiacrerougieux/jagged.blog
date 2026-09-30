@@ -1,0 +1,56 @@
+{
+  "name": "tikz-coffee-venn-grok-4.7-s1-r4",
+  "exportedAt": "2026-09-25T11:06:48.409Z",
+  "run": "2026-09-25-tikz-coffee-venn-2019",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "x-ai/grok-4.7",
+  "seed": 1,
+  "round": 4,
+  "rounds": 4,
+  "grade": {
+    "pass": false,
+    "detail": "milkshake in Has milk; pour-over in Has espresso"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usetikzlibrary{calc}\n\n\\begin{document}\n\\begin{tikzpicture}[\n  font=\\sffamily,\n  every node/.style={inner sep=0pt, outer sep=0pt},\n  setlabel/.style={font=\\sffamily\\bfseries\\large, align=center},\n  item/.style={font=\\sffamily, align=center}\n]\n\n% Equilateral centres, radius large enough that every overlap is a real region.\n\\def\\R{3.15}\n\\coordinate (E) at (150:1.55);\n\\coordinate (M) at (30:1.55);\n\\coordinate (C) at (270:1.55);\n\n\\fill[red!55,   fill opacity=0.22] (E) circle (\\R);\n\\fill[blue!60,  fill opacity=0.22] (M) circle (\\R);\n\\fill[green!65!black, fill opacity=0.22] (C) circle (\\R);\n\n\\draw[red,   line width=1.1pt] (E) circle (\\R);\n\\draw[blue,  line width=1.1pt] (M) circle (\\R);\n\\draw[green!55!black, line width=1.1pt] (C) circle (\\R);\n\n% Names sit outside the circles, not on the boundary.\n\\node[setlabel, red, anchor=east]  at ($(E)+(-3.55,0.55)$) {Has espresso};\n\\node[setlabel, blue, anchor=west] at ($(M)+( 3.55,0.55)$) {Has milk};\n\\node[setlabel, green!45!black, anchor=north] at ($(C)+(0,-3.35)$) {Served cold};\n\n% Espresso only (hot, no milk)\n\\node[item] at (-2.70, 1.85) {short black\\\\pour-over};\n% Milk only (not espresso, not cold)\n\\node[item] at ( 2.70, 1.85) {babyccino\\\\milkshake};\n% Cold only (no espresso, no milk)\n\\node[item] at ( 0.00,-3.15) {cold brew};\n\n% Espresso and milk, served hot\n\\node[item] at ( 0.00, 2.15) {flat white};\n% Espresso, cold, no milk\n\\node[item] at (-1.85,-1.35) {iced\\\\long black};\n% Espresso, milk, and cold\n\\node[item] at ( 0.00, 0.15) {iced latte};\n\n% Milk and cold, but no espresso: none of the listed drinks.\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 49
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    }
+  ]
+}

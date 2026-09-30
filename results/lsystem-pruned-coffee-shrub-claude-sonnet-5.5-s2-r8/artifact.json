@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-claude-sonnet-5.5-s2-r8",
+  "exportedAt": "2026-09-29T05:47:09.733Z",
+  "run": "2026-09-29-lsystem-pruned-coffee-shrub-1543",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "anthropic/claude-sonnet-5.5",
+  "seed": 2,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": false,
+    "detail": "half a shrub: 0 of 6 branches off the main stem head right"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\"axiom\":\"FA\",\"angle\":45,\"iterations\":4,\"start_heading\":90,\n\"rules\":{\"A\":\"FF[+B]F[+B]FA\",\"B\":\"F[+F][-F]F[+B]F[-F]\"}}\n",
+    "truncated": false,
+    "lines": 3
+  },
+  "output": null,
+  "notes": []
+}

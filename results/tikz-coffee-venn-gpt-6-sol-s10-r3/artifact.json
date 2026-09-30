@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s10-r3",
+  "exportedAt": "2026-09-27T09:11:04.449Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 10,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[every node/.style={align=center}]\n  \\definecolor{ink}{HTML}{263342}\n  \\definecolor{espresso}{HTML}{986043}\n  \\definecolor{milk}{HTML}{448B9A}\n  \\definecolor{cold}{HTML}{6679B8}\n  \\definecolor{paper}{HTML}{FCFBF8}\n  \\fill[paper] (-6.05,-5.8) rectangle (6.05,5.65);\n  % The three properties, with deliberately light washes so every intersection stays clear.\n  \\filldraw[fill=espresso,fill opacity=.12,draw=espresso,line width=1.4pt] (-1.9,1.2) circle (3.05);\n  \\filldraw[fill=milk,fill opacity=.12,draw=milk,line width=1.4pt] (1.9,1.2) circle (3.05);\n  \\filldraw[fill=cold,fill opacity=.12,draw=cold,line width=1.4pt] (0,-1.45) circle (3.05);\n  % Labels are outside the circles to leave the small intersections uncluttered.\n  \\node[font=\\bfseries\\large,text=espresso] at (-3.1,4.74) {Has espresso};\n  \\node[font=\\bfseries\\large,text=milk] at (3.1,4.74) {Has milk};\n  \\node[font=\\bfseries\\large,text=cold] at (0,-5.00) {Served cold};\n  % Espresso alone / milk alone / cold alone.\n  \\node[text=ink,font=\\normalsize] at (-3.62,1.38) {short black};\n  \\node[text=ink,font=\\normalsize] at (3.62,1.38) {babyccino};\n  \\node[text=ink,font=\\normalsize] at (0,-3.58) {cold brew};\n  % Pairwise intersections.\n  \\node[text=ink,font=\\normalsize] at (0,2.54) {flat white};\n  \\node[text=ink,font=\\normalsize] at (-1.73,-1.22) {iced long black};\n  \\node[text=ink,font=\\normalsize] at (2.02,-1.22) {milkshake};\n  % All three, and none of the above.\n  \\node[text=ink,font=\\bfseries\\normalsize] at (0,.11) {iced latte};\n  \\node[text=ink,font=\\normalsize] at (4.08,-3.68) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 33
+  },
+  "output": null,
+  "notes": []
+}

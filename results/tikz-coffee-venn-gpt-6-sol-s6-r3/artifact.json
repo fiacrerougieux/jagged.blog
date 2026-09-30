@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-gpt-6-sol-s6-r3",
+  "exportedAt": "2026-09-27T09:10:42.909Z",
+  "run": "2026-09-27-tikz-coffee-venn-1859",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "openai/gpt-6-sol",
+  "seed": 6,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, every node/.style={align=center}]\n  \\def\\r{2.5}\n  % Soft transparent fills make the overlaps visible without obscuring the text.\n  \\fill[orange!65,opacity=.16] (-1.5,.9) circle (\\r);\n  \\fill[blue!55,opacity=.16] (1.5,.9) circle (\\r);\n  \\fill[teal!65,opacity=.16] (0,-1.3) circle (\\r);\n  \\draw[orange!75!black,very thick] (-1.5,.9) circle (\\r);\n  \\draw[blue!70!black,very thick] (1.5,.9) circle (\\r);\n  \\draw[teal!65!black,very thick] (0,-1.3) circle (\\r);\n\n  \\node[font=\\bfseries\\large,orange!65!black] at (-1.5,3.79) {Has espresso};\n  \\node[font=\\bfseries\\large,blue!65!black] at (1.5,3.79) {Has milk};\n  \\node[font=\\bfseries\\large,teal!55!black] at (0,-4.16) {Served cold};\n\n  \\node at (-2.78,1.02) {short black};\n  \\node at (2.78,1.02) {babyccino};\n  \\node[font=\\small] at (0,1.95) {flat\\\\white};\n  \\node[font=\\small] at (-1.57,-.68) {iced\\\\long black};\n  \\node[font=\\small] at (1.62,-.68) {milkshake};\n  \\node[font=\\bfseries] at (0,.12) {iced latte};\n  \\node at (0,-2.47) {cold brew};\n  \\node at (3.42,-2.84) {pour-over};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 27
+  },
+  "output": null,
+  "notes": []
+}

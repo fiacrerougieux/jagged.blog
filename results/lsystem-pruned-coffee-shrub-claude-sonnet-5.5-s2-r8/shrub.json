@@ -1,0 +1,2 @@
+{"axiom":"FA","angle":45,"iterations":4,"start_heading":90,
+"rules":{"A":"FF[+B]F[+B]FA","B":"F[+F][-F]F[+B]F[-F]"}}

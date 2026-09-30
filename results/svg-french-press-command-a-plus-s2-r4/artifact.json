@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-command-a-plus-s2-r4",
+  "exportedAt": "2026-09-27T09:11:35.209Z",
+  "run": "2026-09-27-svg-french-press-1130",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "cohere/command-a-plus",
+  "seed": 2,
+  "round": 4,
+  "rounds": 4,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n  <style>\n    .component { fill: #f8f8f8; stroke: #333; stroke-width: 2; }\n    .metal { fill: #e0e0e0; stroke: #666; stroke-width: 2; }\n    .handle { fill: #8B4513; stroke: #5a3a1a; stroke-width: 2; }\n    .filter { fill: #d9ead3; stroke: #666; stroke-width: 1.5; }\n    .mesh { fill: #e8f4e8; stroke: #666; stroke-width: 1.5; }\n    .gasket { fill: #ffd700; stroke: #666; stroke-width: 1; }\n    .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; font-weight: bold; }\n    .exploded-line { stroke: #666; stroke-dasharray: 5,5; stroke-width: 1; }\n    .assembly-line { stroke: #333; stroke-width: 1; stroke-opacity: 0.6; }\n  </style>\n\n  <!-- Background -->\n  <rect width=\"800\" height=\"600\" fill=\"#fafafa\"/>\n\n  <!-- Main cylinder body (exploded, front removed to show internals) -->\n  <!-- Back half of body -->\n  <path d=\"M150,100\n            L645,100\n            L645,445\n            L150,445\n            Z\" class=\"component\" fill-opacity=\"0.9\"/>\n  <!-- Side walls -->\n  <path d=\"M150,95 L645,95 L645,450 L150,450 Z\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\" stroke-dasharray=\"4,4\" opacity=\"0.9\"/>\n  \n  <!-- Glass simulation lines on back wall -->\n  <g stroke=\"#999\" stroke-width=\"0.5\" stroke-dasharray=\"3,3\">\n    <line x1=\"155\" y1=\"105\" x2=\"640\" y2=\"105\"/>\n    <line x1=\"155\" y1=\"440\" x2=\"640\" y2=\"440\"/>\n  </g>\n\n  <!-- Lid (exploded up) -->\n  <g transform=\"translate(400, 50)\">\n    <circle cx=\"0\" cy=\"0\" r=\"60\" class=\"metal\"/>\n    <rect x=\"-40\" y=\"-20\" width=\"80\" height=\"30\" class=\"handle\"/>\n    <rect x=\"-30\" y=\"-10\" width=\"60\" height=\"10\" fill=\"#A0522D\"/>\n  </g>\n\n  <!-- Plunger rod (exploded down, with cross-handle) -->\n  <g transform=\"translate(400, 450)\">\n    <rect x=\"-5\" y=\"-10\" width=\"10\" height=\"190\" class=\"metal\"/>\n    <rect x=\"-37.5\" y=\"-7.5\" width=\"75\" height=\"15\" class=\"handle\"/>\n    <rect x=\"-27.5\" y=\"-2.5\" width=\"55\" height=\"5\" fill=\"#A0522D\"/>\n  </g>\n\n  <!-- Filter assembly (exploded down, separated pieces) -->\n  <g transform=\"translate(400, 320)\">\n    <!-- Bottom filter plate -->\n    <circle cx=\"0\" cy=\"0\" r=\"55\" class=\"filter\"/>\n    <circle cx=\"0\" cy=\"0\" r=\"50\" stroke=\"#666\" stroke-width=\"1.5\" fill=\"none\"/>\n    <text x=\"0\" y=\"-58\" text-anchor=\"middle\" class=\"text\">Filter Plate</text>\n  </g>\n\n  <g transform=\"translate(400, 280)\">\n    <!-- Middle mesh plate -->\n    <circle cx=\"0\" cy=\"0\" r=\"45\" class=\"mesh\"/>\n    <g stroke=\"#666\" stroke-width=\"1.5\">\n      <line x1=\"-45\" y1=\"0\" x2=\"45\" y2=\"0\"/>\n      <line x1=\"0\" y1=\"-45\" x2=\"0\" y2=\"45\"/>\n      <line x1=\"-35\" y1=\"-35\" x2=\"35\" y2=\"-35\"/>\n      <line x1=\"-35\" y1=\"35\" x2=\"35\" y2=\"35\"/>\n    </g>\n    <text x=\"0\" y=\"-48\" text-anchor=\"middle\" class=\"text\">Mesh Plate</text>\n  </g>\n\n  <g transform=\"translate(400, 340)\">\n    <!-- Top gasket/plate -->\n    <circle cx=\"0\" cy=\"0\" r=\"40\" fill=\"#ffe4c4\" stroke=\"#666\" stroke-width=\"1.5\"/>\n    <!-- Gasket material visualization -->\n    <path d=\"M0,-20\n              C0,-35 15,-45 30,-45\n              C45,-45 60,-35 60,-20\n              C60,-5 45,10 30,10\n              C15,10 0,-5 0,-20 Z\" fill=\"#ffd700\" opacity=\"0.9\"/>\n    <text x=\"0\" y=\"-42\" text-anchor=\"middle\" class=\"text\">Gasket</text>\n  </g>\n\n  <!-- Cross-piece handle for plunger -->\n  <g transform=\"translate(400, 410)\">\n    <rect x=\"-37.5\" y=\"-7.5\" width=\"75\" height=\"15\" class=\"handle\"/>\n    <rect x=\"-27.5\" y=\"-2.5\" width=\"55\" height=\"5\" fill=\"#A0522D\"/>\n  </g>\n\n  <!-- Exploded positioning visualization -->\n  <g stroke=\"#666\" stroke-dasharray=\"6,4\" stroke-width=\"1\">\n    <!-- Body outline (dashed to show cavity) -->\n    <rect x=\"150\" y=\"100\" width=\"500\" height=\"345\" fill=\"none\" stroke=\"#ccc\" stroke-dasharray=\"4,4\" stroke-width=\"1\"/>\n    \n    <!-- Assembly lines showing relationships -->\n    <line x1=\"400\" y1=\"120\" x2=\"400\" y2=\"55\"/>\n    <line x1=\"400\" y1=\"395\" x2=\"400\" y2=\"325\"/>\n    <line x1=\"400\" y1=\"315\" x2=\"400\" y2=\"275\"/>\n    <line x1=\"400\" y1=\"270\" x2=\"400\" y2=\"235\"/>\n  </g>\n\n  <!-- Labels -->\n  <text x=\"400\" y=\"85\" text-anchor=\"middle\" class=\"text\">Lid</text>\n  <text x=\"400\" y=\"460\" text-anchor=\"middle\" class=\"text\">Plunger Rod</text>\n  <text x=\"400\" y=\"355\" text-anchor=\"middle\" class=\"text\">Filter Plate</text>\n  <text x=\"400\" y=\"315\" text-anchor=\"middle\" class=\"text\">Mesh Plate</text>\n  <text x=\"400\" y=\"275\" text-anchor=\"middle\" class=\"text\">Gasket</text>\n  \n  <!-- Assembly direction arrows -->\n  <g stroke=\"#333\" stroke-width=\"1.5\" fill=\"none\">\n    <path d=\"M400,130 L395,125 L405,125 Z\"/>\n    <path d=\"M400,395 L395,400 L405,400 Z\"/>\n  </g>\n</svg>",
+    "truncated": false,
+    "lines": 110
+  },
+  "output": null,
+  "notes": []
+}

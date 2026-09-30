@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-command-a-plus-s3-r1",
+  "exportedAt": "2026-09-27T09:11:35.678Z",
+  "run": "2026-09-27-svg-french-press-1130",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "cohere/command-a-plus",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 400\" width=\"600\" height=\"400\">\n  <defs>\n    <pattern id=\"meshPattern\" patternUnits=\"userSpaceOnUse\" width=\"10\" height=\"10\">\n      <path d=\"M0 10 L10 0 M-5 5 L5 -5 M5 5 L-5 -5\" stroke=\"#ccc\" stroke-width=\"0.5\" fill=\"none\"/>\n    </pattern>\n  </defs>\n\n  <!-- Glass beaker -->\n  <rect x=\"50\" y=\"50\" width=\"120\" height=\"300\" fill=\"#e6f3ff\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Lid -->\n  <rect x=\"50\" y=\"10\" width=\"120\" height=\"30\" fill=\"#606060\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Plunger rod -->\n  <rect x=\"200\" y=\"80\" width=\"20\" height=\"250\" fill=\"#a0a0a0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Filter top piece -->\n  <rect x=\"230\" y=\"90\" width=\"80\" height=\"20\" fill=\"#d0d0d0\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Filter mesh -->\n  <rect x=\"230\" y=\"130\" width=\"80\" height=\"20\" fill=\"url(#meshPattern)\" stroke=\"#333\" stroke-width=\"2\"/>\n  <!-- Filter bottom piece -->\n  <rect x=\"230\" y=\"250\" width=\"80\" height=\"20\" fill=\"#c0c0c0\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Assembly guide lines (dashed) -->\n  <g stroke=\"#999\" stroke-dasharray=\"5,5\" stroke-width=\"1\">\n    <!-- Lid alignment -->\n    <line x1=\"50\" y1=\"40\" x2=\"170\" y2=\"40\"/>\n    <!-- Plunger insertion into glass -->\n    <line x1=\"210\" y1=\"80\" x2=\"210\" y2=\"330\"/>\n    <!-- Filter pieces onto plunger -->\n    <line x1=\"230\" y1=\"90\" x2=\"210\" y2=\"90\"/>\n    <line x1=\"230\" y1=\"130\" x2=\"210\" y2=\"130\"/>\n    <line x1=\"230\" y1=\"250\" x2=\"210\" y2=\"250\"/>\n  </g>\n\n  <!-- Labels -->\n  <text x=\"85\" y=\"20\" font-size=\"12\" fill=\"#333\" text-anchor=\"middle\">Lid</text>\n  <text x=\"85\" y=\"370\" font-size=\"12\" fill=\"#333\" text-anchor=\"middle\">Glass Beaker</text>\n  <text x=\"210\" y=\"200\" font-size=\"12\" fill=\"#333\" text-anchor=\"middle\">Plunger Rod</text>\n  <text x=\"270\" y=\"100\" font-size=\"10\" fill=\"#333\" text-anchor=\"middle\">Filter Top</text>\n  <text x=\"270\" y=\"140\" font-size=\"10\" fill=\"#333\" text-anchor=\"middle\">Filter Mesh</text>\n  <text x=\"270\" y=\"260\" font-size=\"10\" fill=\"#333\" text-anchor=\"middle\">Filter Bottom</text>\n</svg>",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}
