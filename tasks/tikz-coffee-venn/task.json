@@ -3,6 +3,15 @@
   "title": "A three-set coffee Venn diagram",
   "short": "Venn",
   "version": "v1",
+  "checksVersion": "c2",
+  "oldChecks": [
+    {
+      "version": "c1",
+      "retired": "2026-09-26",
+      "what": "The edge check tested each word's box against the circle's centre line, which failed labels that sat clear by eye.",
+      "rescored": "Yes. Every Venn result was re-graded against the drawn outline, and three moved to a pass."
+    }
+  ],
   "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
   "groundTruth": "Short black is espresso only, flat white espresso and milk, iced long black espresso and cold, iced latte all three, babyccino milk only, milkshake milk and cold, cold brew cold only, and pour-over outside every circle. The circles and words are read back out of the compiled PDF, each word has to be centred in its own region, and no letter may touch a circle's outline, with the line's width counted.",
   "checks": [

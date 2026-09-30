@@ -3,6 +3,15 @@
   "title": "Espresso boiler thermostat",
   "short": "Boiler",
   "version": "v2",
+  "checksVersion": "c2",
+  "oldChecks": [
+    {
+      "version": "c1",
+      "retired": "2026-09-22",
+      "what": "The analogue model and the hysteresis were read off the netlist by eye.",
+      "rescored": "Yes. spice-boiler.py agreed with all seven published verdicts, so none changed."
+    }
+  ],
   "prompt": "Model an espresso machine's boiler in ngspice as an electrical analogue (heater, thermal mass, heat loss) with a thermostat that holds it between 92 and 96 °C, and simulate the first 20 minutes from cold. In a .control block, save the boiler temperature with wrdata to a .txt file so it can be plotted.",
   "oldPrompts": [
     {

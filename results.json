@@ -8,11 +8,19 @@
       "post": "2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack",
       "date": "2026-09-18",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 3,
       "capRounds": 20,
       "cost": 0.259,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 56845,
+        "tokensOut": 26164,
+        "reasoning": 0,
+        "wallSec": 171
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -39,11 +47,19 @@
       "post": "2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack",
       "date": "2026-09-18",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 2,
       "capRounds": 20,
       "cost": 0.2407,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 45669,
+        "tokensOut": 5483,
+        "reasoning": 474,
+        "wallSec": 92
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -70,10 +86,18 @@
       "post": "2026-09-20-glm-5-3-flashx-french-press-no-cross-plate",
       "date": "2026-09-20",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0206,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 49796,
+        "tokensOut": 3937,
+        "reasoning": 666,
+        "wallSec": 67
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -101,10 +125,18 @@
       "post": null,
       "date": "2026-09-20",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0401,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 287533,
+        "tokensOut": 22277,
+        "reasoning": 13879,
+        "wallSec": 664
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -131,10 +163,18 @@
       "post": "2026-09-20-bonsai-never-rendered-qwen3-8-27b-rendered-three-times",
       "date": "2026-09-20",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 3,
       "cost": 0.1023,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 197956,
+        "tokensOut": 19049,
+        "reasoning": 13488,
+        "wallSec": 346
+      },
       "checks": {
         "parts": false,
         "order": null,
@@ -162,10 +202,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 5,
       "cost": 0.3558,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 125141,
+        "tokensOut": 32364,
+        "reasoning": 0,
+        "wallSec": 294
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -189,10 +237,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 4,
       "cost": 0.3719,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 119946,
+        "tokensOut": 34385,
+        "reasoning": 0,
+        "wallSec": 200
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -216,10 +272,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.4528,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50519,
+        "tokensOut": 52976,
+        "reasoning": 0,
+        "wallSec": 841
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -247,10 +311,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.2744,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 48689,
+        "tokensOut": 6397,
+        "reasoning": 1042,
+        "wallSec": 98
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -277,10 +349,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.1763,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18571,
+        "tokensOut": 4488,
+        "reasoning": 472,
+        "wallSec": 62
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -307,10 +387,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.2093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21211,
+        "tokensOut": 5375,
+        "reasoning": 494,
+        "wallSec": 85
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -337,10 +425,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0203,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 113499,
+        "tokensOut": 6255,
+        "reasoning": 446,
+        "wallSec": 104
+      },
       "checks": {
         "parts": true,
         "order": null,
@@ -367,10 +463,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0111,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 55198,
+        "tokensOut": 3660,
+        "reasoning": 452,
+        "wallSec": 64
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -398,10 +502,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 4,
       "cost": 0.0191,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 95625,
+        "tokensOut": 6443,
+        "reasoning": 1144,
+        "wallSec": 314
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -430,10 +542,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0418,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 259179,
+        "tokensOut": 23281,
+        "reasoning": 17069,
+        "wallSec": 432
+      },
       "checks": {
         "parts": true,
         "order": null,
@@ -457,10 +577,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0322,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 201044,
+        "tokensOut": 17841,
+        "reasoning": 11292,
+        "wallSec": 567
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -484,10 +612,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0405,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 63820,
+        "tokensOut": 10660,
+        "reasoning": 5918,
+        "wallSec": 194
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -515,10 +651,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 2,
       "cost": 0.0245,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28945,
+        "tokensOut": 6671,
+        "reasoning": 4213,
+        "wallSec": 104
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -547,10 +691,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.03,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33926,
+        "tokensOut": 8195,
+        "reasoning": 4804,
+        "wallSec": 673
+      },
       "checks": {
         "parts": false,
         "order": null,
@@ -577,10 +729,18 @@
       "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
       "date": "2026-09-23",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.2115,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 55724,
+        "tokensOut": 7230,
+        "reasoning": 1437,
+        "wallSec": 85
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -607,10 +767,18 @@
       "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
       "date": "2026-09-23",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 2,
       "cost": 0.2084,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 37638,
+        "tokensOut": 7514,
+        "reasoning": 1596,
+        "wallSec": 83
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -634,10 +802,18 @@
       "post": "2026-09-23-opus-5-5-had-the-french-press-right-then-swapped-it",
       "date": "2026-09-23",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "cost": 0.2209,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 46009,
+        "tokensOut": 8012,
+        "reasoning": 1636,
+        "wallSec": 88
+      },
       "checks": {
         "parts": true,
         "order": false,
@@ -665,11 +841,19 @@
       "post": "2026-09-17-union-alpha-coffee-route-on-real-streets",
       "date": "2026-09-17",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 3,
       "capRounds": 20,
       "cost": 0,
+      "usage": {
+        "thinking": "high",
+        "tokensIn": 223367,
+        "tokensOut": 7480,
+        "reasoning": 0,
+        "wallSec": 585
+      },
       "checks": {
         "streets": true,
         "continuous": true,
@@ -693,11 +877,19 @@
       "post": null,
       "date": "2026-09-20",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.1085,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1669162,
+        "tokensOut": 58340,
+        "reasoning": 45018,
+        "wallSec": 720
+      },
       "checks": {
         "streets": true,
         "continuous": true,
@@ -721,10 +913,18 @@
       "post": null,
       "date": "2026-09-20",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 1,
       "cost": 0.014,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 11699,
+        "tokensOut": 3596,
+        "reasoning": 2945,
+        "wallSec": 54
+      },
       "checks": {
         "streets": false,
         "continuous": false,
@@ -752,10 +952,18 @@
       "post": "2026-09-14-qwen3-8-max-caffeine-molecule-5-of-5-checks-right",
       "date": "2026-09-14",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 6,
       "cost": 0.6292,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1091788,
+        "tokensOut": 30828,
+        "reasoning": 18709,
+        "wallSec": 719
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -779,10 +987,18 @@
       "post": null,
       "date": "2026-09-20",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0418,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 555882,
+        "tokensOut": 20214,
+        "reasoning": 13101,
+        "wallSec": 346
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -806,10 +1022,18 @@
       "post": "2026-09-16-astra-vs-deepseek-4-1-flash-espresso-boiler-both-right",
       "date": "2026-09-16",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 1,
       "seed": 1,
       "rounds": 1,
       "cost": 0.1636,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21823,
+        "tokensOut": 1833,
+        "reasoning": 851,
+        "wallSec": 63
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -833,10 +1057,18 @@
       "post": "2026-09-16-astra-vs-deepseek-4-1-flash-espresso-boiler-both-right",
       "date": "2026-09-16",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 1,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0281,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 588118,
+        "tokensOut": 27747,
+        "reasoning": 21897,
+        "wallSec": 207
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -860,12 +1092,20 @@
       "post": "2026-09-14-deepseek-4-1-flash-cafe-table-spoon-fixed-croissant-not",
       "date": "2026-09-14",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 1,
       "rounds": 12,
       "capRounds": 14,
       "stoppedBy": "clock",
       "cost": 0.0774,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 683822,
+        "tokensOut": 32809,
+        "reasoning": 19137,
+        "wallSec": 720
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -892,12 +1132,20 @@
       "post": null,
       "date": "2026-09-20",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 1,
       "seed": 2,
       "rounds": 4,
       "clockMin": 28,
       "stoppedBy": "clock",
       "cost": 0.0673,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1066990,
+        "tokensOut": 74682,
+        "reasoning": 46837,
+        "wallSec": 1680
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -924,11 +1172,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "stoppedBy": "clock",
       "cost": 0.0163,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 168782,
+        "tokensOut": 20858,
+        "reasoning": 12228,
+        "wallSec": 720
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -955,11 +1211,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 5,
       "stoppedBy": "clock",
       "cost": 0.0222,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 330613,
+        "tokensOut": 24709,
+        "reasoning": 12571,
+        "wallSec": 720
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -986,10 +1250,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 8,
       "cost": 0.0194,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 470115,
+        "tokensOut": 20483,
+        "reasoning": 11594,
+        "wallSec": 669
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -1016,11 +1288,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "stoppedBy": "clock",
       "cost": 0.0402,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 478989,
+        "tokensOut": 43349,
+        "reasoning": 32465,
+        "wallSec": 720
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -1044,11 +1324,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "stoppedBy": "clock",
       "cost": 0.0293,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 330816,
+        "tokensOut": 33565,
+        "reasoning": 20770,
+        "wallSec": 720
+      },
       "checks": {
         "objects": true,
         "primitives": true,
@@ -1072,10 +1360,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.1713,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 25941,
+        "tokensOut": 1839,
+        "reasoning": 858,
+        "wallSec": 63
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -1099,10 +1395,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.1442,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21702,
+        "tokensOut": 1762,
+        "reasoning": 829,
+        "wallSec": 58
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -1126,10 +1430,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.1192,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18948,
+        "tokensOut": 1352,
+        "reasoning": 494,
+        "wallSec": 44
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -1153,10 +1465,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0105,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 180933,
+        "tokensOut": 11104,
+        "reasoning": 8060,
+        "wallSec": 322
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -1180,10 +1500,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.008,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 118866,
+        "tokensOut": 8703,
+        "reasoning": 6708,
+        "wallSec": 94
+      },
       "checks": {
         "analogue": true,
         "hysteresis": true,
@@ -1207,10 +1535,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 8,
       "cost": 0.2467,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 2099132,
+        "tokensOut": 49499,
+        "reasoning": 30531,
+        "wallSec": 685
+      },
       "checks": {
         "streets": true,
         "continuous": false,
@@ -1237,10 +1573,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 8,
       "cost": 0.189,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1730149,
+        "tokensOut": 30773,
+        "reasoning": 19569,
+        "wallSec": 419
+      },
       "checks": {
         "streets": true,
         "continuous": true,
@@ -1267,10 +1611,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 8,
       "cost": 0.1063,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 776707,
+        "tokensOut": 24769,
+        "reasoning": 15391,
+        "wallSec": 343
+      },
       "checks": {
         "streets": true,
         "continuous": false,
@@ -1297,10 +1649,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.4734,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 595179,
+        "tokensOut": 28157,
+        "reasoning": 16537,
+        "wallSec": 680
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1324,11 +1684,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.5944,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1098165,
+        "tokensOut": 29072,
+        "reasoning": 18260,
+        "wallSec": 720
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1352,10 +1720,18 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.3614,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 420859,
+        "tokensOut": 19288,
+        "reasoning": 13050,
+        "wallSec": 487
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1379,11 +1755,19 @@
       "post": null,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 4,
       "stoppedBy": "clock",
       "cost": 0.0633,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1169570,
+        "tokensOut": 37832,
+        "reasoning": 29589,
+        "wallSec": 720
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1407,10 +1791,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0698,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1548297,
+        "tokensOut": 35386,
+        "reasoning": 25318,
+        "wallSec": 429
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1434,10 +1826,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0428,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 522927,
+        "tokensOut": 20822,
+        "reasoning": 17563,
+        "wallSec": 217
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1461,10 +1861,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.0317,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 334991,
+        "tokensOut": 14458,
+        "reasoning": 9172,
+        "wallSec": 146
+      },
       "checks": {
         "formula": true,
         "core": true,
@@ -1488,10 +1896,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.0172,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 56741,
+        "tokensOut": 9084,
+        "reasoning": 7729,
+        "wallSec": 104
+      },
       "checks": {
         "parses": true,
         "formula": true,
@@ -1514,10 +1930,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0135,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 36445,
+        "tokensOut": 6113,
+        "reasoning": 5368,
+        "wallSec": 69
+      },
       "checks": {
         "parses": true,
         "formula": true,
@@ -1540,10 +1964,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0219,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 70140,
+        "tokensOut": 11637,
+        "reasoning": 9859,
+        "wallSec": 191
+      },
       "checks": {
         "parses": true,
         "formula": true,
@@ -1566,10 +1998,18 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0193,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 44837,
+        "tokensOut": 9232,
+        "reasoning": 7116,
+        "wallSec": 112
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1595,10 +2035,18 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0254,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 121391,
+        "tokensOut": 14931,
+        "reasoning": 11648,
+        "wallSec": 180
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1624,10 +2072,18 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 5,
       "cost": 0.0232,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 210102,
+        "tokensOut": 12810,
+        "reasoning": 9061,
+        "wallSec": 169
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1650,10 +2106,18 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-23",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 7,
       "cost": 0.0373,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 682476,
+        "tokensOut": 37456,
+        "reasoning": 27827,
+        "wallSec": 578
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1676,10 +2140,18 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-23",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0287,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 517312,
+        "tokensOut": 25413,
+        "reasoning": 17417,
+        "wallSec": 496
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1702,11 +2174,19 @@
       "post": "2026-09-25-qwen3-8-flash-measured-the-venn-deepseek-looked",
       "date": "2026-09-23",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.044,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 797090,
+        "tokensOut": 41553,
+        "reasoning": 27856,
+        "wallSec": 720
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1729,10 +2209,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0769,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51657,
+        "tokensOut": 2121,
+        "reasoning": 685,
+        "wallSec": 35
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1758,10 +2246,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0373,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10645,
+        "tokensOut": 913,
+        "reasoning": 191,
+        "wallSec": 21
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1787,10 +2283,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0578,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 13909,
+        "tokensOut": 2455,
+        "reasoning": 1365,
+        "wallSec": 63
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1816,10 +2320,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.0416,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10665,
+        "tokensOut": 1321,
+        "reasoning": 550,
+        "wallSec": 22
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1845,10 +2357,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0445,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10423,
+        "tokensOut": 1282,
+        "reasoning": 574,
+        "wallSec": 20
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1874,10 +2394,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0365,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10406,
+        "tokensOut": 1026,
+        "reasoning": 308,
+        "wallSec": 17
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1903,10 +2431,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0625,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54250,
+        "tokensOut": 3000,
+        "reasoning": 1919,
+        "wallSec": 78
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1929,10 +2465,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0659,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 37882,
+        "tokensOut": 4489,
+        "reasoning": 3453,
+        "wallSec": 93
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1958,10 +2502,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "cost": 0.0558,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39996,
+        "tokensOut": 3273,
+        "reasoning": 2164,
+        "wallSec": 82
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -1984,10 +2536,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0054,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 68109,
+        "tokensOut": 7354,
+        "reasoning": 6110,
+        "wallSec": 91
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2013,10 +2573,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 4,
       "cost": 0.0054,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 62334,
+        "tokensOut": 7577,
+        "reasoning": 5873,
+        "wallSec": 90
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2042,10 +2610,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 5,
       "cost": 0.0081,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 149842,
+        "tokensOut": 9776,
+        "reasoning": 7084,
+        "wallSec": 112
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2071,10 +2647,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.0132,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 74209,
+        "tokensOut": 2773,
+        "reasoning": 1320,
+        "wallSec": 72
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2100,10 +2684,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0106,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 57791,
+        "tokensOut": 2200,
+        "reasoning": 997,
+        "wallSec": 58
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2129,10 +2721,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.0066,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 27615,
+        "tokensOut": 1810,
+        "reasoning": 473,
+        "wallSec": 39
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2155,10 +2755,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.1461,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 142918,
+        "tokensOut": 14510,
+        "reasoning": 8622,
+        "wallSec": 209
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2184,10 +2792,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 8,
       "cost": 0.498,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 786569,
+        "tokensOut": 28175,
+        "reasoning": 14945,
+        "wallSec": 426
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2213,10 +2829,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 6,
       "cost": 0.131,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 156909,
+        "tokensOut": 9109,
+        "reasoning": 6151,
+        "wallSec": 159
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2242,10 +2866,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.2047,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 296976,
+        "tokensOut": 34370,
+        "reasoning": 30287,
+        "wallSec": 239
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2268,10 +2900,18 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.2632,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 583727,
+        "tokensOut": 36490,
+        "reasoning": 28895,
+        "wallSec": 295
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2294,11 +2934,19 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.0068,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18255,
+        "tokensOut": 3936,
+        "reasoning": 3117,
+        "wallSec": 720
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2324,11 +2972,19 @@
       "post": "2026-09-25-ten-models-on-the-coffee-venn",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.0061,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 12877,
+        "tokensOut": 4073,
+        "reasoning": 3212,
+        "wallSec": 720
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2354,10 +3010,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.0507,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 507603,
+        "tokensOut": 28702,
+        "reasoning": 19122,
+        "wallSec": 405
+      },
       "checks": {
         "dc": true,
         "frequency": true,
@@ -2380,10 +3044,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0357,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 217344,
+        "tokensOut": 18853,
+        "reasoning": 12658,
+        "wallSec": 375
+      },
       "checks": {
         "dc": true,
         "frequency": true,
@@ -2406,10 +3078,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0542,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 674500,
+        "tokensOut": 26345,
+        "reasoning": 18145,
+        "wallSec": 483
+      },
       "checks": {
         "dc": true,
         "frequency": true,
@@ -2432,10 +3112,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.0107,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19621,
+        "tokensOut": 5406,
+        "reasoning": 4872,
+        "wallSec": 98
+      },
       "checks": {
         "valid": true,
         "happy": true,
@@ -2459,10 +3147,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 2,
       "cost": 0.0107,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28791,
+        "tokensOut": 4690,
+        "reasoning": 3768,
+        "wallSec": 89
+      },
       "checks": {
         "valid": true,
         "happy": true,
@@ -2486,10 +3182,18 @@
       "post": null,
       "date": "2026-09-22",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.0101,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 23309,
+        "tokensOut": 4411,
+        "reasoning": 3733,
+        "wallSec": 79
+      },
       "checks": {
         "valid": true,
         "happy": true,
@@ -2513,10 +3217,18 @@
       "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 8,
       "cost": 0.7113,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 530620,
+        "tokensOut": 23671,
+        "reasoning": 19958,
+        "wallSec": 365
+      },
       "checks": {
         "shrub": false,
         "pruned": true,
@@ -2538,11 +3250,19 @@
       "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 5,
       "stoppedBy": "budget",
       "cost": 0.6444,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 314815,
+        "tokensOut": 28354,
+        "reasoning": 25568,
+        "wallSec": 388
+      },
       "checks": {
         "shrub": false,
         "pruned": true,
@@ -2564,11 +3284,19 @@
       "post": "2026-09-25-qwen3-8-max-prime-three-shrubs-one-that-works",
       "date": "2026-09-25",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 7,
       "stoppedBy": "budget",
       "cost": 0.6851,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 460325,
+        "tokensOut": 25434,
+        "reasoning": 23090,
+        "wallSec": 388
+      },
       "checks": {
         "shrub": true,
         "pruned": true,
@@ -2590,10 +3318,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 3,
       "cost": 0.0555,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 34822,
+        "tokensOut": 3173,
+        "reasoning": 2056,
+        "wallSec": 54
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2615,10 +3351,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0666,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54008,
+        "tokensOut": 3738,
+        "reasoning": 2168,
+        "wallSec": 62
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2640,10 +3384,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "cost": 0.0418,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 24975,
+        "tokensOut": 2711,
+        "reasoning": 1678,
+        "wallSec": 50
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2665,10 +3417,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 4,
       "rounds": 5,
       "cost": 0.1126,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 119824,
+        "tokensOut": 6259,
+        "reasoning": 3854,
+        "wallSec": 112
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2693,10 +3453,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 5,
       "rounds": 4,
       "cost": 0.0589,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 41965,
+        "tokensOut": 3617,
+        "reasoning": 2340,
+        "wallSec": 66
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2718,10 +3486,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 6,
       "rounds": 3,
       "cost": 0.0465,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 30034,
+        "tokensOut": 2727,
+        "reasoning": 1597,
+        "wallSec": 46
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2743,10 +3519,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 7,
       "rounds": 3,
       "cost": 0.0494,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33015,
+        "tokensOut": 3064,
+        "reasoning": 2017,
+        "wallSec": 54
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2768,10 +3552,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 8,
       "rounds": 3,
       "cost": 0.0496,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33822,
+        "tokensOut": 2953,
+        "reasoning": 1989,
+        "wallSec": 53
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2793,10 +3585,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 9,
       "rounds": 5,
       "cost": 0.0902,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 89038,
+        "tokensOut": 4837,
+        "reasoning": 3238,
+        "wallSec": 88
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2818,10 +3618,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 10,
       "rounds": 3,
       "cost": 0.0627,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39470,
+        "tokensOut": 4023,
+        "reasoning": 2896,
+        "wallSec": 68
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2843,10 +3651,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 4,
       "cost": 0.1062,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 469473,
+        "tokensOut": 23839,
+        "reasoning": 11756,
+        "wallSec": 210
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2871,10 +3687,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 8,
       "cost": 0.0476,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 249245,
+        "tokensOut": 6784,
+        "reasoning": 1887,
+        "wallSec": 85
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2899,10 +3723,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.1688,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 859748,
+        "tokensOut": 26547,
+        "reasoning": 1785,
+        "wallSec": 241
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2927,10 +3759,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 6,
       "cost": 0.0753,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 159484,
+        "tokensOut": 18330,
+        "reasoning": 14118,
+        "wallSec": 135
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2955,10 +3795,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 4,
       "cost": 0.0569,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 84708,
+        "tokensOut": 20972,
+        "reasoning": 18198,
+        "wallSec": 111
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -2983,10 +3831,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "cost": 0.034,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54386,
+        "tokensOut": 11801,
+        "reasoning": 9338,
+        "wallSec": 79
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3011,10 +3867,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 8,
       "cost": 0.0593,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 270633,
+        "tokensOut": 12466,
+        "reasoning": 1001,
+        "wallSec": 114
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3043,10 +3907,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0978,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 365348,
+        "tokensOut": 28675,
+        "reasoning": 2972,
+        "wallSec": 181
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3075,10 +3947,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 6,
       "cost": 0.0592,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 263531,
+        "tokensOut": 13123,
+        "reasoning": 1445,
+        "wallSec": 103
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3106,10 +3986,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0252,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18574,
+        "tokensOut": 13061,
+        "reasoning": 10605,
+        "wallSec": 62
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3137,10 +4025,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 4,
       "cost": 0.0398,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 95651,
+        "tokensOut": 7431,
+        "reasoning": 2112,
+        "wallSec": 48
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3168,10 +4064,18 @@
       "post": null,
       "date": "2026-09-27",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0209,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 7160,
+        "tokensOut": 12526,
+        "reasoning": 11588,
+        "wallSec": 63
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3200,10 +4104,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0639,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 32918,
+        "tokensOut": 3884,
+        "reasoning": 871,
+        "wallSec": 36
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -3226,10 +4138,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "cost": 0.0449,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 12062,
+        "tokensOut": 3081,
+        "reasoning": 880,
+        "wallSec": 28
+      },
       "checks": {
         "parts": true,
         "order": true,
@@ -3252,10 +4172,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0371,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 11154,
+        "tokensOut": 2419,
+        "reasoning": 729,
+        "wallSec": 24
+      },
       "checks": {
         "parts": false,
         "order": false,
@@ -3281,10 +4209,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0618,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33663,
+        "tokensOut": 3132,
+        "reasoning": 1265,
+        "wallSec": 34
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3306,10 +4242,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0721,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 53603,
+        "tokensOut": 2684,
+        "reasoning": 1023,
+        "wallSec": 35
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3332,10 +4276,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 2,
       "cost": 0.0452,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 32562,
+        "tokensOut": 2103,
+        "reasoning": 746,
+        "wallSec": 27
+      },
       "checks": {
         "compiles": true,
         "regions": false,
@@ -3361,10 +4313,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 8,
       "cost": 0.2663,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1635935,
+        "tokensOut": 62494,
+        "reasoning": 52213,
+        "wallSec": 718
+      },
       "checks": {
         "shrub": true,
         "pruned": true,
@@ -3385,11 +4345,19 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 1,
       "stoppedBy": "clock",
       "cost": 0.3146,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 2021821,
+        "tokensOut": 60118,
+        "reasoning": 47991,
+        "wallSec": 720
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3413,11 +4381,19 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "stoppedBy": "clock",
       "cost": 0.0434,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 918383,
+        "tokensOut": 37532,
+        "reasoning": 31113,
+        "wallSec": 720
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3441,10 +4417,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 8,
       "cost": 0.0099,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 191065,
+        "tokensOut": 13249,
+        "reasoning": 11433,
+        "wallSec": 185
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3468,10 +4452,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 8,
       "cost": 0.0093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 223267,
+        "tokensOut": 11626,
+        "reasoning": 10088,
+        "wallSec": 174
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3495,10 +4487,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 8,
       "cost": 0.0081,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 182371,
+        "tokensOut": 9937,
+        "reasoning": 8643,
+        "wallSec": 245
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3522,10 +4522,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.6792,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 2164382,
+        "tokensOut": 64282,
+        "reasoning": 41559,
+        "wallSec": 637
+      },
       "checks": {
         "shrub": false,
         "pruned": false,
@@ -3550,10 +4558,18 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 1,
       "cost": 0.4512,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1304855,
+        "tokensOut": 46823,
+        "reasoning": 36346,
+        "wallSec": 471
+      },
       "checks": {
         "shrub": false,
         "pruned": false,
@@ -3578,11 +4594,19 @@
       "post": "2026-09-29-cheap-models-grow-half-a-shrub",
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 7,
       "stoppedBy": "budget",
       "cost": 0.1768,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1121749,
+        "tokensOut": 60079,
+        "reasoning": 54051,
+        "wallSec": 613
+      },
       "checks": {
         "shrub": false,
         "pruned": false,
@@ -3607,10 +4631,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0933,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33203,
+        "tokensOut": 1838,
+        "reasoning": 412,
+        "wallSec": 50
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3632,10 +4664,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 2,
       "cost": 0.0952,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 26355,
+        "tokensOut": 2090,
+        "reasoning": 704,
+        "wallSec": 54
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3657,10 +4697,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 1,
       "cost": 0.0537,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 11719,
+        "tokensOut": 1277,
+        "reasoning": 196,
+        "wallSec": 33
+      },
       "checks": {
         "compiles": true,
         "regions": true,
@@ -3682,10 +4730,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 6,
       "cost": 0.0876,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 86452,
+        "tokensOut": 4080,
+        "reasoning": 2253,
+        "wallSec": 74
+      },
       "checks": {
         "shrub": true,
         "pruned": false,
@@ -3709,10 +4765,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 8,
       "cost": 0.1243,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 137936,
+        "tokensOut": 5686,
+        "reasoning": 3211,
+        "wallSec": 91
+      },
       "checks": {
         "shrub": false,
         "pruned": false,
@@ -3736,10 +4800,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
       "cost": 0.049,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 47900,
+        "tokensOut": 2809,
+        "reasoning": 1430,
+        "wallSec": 47
+      },
       "checks": {
         "shrub": true,
         "pruned": true,
@@ -3760,10 +4832,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
       "cost": 0.0917,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18093,
+        "tokensOut": 3593,
+        "reasoning": 2472,
+        "wallSec": 66
+      },
       "checks": {
         "shrub": false,
         "pruned": true,
@@ -3787,10 +4867,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
       "cost": 0.0934,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28552,
+        "tokensOut": 3287,
+        "reasoning": 2089,
+        "wallSec": 68
+      },
       "checks": {
         "shrub": false,
         "pruned": true,
@@ -3814,10 +4902,18 @@
       "post": null,
       "date": "2026-09-29",
       "promptVersion": "v1",
+      "checksVersion": "c2",
       "tier": 3,
       "seed": 3,
       "rounds": 4,
       "cost": 0.1336,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 41921,
+        "tokensOut": 4724,
+        "reasoning": 3355,
+        "wallSec": 97
+      },
       "checks": {
         "shrub": false,
         "pruned": false,
@@ -3842,6 +4938,7 @@
       "seed": 3,
       "date": "2026-09-22",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "cost": 0.0007,
       "why": "Terminated before its first render, having spent less than a tenth of a cent."
     },
@@ -3852,6 +4949,7 @@
       "seed": 2,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "cost": 0.0174,
       "why": "Twelve minutes, no render call. It wrote a complete 358-line script, which then turns out to crash on a bad argument when run offline, so the clock is not the only reason this is blank."
     },
@@ -3862,6 +4960,7 @@
       "seed": 2,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c2",
       "cost": 0.0138,
       "why": "Twelve minutes, no render call, no netlist written. Cut off mid-sentence working out whether its switch band was right."
     },
@@ -3872,6 +4971,7 @@
       "seed": 1,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "cost": 0.0334,
       "why": "Twelve minutes, no file. It spent them mapping the street grid, calling the renderer directly on its own plots rather than on an answer."
     },
@@ -3882,6 +4982,7 @@
       "seed": 2,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "cost": 0.052,
       "why": "Twelve minutes, no file. Still measuring street angles when the clock ran out."
     },
@@ -3892,6 +4993,7 @@
       "seed": 3,
       "date": "2026-09-21",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "cost": 0.056,
       "why": "Wrote an 18.8 km run.gpx on real streets and looked at it by calling the renderer directly, never through render, so the harness recorded no round. Blank by the rule that only a render counts. Offline, every point is on a street, it is one segment, and the word still does not read."
     }
@@ -3904,6 +5006,7 @@
       "seed": 1,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "cost": 0.0388,
       "why": "Read and ran the grader before answering."
     },
@@ -3914,6 +5017,7 @@
       "seed": 2,
       "date": "2026-09-21",
       "promptVersion": "v1",
+      "checksVersion": "c1",
       "cost": 0.0181,
       "why": "Read and ran the grader before answering."
     }

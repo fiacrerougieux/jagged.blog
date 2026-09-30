@@ -3,6 +3,7 @@
   "title": "Exploded French press",
   "short": "French press",
   "version": "v2",
+  "checksVersion": "c1",
   "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
   "oldPrompts": [
     {

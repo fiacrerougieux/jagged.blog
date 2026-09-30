@@ -3,6 +3,7 @@
   "title": "Caffeine with three CF3 groups",
   "short": "Fluorocaffeine",
   "version": "v1",
+  "checksVersion": "c1",
   "prompt": "Give the SMILES for caffeine with all three N-methyl groups replaced by trifluoromethyl groups.",
   "groundTruth": "Caffeine's skeleton with a CF3 on N1, N3 and N7, which is C8HF9N4O2. The prompt pack this came from gives C8H3F9N4O2, which is wrong: swapping the methyls takes all nine hydrogens with them, and only the C8 hydrogen stays. Decided with RDKit by an exact canonical match, because fluorinated isocaffeine has the same formula with a CF3 on the wrong nitrogen.",
   "checks": [

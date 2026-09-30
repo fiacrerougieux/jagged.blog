@@ -3,6 +3,15 @@
   "title": "A coffee shrub hedge-pruned flat on one side",
   "short": "Pruned shrub",
   "version": "v1",
+  "checksVersion": "c2",
+  "oldChecks": [
+    {
+      "version": "c1",
+      "retired": "2026-09-29",
+      "what": "All three checks by eye, with no checker.",
+      "rescored": "No. The three Qwen3.8 Max Prime runs stay on c1, and lsystem-shrub.py as it is now fails the flat side of all three as a drawn line."
+    }
+  ],
   "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
   "groundTruth": "The JSON expanded and drawn with turtle graphics offline, and the drawing judged by eye. There is no single right L-system, so nothing here is measured.",
   "checks": [
