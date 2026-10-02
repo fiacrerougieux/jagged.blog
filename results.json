@@ -3437,7 +3437,7 @@
       },
       "quality": 2,
       "failures": [
-        "geographic-grounding"
+        "labelling"
       ],
       "score": {
         "passed": 3,
@@ -4926,6 +4926,202 @@
       "score": {
         "passed": 1,
         "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "svg-french-press-claude-opus-5.5-s1-r3",
+      "post": null,
+      "date": "2026-10-01",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.2307,
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "svg-french-press-claude-opus-5.5-s2-r2",
+      "post": null,
+      "date": "2026-10-01",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.1625,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-s1-r4",
+      "post": null,
+      "date": "2026-10-01",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.467,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "svg-french-press-pareto-s2-r2",
+      "post": null,
+      "date": "2026-10-01",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.2169,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-french-press-pareto-26.10-preview-s1-r2",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1143,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-french-press-pareto-26.10-preview-s2-r3",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0862,
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-french-press-pareto-26.10-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.1302,
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
         "undecided": 0
       }
     }

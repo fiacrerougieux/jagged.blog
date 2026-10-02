@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1400" viewBox="0 0 760 1400" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <pattern id="mesh" width="5" height="5" patternUnits="userSpaceOnUse">
+    <path d="M0 0L5 5M5 0L0 5" stroke="#777" stroke-width="0.6"/>
+  </pattern>
+  <linearGradient id="steel" x1="0" x2="1">
+    <stop offset="0" stop-color="#9aa3ab"/><stop offset="0.4" stop-color="#eef1f3"/><stop offset="1" stop-color="#7d868e"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" x2="1">
+    <stop offset="0" stop-color="#cfe6f2" stop-opacity="0.8"/><stop offset="0.25" stop-color="#ffffff" stop-opacity="0.6"/><stop offset="1" stop-color="#b8d6e6" stop-opacity="0.8"/>
+  </linearGradient>
+  <marker id="dot" markerWidth="6" markerHeight="6" refX="3" refY="3"><circle cx="3" cy="3" r="2" fill="#222"/></marker>
+</defs>
+<rect width="760" height="1400" fill="#fff"/>
+<text x="380" y="34" text-anchor="middle" font-size="22" font-weight="bold">French Press — Exploded Assembly</text>
+
+<!-- assembly axis -->
+<line x1="300" y1="60" x2="300" y2="1370" stroke="#c33" stroke-width="1" stroke-dasharray="12 4 2 4"/>
+
+<!-- 1 Knob -->
+<g stroke="#222" stroke-width="1.5">
+  <path d="M276 100 Q272 64 300 60 Q328 64 324 100 Z" fill="#333"/>
+  <rect x="290" y="100" width="20" height="10" fill="#555"/>
+</g>
+
+<!-- 2 Lid -->
+<g stroke="#222" stroke-width="1.5">
+  <path d="M215 175 L215 195 A85 16 0 0 0 385 195 L385 175" fill="url(#steel)"/>
+  <ellipse cx="300" cy="175" rx="85" ry="16" fill="#dde2e6"/>
+  <path d="M240 172 Q300 135 360 172" fill="url(#steel)"/>
+  <ellipse cx="300" cy="148" rx="9" ry="3" fill="#333"/>
+  <!-- pour spout notch -->
+  <path d="M378 182 L395 178 L392 190 L384 196" fill="#cfd4d8"/>
+</g>
+
+<!-- 3 Plunger rod -->
+<g stroke="#222" stroke-width="1.5">
+  <rect x="295" y="240" width="10" height="290" fill="url(#steel)"/>
+  <path d="M295 240 L305 240" />
+  <!-- threads top -->
+  <path d="M295 246h10M295 251h10M295 256h10" stroke-width="0.8"/>
+  <!-- threads bottom -->
+  <path d="M295 515h10M295 520h10M295 525h10" stroke-width="0.8"/>
+</g>
+
+<!-- 4 Spiral plate -->
+<g stroke="#222" stroke-width="1.5">
+  <path d="M212 590 L212 598 A88 15 0 0 0 388 598 L388 590" fill="url(#steel)"/>
+  <ellipse cx="300" cy="590" rx="88" ry="15" fill="#e3e7ea"/>
+  <ellipse cx="300" cy="590" rx="78" ry="12" fill="none" stroke-width="0.8"/>
+  <ellipse cx="300" cy="590" rx="10" ry="3" fill="#888"/>
+  <!-- spiral spring around edge -->
+  <path d="M300 590 m14 0 a14 3 0 1 1 -28 0 a28 5.5 0 1 1 56 0 a42 7.5 0 1 1 -84 0 a56 9.5 0 1 1 112 0 a70 11 0 1 1 -140 0" fill="none" stroke="#666" stroke-width="0.8"/>
+  <path d="M212 596 C230 610 260 614 300 614 C340 614 370 610 388 596" fill="none" stroke-width="2" stroke-dasharray="3 2"/>
+</g>
+
+<!-- 5 Mesh screen -->
+<g stroke="#222" stroke-width="1.5">
+  <ellipse cx="300" cy="660" rx="92" ry="16" fill="url(#mesh)"/>
+  <ellipse cx="300" cy="660" rx="92" ry="16" fill="none" stroke-width="2.5"/>
+  <ellipse cx="300" cy="660" rx="9" ry="3" fill="#fff"/>
+</g>
+
+<!-- 6 Cross plate -->
+<g stroke="#222" stroke-width="1.5">
+  <path d="M215 730 L215 736 A85 14 0 0 0 385 736 L385 730" fill="url(#steel)"/>
+  <ellipse cx="300" cy="730" rx="85" ry="14" fill="#e3e7ea"/>
+  <g fill="#fff" stroke-width="1">
+    <path d="M300 730 L232 724 A72 11 0 0 1 292 719 Z"/>
+    <path d="M300 730 L308 719 A72 11 0 0 1 368 724 Z"/>
+    <path d="M300 730 L368 736 A72 11 0 0 1 308 741 Z"/>
+    <path d="M300 730 L292 741 A72 11 0 0 1 232 736 Z"/>
+  </g>
+  <ellipse cx="300" cy="730" rx="10" ry="3.5" fill="#888"/>
+</g>
+
+<!-- 7 Retaining nut -->
+<g stroke="#222" stroke-width="1.5">
+  <polygon points="288,790 312,790 318,800 312,810 288,810 282,800" fill="url(#steel)"/>
+  <path d="M296 790 L296 810 M304 790 L304 810" stroke-width="0.8"/>
+</g>
+
+<!-- 8 Glass beaker -->
+<g stroke="#222" stroke-width="1.5">
+  <path d="M205 880 L205 1110 A95 16 0 0 0 395 1110 L395 880" fill="url(#glass)"/>
+  <ellipse cx="300" cy="880" rx="95" ry="16" fill="#eaf5fb"/>
+  <path d="M388 872 L412 866 L400 886" fill="#eaf5fb"/>
+  <path d="M225 905 L225 1090" stroke="#fff" stroke-width="5" opacity="0.9"/>
+  <g stroke-width="1" fill="#555" font-size="10" stroke="none">
+    <path d="M370 950h14M374 990h10M370 1030h14M374 1070h10" stroke="#456" stroke-width="1"/>
+  </g>
+</g>
+
+<!-- 9 Frame with handle -->
+<g stroke="#222" stroke-width="1.5">
+  <!-- back band -->
+  <path d="M195 1180 L195 1330 A105 18 0 0 0 405 1330 L405 1180" fill="none" stroke="#999"/>
+  <ellipse cx="300" cy="1180" rx="105" ry="18" fill="none"/>
+  <!-- front straps -->
+  <path d="M195 1180 L195 1330" stroke-width="5" stroke="#6b737a"/>
+  <path d="M405 1180 L405 1330" stroke-width="5" stroke="#6b737a"/>
+  <path d="M195 1190 A105 18 0 0 0 405 1190" fill="none" stroke-width="7" stroke="#8a939a"/>
+  <path d="M195 1280 A105 18 0 0 0 405 1280" fill="none" stroke-width="5" stroke="#8a939a"/>
+  <!-- base -->
+  <path d="M190 1330 L190 1342 A110 19 0 0 0 410 1342 L410 1330" fill="url(#steel)"/>
+  <ellipse cx="300" cy="1330" rx="110" ry="19" fill="#c8ced3"/>
+  <ellipse cx="300" cy="1330" rx="98" ry="15" fill="#e8ecef"/>
+  <!-- feet -->
+  <rect x="215" y="1354" width="18" height="8" fill="#555"/><rect x="367" y="1354" width="18" height="8" fill="#555"/>
+  <!-- handle -->
+  <path d="M195 1195 C130 1195 125 1205 125 1235 L125 1290 C125 1310 140 1312 195 1310" fill="none" stroke="#222" stroke-width="16" stroke-linecap="round"/>
+  <path d="M195 1195 C130 1195 125 1205 125 1235 L125 1290 C125 1310 140 1312 195 1310" fill="none" stroke="#3a3a3a" stroke-width="12" stroke-linecap="round"/>
+</g>
+
+<!-- labels -->
+<g font-size="15" fill="#111">
+  <g stroke="#222" stroke-width="1" fill="none" marker-start="url(#dot)">
+    <polyline points="322,82 470,82"/>
+    <polyline points="380,176 470,176"/>
+    <polyline points="305,380 470,380"/>
+    <polyline points="380,594 470,594"/>
+    <polyline points="385,664 470,664"/>
+    <polyline points="378,734 470,734"/>
+    <polyline points="316,800 470,800"/>
+    <polyline points="392,990 470,990"/>
+    <polyline points="405,1240 470,1240"/>
+  </g>
+  <g font-weight="bold">
+    <text x="478" y="87">1  Knob</text>
+    <text x="478" y="181">2  Lid</text>
+    <text x="478" y="385">3  Plunger rod</text>
+    <text x="478" y="599">4  Spiral plate</text>
+    <text x="478" y="669">5  Mesh filter screen</text>
+    <text x="478" y="739">6  Cross plate</text>
+    <text x="478" y="805">7  Retaining nut</text>
+    <text x="478" y="995">8  Glass beaker</text>
+    <text x="478" y="1245">9  Frame &amp; handle</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="496" y="104">threads onto top of rod</text>
+    <text x="496" y="198">rod passes through center bore</text>
+    <text x="496" y="402">threaded both ends</text>
+    <text x="496" y="616">spring coil seals against glass</text>
+    <text x="496" y="686">fine stainless mesh</text>
+    <text x="496" y="756">clamps screen to spiral plate</text>
+    <text x="496" y="822">secures filter stack to rod</text>
+    <text x="496" y="1012">borosilicate, with spout</text>
+    <text x="496" y="1262">beaker drops into frame</text>
+  </g>
+  <!-- bracket for filter assembly -->
+  <path d="M190 575 L180 575 L180 812 L190 812" fill="none" stroke="#222"/>
+  <text x="172" y="690" font-size="13" text-anchor="end" font-style="italic">3-piece</text>
+  <text x="172" y="706" font-size="13" text-anchor="end" font-style="italic">filter</text>
+</g>
+</svg>
