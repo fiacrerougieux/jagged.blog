@@ -1,0 +1,33 @@
+{
+  "name": "mermaid-order-cancel-pareto-26.10-preview-s3-r1",
+  "exportedAt": "2026-10-02T03:42:15.408Z",
+  "run": "2026-10-02-mermaid-order-cancel-1340",
+  "caseId": "mermaid-order-cancel",
+  "caseTitle": "Mermaid: a café order that can be cancelled",
+  "category": "Diagram DSLs",
+  "prompt": "Draw a Mermaid stateDiagram-v2 for a café coffee order. An order is placed, paid, queued, brewed and collected, and it can be cancelled at any point before it is collected. Money goes back only if it was taken. Label every transition with exactly one of these events: pay, queue, start, finish, collect, cancel, refund.",
+  "model": "unbiased/pareto-26.10-preview",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "snap-mermaid",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "order.mmd"
+  },
+  "source": {
+    "file": "order.mmd",
+    "lang": "mermaid",
+    "text": "stateDiagram-v2\n    [*] --> Placed\n\n    Placed --> Paid: pay\n    Paid --> Queued: queue\n    Queued --> Brewing: start\n    Brewing --> Brewed: finish\n    Brewed --> Collected: collect\n\n    Placed --> [*]: cancel\n\n    Paid --> Cancelled: cancel\n    Queued --> Cancelled: cancel\n    Brewing --> Cancelled: cancel\n    Brewed --> Cancelled: cancel\n\n    Cancelled --> [*]: refund\n",
+    "truncated": false,
+    "lines": 18
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,32 @@
+{
+  "name": "spice-frother-triangle-gpt-6.1-sol-s2-r1",
+  "exportedAt": "2026-10-02T03:44:52.952Z",
+  "run": "2026-10-02-spice-frother-triangle-1343",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "1000.0 Hz, 1.988 Vpp, worst bend 0.0, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "1 kHz, 2 Vpp triangle carrier - autonomous relaxation oscillator\n* Only independent sources are DC supply rails; no PULSE, PWL or SIN.\n* Behavioral devices model a fast Schmitt comparator and a bidirectional\n* voltage-controlled current source. Capacitors provide the dynamic state.\nVCC vcc 0 DC 5\nVEE vee 0 DC -5\n\n* Schmitt comparator: positive feedback sets thresholds at +/-1 V\n* (0.2 times the +/-5 V output). A finite 10 ns response avoids an\n* instantaneous algebraic feedback loop and represents comparator delay.\nBcmp drive 0 V=(V(vcc)+V(vee))/2+(V(vcc)-V(vee))/2*tanh(1e4*(V(carrier)+0.2*V(square)))\nRdriver drive square 100\nCdelay square 0 100p IC=0\n\n* Integrator: positive square output discharges the timing capacitor;\n* negative output charges it. |I| = 5/125k = 40 uA.\n* Slope = I/C = 4000 V/s. Each 2 V ramp takes 0.5 ms:\n* T = 4*(1 V)*(125 kohm)*(10 nF)/(5 V) = 1 ms.\n* The small initial capacitor voltage breaks the perfectly symmetric\n* zero-state equilibrium; it is not a periodic excitation.\nBcurrent carrier 0 I=V(square)/125k\nCtiming carrier 0 10n IC=0.05\n\n.control\nset wr_singlescale\nset wr_vecnames\n* Use initial capacitor voltages and resolve each ramp with <=0.5 us steps.\ntran 0.5u 20m 0 0.5u uic\n* Two columns: time (s), carrier voltage (V); includes the entire 20 ms.\nwrdata carrier.txt v(carrier)\n.endc\n.end\n",
+    "truncated": false,
+    "lines": 33
+  },
+  "output": null,
+  "notes": []
+}

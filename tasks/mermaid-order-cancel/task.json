@@ -38,5 +38,9 @@
       "decidedBy": "measured"
     }
   ],
-  "harder": "Add a partial refund once brewing has started, so what goes back depends on where the cancel came from."
+  "harder": "Add a partial refund once brewing has started, so what goes back depends on where the cancel came from.",
+  "saturated": {
+    "since": "2026-10-02",
+    "why": "DeepSeek 4.1 Flash got the refund logic right in all three runs on 2026-09-22, and Pareto 26.10 Preview did it on the first render in all three on 2026-10-02."
+  }
 }

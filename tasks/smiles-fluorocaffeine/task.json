@@ -32,5 +32,9 @@
       "decidedBy": "measured"
     }
   ],
-  "harder": "Ask for 3D coordinates as well, so the nine fluorines have to clear each other and the carbonyls."
+  "harder": "Ask for 3D coordinates as well, so the nine fluorines have to clear each other and the carbonyls.",
+  "saturated": {
+    "since": "2026-10-02",
+    "why": "DeepSeek 4.1 Flash wrote the exact molecule on the first render in all three runs on 2026-09-22, and Claude Sonnet 5.5 did the same on 2026-10-02, for about a cent a run."
+  }
 }

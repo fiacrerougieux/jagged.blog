@@ -1,0 +1,32 @@
+1 kHz, 2 Vpp triangle carrier - autonomous relaxation oscillator
+* Only independent sources are DC supply rails; no PULSE, PWL or SIN.
+* Behavioral devices model a fast Schmitt comparator and a bidirectional
+* voltage-controlled current source. Capacitors provide the dynamic state.
+VCC vcc 0 DC 5
+VEE vee 0 DC -5
+
+* Schmitt comparator: positive feedback sets thresholds at +/-1 V
+* (0.2 times the +/-5 V output). A finite 10 ns response avoids an
+* instantaneous algebraic feedback loop and represents comparator delay.
+Bcmp drive 0 V=(V(vcc)+V(vee))/2+(V(vcc)-V(vee))/2*tanh(1e4*(V(carrier)+0.2*V(square)))
+Rdriver drive square 100
+Cdelay square 0 100p IC=0
+
+* Integrator: positive square output discharges the timing capacitor;
+* negative output charges it. |I| = 5/125k = 40 uA.
+* Slope = I/C = 4000 V/s. Each 2 V ramp takes 0.5 ms:
+* T = 4*(1 V)*(125 kohm)*(10 nF)/(5 V) = 1 ms.
+* The small initial capacitor voltage breaks the perfectly symmetric
+* zero-state equilibrium; it is not a periodic excitation.
+Bcurrent carrier 0 I=V(square)/125k
+Ctiming carrier 0 10n IC=0.05
+
+.control
+set wr_singlescale
+set wr_vecnames
+* Use initial capacitor voltages and resolve each ramp with <=0.5 us steps.
+tran 0.5u 20m 0 0.5u uic
+* Two columns: time (s), carrier voltage (V); includes the entire 20 ms.
+wrdata carrier.txt v(carrier)
+.endc
+.end

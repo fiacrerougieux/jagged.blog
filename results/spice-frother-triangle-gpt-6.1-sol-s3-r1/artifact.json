@@ -1,0 +1,32 @@
+{
+  "name": "spice-frother-triangle-gpt-6.1-sol-s3-r1",
+  "exportedAt": "2026-10-02T03:44:54.338Z",
+  "run": "2026-10-02-spice-frother-triangle-1343",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "999.4 Hz, 1.994 Vpp, worst bend 0.0, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "1 kHz, 2 Vpp triangle carrier -- DC-powered relaxation oscillator\n* Schmitt comparator plus constant-current capacitor integrator.\n* Thresholds: +/-5 V * (10k/50k) = +/-1 V.\n* Ramp slope: 40 uA / 10 nF = 4000 V/s.\n* Period: 2 * 2 V / 4000 V/s = 1 ms.\n* Behavioral blocks model a buffered comparator and current driver;\n* no PULSE, PWL, SIN, or time-dependent waveform sources are used.\n\nVplus vp 0 DC 5\nVminus vn 0 DC -5\n\n* Positive feedback creates the Schmitt trigger's two stable states.\nRinput carrier sense 10k\nRfeedback square sense 50k\nBcomparator drive 0 V={(V(vp)+V(vn))/2 + (V(vp)-V(vn))/2*tanh(1e5*V(sense))}\n* A 10 ns response time makes the comparator dynamic, not algebraic.\nRdelay drive state 1k\nCdelay state 0 10p IC=5\nBsquare square 0 V={V(state)}\n\n* Inverting integrator: comparator high -> falling triangle, and vice versa.\nBcurrent ramp 0 I={40u*V(square)/5}\nCintegrator ramp 0 10n IC=0\n* Buffer isolates the timing capacitor from the threshold divider.\nBcarrier carrier 0 V={V(ramp)}\n\n.control\nset noaskquit\nset wr_singlescale\nset wr_vecnames\nsave v(carrier) v(square)\n* Initial capacitor conditions select a starting state; supplies are DC.\ntran 1u 20m 0 0.5u uic\nwrdata carrier.txt v(carrier)\nmeas tran carrier_pp PP v(carrier) FROM=2m TO=20m\nmeas tran period TRIG v(carrier) VAL=0 RISE=1 TD=2m TARG v(carrier) VAL=0 RISE=2 TD=2m\nlet frequency_hz = 1/period\nprint frequency_hz\n.endc\n.end\n",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}

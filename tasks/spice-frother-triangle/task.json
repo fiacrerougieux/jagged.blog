@@ -32,5 +32,9 @@
       "decidedBy": "measured"
     }
   ],
-  "harder": "Require a real op-amp model with finite slew and supply rails, so an ideal behavioural comparator is not allowed."
+  "harder": "Require a real op-amp model with finite slew and supply rails, so an ideal behavioural comparator is not allowed.",
+  "saturated": {
+    "since": "2026-10-02",
+    "why": "DeepSeek 4.1 Flash passed every check in all three runs on 2026-09-22, and GPT-6.1 Sol did the same on 2026-10-02, each on its first render. Both built the comparator from an ideal behavioural source, which the prompt allows, so the harder version takes that away."
+  }
 }

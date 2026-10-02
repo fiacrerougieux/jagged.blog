@@ -1,0 +1,37 @@
+Autonomous 1 kHz, 2 Vpp triangle carrier for heater PWM
+* DC-powered behavioral Schmitt comparator + constant-current integrator.
+* No PULSE, PWL, SIN, time expressions, or externally supplied clock.
+*
+* Comparator feedback beta = 10k/(15k+10k) = 0.4.
+* With square = 0 or 5 V, hysteresis thresholds are 1.5 and 3.5 V.
+* Integrator current = +/-2.5 V / 62.5k = +/-40 uA.
+* C = 10 nF: slope = +/-4000 V/s, half-period = 2/4000 = 0.5 ms.
+* Thus f = 1 kHz, carrier = 2 Vpp, centered on 2.5 V.
+
+VCC vcc 0 DC 5
+VREF ref 0 DC 2.5
+
+* Finite-gain, rail-limited ideal comparator; positive feedback makes it
+* a Schmitt trigger. Its output controls the charging current below.
+BCOMP square 0 V={0.5*v(vcc)*(1+tanh(10000*(v(hyst)-v(carrier))))}
+RFB square hyst 15k
+RREF hyst ref 10k
+
+* Positive current charges the carrier capacitor when square is high.
+BCHARGE 0 carrier I={(v(square)-v(ref))/62.5k}
+CTIMING carrier 0 10n IC=1.5
+
+* Initial capacitor charge selects a startup state, not a timing source.
+.ic V(carrier)=1.5 V(square)=5 V(hyst)=3.5
+.options reltol=1e-5 abstol=1e-10 vntol=1e-6
+
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+save v(carrier) v(square)
+tran 1u 20m 0 1u uic
+* Two columns: time (seconds), carrier voltage (volts).
+wrdata carrier.txt v(carrier)
+.endc
+.end

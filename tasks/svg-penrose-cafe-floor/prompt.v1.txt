@@ -1,0 +1,1 @@
+Draw a café floor tiled with a Penrose rhombus (P3) tiling, as an SVG.

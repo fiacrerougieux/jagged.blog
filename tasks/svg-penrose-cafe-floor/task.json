@@ -1,0 +1,37 @@
+{
+  "id": "svg-penrose-cafe-floor",
+  "title": "A café floor in Penrose tiles",
+  "short": "Penrose floor",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Draw a café floor tiled with a Penrose rhombus (P3) tiling, as an SVG.",
+  "groundTruth": "The SVG rendered and judged by eye. A P3 tiling has two rhombi, one with a 72° and one with a 36° corner, and no shift maps it onto itself.",
+  "checks": [
+    {
+      "id": "rhombi",
+      "label": "Two rhombi, two fills",
+      "how": "Thick and thin rhombi, each in its own fill.",
+      "decidedBy": "eye",
+      "rule": "Pass if there are two rhombus shapes and every thick one is filled differently from every thin one."
+    },
+    {
+      "id": "aperiodic",
+      "label": "No repeat",
+      "how": "No translation maps the pattern onto itself.",
+      "decidedBy": "eye",
+      "rule": "Pass if no patch of the floor can be slid onto another so that the tiles line up. A rhombus grid in Penrose colours fails it."
+    },
+    {
+      "id": "symmetry",
+      "label": "Fivefold, edges drawn",
+      "how": "Fivefold symmetry about the centre, with the tile edges drawn.",
+      "decidedBy": "eye",
+      "rule": "Pass if the floor looks the same turned a fifth of a turn about its centre and the tile edges are drawn."
+    }
+  ],
+  "harder": "Ask for the matching rule as well, the arcs on each tile that force the tiling, so the edges have to meet the way P3 requires.",
+  "saturated": {
+    "since": "2026-10-02",
+    "why": "Pareto 26.10 Preview and GPT-6.1 Sol both drew a real P3 tiling in all three runs, and I passed all six by eye. Sol did it for about 9 cents a run and Pareto for 17 to 37."
+  }
+}

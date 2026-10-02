@@ -1,0 +1,40 @@
+1 kHz, 2 Vpp triangle carrier -- DC-powered relaxation oscillator
+* Schmitt comparator plus constant-current capacitor integrator.
+* Thresholds: +/-5 V * (10k/50k) = +/-1 V.
+* Ramp slope: 40 uA / 10 nF = 4000 V/s.
+* Period: 2 * 2 V / 4000 V/s = 1 ms.
+* Behavioral blocks model a buffered comparator and current driver;
+* no PULSE, PWL, SIN, or time-dependent waveform sources are used.
+
+Vplus vp 0 DC 5
+Vminus vn 0 DC -5
+
+* Positive feedback creates the Schmitt trigger's two stable states.
+Rinput carrier sense 10k
+Rfeedback square sense 50k
+Bcomparator drive 0 V={(V(vp)+V(vn))/2 + (V(vp)-V(vn))/2*tanh(1e5*V(sense))}
+* A 10 ns response time makes the comparator dynamic, not algebraic.
+Rdelay drive state 1k
+Cdelay state 0 10p IC=5
+Bsquare square 0 V={V(state)}
+
+* Inverting integrator: comparator high -> falling triangle, and vice versa.
+Bcurrent ramp 0 I={40u*V(square)/5}
+Cintegrator ramp 0 10n IC=0
+* Buffer isolates the timing capacitor from the threshold divider.
+Bcarrier carrier 0 V={V(ramp)}
+
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+save v(carrier) v(square)
+* Initial capacitor conditions select a starting state; supplies are DC.
+tran 1u 20m 0 0.5u uic
+wrdata carrier.txt v(carrier)
+meas tran carrier_pp PP v(carrier) FROM=2m TO=20m
+meas tran period TRIG v(carrier) VAL=0 RISE=1 TD=2m TARG v(carrier) VAL=0 RISE=2 TD=2m
+let frequency_hz = 1/period
+print frequency_hz
+.endc
+.end

@@ -5124,6 +5124,498 @@
         "of": 5,
         "undecided": 0
       }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "spice-frother-triangle-gpt-6.1-sol-s1-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0288,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 31321,
+        "tokensOut": 1749,
+        "reasoning": 563,
+        "wallSec": 64
+      },
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "spice-frother-triangle-gpt-6.1-sol-s2-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0306,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 30135,
+        "tokensOut": 1703,
+        "reasoning": 582,
+        "wallSec": 67
+      },
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "spice-frother-triangle",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "spice-frother-triangle-gpt-6.1-sol-s3-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0289,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 22348,
+        "tokensOut": 1881,
+        "reasoning": 1059,
+        "wallSec": 66
+      },
+      "checks": {
+        "dc": true,
+        "frequency": true,
+        "amplitude": true,
+        "ramps": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "smiles-fluorocaffeine-claude-sonnet-5.5-s1-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0132,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8508,
+        "tokensOut": 407,
+        "reasoning": 0,
+        "wallSec": 9
+      },
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "smiles-fluorocaffeine-claude-sonnet-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.013,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8508,
+        "tokensOut": 382,
+        "reasoning": 0,
+        "wallSec": 9
+      },
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "smiles-fluorocaffeine",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "smiles-fluorocaffeine-claude-sonnet-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0132,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8508,
+        "tokensOut": 399,
+        "reasoning": 0,
+        "wallSec": 9
+      },
+      "checks": {
+        "parses": true,
+        "formula": true,
+        "cf3": true,
+        "exact": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "mermaid-order-cancel-pareto-26.10-preview-s1-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0426,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10998,
+        "tokensOut": 11713,
+        "reasoning": 0,
+        "wallSec": 72
+      },
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "mermaid-order-cancel-pareto-26.10-preview-s2-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0372,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18128,
+        "tokensOut": 8726,
+        "reasoning": 0,
+        "wallSec": 59
+      },
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "mermaid-order-cancel",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "mermaid-order-cancel-pareto-26.10-preview-s3-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0237,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 7260,
+        "tokensOut": 6165,
+        "reasoning": 0,
+        "wallSec": 45
+      },
+      "checks": {
+        "valid": true,
+        "happy": true,
+        "unpaid": true,
+        "paid": true,
+        "collected": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-penrose-cafe-floor-pareto-26.10-preview-s1-r2",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.3667,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 123878,
+        "tokensOut": 104241,
+        "reasoning": 0,
+        "wallSec": 590
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-penrose-cafe-floor-pareto-26.10-preview-s2-r3",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.297,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 67247,
+        "tokensOut": 85890,
+        "reasoning": 0,
+        "wallSec": 462
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "svg-penrose-cafe-floor-pareto-26.10-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.1657,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 83412,
+        "tokensOut": 44480,
+        "reasoning": 0,
+        "wallSec": 295
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-penrose-cafe-floor-gpt-6.1-sol-s1-r2",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0956,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 55377,
+        "tokensOut": 7186,
+        "reasoning": 1569,
+        "wallSec": 159
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-penrose-cafe-floor-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0877,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 52057,
+        "tokensOut": 6406,
+        "reasoning": 1211,
+        "wallSec": 139
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-penrose-cafe-floor",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-penrose-cafe-floor-gpt-6.1-sol-s3-r1",
+      "post": null,
+      "date": "2026-10-02",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0802,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 35869,
+        "tokensOut": 6183,
+        "reasoning": 1194,
+        "wallSec": 127
+      },
+      "checks": {
+        "rhombi": true,
+        "aperiodic": true,
+        "symmetry": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
     }
   ],
   "blank": [

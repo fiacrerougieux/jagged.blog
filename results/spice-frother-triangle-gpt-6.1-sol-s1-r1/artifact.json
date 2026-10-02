@@ -1,0 +1,32 @@
+{
+  "name": "spice-frother-triangle-gpt-6.1-sol-s1-r1",
+  "exportedAt": "2026-10-02T03:44:51.492Z",
+  "run": "2026-10-02-spice-frother-triangle-1343",
+  "caseId": "spice-frother-triangle",
+  "caseTitle": "ngspice: triangle-wave carrier for a milk frother",
+  "category": "Electronics and fabrication",
+  "prompt": "A milk frother's heater is driven by PWM, and the PWM needs a 1 kHz triangle-wave carrier of 2 V peak to peak. Build that oscillator in ngspice using only DC supplies, so the oscillation comes from the circuit itself, and simulate 20 ms. In a .control block, save the carrier voltage with wrdata to a .txt file so it can be plotted.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "1000.0 Hz, 1.996 Vpp, worst bend 0.0, rise/fall 1.0"
+  },
+  "recipe": "spice",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "carrier.cir"
+  },
+  "source": {
+    "file": "carrier.cir",
+    "lang": "plaintext",
+    "text": "Autonomous 1 kHz, 2 Vpp triangle carrier for heater PWM\n* DC-powered behavioral Schmitt comparator + constant-current integrator.\n* No PULSE, PWL, SIN, time expressions, or externally supplied clock.\n*\n* Comparator feedback beta = 10k/(15k+10k) = 0.4.\n* With square = 0 or 5 V, hysteresis thresholds are 1.5 and 3.5 V.\n* Integrator current = +/-2.5 V / 62.5k = +/-40 uA.\n* C = 10 nF: slope = +/-4000 V/s, half-period = 2/4000 = 0.5 ms.\n* Thus f = 1 kHz, carrier = 2 Vpp, centered on 2.5 V.\n\nVCC vcc 0 DC 5\nVREF ref 0 DC 2.5\n\n* Finite-gain, rail-limited ideal comparator; positive feedback makes it\n* a Schmitt trigger. Its output controls the charging current below.\nBCOMP square 0 V={0.5*v(vcc)*(1+tanh(10000*(v(hyst)-v(carrier))))}\nRFB square hyst 15k\nRREF hyst ref 10k\n\n* Positive current charges the carrier capacitor when square is high.\nBCHARGE 0 carrier I={(v(square)-v(ref))/62.5k}\nCTIMING carrier 0 10n IC=1.5\n\n* Initial capacitor charge selects a startup state, not a timing source.\n.ic V(carrier)=1.5 V(square)=5 V(hyst)=3.5\n.options reltol=1e-5 abstol=1e-10 vntol=1e-6\n\n.control\nset noaskquit\nset wr_singlescale\nset wr_vecnames\nsave v(carrier) v(square)\ntran 1u 20m 0 1u uic\n* Two columns: time (seconds), carrier voltage (volts).\nwrdata carrier.txt v(carrier)\n.endc\n.end\n",
+    "truncated": false,
+    "lines": 38
+  },
+  "output": null,
+  "notes": []
+}
