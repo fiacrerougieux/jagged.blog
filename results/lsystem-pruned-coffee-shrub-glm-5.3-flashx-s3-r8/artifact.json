@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-glm-5.3-flashx-s3-r8",
+  "exportedAt": "2026-10-03T10:50:58.443Z",
+  "run": "2026-10-03-lsystem-pruned-coffee-shrub-2041",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 3,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": true,
+    "detail": "grows on both sides with no drawn edge, so whether it looks pruned is for the eye; the sides stray left 5.8% and right 6.1% of the width from straight"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"A-f+A-f+A-f+A\",\n  \"rules\": {\n    \"A\": \"F[+F][-F]F[+F][-F]F[+F][-F]FB\",\n    \"B\": \"F[+F][-F]F[+F][-F]F[+F][-F]FC\",\n    \"C\": \"F[+F][-F]F[+F][-F]F[+F][-F]FD\",\n    \"D\": \"F[+F][-F]F[+F][-F]F[+F][-F]FE\",\n    \"E\": \"F[-F-F]F[-F-F]\"\n  },\n  \"angle\": 90,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 14
+  },
+  "output": null,
+  "notes": []
+}

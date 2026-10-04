@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1400" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f7f1e6"/>
+  <rect x="16" y="16" width="968" height="1368" rx="14" fill="none" stroke="#c9bba6" stroke-width="2"/>
+
+  <text x="500" y="52" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="32" font-weight="700" fill="#1b242b">French Press — Exploded Assembly</text>
+  <text x="500" y="78" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="15" fill="#3e4c56">Standard plunger: cross plate, mesh screen, and coil spring (not a two-piece travel filter)</text>
+
+  <!-- center axis -->
+  <line x1="390" y1="100" x2="390" y2="1320" stroke="#c4b49c" stroke-width="1.5" stroke-dasharray="6 7"/>
+
+  <!-- ========== 1. LID ========== -->
+  <g>
+    <!-- knob -->
+    <ellipse cx="390" cy="128" rx="22" ry="8" fill="#e7c48a" stroke="#5a3a18" stroke-width="2"/>
+    <rect x="372" y="112" width="36" height="18" rx="4" fill="#d7a45a" stroke="#5a3a18" stroke-width="2"/>
+    <ellipse cx="390" cy="112" rx="18" ry="6" fill="#f0d7a6" stroke="#5a3a18" stroke-width="1.5"/>
+    <!-- lid body -->
+    <path d="M250 175
+             C250 150, 305 132, 390 132
+             C475 132, 530 150, 530 175
+             L530 198
+             C530 220, 475 236, 390 236
+             C305 236, 250 220, 250 198 Z"
+          fill="#d5dde2" stroke="#1e272e" stroke-width="2.5"/>
+    <ellipse cx="390" cy="175" rx="140" ry="24" fill="#eef2f4" stroke="#1e272e" stroke-width="2"/>
+    <!-- highlight band -->
+    <path d="M270 168 C310 152, 470 152, 510 168" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.8"/>
+    <!-- pour notch -->
+    <path d="M500 168 C528 158, 556 170, 562 186 C538 194, 514 186, 498 176 Z" fill="#c5cfd5" stroke="#1e272e" stroke-width="2"/>
+    <!-- underside rim -->
+    <ellipse cx="390" cy="210" rx="128" ry="18" fill="none" stroke="#5c6972" stroke-width="2"/>
+    <!-- center hole -->
+    <ellipse cx="390" cy="178" rx="9" ry="4" fill="#1e272e"/>
+  </g>
+  <line x1="530" y1="175" x2="640" y2="140" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="640,140 626,136 630,150" fill="#1e272e"/>
+  <text x="648" y="136" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">1  Lid</text>
+  <text x="648" y="156" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Steel cover, knob, pour notch</text>
+
+  <!-- ========== 2. ROD ========== -->
+  <g>
+    <rect x="382" y="250" width="16" height="210" rx="2" fill="#c5ced4" stroke="#1e272e" stroke-width="2"/>
+    <rect x="386" y="254" width="4" height="200" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="390" cy="250" rx="8" ry="3" fill="#eef2f4" stroke="#1e272e" stroke-width="1.5"/>
+    <!-- threads -->
+    <rect x="384" y="458" width="12" height="36" fill="#9aa6ae" stroke="#1e272e" stroke-width="1.6"/>
+    <path d="M384 466 H396 M384 474 H396 M384 482 H396 M384 490 H396" stroke="#1e272e" stroke-width="1.4"/>
+  </g>
+  <line x1="398" y1="340" x2="640" y2="280" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="640,280 626,274 628,290" fill="#1e272e"/>
+  <text x="648" y="276" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">2  Plunger rod</text>
+  <text x="648" y="296" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Threaded shaft through the lid</text>
+
+  <!-- filter bracket label -->
+  <rect x="48" y="520" width="200" height="150" rx="8" fill="#fffaf2" stroke="#1e272e" stroke-width="1.6"/>
+  <text x="62" y="544" font-family="Liberation Sans, sans-serif" font-size="14" font-weight="700" fill="#8a2e1b">THREE-PIECE FILTER</text>
+  <text x="62" y="568" font-family="Liberation Sans, sans-serif" font-size="13" fill="#1b242b">3  cross plate (top)</text>
+  <text x="62" y="588" font-family="Liberation Sans, sans-serif" font-size="13" fill="#1b242b">4  mesh screen</text>
+  <text x="62" y="608" font-family="Liberation Sans, sans-serif" font-size="13" fill="#1b242b">5  coil spring (base)</text>
+  <text x="62" y="632" font-family="Liberation Sans, sans-serif" font-size="12" fill="#3e4c56">Nut clamps the stack</text>
+  <text x="62" y="652" font-family="Liberation Sans, sans-serif" font-size="12" fill="#3e4c56">onto the rod threads.</text>
+
+  <!-- ========== 3. CROSS PLATE (larger, slightly tilted) ========== -->
+  <g transform="translate(390 530) rotate(-16) scale(1 0.42) translate(-390 -530)">
+    <!-- rim ring -->
+    <circle cx="390" cy="530" r="118" fill="none" stroke="#6d787f" stroke-width="16"/>
+    <circle cx="390" cy="530" r="118" fill="none" stroke="#1e272e" stroke-width="4"/>
+    <circle cx="390" cy="530" r="108" fill="none" stroke="#f4f7f8" stroke-width="3"/>
+    <!-- cross arms -->
+    <rect x="272" y="512" width="236" height="36" rx="6" fill="#c5d0d6" stroke="#1e272e" stroke-width="4"/>
+    <rect x="372" y="412" width="36" height="236" rx="6" fill="#b7c3ca" stroke="#1e272e" stroke-width="4"/>
+    <rect x="278" y="516" width="220" height="6" fill="#ffffff" opacity="0.7"/>
+    <!-- hub -->
+    <circle cx="390" cy="530" r="18" fill="#3c484e" stroke="#1e272e" stroke-width="3"/>
+    <circle cx="390" cy="530" r="7" fill="#10161a"/>
+  </g>
+  <line x1="500" y1="500" x2="620" y2="448" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="620,448 606,444 608,460" fill="#1e272e"/>
+  <text x="628" y="446" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">3  Cross plate</text>
+  <text x="628" y="466" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Open cross, four windows</text>
+  <text x="248" y="508" text-anchor="end" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="700" fill="#8a2e1b">filter 1 / 3</text>
+
+  <!-- ========== 4. MESH ========== -->
+  <g>
+    <ellipse cx="390" cy="658" rx="132" ry="26" fill="#6e7a82" stroke="#1e272e" stroke-width="2"/>
+    <clipPath id="meshClip">
+      <ellipse cx="390" cy="644" rx="128" ry="22"/>
+    </clipPath>
+    <ellipse cx="390" cy="644" rx="132" ry="26" fill="#c5d0d6" stroke="#1e272e" stroke-width="2.6"/>
+    <g clip-path="url(#meshClip)" stroke="#243038" stroke-width="0.85">
+      <path d="M258 622 H522 M258 629 H522 M258 636 H522 M258 643 H522 M258 650 H522 M258 657 H522 M258 664 H522"/>
+      <path d="M270 618 V670 M282 618 V670 M294 618 V670 M306 618 V670 M318 618 V670 M330 618 V670 M342 618 V670 M354 618 V670 M366 618 V670 M378 618 V670 M390 618 V670 M402 618 V670 M414 618 V670 M426 618 V670 M438 618 V670 M450 618 V670 M462 618 V670 M474 618 V670 M486 618 V670 M498 618 V670 M510 618 V670"/>
+    </g>
+    <ellipse cx="390" cy="644" rx="132" ry="26" fill="none" stroke="#1e272e" stroke-width="2.6"/>
+    <ellipse cx="390" cy="644" rx="122" ry="19" fill="none" stroke="#f7fafb" stroke-width="1.6"/>
+    <ellipse cx="390" cy="644" rx="8" ry="3.4" fill="#11181c" stroke="#1e272e" stroke-width="1.2"/>
+  </g>
+  <line x1="522" y1="640" x2="640" y2="575" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="640,575 624,572 628,588" fill="#1e272e"/>
+  <text x="648" y="572" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">4  Mesh screen</text>
+  <text x="648" y="592" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Fine round stainless weave</text>
+  <text x="248" y="618" text-anchor="end" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="700" fill="#8a2e1b">filter 2 / 3</text>
+
+  <!-- ========== 5. COIL SPRING ========== -->
+  <g fill="none" stroke-linecap="round">
+    <!-- closed helical turns, each a full ellipse, stacked with a slight pitch -->
+    <ellipse cx="378" cy="770" rx="122" ry="18" stroke="#2a333a" stroke-width="5.2"/>
+    <ellipse cx="386" cy="756" rx="122" ry="18" stroke="#66727a" stroke-width="4.6"/>
+    <ellipse cx="394" cy="742" rx="122" ry="18" stroke="#2a333a" stroke-width="5.2"/>
+    <ellipse cx="402" cy="728" rx="122" ry="18" stroke="#8d98a0" stroke-width="4.4"/>
+    <ellipse cx="410" cy="714" rx="122" ry="18" stroke="#2a333a" stroke-width="5.2"/>
+    <path d="M310 708 Q410 694 508 708" stroke="#f7fafb" stroke-width="1.8"/>
+    <path d="M528 712 C546 706, 552 694, 538 688" stroke="#2a333a" stroke-width="3.6"/>
+    <path d="M260 772 C242 778, 238 790, 252 796" stroke="#2a333a" stroke-width="3.6"/>
+  </g>
+  <line x1="560" y1="690" x2="660" y2="660" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="660,660 644,656 648,672" fill="#1e272e"/>
+  <text x="668" y="656" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">5  Coil spring</text>
+  <text x="668" y="676" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Helical base spring under the mesh</text>
+  <text x="220" y="748" text-anchor="end" font-family="Liberation Sans, sans-serif" font-size="13" font-weight="700" fill="#8a2e1b">filter 3 / 3</text>
+
+  <!-- nut -->
+  <g>
+    <polygon points="390,800 412,812 412,832 390,844 368,832 368,812" fill="#d5dde2" stroke="#1e272e" stroke-width="2"/>
+    <polygon points="378,816 390,810 402,816 402,826 390,832 378,826" fill="#1e272e"/>
+  </g>
+  <text x="422" y="830" font-family="Liberation Sans, sans-serif" font-size="13" fill="#1b242b">retaining nut</text>
+
+  <!-- ========== 6. CARAFE ========== -->
+  <g>
+    <!-- metal lip band -->
+    <path d="M214 930
+             C214 908, 286 892, 390 892
+             C494 892, 566 908, 566 930
+             C566 948, 494 962, 390 962
+             C286 962, 214 948, 214 930 Z"
+          fill="#c5ced4" stroke="#1e272e" stroke-width="2.5"/>
+    <ellipse cx="390" cy="930" rx="150" ry="20" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <!-- glass body -->
+    <path d="M226 948
+             C222 962, 220 980, 224 1000
+             L258 1224
+             C268 1264, 318 1290, 390 1290
+             C462 1290, 512 1264, 522 1224
+             L556 1000
+             C560 980, 558 962, 554 948 Z"
+          fill="#e7f3f8" stroke="#1e272e" stroke-width="2.5"/>
+    <!-- left glass highlight -->
+    <path d="M250 980 L274 1210" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+    <path d="M520 990 L496 1200" fill="none" stroke="#b7d0dc" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <!-- inner ellipse mouth -->
+    <ellipse cx="390" cy="948" rx="150" ry="22" fill="#f4fbfd" stroke="#1e272e" stroke-width="2"/>
+    <ellipse cx="390" cy="948" rx="128" ry="14" fill="none" stroke="#7f9aaa" stroke-width="1.4"/>
+    <!-- spout -->
+    <path d="M530 934 C572 918, 628 930, 652 956 C614 966, 568 954, 538 940 Z" fill="#e7f3f8" stroke="#1e272e" stroke-width="2.2"/>
+    <path d="M546 936 C580 928, 612 938, 632 954" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <!-- handle -->
+    <path d="M220 970
+             C150 974, 112 1024, 112 1090
+             C112 1168, 156 1218, 222 1224"
+          fill="none" stroke="#2a2a2a" stroke-width="18" stroke-linecap="round"/>
+    <path d="M220 970
+             C150 974, 112 1024, 112 1090
+             C112 1168, 156 1218, 222 1224"
+          fill="none" stroke="#8a8a8a" stroke-width="5" stroke-linecap="round"/>
+    <!-- cup marks -->
+    <g stroke="#3e6272" stroke-width="1.6">
+      <line x1="330" y1="1060" x2="368" y2="1060"/>
+      <line x1="324" y1="1110" x2="372" y2="1110"/>
+      <line x1="334" y1="1160" x2="366" y2="1160"/>
+    </g>
+    <g font-family="Liberation Sans, sans-serif" font-size="13" fill="#245066" font-weight="700">
+      <text x="376" y="1065">8</text>
+      <text x="376" y="1115">4</text>
+    </g>
+  </g>
+  <line x1="620" y1="940" x2="700" y2="880" stroke="#1e272e" stroke-width="1.6"/>
+  <polygon points="700,880 684,878 690,894" fill="#1e272e"/>
+  <text x="708" y="876" font-family="Liberation Sans, sans-serif" font-size="18" font-weight="700" fill="#1b242b">6  Carafe</text>
+  <text x="708" y="896" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">Glass beaker, spout,</text>
+  <text x="708" y="914" font-family="Liberation Sans, sans-serif" font-size="13" fill="#3e4c56">handle, steel lip</text>
+
+  <!-- assembly arrow -->
+  <line x1="78" y1="160" x2="78" y2="860" stroke="#8a6a32" stroke-width="2"/>
+  <polygon points="78,872 70,852 86,852" fill="#8a6a32"/>
+  <text x="64" y="150" font-family="Liberation Sans, sans-serif" font-size="12" font-weight="700" fill="#8a6a32" transform="rotate(-90 64 150)">DROPS ON THIS AXIS</text>
+
+  <text x="500" y="1355" text-anchor="middle" font-family="Liberation Sans, sans-serif" font-size="13" fill="#5c5146">Exploded along the plunger axis · rod passes lid, then plate → mesh → spring, locked by the nut</text>
+</svg>

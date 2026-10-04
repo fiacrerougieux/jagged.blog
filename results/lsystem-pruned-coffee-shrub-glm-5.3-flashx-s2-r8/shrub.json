@@ -1,0 +1,13 @@
+{
+  "axiom": "FFFFA",
+  "rules": {
+    "A": "F[+B][-B]F[+B][-B]FA",
+    "B": "F[+C][-C]F[+C][-C]F",
+    "C": "F[+D][-D]F[+D][-D]F",
+    "D": "F[+E][-E]F",
+    "E": "FF"
+  },
+  "angle": 32,
+  "iterations": 8,
+  "start_heading": 90
+}

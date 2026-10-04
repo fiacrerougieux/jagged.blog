@@ -1,0 +1,10 @@
+{
+  "axiom": "F[-ff+R]F[++N]F[-ff+R]F[+N]F[-ff+R]F[+N]F[++N]",
+  "rules": {
+    "N": "F[+++N][++N][+N]FN",
+    "R": "F[++N][++++N]R"
+  },
+  "angle": 20,
+  "iterations": 5,
+  "start_heading": 90
+}

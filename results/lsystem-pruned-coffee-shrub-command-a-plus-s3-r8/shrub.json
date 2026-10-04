@@ -1,0 +1,1 @@
+{"axiom": "F", "rules": {"F": "F[+R]F", "R": "F[+R]"}, "angle": 35, "iterations": 7, "start_heading": 90}

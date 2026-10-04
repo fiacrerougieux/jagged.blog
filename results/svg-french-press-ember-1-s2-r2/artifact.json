@@ -1,0 +1,30 @@
+{
+  "name": "svg-french-press-ember-1-s2-r2",
+  "exportedAt": "2026-10-03T22:21:16.573Z",
+  "run": "2026-10-04-svg-french-press-0333",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "fireworks/ember-1",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"860\" viewBox=\"0 0 520 860\" font-family=\"sans-serif\">\n  <rect width=\"520\" height=\"860\" fill=\"#fafafa\"/>\n  <text x=\"260\" y=\"30\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\">French Press — Exploded Assembly</text>\n\n  <!-- Knob -->\n  <g>\n    <circle cx=\"260\" cy=\"75\" r=\"22\" fill=\"#444\"/>\n    <circle cx=\"253\" cy=\"68\" r=\"5\" fill=\"#777\"/>\n    <text x=\"330\" y=\"80\" font-size=\"13\" fill=\"#333\">knob</text>\n    <line x1=\"305\" y1=\"76\" x2=\"322\" y2=\"78\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Lid -->\n  <g>\n    <path d=\"M178 150 a82 34 0 0 1 164 0 z\" fill=\"#777\"/>\n    <rect x=\"172\" y=\"150\" width=\"176\" height=\"12\" rx=\"4\" fill=\"#555\"/>\n    <ellipse cx=\"260\" cy=\"150\" rx=\"88\" ry=\"8\" fill=\"none\" stroke=\"#999\" stroke-width=\"1.5\"/>\n    <ellipse cx=\"260\" cy=\"146\" rx=\"14\" ry=\"4\" fill=\"#444\"/>\n    <text x=\"370\" y=\"150\" font-size=\"13\" fill=\"#333\">lid</text>\n    <line x1=\"348\" y1=\"152\" x2=\"364\" y2=\"150\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Rod -->\n  <g>\n    <rect x=\"254\" y=\"97\" width=\"12\" height=\"520\" fill=\"#999\"/>\n    <rect x=\"256\" y=\"97\" width=\"3\" height=\"520\" fill=\"#ccc\"/>\n    <text x=\"150\" y=\"340\" font-size=\"13\" fill=\"#333\">plunger rod</text>\n    <line x1=\"252\" y1=\"336\" x2=\"230\" y2=\"336\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Spiral spring (three-piece filter part 1) -->\n  <g>\n    <g fill=\"none\" stroke=\"#666\" stroke-width=\"3\">\n      <ellipse cx=\"260\" cy=\"422\" rx=\"80\" ry=\"10\"/>\n      <ellipse cx=\"260\" cy=\"432\" rx=\"80\" ry=\"10\"/>\n      <ellipse cx=\"260\" cy=\"442\" rx=\"80\" ry=\"10\"/>\n    </g>\n    <text x=\"370\" y=\"425\" font-size=\"13\" fill=\"#333\">spiral spring</text>\n    <line x1=\"340\" y1=\"428\" x2=\"364\" y2=\"424\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Mesh screen (part 2) -->\n  <g>\n    <ellipse cx=\"260\" cy=\"500\" rx=\"80\" ry=\"12\" fill=\"#c9c9c9\" stroke=\"#777\" stroke-width=\"2\"/>\n    <ellipse cx=\"260\" cy=\"500\" rx=\"80\" ry=\"12\" fill=\"url(#mesh)\" stroke=\"#777\" stroke-width=\"2\"/>\n    <text x=\"370\" y=\"505\" font-size=\"13\" fill=\"#333\">mesh screen</text>\n    <line x1=\"340\" y1=\"502\" x2=\"364\" y2=\"504\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Cross plate / bottom plate (part 3) -->\n  <g>\n    <ellipse cx=\"260\" cy=\"565\" rx=\"80\" ry=\"12\" fill=\"#888\" stroke=\"#555\" stroke-width=\"2\"/>\n    <ellipse cx=\"260\" cy=\"559\" rx=\"80\" ry=\"12\" fill=\"#aaa\" stroke=\"#666\" stroke-width=\"2\"/>\n    <rect x=\"246\" y=\"548\" width=\"28\" height=\"10\" rx=\"3\" fill=\"#777\"/>\n    <text x=\"370\" y=\"565\" font-size=\"13\" fill=\"#333\">cross plate</text>\n    <line x1=\"340\" y1=\"562\" x2=\"364\" y2=\"564\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Nut at rod end -->\n  <g>\n    <rect x=\"248\" y=\"617\" width=\"24\" height=\"14\" rx=\"3\" fill=\"#555\"/>\n    <text x=\"120\" y=\"630\" font-size=\"13\" fill=\"#333\">retaining nut</text>\n    <line x1=\"246\" y1=\"624\" x2=\"200\" y2=\"628\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- Beaker -->\n  <g>\n    <path d=\"M170 700 v110 a10 10 0 0 0 10 10 h160 a10 10 0 0 0 10 -10 v-110\" fill=\"rgba(180,220,240,0.35)\" stroke=\"#4a7a96\" stroke-width=\"3\"/>\n    <ellipse cx=\"260\" cy=\"700\" rx=\"90\" ry=\"12\" fill=\"rgba(180,220,240,0.25)\" stroke=\"#4a7a96\" stroke-width=\"3\"/>\n    <!-- spout -->\n    <path d=\"M170 700 q-14 -6 -16 -14 q12 2 18 8\" fill=\"rgba(180,220,240,0.35)\" stroke=\"#4a7a96\" stroke-width=\"2.5\"/>\n    <!-- handle -->\n    <path d=\"M350 720 q55 5 55 55 q0 45 -55 45\" fill=\"none\" stroke=\"#333\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <!-- base band -->\n    <rect x=\"168\" y=\"806\" width=\"184\" height=\"16\" rx=\"6\" fill=\"#444\"/>\n    <text x=\"80\" y=\"760\" font-size=\"13\" fill=\"#333\">glass beaker</text>\n    <line x1=\"168\" y1=\"760\" x2=\"150\" y2=\"760\" stroke=\"#888\" stroke-dasharray=\"3,3\"/>\n  </g>\n\n  <!-- assembly dashed guide -->\n  <line x1=\"260\" y1=\"55\" x2=\"260\" y2=\"640\" stroke=\"#bbb\" stroke-dasharray=\"2,6\"/>\n\n  <defs>\n    <pattern id=\"mesh\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\">\n      <path d=\"M0 0 L6 6 M6 0 L0 6\" stroke=\"#999\" stroke-width=\"0.8\"/>\n    </pattern>\n  </defs>\n</svg>\n",
+    "truncated": false,
+    "lines": 89
+  },
+  "output": null,
+  "notes": []
+}

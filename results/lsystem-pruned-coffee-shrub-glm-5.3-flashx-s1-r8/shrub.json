@@ -1,0 +1,11 @@
+{
+  "axiom": "A",
+  "rules": {
+    "A": "F[+B]F[+B]FA",
+    "B": "FF-F[+C]F[+C]FC",
+    "C": "F-F"
+  },
+  "angle": 45,
+  "iterations": 7,
+  "start_heading": 90
+}

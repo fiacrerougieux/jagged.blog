@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-command-a-plus-s1-r8",
+  "exportedAt": "2026-10-03T10:50:47.340Z",
+  "run": "2026-10-03-lsystem-pruned-coffee-shrub-2041",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "cohere/command-a-plus",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": false,
+    "detail": "half a shrub: 0 of 120 branches off the main stem head right"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\"axiom\": \"F\", \"rules\": {\"F\": \"F[+G]F[+G]F[+G]\", \"G\": \"G[+H]\"}, \"angle\": 30, \"iterations\": 4, \"start_heading\": 90}",
+    "truncated": false,
+    "lines": 1
+  },
+  "output": null,
+  "notes": []
+}

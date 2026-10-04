@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="900" viewBox="0 0 700 900" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="900" fill="white"/>
+
+  <!-- center axis -->
+  <line x1="350" y1="30" x2="350" y2="870" stroke="#bbb" stroke-dasharray="4 6" stroke-width="1"/>
+
+  <!-- ===== LID with knob ===== -->
+  <g>
+    <!-- knob -->
+    <circle cx="350" cy="70" r="22" fill="#444"/>
+    <rect x="344" y="88" width="12" height="14" fill="#444"/>
+    <!-- lid dome -->
+    <path d="M255 150 Q255 102 350 102 Q445 102 445 150 Z" fill="#666" stroke="#333" stroke-width="2"/>
+    <rect x="250" y="150" width="200" height="18" rx="4" fill="#555" stroke="#333" stroke-width="2"/>
+    <text x="470" y="150" font-size="16" fill="#222">Lid</text>
+  </g>
+
+  <!-- ===== PLUNGER ROD ===== -->
+  <g>
+    <rect x="342" y="200" width="16" height="230" fill="#999" stroke="#555" stroke-width="1.5"/>
+    <text x="375" y="300" font-size="16" fill="#222">Plunger rod</text>
+  </g>
+
+  <!-- ===== FILTER ASSEMBLY (three-piece) ===== -->
+  <g>
+    <!-- cross plate (top) -->
+    <rect x="280" y="455" width="140" height="10" rx="3" fill="#777" stroke="#444" stroke-width="1.5"/>
+    <text x="470" y="462" font-size="16" fill="#222">Cross plate</text>
+
+    <!-- mesh screen (middle) -->
+    <rect x="280" y="500" width="140" height="8" fill="#c9c9c9" stroke="#666" stroke-width="1.5"/>
+    <g stroke="#888" stroke-width="0.7">
+      <line x1="285" y1="500" x2="285" y2="508"/>
+      <line x1="295" y1="500" x2="295" y2="508"/>
+      <line x1="305" y1="500" x2="305" y2="508"/>
+      <line x1="315" y1="500" x2="315" y2="508"/>
+      <line x1="325" y1="500" x2="325" y2="508"/>
+      <line x1="335" y1="500" x2="335" y2="508"/>
+      <line x1="345" y1="500" x2="345" y2="508"/>
+      <line x1="355" y1="500" x2="355" y2="508"/>
+      <line x1="365" y1="500" x2="365" y2="508"/>
+      <line x1="375" y1="500" x2="375" y2="508"/>
+      <line x1="385" y1="500" x2="385" y2="508"/>
+      <line x1="395" y1="500" x2="395" y2="508"/>
+      <line x1="405" y1="500" x2="405" y2="508"/>
+      <line x1="415" y1="500" x2="415" y2="508"/>
+    </g>
+    <text x="470" y="507" font-size="16" fill="#222">Mesh screen</text>
+
+    <!-- spiral spring -->
+    <path d="M280 545 q10 -18 20 0 q10 18 20 0 q10 -18 20 0 q10 18 20 0 q10 -18 20 0 q10 18 20 0 q10 -18 20 0 q10 18 20 0"
+          fill="none" stroke="#555" stroke-width="2.5"/>
+    <text x="470" y="550" font-size="16" fill="#222">Spiral spring</text>
+
+    <!-- retaining/base plate (bottom) -->
+    <rect x="280" y="585" width="140" height="12" rx="3" fill="#777" stroke="#444" stroke-width="1.5"/>
+    <text x="470" y="596" font-size="16" fill="#222">Retaining plate</text>
+    <!-- nut at rod end -->
+    <rect x="340" y="597" width="20" height="12" rx="2" fill="#555" stroke="#333" stroke-width="1.5"/>
+    <rect x="345" y="431" width="10" height="24" fill="#999" stroke="#555" stroke-width="1"/>
+    <rect x="345" y="465" width="10" height="35" fill="#999" stroke="#555" stroke-width="1"/>
+    <rect x="345" y="508" width="10" height="37" fill="#999" stroke="#555" stroke-width="1"/>
+    <rect x="345" y="545" width="10" height="40" fill="#999" stroke="#555" stroke-width="1"/>
+  </g>
+
+  <!-- ===== BEAKER / CARAFE ===== -->
+  <g>
+    <path d="M262 660 L262 850 Q262 862 274 862 L426 862 Q438 862 438 850 L438 660"
+          fill="#e8f2f5" fill-opacity="0.55" stroke="#336" stroke-width="3"/>
+    <!-- pour spout hint -->
+    <path d="M262 660 L250 645" stroke="#336" stroke-width="3" fill="none"/>
+    <path d="M438 660 L450 645" stroke="#336" stroke-width="3" fill="none"/>
+    <line x1="262" y1="660" x2="438" y2="660" stroke="#336" stroke-width="2" stroke-dasharray="2 4"/>
+    <path d="M438 685 C492 690 492 780 438 790" fill="none" stroke="#336" stroke-width="7"/>
+    <text x="470" y="830" font-size="16" fill="#222">Beaker</text>
+  </g>
+
+  <!-- leader lines -->
+  <g stroke="#888" stroke-width="0.8">
+    <line x1="450" y1="145" x2="466" y2="147"/>
+    <line x1="358" y1="295" x2="371" y2="298"/>
+    <line x1="420" y1="460" x2="466" y2="460"/>
+    <line x1="420" y1="504" x2="466" y2="504"/>
+    <line x1="440" y1="547" x2="466" y2="548"/>
+    <line x1="420" y1="591" x2="466" y2="593"/>
+    <line x1="438" y1="825" x2="466" y2="828"/>
+  </g>
+
+  <text x="350" y="895" font-size="15" fill="#555" text-anchor="middle">Exploded assembly — French press (three-piece plunger filter)</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "axiom": "FF[+++GG[L]GG[L]G][---GG[L]G]F[++++GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[+++GG[L]GG[L]GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[++GG[L]GG[L]GG[L]GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[+++GG[L]GG[L]GG[L]GG[L]GG[L]GG][---GG[L]GG[L]GG[L]GGH]FFF[+++GG[L]GG[L]GG[L]GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[++GG[L]GG[L]GG[L]GG[L]GG][---GG[L]GG[L]GG[L]GGH]FFF[+++GG[L]GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[++GG[L]GG[L]G][---GG[L]GG[L]GG[L]GGH]FFF[+GG[L]GG[L]][-GG[L]GGH]FF[+GG[L]][-GGH]FFL",
+  "rules": {
+    "L": "[+G-G-G----G-G-G][++G[+G-G-G----G-G-G]][--G[+G-G-G----G-G-G]]",
+    "H": "[+G-G-G----G-G-G]"
+  },
+  "angle": 30,
+  "iterations": 1,
+  "start_heading": 90
+}

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100">
+ <defs>
+  <linearGradient id="glass" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#d8eef0" stop-opacity=".62"/><stop offset=".18" stop-color="#f7ffff" stop-opacity=".24"/><stop offset=".52" stop-color="#b9dce0" stop-opacity=".13"/><stop offset=".84" stop-color="#eefbfc" stop-opacity=".44"/><stop offset="1" stop-color="#a8d0d5" stop-opacity=".58"/></linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fbfc"/><stop offset=".22" stop-color="#9eafb5"/><stop offset=".48" stop-color="#f2f6f7"/><stop offset=".76" stop-color="#8b9ba1"/><stop offset="1" stop-color="#dce4e6"/></linearGradient>
+  <linearGradient id="darksteel" x1="0" x2="1"><stop stop-color="#52666d"/><stop offset=".45" stop-color="#d4dfe1"/><stop offset="1" stop-color="#73878d"/></linearGradient>
+  <pattern id="mesh" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0L8 8M8 0L0 8" stroke="#73868c" stroke-width=".65" opacity=".7"/></pattern>
+  <pattern id="holes" width="22" height="16" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2.2" fill="#52676e"/><circle cx="17" cy="13" r="2.2" fill="#52676e"/></pattern>
+  <filter id="shadow" x="-.2" y="-.3" width="1.4" height="1.7"><feGaussianBlur stdDeviation="5"/></filter>
+  <style>
+   .label{font:600 17px 'Arial',sans-serif;fill:#20333a;letter-spacing:.25px}.small{font:13px 'Arial',sans-serif;fill:#53666c}.num{font:700 14px 'Arial',sans-serif;fill:#fff}.leader{fill:none;stroke:#73878c;stroke-width:1.5}.metal{stroke:#52666d;stroke-width:1.6}.fine{fill:none;stroke:#9bb0b5;stroke-width:1.5}
+  </style>
+ </defs>
+ <rect width="1200" height="1100" fill="#f7f8f5"/>
+ <path d="M54 104H1146" stroke="#d8e0df" stroke-width="1"/>
+ <text x="60" y="59" font-family="Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="2" fill="#21343a">FRENCH PRESS</text>
+ <text x="62" y="85" font-family="Arial,sans-serif" font-size="14" letter-spacing="1.3" fill="#6b7c80">EXPLODED ASSEMBLY · STANDARD THREE-PIECE PLUNGER FILTER</text>
+ <text x="1140" y="66" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="1" fill="#8a999b">COMPONENT OVERVIEW</text>
+ <!-- handle behind the carafe -->
+ <path d="M744 738 C802 727 831 751 882 757 C945 765 971 805 966 844 C961 886 923 919 879 925 C830 932 796 911 753 911" fill="none" stroke="#91b7bb" stroke-width="30" stroke-linecap="round" opacity=".35"/>
+ <path d="M744 738 C802 727 831 751 882 757 C945 765 971 805 966 844 C961 886 923 919 879 925 C830 932 796 911 753 911" fill="none" stroke="#789fa4" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+ <path d="M757 748 C812 743 838 765 880 770 C926 775 948 804 944 841 C940 875 911 901 876 905 C827 910 802 889 757 887" fill="none" stroke="#d9eff0" stroke-width="2" opacity=".9"/>
+ <!-- carafe shadow -->
+ <ellipse cx="570" cy="974" rx="202" ry="17" fill="#83999d" opacity=".18" filter="url(#shadow)"/>
+ <!-- glass body -->
+ <path d="M390 700 L360 699 Q348 700 353 718 L379 758 L389 923 Q391 950 418 958 Q565 982 716 958 Q741 953 744 923 L756 757 L787 716 Q795 700 780 699 L750 700" fill="url(#glass)" stroke="#6c959a" stroke-width="3"/>
+ <path d="M390 700 Q568 681 750 700" fill="none" stroke="#6c959a" stroke-width="3"/>
+ <path d="M390 700 Q568 720 750 700" fill="none" stroke="#b5d1d3" stroke-width="1.7"/>
+ <path d="M379 758 Q568 777 756 757" fill="none" stroke="#a8c9cc" stroke-width="2" opacity=".8"/>
+ <path d="M389 923 Q566 946 744 923" fill="none" stroke="#6c959a" stroke-width="2.5"/>
+ <path d="M405 746 L414 911" stroke="#fff" stroke-width="6" opacity=".55" stroke-linecap="round"/>
+ <path d="M723 758 L715 907" stroke="#fff" stroke-width="4" opacity=".5" stroke-linecap="round"/>
+ <!-- subtle empty glass bottom -->
+ <ellipse cx="566" cy="924" rx="173" ry="22" fill="#e5f3f3" opacity=".32"/>
+ <!-- longitudinal plunger rod, behind parts -->
+ <rect x="561" y="157" width="12" height="472" rx="5" fill="url(#steel)" stroke="#657980" stroke-width="1.5"/>
+ <path d="M564 164V622" stroke="#fff" stroke-width="2" opacity=".75"/>
+ <!-- knob -->
+ <ellipse cx="567" cy="158" rx="43" ry="12" fill="#677b80" opacity=".25"/>
+ <path d="M534 133 Q535 112 567 109 Q599 112 600 133 L597 151 Q568 164 537 151Z" fill="url(#steel)" stroke="#53666d" stroke-width="2"/>
+ <ellipse cx="567" cy="133" rx="33" ry="11" fill="#e9eff0" stroke="#71858a" stroke-width="1.4"/>
+ <path d="M547 137 Q567 145 588 137" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+ <!-- lid exploded on rod -->
+ <ellipse cx="567" cy="385" rx="117" ry="22" fill="#87989d" opacity=".15"/>
+ <path d="M450 365 Q567 339 684 365 L684 387 Q567 413 450 387Z" fill="url(#steel)" stroke="#596d73" stroke-width="2"/>
+ <ellipse cx="567" cy="365" rx="117" ry="26" fill="url(#steel)" stroke="#596d73" stroke-width="2"/>
+ <ellipse cx="567" cy="365" rx="13" ry="5.5" fill="#f7f8f5" stroke="#71858a" stroke-width="1.4"/>
+ <path d="M466 366 Q567 389 668 366" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+ <!-- exploded filter parts: spring ring -->
+ <ellipse cx="567" cy="486" rx="103" ry="21" fill="#7f9195" opacity=".15"/>
+ <ellipse cx="567" cy="480" rx="99" ry="23" fill="none" stroke="#8b9da2" stroke-width="8" stroke-dasharray="3 3"/>
+ <ellipse cx="567" cy="480" rx="99" ry="23" fill="none" stroke="#e7edef" stroke-width="3" stroke-dasharray="3 3" stroke-dashoffset="3"/>
+ <!-- mesh screen, deliberately separate from plate -->
+ <path d="M468 527 Q567 549 666 527 L666 540 Q567 562 468 540Z" fill="url(#darksteel)" stroke="#52666d" stroke-width="1.5"/>
+ <ellipse cx="567" cy="527" rx="99" ry="22" fill="url(#mesh)" stroke="#53686e" stroke-width="2"/>
+ <ellipse cx="567" cy="527" rx="87" ry="18" fill="none" stroke="#dce6e7" stroke-width="1.2" opacity=".8"/>
+ <!-- perforated cross/support plate -->
+ <path d="M470 580 Q567 601 664 580 L664 594 Q567 616 470 594Z" fill="url(#darksteel)" stroke="#52666d" stroke-width="1.5"/>
+ <ellipse cx="567" cy="580" rx="97" ry="22" fill="url(#steel)" stroke="#52666d" stroke-width="2"/>
+ <ellipse cx="567" cy="580" rx="87" ry="16" fill="url(#holes)" stroke="#8c9da1" stroke-width="1.1"/>
+ <ellipse cx="567" cy="580" rx="11" ry="5" fill="#f7f8f5" stroke="#52666d" stroke-width="1.4"/>
+ <!-- gentle dashed alignment guides -->
+ <path d="M451 424H683 M451 448H683 M451 506H683 M451 554H683 M451 636H683" stroke="#d9e0df" stroke-width="1" stroke-dasharray="4 7"/>
+ <!-- numbered labels and leaders -->
+ <g><path class="leader" d="M602 132 L776 132 L816 158"/><circle cx="836" cy="158" r="14" fill="#2f6970"/><text class="num" x="836" y="163" text-anchor="middle">1</text><text class="label" x="860" y="155">Plunger knob</text><text class="small" x="860" y="175">fixed to the stainless-steel rod</text></g>
+ <g><path class="leader" d="M682 366 L774 366 L817 344"/><circle cx="837" cy="344" r="14" fill="#2f6970"/><text class="num" x="837" y="349" text-anchor="middle">2</text><text class="label" x="861" y="341">Lid</text><text class="small" x="861" y="361">slips over the rod</text></g>
+ <g><path class="leader" d="M665 480 L770 480 L814 467"/><circle cx="834" cy="467" r="14" fill="#2f6970"/><text class="num" x="834" y="472" text-anchor="middle">3</text><text class="label" x="858" y="464">Coil spring</text><text class="small" x="858" y="484">edge seal around the filter</text></g>
+ <g><path class="leader" d="M666 530 L765 530 L812 548"/><circle cx="832" cy="548" r="14" fill="#2f6970"/><text class="num" x="832" y="553" text-anchor="middle">4</text><text class="label" x="856" y="545">Fine mesh screen</text><text class="small" x="856" y="565">captures coffee grounds</text></g>
+ <g><path class="leader" d="M665 588 L747 588 L794 635"/><circle cx="814" cy="635" r="14" fill="#2f6970"/><text class="num" x="814" y="640" text-anchor="middle">5</text><text class="label" x="838" y="632">Perforated plate</text><text class="small" x="838" y="652">supports the mesh</text></g>
+ <g><path class="leader" d="M389 805 L284 805 L247 785"/><circle cx="227" cy="785" r="14" fill="#2f6970"/><text class="num" x="227" y="790" text-anchor="middle">6</text><text class="label" x="62" y="781">Glass carafe</text><text class="small" x="62" y="801">with pouring spout</text></g>
+ <g><path class="leader" d="M930 838 L1010 838"/><circle cx="1030" cy="838" r="14" fill="#2f6970"/><text class="num" x="1030" y="843" text-anchor="middle">7</text><text class="label" x="1054" y="835">Handle</text><text class="small" x="1054" y="855">heat-safe grip</text></g>
+ <!-- note -->
+ <path d="M55 1013H1145" stroke="#d8e0df" stroke-width="1"/>
+ <text x="60" y="1042" font-family="Arial,sans-serif" font-size="13" fill="#53666c">FILTER STACK SHOWN SEPARATED FOR CLARITY</text>
+ <text x="1140" y="1042" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#879598">01 / 01</text>
+</svg>

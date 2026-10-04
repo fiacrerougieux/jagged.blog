@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="900" viewBox="0 0 560 900" font-family="sans-serif">
+  <defs>
+    <marker id="dot" markerWidth="6" markerHeight="6" refX="3" refY="3">
+      <circle cx="3" cy="3" r="2.5" fill="#666"/>
+    </marker>
+  </defs>
+  <rect width="560" height="900" fill="white"/>
+
+  <!-- title -->
+  <text x="280" y="30" text-anchor="middle" font-size="20" font-weight="bold">French Press — Exploded Assembly</text>
+
+  <!-- center axis -->
+  <line x1="280" y1="60" x2="280" y2="860" stroke="#bbb" stroke-dasharray="6 6" stroke-width="1"/>
+
+  <!-- knob -->
+  <g>
+    <ellipse cx="280" cy="85" rx="26" ry="18" fill="#333"/>
+    <text x="330" y="90" font-size="12" fill="#333">Knob</text>
+    <line x1="306" y1="86" x2="322" y2="86" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- lid -->
+  <g>
+    <path d="M 190 150 L 370 150 L 355 130 L 205 130 Z" fill="#555"/>
+    <rect x="205" y="150" width="150" height="10" fill="#444"/>
+    <text x="400" y="148" font-size="12" fill="#333">Lid</text>
+    <line x1="372" y1="145" x2="392" y2="145" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- plunger rod -->
+  <g>
+    <rect x="272" y="103" width="16" height="380" fill="#888" stroke="#555"/>
+    <text x="330" y="300" font-size="12" fill="#333">Plunger rod</text>
+    <line x1="288" y1="295" x2="322" y2="295" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- spiral plate (top of 3-piece filter) -->
+  <g>
+    <ellipse cx="280" cy="500" rx="105" ry="12" fill="#ccc" stroke="#777"/>
+    <g stroke="#777" fill="none" stroke-width="1.5">
+      <path d="M 262 500 a 18 5 0 0 1 36 0"/>
+      <path d="M 250 502 a 30 7 0 0 1 60 0"/>
+      <path d="M 236 505 a 44 9 0 0 1 88 0"/>
+    </g>
+    <text x="400" y="504" font-size="12" fill="#333">Spiral plate</text>
+    <line x1="385" y1="500" x2="392" y2="500" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- mesh filter -->
+  <g>
+    <ellipse cx="280" cy="580" rx="105" ry="12" fill="#eee" stroke="#777"/>
+    <g stroke="#bbb" stroke-width="0.7">
+      <line x1="200" y1="574" x2="360" y2="586"/>
+      <line x1="200" y1="586" x2="360" y2="574"/>
+      <line x1="190" y1="580" x2="370" y2="580"/>
+    </g>
+    <text x="400" y="584" font-size="12" fill="#333">Mesh filter screen</text>
+    <line x1="385" y1="580" x2="392" y2="580" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- cross plate (bottom) -->
+  <g>
+    <ellipse cx="280" cy="660" rx="105" ry="12" fill="#ccc" stroke="#777"/>
+    <path d="M 185 660 L 375 660 M 280 649 L 280 671" stroke="#777" stroke-width="2"/>
+    <text x="400" y="664" font-size="12" fill="#333">Cross plate</text>
+    <line x1="385" y1="660" x2="392" y2="660" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+
+  <!-- beaker -->
+  <g>
+    <path d="M 185 720 L 185 870 Q 185 885 200 885 L 360 885 Q 375 885 375 870 L 375 720"
+          fill="rgba(180,220,255,0.25)" stroke="#4a7fa5" stroke-width="2.5"/>
+    <path d="M 185 720 Q 175 712 168 716" fill="none" stroke="#4a7fa5" stroke-width="2.5"/>
+    <path d="M 375 740 Q 420 745 415 800 Q 412 845 375 850" fill="none" stroke="#4a7fa5" stroke-width="3"/>
+    <text x="120" y="810" font-size="12" fill="#333" text-anchor="end">Beaker</text>
+    <line x1="182" y1="805" x2="128" y2="805" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+    <text x="430" y="800" font-size="12" fill="#333">Handle</text>
+    <line x1="418" y1="795" x2="426" y2="795" stroke="#999" stroke-dasharray="3 3" marker-end="url(#dot)"/>
+  </g>
+</svg>

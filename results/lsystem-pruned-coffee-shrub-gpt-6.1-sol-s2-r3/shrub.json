@@ -1,0 +1,13 @@
+{
+  "axiom": "FFFFFFFF[++++++A][------R]FFFF[+++++++B][------R]FFFF[++++++A][------R]FFFF[+++++B][------R]FFFF[++++++B][------R]FFFF[+++++A][------R]FFF[++B][---B]FFL",
+  "rules": {
+    "A": "GG[++L][--L]GGG[++L][--L]GGG[++L][--L]GGG[++L][--L]GGL",
+    "B": "GG[++L][--L]GGG[++L][--L]GGG[++L][--L]GGL",
+    "R": "G[++L][--L]GGG[++L][--L]GGG[++L][--L]GGGC",
+    "C": "[++FF--F------FF------F--FF][GG]",
+    "L": "[++F-F--F-F--------F-F--F-F][GGG]"
+  },
+  "angle": 15,
+  "iterations": 2,
+  "start_heading": 90
+}

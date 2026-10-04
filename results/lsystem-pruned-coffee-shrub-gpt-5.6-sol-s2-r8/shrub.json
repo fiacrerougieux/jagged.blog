@@ -1,0 +1,11 @@
+{
+  "axiom": "H",
+  "rules": {
+    "H": "ff[+++++B][++++C]H",
+    "B": "FF[+C][-C]F[+B][-B]",
+    "C": "F[+F[+G][-G]][-F[+G][-G]]"
+  },
+  "angle": 18,
+  "iterations": 8,
+  "start_heading": 90
+}

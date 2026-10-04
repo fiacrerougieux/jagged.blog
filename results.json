@@ -5616,6 +5616,1028 @@
         "of": 3,
         "undecided": 0
       }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "svg-french-press-gpt-6-luna-s1-r3",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0053,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 79856,
+        "tokensOut": 6695,
+        "reasoning": 1980,
+        "wallSec": 87
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "svg-french-press-gpt-6-luna-s2-r2",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0037,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 38063,
+        "tokensOut": 4831,
+        "reasoning": 1241,
+        "wallSec": 58
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "svg-french-press-gpt-6-luna-s3-r1",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0033,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 17106,
+        "tokensOut": 5065,
+        "reasoning": 1476,
+        "wallSec": 56
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "lsystem-pruned-coffee-shrub-glm-5.3-flashx-s3-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.0367,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 232102,
+        "tokensOut": 8956,
+        "reasoning": 6894,
+        "wallSec": 191
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "lsystem-pruned-coffee-shrub-glm-5.3-flashx-s2-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.0289,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 197595,
+        "tokensOut": 5878,
+        "reasoning": 4137,
+        "wallSec": 168
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": false,
+        "size": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "lsystem-pruned-coffee-shrub-glm-5.3-flashx-s1-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.0282,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 187521,
+        "tokensOut": 5769,
+        "reasoning": 4185,
+        "wallSec": 170
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "lsystem-pruned-coffee-shrub-perceptron-mk1.5-s3-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.0232,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54073,
+        "tokensOut": 10081,
+        "reasoning": 8826,
+        "wallSec": 66
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "lsystem-pruned-coffee-shrub-perceptron-mk1.5-s2-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0232,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54073,
+        "tokensOut": 10081,
+        "reasoning": 8826,
+        "wallSec": 65
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "perceptron/perceptron-mk1.5",
+      "label": "Perceptron Mk1.5",
+      "artifact": "lsystem-pruned-coffee-shrub-perceptron-mk1.5-s1-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.0232,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54073,
+        "tokensOut": 10081,
+        "reasoning": 8826,
+        "wallSec": 73
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "lsystem-pruned-coffee-shrub-command-a-plus-s3-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.091,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 238215,
+        "tokensOut": 13048,
+        "reasoning": 11685,
+        "wallSec": 156
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "lsystem-pruned-coffee-shrub-command-a-plus-s2-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0242,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 47424,
+        "tokensOut": 6623,
+        "reasoning": 6866,
+        "wallSec": 60
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "cohere/command-a-plus",
+      "label": "Command A+",
+      "artifact": "lsystem-pruned-coffee-shrub-command-a-plus-s1-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.1729,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 190891,
+        "tokensOut": 77060,
+        "reasoning": 54608,
+        "wallSec": 491
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "unbiased/pareto",
+      "label": "Pareto",
+      "artifact": "lsystem-pruned-coffee-shrub-pareto-s1-r5",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 5,
+      "cost": 0.194,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 100006,
+        "tokensOut": 15483,
+        "reasoning": 0,
+        "wallSec": 212
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s1-r3",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.3639,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 158192,
+        "tokensOut": 16085,
+        "reasoning": 15018,
+        "wallSec": 247
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-0902",
+      "label": "Qwen3.8 Max",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-0902-s1-r2",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "stoppedBy": "clock",
+      "cost": 0.3028,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 166494,
+        "tokensOut": 26560,
+        "reasoning": 25839,
+        "wallSec": 720
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-6.1-sol-s2-r3",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0544,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54471,
+        "tokensOut": 3603,
+        "reasoning": 2420,
+        "wallSec": 116
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "fireworks/ember-1",
+      "label": "Ember 1",
+      "artifact": "svg-french-press-ember-1-s1-r2",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1049,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 27529,
+        "tokensOut": 2516,
+        "reasoning": 315,
+        "wallSec": 35
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 1,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "fireworks/ember-1",
+      "label": "Ember 1",
+      "artifact": "svg-french-press-ember-1-s2-r2",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.1076,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28345,
+        "tokensOut": 2820,
+        "reasoning": 225,
+        "wallSec": 40
+      },
+      "checks": {
+        "parts": false,
+        "order": null,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "svg-french-press-kimi-k3-s1-r2",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0868,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39011,
+        "tokensOut": 3398,
+        "reasoning": 280,
+        "wallSec": 31
+      },
+      "checks": {
+        "parts": false,
+        "order": null,
+        "diameter": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "lsystem-pruned-coffee-shrub-pareto-26.10-preview-s1-r5",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 5,
+      "cost": 0.0805,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 98533,
+        "tokensOut": 18474,
+        "reasoning": 0,
+        "wallSec": 214
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-27b-s1-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.1128,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 241294,
+        "tokensOut": 29237,
+        "reasoning": 26121,
+        "wallSec": 360
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "svg-french-press-deepseek-v4.1-flash-s1-r2",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0724,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 665583,
+        "tokensOut": 32213,
+        "reasoning": 23971,
+        "wallSec": 462
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-5.6-sol-s2-r8",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.3356,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 185928,
+        "tokensOut": 6148,
+        "reasoning": 4533,
+        "wallSec": 207
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 2,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-5.6-sol",
+      "label": "Sol",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-5.6-sol-s1-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.2495,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 73441,
+        "tokensOut": 5640,
+        "reasoning": 4347,
+        "wallSec": 126
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "xiaomi/mimo-v2.6-pro",
+      "label": "MiMo v2.6 Pro",
+      "artifact": "tikz-coffee-venn-mimo-v2.6-pro-s1-r1-2102",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.1022,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 438652,
+        "tokensOut": 35818,
+        "reasoning": 22568,
+        "wallSec": 720
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "tikz-coffee-venn-gemini-3.8-flash-s1-r4",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.3073,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 463861,
+        "tokensOut": 48047,
+        "reasoning": 42968,
+        "wallSec": 371
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "x-ai/grok-4.7",
+      "label": "Grok 4.7",
+      "artifact": "svg-french-press-grok-4.7-s1-r8",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.7815,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 884450,
+        "tokensOut": 37039,
+        "reasoning": 10913,
+        "wallSec": 511
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "lsystem-pruned-coffee-shrub-gpt-6.1-sol-s1-r3",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0675,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 69888,
+        "tokensOut": 4141,
+        "reasoning": 1755,
+        "wallSec": 127
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "artifact": "svg-french-press-gpt-6-sol-s1-r2",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1014,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 46357,
+        "tokensOut": 7199,
+        "reasoning": 1678,
+        "wallSec": 80
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
     }
   ],
   "blank": [

@@ -1,0 +1,17 @@
+{
+  "axiom": "T",
+  "rules": {
+    "T": "FFFFFFFFFF[+++++A][-----C]FFFFFFFF[+++++A]FF[-----D]FFFFFF[+++++A]FFFF[-----E]FFFF[+++++A]FFFFFF[-----E]FF[+++++A]FFFFFFFF[+++++A][-----D]FFFFFFFF[+++++A][-----C]FFFFFF[++++B][----B]FFFF[++L][--L]L",
+    "A": "BKFFFF",
+    "K": "FFFFFF[--L][-----L]FF",
+    "C": "BBB[+B]",
+    "D": "BBBB[+B]",
+    "E": "BB[-FFL]BBB[+B]",
+    "B": "FFFFF[Q][--fQ]F[+++L][---L]FF",
+    "L": "[++FF--FFFF--FF--------FF--FFFF--FF][FFFFFF]",
+    "Q": "[++++G----G----G----G----G----G]"
+  },
+  "angle": 15,
+  "iterations": 4,
+  "start_heading": 90
+}

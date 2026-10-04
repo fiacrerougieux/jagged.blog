@@ -1,0 +1,15 @@
+{
+  "axiom": "[-A][+++FF---H]S+++FF",
+  "rules": {
+    "S": "F[+++P][-A]S",
+    "P": "FF",
+    "H": "G[-G][--G]G[-G][--G]H",
+    "A": "F[+B]F[-B]FA",
+    "B": "F[+C][-C]FB",
+    "C": "G[+D][-D]G",
+    "D": "G"
+  },
+  "angle": 30,
+  "iterations": 6,
+  "start_heading": 90
+}

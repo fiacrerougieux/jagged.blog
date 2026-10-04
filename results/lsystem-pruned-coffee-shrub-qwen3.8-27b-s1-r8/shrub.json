@@ -1,0 +1,11 @@
+{
+  "axiom": "FTFTFTFTFTFT",
+  "rules": {
+    "T": "[+A][+a][+a][++A]",
+    "A": "F[+A][+a][++a]",
+    "a": "F[+a][+a]"
+  },
+  "angle": 20,
+  "iterations": 4,
+  "start_heading": 90
+}

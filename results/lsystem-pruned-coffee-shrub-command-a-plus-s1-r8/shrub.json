@@ -1,0 +1,1 @@
+{"axiom": "F", "rules": {"F": "F[+G]F[+G]F[+G]", "G": "G[+H]"}, "angle": 30, "iterations": 4, "start_heading": 90}
