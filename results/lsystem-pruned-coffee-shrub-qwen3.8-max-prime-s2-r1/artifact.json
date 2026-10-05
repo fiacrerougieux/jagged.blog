@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s2-r1",
+  "exportedAt": "2026-10-03T11:31:32.319Z",
+  "run": "2026-10-03-lsystem-pruned-coffee-shrub-2114",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "qwen/qwen3.8-max-prime",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "the left side is a drawn line: one straight stroke 1.0 long on a side 2.4 high"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"F\",\n  \"rules\": {\n    \"F\": \"F[+G][-F]\",\n    \"G\": \"G[-G]\"\n  },\n  \"angle\": 25,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 11
+  },
+  "output": null,
+  "notes": []
+}

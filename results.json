@@ -6638,6 +6638,114 @@
         "of": 5,
         "undecided": 0
       }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash",
+      "artifact": "svg-french-press-gemini-3.8-flash-s2-r4",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 4,
+      "stoppedBy": "budget",
+      "cost": 0.7914,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 2504974,
+        "tokensOut": 88063,
+        "reasoning": 23033,
+        "wallSec": 665
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s2-r1",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 1,
+      "stoppedBy": "budget",
+      "cost": 0.1328,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43795,
+        "tokensOut": 5913,
+        "reasoning": 5489,
+        "wallSec": 143
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": false,
+        "size": false
+      },
+      "quality": 1,
+      "failures": [
+        "physical-plausibility",
+        "completeness"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "qwen/qwen3.8-27b",
+      "label": "Qwen3.8 27B",
+      "artifact": "lsystem-pruned-coffee-shrub-qwen3.8-27b-s2-r6",
+      "post": null,
+      "date": "2026-10-03",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 1,
+      "seed": 2,
+      "rounds": 6,
+      "stoppedBy": "budget",
+      "cost": 0.0759,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 74993,
+        "tokensOut": 22606,
+        "reasoning": 21258,
+        "wallSec": 267
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
     }
   ],
   "blank": [

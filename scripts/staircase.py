@@ -9,8 +9,21 @@ easier one and passed the harder one.
   J        of every pair of checks where the model passed one and failed the
            other, the share where it failed the easier one. 0 is a perfect
            staircase. 0.5 is a model whose failures ignore difficulty.
-  90%      the range breaks takes when each model's runs on each task are
-           drawn again with replacement, 2000 times. Wide means few runs.
+  90%      the 5th to 95th percentile of J when each model's runs on each task
+           are drawn again with replacement, 2000 times. Wide means few runs.
+  p        how often J lands at least as far from 0.5 when the model's pass
+           rates are shuffled across its checks, 2000 times. A model that
+           ignores difficulty sits at 0.5 on average whatever its pass rate,
+           so a small p says the order, or its lack, is not luck.
+  top      the pair that adds most to the breaks: the easier check failed,
+           the harder one passed.
+
+On pass or fail data J is 1 minus the AUC of difficulty for telling the
+checks a model passed from the ones it failed, and (1 - gamma) / 2 with
+gamma the Goodman-Kruskal gamma. Two checks of equal difficulty count for
+neither side. J is not given, shown as a dash, when a model passed only one
+check or none, or failed only one or none: with one pass, J only says where
+that pass sits on the ladder.
 
 Only runs graded with the task's current checks are counted, a task counts for
 a model only with at least two runs on it, since one run cannot show its noise,
@@ -61,6 +74,28 @@ def breaks(p, difficulty):
     return wrong / (wrong + right) if wrong + right else None
 
 
+def decided(p):
+    """Whether J can say anything: at least two checks passed and two failed."""
+    return sum(v > 0 for v in p.values()) >= 2 and sum(v < 1 for v in p.values()) >= 2
+
+
+def shuffled(p, difficulty, j, rng, draws):
+    """Share of shuffles of p across the checks with J at least as far from 0.5."""
+    cs, vals = list(p), list(p.values())
+    far = n = 0
+    for _ in range(draws):
+        rng.shuffle(vals)
+        v = breaks(dict(zip(cs, vals)), difficulty)
+        if v is not None:
+            n += 1
+            far += abs(v - 0.5) >= abs(j - 0.5) - 1e-12
+    return far / n
+
+
+def top_break(p, difficulty):
+    return max(((1 - p[i]) * p[j], i, j) for i in p for j in p if difficulty[i] < difficulty[j])
+
+
 def table(results, tasks, min_tasks, draws=2000):
     runs = defaultdict(list)
     labels = {}
@@ -90,11 +125,9 @@ def table(results, tasks, min_tasks, draws=2000):
         # Difficulty from the other models, so a model does not set its own bar.
         difficulty = {c: mean(1 - v for o, v in by_check[c].items() if o != m) for c in p if len(by_check[c]) > 1}
         p = {c: v for c, v in p.items() if c in difficulty}
-        b = breaks(p, difficulty)
-        if b is None:
-            continue
+        b = breaks(p, difficulty) if decided(p) else None
         boot = []
-        for _ in range(draws):
+        for _ in range(draws if b is not None else 0):
             q = {}
             for t in mine:
                 rs = runs[m, t]
@@ -111,19 +144,25 @@ def table(results, tasks, min_tasks, draws=2000):
             "checks": len(p),
             "runs": sum(len(runs[m, t]) for t in mine),
             "breaks": b,
-            "low": boot[int(0.05 * len(boot))],
-            "high": boot[int(0.95 * len(boot)) - 1],
+            "low": boot[int(0.05 * len(boot))] if boot else None,
+            "high": boot[int(0.95 * len(boot)) - 1] if boot else None,
+            "p": shuffled(p, difficulty, b, rng, draws) if b is not None else None,
+            "top": top_break(p, difficulty)[1:] if b is not None else None,
             "pass": p,
             "difficulty": difficulty,
         })
-    rows.sort(key=lambda r: -r["breaks"])
+    rows.sort(key=lambda r: (r["breaks"] is None, -(r["breaks"] or 0)))
     return rows
 
 
 def markdown(rows, matrix):
-    out = ["| Model | Tasks | Checks | Runs | J | 90% |", "|---|---|---|---|---|---|"]
+    out = ["| Model | Tasks | Checks | Runs | J | 90% | p | Top break |", "|---|---|---|---|---|---|---|---|"]
     for r in rows:
-        out.append(f"| {r['label']} | {r['tasks']} | {r['checks']} | {r['runs']} | **{r['breaks']:.2f}** | {r['low']:.2f} to {r['high']:.2f} |")
+        if r["breaks"] is None:
+            out.append(f"| {r['label']} | {r['tasks']} | {r['checks']} | {r['runs']} | - | | | |")
+            continue
+        top = f"failed {r['top'][0]}, passed {r['top'][1]}"
+        out.append(f"| {r['label']} | {r['tasks']} | {r['checks']} | {r['runs']} | **{r['breaks']:.2f}** | {r['low']:.2f} to {r['high']:.2f} | {r['p']:.2f} | {top} |")
     if matrix:
         for r in rows:
             out += ["", f"{r['label']}, easiest check first: difficulty, then pass rate"]

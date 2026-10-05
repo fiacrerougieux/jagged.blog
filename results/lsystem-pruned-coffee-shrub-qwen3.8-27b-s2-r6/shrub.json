@@ -1,0 +1,10 @@
+{
+  "axiom": "X",
+  "rules": {
+    "X": "F[+++++Y][+Y]F[+++++Y]F X",
+    "Y": "F[+Y][Y]"
+  },
+  "angle": 15,
+  "iterations": 8,
+  "start_heading": 90
+}

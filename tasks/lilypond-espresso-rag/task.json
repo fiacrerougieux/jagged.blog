@@ -1,0 +1,48 @@
+{
+  "id": "lilypond-espresso-rag",
+  "title": "Espresso Rag, with the left hand crossing over",
+  "short": "Espresso Rag",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "groundTruth": "LilyPond's own record of every note: its hand, staff, bar, pitch and stem, read while the file is engraved. A voice belongs to the hand whose staff it starts on, unless its notes are labelled with a hand's name. The script was written after hearing Sol's and Pareto's runs, so Luna was its first fair test. How good the music sounds is rated by ear.",
+  "checks": [
+    {
+      "id": "piano_staff",
+      "label": "Piano staff",
+      "how": "A treble staff and a bass staff, both with notes.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "sixteen_bars",
+      "label": "Sixteen bars",
+      "how": "The last note is in bar 16.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "left_hand_crosses",
+      "label": "Left hand crosses",
+      "how": "In each of bars 9 to 12 most left-hand notes are on the treble staff and sit above the right hand, and outside those bars most are back on the bass staff. A left hand written high on the bass staff fails.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "right_hand_goes_on",
+      "label": "Right hand keeps going",
+      "how": "The right hand plays in every bar, and at least twice in each of bars 9 to 12.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "crossing_marked",
+      "label": "Crossing marked",
+      "how": "Words naming a hand or the crossing at bar 8 or 9, and a release at bar 12 or 13.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "stems_split",
+      "label": "Stems apart",
+      "how": "In bars 9 to 12, where both hands share a staff, at least three in four of their notes have stems pinned apart: left hand up, right hand down.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Hand it an existing rag and ask for the same music with the hands swapped in bars 9 to 12, so every note has to stay where it is."
+}
