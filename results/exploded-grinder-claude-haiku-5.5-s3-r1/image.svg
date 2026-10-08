@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="940" viewBox="0 0 800 940" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="800" height="940" fill="#ffffff"/>
+  <text x="400" y="28" text-anchor="middle" font-size="20" font-weight="bold" fill="#111">Manual Coffee Grinder — Exploded Assembly (conical burr)</text>
+
+  <!-- central axis -->
+  <line x1="400" y1="40" x2="400" y2="900" stroke="#999" stroke-width="1" stroke-dasharray="10,5,2,5"/>
+
+  <!-- 1 crank handle -->
+  <g stroke="#222" stroke-width="1.5" fill="#d9d9d9">
+    <rect x="262" y="52" width="276" height="16" rx="4"/>
+    <circle cx="250" cy="60" r="14" fill="#8c8c8c"/>
+    <circle cx="550" cy="60" r="14" fill="#8c8c8c"/>
+    <circle cx="400" cy="60" r="22" fill="#bfbfbf"/>
+  </g>
+
+  <!-- 2 hopper -->
+  <path d="M290,140 L510,140 L450,220 L350,220 Z" fill="#e8e8e8" stroke="#222" stroke-width="1.5"/>
+  <ellipse cx="400" cy="140" rx="110" ry="5" fill="#f5f5f5" stroke="#222" stroke-width="1"/>
+
+  <!-- 3 top bearing / cap ring -->
+  <rect x="330" y="235" width="140" height="20" fill="#bfbfbf" stroke="#222" stroke-width="1.5"/>
+  <line x1="340" y1="245" x2="460" y2="245" stroke="#666" stroke-dasharray="3,3"/>
+
+  <!-- 4 adjustment dial -->
+  <rect x="320" y="270" width="160" height="30" rx="6" fill="#a6a6a6" stroke="#222" stroke-width="1.5"/>
+  <g stroke="#222" stroke-width="1.5">
+    <line x1="335" y1="270" x2="335" y2="280"/>
+    <line x1="350" y1="270" x2="350" y2="280"/>
+    <line x1="365" y1="270" x2="365" y2="280"/>
+    <line x1="435" y1="270" x2="435" y2="280"/>
+    <line x1="450" y1="270" x2="450" y2="280"/>
+    <line x1="465" y1="270" x2="465" y2="280"/>
+  </g>
+
+  <!-- 5 outer burr (hollow cone, teeth on inner face) -->
+  <path fill-rule="evenodd" d="M300,320 L500,320 L470,390 L330,390 Z M340,320 L460,320 L440,390 L360,390 Z"
+        fill="#7f7f7f" stroke="#222" stroke-width="1.5"/>
+  <g stroke="#e6e6e6" stroke-width="1.5">
+    <line x1="346" y1="326" x2="366" y2="384"/>
+    <line x1="400" y1="324" x2="402" y2="388"/>
+    <line x1="454" y1="326" x2="434" y2="384"/>
+  </g>
+
+  <!-- 6 inner burr (cone, apex up, ridged) -->
+  <path d="M400,405 L455,470 L345,470 Z" fill="#595959" stroke="#222" stroke-width="1.5"/>
+  <g stroke="#bfbfbf" stroke-width="1.2">
+    <line x1="400" y1="405" x2="380" y2="470"/>
+    <line x1="400" y1="405" x2="420" y2="470"/>
+    <line x1="385" y1="425" x2="415" y2="425"/>
+    <line x1="375" y1="445" x2="425" y2="445"/>
+  </g>
+
+  <!-- 7 burr carrier -->
+  <path d="M352,478 L448,478 L448,492 L440,500 L360,500 L352,492 Z" fill="#bfbfbf" stroke="#222" stroke-width="1.5"/>
+
+  <!-- 8 drive shaft (square drive end) -->
+  <rect x="390" y="506" width="20" height="92" fill="#8c8c8c" stroke="#222" stroke-width="1.5"/>
+  <rect x="393" y="506" width="14" height="10" fill="#d9d9d9" stroke="#222" stroke-width="1"/>
+
+  <!-- 9 body / housing -->
+  <path d="M290,620 L510,620 L510,700 Q510,720 490,720 L310,720 Q290,720 290,700 Z" fill="#d0d0d0" stroke="#222" stroke-width="1.5"/>
+  <ellipse cx="400" cy="620" rx="95" ry="8" fill="#f2f2f2" stroke="#222" stroke-width="1.2"/>
+  <circle cx="400" cy="664" r="14" fill="#8c8c8c" stroke="#222" stroke-width="1"/>
+
+  <!-- 10 lower gear / bearing -->
+  <circle cx="400" cy="765" r="30" fill="#a6a6a6" stroke="#222" stroke-width="1.5"/>
+  <circle cx="400" cy="765" r="10" fill="#e6e6e6" stroke="#222" stroke-width="1"/>
+  <g stroke="#222" stroke-width="3">
+    <line x1="400" y1="729" x2="400" y2="735"/>
+    <line x1="436" y1="765" x2="430" y2="765"/>
+    <line x1="400" y1="801" x2="400" y2="795"/>
+    <line x1="364" y1="765" x2="370" y2="765"/>
+  </g>
+
+  <!-- 11 catch cup -->
+  <path d="M290,805 L510,805 L500,880 Q498,892 484,892 L316,892 Q302,892 300,880 Z" fill="#e0e0e0" stroke="#222" stroke-width="1.5"/>
+  <rect x="508" y="822" width="22" height="12" rx="4" fill="#8c8c8c" stroke="#222" stroke-width="1.2"/>
+
+  <!-- callout leaders and labels -->
+  <g stroke="#333" stroke-width="1" fill="none">
+    <line x1="564" y1="60" x2="596" y2="60"/>
+    <line x1="318" y1="180" x2="206" y2="180"/>
+    <line x1="470" y1="245" x2="596" y2="245"/>
+    <line x1="320" y1="285" x2="206" y2="285"/>
+    <line x1="487" y1="355" x2="596" y2="355"/>
+    <line x1="369" y1="440" x2="206" y2="440"/>
+    <line x1="440" y1="495" x2="596" y2="495"/>
+    <line x1="390" y1="555" x2="206" y2="555"/>
+    <line x1="510" y1="670" x2="596" y2="670"/>
+    <line x1="370" y1="765" x2="206" y2="765"/>
+    <line x1="508" y1="850" x2="596" y2="850"/>
+  </g>
+  <g font-size="15" fill="#111">
+    <text x="602" y="65">1  Crank handle</text>
+    <text x="200" y="185" text-anchor="end">2  Hopper</text>
+    <text x="602" y="250">3  Top bearing / cap ring</text>
+    <text x="200" y="290" text-anchor="end">4  Adjustment dial</text>
+    <text x="602" y="360">5  Outer burr (ring)</text>
+    <text x="200" y="445" text-anchor="end">6  Inner burr (cone)</text>
+    <text x="602" y="500">7  Burr carrier</text>
+    <text x="200" y="560" text-anchor="end">8  Drive shaft</text>
+    <text x="602" y="675">9  Body / housing</text>
+    <text x="200" y="770" text-anchor="end">10  Lower gear &amp; bearing</text>
+    <text x="602" y="855">11  Catch cup</text>
+  </g>
+
+  <!-- assembly direction -->
+  <line x1="700" y1="120" x2="700" y2="200" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="700" y="112" text-anchor="middle" font-size="12" fill="#555">Assemble</text>
+  <text x="700" y="218" text-anchor="middle" font-size="12" fill="#555">top-down</text>
+
+  <text x="400" y="925" text-anchor="middle" font-size="13" fill="#555">Parts shown separated along the central axis; dashed line = drive/burr axis. Beans fall from hopper into the conical burr set.</text>
+</svg>

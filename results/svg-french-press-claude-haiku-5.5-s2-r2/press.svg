@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <pattern id="mesh" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0 H8 M0 0 V8" stroke="#777" stroke-width="1" fill="none"/>
+    </pattern>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#dfeef5"/>
+      <stop offset="0.5" stop-color="#f7fbfd"/>
+      <stop offset="1" stop-color="#d0e6f0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#9aa3ab"/>
+      <stop offset="0.5" stop-color="#e4e9ed"/>
+      <stop offset="1" stop-color="#8b949c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  <text x="500" y="40" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#222">French Press (three-piece plunger filter) – Exploded Assembly</text>
+
+  <!-- alignment axis -->
+  <line x1="400" y1="95" x2="400" y2="935" stroke="#999" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <!-- 1. Knob -->
+  <g id="knob">
+    <rect x="335" y="82" width="130" height="34" rx="16" fill="#2b2b2b"/>
+    <rect x="365" y="116" width="70" height="20" rx="6" fill="#3a3a3a"/>
+  </g>
+
+  <!-- 2. Plunger rod -->
+  <g id="rod">
+    <rect x="393" y="136" width="14" height="172" fill="url(#steel)" stroke="#555" stroke-width="1"/>
+  </g>
+
+  <!-- 3. Lid (cap with spout hole) -->
+  <g id="lid">
+    <rect x="300" y="340" width="200" height="22" rx="10" fill="#2b2b2b"/>
+    <rect x="382" y="345" width="36" height="12" fill="#ffffff"/>
+    <rect x="390" y="332" width="20" height="14" fill="#444"/>
+  </g>
+
+  <!-- 4. Carafe (glass) with handle -->
+  <g id="carafe">
+    <path d="M474 440 C 560 430, 575 610, 474 606" fill="none" stroke="#333" stroke-width="16" stroke-linecap="round"/>
+    <path d="M322 400 V 630 Q 322 652 344 652 H 456 Q 478 652 478 630 V 400 Z" fill="url(#glass)" stroke="#557" stroke-width="2" opacity="0.95"/>
+    <path d="M478 400 Q 478 390 400 390 Q 322 390 322 400 Q 322 412 400 412 Q 478 412 478 400" fill="none" stroke="#557" stroke-width="1.5"/>
+    <path d="M330 440 V 620" stroke="#fff" stroke-width="5" opacity="0.7"/>
+  </g>
+
+  <!-- 5. Filter holder (frame) -->
+  <g id="holder">
+    <rect x="312" y="690" width="176" height="18" rx="6" fill="#4a4a4a"/>
+    <rect x="352" y="708" width="96" height="28" fill="#4a4a4a"/>
+    <path d="M330 708 H470 M330 720 H470" stroke="#8a8a8a" stroke-width="2"/>
+    <rect x="392" y="700" width="16" height="10" fill="#2b2b2b"/>
+  </g>
+
+  <!-- 6. Mesh screen -->
+  <g id="screen">
+    <path d="M318 770 V 880 Q 318 900 340 900 H 460 Q 482 900 482 880 V 770 Z" fill="url(#mesh)" stroke="#666" stroke-width="2"/>
+    <ellipse cx="400" cy="770" rx="82" ry="10" fill="#e9edf0" stroke="#666" stroke-width="2"/>
+  </g>
+
+  <!-- alignment dashes at part boundaries -->
+  <g stroke="#bbb" stroke-width="1" stroke-dasharray="3 4">
+    <line x1="240" y1="122" x2="560" y2="122"/>
+    <line x1="240" y1="330" x2="560" y2="330"/>
+    <line x1="240" y1="390" x2="560" y2="390"/>
+    <line x1="240" y1="676" x2="560" y2="676"/>
+    <line x1="240" y1="760" x2="560" y2="760"/>
+  </g>
+
+  <!-- labels with leader lines -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#222">
+    <line x1="470" y1="99" x2="650" y2="99" stroke="#555"/>
+    <text x="660" y="105">1  Knob (plunger handle)</text>
+    <line x1="410" y1="222" x2="650" y2="222" stroke="#555"/>
+    <text x="660" y="228">2  Plunger rod (stainless)</text>
+    <line x1="500" y1="351" x2="650" y2="351" stroke="#555"/>
+    <text x="660" y="357">3  Lid (with spout hole)</text>
+    <line x1="520" y1="520" x2="650" y2="520" stroke="#555"/>
+    <text x="660" y="526">4  Carafe (heat-resistant glass)</text>
+    <line x1="490" y1="700" x2="650" y2="700" stroke="#555"/>
+    <text x="660" y="706">5  Filter holder (frame)</text>
+    <line x1="484" y1="830" x2="650" y2="830" stroke="#555"/>
+    <text x="660" y="836">6  Mesh filter screen</text>
+  </g>
+
+  <!-- assembly note -->
+  <text x="500" y="960" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555">Assembly: screen seats on holder, rod screws into holder, plunger passes through lid into carafe.</text>
+</svg>

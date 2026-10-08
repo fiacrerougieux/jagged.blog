@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+<title id="title">AeroPress original — exploded assembly</title>
+<desc id="desc">Exploded technical illustration of the original-size AeroPress coffee maker, showing the plunger, brew chamber, round paper filter, and filter cap.</desc>
+<defs>
+  <linearGradient id="plastic" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d7e3dd" stop-opacity=".62"/><stop offset=".18" stop-color="#f5f4e9" stop-opacity=".25"/><stop offset=".48" stop-color="#b9d0c8" stop-opacity=".42"/><stop offset=".76" stop-color="#f3f0e5" stop-opacity=".22"/><stop offset="1" stop-color="#b6c8c1" stop-opacity=".66"/></linearGradient>
+  <linearGradient id="rubber" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#41413c"/><stop offset=".5" stop-color="#252722"/><stop offset="1" stop-color="#171a18"/></linearGradient>
+  <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#41413a"/><stop offset="1" stop-color="#20231f"/></linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6a786f"/><stop offset=".45" stop-color="#d7d7c9"/><stop offset="1" stop-color="#66746e"/></linearGradient>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="7" stroke="#66746e" stroke-width="1" opacity=".24"/></pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+  <style>
+    .ink{fill:#252a26}.muted{fill:#68716a}.rule{stroke:#9ba49b;stroke-width:1}.leader{fill:none;stroke:#606d65;stroke-width:1.35}.label{font:600 15px 'Arial',sans-serif;letter-spacing:1.6px;fill:#29312c}.small{font:12px 'Arial',sans-serif;letter-spacing:1px;fill:#69746d}.tiny{font:10px 'Arial',sans-serif;letter-spacing:1px;fill:#67726b}.num{font:700 12px 'Arial',sans-serif;fill:#f4f2e8;text-anchor:middle;dominant-baseline:central}
+  </style>
+</defs>
+<!-- warm drafting-paper ground -->
+<rect width="1200" height="1000" fill="#f4f1e6"/>
+<path d="M52 56H1148M52 944H1148" stroke="#c5c7b9" stroke-width="1"/>
+<text x="66" y="91" class="small">AEROPRESS  /  ORIGINAL COFFEE PRESS</text>
+<text x="66" y="142" font-family="Arial,sans-serif" font-size="31" font-weight="700" letter-spacing="2.5" fill="#27302a">EXPLODED ASSEMBLY</text>
+<text x="68" y="168" class="small">PARTS SHOWN SEPARATED ALONG THE BREW AXIS</text>
+<text x="1134" y="91" text-anchor="end" class="tiny">ASSEMBLY PLATE  01</text>
+<text x="1134" y="111" text-anchor="end" class="tiny">ORIGINAL SIZE  /  ROUND FILTER</text>
+
+<!-- central alignment / assembly axis -->
+<line x1="600" y1="183" x2="600" y2="864" stroke="#9ca69d" stroke-width="1" stroke-dasharray="3 7"/>
+<path d="M590 196l10-13 10 13M590 850l10 13 10-13" fill="none" stroke="#87948a" stroke-width="1.3"/>
+<!-- soft grounding shadows -->
+<ellipse cx="600" cy="318" rx="105" ry="12" fill="#28332c" opacity=".10" filter="url(#shadow)"/>
+<ellipse cx="600" cy="677" rx="135" ry="14" fill="#28332c" opacity=".10" filter="url(#shadow)"/>
+<ellipse cx="600" cy="765" rx="90" ry="10" fill="#28332c" opacity=".10" filter="url(#shadow)"/>
+
+<!-- 1 plunger handle: broad, round palm grip -->
+<g aria-label="Plunger">
+  <!-- handle disc -->
+  <ellipse cx="600" cy="210" rx="77" ry="19" fill="#1f2420"/>
+  <path d="M523 210v12c0 10 34 19 77 19s77-9 77-19v-12c-12 11-43 17-77 17s-65-6-77-17z" fill="url(#rubber)" stroke="#171b18" stroke-width="1.4"/>
+  <ellipse cx="600" cy="210" rx="77" ry="19" fill="#343832" stroke="#171b18" stroke-width="1.5"/>
+  <ellipse cx="600" cy="207" rx="62" ry="11" fill="none" stroke="#555950" stroke-width="1" opacity=".8"/>
+  <path d="M565 233v31 Q565 270 575 272h50q10-2 10-8v-31" fill="url(#rubber)" stroke="#171b18" stroke-width="1.4"/>
+  <!-- shaft glimpsed below grip -->
+  <path d="M577 270h46v48h-46z" fill="url(#steel)" stroke="#59655d" stroke-width="1.2"/>
+  <path d="M585 272v45M615 272v45" stroke="#f0eee2" stroke-width="2" opacity=".5"/>
+  <!-- plunger seal, cup-like tapered rubber lip -->
+  <ellipse cx="600" cy="314" rx="61" ry="15" fill="#171b18"/>
+  <path d="M539 314q2 24 12 32 19 10 49 10t49-10q10-8 12-32l-16 7q-17 8-45 8t-45-8z" fill="url(#rubber)" stroke="#151916" stroke-width="1.5"/>
+  <ellipse cx="600" cy="314" rx="61" ry="15" fill="#343832" stroke="#171b18" stroke-width="1.4"/>
+  <ellipse cx="600" cy="315" rx="47" ry="9" fill="none" stroke="#575b52" stroke-width="1"/>
+</g>
+
+<!-- 2 transparent brew chamber, open at top, printed measure marks -->
+<g aria-label="Brew chamber">
+  <!-- body wall -->
+  <path d="M482 374 Q482 363 495 361 L705 361 Q718 363 718 374 L700 637 Q699 649 686 654 Q600 669 514 654 Q501 649 500 637Z" fill="url(#plastic)" stroke="#73857b" stroke-width="2"/>
+  <!-- left/right dark edge lines, subtle transparent internal face -->
+  <path d="M494 370L511 638Q512 645 520 648M706 370L689 638Q688 645 680 648" fill="none" stroke="#f8f5e9" stroke-width="3" opacity=".78"/>
+  <path d="M516 374l12 266M684 374l-12 266" fill="none" stroke="#98ada2" stroke-width="1" opacity=".72"/>
+  <!-- upper mouth rim and elliptical opening -->
+  <path d="M482 374v8q0 13 118 15 118-2 118-15v-8" fill="#d2ded5" fill-opacity=".52" stroke="#71847a" stroke-width="1.7"/>
+  <ellipse cx="600" cy="374" rx="118" ry="21" fill="#dce5d9" fill-opacity=".55" stroke="#6d8076" stroke-width="2"/>
+  <ellipse cx="600" cy="374" rx="101" ry="13" fill="#f4f1e6" fill-opacity=".72" stroke="#9ba99e" stroke-width="1.2"/>
+  <!-- bottom mouth / threaded collar -->
+  <path d="M500 632Q600 655 700 632v14q-3 12-100 19-97-7-100-19z" fill="#bdcec4" fill-opacity=".65" stroke="#708279" stroke-width="1.5"/>
+  <path d="M505 640q95 22 190 0M503 647q97 22 194 0" fill="none" stroke="#71847a" stroke-width="1.3" opacity=".85"/>
+  <!-- open lower mouth: the filter cap screws onto this end -->
+  <ellipse cx="600" cy="650" rx="82" ry="9" fill="#f4f1e6" fill-opacity=".62" stroke="#7d8c82" stroke-width="1.2"/>
+  <path d="M520 650q80 17 160 0" fill="none" stroke="#a4b2a8" stroke-width="1"/>
+  <!-- chamber graduations and numeral-style volume marks -->
+  <g stroke="#657a70" stroke-width="1.1" opacity=".85">
+    <path d="M503 416h21m-19 24h15m-13 24h13m-11 24h11m-9 24h9m-7 24h7"/>
+    <path d="M697 416h-21m19 24h-15m13 24h-13m11 24h-11m9 24h-9m7 24h-7"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="11" fill="#61766c" opacity=".95">
+    <text x="529" y="420">4</text><text x="529" y="468">3</text><text x="529" y="516">2</text><text x="529" y="564">1</text>
+    <text x="655" y="420">4</text><text x="655" y="468">3</text><text x="655" y="516">2</text><text x="655" y="564">1</text>
+  </g>
+  <!-- translucent highlight -->
+  <path d="M542 391q-9 89-2 220" fill="none" stroke="#fffdf0" stroke-width="5" opacity=".35"/>
+</g>
+
+<!-- 3 round paper filter, shown as a thin paper disc -->
+<g aria-label="Round paper filter">
+  <ellipse cx="600" cy="714" rx="79" ry="19" fill="#e7e2d1" stroke="#9c9b8b" stroke-width="1.5"/>
+  <ellipse cx="600" cy="710" rx="78" ry="18" fill="#faf8ed" stroke="#a9a999" stroke-width="1.2"/>
+  <ellipse cx="600" cy="710" rx="67" ry="13" fill="url(#hatch)" opacity=".55"/>
+  <path d="M528 711q72 25 144 0" fill="none" stroke="#d1cdbd" stroke-width="1"/>
+</g>
+
+<!-- 4 filter cap: knurled threaded ring and perforated filter plate -->
+<g aria-label="Filter cap">
+  <!-- skirt -->
+  <path d="M510 781q0-20 90-24 90 4 90 24v29q0 14-90 19-90-5-90-19z" fill="url(#cap)" stroke="#171b18" stroke-width="1.7"/>
+  <!-- ribbing on cylindrical side -->
+  <g stroke="#62645a" stroke-width="2" opacity=".75">
+    <path d="M520 788v25M530 784v31M541 781v34M552 779v36M563 777v38M574 776v39M586 775v40M598 775v40M610 775v40M622 776v39M634 777v38M646 779v36M658 781v34M669 784v31M680 788v25"/>
+  </g>
+  <!-- upper lip and perforated circular plate -->
+  <ellipse cx="600" cy="781" rx="90" ry="23" fill="#353831" stroke="#151916" stroke-width="1.6"/>
+  <ellipse cx="600" cy="779" rx="74" ry="16" fill="#c4c7b7" stroke="#171b18" stroke-width="2"/>
+  <ellipse cx="600" cy="779" rx="64" ry="12.5" fill="#e2e2d3" stroke="#929587" stroke-width="1"/>
+  <g fill="#59645c">
+    <circle cx="557" cy="777" r="2.2"/><circle cx="570" cy="772" r="2.2"/><circle cx="583" cy="769" r="2.2"/><circle cx="597" cy="768" r="2.2"/><circle cx="611" cy="769" r="2.2"/><circle cx="625" cy="772" r="2.2"/><circle cx="638" cy="777" r="2.2"/>
+    <circle cx="564" cy="783" r="2.2"/><circle cx="578" cy="780" r="2.2"/><circle cx="592" cy="778" r="2.2"/><circle cx="606" cy="778" r="2.2"/><circle cx="620" cy="780" r="2.2"/><circle cx="634" cy="783" r="2.2"/>
+  </g>
+  <!-- lower edge -->
+  <path d="M510 806q90 27 180 0" fill="none" stroke="#717166" stroke-width="1.5"/>
+</g>
+
+<!-- callout leaders and numbered markers -->
+<g>
+  <path class="leader" d="M522 237H392L354 219H180"/><circle cx="522" cy="237" r="3" fill="#66756b"/>
+  <circle cx="151" cy="219" r="13" fill="#39483f"/><text x="151" y="219" class="num">1</text>
+  <text x="176" y="215" class="label">PLUNGER</text><text x="176" y="235" class="small">Grip · shaft · rubber seal</text>
+
+  <path class="leader" d="M485 478H400L369 461H180"/><circle cx="485" cy="478" r="3" fill="#66756b"/>
+  <circle cx="151" cy="461" r="13" fill="#39483f"/><text x="151" y="461" class="num">2</text>
+  <text x="176" y="457" class="label">BREW CHAMBER</text><text x="176" y="477" class="small">Clear, graduated cylinder</text>
+
+  <path class="leader" d="M522 711H420L382 728H180"/><circle cx="522" cy="711" r="3" fill="#66756b"/>
+  <circle cx="151" cy="728" r="13" fill="#39483f"/><text x="151" y="728" class="num">3</text>
+  <text x="176" y="724" class="label">PAPER FILTER</text><text x="176" y="744" class="small">Single round filter paper</text>
+
+  <path class="leader" d="M690 799H781L817 779H1010"/><circle cx="690" cy="799" r="3" fill="#66756b"/>
+  <circle cx="1038" cy="779" r="13" fill="#39483f"/><text x="1038" y="779" class="num">4</text>
+  <text x="1012" y="816" text-anchor="end" class="label">FILTER CAP</text><text x="1012" y="836" text-anchor="end" class="small">Perforated plate · threaded skirt</text>
+</g>
+
+<!-- small assembly note and scale-like baseline -->
+<g transform="translate(838 342)">
+  <path d="M0 0h250M0 13h250" stroke="#c5c8ba" stroke-width="1"/>
+  <text x="0" y="-10" class="tiny">COMPONENT ORDER</text>
+  <text x="0" y="34" class="small">1  Plunger into chamber</text>
+  <text x="0" y="56" class="small">2  Filter rests in cap</text>
+  <text x="0" y="78" class="small">3  Cap attaches to chamber</text>
+</g>
+<g transform="translate(839 866)">
+  <path d="M0 0h249" stroke="#9ba49b" stroke-width="1"/>
+  <text x="0" y="22" class="tiny">SCHEMATIC — NOT TO SCALE</text>
+  <text x="0" y="42" class="tiny">FOUR PRINCIPAL BREWING COMPONENTS</text>
+</g>
+<text x="66" y="916" class="tiny">DESIGN STUDY  /  CLASSIC CYLINDRICAL MODEL</text>
+<text x="1134" y="916" text-anchor="end" class="tiny">ASSEMBLY AXIS  ↓</text>
+</svg>

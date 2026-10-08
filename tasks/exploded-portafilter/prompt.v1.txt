@@ -1,0 +1,1 @@
+Draw an exploded assembly diagram of an espresso machine portafilter, as an SVG. Use a double-spout portafilter with a removable basket rather than a bottomless one.

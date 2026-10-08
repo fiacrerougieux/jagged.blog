@@ -1,0 +1,36 @@
+{
+  "name": "lilypond-espresso-rag-claude-haiku-5.5-s2-r3",
+  "exportedAt": "2026-10-08T00:53:37.250Z",
+  "run": "2026-10-08-lilypond-espresso-rag-1151",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "anthropic/claude-haiku-5.5",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "failed: crossing_marked"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.0\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"for café piano\"\n  tagline = ##f\n}\n\n% Right hand: bars 1-8 and 13-16 in treble; bars 9-12 move to the bass staff (below the LH)\nrhMusic = {\n  \\clef treble \\key c \\major \\time 2/4 \\tempo \"Tempo di Rag\" 4 = 116\n  e'8\\mf g' c'' g' | f'8 e' d' c' | e'8 g' c'' g' | d''8 c'' b' g' |\n  g'8 a' b' c'' | d''4 c''8 b' | a'8 g' f' e' | d'8 f' g'4 |\n  \\change Staff = \"lower\"\n  c4 g | f4 c | d4 a, | g,4 c |\n  \\change Staff = \"upper\"\n  c''8 e'' g'' e'' | d''8 c'' b' g' | e''8 d'' c'' a' | c''2 \\bar \"|.\"\n}\n\n% Left hand: bars 1-8 and 13-16 in bass; bars 9-12 cross up into the treble staff (above the RH)\nlhMusic = {\n  \\clef bass \\key c \\major \\time 2/4\n  c4\\p <g c'>4 | f,4 <c a>4 | c4 <g c'>4 | g,4 <d g>4 |\n  c4 <g c'>4 | g,4 <d g>4 | f,4 <c f>4 | g,4 <d g>4 |\n  \\change Staff = \"upper\"\n  e'8 g' c'' g' | a'8 g' f' e' | d'8 f' a'4 | g'8 e' c'4 |\n  \\change Staff = \"lower\"\n  c4 <g c'>4 | g,4 <d g>4 | a,4 <e a>4 | c,2 \\bar \"|.\"\n}\n\n\\score {\n  \\new PianoStaff <<\n    \\new Staff = \"upper\" <<\n      \\new Voice = \"rh\" { \\rhMusic }\n    >>\n    \\new Staff = \"lower\" <<\n      \\new Voice = \"lh\" { \\lhMusic }\n    >>\n  >>\n  \\layout { }\n}\n",
+    "truncated": false,
+    "lines": 42
+  },
+  "output": null,
+  "notes": [
+    "the score has no \\midi block; the audio comes from a copy with one added."
+  ]
+}

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9fbfc"/><stop offset=".2" stop-color="#9aaab4"/><stop offset=".42" stop-color="#f3f6f7"/><stop offset=".7" stop-color="#768994"/><stop offset="1" stop-color="#dbe2e5"/></linearGradient>
+    <linearGradient id="steelDark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#cbd4d8"/><stop offset=".3" stop-color="#687b86"/><stop offset=".72" stop-color="#aab6bc"/><stop offset="1" stop-color="#566a76"/></linearGradient>
+    <linearGradient id="basket" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#758792"/><stop offset=".18" stop-color="#e7ecee"/><stop offset=".48" stop-color="#aab7bd"/><stop offset=".77" stop-color="#f5f7f8"/><stop offset="1" stop-color="#667985"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bd8150"/><stop offset=".25" stop-color="#e0b17b"/><stop offset=".6" stop-color="#a9683d"/><stop offset="1" stop-color="#71442f"/></linearGradient>
+    <linearGradient id="spout" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#657985"/><stop offset=".25" stop-color="#e3e9eb"/><stop offset=".52" stop-color="#8798a1"/><stop offset=".82" stop-color="#f7f9fa"/><stop offset="1" stop-color="#657984"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="perfs" width="22" height="17" patternUnits="userSpaceOnUse"><ellipse cx="11" cy="8.5" rx="3.1" ry="2.1" fill="#52636d" opacity=".78"/><ellipse cx="10.4" cy="7.8" rx="1.2" ry=".65" fill="#eef2f3" opacity=".75"/></pattern>
+    <style>
+      .label{font:600 17px 'Arial',sans-serif;letter-spacing:1.4px;fill:#253642}.sub{font:13px 'Arial',sans-serif;letter-spacing:.7px;fill:#71808a}.leader{fill:none;stroke:#72838d;stroke-width:1.5}.dot{fill:#bd7547}.small{font:12px 'Arial',sans-serif;letter-spacing:1.7px;fill:#839099}
+    </style>
+  </defs>
+  <rect width="1400" height="1000" fill="#f4f2ec"/>
+  <path d="M70 118H1330" stroke="#d8d6cf" stroke-width="1"/>
+  <text x="78" y="72" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3.3" fill="#bd7547">ESPRESSO EQUIPMENT · ASSEMBLY STUDY</text>
+  <text x="76" y="105" font-family="Arial,sans-serif" font-size="29" font-weight="600" letter-spacing="1.2" fill="#253642">DOUBLE-SPOUT PORTAFILTER</text>
+  <text x="1322" y="76" text-anchor="end" class="small">EXPLODED VIEW  /  01</text>
+  <text x="1322" y="99" text-anchor="end" class="small">REMOVABLE FILTER BASKET</text>
+
+  <!-- exploded alignment guide -->
+  <path d="M700 157V867" stroke="#c7c6c0" stroke-width="1.4" stroke-dasharray="5 8"/>
+  <path d="M690 383h20M690 645h20" stroke="#bd7547" stroke-width="2"/>
+  <text x="722" y="397" class="small">LIFT OUT</text>
+  <text x="722" y="661" class="small">UNSCREW</text>
+
+  <!-- removable perforated basket -->
+  <ellipse cx="700" cy="374" rx="129" ry="14" fill="#162631" opacity=".12" filter="url(#shadow)"/>
+  <path d="M593 218 L612 345 Q616 364 700 373 Q784 364 788 345 L807 218Z" fill="url(#basket)" stroke="#536772" stroke-width="2"/>
+  <path d="M603 230 L619 340 Q624 354 700 362 Q776 354 781 340 L797 230Z" fill="url(#perfs)" opacity=".92"/>
+  <ellipse cx="700" cy="345" rx="82" ry="17" fill="#7d8d95" opacity=".48" stroke="#dfe5e7" stroke-width="1.5"/>
+  <ellipse cx="700" cy="345" rx="76" ry="12" fill="url(#perfs)" opacity=".75"/>
+  <ellipse cx="700" cy="217" rx="111" ry="27" fill="url(#steel)" stroke="#596c76" stroke-width="2.4"/>
+  <ellipse cx="700" cy="216" rx="94" ry="17" fill="#697b84" stroke="#f7f8f8" stroke-width="2"/>
+  <ellipse cx="700" cy="215" rx="81" ry="12" fill="#202e35" stroke="#9eacb2" stroke-width="1.4"/>
+  <path d="M599 224 Q700 248 801 224" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2"/>
+  <!-- basket rolled rim highlight -->
+  <path d="M608 210 Q700 190 792 210" fill="none" stroke="#fff" stroke-width="2.2" opacity=".85"/>
+
+  <!-- portafilter group head shadows -->
+  <ellipse cx="700" cy="616" rx="213" ry="24" fill="#1b2b35" opacity=".13" filter="url(#shadow)"/>
+  <!-- bayonet wings/lugs -->
+  <path d="M553 486 L505 472 Q493 469 488 480 L482 509 Q480 518 491 522 L553 531Z" fill="url(#steelDark)" stroke="#526671" stroke-width="2"/>
+  <path d="M847 486 L895 472 Q907 469 912 480 L918 509 Q920 518 909 522 L847 531Z" fill="url(#steelDark)" stroke="#526671" stroke-width="2"/>
+  <path d="M494 484l48 14M906 484l-48 14" stroke="#f4f7f8" stroke-width="2" opacity=".8"/>
+  <!-- head cylindrical shell -->
+  <path d="M535 463 Q700 414 865 463 L851 570 Q700 626 549 570Z" fill="url(#steelDark)" stroke="#536772" stroke-width="2.4"/>
+  <path d="M549 492 Q700 537 851 492 L844 565 Q700 613 556 565Z" fill="url(#steel)" opacity=".72"/>
+  <ellipse cx="700" cy="566" rx="151" ry="47" fill="#71838d" stroke="#536772" stroke-width="2"/>
+  <ellipse cx="700" cy="561" rx="119" ry="33" fill="#354851" stroke="#d9e0e3" stroke-width="3"/>
+  <ellipse cx="700" cy="560" rx="93" ry="23" fill="#1e3038" stroke="#8999a1" stroke-width="2"/>
+  <!-- upper machined rim and basket well -->
+  <ellipse cx="700" cy="457" rx="165" ry="52" fill="url(#steel)" stroke="#536772" stroke-width="2.5"/>
+  <ellipse cx="700" cy="451" rx="130" ry="37" fill="#647780" stroke="#f7f9f9" stroke-width="3"/>
+  <ellipse cx="700" cy="449" rx="108" ry="28" fill="#293b43" stroke="#aebbc0" stroke-width="2"/>
+  <ellipse cx="700" cy="446" rx="88" ry="20" fill="#17272e"/>
+  <path d="M550 465 Q700 510 850 465" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+  <!-- center threaded outlet boss -->
+  <path d="M656 584 L656 625 Q700 644 744 625 L744 584Z" fill="url(#steelDark)" stroke="#50636e" stroke-width="2"/>
+  <ellipse cx="700" cy="624" rx="44" ry="13" fill="#83939b" stroke="#50636e" stroke-width="2"/>
+  <path d="M661 599h78M660 608h80M664 617h72" stroke="#e6ebed" stroke-width="2" opacity=".8"/>
+
+  <!-- handle: ferrule, neck and ergonomic wood grip -->
+  <path d="M550 516 L498 531 L467 553" fill="none" stroke="#536671" stroke-width="30" stroke-linecap="round"/>
+  <path d="M548 511 L498 527 L469 548" fill="none" stroke="url(#steel)" stroke-width="23" stroke-linecap="round"/>
+  <path d="M490 534 L456 551" stroke="#596d77" stroke-width="38" stroke-linecap="round"/>
+  <path d="M481 536 L455 550" stroke="url(#steel)" stroke-width="31" stroke-linecap="round"/>
+  <path d="M454 550 C419 561 379 573 338 586 L197 630 Q180 636 175 650 Q171 667 187 676 Q202 685 221 678 L362 632 Q411 617 461 590 Q478 578 474 561Z" fill="url(#wood)" stroke="#70482f" stroke-width="2.5"/>
+  <path d="M198 651 Q302 619 379 595 Q423 581 459 562" fill="none" stroke="#f0c38d" stroke-width="3" opacity=".65"/>
+  <path d="M202 668 Q308 635 383 612" fill="none" stroke="#593a2b" stroke-width="2" opacity=".45"/>
+  <path d="M462 549 Q473 559 470 572" fill="none" stroke="#f7f8f8" stroke-width="2"/>
+
+  <!-- removable double spout, shown below threaded boss -->
+  <ellipse cx="700" cy="858" rx="142" ry="18" fill="#172832" opacity=".12" filter="url(#shadow)"/>
+  <path d="M674 699 L674 733 Q700 747 726 733 L726 699Z" fill="url(#spout)" stroke="#536671" stroke-width="2"/>
+  <ellipse cx="700" cy="701" rx="31" ry="11" fill="#dfe5e7" stroke="#536671" stroke-width="2"/>
+  <ellipse cx="700" cy="701" rx="20" ry="6" fill="#263840"/>
+  <path d="M675 731 Q700 746 725 731 L739 769 Q700 792 661 769Z" fill="url(#spout)" stroke="#536671" stroke-width="2.4"/>
+  <ellipse cx="700" cy="769" rx="39" ry="15" fill="#9eacb2" stroke="#536671" stroke-width="2"/>
+  <!-- forked twin outlets, a single casting -->
+  <path d="M674 762 C659 776 638 789 613 807 L581 833 Q566 846 577 858 Q589 869 604 859 L648 835 Q678 819 700 798Z" fill="url(#spout)" stroke="#536671" stroke-width="2.5"/>
+  <path d="M726 762 C741 776 762 789 787 807 L819 833 Q834 846 823 858 Q811 869 796 859 L752 835 Q722 819 700 798Z" fill="url(#spout)" stroke="#536671" stroke-width="2.5"/>
+  <!-- outlet end faces -->
+  <ellipse cx="590" cy="850" rx="19" ry="11" transform="rotate(-31 590 850)" fill="#293b43" stroke="#e7ecee" stroke-width="3"/>
+  <ellipse cx="810" cy="850" rx="19" ry="11" transform="rotate(31 810 850)" fill="#293b43" stroke="#e7ecee" stroke-width="3"/>
+  <path d="M631 814 Q658 793 681 782M769 814 Q742 793 719 782" fill="none" stroke="#fff" stroke-width="2.3" opacity=".8"/>
+
+  <!-- annotation leaders and labels -->
+  <path class="leader" d="M809 216 H965 L1001 194"/><circle class="dot" cx="809" cy="216" r="4"/>
+  <text class="label" x="1017" y="188">FILTER BASKET</text><text class="sub" x="1017" y="211">Perforated, removable insert</text>
+  <path class="leader" d="M865 455 H978 L1001 435"/><circle class="dot" cx="865" cy="455" r="4"/>
+  <text class="label" x="1017" y="430">PORTAFILTER BODY</text><text class="sub" x="1017" y="453">Machined brew head · bayonet ears</text>
+  <path class="leader" d="M840 768 H964 L1001 741"/><circle class="dot" cx="840" cy="768" r="4"/>
+  <text class="label" x="1017" y="736">DOUBLE SPOUT</text><text class="sub" x="1017" y="759">Removable, threaded split outlet</text>
+  <path class="leader" d="M294 633 H219 L194 716"/><circle class="dot" cx="294" cy="633" r="4"/>
+  <text class="label" x="77" y="746">HANDLE</text><text class="sub" x="77" y="769">Ergonomic hardwood grip</text>
+
+  <path d="M77 912H1323" stroke="#d8d6cf" stroke-width="1"/>
+  <text x="78" y="941" class="small">PARTS SHOWN IN ASSEMBLY ORDER</text>
+  <text x="1322" y="941" text-anchor="end" class="small">BASKET LIFTS OUT  ·  SPOUT UNSCREWS FROM BELOW</text>
+</svg>

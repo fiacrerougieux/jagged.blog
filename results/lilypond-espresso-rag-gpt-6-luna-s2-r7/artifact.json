@@ -1,0 +1,36 @@
+{
+  "name": "lilypond-espresso-rag-gpt-6-luna-s2-r7",
+  "exportedAt": "2026-10-04T23:57:23.936Z",
+  "run": "2026-10-05-lilypond-espresso-rag-1053",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "openai/gpt-6-luna",
+  "seed": 2,
+  "round": 7,
+  "rounds": 7,
+  "grade": {
+    "pass": false,
+    "detail": "failed: left_hand_crosses, crossing_marked"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.0\"\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"A café piano rag — L.H. crosses over R.H. in bars 9–12\"\n  composer = \"\"\n  tagline = ##f\n}\n\nrightHand = \\relative c'' {\n  \\clef treble\n  \\key f \\major\n  \\time 2/4\n  \\tempo \"Bright, with a little swing\" 4 = 116\n  \\voiceOne\n  a8 c'8 f,8 a8 | g8 bes8 e,8 g8 |\n  f8 a8 d,8 f8 | e8 g8 cis,8 e8 |\n  d8 f8 bes,8 d8 | c8 e8 a,8 c8 |\n  bes8 d8 g,8 bes8 | a8 c8 f,8 a8 |\n  c'8 a8 f8 a8 | d8 bes8 g8 bes8 |\n  c8 a8 f8 a8 | e8 c8 a8 c8 |\n  f8 a8 c'8 a8 | e8 g8 bes8 g8 |\n  d8 f8 a8 f8 | c8 e8 g8 c8 |\n  \\bar \"|.\"\n}\n\nleftHand = \\fixed c {\n  \\clef bass\n  \\key f \\major\n  \\time 2/4\n  \\voiceTwo\n  f,4 <c' f a>4 | c,4 <g' c e>4 |\n  bes,4 <f' bes d>4 | f,4 <c' f a>4 |\n  g,4 <d' g bes>4 | c,4 <g' c e>4 |\n  f,4 <c' f a>4 | c,4 <g' c e>4 |\n  R2 | R2 | R2 | R2 |\n  f,4 <c' f a>4 | c,4 <g' c e>4 |\n  bes,4 <f' bes d>4 | f,4 <c' f a>4 |\n  \\bar \"|.\"\n}\n\ncrossHand = \\relative c'' {\n  \\key f \\major\n  \\time 2/4\n  \\voiceTwo\n  s2 | s2 | s2 | s2 | s2 | s2 | s2 | s2 |\n  \\transpose c c'' {\n    <c f a>4 <a c f>4 | <d g bes>4 <bes d g>4 |\n    <c f a>4 <a c f>4 | <e a c>4 <c e a>4 |\n  }\n  s2 | s2 | s2 | s2 |\n}\n\n\\score {\n  \\new PianoStaff \\with { instrumentName = \"Piano\" } <<\n    \\new Staff = \"up\" <<\n      \\new Voice = \"right\" { \\rightHand }\n      \\new Voice = \"cross\" { \\crossHand }\n    >>\n    \\new Staff = \"down\" <<\n      \\new Voice = \"left\" { \\leftHand }\n    >>\n  >>\n  \\layout {\n    \\context { \\Score \\override BarNumber.break-visibility = ##(#f #t #t) }\n  }\n}\n",
+    "truncated": false,
+    "lines": 67
+  },
+  "output": null,
+  "notes": [
+    "the score has no \\midi block; the audio comes from a copy with one added."
+  ]
+}

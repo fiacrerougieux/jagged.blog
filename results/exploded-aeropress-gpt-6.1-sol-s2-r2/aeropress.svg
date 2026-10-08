@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="smoke" x1="0" x2="1">
+      <stop offset="0" stop-color="#434c4f"/>
+      <stop offset=".2" stop-color="#758084"/>
+      <stop offset=".47" stop-color="#a7afb0"/>
+      <stop offset=".7" stop-color="#747e81"/>
+      <stop offset="1" stop-color="#3c4548"/>
+    </linearGradient>
+    <linearGradient id="chamber" x1="0" x2="1">
+      <stop offset="0" stop-color="#667174" stop-opacity=".82"/>
+      <stop offset=".2" stop-color="#a3acad" stop-opacity=".62"/>
+      <stop offset=".48" stop-color="#c6ccca" stop-opacity=".58"/>
+      <stop offset=".78" stop-color="#8a9698" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#505c60" stop-opacity=".88"/>
+    </linearGradient>
+    <linearGradient id="cavity" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#344544"/>
+      <stop offset=".48" stop-color="#73827b"/>
+      <stop offset="1" stop-color="#afb8ac"/>
+    </linearGradient>
+    <linearGradient id="rubber" x1="0" x2="1">
+      <stop offset="0" stop-color="#242b2b"/>
+      <stop offset=".45" stop-color="#4b5352"/>
+      <stop offset="1" stop-color="#202728"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#48514f"/>
+      <stop offset="1" stop-color="#202827"/>
+    </linearGradient>
+    <pattern id="paper" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#fbf8ed"/>
+      <path d="M1 3h2M6 7h1" stroke="#dad5c3" stroke-width=".65"/>
+    </pattern>
+    <clipPath id="basket">
+      <ellipse cx="460" cy="1213" rx="93" ry="26"/>
+    </clipPath>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1 1L7 4L1 7" fill="none" stroke="#b36b36" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <!-- Editorial frame -->
+  <rect width="1200" height="1500" fill="#f5f3ec"/>
+  <path d="M66 66h1068" stroke="#283e3e" stroke-width="2"/>
+  <text x="68" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#9b5b30">OBJECT STUDY / 01</text>
+  <text x="68" y="167" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-2" fill="#253a39">AeroPress</text>
+  <text x="345" y="166" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#6d7771">Original</text>
+  <text x="69" y="202" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#65716d">Exploded assembly · standard round paper-filter model</text>
+  <text x="1133" y="102" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2" fill="#65716d">COMPONENT ATLAS</text>
+
+  <!-- Shared assembly axis, behind the parts -->
+  <path d="M460 231V1328" stroke="#c9cdc3" stroke-width="1.5" stroke-dasharray="5 9"/>
+  <path d="M234 302V411" stroke="#b36b36" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text transform="translate(212 411) rotate(-90)" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" fill="#9b5b30">ASSEMBLY DIRECTION</text>
+
+  <!-- 01 / Hollow plunger with a broad palm flange -->
+  <path d="M366 276L366 480C366 516 554 516 554 480L554 276Z" fill="url(#smoke)" stroke="#344244" stroke-width="2"/>
+  <ellipse cx="460" cy="480" rx="94" ry="28" fill="#444e50" stroke="#344244" stroke-width="2"/>
+  <ellipse cx="460" cy="480" rx="79" ry="20" fill="#667174" stroke="#303d3e" stroke-width="1.4"/>
+  <path d="M378 289V471" fill="none" stroke="#dde1da" stroke-opacity=".5" stroke-width="4"/>
+  <path d="M542 290V470" fill="none" stroke="#283637" stroke-opacity=".5" stroke-width="3"/>
+  <!-- Six-sided top flange, with its thickness -->
+  <path d="M332 268L365 241L553 241L588 268L560 303L362 303Z" fill="#465250" stroke="#2d3c3b" stroke-width="2"/>
+  <path d="M332 260L365 233L553 233L588 260L560 295L362 295Z" fill="#596460" stroke="#2d3c3b" stroke-width="2"/>
+  <ellipse cx="460" cy="263" rx="92" ry="22" fill="#7e8980" stroke="#a1aa9d" stroke-width="1"/>
+  <ellipse cx="460" cy="263" rx="82" ry="17" fill="url(#cavity)" stroke="#30433e" stroke-width="1.5"/>
+  <path d="M378 263C394 282 526 282 542 263" fill="none" stroke="#bcc3b4" stroke-opacity=".55" stroke-width="1.5"/>
+  <path d="M389 456Q460 472 531 456" fill="none" stroke="#aeb7b4" stroke-opacity=".45" stroke-width="1.3"/>
+
+  <!-- 02 / Separately exploded elastomer piston seal -->
+  <path d="M362 553V578C362 614 558 614 558 578V553Z" fill="url(#rubber)" stroke="#263331" stroke-width="2"/>
+  <ellipse cx="460" cy="553" rx="98" ry="28" fill="#535b55" stroke="#263331" stroke-width="2"/>
+  <ellipse cx="460" cy="553" rx="77" ry="20" fill="#262f2d" stroke="#788078" stroke-width="1.3"/>
+  <ellipse cx="460" cy="556" rx="69" ry="15" fill="#39433f"/>
+  <path d="M364 575C375 609 548 609 556 575" fill="none" stroke="#8a9186" stroke-opacity=".45" stroke-width="1.8"/>
+
+  <!-- 03 / Open brew chamber, transparent smoky plastic -->
+  <!-- Rear of chamber base flange -->
+  <path d="M323 975L357 948L563 948L597 975L562 1025L358 1025Z" fill="#697574" stroke="#3f5050" stroke-width="2"/>
+  <path d="M323 975V987L358 1037H562L597 987V975L562 1025H358Z" fill="#475858" stroke="#344747" stroke-width="2"/>
+  <!-- Open tube -->
+  <path d="M354 682V982C354 1020 566 1020 566 982V682Z" fill="url(#chamber)" stroke="#4a5b5c" stroke-width="2"/>
+  <path d="M367 688V979C367 1010 553 1010 553 979V688" fill="none" stroke="#d1d6cc" stroke-opacity=".65" stroke-width="2"/>
+  <ellipse cx="460" cy="982" rx="106" ry="30" fill="#84928f" fill-opacity=".38" stroke="#455958" stroke-width="2"/>
+  <ellipse cx="460" cy="982" rx="93" ry="23" fill="#e6e8df" fill-opacity=".32" stroke="#768683" stroke-width="1.3"/>
+  <!-- Bayonet lugs at chamber outlet -->
+  <path d="M375 1000L397 1006V1016L375 1010Z M523 1006L545 1000V1010L523 1016Z" fill="#3f5251" stroke="#304443" stroke-width="1"/>
+  <!-- Mouth: annular rim, visibly open -->
+  <ellipse cx="460" cy="682" rx="106" ry="32" fill="#95a09a" stroke="#405353" stroke-width="2"/>
+  <ellipse cx="460" cy="682" rx="94" ry="24" fill="url(#cavity)" stroke="#435b53" stroke-width="1.8"/>
+  <path d="M366 682C379 709 541 709 554 682" fill="none" stroke="#374e4c" stroke-width="2"/>
+  <path d="M358 719V948" stroke="#edf0e4" stroke-opacity=".56" stroke-width="3"/>
+  <path d="M561 719V952" stroke="#344d4d" stroke-opacity=".38" stroke-width="3"/>
+  <!-- Original gold volume numerals and vertical wordmark -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#d4b06b" stroke="#806b47" stroke-width=".45">
+    <text x="399" y="758">4</text>
+    <text x="399" y="822">3</text>
+    <text x="399" y="886">2</text>
+    <text x="399" y="950">1</text>
+  </g>
+  <g stroke="#d4b06b" stroke-width="2">
+    <path d="M385 752h8M385 816h8M385 880h8M385 944h8"/>
+  </g>
+  <text transform="translate(510 944) rotate(-90)" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="1" fill="#dfbd78" stroke="#806b47" stroke-width=".3">AeroPress</text>
+
+  <!-- 04 / One flat, circular paper micro-filter -->
+  <path d="M365 1092V1096C365 1131 555 1131 555 1096V1092Z" fill="#d9d3be" stroke="#b9b69f" stroke-width="1"/>
+  <ellipse cx="460" cy="1092" rx="95" ry="28" fill="url(#paper)" stroke="#b9b69f" stroke-width="1.5"/>
+  <ellipse cx="460" cy="1092" rx="87" ry="23" fill="none" stroke="#e4dfcd" stroke-width="1"/>
+
+  <!-- 05 / Twist-lock perforated filter cap -->
+  <path d="M351 1213V1247C351 1289 569 1289 569 1247V1213Z" fill="url(#rubber)" stroke="#293d36" stroke-width="2"/>
+  <path d="M352 1244C364 1281 556 1281 568 1244" fill="none" stroke="#65716a" stroke-width="1.3"/>
+  <!-- Short ribs on the cap's gripping skirt -->
+  <g stroke="#707a70" stroke-width="2" opacity=".65">
+    <path d="M365 1237v17M378 1245v18M393 1251v18M410 1256v18M428 1259v18M447 1261v18M467 1261v18M487 1259v18M506 1256v18M523 1251v18M541 1245v18M554 1236v17"/>
+  </g>
+  <ellipse cx="460" cy="1213" rx="109" ry="33" fill="#505d53" stroke="#293d36" stroke-width="2"/>
+  <ellipse cx="460" cy="1213" rx="93" ry="26" fill="#253830" stroke="#899383" stroke-width="1.3"/>
+  <!-- Perforated support grid, seen in perspective -->
+  <g clip-path="url(#basket)" stroke="#7b8775" stroke-width="4.5">
+    <path d="M375 1183v61M393 1183v61M411 1183v61M429 1183v61M447 1183v61M465 1183v61M483 1183v61M501 1183v61M519 1183v61M537 1183v61"/>
+    <path d="M362 1195h196M362 1206h196M362 1217h196M362 1228h196"/>
+  </g>
+  <ellipse cx="460" cy="1213" rx="93" ry="26" fill="none" stroke="#9aa28b" stroke-width="1.4"/>
+  <!-- Three inward-facing bayonet tabs on rim -->
+  <path d="M369 1198L383 1195L392 1202L378 1206Z M527 1195L543 1200L534 1207L519 1203Z M448 1237H474V1229H448Z" fill="#a0a891" stroke="#405041" stroke-width="1.2"/>
+
+  <!-- Callout leaders -->
+  <g fill="none" stroke="#89978d" stroke-width="1.2">
+    <path d="M558 379H620L661 361H759"/>
+    <path d="M561 565H759"/>
+    <path d="M570 851H625L660 833H759"/>
+    <path d="M558 1092H759"/>
+    <path d="M572 1239H623L658 1221H759"/>
+  </g>
+  <g fill="#f5f3ec" stroke="#74877c" stroke-width="1.5">
+    <circle cx="558" cy="379" r="3.5"/><circle cx="561" cy="565" r="3.5"/>
+    <circle cx="570" cy="851" r="3.5"/><circle cx="558" cy="1092" r="3.5"/>
+    <circle cx="572" cy="1239" r="3.5"/>
+  </g>
+  <!-- Numbered component labels -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(780 361)">
+      <text y="-15" font-size="12" font-weight="700" letter-spacing="2" fill="#a56639">01</text>
+      <text y="14" font-size="26" font-weight="700" fill="#253a39">Plunger</text>
+      <text y="43" font-size="16" fill="#68766e">Palm flange &amp; hollow piston</text>
+      <text y="66" font-size="16" fill="#68766e">Drives the seal down the chamber.</text>
+    </g>
+    <g transform="translate(780 565)">
+      <text y="-15" font-size="12" font-weight="700" letter-spacing="2" fill="#a56639">02</text>
+      <text y="14" font-size="26" font-weight="700" fill="#253a39">Silicone seal</text>
+      <text y="43" font-size="16" fill="#68766e">Removable piston gasket</text>
+      <text y="66" font-size="16" fill="#68766e">Fits onto the end of the plunger.</text>
+    </g>
+    <g transform="translate(780 833)">
+      <text y="-15" font-size="12" font-weight="700" letter-spacing="2" fill="#a56639">03</text>
+      <text y="14" font-size="26" font-weight="700" fill="#253a39">Brew chamber</text>
+      <text y="43" font-size="16" fill="#68766e">Open-ended, graduated cylinder</text>
+      <text y="66" font-size="16" fill="#68766e">Wide base rests on a cup.</text>
+    </g>
+    <g transform="translate(780 1092)">
+      <text y="-15" font-size="12" font-weight="700" letter-spacing="2" fill="#a56639">04</text>
+      <text y="14" font-size="26" font-weight="700" fill="#253a39">Paper filter</text>
+      <text y="43" font-size="16" fill="#68766e">One round micro-filter · Ø 63.5 mm</text>
+      <text y="66" font-size="16" fill="#68766e">Seats inside the filter cap.</text>
+    </g>
+    <g transform="translate(780 1221)">
+      <text y="-15" font-size="12" font-weight="700" letter-spacing="2" fill="#a56639">05</text>
+      <text y="14" font-size="26" font-weight="700" fill="#253a39">Filter cap</text>
+      <text y="43" font-size="16" fill="#68766e">Perforated support &amp; locking tabs</text>
+      <text y="66" font-size="16" fill="#68766e">Twists onto the chamber outlet.</text>
+    </g>
+  </g>
+
+  <path d="M68 1386H1133" stroke="#b8c0b4" stroke-width="1"/>
+  <text x="68" y="1420" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#40554c">FIVE PARTS. ONE PRESS.</text>
+  <text x="68" y="1446" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#748076">Seal shown detached for clarity. Accessories omitted.</text>
+  <text x="1133" y="1420" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5" fill="#748076">EXPLODED VIEW</text>
+  <text x="1133" y="1446" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#748076">Illustrative · not to scale</text>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-claude-haiku-5.5-s2-r3",
+  "exportedAt": "2026-10-08T00:23:31.865Z",
+  "run": "2026-10-08-tikz-coffee-venn-1122",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "anthropic/claude-haiku-5.5",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "iced long black missing; flat white crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage{tikz}\n\\usetikzlibrary{positioning}\n\\begin{document}\n\\begin{tikzpicture}[\n  set/.style={circle, minimum size=4.4cm, draw=black, thick},\n  item/.style={font=\\small, align=center, text width=2.4cm},\n]\n  % Circles\n  \\node[set, fill=red!25, fill opacity=0.45] (E) at (-1.4,0.6) {};\n  \\node[set, fill=blue!25, fill opacity=0.45] (M) at (1.4,0.6) {};\n  \\node[set, fill=cyan!25, fill opacity=0.45] (C) at (0,-1.4) {};\n\n  % Set labels\n  \\node[font=\\bfseries\\small] at (-3.3,3.0) {Has espresso};\n  \\node[font=\\bfseries\\small] at (3.3,3.0) {Has milk};\n  \\node[font=\\bfseries\\small] at (0,-4.2) {Served cold};\n\n  % Drinks (each placed in the region it belongs to)\n  \\node[item] at (-2.5,0.8) {Short black};          % espresso only\n  \\node[item] at (2.5,0.8) {Babyccino};             % milk only\n  \\node[item] at (0,-3.0) {Cold brew};              % cold only\n  \\node[item] at (0,1.4) {Flat white};              % espresso + milk\n  \\node[item, text width=1.4cm] at (-1.2,-0.5) {Iced long black};     % espresso + cold\n  \\node[font=\\footnotesize] at (1.26,-0.5) {Milkshake};             % milk + cold\n  \\node[item, text width=1.8cm] at (0,0) {Iced latte}; % all three\n  \\node[item] at (-4.6,-3.2) {Pour-over};           % none\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 30
+  },
+  "output": null,
+  "notes": []
+}

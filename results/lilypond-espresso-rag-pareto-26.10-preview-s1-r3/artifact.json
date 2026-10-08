@@ -1,0 +1,34 @@
+{
+  "name": "lilypond-espresso-rag-pareto-26.10-preview-s1-r3",
+  "exportedAt": "2026-10-04T23:34:32.907Z",
+  "run": "2026-10-05-lilypond-espresso-rag-1027",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "unbiased/pareto-26.10-preview",
+  "seed": 1,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": false,
+    "detail": "failed: left_hand_crosses"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.1\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"A little café two-step\"\n  tagline = ##f\n}\n\n\\paper {\n  #(set-paper-size \"letter\")\n  indent = 0\\mm\n  system-system-spacing.basic-distance = #23\n  system-system-spacing.minimum-distance = #18\n}\n\nglobal = { \\key f \\major \\time 2/4 }\n\nrightHand = {\n  \\global\n  \\clef treble\n  \\tempo \"Brightly, with a light touch\" 4 = 108\n  % 1–4: syncopated opening, over a steady two-step bass.\n  r16\\mp c''16 e''16 f''16~ f''8 a''8-. |\n  g''8-. e''16 c''16~ c''8 bes'8-. |\n  a'16 d''16 fis''8~ fis''16 a''16 g''16 fis''16 |\n  g''8-. d''8-. <e'' g''>4-> |\n  \\break\n  % 5–8: answer and cadence.\n  r16 c''16 e''16 f''16~ f''8 a''8-. |\n  bes''8-. a''16 g''16~ g''8 f''8-. |\n  e''16 g''16 bes''8~ bes''16 a''16 g''16 e''16 |\n  <a' f''>8-. <g' e''>8-. <a' f''>4-> |\n  \\break\n  % 9–12: upper voice played by the left hand throughout.\n  <<\n    {\n      \\voiceOne\n      f'''8\\mf^\\markup { \\bold \"L.H. over R.H. (bars 9–12)\" }\n      d'''16 bes''16~ bes''8 d'''8-. |\n      a''16 c'''16 f'''8~ f'''8 c'''8-. |\n      d'''8-. bes''16 g''16~ g''8 bes''8-. |\n      e'''16 d'''16 c'''8~ c'''16 bes''16 g''16 e''16 |\n    }\n    \\\\\n    {\n      \\voiceTwo\n      r8 <d' f'>8-._\\markup { \\italic \"R.H.\" } r8 <d' f'>8-. |\n      r8 <c' f'>8-. r8 <c' f'>8-. |\n      r8 <d' g'>8-. r8 <d' g'>8-. |\n      r8 <e' bes'>8-. r8 <e' bes'>8-. |\n    }\n  >>\n  \\oneVoice\n  \\break\n  % 13–16: hands return; a crisp final cadence.\n  r16\\mp^\\markup { \\italic \"Hands return\" } c''16 e''16 f''16~ f''8 a''8-. |\n  bes''8-. a''16 g''16~ g''8 fis''8-. |\n  g''16 bes''16 d'''8-> c'''16 bes''16 g''16 e''16 |\n  <a' c'' f''>8-> r8 <a' c'' f''>4-.\\p \\bar \"|.\"\n}\n\nleftHand = {\n  \\global\n  \\clef bass\n  % 1–8: F / C7 / D7 / Gm–C7, then the answering phrase.\n  f,8-. <a c' f'>8-. c8-. <a c' f'>8-. |\n  c8-. <g bes e'>8-. g,8-. <g bes e'>8-. |\n  d8-. <a c' fis'>8-. a,8-. <a c' fis'>8-. |\n  g,8-. <bes d' g'>8-. c8-. <bes e' g'>8-. |\n  f,8-. <a c' f'>8-. c8-. <a c' f'>8-. |\n  bes,8-. <bes d' f'>8-. b,8-. <a d' f'>8-. |\n  c8-. <g bes e'>8-. g,8-. <g bes e'>8-. |\n  f,8-. c8-. <f a c'>4-> |\n  % The LH part is written in the treble staff during the crossover.\n  R2*4 |\n  f,8-. <a c' f'>8-. c8-. <a c' f'>8-. |\n  bes,8-. <bes d' f'>8-. d8-. <a c' fis'>8-. |\n  g,8-. <bes d' g'>8-. c8-. <bes e' g'>8-. |\n  <f, c f>8-> r8 <f, c f>4-. \\bar \"|.\"\n}\n\n\\score {\n  \\new PianoStaff <<\n    \\new Staff = \"upper\" { \\rightHand }\n    \\new Staff = \"lower\" { \\leftHand }\n  >>\n  \\layout { }\n  \\midi { }\n}\n",
+    "truncated": false,
+    "lines": 90
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "exploded-grinder",
+  "title": "Exploded hand grinder",
+  "short": "Grinder",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Draw an exploded assembly diagram of a manual coffee grinder, as an SVG. Use a hand grinder with conical burrs rather than flat burrs.",
+  "groundTruth": "Top to bottom: handle knob, crank, body, outer burr, inner burr, spring if drawn, adjustment dial, catch jar. The drive shaft runs through the body and both burrs, so it is left out of the order, the way the French press leaves out its rod. The adjustment is at the bottom, below the burrs, and the inner cone comes out downwards through the fixed outer ring. Checked against Comandante's FAQ for the C40, Coffeegeek on the Timemore C2, Hario's spare-parts list and a review for the Skerton Pro, and a guide to the Porlex Mini. The Skerton has no spring, so the spring is not required.",
+  "checks": [
+    {
+      "id": "parts",
+      "label": "All eight parts",
+      "how": "Handle knob, crank, drive shaft, body, outer burr, inner burr, adjustment dial and catch jar all drawn and labelled.",
+      "decidedBy": "eye",
+      "rule": "Pass if every listed part is drawn as a separate shape and each has a label naming it. A part only named in a label or a comment, with nothing drawn, fails it. The label must say what the part is, in any words: a name that only says where it sits (\"top plate\") or what it is made of, or a mention in another part's caption, does not count."
+    },
+    {
+      "id": "order",
+      "label": "Stack order",
+      "how": "Crank, body, outer burr, inner burr, spring, adjustment, catch jar, top to bottom along the axis, read from each part's coordinates in the SVG.",
+      "decidedBy": "measured",
+      "rule": "Fail if any two drawn parts come in the wrong order along the assembly axis, read from their coordinates in the SVG and never from comments or label text."
+    },
+    {
+      "id": "fit",
+      "label": "Parts fit",
+      "how": "The inner burr nests inside the outer one, 70% to 95% of its inside width, and the outer burr is 90% to 100% of the body's.",
+      "decidedBy": "eye",
+      "rule": "Pass if each listed pair of mating parts looks as if it would go together as stated: the right angle, nested inside, or sitting on top. One pair that plainly could not fails it."
+    },
+    {
+      "id": "axis",
+      "label": "One assembly axis",
+      "how": "Body, burrs, spring, adjustment and jar centred on one vertical axis, with leader lines to one side. The knob may sit off it on the end of the crank.",
+      "decidedBy": "eye",
+      "rule": "Pass if one line runs through the middle of every part on each listed axis, and every leader line leaves from the same side. One part pushed off its axis fails it."
+    },
+    {
+      "id": "labels",
+      "label": "Labels match",
+      "how": "Each label names the part it points at.",
+      "decidedBy": "eye",
+      "rule": "Pass if following each leader line from its label ends on the part that label names. One label pointing at the wrong part, or at nothing, fails it."
+    }
+  ],
+  "harder": "Draw the burrs in section with the gap set for espresso, so the cone and the ring have to be the right shapes as well as the right sizes."
+}

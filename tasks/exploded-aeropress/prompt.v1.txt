@@ -1,0 +1,1 @@
+Draw an exploded assembly diagram of an AeroPress coffee maker, as an SVG. Use the original model with a round paper filter rather than the Go or the XL.

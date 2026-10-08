@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#faf8f2"/><stop offset="1" stop-color="#f1eee5"/></linearGradient>
+    <linearGradient id="tube" x1="0" x2="1"><stop stop-color="#9ba9a5" stop-opacity=".82"/><stop offset=".2" stop-color="#e5e8df" stop-opacity=".58"/><stop offset=".52" stop-color="#c6d0ca" stop-opacity=".72"/><stop offset=".82" stop-color="#9ba9a5" stop-opacity=".8"/><stop offset="1" stop-color="#778682" stop-opacity=".88"/></linearGradient>
+    <linearGradient id="black" x1="0" x2="1"><stop stop-color="#202521"/><stop offset=".22" stop-color="#454a43"/><stop offset=".55" stop-color="#282e29"/><stop offset=".82" stop-color="#161a17"/><stop offset="1" stop-color="#3e443e"/></linearGradient>
+    <linearGradient id="rubber" x2="1"><stop stop-color="#222622"/><stop offset=".45" stop-color="#41463e"/><stop offset="1" stop-color="#171b18"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+    <style>
+      .label{font: 600 19px 'Arial',sans-serif; letter-spacing:1.6px; fill:#28332e}
+      .sub{font: 13px 'Arial',sans-serif; letter-spacing:1.2px; fill:#748078}
+      .leader{fill:none;stroke:#78827b;stroke-width:1.4}
+      .dot{fill:#b45d38}
+      .small{font: 11px 'Arial',sans-serif;letter-spacing:1.5px;fill:#8b928b}
+    </style>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#paper)"/>
+  <!-- quiet drafting grid -->
+  <g opacity=".20" stroke="#d9d7ce" stroke-width="1">
+    <path d="M70 250H1130M70 520H1130M70 790H1130M70 1060H1130M70 1330H1130"/>
+  </g>
+  <text x="82" y="102" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#a65a39">BREW SYSTEMS / 01</text>
+  <text x="80" y="164" font-family="Arial,sans-serif" font-size="44" font-weight="700" letter-spacing="1.5" fill="#27312c">AEROPRESS</text>
+  <text x="84" y="198" font-family="Arial,sans-serif" font-size="15" letter-spacing="2.2" fill="#737d75">ORIGINAL COFFEE PRESS · EXPLODED ASSEMBLY</text>
+  <path d="M82 222H1118" stroke="#c8c8be" stroke-width="1.2"/>
+
+  <!-- central assembly axis -->
+  <path d="M600 270V1373" stroke="#c4c8bf" stroke-width="1" stroke-dasharray="4 8"/>
+  <!-- soft grounding shadow -->
+  <ellipse cx="604" cy="1375" rx="206" ry="28" fill="#323831" opacity=".12" filter="url(#shadow)"/>
+
+  <!-- Plunger handle (top) -->
+  <g>
+    <!-- upper face -->
+    <ellipse cx="600" cy="330" rx="151" ry="35" fill="#1b201c"/>
+    <path d="M449 330v32c0 20 68 36 151 36s151-16 151-36v-32c-12 21-72 35-151 35s-139-14-151-35z" fill="url(#black)" stroke="#171b18" stroke-width="2"/>
+    <ellipse cx="600" cy="330" rx="151" ry="35" fill="url(#black)" stroke="#171b18" stroke-width="2"/>
+    <ellipse cx="600" cy="327" rx="126" ry="22" fill="none" stroke="#73776f" stroke-width="1" opacity=".48"/>
+    <path d="M493 329c30-11 72-16 107-16" fill="none" stroke="#92958a" stroke-width="2" opacity=".4"/>
+    <!-- handle boss and plunger shaft -->
+    <path d="M566 369h68v111h-68z" fill="url(#black)" stroke="#171b18" stroke-width="2"/>
+    <ellipse cx="600" cy="369" rx="34" ry="9" fill="#454b43" stroke="#171b18" stroke-width="1.5"/>
+    <path d="M574 384v81M626 384v81" stroke="#777c72" stroke-width="2" opacity=".35"/>
+    <!-- rubber seal, exploded from chamber -->
+    <path d="M537 481c0-12 28-21 63-21s63 9 63 21v25c0 12-28 21-63 21s-63-9-63-21z" fill="url(#rubber)" stroke="#171b18" stroke-width="2"/>
+    <ellipse cx="600" cy="481" rx="63" ry="19" fill="#3f443d" stroke="#171b18" stroke-width="2"/>
+    <ellipse cx="600" cy="481" rx="43" ry="10" fill="none" stroke="#777a70" stroke-width="1.5" opacity=".65"/>
+    <path d="M540 498c17 10 103 10 120 0" fill="none" stroke="#111512" stroke-width="2"/>
+  </g>
+  <!-- exploded spacing indicators -->
+  <g stroke="#b45d38" stroke-width="1.5" fill="none">
+    <path d="M600 545v37m-8-7 8 8 8-8M600 545l-8 8m8-8 8 8"/>
+    <path d="M600 1090v35m-8-7 8 8 8-8M600 1090l-8 8m8-8 8 8"/>
+  </g>
+
+  <!-- Main chamber: open-ended clear barrel -->
+  <g>
+    <!-- barrel body -->
+    <path d="M467 634 C467 618 526 604 600 604s133 14 133 30v388c0 19-59 34-133 34s-133-15-133-34z" fill="url(#tube)" stroke="#687872" stroke-width="2.5"/>
+    <!-- wall highlights / transparent side edges -->
+    <path d="M480 637v378c0 11 8 18 20 23M716 636v378c0 13-8 20-20 24" fill="none" stroke="#f7f6ed" stroke-width="7" opacity=".62"/>
+    <path d="M497 643v365M702 644v365" fill="none" stroke="#758680" stroke-width="1.4" opacity=".48"/>
+    <!-- open rim ellipse -->
+    <ellipse cx="600" cy="634" rx="133" ry="30" fill="#dce3db" fill-opacity=".85" stroke="#64756f" stroke-width="2.5"/>
+    <ellipse cx="600" cy="634" rx="114" ry="18" fill="#faf9f2" fill-opacity=".9" stroke="#a6b2aa" stroke-width="1.5"/>
+    <!-- printed volume marks on front -->
+    <g stroke="#586b64" fill="#50625b" opacity=".82">
+      <path d="M670 724h28M681 757h17M670 790h28M681 823h17M670 856h28M681 889h17M670 922h28" stroke-width="1.6"/>
+    </g>
+    <g font-family="Arial,sans-serif" font-size="12" fill="#4f625a" opacity=".9">
+      <text x="644" y="728">4</text><text x="644" y="794">3</text><text x="644" y="860">2</text><text x="644" y="926">1</text>
+    </g>
+    <!-- molded graduations left -->
+    <g stroke="#eef0e9" stroke-width="1.5" opacity=".8"><path d="M488 725h23M488 791h15M488 857h23M488 923h15"/></g>
+    <!-- bottom threaded neck and rim -->
+    <path d="M467 1004c0 15 59 27 133 27s133-12 133-27v24c0 16-59 28-133 28s-133-12-133-28z" fill="#909f98" fill-opacity=".92" stroke="#687872" stroke-width="2"/>
+    <path d="M473 1012c26 13 69 18 127 18s101-5 127-18M475 1024c25 12 69 17 125 17s100-5 125-17" fill="none" stroke="#eff1e8" stroke-width="2" opacity=".62"/>
+    <ellipse cx="600" cy="1052" rx="133" ry="29" fill="#c5d0c9" fill-opacity=".9" stroke="#687872" stroke-width="2"/>
+    <ellipse cx="600" cy="1052" rx="105" ry="19" fill="#f7f6ee" stroke="#8f9c95" stroke-width="1.5"/>
+  </g>
+
+  <!-- round paper filter, separate -->
+  <g transform="translate(0,0)">
+    <ellipse cx="600" cy="1170" rx="104" ry="22" fill="#d6d0c2" opacity=".45"/>
+    <path d="M496 1163c0-13 47-23 104-23s104 10 104 23v7c0 13-47 23-104 23s-104-10-104-23z" fill="#f8f5e9" stroke="#c8c1b2" stroke-width="1.5"/>
+    <ellipse cx="600" cy="1163" rx="104" ry="23" fill="#fffdf6" stroke="#c8c1b2" stroke-width="1.5"/>
+    <ellipse cx="600" cy="1163" rx="90" ry="17" fill="none" stroke="#e4dfd3" stroke-width="1" stroke-dasharray="2 3"/>
+    <path d="M520 1166c45 14 115 14 160 0" fill="none" stroke="#eee9dd" stroke-width="1"/>
+  </g>
+
+  <!-- filter cap, open perforated base -->
+  <g>
+    <!-- cap skirt -->
+    <path d="M474 1240c0-14 56-25 126-25s126 11 126 25v58c0 17-56 30-126 30s-126-13-126-30z" fill="url(#black)" stroke="#171b18" stroke-width="2.5"/>
+    <ellipse cx="600" cy="1240" rx="126" ry="25" fill="#353b35" stroke="#171b18" stroke-width="2.5"/>
+    <path d="M480 1251c23 13 68 20 120 20s97-7 120-20M479 1270c24 13 69 19 121 19s97-6 121-19" fill="none" stroke="#7a8077" stroke-width="2" opacity=".72"/>
+    <ellipse cx="600" cy="1298" rx="126" ry="30" fill="#242a25" stroke="#171b18" stroke-width="2.5"/>
+    <!-- inner perforated filter support, shown on underside -->
+    <ellipse cx="600" cy="1298" rx="94" ry="20" fill="#303630" stroke="#85877d" stroke-width="1.4"/>
+    <g fill="#a4a69a" opacity=".9">
+      <circle cx="600" cy="1298" r="3.2"/><circle cx="576" cy="1298" r="3"/><circle cx="624" cy="1298" r="3"/>
+      <circle cx="588" cy="1290" r="2.8"/><circle cx="612" cy="1290" r="2.8"/><circle cx="588" cy="1306" r="2.8"/><circle cx="612" cy="1306" r="2.8"/>
+      <circle cx="552" cy="1298" r="2.5"/><circle cx="648" cy="1298" r="2.5"/><circle cx="564" cy="1290" r="2.5"/><circle cx="636" cy="1290" r="2.5"/><circle cx="564" cy="1306" r="2.5"/><circle cx="636" cy="1306" r="2.5"/>
+    </g>
+  </g>
+  <!-- filter seat hint on cap top -->
+  <ellipse cx="600" cy="1239" rx="103" ry="17" fill="none" stroke="#a9aba0" stroke-width="1" opacity=".55"/>
+
+  <!-- callouts -->
+  <g>
+    <!-- plunger -->
+    <path class="leader" d="M748 345h108l36-24h75"/><circle class="dot" cx="748" cy="345" r="3.5"/>
+    <text class="label" x="979" y="313">PLUNGER</text><text class="sub" x="979" y="337">HANDLE + SHAFT</text>
+    <!-- seal -->
+    <path class="leader" d="M664 493h182l47 30h74"/><circle class="dot" cx="664" cy="493" r="3.5"/>
+    <text class="label" x="979" y="526">SILICONE SEAL</text><text class="sub" x="979" y="550">PRESS-FIT ON PLUNGER</text>
+    <!-- chamber -->
+    <path class="leader" d="M733 760h119l48-28h67"/><circle class="dot" cx="733" cy="760" r="3.5"/>
+    <text class="label" x="979" y="726">BREW CHAMBER</text><text class="sub" x="979" y="750">TRANSLUCENT BARREL</text>
+    <!-- graduated marks -->
+    <path class="leader" d="M697 890h117l38 53h115"/><circle class="dot" cx="697" cy="890" r="3.5"/>
+    <text class="label" x="979" y="948">VOLUME MARKS</text><text class="sub" x="979" y="972">CUP MEASUREMENTS</text>
+    <!-- filter disc -->
+    <path class="leader" d="M704 1163h130l49-36h102"/><circle class="dot" cx="704" cy="1163" r="3.5"/>
+    <text class="label" x="979" y="1129">PAPER FILTER</text><text class="sub" x="979" y="1153">ROUND · SINGLE USE</text>
+    <!-- cap -->
+    <path class="leader" d="M726 1280h112l52 50h95"/><circle class="dot" cx="726" cy="1280" r="3.5"/>
+    <text class="label" x="979" y="1337">FILTER CAP</text><text class="sub" x="979" y="1361">PERFORATED SUPPORT</text>
+  </g>
+  <!-- left side dimensioning / assembly note -->
+  <g fill="none" stroke="#9ca39a" stroke-width="1.2">
+    <path d="M390 634h-31v418h31M354 634v418M347 634h14M347 1052h14"/>
+    <path d="M364 611l-10 10 10 10M364 1074l-10-10 10-10"/>
+  </g>
+  <text x="327" y="855" transform="rotate(-90 327 855)" class="small">BREW CHAMBER</text>
+  <text x="82" y="1438" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.7" fill="#747e75">ASSEMBLY ORDER</text>
+  <text x="82" y="1472" font-family="Arial,sans-serif" font-size="15" fill="#354039">1  Insert filter  ·  2  Twist cap onto chamber  ·  3  Add coffee and water</text>
+  <text x="82" y="1498" font-family="Arial,sans-serif" font-size="15" fill="#354039">4  Press plunger into chamber</text>
+  <path d="M82 1530H1118" stroke="#c8c8be" stroke-width="1.2"/>
+  <text x="82" y="1562" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#9a9c92">COMPONENT STUDY     /     ORIGINAL SIZE FORMAT</text>
+  <text x="1118" y="1562" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#9a9c92">01 — 04</text>
+</svg>

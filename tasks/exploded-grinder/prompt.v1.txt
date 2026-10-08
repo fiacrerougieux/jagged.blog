@@ -1,0 +1,1 @@
+Draw an exploded assembly diagram of a manual coffee grinder, as an SVG. Use a hand grinder with conical burrs rather than flat burrs.

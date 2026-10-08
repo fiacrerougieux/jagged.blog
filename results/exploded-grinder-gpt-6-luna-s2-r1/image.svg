@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+  <linearGradient id="metal" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#aeb8ba"/><stop offset=".22" stop-color="#edf0ec"/><stop offset=".53" stop-color="#9aa7a9"/><stop offset=".78" stop-color="#dce2df"/><stop offset="1" stop-color="#7f8d90"/></linearGradient>
+  <linearGradient id="darkMetal" x1="0" x2="1"><stop stop-color="#38484d"/><stop offset=".48" stop-color="#68777a"/><stop offset="1" stop-color="#29383d"/></linearGradient>
+  <linearGradient id="wood" x1="0" x2="1"><stop stop-color="#855d3d"/><stop offset=".45" stop-color="#c18b5b"/><stop offset="1" stop-color="#70472f"/></linearGradient>
+  <linearGradient id="body" x1="0" x2="1"><stop stop-color="#202c30"/><stop offset=".2" stop-color="#39484b"/><stop offset=".58" stop-color="#263438"/><stop offset=".83" stop-color="#3f4d50"/><stop offset="1" stop-color="#1c292d"/></linearGradient>
+  <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#d4e1dc" stop-opacity=".88"/><stop offset=".45" stop-color="#eff2e7" stop-opacity=".58"/><stop offset="1" stop-color="#99b2ad" stop-opacity=".82"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+  <style>
+    .outline{stroke:#263438;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+    .fine{stroke:#34464a;stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;fill:none}
+    .call{stroke:#8a6a46;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .label{font:600 15px 'Arial',sans-serif;letter-spacing:1.5px;fill:#263438}
+    .sub{font:12px 'Arial',sans-serif;letter-spacing:.7px;fill:#7a7165}
+    .num{font:700 12px 'Arial',sans-serif;fill:#fff}
+  </style>
+</defs>
+<!-- paper -->
+<rect width="1200" height="900" fill="#f5f1e8"/>
+<path d="M55 54H1145" stroke="#d9d0c1" stroke-width="1"/>
+<text x="60" y="91" font-family="Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="2.4" fill="#263438">HAND COFFEE GRINDER</text>
+<text x="61" y="116" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#8a6a46">EXPLODED ASSEMBLY · CONICAL BURR MECHANISM</text>
+<text x="1140" y="86" text-anchor="end" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.6" fill="#8b8174">FIELD GUIDE  /  01</text>
+<!-- exploded axis -->
+<path d="M600 121V841" stroke="#c7bca9" stroke-width="1" stroke-dasharray="4 8"/>
+<path d="M595 125l5-8 5 8M595 837l5 8 5-8" fill="none" stroke="#b4a58f" stroke-width="1.3"/>
+<!-- soft grounding shadow -->
+<ellipse cx="600" cy="846" rx="156" ry="16" fill="#b9b0a1" opacity=".24" filter="url(#shadow)"/>
+<!-- crank assembly, raised above lid -->
+<!-- central drive peg -->
+<path d="M591 145V112Q591 106 600 106Q609 106 609 112V145Z" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="112" rx="9" ry="4" fill="#e7ece7" stroke="#34464a" stroke-width="1.5"/>
+<!-- crank arm, oblique side view -->
+<path d="M599 119L742 91Q753 89 756 96Q758 103 747 106L603 135Z" fill="url(#metal)" class="outline"/>
+<path d="M614 122L739 98" stroke="#fff" stroke-width="2" opacity=".65"/>
+<!-- crank hub -->
+<ellipse cx="604" cy="127" rx="17" ry="11" fill="url(#darkMetal)" class="outline"/>
+<ellipse cx="604" cy="127" rx="7" ry="4" fill="#c6d0ce" stroke="#263438" stroke-width="1.3"/>
+<!-- wooden turning knob -->
+<path d="M742 99V69Q742 62 753 60Q765 62 765 69V99Q765 106 753 108Q742 106 742 99Z" fill="url(#wood)" class="outline"/>
+<ellipse cx="753.5" cy="69" rx="11.5" ry="5.5" fill="#d6a678" stroke="#263438" stroke-width="1.5"/>
+<path d="M748 72V98" stroke="#e4b887" stroke-width="1.3" opacity=".7"/>
+<!-- 01 lid -->
+<ellipse cx="600" cy="168" rx="88" ry="22" fill="url(#darkMetal)" class="outline"/>
+<path d="M512 168V181Q512 195 600 198Q688 195 688 181V168" fill="url(#body)" class="outline"/>
+<ellipse cx="600" cy="168" rx="88" ry="22" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="168" rx="24" ry="8" fill="#667578" stroke="#263438" stroke-width="1.5"/>
+<ellipse cx="600" cy="168" rx="9" ry="3.5" fill="#d9e0db" stroke="#263438" stroke-width="1.2"/>
+<path d="M525 172Q600 191 675 172" fill="none" stroke="#f6f7f0" stroke-width="1.2" opacity=".7"/>
+<!-- 02 bean hopper, transparent tapered cup -->
+<ellipse cx="600" cy="229" rx="77" ry="18" fill="#dce6df" stroke="#34464a" stroke-width="2"/>
+<path d="M523 229L540 300Q544 317 600 321Q656 317 660 300L677 229" fill="url(#glass)" stroke="#34464a" stroke-width="2.2"/>
+<ellipse cx="600" cy="229" rx="77" ry="18" fill="url(#glass)" stroke="#34464a" stroke-width="2.2"/>
+<path d="M533 233L548 297Q551 309 600 313Q649 309 652 297L667 233" fill="none" stroke="#f8fbf3" stroke-width="2" opacity=".8"/>
+<!-- beans -->
+<g fill="#8a5937" stroke="#61432e" stroke-width="1.2">
+ <ellipse cx="566" cy="267" rx="9" ry="6" transform="rotate(24 566 267)"/><path d="M561 266q6 0 9 3" fill="none" stroke="#d3a074"/>
+ <ellipse cx="592" cy="280" rx="9" ry="6" transform="rotate(-20 592 280)"/><path d="M586 280q6-3 11 0" fill="none" stroke="#d3a074"/>
+ <ellipse cx="621" cy="265" rx="9" ry="6" transform="rotate(30 621 265)"/><path d="M616 263q6 0 10 4" fill="none" stroke="#d3a074"/>
+ <ellipse cx="638" cy="290" rx="8" ry="5.5" transform="rotate(-18 638 290)"/><path d="M633 290q5-3 10-1" fill="none" stroke="#d3a074"/>
+ <ellipse cx="574" cy="298" rx="8" ry="5.5" transform="rotate(-16 574 298)"/><path d="M570 298q5-3 9-1" fill="none" stroke="#d3a074"/>
+</g>
+<ellipse cx="600" cy="319" rx="54" ry="13" fill="#667578" class="outline"/>
+<ellipse cx="600" cy="319" rx="37" ry="8" fill="#e9eee7" stroke="#34464a" stroke-width="1.5"/>
+<!-- 03 hopper seat / top collar -->
+<ellipse cx="600" cy="352" rx="76" ry="17" fill="url(#metal)" class="outline"/>
+<path d="M524 352V371Q524 384 600 387Q676 384 676 371V352" fill="url(#darkMetal)" class="outline"/>
+<ellipse cx="600" cy="352" rx="76" ry="17" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="352" rx="52" ry="10" fill="#526267" stroke="#263438" stroke-width="1.5"/>
+<ellipse cx="600" cy="352" rx="34" ry="6" fill="#d3dcd6" stroke="#34464a" stroke-width="1.2"/>
+<!-- central shaft -->
+<path d="M594 376H606V492H594Z" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="376" rx="6" ry="3" fill="#f3f3e9" stroke="#34464a" stroke-width="1.2"/>
+<path d="M597 385V481" stroke="#fff" stroke-width="1.5" opacity=".75"/>
+<!-- inner conical burr: fluted cone -->
+<ellipse cx="600" cy="423" rx="34" ry="10" fill="url(#metal)" class="outline"/>
+<path d="M566 423L580 485Q600 499 620 485L634 423" fill="url(#darkMetal)" class="outline"/>
+<ellipse cx="600" cy="423" rx="34" ry="10" fill="url(#metal)" class="outline"/>
+<path d="M572 425L585 480M581 426L591 486M591 429L597 490M609 429L603 490M619 426L609 486M628 425L615 480" stroke="#cbd3ce" stroke-width="2" opacity=".8"/>
+<ellipse cx="600" cy="486" rx="19" ry="8" fill="#536267" stroke="#263438" stroke-width="1.7"/>
+<!-- shoulder and drive nut beneath burr -->
+<path d="M591 493L588 504L600 511L612 504L609 493Z" fill="#b8c2bd" class="outline"/>
+<path d="M593 511H607V534H593Z" fill="url(#metal)" class="outline"/>
+<!-- 04 outer burr ring, shown separated around cone -->
+<ellipse cx="600" cy="467" rx="67" ry="17" fill="url(#darkMetal)" class="outline"/>
+<path d="M533 467V508Q533 521 600 525Q667 521 667 508V467" fill="#647276" class="outline"/>
+<ellipse cx="600" cy="467" rx="67" ry="17" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="467" rx="47" ry="11" fill="#334348" stroke="#263438" stroke-width="1.7"/>
+<ellipse cx="600" cy="467" rx="36" ry="8" fill="#f5f1e8" stroke="#34464a" stroke-width="1.2"/>
+<!-- inner teeth in outer ring opening -->
+<g stroke="#c8d0cb" stroke-width="2">
+ <path d="M564 466l8 6M570 461l8 9M581 459l5 12M593 458l2 13M607 458l-2 13M619 459l-5 12M630 461l-8 9M636 466l-8 6"/>
+</g>
+<path d="M539 471V505M549 476V512M660 471V505M650 476V512" stroke="#8c9999" stroke-width="1.5" opacity=".75"/>
+<!-- alignment exploded gap -->
+<!-- 05 main grinder body -->
+<ellipse cx="600" cy="560" rx="102" ry="22" fill="url(#darkMetal)" class="outline"/>
+<path d="M498 560V665Q498 686 600 692Q702 686 702 665V560" fill="url(#body)" class="outline"/>
+<ellipse cx="600" cy="560" rx="102" ry="22" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="560" rx="77" ry="14" fill="#253337" stroke="#263438" stroke-width="1.8"/>
+<ellipse cx="600" cy="560" rx="59" ry="10" fill="#98a5a4" stroke="#263438" stroke-width="1.5"/>
+<ellipse cx="600" cy="560" rx="42" ry="7" fill="#253337" stroke="#263438" stroke-width="1.3"/>
+<!-- body highlights, knurl texture -->
+<path d="M513 580V655M524 583V660M686 580V655M675 583V660" stroke="#819092" stroke-width="1.4" opacity=".38"/>
+<path d="M540 584V664M548 586V666M652 586V666M660 584V664" stroke="#a2ada9" stroke-width="1" opacity=".2"/>
+<path d="M510 672Q600 695 690 672" fill="none" stroke="#718083" stroke-width="2" opacity=".65"/>
+<!-- subtle front maker medallion -->
+<ellipse cx="600" cy="624" rx="22" ry="14" fill="#344348" stroke="#8e9b99" stroke-width="1.2"/>
+<text x="600" y="628" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1" fill="#e2d8c7">MILL</text>
+<!-- 06 adjustment ring, separately exploded -->
+<ellipse cx="600" cy="710" rx="89" ry="19" fill="url(#metal)" class="outline"/>
+<path d="M511 710V735Q511 749 600 752Q689 749 689 735V710" fill="url(#darkMetal)" class="outline"/>
+<ellipse cx="600" cy="710" rx="89" ry="19" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="710" rx="70" ry="13" fill="#f5f1e8" stroke="#34464a" stroke-width="1.4"/>
+<!-- knurled grip marks -->
+<g stroke="#d0d8d2" stroke-width="1.7" opacity=".82">
+ <path d="M520 718v17M529 721v18M539 724v18M550 727v18M562 730v17M574 732v17M586 733v17M598 733v17M610 733v17M622 732v17M634 730v17M646 727v18M658 724v18M669 721v18M680 718v17"/>
+</g>
+<path d="M600 735V750" stroke="#d29c5e" stroke-width="3"/>
+<!-- 07 grounds cup -->
+<ellipse cx="600" cy="778" rx="84" ry="17" fill="url(#wood)" class="outline"/>
+<path d="M516 778L525 825Q529 842 600 845Q671 842 675 825L684 778" fill="url(#wood)" class="outline"/>
+<ellipse cx="600" cy="778" rx="84" ry="17" fill="url(#metal)" class="outline"/>
+<ellipse cx="600" cy="778" rx="68" ry="11" fill="#253337" stroke="#263438" stroke-width="1.6"/>
+<path d="M529 784L537 823Q542 835 600 838Q658 835 663 823L671 784" fill="url(#wood)" stroke="#263438" stroke-width="1.4"/>
+<path d="M542 789L549 825M555 790L561 830M649 790L641 830M662 789L653 825" stroke="#d7a16d" stroke-width="1.5" opacity=".65"/>
+<ellipse cx="600" cy="841" rx="70" ry="12" fill="#71482f" stroke="#263438" stroke-width="1.8"/>
+<!-- callouts left -->
+<g>
+ <path class="call" d="M332 155H451L505 171"/><circle cx="505" cy="171" r="3" fill="#8a6a46"/>
+ <circle cx="120" cy="151" r="13" fill="#8a6a46"/><text class="num" x="120" y="155" text-anchor="middle">01</text>
+ <text class="label" x="145" y="149">DUST LID</text><text class="sub" x="145" y="168">Shaft access / snap fit</text>
+ <path class="call" d="M332 263H455L523 271"/><circle cx="523" cy="271" r="3" fill="#8a6a46"/>
+ <circle cx="120" cy="259" r="13" fill="#8a6a46"/><text class="num" x="120" y="263" text-anchor="middle">02</text>
+ <text class="label" x="145" y="257">BEAN HOPPER</text><text class="sub" x="145" y="276">Clear, tapered feed chamber</text>
+ <path class="call" d="M332 362H456L524 366"/><circle cx="524" cy="366" r="3" fill="#8a6a46"/>
+ <circle cx="120" cy="358" r="13" fill="#8a6a46"/><text class="num" x="120" y="362" text-anchor="middle">03</text>
+ <text class="label" x="145" y="356">HOPPER SEAT</text><text class="sub" x="145" y="375">Threaded upper collar</text>
+ <path class="call" d="M332 461H453L563 463"/><circle cx="563" cy="463" r="3" fill="#8a6a46"/>
+ <circle cx="120" cy="457" r="13" fill="#8a6a46"/><text class="num" x="120" y="461" text-anchor="middle">04</text>
+ <text class="label" x="145" y="455">OUTER BURR</text><text class="sub" x="145" y="474">Stationary conical grind ring</text>
+</g>
+<!-- callouts right -->
+<g>
+ <path class="call" d="M690 101H824L866 112"/><circle cx="690" cy="101" r="3" fill="#8a6a46"/>
+ <circle cx="888" cy="112" r="13" fill="#8a6a46"/><text class="num" x="888" y="116" text-anchor="middle">00</text>
+ <text class="label" x="913" y="110">CRANK &amp; KNOB</text><text class="sub" x="913" y="129">Removable drive arm · turned wood</text>
+ <path class="call" d="M637 446H817L865 445"/><circle cx="637" cy="446" r="3" fill="#8a6a46"/>
+ <circle cx="888" cy="445" r="13" fill="#8a6a46"/><text class="num" x="888" y="449" text-anchor="middle">05</text>
+ <text class="label" x="913" y="443">INNER CONE</text><text class="sub" x="913" y="462">Rotating, fluted conical burr</text>
+ <path class="call" d="M701 616H822L865 616"/><circle cx="701" cy="616" r="3" fill="#8a6a46"/>
+ <circle cx="888" cy="616" r="13" fill="#8a6a46"/><text class="num" x="888" y="620" text-anchor="middle">06</text>
+ <text class="label" x="913" y="614">GRINDER BODY</text><text class="sub" x="913" y="633">Machined alloy outer shell</text>
+ <path class="call" d="M687 729H823L865 727"/><circle cx="687" cy="729" r="3" fill="#8a6a46"/>
+ <circle cx="888" cy="727" r="13" fill="#8a6a46"/><text class="num" x="888" y="731" text-anchor="middle">07</text>
+ <text class="label" x="913" y="725">ADJUSTMENT RING</text><text class="sub" x="913" y="744">Stepped grind-size control</text>
+ <path class="call" d="M682 811H824L865 810"/><circle cx="682" cy="811" r="3" fill="#8a6a46"/>
+ <circle cx="888" cy="810" r="13" fill="#8a6a46"/><text class="num" x="888" y="814" text-anchor="middle">08</text>
+ <text class="label" x="913" y="808">GROUNDS CUP</text><text class="sub" x="913" y="827">Twist-on collection vessel</text>
+</g>
+<!-- footer -->
+<path d="M55 867H1145" stroke="#d9d0c1" stroke-width="1"/>
+<text x="60" y="886" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4" fill="#8b8174">PARTS SHOWN SEPARATED ALONG THE DRIVE AXIS  ·  NOT TO SCALE</text>
+<text x="1140" y="886" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4" fill="#8b8174">MECHANICAL STUDY</text>
+</svg>

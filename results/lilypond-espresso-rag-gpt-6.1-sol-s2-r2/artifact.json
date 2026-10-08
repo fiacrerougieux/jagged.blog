@@ -1,0 +1,31 @@
+{
+  "name": "lilypond-espresso-rag-gpt-6.1-sol-s2-r2",
+  "exportedAt": "2026-10-04T09:19:10.257Z",
+  "run": "2026-10-04-lilypond-espresso-rag-2017",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 2,
+  "round": 2,
+  "rounds": 1,
+  "grade": null,
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.1\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"A little café rag for piano\"\n  composer = \"\"\n  tagline = ##f\n}\n\n\\paper {\n  #(set-paper-size \"a4\")\n  indent = 12\\mm\n  top-margin = 12\\mm\n  bottom-margin = 12\\mm\n  system-system-spacing.basic-distance = #18\n}\n\ncommon = { \\key c \\major \\time 2/4 }\n\nrightHand = \\relative c'' {\n  \\common\n  \\tempo \"Lightly, with a café bounce\" 4 = 108\n  \\clef treble\n  % 1–4: a clipped, syncopated opening phrase.\n  e8\\mf g16 a~ a8 g |\n  e16 g e c~ c8 e |\n  f8 a16 c~ c8 a |\n  g16 e d c~ c8 r | \\break\n  % 5–8: answer, turning back toward C.\n  e8 g16 a~ a8 c |\n  b16 a gis a~ a8 e |\n  f16 a f d~ d8 fis |\n  g8 b16 d~ d8 r | \\break\n  % 9–12: R.H. stays BELOW the crossing left hand.\n  \\voiceTwo\n  <c,, e g>8-\\markup { \\italic \"R.H. (below)\" } r\n    <c e g>8 r |\n  <c f a>8 r <c f a>8 r |\n  <d f a>8 r <d fis a>8 r |\n  <d g b>8 r <d f b>8 r | \\break\n  % 13–16: hands return to normal; a bright closing tag.\n  \\oneVoice\n  e'8 g16 a~ a8 g |\n  f16 a f d~ d8 fis |\n  g16 e c e g8 <b, d f> |\n  <c e>8-> <e g c>-> r4\\fermata \\bar \"|.\"\n}\n\nleftHand = \\relative c {\n  \\common\n  \\clef bass\n  % Alternating bass and offbeat chords.\n  c8-. <e g>-. g,-. <e' g>-. |\n  c8-. <e g>-. g,-. <e' g>-. |\n  f,8-. <a c>-. c-. <a c>-. |\n  c8-. <e g>-. g,-. <e' g>-. |\n  c8-. <e g>-. e-. <g c>-. |\n  a,8-. <c e>-. e-. <cis g'>-. |\n  d8-. <f a>-. d-. <fis a>-. |\n  g,8-. <b f'>-. g-. <b f'>-. |\n  % The LEFT hand travels into the upper staff, above the R.H.\n  \\change Staff = \"upper\"\n  \\voiceOne\n  \\override TextSpanner.bound-details.left.text =\n    \\markup { \\italic \"L.H. over R.H. (bars 9–12)\" }\n  \\override TextSpanner.bound-details.right.text =\n    \\markup { \\draw-line #'(0 . -1) }\n  \\override TextSpanner.style = #'dashed-line\n  \\override TextSpanner.staff-padding = #3\n  e''8\\startTextSpan\\mp g16 a~ a8 g |\n  f16 a f c~ c8 f |\n  a8 c16 a~ a8 fis |\n  g16 b g d~ d8 b\\stopTextSpan |\n  \\change Staff = \"lower\"\n  \\oneVoice\n  c,,8-. <e g>-. g,-. <e' g>-. |\n  d8-. <f a>-. d-. <fis a>-. |\n  g,8-. <c e>-. g-. <b f'>-. |\n  <c e g>8-> <c, c'>-> r4\\fermata |\n}\n\n\\score {\n  \\new PianoStaff <<\n    \\set PianoStaff.instrumentName = \"Piano\"\n    \\new Staff = \"upper\" { \\rightHand }\n    \\new Staff = \"lower\" <<\n      { \\leftHand }\n      { s2*8 R2*4 s2*4 }\n    >>\n  >>\n  \\layout {\n    \\context { \\Score \\override BarNumber.break-visibility = ##(#f #t #t) }\n  }\n  \\midi { }\n}\n",
+    "truncated": false,
+    "lines": 96
+  },
+  "output": null,
+  "notes": []
+}

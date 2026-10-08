@@ -1,0 +1,47 @@
+{
+  "id": "exploded-aeropress",
+  "title": "Exploded AeroPress",
+  "short": "AeroPress",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Draw an exploded assembly diagram of an AeroPress coffee maker, as an SVG. Use the original model with a round paper filter rather than the Go or the XL.",
+  "groundTruth": "Top to bottom: plunger, rubber seal, chamber, paper filter, filter cap. The seal sits on the plunger's lower end, and the paper filter sits in the cap below the chamber. Checked against AeroPress's replacement-parts pages, which sell the plunger with its seal, the chamber and the cap as the parts of the Original, and Wikipedia's description of the cap holding the filter at the chamber's bottom end. The stirrer and scoop are not part of the assembly.",
+  "checks": [
+    {
+      "id": "parts",
+      "label": "All five parts",
+      "how": "Plunger, rubber seal, chamber, paper filter and filter cap all drawn and labelled.",
+      "decidedBy": "eye",
+      "rule": "Pass if every listed part is drawn as a separate shape and each has a label naming it. A part only named in a label or a comment, with nothing drawn, fails it. The label must say what the part is, in any words: a name that only says where it sits (\"top plate\") or what it is made of, or a mention in another part's caption, does not count."
+    },
+    {
+      "id": "order",
+      "label": "Stack order",
+      "how": "Plunger, seal, chamber, filter, cap, top to bottom along the axis, read from each part's coordinates in the SVG.",
+      "decidedBy": "measured",
+      "rule": "Fail if any two drawn parts come in the wrong order along the assembly axis, read from their coordinates in the SVG and never from comments or label text."
+    },
+    {
+      "id": "fit",
+      "label": "Parts fit",
+      "how": "The seal is 95% to 105% of the chamber's inside width, and the filter 90% to 105% of the cap's.",
+      "decidedBy": "measured",
+      "rule": "Fail if any listed pair of mating parts is drawn outside the stated size ratio, measured in the SVG."
+    },
+    {
+      "id": "axis",
+      "label": "One assembly axis",
+      "how": "Every part centred on one vertical axis, with leader lines to one side.",
+      "decidedBy": "eye",
+      "rule": "Pass if one line runs through the middle of every part on each listed axis, and every leader line leaves from the same side. One part pushed off its axis fails it."
+    },
+    {
+      "id": "labels",
+      "label": "Labels match",
+      "how": "Each label names the part it points at.",
+      "decidedBy": "eye",
+      "rule": "Pass if following each leader line from its label ends on the part that label names. One label pointing at the wrong part, or at nothing, fails it."
+    }
+  ],
+  "harder": "Draw it inverted, the way it is brewed upside down, with the plunger already in the chamber."
+}

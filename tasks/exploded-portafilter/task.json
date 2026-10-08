@@ -1,0 +1,47 @@
+{
+  "id": "exploded-portafilter",
+  "title": "Exploded portafilter",
+  "short": "Portafilter",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Draw an exploded assembly diagram of an espresso machine portafilter, as an SVG. Use a double-spout portafilter with a removable basket rather than a bottomless one.",
+  "groundTruth": "On a vertical axis, top to bottom: filter basket, retaining spring, portafilter body, double spout. The handle is on a horizontal axis off the body, so this is the one member with two axes. Checked against parts sellers, since no maker's exploded diagram could be fetched: Espresso Parts and Zirkus Coffee on the spring that clips into a groove inside the body and grips the basket rim, Espresso Parts on the spout that screws onto the bottom of the body, and Nepo Coffee on handles that screw onto a stud on its side.",
+  "checks": [
+    {
+      "id": "parts",
+      "label": "All five parts",
+      "how": "Filter basket, retaining spring, body, double spout and handle all drawn and labelled.",
+      "decidedBy": "eye",
+      "rule": "Pass if every listed part is drawn as a separate shape and each has a label naming it. A part only named in a label or a comment, with nothing drawn, fails it. The label must say what the part is, in any words: a name that only says where it sits (\"top plate\") or what it is made of, or a mention in another part's caption, does not count."
+    },
+    {
+      "id": "order",
+      "label": "Stack order",
+      "how": "Basket, spring, body, spout, top to bottom along the vertical axis, read from each part's coordinates in the SVG. The handle is off the stack.",
+      "decidedBy": "measured",
+      "rule": "Fail if any two drawn parts come in the wrong order along the assembly axis, read from their coordinates in the SVG and never from comments or label text."
+    },
+    {
+      "id": "fit",
+      "label": "Parts fit",
+      "how": "The basket and the spring are each 90% to 100% of the body's inside width.",
+      "decidedBy": "eye",
+      "rule": "Pass if each listed pair of mating parts looks as if it would go together as stated: the right angle, nested inside, or sitting on top. One pair that plainly could not fails it."
+    },
+    {
+      "id": "axis",
+      "label": "Two assembly axes",
+      "how": "Basket, spring, body and spout centred on one vertical axis, the handle on a horizontal one, with leader lines to one side.",
+      "decidedBy": "eye",
+      "rule": "Pass if one line runs through the middle of every part on each listed axis, and every leader line leaves from the same side. One part pushed off its axis fails it."
+    },
+    {
+      "id": "labels",
+      "label": "Labels match",
+      "how": "Each label names the part it points at.",
+      "decidedBy": "eye",
+      "rule": "Pass if following each leader line from its label ends on the part that label names. One label pointing at the wrong part, or at nothing, fails it."
+    }
+  ],
+  "harder": "Draw it locked into the group head in section, so the basket, the gasket and the shower screen have to meet."
+}

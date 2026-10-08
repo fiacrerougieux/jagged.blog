@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1500" viewBox="0 0 1100 1500">
+  <defs>
+    <linearGradient id="steel" x1="0" x2="1"><stop stop-color="#8799a4"/><stop offset=".23" stop-color="#dce4e7"/><stop offset=".48" stop-color="#f3f6f5"/><stop offset=".72" stop-color="#bdcbd1"/><stop offset="1" stop-color="#788e9a"/></linearGradient>
+    <linearGradient id="darkSteel" x1="0" x2="1"><stop stop-color="#435e6a"/><stop offset=".42" stop-color="#a4b5bb"/><stop offset=".68" stop-color="#c1cdd0"/><stop offset="1" stop-color="#4a6370"/></linearGradient>
+    <linearGradient id="body" x1="0" x2="1"><stop stop-color="#23414c"/><stop offset=".26" stop-color="#45636d"/><stop offset=".56" stop-color="#526e75"/><stop offset=".83" stop-color="#2a4955"/><stop offset="1" stop-color="#16343f"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#a35e35"/><stop offset=".45" stop-color="#d49a61"/><stop offset="1" stop-color="#814729"/></linearGradient>
+    <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#18323e"/><stop offset="1" stop-color="#7c969f"/></linearGradient>
+    <clipPath id="coneClip"><path d="M 393,946 Q 420,935 447,946 L 482,1008 Q 484,1028 420,1030 Q 356,1028 358,1008 Z"/></clipPath>
+    <style>
+      .edge{stroke:#233e49;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+      .fine{fill:none;stroke:#526c77;stroke-width:1.3;stroke-linecap:round}
+      .leader{fill:none;stroke:#81939b;stroke-width:1.3;stroke-linejoin:round}
+      .heading{font-family:Arial,Helvetica,sans-serif;fill:#17343f}
+      .label{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-weight:600;fill:#17343f}
+      .desc{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#60757e}
+      .num{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;fill:#ad623a;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect width="1100" height="1500" fill="#f5f3ed"/>
+  <path d="M 55,54 H 1045" stroke="#bdc8c9"/>
+  <text x="58" y="88" class="heading" font-size="12" letter-spacing="3">ASSEMBLY STUDY / 01</text>
+  <text x="55" y="139" class="heading" font-size="42" font-weight="700" letter-spacing="-1">Manual coffee grinder</text>
+  <text x="58" y="169" class="desc" font-size="16">Conical burr mechanism · exploded view</text>
+  <text x="1043" y="88" text-anchor="end" class="desc" font-size="12" letter-spacing="2">HAND-POWERED</text>
+  <!-- Common assembly axis -->
+  <path d="M 420,209 V 1373" stroke="#a9b8bb" stroke-width="1.3" stroke-dasharray="7 7"/>
+  <path d="M 416,1371 L 420,1378 L 424,1371" fill="none" stroke="#a9b8bb"/>
+  <text x="242" y="1374" class="desc" font-size="11" letter-spacing="2">ASSEMBLY AXIS</text>
+  <path d="M 363,1370 H 404" class="leader"/>
+
+  <!-- 01: crank, offset wooden grip -->
+  <path d="M 420,259 L 420,273" stroke="#233e49" stroke-width="13" stroke-linecap="round"/>
+  <path d="M 407,249 L 575,209 Q 592,205 602,212 L 606,220 L 435,270 Q 418,274 406,265 Z" fill="url(#darkSteel)" class="edge"/>
+  <path d="M 407,249 Q 420,243 435,251 L 602,212 L 605,218 L 435,259 Q 420,265 407,258 Z" fill="url(#steel)" class="edge"/>
+  <ellipse cx="421" cy="253" rx="9" ry="4" fill="#38535e" class="edge"/>
+  <path d="M 591,211 V 193" stroke="#415a65" stroke-width="9"/>
+  <path d="M 567,169 Q 565,153 591,151 Q 617,153 616,169 L 613,195 Q 609,207 591,207 Q 574,207 570,195 Z" fill="url(#wood)" class="edge"/>
+  <ellipse cx="591" cy="167" rx="24" ry="12" fill="#d5a574" stroke="#875735" stroke-width="1.5"/>
+  <path d="M 579,180 Q 589,185 609,179 M 577,188 Q 590,194 607,188 M 582,160 Q 590,156 604,164" fill="none" stroke="#a96e43" stroke-width="1.2"/>
+
+  <!-- 02: lift-off lid -->
+  <path d="M 308,313 L 308,327 A 112,33 0 0 0 532,327 L 532,313 Z" fill="url(#darkSteel)" class="edge"/>
+  <ellipse cx="420" cy="313" rx="112" ry="33" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="311" rx="99" ry="27" fill="none" stroke="#edf1f0" stroke-width="1.2"/>
+  <ellipse cx="420" cy="313" rx="13" ry="5" fill="#2a4753" class="edge"/>
+  <path d="M 311,327 Q 420,358 529,327" fill="none" stroke="#6d828a"/>
+
+  <!-- 03: axle and bearing bridge, removed as a subassembly -->
+  <path d="M 415,372 L 425,372 L 425,493 L 415,493 Z" fill="url(#steel)" class="edge"/>
+  <path d="M 415,372 L 420,367 L 425,372" fill="#c9d5d9" class="edge"/>
+  <path d="M 342,414 L 413,400 L 496,416 L 496,425 L 424,411 L 343,424 Z" fill="url(#darkSteel)" class="edge"/>
+  <path d="M 342,414 L 413,400 L 496,416 L 481,420 L 413,407 L 357,419 Z" fill="url(#steel)" class="edge"/>
+  <path d="M 399,405 L 399,431 A 21,7 0 0 0 441,431 L 441,405 Z" fill="url(#darkSteel)" class="edge"/>
+  <ellipse cx="420" cy="405" rx="21" ry="8" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="405" rx="7" ry="3" fill="#3c5661"/>
+  <path d="M 417,378 V 398 M 418,442 V 479" stroke="#f9faf7" stroke-width="2"/>
+  <path d="M 415,480 L 425,477 M 415,485 L 425,482 M 415,490 L 425,487" class="fine"/>
+
+  <!-- 04: hollow hopper and housing -->
+  <path d="M 300,557 L 300,722 A 120,37 0 0 0 540,722 L 540,557 Z" fill="url(#body)" class="edge"/>
+  <ellipse cx="420" cy="557" rx="120" ry="37" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="557" rx="108" ry="29" fill="url(#inside)" class="edge"/>
+  <path d="M 312,557 Q 420,605 528,557" fill="none" stroke="#8da3ab" stroke-width="2"/>
+  <path d="M 311,579 V 720 M 319,587 V 729" stroke="#80969d" stroke-opacity=".45" fill="none"/>
+  <path d="M 301,699 A 120,37 0 0 0 539,699 M 301,706 A 120,37 0 0 0 539,706" stroke="#173540" fill="none"/>
+  <path d="M 306,725 Q 420,758 534,725" stroke="#93a5a9" fill="none"/>
+  <rect x="380" y="632" width="80" height="27" rx="3" fill="#284751" stroke="#779097"/>
+  <text x="420" y="650" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#d6dfdd">MANUAL</text>
+
+  <!-- 05: stationary female conical burr; open tapered throat -->
+  <path d="M 326,822 L 326,867 A 94,28 0 0 0 514,867 L 514,822 Z" fill="url(#darkSteel)" class="edge"/>
+  <ellipse cx="420" cy="822" rx="94" ry="30" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="822" rx="73" ry="23" fill="#203c47" class="edge"/>
+  <path d="M 347,822 A 73,23 0 0 0 493,822 L 464,864 A 44,14 0 0 1 376,864 Z" fill="url(#darkSteel)" class="edge"/>
+  <!-- Cutting flutes on the visible internal conical face -->
+  <g fill="none" stroke="#263f49" stroke-width="3" stroke-linecap="round">
+    <path d="M 350,826 L 380,861 M 358,834 L 385,869 M 371,841 L 395,875 M 386,845 L 406,878 M 403,848 L 419,879 M 421,849 L 432,877 M 439,848 L 445,875 M 456,844 L 455,870 M 474,837 L 463,864 M 488,829 L 467,857"/>
+  </g>
+  <g fill="none" stroke="#d5dfe0" stroke-width="1.2">
+    <path d="M 354,826 L 383,859 M 363,834 L 389,867 M 375,840 L 400,873 M 391,845 L 411,876 M 408,846 L 424,876 M 426,847 L 437,874 M 444,846 L 450,871 M 461,841 L 459,866 M 478,834 L 466,860"/>
+  </g>
+  <ellipse cx="420" cy="864" rx="44" ry="14" fill="#f5f3ed" class="edge"/>
+  <path d="M 330,858 Q 420,885 510,858" stroke="#6e838b" fill="none"/>
+  <path d="M 335,848 V 866 M 343,852 V 871 M 498,852 V 871 M 505,848 V 866" class="fine"/>
+  <ellipse cx="340" cy="817" rx="4" ry="2.5" fill="#3c5661"/>
+  <ellipse cx="500" cy="817" rx="4" ry="2.5" fill="#3c5661"/>
+
+  <!-- 07: male cone, with spiral cutting lands -->
+  <g transform="translate(0 48)">
+  <path d="M 393,946 Q 420,935 447,946 L 482,1008 Q 484,1028 420,1030 Q 356,1028 358,1008 Z" fill="url(#steel)" class="edge"/>
+  <g clip-path="url(#coneClip)" fill="none" stroke-linecap="round">
+    <path d="M 395,941 Q 390,974 351,1013 M 403,941 Q 401,979 369,1025 M 414,940 Q 414,985 390,1032 M 425,941 Q 431,984 416,1036 M 435,942 Q 447,983 442,1035 M 445,944 Q 463,978 465,1028 M 453,947 Q 479,974 488,1017" stroke="#344f5b" stroke-width="8"/>
+    <path d="M 397,941 Q 392,974 353,1013 M 406,941 Q 404,979 372,1025 M 417,940 Q 417,985 393,1032 M 428,941 Q 434,984 419,1036 M 438,942 Q 450,983 445,1035 M 448,944 Q 466,978 468,1028" stroke="#f0f3f1" stroke-width="2"/>
+  </g>
+  <ellipse cx="420" cy="946" rx="27" ry="9" fill="url(#steel)" class="edge"/>
+  <path d="M 413,943 L 423,941 L 429,946 L 424,950 L 413,948 Z" fill="#294652" stroke="#233e49" stroke-width="1.3"/>
+  <path d="M 358,1008 Q 419,1040 482,1008" fill="none" stroke="#233e49" stroke-width="2"/>
+
+  </g>
+  <!-- 06: compression spring, between shaft shoulder and inner burr -->
+  <g transform="translate(0 -140)" fill="none" stroke-linecap="round">
+    <path d="M 406,1059 C 394,1052 439,1052 436,1060 C 433,1067 401,1064 403,1071 C 405,1078 439,1073 436,1081 C 433,1088 401,1085 403,1092 C 405,1099 439,1094 436,1102 C 432,1109 404,1107 404,1103" stroke="#2b4651" stroke-width="5"/>
+    <path d="M 406,1058 C 394,1051 439,1051 436,1059 C 433,1066 401,1063 403,1070 C 405,1077 439,1072 436,1080 C 433,1087 401,1084 403,1091 C 405,1098 439,1093 436,1101" stroke="#b8c9ce" stroke-width="2"/>
+  </g>
+
+  <!-- 08: threaded adjustment wheel -->
+  <path d="M 376,1143 L 376,1162 A 44,14 0 0 0 464,1162 L 464,1143 Z" fill="url(#darkSteel)" class="edge"/>
+  <ellipse cx="420" cy="1143" rx="44" ry="14" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="1143" rx="8" ry="3.5" fill="#2b4752" class="edge"/>
+  <path d="M 382,1150 V 1164 M 390,1153 V 1168 M 400,1156 V 1172 M 411,1157 V 1174 M 423,1158 V 1175 M 435,1157 V 1173 M 446,1155 V 1170 M 456,1151 V 1165" stroke="#395560" stroke-width="2"/>
+  <path d="M 391,1138 L 396,1136 M 443,1137 L 448,1139" stroke="#ac673e" stroke-width="2"/>
+
+  <!-- 09: detachable grounds cup -->
+  <path d="M 309,1231 L 309,1328 Q 309,1363 420,1363 Q 531,1363 531,1328 L 531,1231 Z" fill="url(#body)" class="edge"/>
+  <ellipse cx="420" cy="1231" rx="111" ry="34" fill="url(#steel)" class="edge"/>
+  <ellipse cx="420" cy="1231" rx="100" ry="26" fill="url(#inside)" class="edge"/>
+  <path d="M 320,1231 Q 420,1274 520,1231" stroke="#829ba4" fill="none" stroke-width="2"/>
+  <path d="M 312,1250 Q 420,1285 528,1250 M 312,1257 Q 420,1292 528,1257" fill="none" stroke="#16323d"/>
+  <path d="M 320,1268 V 1327" stroke="#8aa1a7" stroke-opacity=".5"/>
+  <path d="M 315,1337 Q 420,1368 525,1337" stroke="#8aa1a7" fill="none"/>
+
+  <!-- Callouts -->
+  <g>
+    <path d="M 543,238 H 652 L 683,232 H 710" class="leader"/><circle cx="543" cy="238" r="3" fill="#ad623a"/>
+    <text x="731" y="224" class="num">01</text><text x="765" y="224" class="label">Crank &amp; grip</text><text x="765" y="247" class="desc">Hand-driven lever · wood knob</text>
+    <path d="M 533,316 H 710" class="leader"/><circle cx="533" cy="316" r="3" fill="#ad623a"/>
+    <text x="731" y="309" class="num">02</text><text x="765" y="309" class="label">Hopper lid</text><text x="765" y="332" class="desc">Removable cover with axle opening</text>
+    <path d="M 496,416 H 710" class="leader"/><circle cx="496" cy="416" r="3" fill="#ad623a"/>
+    <text x="731" y="409" class="num">03</text><text x="765" y="409" class="label">Drive axle &amp; bearing</text><text x="765" y="432" class="desc">Bridge centers the rotating shaft</text>
+    <path d="M 541,633 H 710" class="leader"/><circle cx="541" cy="633" r="3" fill="#ad623a"/>
+    <text x="731" y="626" class="num">04</text><text x="765" y="626" class="label">Hopper / housing</text><text x="765" y="649" class="desc">Holds beans and locates the burr set</text>
+    <path d="M 515,842 H 710" class="leader"/><circle cx="515" cy="842" r="3" fill="#ad623a"/>
+    <text x="731" y="835" class="num">05</text><text x="765" y="835" class="label">Fixed outer burr</text><text x="765" y="858" class="desc">Ring with a tapered, toothed throat</text>
+    <path d="M 439,941 H 710" class="leader"/><circle cx="439" cy="941" r="3" fill="#ad623a"/>
+    <text x="731" y="934" class="num">06</text><text x="765" y="934" class="label">Preload spring</text><text x="765" y="957" class="desc">Keeps the burr seated on the adjuster</text>
+    <path d="M 482,1040 H 710" class="leader"/><circle cx="482" cy="1040" r="3" fill="#ad623a"/>
+    <text x="731" y="1033" class="num">07</text><text x="765" y="1033" class="label">Rotating conical burr</text><text x="765" y="1056" class="desc">Spiral cutting teeth · keyed to axle</text>
+    <path d="M 465,1152 H 710" class="leader"/><circle cx="465" cy="1152" r="3" fill="#ad623a"/>
+    <text x="731" y="1145" class="num">08</text><text x="765" y="1145" class="label">Grind adjustment</text><text x="765" y="1168" class="desc">Threaded wheel sets the burr gap</text>
+    <path d="M 532,1304 H 710" class="leader"/><circle cx="532" cy="1304" r="3" fill="#ad623a"/>
+    <text x="731" y="1297" class="num">09</text><text x="765" y="1297" class="label">Grounds cup</text><text x="765" y="1320" class="desc">Detachable collector below the burrs</text>
+  </g>
+  <!-- Small mechanical explanation -->
+  <path d="M 60,1410 H 1040" stroke="#bdc8c9"/>
+  <rect x="60" y="1432" width="4" height="36" fill="#ad623a"/>
+  <text x="80" y="1445" class="heading" font-size="13" font-weight="bold">HOW IT GRINDS</text>
+  <text x="249" y="1445" class="desc" font-size="13">Beans pass between the stationary ring and rotating cone.</text>
+  <text x="249" y="1466" class="desc" font-size="13">Axial adjustment changes their clearance, controlling grind size.</text>
+  <text x="1040" y="1466" text-anchor="end" class="desc" font-size="11">SCHEMATIC · NOT TO SCALE</text>
+</svg>

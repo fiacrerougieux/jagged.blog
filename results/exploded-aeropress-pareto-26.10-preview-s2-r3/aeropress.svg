@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1150" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfdfe"/>
+      <stop offset="1" stop-color="#e8eef1"/>
+    </linearGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset=".16" stop-color="#ffffff" stop-opacity=".15"/>
+      <stop offset=".38" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".68" stop-color="#4d626b" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#43565f" stop-opacity=".28"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7d8f98"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="1150" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="56" y="52" font-size="30" font-weight="700" fill="#22313a" letter-spacing="1">AeroPress</text>
+  <text x="56" y="78" font-size="15" fill="#6d8089" letter-spacing=".5">Exploded assembly — original model, round paper filter</text>
+
+  <!-- centreline -->
+  <line x1="450" y1="100" x2="450" y2="1068" stroke="#9fb0b8" stroke-width="1.2" stroke-dasharray="10 8" opacity=".55"/>
+
+  <!-- assembly direction (right) -->
+  <line x1="728" y1="170" x2="728" y2="1000" stroke="#7d8f98" stroke-width="2.2" stroke-dasharray="8 7" marker-end="url(#arr)" opacity=".9"/>
+  <text transform="translate(752 585) rotate(-90)" text-anchor="middle" font-size="13" letter-spacing="3" fill="#7d8f98">ASSEMBLY DIRECTION</text>
+
+  <!-- small arrows in the gaps -->
+  <g stroke="#7d8f98" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#arr)" opacity=".9">
+    <line x1="450" y1="352" x2="450" y2="404"/>
+    <line x1="450" y1="788" x2="450" y2="814"/>
+    <line x1="450" y1="884" x2="450" y2="914"/>
+  </g>
+
+  <!-- ============ 1. PLUNGER ============ -->
+  <g>
+    <!-- tube -->
+    <path d="M370 135 L370 292 A80 16 0 0 0 530 292 L530 135 Z" fill="#dde7ea" fill-opacity=".62"/>
+    <path d="M370 135 L370 292 A80 16 0 0 0 530 292 L530 135 Z" fill="url(#cyl)"/>
+    <line x1="384" y1="140" x2="384" y2="286" stroke="#aebfc4" stroke-width="1" opacity=".6"/>
+    <line x1="516" y1="140" x2="516" y2="286" stroke="#aebfc4" stroke-width="1" opacity=".6"/>
+    <path d="M384 286 A66 13 0 0 0 516 286" fill="none" stroke="#aebfc4" stroke-width="1" opacity=".6"/>
+    <!-- rim and opening -->
+    <ellipse cx="450" cy="135" rx="80" ry="16" fill="#e6edf0" fill-opacity=".9" stroke="#8fa6ad" stroke-width="2"/>
+    <ellipse cx="450" cy="135" rx="66" ry="12.5" fill="#b7c6cb" fill-opacity=".85" stroke="#93a7ad" stroke-width="1.2"/>
+    <rect x="388" y="150" width="22" height="130" rx="11" fill="#ffffff" opacity=".35"/>
+    <!-- rubber seal -->
+    <path d="M358 274 L356 316 A94 19 0 0 0 544 316 L542 274 Z" fill="#26292c" stroke="#17191b" stroke-width="1.2"/>
+    <path d="M366 280 Q450 296 534 280 L533 292 Q450 306 367 292 Z" fill="#ffffff" opacity=".08"/>
+    <path d="M356 316 A94 19 0 0 0 544 316" fill="none" stroke="#565d63" stroke-width="1.5" opacity=".6"/>
+    <ellipse cx="450" cy="274" rx="92" ry="19" fill="#3a4045" stroke="#1d2023" stroke-width="1.5"/>
+    <ellipse cx="450" cy="278" rx="58" ry="8" fill="none" stroke="#6a7178" stroke-width="2" opacity=".5"/>
+  </g>
+
+  <!-- ============ 2. CHAMBER ============ -->
+  <g>
+    <path d="M350 462 L350 758 A100 20 0 0 0 550 758 L550 462 Z" fill="#e9f1f3" fill-opacity=".55" stroke="#96abb2" stroke-width="2"/>
+    <path d="M350 462 L350 758 A100 20 0 0 0 550 758 L550 462 Z" fill="url(#cyl)"/>
+    <ellipse cx="450" cy="758" rx="94" ry="18" fill="#c6d4d9" fill-opacity=".6" stroke="#a5b8be" stroke-width="1.2"/>
+    <rect x="362" y="492" width="20" height="252" rx="10" fill="#ffffff" opacity=".4"/>
+    <text transform="translate(414 498) rotate(90)" font-size="24" font-weight="700" letter-spacing="5" fill="#4f626b" opacity=".85">AEROPRESS</text>
+    <!-- top flange -->
+    <path d="M334 442 L334 464 A116 23 0 0 0 566 464 L566 442 Z" fill="#d9e4e7" fill-opacity=".85" stroke="#93a9b0" stroke-width="1.5"/>
+    <ellipse cx="450" cy="442" rx="116" ry="23" fill="#e9f1f3" fill-opacity=".92" stroke="#93a9b0" stroke-width="2"/>
+    <ellipse cx="450" cy="442" rx="94" ry="18" fill="#c2d1d6" fill-opacity=".85" stroke="#a5b8be" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ 3. PAPER FILTER ============ -->
+  <g>
+    <path d="M348 840 L348 856 A102 17 0 0 0 552 856 L552 840 Z" fill="#ece5d4" stroke="#d5ccb6" stroke-width="1.5"/>
+    <ellipse cx="450" cy="840" rx="102" ry="17" fill="#f7f2e7" stroke="#d9d0bb" stroke-width="1.8"/>
+    <ellipse cx="450" cy="841" rx="72" ry="11.5" fill="none" stroke="#e3dbc6" stroke-width="1.2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- ============ 4. FILTER CAP ============ -->
+  <g>
+    <path d="M344 946 L344 988 A106 21 0 0 0 556 988 L556 946 Z" fill="#26292c" stroke="#14171a" stroke-width="1.5"/>
+    <!-- grip ridges on cap edge -->
+    <g stroke="#4d5459" stroke-width="1.5" opacity=".8">
+      <line x1="352" y1="956" x2="352" y2="977"/><line x1="362" y1="958" x2="362" y2="984"/><line x1="372" y1="962" x2="372" y2="990"/><line x1="382" y1="964" x2="382" y2="995"/><line x1="392" y1="966" x2="392" y2="999"/><line x1="402" y1="968" x2="402" y2="1002"/><line x1="412" y1="969" x2="412" y2="1004"/><line x1="422" y1="969" x2="422" y2="1006"/><line x1="432" y1="970" x2="432" y2="1006"/><line x1="450" y1="970" x2="450" y2="1007"/><line x1="468" y1="970" x2="468" y2="1006"/><line x1="478" y1="969" x2="478" y2="1006"/><line x1="488" y1="969" x2="488" y2="1004"/><line x1="498" y1="968" x2="498" y2="1002"/><line x1="508" y1="966" x2="508" y2="999"/><line x1="518" y1="964" x2="518" y2="995"/><line x1="528" y1="962" x2="528" y2="990"/><line x1="538" y1="958" x2="538" y2="984"/><line x1="548" y1="956" x2="548" y2="977"/>
+    </g>
+    <ellipse cx="450" cy="946" rx="106" ry="21" fill="#2e3336" stroke="#4a5054" stroke-width="1.8"/>
+    <ellipse cx="450" cy="947" rx="88" ry="16.5" fill="#191c1e"/>
+    <ellipse cx="450" cy="983" rx="88" ry="15" fill="#33383d" stroke="#4a5054" stroke-width="1.2"/>
+    <ellipse cx="450" cy="966" rx="106" ry="20.5" fill="none" stroke="#3d4347" stroke-width="1.2"/>
+    <!-- perforations -->
+    <g fill="#e9e6dd">
+      <ellipse cx="398" cy="976" rx="3.4" ry="1.7"/><ellipse cx="415" cy="976" rx="3.4" ry="1.7"/><ellipse cx="433" cy="976" rx="3.4" ry="1.7"/><ellipse cx="450" cy="976" rx="3.4" ry="1.7"/><ellipse cx="467" cy="976" rx="3.4" ry="1.7"/><ellipse cx="485" cy="976" rx="3.4" ry="1.7"/><ellipse cx="502" cy="976" rx="3.4" ry="1.7"/>
+      <ellipse cx="382" cy="983" rx="3.4" ry="1.7"/><ellipse cx="399" cy="983" rx="3.4" ry="1.7"/><ellipse cx="416" cy="983" rx="3.4" ry="1.7"/><ellipse cx="433" cy="983" rx="3.4" ry="1.7"/><ellipse cx="450" cy="983" rx="3.4" ry="1.7"/><ellipse cx="467" cy="983" rx="3.4" ry="1.7"/><ellipse cx="484" cy="983" rx="3.4" ry="1.7"/><ellipse cx="501" cy="983" rx="3.4" ry="1.7"/><ellipse cx="518" cy="983" rx="3.4" ry="1.7"/>
+      <ellipse cx="398" cy="990" rx="3.4" ry="1.7"/><ellipse cx="415" cy="990" rx="3.4" ry="1.7"/><ellipse cx="433" cy="990" rx="3.4" ry="1.7"/><ellipse cx="450" cy="990" rx="3.4" ry="1.7"/><ellipse cx="467" cy="990" rx="3.4" ry="1.7"/><ellipse cx="485" cy="990" rx="3.4" ry="1.7"/><ellipse cx="502" cy="990" rx="3.4" ry="1.7"/>
+    </g>
+  </g>
+
+  <!-- ============ leader lines + labels ============ -->
+  <g stroke="#81959e" stroke-width="1.4" fill="none">
+    <path d="M256 190 H366"/>
+    <path d="M256 612 H346"/>
+    <path d="M256 850 H344"/>
+    <path d="M256 968 H336"/>
+  </g>
+  <g fill="#81959e">
+    <circle cx="372" cy="190" r="3"/>
+    <circle cx="352" cy="612" r="3"/>
+    <circle cx="350" cy="850" r="3"/>
+    <circle cx="342" cy="968" r="3"/>
+  </g>
+  <g font-size="15" font-weight="700" text-anchor="middle">
+    <circle cx="72" cy="190" r="14" fill="#ffffff" stroke="#4a5a63" stroke-width="1.6"/>
+    <text x="72" y="195" fill="#22313a">1</text>
+    <circle cx="72" cy="612" r="14" fill="#ffffff" stroke="#4a5a63" stroke-width="1.6"/>
+    <text x="72" y="617" fill="#22313a">2</text>
+    <circle cx="72" cy="850" r="14" fill="#ffffff" stroke="#4a5a63" stroke-width="1.6"/>
+    <text x="72" y="855" fill="#22313a">3</text>
+    <circle cx="72" cy="968" r="14" fill="#ffffff" stroke="#4a5a63" stroke-width="1.6"/>
+    <text x="72" y="973" fill="#22313a">4</text>
+  </g>
+  <g font-size="16.5" font-weight="700" fill="#22313a" letter-spacing="1">
+    <text x="100" y="195">PLUNGER</text>
+    <text x="100" y="617">BREW CHAMBER</text>
+    <text x="100" y="855">PAPER FILTER</text>
+    <text x="100" y="973">FILTER CAP</text>
+  </g>
+  <g font-size="12.5" fill="#6d8089">
+    <text x="100" y="213">flexible rubber seal</text>
+    <text x="100" y="635">translucent cylinder</text>
+    <text x="100" y="873">round micro-filter</text>
+    <text x="100" y="991">twists onto chamber</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="450" y="1108" text-anchor="middle" font-size="13.5" fill="#6d8089">Assembly: seat the paper filter in the cap · twist the cap onto the chamber · insert the plunger and press</text>
+</svg>

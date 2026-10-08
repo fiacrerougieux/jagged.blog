@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1120" viewBox="0 0 1000 1120">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#e5d9bc"/><stop offset=".42" stop-color="#fff8e7"/><stop offset="1" stop-color="#ecdfc2"/></linearGradient>
+    <radialGradient id="paperIn" cx="50%" cy="83%" r="78%"><stop stop-color="#b6a27c"/><stop offset=".35" stop-color="#dfcfaa"/><stop offset="1" stop-color="#f8efd7"/></radialGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#a3c4c3"/><stop offset=".28" stop-color="#e4f1ed"/><stop offset=".65" stop-color="#f5faf4"/><stop offset="1" stop-color="#9dbab8"/></linearGradient>
+    <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bfd7d1"/><stop offset=".65" stop-color="#eaf4e9"/><stop offset="1" stop-color="#88aba7"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#b0cecb" stop-opacity=".4"/><stop offset=".18" stop-color="#f5ffff" stop-opacity=".65"/><stop offset=".5" stop-color="#e1eeeb" stop-opacity=".12"/><stop offset=".85" stop-color="#d3e6e3" stop-opacity=".45"/><stop offset="1" stop-color="#8caeaa" stop-opacity=".4"/></linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#99572e"/><stop offset="1" stop-color="#492c21"/></linearGradient>
+    <filter id="shadow" x="-40%" y="-100%" width="180%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#859c98" stroke-width="1.2"/></marker>
+    <style>
+      text {font-family: 'Arial', 'Helvetica', sans-serif; fill:#253e3a}
+      .leader {fill:none;stroke:#8c9d95;stroke-width:1.3}
+      .guide {fill:none;stroke:#8ca39d;stroke-width:1.4;stroke-dasharray:4 6}
+      .outline {stroke:#688c87;stroke-width:1.7;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1000" height="1120" fill="#f8f7f1"/>
+  <path d="M56 127H944" stroke="#d5dcd3"/>
+  <text x="56" y="49" font-size="12" letter-spacing="3" fill="#61776f">BREW EQUIPMENT / ASSEMBLY STUDY</text>
+  <text x="54" y="98" font-size="43" font-weight="600" letter-spacing="-1.5">V60 pour-over</text>
+  <text x="943" y="88" font-size="13" text-anchor="end" letter-spacing="1">EXPLODED VIEW</text>
+  <text x="72" y="179" font-size="11" letter-spacing="2" fill="#73847b">ASSEMBLY AXIS</text>
+  <path d="M440 160V190 M440 372V404 M440 659V725" class="guide"/>
+  <path d="M440 378V398 M440 680V716" fill="none" stroke="#859c98" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Disposable conical paper filter. The curved opening is cut paper, not a mesh. -->
+  <path d="M309 215 C328 267 382 323 435 359 Q440 364 445 359 C497 322 552 266 571 215Z" fill="url(#paper)" stroke="#b9aa8b" stroke-width="1.5"/>
+  <ellipse cx="440" cy="215" rx="131" ry="38" fill="url(#paperIn)" stroke="#b9aa8b" stroke-width="1.5"/>
+  <g fill="none" stroke="#b9aa8b" stroke-width="1" opacity=".38">
+    <path d="M332 201Q392 219 440 243"/>
+    <path d="M377 184Q420 218 440 243"/>
+    <path d="M481 182Q460 214 440 243"/>
+    <path d="M548 197Q488 224 440 243"/>
+  </g>
+  <path d="M313 215C323 172 556 172 567 215" fill="none" stroke="#fffaf0" stroke-width="2" opacity=".8"/>
+  <path d="M314 218 Q440 253 566 218 Q524 287 440 353 Q354 288 314 218Z" fill="#fff8e7" opacity=".25"/>
+  <path d="M555 234 Q513 305 445 355" fill="none" stroke="#b9aa8b" stroke-width="5" opacity=".42"/>
+  <path d="M550 234 Q509 301 442 352" fill="none" stroke="#fffdf1" stroke-width="1.8"/>
+  <path d="M337 243Q379 307 427 345" fill="none" stroke="#fffdf2" stroke-width="3" opacity=".65"/>
+  <path d="M555 260H664L691 239" class="leader"/><circle cx="555" cy="260" r="3" fill="#8c9d95"/>
+  <text x="716" y="225" font-size="12" letter-spacing="2" fill="#6e8478">01</text>
+  <text x="716" y="253" font-size="22" font-weight="600">Paper filter</text>
+  <text x="716" y="277" font-size="14" fill="#697970">Conical, disposable</text>
+  <text x="716" y="298" font-size="14" fill="#697970">Fold the bonded seam.</text>
+
+  <!-- Ceramic V60: open cone, spiral ribs, handle, and integral support flange. -->
+  <path d="M586 455 C653 431 673 467 657 514 C648 541 622 555 593 550 L585 529 C610 534 630 522 636 505 C647 475 635 461 595 475Z" fill="url(#ceramic)" class="outline"/>
+  <path d="M598 473C635 461 647 476 636 505C630 522 610 534 592 529" fill="none" stroke="#f9fcf4" stroke-width="3"/>
+  <ellipse cx="440" cy="640" rx="124" ry="29" fill="#a9c4be" class="outline"/>
+  <path d="M316 629V640C316 678 564 678 564 640V629" fill="url(#ceramic)" class="outline"/>
+  <ellipse cx="440" cy="629" rx="124" ry="29" fill="#e2eee6" class="outline"/>
+  <path d="M270 445 Q307 516 397 601 L407 626 Q440 642 473 626 L483 601 Q573 516 610 445Z" fill="url(#ceramic)" class="outline"/>
+  <path d="M285 461Q320 526 402 604 M317 477Q351 546 414 615 M362 490Q385 559 426 621 M417 498Q429 566 440 626 M475 497Q468 564 454 621 M532 483Q504 560 469 608 M581 463Q548 535 478 600" fill="none" stroke="#80a8a1" stroke-width="3" opacity=".48"/>
+  <path d="M290 462Q325 526 405 602 M321 478Q355 546 417 613 M367 491Q389 557 430 619 M421 498Q433 565 444 624 M479 497Q472 563 458 619 M536 483Q508 559 473 606" fill="none" stroke="#fafff5" stroke-width="2.3" opacity=".85"/>
+  <ellipse cx="440" cy="444" rx="171" ry="51" fill="#f1f7ed" class="outline"/>
+  <ellipse cx="440" cy="444" rx="157" ry="42" fill="url(#inside)" stroke="#91b1a7" stroke-width="1.3"/>
+  <!-- Visible interior ribs sweep inward to the drain. -->
+  <g fill="none" stroke="#789d91" stroke-width="2.5" opacity=".62">
+    <path d="M287 445Q352 427 433 463"/><path d="M309 421Q379 423 436 462"/>
+    <path d="M353 408Q413 427 440 463"/><path d="M410 404Q452 429 444 464"/>
+    <path d="M469 405Q484 434 448 465"/><path d="M525 412Q514 443 450 466"/>
+    <path d="M571 428Q529 453 452 468"/><path d="M594 445Q540 469 451 469"/>
+    <path d="M573 462Q517 480 449 471"/><path d="M525 478Q487 482 447 472"/>
+    <path d="M367 480Q396 478 434 469"/><path d="M317 465Q366 455 432 466"/>
+  </g>
+  <ellipse cx="442" cy="468" rx="14" ry="6" fill="#547870"/>
+  <path d="M270 445C272 514 608 514 610 445" fill="none" stroke="#fdfef6" stroke-width="3" opacity=".8"/>
+  <path d="M588 567H665L692 542" class="leader"/><circle cx="588" cy="567" r="3" fill="#8c9d95"/>
+  <text x="716" y="517" font-size="12" letter-spacing="2" fill="#6e8478">02</text>
+  <text x="716" y="545" font-size="22" font-weight="600">V60 dripper</text>
+  <text x="716" y="570" font-size="14" fill="#697970">60° ceramic cone</text>
+  <text x="716" y="591" font-size="14" fill="#697970">Spiral ribs · single drain</text>
+  <text x="716" y="612" font-size="14" fill="#697970">Integral support flange</text>
+
+  <!-- Glass server, its handle behind the vessel. -->
+  <ellipse cx="440" cy="1015" rx="172" ry="18" fill="#6c8174" opacity=".13" filter="url(#shadow)"/>
+  <path d="M542 799C642 773 663 823 645 879C633 920 599 946 564 936L565 914C592 919 615 892 624 866C636 828 623 806 555 824Z" fill="url(#glass)" stroke="#769a94" stroke-width="2"/>
+  <path d="M553 804C639 786 654 826 637 875C625 910 600 934 574 930" fill="none" stroke="#fff" stroke-width="4" opacity=".8"/>
+  <path d="M347 761C346 807 332 831 307 866C275 910 271 959 291 989C318 1029 554 1029 582 989C603 958 597 912 570 872C547 838 534 809 535 761Z" fill="url(#glass)" stroke="#789a92" stroke-width="2"/>
+  <path d="M292 927C287 951 290 974 304 987C339 1016 535 1016 571 987C585 973 589 952 583 927Z" fill="url(#coffee)" opacity=".92"/>
+  <ellipse cx="438" cy="927" rx="145" ry="27" fill="#a16a40" stroke="#70432b" stroke-width="1.3"/>
+  <path d="M302 978C332 1012 545 1012 575 978" fill="none" stroke="#e0e8dc" stroke-width="3" opacity=".5"/>
+  <path d="M350 763C350 811 332 844 317 868C302 892 296 915 296 939" fill="none" stroke="#fff" stroke-width="6" opacity=".85"/>
+  <path d="M360 796Q353 841 331 873" fill="none" stroke="#fff" stroke-width="2" opacity=".9"/>
+  <path d="M534 824C552 865 583 899 582 943" fill="none" stroke="#759e97" stroke-width="3" opacity=".3"/>
+  <!-- Open neck and pouring lip. -->
+  <path d="M345 761C347 735 401 725 457 732L479 720L497 737C523 743 538 750 536 761C533 787 350 789 345 761Z" fill="#e9f3eb" fill-opacity=".65" stroke="#789a92" stroke-width="2"/>
+  <path d="M354 759C364 742 414 737 458 740L479 729L491 744C515 748 528 754 527 760C516 778 367 778 354 759Z" fill="#cadeda" fill-opacity=".37" stroke="#a1b7af" stroke-width="1.2"/>
+  <path d="M347 764C365 788 515 788 535 764" fill="none" stroke="#fff" stroke-width="3"/>
+  <g stroke="#6d8981" stroke-width="1.3" fill="none" opacity=".8"><path d="M495 855H516 M501 883H519 M505 911H522"/></g>
+  <g font-size="10" fill="#6d8981"><text x="469" y="859">600</text><text x="475" y="887">400</text><text x="479" y="915">200</text></g>
+  <path d="M601 947H665L692 894" class="leader"/><circle cx="601" cy="947" r="3" fill="#8c9d95"/>
+  <text x="716" y="866" font-size="12" letter-spacing="2" fill="#6e8478">03</text>
+  <text x="716" y="894" font-size="22" font-weight="600">Glass server</text>
+  <text x="716" y="919" font-size="14" fill="#697970">Heat-resistant glass</text>
+  <text x="716" y="940" font-size="14" fill="#697970">Collects the brewed coffee</text>
+  <path d="M56 1060H944" stroke="#d5dcd3"/>
+  <text x="56" y="1088" font-size="12" fill="#667b71">ASSEMBLE TOP TO BOTTOM</text>
+  <text x="944" y="1088" font-size="12" text-anchor="end" fill="#667b71">Paper filter → cone → server  /  Not to scale</text>
+</svg>

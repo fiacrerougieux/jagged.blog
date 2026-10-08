@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1630" viewBox="0 0 900 1630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="metalV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#f6f9fb"/>
+      <stop offset="18%"  stop-color="#c8d1d9"/>
+      <stop offset="42%"  stop-color="#8e99a4"/>
+      <stop offset="62%"  stop-color="#b9c3cb"/>
+      <stop offset="85%"  stop-color="#e6ecf1"/>
+      <stop offset="100%" stop-color="#aab5be"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#5b646d"/>
+      <stop offset="35%"  stop-color="#39424a"/>
+      <stop offset="70%"  stop-color="#4d565e"/>
+      <stop offset="100%" stop-color="#2b3238"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="22%"  stop-color="#e2eff7" stop-opacity="0.75"/>
+      <stop offset="48%"  stop-color="#a9c9dc" stop-opacity="0.65"/>
+      <stop offset="72%"  stop-color="#dceef7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.85"/>
+    </linearGradient>
+    <pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#eef3f6"/>
+      <path d="M0,0 L7,7 M7,0 L0,7" stroke="#93a5b1" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="lidGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#eef3f7"/>
+      <stop offset="30%"  stop-color="#b9c3cb"/>
+      <stop offset="55%"  stop-color="#7f8a94"/>
+      <stop offset="80%"  stop-color="#c3ccd4"/>
+      <stop offset="100%" stop-color="#96a1aa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1630" fill="#ffffff"/>
+
+  <text x="450" y="34" text-anchor="middle" font-size="23" font-weight="bold" fill="#1d2a33" letter-spacing="1.5">FRENCH PRESS &#8212; EXPLODED ASSEMBLY</text>
+  <text x="450" y="56" text-anchor="middle" font-size="12" fill="#6b7883" letter-spacing="0.8">three-piece plunger filter (mesh screen / spring disc / cross support)</text>
+
+  <!-- assembly axis -->
+  <line x1="380" y1="150" x2="380" y2="1580" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="12 9"/>
+
+  <!-- 1 KNOB -->
+  <g>
+    <rect x="370" y="104" width="20" height="40" rx="7" fill="url(#dark)"/>
+    <ellipse cx="380" cy="94" rx="32" ry="15" fill="url(#dark)" stroke="#1e252b" stroke-width="1.5"/>
+    <ellipse cx="372" cy="90" rx="13" ry="5" fill="#7d8792" opacity="0.7"/>
+  </g>
+
+  <!-- 2 LID -->
+  <g>
+    <path d="M 273,260 A 107,107 0 0 1 487,260 Z" fill="url(#lidGrad)" stroke="#5f6a73" stroke-width="1.5"/>
+    <path d="M 265,260 L 495,260 L 507,296 L 253,296 Z" fill="url(#lidGrad)" stroke="#5f6a73" stroke-width="1.5"/>
+    <path d="M 316,208 A 107,107 0 0 1 360,168" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.30"/>
+    <rect x="356" y="252" width="48" height="10" rx="4" fill="#6d7881" opacity="0.55"/>
+  </g>
+
+  <!-- 3 LID GASKET -->
+  <path d="M 253,330 a 127,16 0 1,0 254,0 a 127,16 0 1,0 -254,0 Z
+           M 274,330 a 106,11 0 1,1 212,0 a 106,11 0 1,1 -212,0 Z"
+        fill="#b7c0c8" fill-rule="evenodd" stroke="#828d96" stroke-width="1.2"/>
+
+  <!-- 4 PLUNGER TUBE -->
+  <g>
+    <line x1="380" y1="382" x2="380" y2="578" stroke="url(#metalV)" stroke-width="60" stroke-linecap="round"/>
+    <line x1="380" y1="386" x2="380" y2="574" stroke="#4c555d" stroke-width="42" stroke-linecap="round"/>
+    <line x1="380" y1="386" x2="380" y2="574" stroke="url(#metalV)" stroke-width="34" stroke-linecap="round" opacity="0.45"/>
+    <rect x="350" y="558" width="60" height="22" rx="9" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.2"/>
+  </g>
+  <line x1="380" y1="600" x2="380" y2="612" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 5 MESH SCREEN -->
+  <g>
+    <ellipse cx="380" cy="642" rx="120" ry="25" fill="url(#mesh)" stroke="#8b96a1" stroke-width="1.6"/>
+    <ellipse cx="380" cy="642" rx="120" ry="25" fill="none" stroke="#c9d3da" stroke-width="3.5" opacity="0.8"/>
+  </g>
+  <line x1="380" y1="672" x2="380" y2="712" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 6 SPRING FILTER DISC -->
+  <g>
+    <ellipse cx="380" cy="744" rx="134" ry="28" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.4"/>
+    <ellipse cx="380" cy="744" rx="139" ry="32" fill="none" stroke="#93a0aa" stroke-width="9" stroke-dasharray="4 5"/>
+    <ellipse cx="380" cy="739" rx="60" ry="12" fill="#ffffff" opacity="0.28"/>
+  </g>
+  <line x1="380" y1="776" x2="380" y2="812" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 7 CROSS SUPPORT DISC -->
+  <g>
+    <ellipse cx="380" cy="846" rx="142" ry="30" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.4"/>
+    <line x1="380" y1="846" x2="238" y2="846" stroke="#6e7881" stroke-width="3"/>
+    <line x1="380" y1="846" x2="522" y2="846" stroke="#6e7881" stroke-width="3"/>
+    <line x1="380" y1="846" x2="380" y2="816" stroke="#6e7881" stroke-width="3"/>
+    <line x1="380" y1="846" x2="380" y2="876" stroke="#6e7881" stroke-width="3"/>
+    <circle cx="380" cy="846" r="13" fill="#8e99a4" stroke="#5f6a73" stroke-width="1.6"/>
+    <circle cx="380" cy="846" r="5" fill="#3d464d"/>
+  </g>
+  <line x1="380" y1="880" x2="380" y2="906" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 8 GLASS CARAFE -->
+  <g>
+    <path d="M 228,936 L 252,1230 Q 254,1264 292,1264 L 468,1264 Q 506,1264 508,1230 L 532,936 Z"
+          fill="url(#glass)" stroke="#93b0c2" stroke-width="2"/>
+    <ellipse cx="380" cy="936" rx="152" ry="30" fill="#eaf4fa" fill-opacity="0.55" stroke="#93b0c2" stroke-width="2"/>
+    <ellipse cx="380" cy="936" rx="134" ry="22" fill="#ffffff" fill-opacity="0.5" stroke="#a9c4d3" stroke-width="1.2"/>
+    <path d="M 262,960 L 276,1215" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.65"/>
+    <path d="M 512,1000 L 498,1200" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 300,1090 L 320,1240" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+  </g>
+  <line x1="380" y1="1268" x2="380" y2="1290" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 9 BASE / FOOT -->
+  <g>
+    <ellipse cx="380" cy="1310" rx="132" ry="20" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.4"/>
+    <ellipse cx="380" cy="1310" rx="104" ry="13" fill="#5f6a73" opacity="0.55"/>
+  </g>
+  <line x1="380" y1="1332" x2="380" y2="1358" stroke="#9aa5ae" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 10 CHROME FRAME -->
+  <g>
+    <rect x="228" y="1360" width="304" height="26" rx="13" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.4"/>
+    <rect x="228" y="1374" width="24" height="140" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.2"/>
+    <rect x="508" y="1374" width="24" height="140" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.2"/>
+    <rect x="214" y="1502" width="332" height="28" rx="14" fill="url(#metalV)" stroke="#6e7881" stroke-width="1.4"/>
+  </g>
+
+  <!-- 11 HANDLE -->
+  <path d="M 540,1378 L 568,1378 A 72,67 0 0 1 568,1512 L 540,1512"
+        fill="none" stroke="#8e99a4" stroke-width="17" stroke-linecap="round"/>
+  <path d="M 540,1378 L 568,1378 A 72,67 0 0 1 568,1512 L 540,1512"
+        fill="none" stroke="#dbe3e9" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- ===== LEADERS: LEFT ===== -->
+  <g stroke="#7d8a94" stroke-width="1">
+    <line x1="215" y1="94"  x2="344" y2="94"/><circle cx="346" cy="94" r="2.6" fill="#5c666f"/>
+    <line x1="215" y1="212" x2="292" y2="212"/><circle cx="294" cy="212" r="2.6" fill="#5c666f"/>
+    <line x1="215" y1="330" x2="249" y2="330"/><circle cx="251" cy="330" r="2.6" fill="#5c666f"/>
+    <line x1="215" y1="642" x2="256" y2="642"/><circle cx="258" cy="642" r="2.6" fill="#5c666f"/>
+    <line x1="215" y1="744" x2="237" y2="744"/><circle cx="239" cy="744" r="2.6" fill="#5c666f"/>
+    <line x1="215" y1="846" x2="234" y2="846"/><circle cx="236" cy="846" r="2.6" fill="#5c666f"/>
+  </g>
+  <g font-size="15" fill="#22303a" text-anchor="end">
+    <text x="207" y="99">1&#8194;&#183;&#8194;Knob</text>
+    <text x="207" y="217">2&#8194;&#183;&#8194;Lid</text>
+    <text x="207" y="335">3&#8194;&#183;&#8194;Lid gasket</text>
+    <text x="207" y="647">5&#8194;&#183;&#8194;Mesh screen</text>
+    <text x="207" y="749">6&#8194;&#183;&#8194;Spring filter disc</text>
+    <text x="207" y="851">7&#8194;&#183;&#8194;Cross support disc</text>
+  </g>
+
+  <!-- ===== LEADERS: RIGHT ===== -->
+  <g stroke="#7d8a94" stroke-width="1">
+    <line x1="565" y1="480" x2="412" y2="480"/><circle cx="410" cy="480" r="2.6" fill="#5c666f"/>
+    <line x1="565" y1="1040" x2="524" y2="1040"/><circle cx="522" cy="1040" r="2.6" fill="#5c666f"/>
+    <line x1="565" y1="1310" x2="514" y2="1310"/><circle cx="512" cy="1310" r="2.6" fill="#5c666f"/>
+    <line x1="565" y1="1382" x2="534" y2="1382"/><circle cx="532" cy="1382" r="2.6" fill="#5c666f"/>
+    <line x1="660" y1="1480" x2="632" y2="1480"/><circle cx="630" cy="1480" r="2.6" fill="#5c666f"/>
+  </g>
+  <g font-size="15" fill="#22303a">
+    <text x="573" y="485">4&#8194;&#183;&#8194;Plunger tube</text>
+    <text x="573" y="1045">8&#8194;&#183;&#8194;Glass carafe</text>
+    <text x="573" y="1315">9&#8194;&#183;&#8194;Base / foot plate</text>
+    <text x="573" y="1441">10&#8194;&#183;&#8194;Chrome frame</text>
+    <text x="668" y="1485">11&#8194;&#183;&#8194;Handle</text>
+  </g>
+
+  <text x="450" y="1596" text-anchor="middle" font-size="11.5" fill="#7d8a94">Assembly axis shown dashed &#183; parts numbered in order of assembly</text>
+</svg>

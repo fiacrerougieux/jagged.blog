@@ -1,0 +1,32 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-claude-haiku-5.5-s1-r8",
+  "exportedAt": "2026-10-08T00:51:20.586Z",
+  "run": "2026-10-08-lsystem-pruned-coffee-shrub-1148",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "anthropic/claude-haiku-5.5",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": false,
+    "detail": "too little body to find a side"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"F\",\n  \"rules\": {\n    \"F\": \"FF[+F][-f]F[+F][-f]\"\n  },\n  \"angle\": 25,\n  \"iterations\": 4,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 10
+  },
+  "output": null,
+  "notes": []
+}

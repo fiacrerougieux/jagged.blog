@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1270" viewBox="0 0 760 1270" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#8d99a5"/>
+      <stop offset="0.18" stop-color="#f4f7f9"/>
+      <stop offset="0.5"  stop-color="#c6cfd7"/>
+      <stop offset="0.82" stop-color="#7f8b97"/>
+      <stop offset="1"    stop-color="#b9c3cc"/>
+    </linearGradient>
+    <linearGradient id="steelV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#7d8894"/>
+      <stop offset="0.15" stop-color="#eef2f5"/>
+      <stop offset="0.45" stop-color="#b7c1ca"/>
+      <stop offset="0.75" stop-color="#79858f"/>
+      <stop offset="1"    stop-color="#aab4be"/>
+    </linearGradient>
+    <linearGradient id="plastic" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#2c3138"/>
+      <stop offset="0.22" stop-color="#5b636d"/>
+      <stop offset="0.55" stop-color="#3f454d"/>
+      <stop offset="1"    stop-color="#23272c"/>
+    </linearGradient>
+    <linearGradient id="plasticV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b636d"/>
+      <stop offset="1" stop-color="#23272c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.12" stop-color="#d7ebf5" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#eaf5fa" stop-opacity="0.55"/>
+      <stop offset="0.72" stop-color="#cfe6f2" stop-opacity="0.85"/>
+      <stop offset="1"    stop-color="#b6d4e6" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#cfd6dc"/>
+      <path d="M0,0 L7,7 M7,0 L0,7" stroke="#8b949e" stroke-width="0.8"/>
+      <path d="M0,3.5 L7,3.5" stroke="#a8b1ba" stroke-width="0.5"/>
+      <path d="M3.5,0 L3.5,7" stroke="#a8b1ba" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa0ad"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="1270" fill="#ffffff"/>
+
+  <!-- ================= header ================= -->
+  <text x="40" y="44" font-size="26" font-weight="bold" fill="#22303c">French Press &#8212; Exploded Assembly</text>
+  <line x1="40" y1="56" x2="720" y2="56" stroke="#22303c" stroke-width="2"/>
+  <text x="40" y="78" font-size="14" fill="#5b6a78">Cafeti&#232;re &#224; piston &#183; 8 parts &#183; standard three-piece plunger filter: cross plate / mesh screen / spring</text>
+
+  <!-- assembly axis -->
+  <line x1="340" y1="88" x2="340" y2="1215" stroke="#9fb0bd" stroke-width="1.4" stroke-dasharray="10 7" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <!-- ================= 1. plunger knob ================= -->
+  <g>
+    <path d="M300,132 L300,112 A40,36 0 0 1 380,112 L380,132 Z" fill="url(#plasticV)" stroke="#15181c" stroke-width="1.2"/>
+    <path d="M312,110 A30,30 0 0 1 344,98" fill="none" stroke="#8e97a1" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+    <ellipse cx="340" cy="132" rx="40" ry="7" fill="#1b1f24"/>
+    <!-- threaded stud that engages the rod -->
+    <rect x="330" y="137" width="20" height="20" fill="url(#steelV)" stroke="#6f7a85" stroke-width="0.8"/>
+    <g stroke="#77828d" stroke-width="1.1">
+      <line x1="330" y1="142" x2="350" y2="146"/>
+      <line x1="330" y1="150" x2="350" y2="154"/>
+    </g>
+  </g>
+
+  <!-- ================= 2. lid ================= -->
+  <g>
+    <!-- handle -->
+    <path d="M258,232 Q252,180 340,180 Q428,180 422,232" fill="none" stroke="#1d2126" stroke-width="10" stroke-linecap="round"/>
+    <path d="M258,232 Q252,180 340,180 Q428,180 422,232" fill="none" stroke="#454c55" stroke-width="3.5" stroke-linecap="round" opacity="0.7"/>
+    <!-- lid body -->
+    <rect x="240" y="232" width="200" height="26" rx="5" fill="url(#plastic)" stroke="#171a1e" stroke-width="1.2"/>
+    <rect x="240" y="232" width="200" height="7" rx="3" fill="#656d77" opacity="0.7"/>
+    <!-- downward pouring lip -->
+    <path d="M434,250 L460,256 L460,275 L436,268 Z" fill="#2b3037" stroke="171a1e" stroke-width="1"/>
+    <path d="M438,253 L455,257" fill="none" stroke="#5c636d" stroke-width="2" opacity="0.8"/>
+    <!-- rod bushing / hole -->
+    <ellipse cx="340" cy="245" rx="11" ry="9" fill="url(#steelV)" stroke="#5f6a74" stroke-width="0.8"/>
+    <ellipse cx="340" cy="245" rx="6" ry="4.5" fill="#0e1114"/>
+  </g>
+
+  <!-- ================= 3. plunger rod ================= -->
+  <g>
+    <!-- threaded top end (takes the knob) -->
+    <rect x="332" y="292" width="16" height="26" fill="url(#steelV)" stroke="#6f7a85" stroke-width="0.8"/>
+    <g stroke="#77828d" stroke-width="1.1">
+      <line x1="332" y1="299" x2="348" y2="305"/>
+      <line x1="332" y1="307" x2="348" y2="313"/>
+    </g>
+    <!-- shaft -->
+    <rect x="332" y="318" width="16" height="350" fill="url(#steelV)" stroke="#6f7a85" stroke-width="0.8"/>
+    <rect x="334" y="318" width="3" height="350" fill="#ffffff" opacity="0.75"/>
+    <!-- threaded lower end (takes the filter stack) -->
+    <rect x="333" y="668" width="14" height="32" fill="url(#steelV)" stroke="#6f7a85" stroke-width="0.8"/>
+    <g stroke="#77828d" stroke-width="1.1">
+      <line x1="333" y1="675" x2="347" y2="681"/>
+      <line x1="333" y1="683" x2="347" y2="689"/>
+      <line x1="333" y1="691" x2="347" y2="697"/>
+    </g>
+  </g>
+
+  <!-- ================= 4. spring ================= -->
+  <g>
+    <path d="M325,724 L355,734 L325,744 L355,754 L325,764 L355,774 L325,784 L355,794"
+          fill="none" stroke="#7f8b96" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M325,724 L355,734 L325,744 L355,754 L325,764 L355,774 L325,784 L355,794"
+          fill="none" stroke="#e4eaef" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <line x1="325" y1="724" x2="325" y2="794" stroke="#6e7a85" stroke-width="1.2" opacity="0.5"/>
+    <line x1="355" y1="724" x2="355" y2="794" stroke="#6e7a85" stroke-width="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- ================= 5. filter frame (cross plate) ================= -->
+  <g>
+    <rect x="256" y="806" width="168" height="34" rx="4" fill="url(#steel)" stroke="#67727d" stroke-width="1.1"/>
+    <rect x="256" y="806" width="168" height="8" rx="3" fill="#ffffff" opacity="0.5"/>
+    <rect x="256" y="832" width="168" height="8" rx="3" fill="#5c6771" opacity="0.35"/>
+    <g fill="#5f6a74" opacity="0.85">
+      <circle cx="270" cy="816" r="4"/><circle cx="298" cy="816" r="4"/><circle cx="326" cy="816" r="4"/>
+      <circle cx="354" cy="816" r="4"/><circle cx="382" cy="816" r="4"/><circle cx="410" cy="816" r="4"/>
+      <circle cx="270" cy="831" r="4"/><circle cx="298" cy="831" r="4"/><circle cx="326" cy="831" r="4"/>
+      <circle cx="354" cy="831" r="4"/><circle cx="382" cy="831" r="4"/><circle cx="410" cy="831" r="4"/>
+    </g>
+    <circle cx="340" cy="823" r="12" fill="#c3ccd4" stroke="#5f6a74" stroke-width="1"/>
+    <circle cx="340" cy="823" r="6" fill="#3b434b"/>
+  </g>
+
+  <!-- ================= 6. mesh screen ================= -->
+  <g>
+    <rect x="256" y="868" width="168" height="17" rx="3" fill="url(#mesh)" stroke="#6b757f" stroke-width="1.1"/>
+    <rect x="256" y="868" width="168" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+    <circle cx="340" cy="876" r="8" fill="#aab3bb" stroke="#5f6a74" stroke-width="1"/>
+    <circle cx="340" cy="876" r="4.5" fill="#3b434b"/>
+  </g>
+
+  <!-- ================= 7. carafe ================= -->
+  <g>
+    <ellipse cx="340" cy="905" rx="92" ry="13" fill="#e8f4fa" stroke="#8fb4c8" stroke-width="1.4"/>
+    <path d="M248,905 L248,1170 Q248,1200 278,1200 L402,1200 Q432,1200 432,1170 L432,905 Z"
+          fill="url(#glass)" stroke="#7ea8bf" stroke-width="1.6"/>
+    <path d="M256,908 L256,1170 Q256,1192 276,1192" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+    <path d="M272,908 L272,1176" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.3" stroke-linecap="round"/>
+    <path d="M424,908 L424,1170 Q424,1192 404,1192" fill="none" stroke="#5f8ea6" stroke-width="2" opacity="0.45"/>
+    <!-- etched capacity marks -->
+    <g stroke="#7ba8c2" stroke-width="1.8" opacity="0.85">
+      <line x1="249" y1="960"  x2="266" y2="960"/>
+      <line x1="249" y1="1040" x2="266" y2="1040"/>
+      <line x1="249" y1="1120" x2="266" y2="1120"/>
+    </g>
+    <g font-size="10" fill="#6f9ab5" font-weight="bold">
+      <text x="272" y="963">8</text>
+      <text x="272" y="1043">6</text>
+      <text x="272" y="1123">4</text>
+    </g>
+    <path d="M248,905 L432,905" fill="none" stroke="#7ea8bf" stroke-width="1.6"/>
+  </g>
+
+  <!-- ================= 8. base bezel ================= -->
+  <g>
+    <ellipse cx="340" cy="1208" rx="98" ry="10" fill="#dfe6ec" stroke="#68727c" stroke-width="1.2"/>
+    <ellipse cx="340" cy="1208" rx="98" ry="10" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.55"/>
+    <path d="M242,1208 L242,1220 Q242,1228 254,1228 L426,1228 Q438,1228 438,1220 L438,1208 Z"
+          fill="url(#steelV)" stroke="#68727c" stroke-width="1.2"/>
+  </g>
+
+  <!-- bracket grouping the three-piece filter -->
+  <g>
+    <line x1="222" y1="742" x2="222" y2="902" stroke="#22303c" stroke-width="1.4"/>
+    <line x1="222" y1="742" x2="232" y2="742" stroke="#22303c" stroke-width="1.4"/>
+    <line x1="222" y1="902" x2="232" y2="902" stroke="#22303c" stroke-width="1.4"/>
+    <text x="198" y="822" font-size="13" font-weight="bold" fill="#22303c" letter-spacing="2"
+          transform="rotate(-90 198 822)" text-anchor="middle">3-PIECE FILTER</text>
+  </g>
+
+  <!-- ================= callouts ================= -->
+  <g font-size="15" fill="#22303c">
+    <!-- 1 knob -->
+    <line x1="384" y1="116" x2="496" y2="112" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="112" r="10" fill="#22303c"/>
+    <text x="510" y="117" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1</text>
+    <text x="528" y="108" font-weight="bold">Plunger knob</text>
+    <text x="528" y="126" font-size="12" fill="#6b7a88">bakelite dome</text>
+
+    <!-- 2 lid -->
+    <line x1="446" y1="245" x2="496" y2="245" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="245" r="10" fill="#22303c"/>
+    <text x="510" y="250" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">2</text>
+    <text x="528" y="241" font-weight="bold">Lid</text>
+    <text x="528" y="259" font-size="12" fill="#6b7a88">pouring lip + handle</text>
+
+    <!-- 3 rod -->
+    <line x1="350" y1="490" x2="496" y2="490" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="490" r="10" fill="#22303c"/>
+    <text x="510" y="495" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">3</text>
+    <text x="528" y="486" font-weight="bold">Plunger rod</text>
+    <text x="528" y="504" font-size="12" fill="#6b7a88">stainless steel, threaded both ends</text>
+
+    <!-- 4 spring -->
+    <line x1="360" y1="759" x2="496" y2="759" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="759" r="10" fill="#22303c"/>
+    <text x="510" y="764" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">4</text>
+    <text x="528" y="755" font-weight="bold">Spring</text>
+    <text x="528" y="773" font-size="12" fill="#6b7a88">clamps the screen to the frame</text>
+
+    <!-- 5 filter frame -->
+    <line x1="426" y1="823" x2="496" y2="823" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="823" r="10" fill="#22303c"/>
+    <text x="510" y="828" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">5</text>
+    <text x="528" y="819" font-weight="bold">Filter frame</text>
+    <text x="528" y="837" font-size="12" fill="#6b7a88">perforated cross plate</text>
+
+    <!-- 6 mesh screen -->
+    <line x1="426" y1="876" x2="496" y2="876" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="876" r="10" fill="#22303c"/>
+    <text x="510" y="881" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">6</text>
+    <text x="528" y="872" font-weight="bold">Mesh screen</text>
+    <text x="528" y="890" font-size="12" fill="#6b7a88">fine stainless weave</text>
+
+    <!-- 7 carafe -->
+    <line x1="434" y1="1040" x2="496" y2="1040" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="1040" r="10" fill="#22303c"/>
+    <text x="510" y="1045" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">7</text>
+    <text x="528" y="1036" font-weight="bold">Carafe</text>
+    <text x="528" y="1054" font-size="12" fill="#6b7a88">borosilicate glass, 8 cup</text>
+
+    <!-- 8 base bezel -->
+    <line x1="440" y1="1220" x2="496" y2="1224" stroke="#8fa0ad" stroke-width="1"/>
+    <circle cx="510" cy="1224" r="10" fill="#22303c"/>
+    <text x="510" y="1229" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">8</text>
+    <text x="528" y="1220" font-weight="bold">Base bezel</text>
+    <text x="528" y="1238" font-size="12" fill="#6b7a88">stainless steel ring</text>
+  </g>
+
+  <!-- ================= note ================= -->
+  <g>
+    <line x1="40" y1="1250" x2="720" y2="1250" stroke="#22303c" stroke-width="1.2"/>
+    <text x="40" y="1268" font-size="13" fill="#5b6a78">Assembly order: base bezel &#8594; carafe &#8594; mesh screen on frame &#8594; spring &#8594; rod &#8594; lid &#8594; knob.</text>
+  </g>
+</svg>

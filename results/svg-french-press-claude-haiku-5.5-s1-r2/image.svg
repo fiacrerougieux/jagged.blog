@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820" width="900" height="820">
+  <defs>
+    <pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L6 6 M6 0 L0 6" stroke="#777" stroke-width="0.8" fill="none"/>
+    </pattern>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#999" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="900" height="820" fill="white"/>
+  <text x="450" y="30" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold">French Press — Exploded Assembly</text>
+
+  <!-- carafe and lid (base assembly) -->
+  <g id="carafe">
+    <path d="M420 200 h30 a22 22 0 0 1 22 22 v180 a22 22 0 0 1 -22 22 h-30" fill="none" stroke="#333" stroke-width="7"/>
+    <path d="M180 150 L180 600 Q180 620 200 620 L400 620 Q420 620 420 600 L420 150 Z" fill="#dff1f8" fill-opacity="0.6" stroke="#333" stroke-width="3"/>
+    <path d="M190 180 L190 580" stroke="#fff" stroke-width="6" opacity="0.7"/>
+    <rect x="165" y="620" width="270" height="22" rx="4" fill="#666"/>
+  </g>
+  <g id="lid">
+    <rect x="172" y="95" width="256" height="40" rx="8" fill="#e8e8e8" stroke="#333" stroke-width="3"/>
+    <path d="M420 105 L460 90 L460 112 L420 124 Z" fill="#e8e8e8" stroke="#333" stroke-width="2.5"/>
+    <rect x="290" y="82" width="20" height="14" fill="#ccc" stroke="#333" stroke-width="2"/>
+  </g>
+  <line x1="300" y1="50" x2="300" y2="80" stroke="#555" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- exploded plunger stack, shifted down -->
+  <g transform="translate(0,50)">
+    <line x1="640" y1="-20" x2="640" y2="420" stroke="#aaa" stroke-dasharray="6,4"/>
+    <!-- 1 knob, 2 rod, 3 disc -->
+    <g id="plunger">
+      <rect x="598" y="18" width="84" height="32" rx="14" fill="#8b5a2b" stroke="#333" stroke-width="2.5"/>
+      <rect x="630" y="50" width="20" height="72" fill="#bbb" stroke="#333" stroke-width="2.5"/>
+      <rect x="566" y="122" width="148" height="20" rx="4" fill="#d9d9d9" stroke="#333" stroke-width="2.5"/>
+      <rect x="620" y="142" width="40" height="10" fill="#bbb" stroke="#333" stroke-width="1.5"/>
+    </g>
+    <!-- 4 mesh -->
+    <rect x="580" y="200" width="120" height="100" fill="url(#mesh)" stroke="#333" stroke-width="2.5"/>
+    <line x1="580" y1="200" x2="700" y2="200" stroke="#333" stroke-width="2.5"/>
+    <line x1="580" y1="300" x2="700" y2="300" stroke="#333" stroke-width="2.5"/>
+    <!-- 5 cap -->
+    <rect x="590" y="350" width="100" height="40" rx="4" fill="url(#hatch)" stroke="#333" stroke-width="2.5"/>
+    <rect x="620" y="356" width="40" height="28" fill="#fff" stroke="#333" stroke-width="1.5"/>
+
+    <line x1="640" y1="150" x2="640" y2="194" stroke="#555" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+    <line x1="640" y1="306" x2="640" y2="344" stroke="#555" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+    <g font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#222">
+      <line x1="682" y1="34" x2="735" y2="34" stroke="#555"/>
+      <circle cx="750" cy="34" r="12" fill="white" stroke="#333"/><text x="750" y="39" text-anchor="middle">1</text>
+      <line x1="650" y1="90" x2="735" y2="90" stroke="#555"/>
+      <circle cx="750" cy="90" r="12" fill="white" stroke="#333"/><text x="750" y="95" text-anchor="middle">2</text>
+      <line x1="714" y1="132" x2="735" y2="132" stroke="#555"/>
+      <circle cx="750" cy="132" r="12" fill="white" stroke="#333"/><text x="750" y="137" text-anchor="middle">3</text>
+      <line x1="700" y1="250" x2="735" y2="250" stroke="#555"/>
+      <circle cx="750" cy="250" r="12" fill="white" stroke="#333"/><text x="750" y="255" text-anchor="middle">4</text>
+      <line x1="690" y1="370" x2="735" y2="370" stroke="#555"/>
+      <circle cx="750" cy="370" r="12" fill="white" stroke="#333"/><text x="750" y="375" text-anchor="middle">5</text>
+    </g>
+    <path d="M790 70 L800 70 L800 345 L790 345" fill="none" stroke="#2a6" stroke-width="3"/>
+    <g font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#2a6">
+      <text x="812" y="150">Three-piece</text>
+      <text x="812" y="168">plunger filter</text>
+      <text x="812" y="186">(3 · 4 · 5)</text>
+    </g>
+  </g>
+
+  <!-- callouts 6, 7 for lid and carafe -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#222">
+    <line x1="425" y1="115" x2="470" y2="60" stroke="#555"/>
+    <circle cx="470" cy="60" r="12" fill="white" stroke="#333"/><text x="470" y="65" text-anchor="middle">6</text>
+    <line x1="460" y1="400" x2="500" y2="430" stroke="#555"/>
+    <circle cx="500" cy="430" r="12" fill="white" stroke="#333"/><text x="500" y="435" text-anchor="middle">7</text>
+  </g>
+
+  <!-- parts list -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#222">
+    <text x="60" y="705" font-weight="bold">Parts list</text>
+    <text x="60" y="730">1  Plunger knob (handle)</text>
+    <text x="60" y="750">2  Plunger rod</text>
+    <text x="60" y="770">3  Plunger disc (filter holder)</text>
+    <text x="330" y="730">4  Mesh filter screen (fine stainless)</text>
+    <text x="330" y="750">5  Retaining cap (threads onto rod, clamps mesh)</text>
+    <text x="330" y="770">6  Lid (with pour spout)</text>
+    <text x="330" y="790">7  Glass carafe</text>
+  </g>
+</svg>

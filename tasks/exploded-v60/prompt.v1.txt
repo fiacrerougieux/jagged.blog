@@ -1,0 +1,1 @@
+Draw an exploded assembly diagram of a V60 pour-over dripper on its glass server, as an SVG. Use the cone dripper with a paper filter rather than a metal mesh filter.

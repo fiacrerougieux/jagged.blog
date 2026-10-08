@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000">
+<defs>
+<linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+<stop offset="0.35" stop-color="#e4ebef"/>
+<stop offset="1" stop-color="#9aa8b2"/>
+</linearGradient>
+<linearGradient id="c" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#e8f4fb"/>
+<stop offset="0.4" stop-color="#cfe6f3" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#7fa7bd"/>
+</linearGradient>
+<linearGradient id="p" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#3a3f47"/>
+<stop offset="0.4" stop-color="#6b737d"/>
+<stop offset="1" stop-color="#20242a"/>
+</linearGradient>
+<linearGradient id="k" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#f3f3f3"/>
+<stop offset="0.5" stop-color="#ffffff"/>
+<stop offset="1" stop-color="#b9bcc2"/>
+</linearGradient>
+</defs>
+<rect width="900" height="1000" fill="#ffffff"/>
+<text x="450" y="42" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="bold" fill="#111">AeroPress (Original) — Exploded Assembly</text>
+<text x="450" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#555">Round paper filter version · parts shown along the brewing axis</text>
+
+<line x1="450" y1="80" x2="450" y2="900" stroke="#999" stroke-width="1" stroke-dasharray="6,5"/>
+<path d="M375.0,110 L375.0,136 A75.0,16.5 0 0 0 525.0,136 L525.0,110 Z" fill="url(#k)" stroke="#345" stroke-width="1.5" opacity="1.0"/>
+<ellipse cx="450" cy="110" rx="75.0" ry="16.5" fill="#f4f6f8" stroke="#345" stroke-width="1.5"/>
+<path d="M430.0,136 L430.0,306 A20.0,4.4 0 0 0 470.0,306 L470.0,136 Z" fill="url(#p)" stroke="#345" stroke-width="1.5" opacity="0.95"/>
+<ellipse cx="450" cy="136" rx="20.0" ry="4.4" fill="#dfe5ea" stroke="#345" stroke-width="1.5"/>
+<path d="M421.0,306 L421.0,328 A29.0,6.38 0 0 0 479.0,328 L479.0,306 Z" fill="url(#p)" stroke="#111" stroke-width="1.5" opacity="1.0"/>
+<ellipse cx="450" cy="306" rx="29.0" ry="6.38" fill="#2b2e33" stroke="#111" stroke-width="1.5"/>
+<path d="M391.0,400 L391.0,700 A59.0,12.98 0 0 0 509.0,700 L509.0,400 Z" fill="url(#c)" stroke="#3b6b84" stroke-width="1.5" opacity="0.55"/>
+<ellipse cx="450" cy="400" rx="59.0" ry="12.98" fill="#d9ecf6" stroke="#3b6b84" stroke-width="1.5"/>
+<rect x="386" y="388" width="128" height="12" rx="4" fill="#bcd6e4" stroke="#3b6b84"/>
+<rect x="387" y="700" width="126" height="14" rx="4" fill="#bcd6e4" stroke="#3b6b84"/>
+<ellipse cx="450" cy="752" rx="58" ry="13" fill="#f7f1e1" stroke="#a08f6a" stroke-width="1.5"/>
+<path d="M392,752 L392,756 A58,13 0 0 0 508,756 L508,752" fill="#efe5c8" stroke="#a08f6a" stroke-width="1.5"/>
+<line x1="402" y1="752" x2="402.0" y2="752" stroke="none"/>
+<line x1="414" y1="752" x2="414.0" y2="752" stroke="none"/>
+<line x1="426" y1="752" x2="426.0" y2="752" stroke="none"/>
+<line x1="438" y1="752" x2="438.0" y2="752" stroke="none"/>
+<line x1="450" y1="752" x2="450.0" y2="752" stroke="none"/>
+<line x1="462" y1="752" x2="462.0" y2="752" stroke="none"/>
+<line x1="474" y1="752" x2="474.0" y2="752" stroke="none"/>
+<line x1="486" y1="752" x2="486.0" y2="752" stroke="none"/>
+<line x1="498" y1="752" x2="498.0" y2="752" stroke="none"/>
+<path d="M386.0,790 L386.0,860 A64.0,14.08 0 0 0 514.0,860 L514.0,790 Z" fill="url(#k)" stroke="#4a5a66" stroke-width="1.5" opacity="1.0"/>
+<ellipse cx="450" cy="790" rx="64.0" ry="14.08" fill="#e9f0f4" stroke="#4a5a66" stroke-width="1.5"/>
+<ellipse cx="450" cy="860" rx="64" ry="14.1" fill="#d7e0e6" stroke="#4a5a66" stroke-width="1.5"/>
+<circle cx="415" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="429" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="443" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="457" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="471" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="485" cy="854" r="1.8" fill="#5b6a75"/>
+<circle cx="408" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="422" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="436" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="450" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="464" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="478" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="492" cy="860" r="1.8" fill="#5b6a75"/>
+<circle cx="415" cy="866" r="1.8" fill="#5b6a75"/>
+<circle cx="429" cy="866" r="1.8" fill="#5b6a75"/>
+<circle cx="443" cy="866" r="1.8" fill="#5b6a75"/>
+<circle cx="457" cy="866" r="1.8" fill="#5b6a75"/>
+<circle cx="471" cy="866" r="1.8" fill="#5b6a75"/>
+<circle cx="485" cy="866" r="1.8" fill="#5b6a75"/>
+<ellipse cx="450" cy="790" rx="64" ry="14.1" fill="#f4f8fa" stroke="#4a5a66" stroke-width="1.5"/>
+<rect x="726" y="470" width="8" height="250" rx="4" fill="#c9d3da" stroke="#4a5a66"/>
+<path d="M708,700 Q708,740 730,742 Q752,740 752,700 Z" fill="#e4ebef" stroke="#4a5a66" stroke-width="1.5"/>
+<rect x="718" y="458" width="24" height="16" rx="5" fill="#f4f6f8" stroke="#4a5a66"/>
+<line x1="308" y1="110" x2="375" y2="110" stroke="#555" stroke-width="1"/><circle cx="375" cy="110" r="2.5" fill="#555"/><text x="300" y="116" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">1 Plunger handle</text>
+<line x1="308" y1="220" x2="430" y2="220" stroke="#555" stroke-width="1"/><circle cx="430" cy="220" r="2.5" fill="#555"/><text x="300" y="226" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">2 Plunger shaft</text>
+<line x1="308" y1="318" x2="420" y2="318" stroke="#555" stroke-width="1"/><circle cx="420" cy="318" r="2.5" fill="#555"/><text x="300" y="324" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">3 Rubber seal</text>
+<line x1="308" y1="520" x2="392" y2="520" stroke="#555" stroke-width="1"/><circle cx="392" cy="520" r="2.5" fill="#555"/><text x="300" y="526" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">4 Chamber (clear)</text>
+<line x1="308" y1="752" x2="395" y2="752" stroke="#555" stroke-width="1"/><circle cx="395" cy="752" r="2.5" fill="#555"/><text x="300" y="758" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">5 Paper filter (round)</text>
+<line x1="308" y1="830" x2="390" y2="830" stroke="#555" stroke-width="1"/><circle cx="390" cy="830" r="2.5" fill="#555"/><text x="300" y="836" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">6 Filter cap</text>
+<line x1="782" y1="600" x2="728" y2="600" stroke="#555" stroke-width="1"/><circle cx="728" cy="600" r="2.5" fill="#555"/><text x="790" y="606" text-anchor="start" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#222">7 Stirrer</text>
+<text x="450" y="930" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#666">Brew: insert plunger into chamber · add coffee and water · stir · seat filter in cap</text>
+<text x="450" y="952" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#666">Screw cap onto chamber · invert onto mug and press</text>
+</svg>

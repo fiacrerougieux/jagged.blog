@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="840" viewBox="0 0 1100 840" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="holes" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.2" fill="#4a5058"/>
+    </pattern>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#8d949c"/>
+      <stop offset="0.5" stop-color="#d9dde2"/>
+      <stop offset="1" stop-color="#7d848c"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" x2="1">
+      <stop offset="0" stop-color="#4a2f1a"/>
+      <stop offset="0.5" stop-color="#7a5232"/>
+      <stop offset="1" stop-color="#4a2f1a"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="840" fill="#ffffff"/>
+  <text x="550" y="32" text-anchor="middle" font-size="22" font-weight="bold">Espresso Portafilter (double spout, removable basket) — Exploded View</text>
+
+  <!-- assembly axis -->
+  <line x1="500" y1="40" x2="500" y2="780" stroke="#999" stroke-width="1.5" stroke-dasharray="10,6"/>
+
+  <!-- 1 Handle -->
+  <rect x="462" y="50" width="76" height="220" rx="38" fill="url(#wood)" stroke="#2a1a0e" stroke-width="2"/>
+  <line x1="478" y1="110" x2="478" y2="210" stroke="#3a2412" stroke-width="1" opacity="0.5"/>
+  <line x1="522" y1="110" x2="522" y2="210" stroke="#3a2412" stroke-width="1" opacity="0.5"/>
+
+  <!-- 2 Handle screw -->
+  <rect x="478" y="287" width="44" height="12" rx="3" fill="#3b3f45"/>
+  <rect x="488" y="299" width="24" height="44" fill="#9aa1a9" stroke="#444" stroke-width="1"/>
+  <line x1="488" y1="307" x2="512" y2="301" stroke="#444" stroke-width="1"/>
+  <line x1="488" y1="317" x2="512" y2="311" stroke="#444" stroke-width="1"/>
+  <line x1="488" y1="327" x2="512" y2="321" stroke="#444" stroke-width="1"/>
+
+  <!-- 3 Body / collar with lugs -->
+  <rect x="350" y="365" width="30" height="26" rx="4" fill="#9aa1a9" stroke="#444" stroke-width="1.5"/>
+  <rect x="620" y="365" width="30" height="26" rx="4" fill="#9aa1a9" stroke="#444" stroke-width="1.5"/>
+  <rect x="380" y="350" width="240" height="92" rx="10" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+  <ellipse cx="500" cy="350" rx="22" ry="6" fill="#5a6068"/>
+
+  <!-- 4 Gasket -->
+  <rect x="395" y="462" width="210" height="14" rx="7" fill="#1e1e1e"/>
+
+  <!-- 5 Filter basket (removable) -->
+  <rect x="390" y="486" width="220" height="10" rx="3" fill="#c4cad1" stroke="#444" stroke-width="1"/>
+  <path d="M400,496 L600,496 L580,590 Q500,602 420,590 Z" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+  <path d="M404,500 L596,500 L578,584 Q500,596 422,584 Z" fill="url(#holes)"/>
+
+  <!-- 6 Double-spout section -->
+  <path d="M400,640 L600,640 L552,692 L448,692 Z" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+  <rect x="440" y="692" width="36" height="58" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+  <rect x="524" y="692" width="36" height="58" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+  <ellipse cx="458" cy="750" rx="13" ry="4" fill="#1e1e1e"/>
+  <ellipse cx="542" cy="750" rx="13" ry="4" fill="#1e1e1e"/>
+
+  <!-- Callouts -->
+  <g font-size="15" fill="#111">
+    <line x1="540" y1="160" x2="680" y2="120" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="120" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="125" text-anchor="middle" font-weight="bold">1</text>
+    <text x="712" y="125">Handle (wood/composite grip)</text>
+
+    <line x1="524" y1="310" x2="680" y2="250" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="250" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="255" text-anchor="middle" font-weight="bold">2</text>
+    <text x="712" y="255">Handle screw (fixes handle to body)</text>
+
+    <line x1="650" y1="385" x2="680" y2="385" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="385" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="390" text-anchor="middle" font-weight="bold">3</text>
+    <text x="712" y="390">Body / collar with mounting lugs</text>
+
+    <line x1="605" y1="469" x2="680" y2="480" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="500" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="505" text-anchor="middle" font-weight="bold">4</text>
+    <text x="712" y="505">Silicone gasket (seals basket to body)</text>
+
+    <line x1="600" y1="545" x2="680" y2="560" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="580" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="585" text-anchor="middle" font-weight="bold">5</text>
+    <text x="712" y="585">Filter basket, removable (single/double)</text>
+
+    <line x1="600" y1="680" x2="680" y2="670" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="660" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="665" text-anchor="middle" font-weight="bold">6</text>
+    <text x="712" y="665">Double spout section (two outlets)</text>
+    <line x1="560" y1="745" x2="680" y2="730" stroke="#555" stroke-width="1"/>
+    <circle cx="690" cy="730" r="12" fill="#fff" stroke="#333"/>
+    <text x="690" y="735" text-anchor="middle" font-weight="bold">6a</text>
+    <text x="712" y="735">Spout outlets (2x)</text>
+  </g>
+
+  <!-- Assembly direction -->
+  <g stroke="#555" stroke-width="2" marker-end="url(#arr)">
+    <line x1="260" y1="200" x2="260" y2="290"/>
+    <line x1="260" y1="420" x2="260" y2="470"/>
+  </g>
+  <text x="260" y="180" text-anchor="middle" font-size="14" fill="#333">Assembly</text>
+
+  <!-- Notes -->
+  <g font-size="14" fill="#222">
+    <text x="40" y="580" font-weight="bold">Parts list</text>
+    <text x="40" y="604">1 Handle          1 pc</text>
+    <text x="40" y="622">2 Handle screw    1 pc</text>
+    <text x="40" y="640">3 Body / collar   1 pc</text>
+    <text x="40" y="658">4 Gasket          1 pc</text>
+    <text x="40" y="676">5 Filter basket   1 pc</text>
+    <text x="40" y="694">6 Double spout    1 pc (2 outlets)</text>
+  </g>
+  <text x="550" y="810" text-anchor="middle" font-size="13" fill="#555">Parts shown separated along the assembly axis (dashed). Basket drops into the body and seats on the gasket; spout section closes the underside.</text>
+</svg>

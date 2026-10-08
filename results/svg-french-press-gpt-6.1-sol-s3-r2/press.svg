@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1640" viewBox="0 0 1200 1640">
+<defs>
+  <linearGradient id="metal" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#fafbf9"/><stop offset=".33" stop-color="#c7d0cf"/><stop offset=".52" stop-color="#eef1ed"/><stop offset="1" stop-color="#859694"/></linearGradient>
+  <linearGradient id="edge"><stop stop-color="#758986"/><stop offset=".27" stop-color="#dee5df"/><stop offset=".55" stop-color="#a8b6b1"/><stop offset=".8" stop-color="#eff2ed"/><stop offset="1" stop-color="#718582"/></linearGradient>
+  <linearGradient id="glass"><stop stop-color="#bbd5cc" stop-opacity=".44"/><stop offset=".18" stop-color="#e5efdf" stop-opacity=".12"/><stop offset=".65" stop-color="#ffffff" stop-opacity=".42"/><stop offset="1" stop-color="#99c1b5" stop-opacity=".38"/></linearGradient>
+  <linearGradient id="black"><stop stop-color="#182e2c"/><stop offset=".45" stop-color="#405b55"/><stop offset="1" stop-color="#132b28"/></linearGradient>
+  <pattern id="weave" width="8" height="5" patternUnits="userSpaceOnUse"><rect width="8" height="5" fill="#d7dfd8"/><path d="M0 0H8 M0 2.5H8 M0 0V5 M4 0V5" stroke="#748d85" stroke-width=".65"/><path d="M1 1H7" stroke="#fff" stroke-opacity=".6" stroke-width=".5"/></pattern>
+  <clipPath id="meshClip"><ellipse cx="470" cy="796" rx="202" ry="59"/></clipPath>
+  <g id="coil"><ellipse rx="5" ry="12" fill="none" stroke="#536e65" stroke-width="2.7"/><path d="M-3 -9Q3 -14 5 -4" fill="none" stroke="#f6f7ef" stroke-width="1.2"/></g>
+  <g id="slot"><path d="M0 -25V-47" stroke="#586f68" stroke-width="9" stroke-linecap="round"/><path d="M-2 -25V-47" stroke="#f4f5ee" stroke-width="2" stroke-linecap="round"/></g>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#233e37}
+    .small{font-size:14px;letter-spacing:2px}
+    .name{font-size:23px;font-weight:600}
+    .detail{font-size:16px;fill:#61776f}
+    .leader{fill:none;stroke:#93a299;stroke-width:1.4}
+    .outline{stroke:#526f64;stroke-width:2;stroke-linejoin:round}
+    .num{font-size:13px;font-weight:bold;fill:#faf8ef;text-anchor:middle}
+  </style>
+</defs>
+<!-- Editorial drawing sheet -->
+<rect width="1200" height="1640" fill="#f7f5ed"/>
+<path d="M60 69H1140" stroke="#bec7ba"/>
+<text x="60" y="49" class="small">OBJECT STUDY / 01</text>
+<text x="1140" y="49" text-anchor="end" class="small">COFFEE EQUIPMENT</text>
+<text x="60" y="127" font-size="53" font-weight="600" letter-spacing="-1.5">The French press</text>
+<text x="63" y="163" font-size="19" fill="#61776f">Exploded assembly · standard three-piece plunger filter</text>
+<!-- Assembly axis and movement arrows -->
+<path d="M470 217V1500" stroke="#a7b6a6" stroke-width="1.2" stroke-dasharray="5 9"/>
+<g stroke="#9aaa9c" fill="none" stroke-width="1.4"><path d="M470 566V585m-5-6 5 6 5-6 M470 711V729m-5-6 5 6 5-6 M470 864V887m-5-6 5 6 5-6 M470 1017V1029m-5-6 5 6 5-6 M470 1068V1083m-5-6 5 6 5-6"/></g>
+<!-- Plunger rod, lid and knob -->
+<path d="M463 268H477V542Q470 552 463 542Z" fill="url(#edge)" class="outline"/>
+<path d="M467 380V536" stroke="#f5f7f0" stroke-width="3"/>
+<path d="M463 529l14-4m-14 10 14-4m-13 10 13-4" stroke="#536f65" stroke-width="1.5"/>
+<!-- Lid rim and shallow domed top -->
+<path d="M260 330Q261 310 285 303Q470 238 655 303Q680 310 680 330L680 345Q470 407 260 345Z" fill="url(#edge)" class="outline"/>
+<path d="M260 330C260 296 355 277 470 277C585 277 680 296 680 330C680 364 585 382 470 382C355 382 260 364 260 330Z" fill="url(#metal)" class="outline"/>
+<path d="M282 331C313 300 386 290 449 290M489 290C552 289 616 301 650 321" fill="none" stroke="#fffef8" stroke-width="3" opacity=".7"/>
+<ellipse cx="470" cy="322" rx="23" ry="7" fill="#81938b" stroke="#526f64"/>
+<path d="M459 251H481V318Q470 327 459 318Z" fill="url(#edge)" class="outline"/>
+<path d="M440 215Q470 198 500 215Q514 241 494 263Q470 276 446 263Q426 241 440 215Z" fill="url(#black)" class="outline"/>
+<path d="M444 224Q450 214 468 214" stroke="#718b7c" stroke-width="3" fill="none"/>
+<!-- 1: spiral / spring plate -->
+<path d="M266 644V656C266 690 357 716 470 716C583 716 674 690 674 656V644Z" fill="url(#edge)" class="outline"/>
+<ellipse cx="470" cy="644" rx="204" ry="61" fill="url(#metal)" class="outline"/>
+<ellipse cx="470" cy="644" rx="181" ry="50" fill="none" stroke="#7a9186" stroke-width="1.5"/>
+<g transform="translate(470 644) scale(1 .295)">
+<use href="#slot" transform="rotate(0) scale(3.3)"/><use href="#slot" transform="rotate(30) scale(3.3)"/><use href="#slot" transform="rotate(60) scale(3.3)"/><use href="#slot" transform="rotate(90) scale(3.3)"/><use href="#slot" transform="rotate(120) scale(3.3)"/><use href="#slot" transform="rotate(150) scale(3.3)"/><use href="#slot" transform="rotate(180) scale(3.3)"/><use href="#slot" transform="rotate(210) scale(3.3)"/><use href="#slot" transform="rotate(240) scale(3.3)"/><use href="#slot" transform="rotate(270) scale(3.3)"/><use href="#slot" transform="rotate(300) scale(3.3)"/><use href="#slot" transform="rotate(330) scale(3.3)"/>
+</g>
+<!-- Continuous peripheral spring, seen obliquely -->
+<ellipse cx="470" cy="644" rx="200" ry="60" fill="none" stroke="#607c6f" stroke-width="4"/>
+<g>
+<use href="#coil" transform="translate(670 644) rotate(90)"/><use href="#coil" transform="translate(667 654) rotate(83)"/><use href="#coil" transform="translate(658 665) rotate(76)"/><use href="#coil" transform="translate(643 674) rotate(69)"/><use href="#coil" transform="translate(623 683) rotate(59)"/><use href="#coil" transform="translate(599 690) rotate(48)"/><use href="#coil" transform="translate(570 696) rotate(36)"/><use href="#coil" transform="translate(538 700) rotate(24)"/><use href="#coil" transform="translate(505 703) rotate(12)"/><use href="#coil" transform="translate(470 704)"/><use href="#coil" transform="translate(435 703) rotate(-12)"/><use href="#coil" transform="translate(402 700) rotate(-24)"/><use href="#coil" transform="translate(370 696) rotate(-36)"/><use href="#coil" transform="translate(341 690) rotate(-48)"/><use href="#coil" transform="translate(317 683) rotate(-59)"/><use href="#coil" transform="translate(297 674) rotate(-69)"/><use href="#coil" transform="translate(282 665) rotate(-76)"/><use href="#coil" transform="translate(273 654) rotate(-83)"/><use href="#coil" transform="translate(270 644) rotate(90)"/>
+<use href="#coil" transform="translate(273 634) rotate(83)"/><use href="#coil" transform="translate(282 623) rotate(76)"/><use href="#coil" transform="translate(297 614) rotate(69)"/><use href="#coil" transform="translate(317 605) rotate(59)"/><use href="#coil" transform="translate(341 598) rotate(48)"/><use href="#coil" transform="translate(370 592) rotate(36)"/><use href="#coil" transform="translate(402 588) rotate(24)"/><use href="#coil" transform="translate(435 585) rotate(12)"/><use href="#coil" transform="translate(470 584)"/><use href="#coil" transform="translate(505 585) rotate(-12)"/><use href="#coil" transform="translate(538 588) rotate(-24)"/><use href="#coil" transform="translate(570 592) rotate(-36)"/><use href="#coil" transform="translate(599 598) rotate(-48)"/><use href="#coil" transform="translate(623 605) rotate(-59)"/><use href="#coil" transform="translate(643 614) rotate(-69)"/><use href="#coil" transform="translate(658 623) rotate(-76)"/><use href="#coil" transform="translate(667 634) rotate(-83)"/>
+</g>
+<ellipse cx="470" cy="644" rx="13" ry="4.5" fill="#f7f5ed" stroke="#536e65" stroke-width="2"/>
+<!-- 2: thin woven mesh screen -->
+<ellipse cx="470" cy="799" rx="205" ry="61" fill="#91a69a" stroke="#536e65" stroke-width="1.8"/>
+<ellipse cx="470" cy="796" rx="204" ry="60" fill="url(#weave)" stroke="#536e65" stroke-width="2"/>
+<ellipse cx="470" cy="796" rx="199" ry="57" fill="none" stroke="#f4f6ee" stroke-width="1.4"/>
+<ellipse cx="470" cy="796" rx="17" ry="6" fill="url(#metal)" stroke="#6c8376"/>
+<ellipse cx="470" cy="796" rx="8" ry="3" fill="#f7f5ed" stroke="#536e65"/>
+<!-- 3: cross plate with four open quadrants -->
+<path d="M267 947V957C267 990 358 1017 470 1017C582 1017 673 990 673 957V947Z" fill="url(#edge)" class="outline"/>
+<ellipse cx="470" cy="947" rx="203" ry="60" fill="url(#metal)" class="outline"/>
+<g fill="#f7f5ed" stroke="#6c8376" stroke-width="1.6">
+<path d="M446 899C372 902 301 919 296 938H432Q437 929 446 928Z"/>
+<path d="M494 899C568 902 639 919 644 938H508Q503 929 494 928Z"/>
+<path d="M296 956C308 977 371 990 446 995V966Q437 963 432 956Z"/>
+<path d="M644 956C632 977 569 990 494 995V966Q503 963 508 956Z"/>
+</g>
+<path d="M450 941V954Q470 968 490 954V941" fill="url(#edge)" class="outline"/>
+<ellipse cx="470" cy="941" rx="20" ry="7" fill="url(#metal)" class="outline"/>
+<ellipse cx="470" cy="941" rx="8" ry="3" fill="#536e65"/>
+<!-- Threaded retaining nut below filter stack -->
+<g transform="translate(0 -12)">
+<path d="M456 1055L470 1050L484 1055V1070L470 1076L456 1070Z" fill="url(#edge)" class="outline"/>
+<path d="M456 1055L470 1061L484 1055M470 1061V1076" fill="none" stroke="#617b6f"/>
+<ellipse cx="470" cy="1055" rx="5" ry="2" fill="#4b685c"/>
+</g>
+<!-- Empty borosilicate beaker and attached handle -->
+<g transform="translate(0 20)">
+<path d="M672 1192C765 1170 794 1201 791 1281C789 1360 763 1394 674 1375L674 1348C743 1367 761 1335 762 1280C763 1225 748 1206 674 1220Z" fill="url(#black)" class="outline"/>
+<path d="M691 1206C746 1191 777 1207 777 1272" fill="none" stroke="#6f897b" stroke-width="3"/>
+<path d="M255 1143L255 1416C255 1455 352 1487 470 1487C588 1487 685 1455 685 1416L685 1143Z" fill="url(#glass)" class="outline"/>
+<ellipse cx="470" cy="1416" rx="215" ry="65" fill="#cfdfd2" fill-opacity=".25" stroke="#819f8b" stroke-width="1.5"/>
+<path d="M270 1407C270 1442 359 1468 470 1468C581 1468 670 1442 670 1407" fill="none" stroke="#9ab4a0" stroke-width="2"/>
+<!-- Open mouth with pouring spout at left -->
+<path d="M255 1143C255 1128 226 1108 216 1105C249 1103 274 1100 298 1093C336 1079 399 1070 470 1070C589 1070 685 1103 685 1143C685 1182 589 1214 470 1214C351 1214 255 1182 255 1143Z" fill="#e9efe3" fill-opacity=".63" class="outline"/>
+<path d="M266 1138C266 1128 253 1114 239 1110C264 1110 284 1106 303 1100C341 1087 402 1079 470 1079C583 1079 676 1108 676 1143C676 1177 584 1205 470 1205C356 1205 266 1178 266 1143Z" fill="#f7f5ed" fill-opacity=".75" stroke="#a6bcab" stroke-width="1.8"/>
+<path d="M280 1194V1408" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".68"/>
+<path d="M293 1206V1381M659 1196V1404" stroke="#fcfff9" stroke-width="3" opacity=".8"/>
+<!-- Small frame fittings at handle -->
+<path d="M674 1186L687 1188V1226L674 1224Z M674 1344L687 1346V1382L674 1380Z" fill="url(#edge)" class="outline"/>
+</g>
+<!-- Labels and fine callouts -->
+<g class="leader">
+<path d="M501 234H775V255H824"/><path d="M646 338H779V360H824"/>
+<path d="M677 651H781V625H824"/><path d="M677 798H781V789H824"/><path d="M676 951H781V943H824"/>
+<path d="M486 1052H799V1057H824"/><path d="M628 1448H799V1260H824"/>
+</g>
+<g fill="#688472"><circle cx="501" cy="234" r="3"/><circle cx="646" cy="338" r="3"/><circle cx="677" cy="651" r="3"/><circle cx="677" cy="798" r="3"/><circle cx="676" cy="951" r="3"/><circle cx="486" cy="1052" r="3"/><circle cx="628" cy="1448" r="3"/></g>
+<text x="842" y="253" class="name">Plunger knob + rod</text>
+<text x="842" y="280" class="detail">Threaded stainless-steel shaft</text>
+<text x="842" y="358" class="name">Lid</text>
+<text x="842" y="385" class="detail">Guides the sliding plunger</text>
+<!-- Three-piece filter bracket -->
+<path d="M744 582H755V1017H744" fill="none" stroke="#bdc8b7" stroke-width="1.5"/>
+<g><circle cx="830" cy="621" r="14" fill="#375b4b"/><text x="830" y="626" class="num">1</text><circle cx="830" cy="785" r="14" fill="#375b4b"/><text x="830" y="790" class="num">2</text><circle cx="830" cy="939" r="14" fill="#375b4b"/><text x="830" y="944" class="num">3</text></g>
+<text x="855" y="627" class="name">Spiral plate</text>
+<text x="842" y="658" class="detail">Coiled spring seals the filter</text>
+<text x="842" y="681" class="detail">against the glass wall.</text>
+<text x="855" y="791" class="name">Mesh screen</text>
+<text x="842" y="822" class="detail">Fine woven stainless steel</text>
+<text x="842" y="845" class="detail">keeps grounds in the beaker.</text>
+<text x="855" y="945" class="name">Cross plate</text>
+<text x="842" y="976" class="detail">Rigid backing supports</text>
+<text x="842" y="999" class="detail">the mesh under pressure.</text>
+<text x="842" y="1055" class="name">Retaining nut</text>
+<text x="842" y="1082" class="detail">Clamps the three-piece stack</text>
+<text x="842" y="1258" class="name">Glass beaker</text>
+<text x="842" y="1285" class="detail">Pouring spout + insulated handle</text>
+<text x="842" y="1318" class="detail">Filter slides inside the cylinder;</text>
+<text x="842" y="1341" class="detail">the lid rests on the open rim.</text>
+<!-- Footer -->
+<path d="M60 1531H1140" stroke="#bec7ba"/>
+<text x="60" y="1568" class="small">ASSEMBLY ORDER</text>
+<text x="60" y="1596" font-size="17">Rod → spiral plate → mesh screen → cross plate → retaining nut</text>
+<text x="1140" y="1596" text-anchor="end" font-size="13" fill="#718477">Exploded view · not to scale</text>
+</svg>

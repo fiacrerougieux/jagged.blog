@@ -1,0 +1,34 @@
+{
+  "name": "lilypond-espresso-rag-gpt-6-luna-s1-r2",
+  "exportedAt": "2026-10-04T23:57:10.650Z",
+  "run": "2026-10-05-lilypond-espresso-rag-1053",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "openai/gpt-6-luna",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": false,
+    "detail": "failed: crossing_marked, stems_split"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.0\"\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"A café piano rag\"\n  composer = \"\"\n}\n\n\\score {\n  \\new PianoStaff \\with { instrumentName = \"Piano\" } <<\n    \\new Staff = \"upper\" \\with { \\consists \"Span_stem_engraver\" } {\n      \\clef treble\n      \\key f \\major\n      \\time 2/4\n      \\new Voice = \"RH\" {\n        \\voiceOne\n        a'8 c'' f'' e'' | d'' c'' a' f' |\n        g' bes' e'' d'' | c''4 a'8 f' |\n        f'8 a' c'' d'' | ees'' d'' c'' a' |\n        g' bes' d'' f'' | e''4 c''4 |\n        \\mark \\markup \\italic \"L.H. over R.H. through bar 12\"\n        c'8 e' g' e' | d' f' a' f' |\n        c'8 ees' g' ees' | d' f' a' c'' |\n        f'8 a' c'' f'' | e'' d'' c'' a' |\n        g' bes' d'' g'' | f''4 f'4 |\n        \\bar \"|.\"\n      }\n    }\n    \\new Staff = \"lower\" {\n      \\clef bass\n      \\key f \\major\n      \\time 2/4\n      \\new Voice = \"LH\" {\n        \\voiceOne\n        f,4 <a, c>4 | c4 <g, c>4 |\n        bes,4 <f a>4 | c4 <g, c>4 |\n        f,4 <a, c>4 | c4 <g, c>4 |\n        bes,4 <f a>4 | c4 <g, c>4 |\n        \\change Staff = \"upper\"\n        \\voiceTwo\n        <f'' c'''>4 <f'' c'''>4 |\n        <g'' d'''>4 <g'' d'''>4 |\n        <ees'' c'''>4 <ees'' c'''>4 |\n        <f'' c'''>4 <f'' c'''>4 |\n        \\change Staff = \"lower\"\n        \\voiceOne\n        f,4 <a, c>4 | c4 <g, c>4 |\n        bes,4 <f a>4 | f,4 <a, c>4 |\n      }\n    }\n  >>\n  \\layout { }\n  \\midi { \\tempo 4 = 132 }\n}\n",
+    "truncated": false,
+    "lines": 54
+  },
+  "output": null,
+  "notes": []
+}

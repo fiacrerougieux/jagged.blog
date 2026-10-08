@@ -1,0 +1,31 @@
+{
+  "name": "lilypond-espresso-rag-gpt-6.1-sol-s1-r3",
+  "exportedAt": "2026-10-04T09:19:05.922Z",
+  "run": "2026-10-04-lilypond-espresso-rag-2017",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 1,
+  "round": 3,
+  "rounds": 2,
+  "grade": null,
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.1\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"A café two-step\"\n  composer = \"\"\n  tagline = ##f\n}\n\n\\paper {\n  #(set-paper-size \"a4\")\n  indent = 12\\mm\n  short-indent = 0\\mm\n  top-margin = 12\\mm\n  bottom-margin = 12\\mm\n  system-system-spacing.basic-distance = #20\n  ragged-last = ##f\n}\n\nglobal = {\n  \\key c \\major\n  \\time 2/4\n}\n\nrightHand = {\n  \\global\n  \\tempo \"Easy café rag (straight sixteenths)\" 4 = 104\n  \\clef treble\n  % 1–4: a crisp, syncopated café tune.\n  e''8\\mf-\\markup { \\italic \"Light and jaunty\" } g''16 a''~ a''8 g''8 |\n  e''16 g'' e'' c''~ c''8 <e'' g''>8-. |\n  f''8 a''16 c'''~ c'''8 a''8 |\n  b''16 a'' g'' f''~ f''8 <b' d''>8-. | \\break\n  % 5–8: a little chromatic seasoning and a dominant turnaround.\n  e''8 g''16 a''~ a''8 <e'' g''>8 |\n  cis''16 e'' g'' a''~ a''8 g''8 |\n  f''8 a''16 f''~ f''8 e''16 d'' |\n  <b' d''>8-. <d'' f''>8-. <b' g''>4-> | \\break\n  % 9–12: the right hand accompanies BELOW the crossing left hand.\n  \\change Staff = \"lower\"\n  \\stemDown\n  c'8\\p^\\markup { \\italic \"R.H. accompaniment\" } <e' g'>8-. g8 <e' g'>8-. |\n  c'8 <e' g'>8-. g8 <e' g'>8-. |\n  c'8 <f' a'>8-. a8 <f' a'>8-. |\n  b8 <f' g'>8-. g8 <f' g'>8-. | \\break\n  % 13–16: both hands return, then a compact closing flourish.\n  \\change Staff = \"upper\"\n  \\stemNeutral\n  e''8\\mf^\\markup { \\italic \"Hands return\" } g''16 a''~ a''8 g''8 |\n  cis''16 e'' g'' a''~ a''8 <cis'' e''>8 |\n  <d'' f''>8 a''16 f'' <b' d''>8 g''16 f'' |\n  e''16 g'' c''' g'' <c'' e'' g''>4->\\fermata \\bar \"|.\"\n}\n\nleftHand = {\n  \\global\n  \\clef bass\n  % 1–8: dry, buoyant oom-pah; no sustained pedal.\n  c8-\\markup { \\italic \"Crisp bass; very little pedal\" } <e g>8-. g,8 <e g>8-. |\n  c8 <e g>8-. g,8 <e g>8-. |\n  f,8 <a c'>8-. c8 <a c'>8-. |\n  g,8 <b f'>8-. d8 <b f'>8-. |\n  c8 <e g>8-. g,8 <e g>8-. |\n  a,8 <cis g>8-. e8 <cis g>8-. |\n  d8 <f a>8-. a,8 <f a>8-. |\n  g,8 <b f'>8-. <g, g>4-> |\n  % 9–12: actual cross-staff exchange; L.H. is above R.H.\n  \\clef treble\n  \\change Staff = \"upper\"\n  \\stemUp\n  g''8\\mp^\\markup { \\bold \"L.H. over R.H. (bars 9–12)\" } e''16 g''~ g''8 c'''8 |\n  b''16 c''' b'' g''~ g''8 e''8 |\n  a''8 c'''16 a''~ a''8 f''8 |\n  g''16 a'' g'' f''~ f''8 d''8 |\n  \\change Staff = \"lower\"\n  \\clef bass\n  \\stemNeutral\n  c8 <e g>8-. g,8 <e g>8-. |\n  a,8 <cis g>8-. e8 <cis g>8-. |\n  d8 <f a>8-. g,8 <b f'>8-. |\n  c8 g,8 <c, c>4->\\fermata\n}\n\n\\score {\n  \\new PianoStaff \\with { instrumentName = \"Piano\" } <<\n    \\new Staff = \"upper\" \\with { midiInstrument = \"acoustic grand\" }\n      { \\rightHand }\n    \\new Staff = \"lower\" \\with { midiInstrument = \"acoustic grand\" }\n      { \\leftHand }\n  >>\n  \\layout {\n    \\context {\n      \\Score\n      barNumberVisibility = #first-bar-number-invisible-save-broken-bars\n      \\override BarNumber.break-visibility = ##(#f #f #t)\n    }\n  }\n  \\midi { }\n}\n",
+    "truncated": false,
+    "lines": 100
+  },
+  "output": null,
+  "notes": []
+}

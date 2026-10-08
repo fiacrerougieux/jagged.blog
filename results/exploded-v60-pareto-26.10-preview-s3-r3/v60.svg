@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1250" viewBox="0 0 900 1250">
+<defs>
+ <linearGradient id="paper" x1="0" x2="1"><stop stop-color="#e5d5b5"/><stop offset=".45" stop-color="#fff0d3"/><stop offset="1" stop-color="#d9c7a5"/></linearGradient>
+ <linearGradient id="ceramic" x1="0" x2="1"><stop stop-color="#d8d8d1"/><stop offset=".3" stop-color="#fffef9"/><stop offset=".75" stop-color="#eeede6"/><stop offset="1" stop-color="#c5c9c4"/></linearGradient>
+ <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8dcd4"/><stop offset="1" stop-color="#a7b4ad"/></linearGradient>
+ <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#c9dfe0" stop-opacity=".7"/><stop offset=".3" stop-color="#faffff" stop-opacity=".45"/><stop offset=".7" stop-color="#e0efed" stop-opacity=".3"/><stop offset="1" stop-color="#a9cecf" stop-opacity=".65"/></linearGradient>
+ <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#9c5b43" stroke-width="1.2"/></marker>
+</defs>
+<rect width="900" height="1250" fill="#f5f2eb"/>
+<g font-family="Helvetica Neue,Helvetica,Arial,sans-serif" fill="#293c3c">
+ <text x="58" y="64" font-size="12" letter-spacing="3">BREW EQUIPMENT / 01</text>
+ <text x="58" y="112" font-size="38" font-weight="600" letter-spacing="-1">V60 pour-over</text>
+ <text x="60" y="139" font-size="14" fill="#6e7973">Exploded assembly · paper cone / ceramic dripper / glass server</text>
+ <path d="M58 163H842" stroke="#bcbeb3"/>
+ <path d="M445 185V1108" stroke="#b6bfb6" stroke-dasharray="3 8"/>
+
+ <!-- Paper filter: open, smooth conical sheet with a folded bonded seam -->
+ <g stroke="#80715a" stroke-width="1.8" stroke-linejoin="round">
+  <path d="M329 233L440 416Q445 423 450 416L561 233Z" fill="url(#paper)"/>
+  <ellipse cx="445" cy="233" rx="116" ry="32" fill="#cbbb9e"/>
+  <path d="M329 233Q348 203 406 203Q445 200 483 205Q540 213 561 233" fill="none" stroke="#e7d9bf" stroke-width="4"/>
+  <path d="M547 248L449 416L441 418L536 253" fill="#d1bc96" stroke="#ad9874" stroke-width="1"/>
+  <path d="M329 233A116 32 0 0 0 561 233" fill="none" stroke="#8d7c60"/>
+ </g>
+ <path d="M445 433V464" fill="none" stroke="#9c5b43" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+ <!-- V60 support foot, behind conical body -->
+ <g stroke="#435653" stroke-width="2" stroke-linejoin="round">
+  <path d="M305 718V729C305 748 585 748 585 729V718Z" fill="url(#ceramic)"/>
+  <ellipse cx="445" cy="718" rx="140" ry="23" fill="#ebeee6"/>
+  <path d="M426 699V721Q445 730 464 721V699" fill="url(#ceramic)"/>
+  <!-- handle -->
+  <path d="M576 535C661 514 679 555 652 601Q624 643 533 618L548 597Q614 615 636 585Q656 547 579 558Z" fill="url(#ceramic)"/>
+  <!-- conical body -->
+  <path d="M294 526L420 707Q445 720 470 707L596 526Z" fill="url(#ceramic)"/>
+ </g>
+ <!-- sweeping flutes on the outside of the ceramic cone -->
+ <g fill="none" stroke="#c1c8bf" stroke-width="3" stroke-linecap="round">
+  <path d="M309 550Q340 618 424 703"/>
+  <path d="M336 564Q369 629 433 709"/>
+  <path d="M373 571Q407 651 444 710"/>
+  <path d="M416 576Q454 650 454 708"/>
+  <path d="M461 575Q497 633 465 704"/>
+  <path d="M505 571Q534 607 491 676"/>
+  <path d="M547 561Q567 581 542 604"/>
+ </g>
+ <!-- open rim and visible spiral ribs on inner wall -->
+ <ellipse cx="445" cy="526" rx="151" ry="49" fill="#f8f9f1" stroke="#435653" stroke-width="2"/>
+ <ellipse cx="445" cy="526" rx="138" ry="39" fill="url(#inside)" stroke="#8e9e94" stroke-width="1.3"/>
+ <g stroke="#eef0e5" stroke-width="3" fill="none" stroke-linecap="round">
+  <path d="M316 512Q342 535 414 538"/><path d="M345 499Q369 525 424 537"/>
+  <path d="M387 490Q400 515 436 537"/><path d="M431 488Q440 510 445 537"/>
+  <path d="M478 489Q494 516 454 538"/><path d="M526 497Q543 524 465 540"/>
+  <path d="M566 512Q563 536 470 544"/>
+ </g>
+ <ellipse cx="445" cy="542" rx="21" ry="7" fill="#5a7167"/>
+ <path d="M307 526A138 39 0 0 0 583 526" fill="none" stroke="#84998d" stroke-width="1.3"/>
+ <path d="M445 759V812" fill="none" stroke="#9c5b43" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+ <!-- Glass server: narrow mouth supports the dripper flange -->
+ <ellipse cx="449" cy="1096" rx="177" ry="18" fill="#344c46" opacity=".07"/>
+ <g stroke="#547875" stroke-width="2" stroke-linejoin="round">
+  <path d="M553 897C642 879 687 945 650 1009Q624 1047 575 1030L568 1009Q607 1026 631 995C659 952 630 906 560 919Z" fill="url(#glass)"/>
+  <path d="M327 854Q333 881 340 900C328 938 292 991 298 1038Q302 1077 344 1084Q445 1106 546 1084Q588 1077 592 1038C598 991 562 938 550 900L564 854Z" fill="url(#glass)"/>
+  <path d="M327 854Q288 850 281 835Q316 837 332 837C371 811 524 811 564 841Q583 856 552 870C504 888 378 885 339 869Z" fill="url(#glass)"/>
+  <path d="M335 850C371 825 528 827 551 849C562 861 523 872 445 873C386 873 348 866 335 860" fill="none" stroke="#8badaa" stroke-width="1.5"/>
+  <path d="M313 1038Q316 1070 351 1076Q445 1094 539 1076Q574 1070 577 1038" fill="none" stroke="#8badaa" stroke-width="1.3"/>
+ </g>
+ <g fill="none" stroke="#fff" stroke-linecap="round">
+  <path d="M349 910C336 952 314 984 316 1027" stroke-width="7" opacity=".85"/>
+  <path d="M550 947Q574 994 573 1022" stroke-width="3" opacity=".8"/>
+  <path d="M365 1080Q445 1095 525 1080" stroke-width="3" opacity=".8"/>
+ </g>
+ <g fill="#6e8b85" font-size="11" stroke="#86a09a" stroke-width="1">
+  <path d="M374 949H394M374 983H394M374 1017H394"/>
+  <g stroke="none"><text x="359" y="953">4</text><text x="359" y="987">3</text><text x="359" y="1021">2</text></g>
+ </g>
+
+ <!-- Component labels -->
+ <g font-size="16" font-weight="600">
+  <text x="62" y="270" fill="#a4593f">01</text><text x="62" y="296">Paper filter</text>
+  <text x="62" y="545" fill="#a4593f">02</text><text x="62" y="571">V60 dripper</text>
+  <text x="62" y="927" fill="#a4593f">03</text><text x="62" y="953">Glass server</text>
+ </g>
+ <g font-size="12" fill="#768079">
+  <text x="62" y="318">Smooth conical paper</text><text x="62" y="337">Closed, folded tip</text>
+  <text x="62" y="593">Ribbed ceramic cone</text><text x="62" y="612">Single drain opening</text>
+  <text x="62" y="975">Heat-resistant glass</text><text x="62" y="994">Pouring lip + handle</text>
+ </g>
+ <g stroke="#98a49a" stroke-width="1" fill="none">
+  <path d="M208 292H303L361 286"/><path d="M208 566H280L321 589"/><path d="M208 949H273L323 966"/>
+  <path d="M515 316H687"/><path d="M557 722H687"/>
+ </g>
+ <g font-size="11" fill="#6c7a71" letter-spacing=".6">
+  <text x="699" y="313">FOLDED SEAM</text><text x="699" y="332">No metal mesh</text>
+  <text x="699" y="719">SUPPORT FLANGE</text><text x="699" y="738">Seats on server rim</text>
+ </g>
+ <path d="M58 1139H842" stroke="#a4afa3"/>
+ <text x="60" y="1171" font-size="12" letter-spacing="1.7" fill="#a4593f">ASSEMBLY</text>
+ <text x="60" y="1195" font-size="13">Seat dripper on server. Insert paper filter into the cone.</text>
+ <text x="842" y="1195" text-anchor="end" font-size="11" fill="#778277">SCHEMATIC · NOT TO SCALE</text>
+</g>
+</svg>

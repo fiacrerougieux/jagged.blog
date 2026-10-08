@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="tube" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#9fb8c4"/>
+      <stop offset="0.35" stop-color="#eaf5fa"/>
+      <stop offset="0.6" stop-color="#cfe3ec"/>
+      <stop offset="1" stop-color="#7f9aa7"/>
+    </linearGradient>
+    <linearGradient id="plastic" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#2a4f8a"/>
+      <stop offset="0.4" stop-color="#4f7fc4"/>
+      <stop offset="1" stop-color="#1e3a68"/>
+    </linearGradient>
+    <linearGradient id="rubber" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#1d1d1d"/>
+      <stop offset="0.4" stop-color="#4a4a4a"/>
+      <stop offset="1" stop-color="#161616"/>
+    </linearGradient>
+    <linearGradient id="capg" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8f8f8f"/>
+      <stop offset="0.4" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#6c6c6c"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="1000" fill="white"/>
+
+  <!-- title -->
+  <text x="400" y="38" text-anchor="middle" font-size="24" font-weight="bold" fill="#222">AeroPress (original model) — exploded assembly</text>
+
+  <!-- central assembly axis -->
+  <line x1="400" y1="75" x2="400" y2="935" stroke="#999" stroke-width="1.5" stroke-dasharray="10,6"/>
+
+  <!-- ===== 1. PLUNGER (top) ===== -->
+  <g id="plunger">
+    <!-- grip / handle -->
+    <rect x="300" y="72" width="200" height="34" rx="16" fill="url(#plastic)" stroke="#1b3561" stroke-width="2"/>
+    <!-- rod -->
+    <rect x="382" y="104" width="36" height="236" fill="url(#plastic)" stroke="#1b3561" stroke-width="2"/>
+    <!-- rubber seal / plunger cap -->
+    <rect x="338" y="340" width="124" height="34" rx="6" fill="url(#rubber)" stroke="#000" stroke-width="2"/>
+    <ellipse cx="400" cy="340" rx="62" ry="8" fill="#333" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== 2. CHAMBER (middle) ===== -->
+  <g id="chamber">
+    <!-- body -->
+    <rect x="325" y="440" width="150" height="262" fill="url(#tube)" stroke="#4d6a78" stroke-width="2"/>
+    <!-- bottom ellipse -->
+    <ellipse cx="400" cy="702" rx="75" ry="12" fill="#c8dde7" stroke="#4d6a78" stroke-width="2"/>
+    <!-- bottom ridge / lip -->
+    <rect x="317" y="696" width="166" height="12" rx="4" fill="#dbeaf1" stroke="#4d6a78" stroke-width="2"/>
+    <!-- top flared rim -->
+    <rect x="312" y="422" width="176" height="18" rx="6" fill="#f4fbfd" stroke="#4d6a78" stroke-width="2"/>
+    <ellipse cx="400" cy="422" rx="88" ry="10" fill="#f4fbfd" stroke="#4d6a78" stroke-width="2"/>
+    <!-- opening inside -->
+    <ellipse cx="400" cy="422" rx="66" ry="7" fill="#7f9aa7"/>
+  </g>
+
+  <!-- ===== 3. FILTER CAP (bottom of chamber) ===== -->
+  <g id="filtercap">
+    <rect x="335" y="752" width="130" height="50" fill="url(#capg)" stroke="#555" stroke-width="2"/>
+    <ellipse cx="400" cy="752" rx="65" ry="10" fill="#e6e6e6" stroke="#555" stroke-width="2"/>
+    <ellipse cx="400" cy="802" rx="65" ry="10" fill="#bdbdbd" stroke="#555" stroke-width="2"/>
+    <!-- drip holes on cap face -->
+    <g fill="#444">
+      <circle cx="380" cy="802" r="2.5"/><circle cx="392" cy="800" r="2.5"/><circle cx="404" cy="800" r="2.5"/>
+      <circle cx="416" cy="802" r="2.5"/><circle cx="386" cy="806" r="2.5"/><circle cx="398" cy="806" r="2.5"/>
+      <circle cx="410" cy="806" r="2.5"/><circle cx="422" cy="806" r="2.5"/><circle cx="374" cy="802" r="2.5"/>
+      <circle cx="428" cy="802" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- ===== 4. ROUND PAPER FILTER (below cap) ===== -->
+  <g id="paperfilter">
+    <rect x="345" y="850" width="110" height="6" fill="#e9dcc0" stroke="#a48f63" stroke-width="1.5"/>
+    <ellipse cx="400" cy="850" rx="55" ry="7" fill="#f6ecd2" stroke="#a48f63" stroke-width="1.5"/>
+    <ellipse cx="400" cy="856" rx="55" ry="7" fill="#e9dcc0" stroke="#a48f63" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== Exploded guide lines ===== -->
+
+  <!-- ===== Labels with leader lines ===== -->
+  <g stroke="#555" stroke-width="1.2" fill="none">
+    <polyline points="500,89 560,89 580,70"/>
+    <polyline points="420,222 560,222"/>
+    <polyline points="462,357 560,357"/>
+    <polyline points="487,529 560,529"/>
+    <polyline points="487,777 560,777"/>
+    <polyline points="462,853 560,853"/>
+  </g>
+  <g font-size="17" fill="#222">
+    <text x="585" y="75">1. Plunger handle (grip)</text>
+    <text x="565" y="227">2. Plunger rod</text>
+    <text x="565" y="362">3. Rubber seal (plunger cap)</text>
+    <text x="565" y="534">4. Chamber (brew tube)</text>
+    <text x="565" y="782">5. Filter cap (with drip holes)</text>
+    <text x="565" y="858">6. Round paper filter</text>
+  </g>
+
+  <!-- exploded-direction arrows -->
+  <!-- footer -->
+  <text x="400" y="955" text-anchor="middle" font-size="14" fill="#555">Parts separated along the brewing axis. Original AeroPress model (not Go/XL); round paper filter.</text>
+  <text x="400" y="976" text-anchor="middle" font-size="14" fill="#555">Assembly: paper filter → filter cap → chamber (inverted over mug), then plunger inserted from top.</text>
+</svg>

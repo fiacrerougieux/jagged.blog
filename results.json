@@ -6746,6 +6746,2945 @@
         "of": 3,
         "undecided": 0
       }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "lilypond-espresso-rag-pareto-26.10-preview-s3-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.1137,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 48878,
+        "tokensOut": 29909,
+        "reasoning": 0,
+        "wallSec": 272
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": true,
+        "stems_split": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "lilypond-espresso-rag-pareto-26.10-preview-s1-r3",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.1379,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 56323,
+        "tokensOut": 37476,
+        "reasoning": 0,
+        "wallSec": 402
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": true,
+        "stems_split": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lilypond-espresso-rag-gpt-6-luna-s1-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0028,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 20180,
+        "tokensOut": 4357,
+        "reasoning": 3321,
+        "wallSec": 61
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": false
+      },
+      "quality": 2,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lilypond-espresso-rag-gpt-6-luna-s3-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0032,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21300,
+        "tokensOut": 4898,
+        "reasoning": 3825,
+        "wallSec": 65
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": false
+      },
+      "quality": 2,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "lilypond-espresso-rag-gpt-6-luna-s2-r7",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 7,
+      "cost": 0.0106,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 224971,
+        "tokensOut": 13550,
+        "reasoning": 9983,
+        "wallSec": 196
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": false,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": true
+      },
+      "quality": 2,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "lilypond-espresso-rag-pareto-26.10-preview-s2-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.1629,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 40175,
+        "tokensOut": 46907,
+        "reasoning": 0,
+        "wallSec": 267
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": false
+      },
+      "quality": 3,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "lilypond-espresso-rag-gpt-6.1-sol-s1-r3",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0379,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 34506,
+        "tokensOut": 2340,
+        "reasoning": 481,
+        "wallSec": 69
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": true,
+        "stems_split": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "lilypond-espresso-rag-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0284,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18415,
+        "tokensOut": 1961,
+        "reasoning": 561,
+        "wallSec": 58
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": true,
+        "stems_split": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "lilypond-espresso-rag-gpt-6.1-sol-s3-r4",
+      "post": null,
+      "date": "2026-10-04",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.0483,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51897,
+        "tokensOut": 2611,
+        "reasoning": 813,
+        "wallSec": 85
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": true,
+        "stems_split": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "mistralai/mistral-large-4-0",
+      "label": "Mistral Large 4",
+      "artifact": "svg-french-press-mistral-large-4-0-s2-r1",
+      "post": "2026-10-07-can-a-mistral-make-a-french-press",
+      "date": "2026-10-07",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.0716,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 44634,
+        "tokensOut": 20016,
+        "reasoning": 13015,
+        "wallSec": 720
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "mistralai/mistral-large-4-0",
+      "label": "Mistral Large 4",
+      "artifact": "svg-french-press-mistral-large-4-0-s3-r2",
+      "post": "2026-10-07-can-a-mistral-make-a-french-press",
+      "date": "2026-10-07",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.1401,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 202696,
+        "tokensOut": 20335,
+        "reasoning": 13388,
+        "wallSec": 588
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "tikz-coffee-venn-claude-haiku-5.5-s1-r1",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0031,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 16936,
+        "tokensOut": 4660,
+        "reasoning": 3377,
+        "wallSec": 34
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "tikz-coffee-venn-claude-haiku-5.5-s2-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0053,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43941,
+        "tokensOut": 7147,
+        "reasoning": 5260,
+        "wallSec": 57
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "tikz-coffee-venn-claude-haiku-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.003,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18489,
+        "tokensOut": 4244,
+        "reasoning": 2928,
+        "wallSec": 34
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-french-press-gpt-6.1-sol-s1-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0846,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 52174,
+        "tokensOut": 6154,
+        "reasoning": 866,
+        "wallSec": 116
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-french-press-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0944,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51017,
+        "tokensOut": 6633,
+        "reasoning": 623,
+        "wallSec": 118
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "svg-french-press-gpt-6.1-sol-s3-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0915,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50223,
+        "tokensOut": 6723,
+        "reasoning": 838,
+        "wallSec": 121
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "svg-french-press-claude-haiku-5.5-s1-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.008,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50274,
+        "tokensOut": 11797,
+        "reasoning": 5181,
+        "wallSec": 65
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": false,
+        "labels": false
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 0,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "svg-french-press-claude-haiku-5.5-s2-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.004,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28582,
+        "tokensOut": 5340,
+        "reasoning": 2161,
+        "wallSec": 33
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "svg-french-press-claude-haiku-5.5-s3-r4",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.0076,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 86590,
+        "tokensOut": 9833,
+        "reasoning": 2992,
+        "wallSec": 63
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": false,
+        "axis": true,
+        "labels": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-haiku-5.5-s1-r8",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 8,
+      "cost": 0.0093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 190017,
+        "tokensOut": 10677,
+        "reasoning": 7761,
+        "wallSec": 134
+      },
+      "checks": {
+        "shrub": true,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-haiku-5.5-s2-r7",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 7,
+      "cost": 0.0116,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 187790,
+        "tokensOut": 15588,
+        "reasoning": 11749,
+        "wallSec": 156
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lsystem-pruned-coffee-shrub",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lsystem-pruned-coffee-shrub-claude-haiku-5.5-s3-r8",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.0087,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 181440,
+        "tokensOut": 9699,
+        "reasoning": 6681,
+        "wallSec": 117
+      },
+      "checks": {
+        "shrub": false,
+        "pruned": true,
+        "size": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lilypond-espresso-rag-claude-haiku-5.5-s1-r1",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0122,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 36873,
+        "tokensOut": 22270,
+        "reasoning": 19171,
+        "wallSec": 115
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": false,
+        "crossing_marked": false,
+        "stems_split": true
+      },
+      "quality": 3,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lilypond-espresso-rag-claude-haiku-5.5-s2-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0118,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43123,
+        "tokensOut": 20876,
+        "reasoning": 18340,
+        "wallSec": 119
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": true
+      },
+      "quality": 3,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "lilypond-espresso-rag",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "lilypond-espresso-rag-claude-haiku-5.5-s3-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0088,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39753,
+        "tokensOut": 14936,
+        "reasoning": 11713,
+        "wallSec": 89
+      },
+      "checks": {
+        "piano_staff": true,
+        "sixteen_bars": true,
+        "left_hand_crosses": true,
+        "right_hand_goes_on": true,
+        "crossing_marked": false,
+        "stems_split": true
+      },
+      "quality": 3,
+      "failures": [
+        "notation"
+      ],
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-aeropress-claude-haiku-5.5-s1-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0085,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 108230,
+        "tokensOut": 11568,
+        "reasoning": 3488,
+        "wallSec": 70
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-aeropress-claude-haiku-5.5-s2-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0063,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 59038,
+        "tokensOut": 8858,
+        "reasoning": 3349,
+        "wallSec": 54
+      },
+      "checks": {
+        "parts": false,
+        "order": null,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-aeropress-claude-haiku-5.5-s3-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0056,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 52928,
+        "tokensOut": 8071,
+        "reasoning": 3564,
+        "wallSec": 51
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-aeropress-gpt-6-luna-s1-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0044,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 44519,
+        "tokensOut": 6030,
+        "reasoning": 1152,
+        "wallSec": 79
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-aeropress-gpt-6-luna-s2-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.003,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 17604,
+        "tokensOut": 4334,
+        "reasoning": 686,
+        "wallSec": 52
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-aeropress-gpt-6-luna-s3-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0036,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19677,
+        "tokensOut": 5244,
+        "reasoning": 667,
+        "wallSec": 58
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-aeropress-gpt-6.1-sol-s1-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.1053,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 79467,
+        "tokensOut": 7157,
+        "reasoning": 894,
+        "wallSec": 150
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-aeropress-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.089,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 47933,
+        "tokensOut": 6248,
+        "reasoning": 746,
+        "wallSec": 126
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-aeropress-gpt-6.1-sol-s3-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0893,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 54210,
+        "tokensOut": 6434,
+        "reasoning": 763,
+        "wallSec": 132
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-aeropress-pareto-26.10-preview-s1-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1098,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 42032,
+        "tokensOut": 30511,
+        "reasoning": 0,
+        "wallSec": 140
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-aeropress-pareto-26.10-preview-s2-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.1002,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 68202,
+        "tokensOut": 26300,
+        "reasoning": 0,
+        "wallSec": 140
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-aeropress",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-aeropress-pareto-26.10-preview-s3-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0953,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 44918,
+        "tokensOut": 26000,
+        "reasoning": 0,
+        "wallSec": 133
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": false,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 1,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-grinder-claude-haiku-5.5-s1-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0047,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 30727,
+        "tokensOut": 7065,
+        "reasoning": 3036,
+        "wallSec": 43
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-grinder-claude-haiku-5.5-s2-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0064,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 46488,
+        "tokensOut": 9891,
+        "reasoning": 5620,
+        "wallSec": 63
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-grinder-claude-haiku-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0045,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 15377,
+        "tokensOut": 7579,
+        "reasoning": 3794,
+        "wallSec": 39
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-grinder-gpt-6-luna-s1-r3",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0065,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 79088,
+        "tokensOut": 8712,
+        "reasoning": 2438,
+        "wallSec": 112
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-grinder-gpt-6-luna-s2-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0046,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 24338,
+        "tokensOut": 6978,
+        "reasoning": 1071,
+        "wallSec": 78
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-grinder-gpt-6-luna-s3-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0038,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21646,
+        "tokensOut": 5688,
+        "reasoning": 703,
+        "wallSec": 66
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-grinder-gpt-6.1-sol-s1-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0982,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 53394,
+        "tokensOut": 7210,
+        "reasoning": 674,
+        "wallSec": 136
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-grinder-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0958,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51118,
+        "tokensOut": 7042,
+        "reasoning": 1012,
+        "wallSec": 149
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-grinder-gpt-6.1-sol-s3-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0906,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50155,
+        "tokensOut": 6640,
+        "reasoning": 752,
+        "wallSec": 135
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-grinder-pareto-26.10-preview-s1-r1",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "stoppedBy": "clock",
+      "cost": 0.4023,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 52388,
+        "tokensOut": 119747,
+        "reasoning": 0,
+        "wallSec": 720
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-grinder-pareto-26.10-preview-s2-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.1367,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 65852,
+        "tokensOut": 38025,
+        "reasoning": 0,
+        "wallSec": 192
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-grinder",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-grinder-pareto-26.10-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.2562,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 162112,
+        "tokensOut": 66266,
+        "reasoning": 0,
+        "wallSec": 379
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-portafilter-claude-haiku-5.5-s1-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0071,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 47752,
+        "tokensOut": 10794,
+        "reasoning": 2478,
+        "wallSec": 55
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": null,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 1,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-portafilter-claude-haiku-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0049,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14340,
+        "tokensOut": 8493,
+        "reasoning": 5503,
+        "wallSec": 47
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-portafilter-claude-haiku-5.5-s3-r2",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0048,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 34060,
+        "tokensOut": 7069,
+        "reasoning": 2571,
+        "wallSec": 42
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "mistralai/mistral-large-4-0",
+      "label": "Mistral Large 4",
+      "artifact": "exploded-portafilter-mistral-large-4-0-s2-r1",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0462,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 40317,
+        "tokensOut": 12554,
+        "reasoning": 7401,
+        "wallSec": 258
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-portafilter-gpt-6-luna-s1-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.004,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 41870,
+        "tokensOut": 5239,
+        "reasoning": 1048,
+        "wallSec": 70
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "fit": null,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-portafilter-gpt-6-luna-s2-r7",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 7,
+      "cost": 0.0128,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 337879,
+        "tokensOut": 13376,
+        "reasoning": 4403,
+        "wallSec": 226
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "fit": null,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-portafilter-gpt-6-luna-s3-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0041,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 42092,
+        "tokensOut": 5543,
+        "reasoning": 1264,
+        "wallSec": 71
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-portafilter-gpt-6.1-sol-s1-r1",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0641,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21195,
+        "tokensOut": 4820,
+        "reasoning": 608,
+        "wallSec": 92
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-portafilter-gpt-6.1-sol-s2-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 76976,
+        "tokensOut": 5912,
+        "reasoning": 763,
+        "wallSec": 128
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-portafilter-gpt-6.1-sol-s3-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0817,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 53137,
+        "tokensOut": 5742,
+        "reasoning": 1085,
+        "wallSec": 124
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-portafilter-pareto-26.10-preview-s1-r5",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 5,
+      "cost": 0.2351,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 231494,
+        "tokensOut": 58264,
+        "reasoning": 0,
+        "wallSec": 409
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-portafilter-pareto-26.10-preview-s2-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.1517,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 84013,
+        "tokensOut": 37175,
+        "reasoning": 0,
+        "wallSec": 327
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-portafilter",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-portafilter-pareto-26.10-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.1385,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 110457,
+        "tokensOut": 36466,
+        "reasoning": 0,
+        "wallSec": 205
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": false,
+        "axis": false,
+        "labels": true
+      },
+      "quality": 1,
+      "failures": [
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-v60-claude-haiku-5.5-s1-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0052,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 38399,
+        "tokensOut": 7394,
+        "reasoning": 2912,
+        "wallSec": 46
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-v60-claude-haiku-5.5-s2-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0072,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 62161,
+        "tokensOut": 9735,
+        "reasoning": 2546,
+        "wallSec": 55
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "exploded-v60-claude-haiku-5.5-s3-r3",
+      "post": null,
+      "date": "2026-10-08",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0047,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39788,
+        "tokensOut": 6171,
+        "reasoning": 1885,
+        "wallSec": 40
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-v60-gpt-6-luna-s1-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0036,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21832,
+        "tokensOut": 5503,
+        "reasoning": 1560,
+        "wallSec": 75
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-v60-gpt-6-luna-s2-r2",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0038,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 40392,
+        "tokensOut": 5157,
+        "reasoning": 1081,
+        "wallSec": 73
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "exploded-v60-gpt-6-luna-s3-r1",
+      "post": null,
+      "date": "2026-10-05",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0034,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 23005,
+        "tokensOut": 4972,
+        "reasoning": 1141,
+        "wallSec": 65
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-v60-gpt-6.1-sol-s1-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0728,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 41313,
+        "tokensOut": 4944,
+        "reasoning": 708,
+        "wallSec": 103
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-v60-gpt-6.1-sol-s2-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0697,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43266,
+        "tokensOut": 4835,
+        "reasoning": 251,
+        "wallSec": 101
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "exploded-v60-gpt-6.1-sol-s3-r2",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0716,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 42665,
+        "tokensOut": 5068,
+        "reasoning": 573,
+        "wallSec": 101
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-v60-pareto-26.10-preview-s1-r5",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 5,
+      "cost": 0.2573,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 347709,
+        "tokensOut": 60788,
+        "reasoning": 0,
+        "wallSec": 375
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 5,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-v60-pareto-26.10-preview-s2-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.1256,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 70839,
+        "tokensOut": 34179,
+        "reasoning": 0,
+        "wallSec": 192
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "fit": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "exploded-v60",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "exploded-v60-pareto-26.10-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-07",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.1727,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 155838,
+        "tokensOut": 42385,
+        "reasoning": 0,
+        "wallSec": 255
+      },
+      "checks": {
+        "parts": true,
+        "order": true,
+        "fit": false,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "tikz-coffee-venn-step-5-preview-s1-r4",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "cost": 0.1172,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 398798,
+        "tokensOut": 21044,
+        "reasoning": 0,
+        "wallSec": 274
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 4,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "tikz-coffee-venn-step-5-preview-s2-r2",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0178,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 36016,
+        "tokensOut": 4475,
+        "reasoning": 0,
+        "wallSec": 73
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": false
+      },
+      "quality": 4,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "tikz-coffee-venn-step-5-preview-s3-r3",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.1037,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 130150,
+        "tokensOut": 19072,
+        "reasoning": 0,
+        "wallSec": 267
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": false,
+        "clear": false
+      },
+      "quality": 3,
+      "failures": [
+        "labelling"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "svg-french-press-step-5-preview-s1-r3",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0528,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 152250,
+        "tokensOut": 15392,
+        "reasoning": 0,
+        "wallSec": 187
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "svg-french-press-step-5-preview-s2-r5",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 5,
+      "cost": 0.1665,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 436234,
+        "tokensOut": 31349,
+        "reasoning": 0,
+        "wallSec": 345
+      },
+      "checks": {
+        "parts": false,
+        "order": true,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "stepfun/step-5-preview",
+      "label": "Step 5 Preview",
+      "artifact": "svg-french-press-step-5-preview-s3-r4",
+      "post": null,
+      "date": "2026-10-09",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "stoppedBy": "clock",
+      "cost": 0.2137,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 619095,
+        "tokensOut": 66185,
+        "reasoning": 0,
+        "wallSec": 720
+      },
+      "checks": {
+        "parts": false,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 5,
+        "undecided": 0
+      }
     }
   ],
   "blank": [

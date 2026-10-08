@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1400" viewBox="0 0 1100 1400">
+<defs>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9aa9b0"/><stop offset=".18" stop-color="#eaf0f1"/><stop offset=".42" stop-color="#bcc8cd"/><stop offset=".64" stop-color="#f7faf9"/><stop offset="1" stop-color="#87999f"/></linearGradient>
+  <linearGradient id="lid" x1="0" y1="0" x2="0.4" y2="1"><stop stop-color="#f8faf9"/><stop offset=".65" stop-color="#c6d1d5"/><stop offset="1" stop-color="#91a3ac"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c9e1e5" stop-opacity=".65"/><stop offset=".13" stop-color="#f6fbfb" stop-opacity=".2"/><stop offset=".72" stop-color="#dfeff0" stop-opacity=".12"/><stop offset="1" stop-color="#a9cdd3" stop-opacity=".65"/></linearGradient>
+  <linearGradient id="black" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3a4a4f"/><stop offset=".5" stop-color="#25353a"/><stop offset="1" stop-color="#14262c"/></linearGradient>
+  <pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#e3eaeb"/><path d="M0 0H7M0 0V7" fill="none" stroke="#758e96" stroke-width="1"/><path d="M0 1.5H7M1.5 0V7" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width=".7"/></pattern>
+  <pattern id="spring" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#a4b3b9"/><path d="M-4 12L4 0M8 12L16 0" stroke="#374f59" stroke-width="3"/><path d="M-2 12L6 0M10 12L18 0" stroke="#f6f9f8" stroke-width="2"/></pattern>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#a5b2b6" stroke-width="1.2"/></marker>
+  <style>
+    .outline {stroke:#344f5a;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+    .leader {fill:none;stroke:#95a5ab;stroke-width:1.2;stroke-linejoin:round}
+    .label {font:600 18px 'Arial',sans-serif;fill:#243e49}
+    .desc {font:14px 'Arial',sans-serif;fill:#667d85}
+    .tiny {font:12px 'Arial',sans-serif;fill:#667d85;letter-spacing:1.3px}
+    .number {font:600 12px 'Arial',sans-serif;fill:#f9fbfa;text-anchor:middle;dominant-baseline:central}
+  </style>
+</defs>
+<rect width="1100" height="1400" fill="#f6f5f0"/>
+<path d="M62 105H1038" stroke="#cbd3d1"/>
+<text x="62" y="45" class="tiny">OBJECT STUDY / 01</text>
+<text x="60" y="84" font-family="Arial,sans-serif" font-size="35" font-weight="600" fill="#203c47">French press</text>
+<text x="1038" y="78" text-anchor="end" class="tiny">EXPLODED ASSEMBLY</text>
+
+<!-- The common assembly axis is visible in the gaps. -->
+<path d="M450 143V1285" stroke="#afbabd" stroke-width="1" stroke-dasharray="5 7"/>
+
+<!-- Knob and central plunger shaft. -->
+<path d="M444 204H456V770L450 778L444 770Z" fill="url(#steel)" class="outline"/>
+<path d="M447 214V700" stroke="#f8fbfa" stroke-width="2"/>
+<path d="M443 756l14-4m-14 10l14-4m-14 10l14-4m-14 10l14-4" fill="none" stroke="#506976" stroke-width="1.3"/>
+<path d="M416 167C416 147 430 137 450 137C470 137 484 147 484 167V184C484 201 470 209 450 209C430 209 416 201 416 184Z" fill="url(#black)" class="outline"/>
+<ellipse cx="450" cy="163" rx="34" ry="15" fill="#405259" class="outline"/>
+<path d="M427 160C437 151 457 151 467 156" fill="none" stroke="#829196" stroke-width="2"/>
+
+<!-- Domed lid, lifted clear of the carafe. -->
+<path d="M282 303C282 283 331 263 397 256L397 245C410 230 489 230 503 245V256C567 263 617 283 617 303L614 321C584 352 318 352 285 321Z" fill="url(#lid)" class="outline"/>
+<ellipse cx="450" cy="305" rx="168" ry="40" fill="url(#steel)" class="outline"/>
+<path d="M285 298C333 329 568 329 614 298" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+<ellipse cx="450" cy="245" rx="53" ry="13" fill="url(#steel)" class="outline"/>
+<ellipse cx="450" cy="245" rx="10" ry="4" fill="#364f58" stroke="#344f5a"/>
+<path d="M444 230V247M456 230V247" stroke="#5f7680" stroke-width="1.3"/>
+<path d="M444 235H456V249H444Z" fill="url(#steel)"/>
+<path d="M543 275q33 6 48 15" fill="none" stroke="#8499a1" stroke-width="1.2"/>
+
+<!-- 1 of 3: perforated spiral plate with perimeter spring. -->
+<path d="M300 452V463C300 486 367 505 450 505C533 505 600 486 600 463V452Z" fill="url(#steel)" class="outline"/>
+<ellipse cx="450" cy="452" rx="150" ry="45" fill="url(#spring)" class="outline"/>
+<ellipse cx="450" cy="452" rx="136" ry="36" fill="url(#steel)" class="outline"/>
+<g transform="translate(450 452) scale(1 .28)" fill="#81949c" stroke="#526b76" stroke-width="2.7">
+  <path d="M-101-12H-50V12H-101Z" rx="5"/>
+  <path d="M50-12H101V12H50Z"/>
+  <path d="M-14-111H14V-52H-14Z"/>
+  <path d="M-14 52H14V111H-14Z"/>
+  <path d="M-88-69L-72-85L-36-49L-52-33Z"/>
+  <path d="M72-85L88-69L52-33L36-49Z"/>
+  <path d="M-88 69L-72 85L-36 49L-52 33Z"/>
+  <path d="M72 85L88 69L52 33L36 49Z"/>
+  <circle r="28" fill="#dfe6e8"/>
+  <circle r="9" fill="#334e59"/>
+</g>
+<path d="M315 441C355 419 540 414 583 441" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="1.5"/>
+
+<!-- 2 of 3: separate woven-wire mesh, not a second support plate. -->
+<path d="M300 576V582C300 607 367 626 450 626C533 626 600 607 600 582V576" fill="url(#steel)" class="outline"/>
+<ellipse cx="450" cy="576" rx="150" ry="45" fill="url(#steel)" class="outline"/>
+<ellipse cx="450" cy="576" rx="140" ry="39" fill="url(#mesh)" stroke="#7a929c" stroke-width="1.2"/>
+<ellipse cx="450" cy="576" rx="19" ry="7" fill="#c3d0d4" stroke="#526d77" stroke-width="1.3"/>
+<ellipse cx="450" cy="576" rx="8" ry="3.4" fill="#3c5660"/>
+
+<!-- 3 of 3: rigid cross plate. Four open quadrants leave a true cross. -->
+<path d="M300 702V711C300 736 367 754 450 754C533 754 600 736 600 711V702Z" fill="url(#steel)" class="outline"/>
+<ellipse cx="450" cy="702" rx="150" ry="45" fill="url(#steel)" class="outline"/>
+<g transform="translate(450 702) scale(1 .3)" stroke="#526b76" stroke-width="3" fill="#f6f5f0">
+  <path d="M-22-126A128 128 0 0 0-126-22H-35L-22-35Z"/>
+  <path d="M22-126A128 128 0 0 1 126-22H35L22-35Z"/>
+  <path d="M126 22A128 128 0 0 1 22 126V35L35 22Z"/>
+  <path d="M-126 22A128 128 0 0 0-22 126V35L-35 22Z"/>
+  <circle r="27" fill="#bdccd1"/>
+  <circle r="9" fill="#314d59"/>
+</g>
+<path d="M338 675Q450 647 562 675" fill="none" stroke="#fff" stroke-width="1.5"/>
+
+<!-- Threaded retaining nut below the filter stack. -->
+<path d="M432 796L449 789L469 797L469 810L451 819L432 811Z" fill="url(#steel)" class="outline"/>
+<path d="M432 796L451 804L469 797M451 804V819" fill="none" stroke="#526c77" stroke-width="1.2"/>
+<ellipse cx="450" cy="797" rx="7" ry="3" fill="#374f58"/>
+
+<!-- Borosilicate vessel: open top, pouring lip, transparent walls. -->
+<ellipse cx="450" cy="1264" rx="164" ry="28" fill="#d8dfdd" opacity=".55"/>
+<path d="M298 918C302 945 300 1182 311 1229C322 1267 576 1267 589 1229C600 1182 598 945 602 918C602 863 349 866 315 902L279 893Z" fill="url(#glass)" stroke="#7196a0" stroke-width="2"/>
+<path d="M300 918C300 891 370 875 450 875C533 875 602 893 602 918L590 918C585 897 532 886 450 886C375 886 338 893 315 902L279 893Z" fill="#e6f0ef" fill-opacity=".8" stroke="#7196a0" stroke-width="1.8"/>
+<path d="M302 918C326 952 565 955 598 918" fill="none" stroke="#8aaab2" stroke-width="1.8"/>
+<path d="M310 920C344 945 557 947 589 923" fill="none" stroke="#fff" stroke-width="3"/>
+<path d="M323 963V1173" stroke="#fff" stroke-width="8" opacity=".8" stroke-linecap="round"/>
+<path d="M336 983V1145" stroke="#fff" stroke-width="2" opacity=".8"/>
+<path d="M578 962V1204" stroke="#91b7bf" stroke-width="2" opacity=".5"/>
+<ellipse cx="450" cy="1227" rx="139" ry="29" fill="none" stroke="#a0bdc2" stroke-width="1.5"/>
+
+<!-- Metal cradle and insulated handle, retained as one vessel assembly. -->
+<path d="M594 974C668 937 714 979 714 1056V1131C714 1188 673 1219 596 1196V1170C650 1184 681 1166 681 1126V1059C681 1006 656 994 597 1010Z" fill="url(#black)" class="outline"/>
+<path d="M608 981C669 960 704 991 704 1056V1129" fill="none" stroke="#5e7075" stroke-width="2"/>
+<path d="M297 978C329 1008 572 1008 602 978V1001C572 1031 329 1031 297 1001Z" fill="url(#steel)" class="outline"/>
+<path d="M303 982V1206L315 1233L330 1237V1006Z" fill="url(#steel)" class="outline"/>
+<path d="M573 1006V1237L588 1233L599 1206V982Z" fill="url(#steel)" class="outline"/>
+<path d="M307 1201C337 1239 566 1239 594 1201V1230C588 1273 316 1273 307 1230Z" fill="url(#steel)" class="outline"/>
+<path d="M311 1211C354 1244 546 1244 590 1211" fill="none" stroke="#f5f9f8" stroke-width="2"/>
+<path d="M326 1250V1262Q339 1270 351 1264V1257M549 1257V1264Q562 1270 575 1262V1250" fill="url(#black)" stroke="#344f5a" stroke-width="1.5"/>
+
+<!-- Callouts. -->
+<g>
+  <path d="M485 172H749L784 165" class="leader"/><circle cx="485" cy="172" r="3" fill="#70878e"/>
+  <circle cx="799" cy="165" r="12" fill="#284b59"/><text x="799" y="165" class="number">1</text>
+  <text x="821" y="171" class="label">Knob &amp; plunger rod</text>
+  <text x="821" y="196" class="desc">Threaded lower end</text>
+  <path d="M614 310H750L784 298" class="leader"/><circle cx="614" cy="310" r="3" fill="#70878e"/>
+  <circle cx="799" cy="298" r="12" fill="#284b59"/><text x="799" y="298" class="number">2</text>
+  <text x="821" y="304" class="label">Lid</text><text x="821" y="329" class="desc">Rod slides through center</text>
+  <path d="M601 453H750L784 446" class="leader"/><circle cx="601" cy="453" r="3" fill="#70878e"/>
+  <circle cx="799" cy="446" r="12" fill="#284b59"/><text x="799" y="446" class="number">3</text>
+  <text x="821" y="452" class="label">Spiral plate</text><text x="821" y="477" class="desc">Coiled spring seals the edge</text>
+  <path d="M601 578H750L784 573" class="leader"/><circle cx="601" cy="578" r="3" fill="#70878e"/>
+  <circle cx="799" cy="573" r="12" fill="#284b59"/><text x="799" y="573" class="number">4</text>
+  <text x="821" y="579" class="label">Fine mesh screen</text><text x="821" y="604" class="desc">Woven stainless-steel filter</text>
+  <path d="M601 705H750L784 700" class="leader"/><circle cx="601" cy="705" r="3" fill="#70878e"/>
+  <circle cx="799" cy="700" r="12" fill="#284b59"/><text x="799" y="700" class="number">5</text>
+  <text x="821" y="706" class="label">Cross plate</text><text x="821" y="731" class="desc">Rigid support beneath mesh</text>
+  <path d="M469 805H750L784 801" class="leader"/><circle cx="469" cy="805" r="3" fill="#70878e"/>
+  <circle cx="799" cy="801" r="12" fill="#284b59"/><text x="799" y="801" class="number">6</text>
+  <text x="821" y="807" class="label">Retaining nut</text><text x="821" y="832" class="desc">Secures the filter stack</text>
+  <path d="M565 1081H750L784 1070" class="leader"/><circle cx="565" cy="1081" r="3" fill="#70878e"/>
+  <circle cx="799" cy="1070" r="12" fill="#284b59"/><text x="799" y="1070" class="number">7</text>
+  <text x="821" y="1076" class="label">Glass carafe</text><text x="821" y="1101" class="desc">Borosilicate brewing vessel</text>
+  <path d="M603 1193H750L784 1197" class="leader"/><circle cx="603" cy="1193" r="3" fill="#70878e"/>
+  <circle cx="799" cy="1197" r="12" fill="#284b59"/><text x="799" y="1197" class="number">8</text>
+  <text x="821" y="1203" class="label">Frame &amp; handle</text><text x="821" y="1228" class="desc">Shown fitted to the carafe</text>
+</g>
+<!-- Filter-stack bracket and assembly note. -->
+<path d="M274 409H251V747H274" fill="none" stroke="#3d7b83" stroke-width="2"/>
+<text x="68" y="500" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#347780" letter-spacing="1.5">3-PIECE FILTER</text>
+<text x="68" y="526" class="desc">Spiral plate</text><text x="68" y="548" class="desc">+ mesh screen</text><text x="68" y="570" class="desc">+ cross plate</text>
+<path d="M180 583H228L251 597" class="leader"/>
+<path d="M450 834V851" fill="none" stroke="#a5b2b6" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M62 1315H1038" stroke="#cbd3d1"/>
+<text x="62" y="1347" class="tiny">ASSEMBLY ORDER</text>
+<text x="62" y="1373" font-family="Arial,sans-serif" font-size="14" fill="#536d77">Stack 3 → 4 → 5 on the rod, secure with 6, then lower the plunger into 7.</text>
+<text x="1038" y="1373" text-anchor="end" class="tiny">SCHEMATIC · NOT TO SCALE</text>
+</svg>

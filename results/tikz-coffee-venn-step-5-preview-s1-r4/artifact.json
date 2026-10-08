@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-step-5-preview-s1-r4",
+  "exportedAt": "2026-10-08T20:52:05.783Z",
+  "run": "2026-10-09-tikz-coffee-venn-0747",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "stepfun/step-5-preview",
+  "seed": 1,
+  "round": 4,
+  "rounds": 4,
+  "grade": {
+    "pass": false,
+    "detail": "flat white missing; iced long black missing; iced latte missing; milkshake crosses a circle's edge"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage{tikz}\n\n\\begin{document}\n\\begin{tikzpicture}[\n    font=\\sffamily\\small,\n    every node/.style={align=center, inner sep=1pt},\n  ]\n\n  % ---- circle geometry --------------------------------------------------\n  % Espresso  : (0, 1.25)\n  % Milk      : (-1.083, -0.625)\n  % Cold      : ( 1.083, -0.625)\n  % radius    : 1.8\n  \\def\\r{1.8}\n\n  % ---- filled discs (light tints so labels stay readable) --------------\n  \\fill[brown!20]  (0,1.25)         circle (\\r);\n  \\fill[blue!14]   (-1.083,-0.625)  circle (\\r);\n  \\fill[teal!28]   (1.083,-0.625)   circle (\\r);\n\n  \\draw[thick] (0,1.25)         circle (\\r);\n  \\draw[thick] (-1.083,-0.625)  circle (\\r);\n  \\draw[thick] (1.083,-0.625)   circle (\\r);\n\n  % ---- set titles -------------------------------------------------------\n  \\node[font=\\sffamily\\bfseries\\small, text=brown!55!black, anchor=south]\n       at (0,3.35)       {Has espresso};\n  \\node[font=\\sffamily\\bfseries\\small, text=blue!55!black, anchor=east]\n       at (-3.1,-0.7)    {Has milk};\n  \\node[font=\\sffamily\\bfseries\\small, text=teal!65!black, anchor=west]\n       at (3.1,-0.7)     {Served cold};\n\n  % ---- members ----------------------------------------------------------\n  \\node at (0,2.35)                      {short\\\\black};        % espresso only\n  \\node at (-0.80,0.46)                  {flat\\\\white};         % espresso + milk\n  \\node at (0.80,0.46)                   {iced long\\\\black};    % espresso + cold\n  \\node[font=\\scriptsize]   at (0,0.05)   {iced\\\\latte};         % all three\n  \\node at (-1.75,-0.625)                {babyccino};           % milk only\n  \\node at (1.75,-0.625)                 {cold brew};           % cold only\n  \\node[font=\\footnotesize] at (0,-1.10) {milkshake};            % milk + cold\n  \\node at (0,-3.05)                     {pour-over};           % none of the three\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 46
+  },
+  "output": null,
+  "notes": []
+}

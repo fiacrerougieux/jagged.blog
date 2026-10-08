@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L6 6 M6 0 L0 6" stroke="#777" stroke-width="0.8"/>
+    </pattern>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#cfe8f5"/>
+      <stop offset="0.5" stop-color="#f4fbff"/>
+      <stop offset="1" stop-color="#bfdcec"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" x2="1">
+      <stop offset="0" stop-color="#9aa3ab"/>
+      <stop offset="0.5" stop-color="#e6ebef"/>
+      <stop offset="1" stop-color="#8b949c"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="1000" fill="white"/>
+  <text x="400" y="36" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#222">French Press — Exploded Assembly (three-piece plunger filter)</text>
+
+  <!-- alignment guide -->
+  <line x1="400" y1="70" x2="400" y2="945" stroke="#999" stroke-width="1" stroke-dasharray="6,5"/>
+
+  <!-- A. Lid -->
+  <g id="lid">
+    <rect x="260" y="84" width="280" height="36" rx="18" fill="url(#steel)" stroke="#444" stroke-width="2"/>
+    <rect x="382" y="88" width="36" height="28" fill="white" stroke="#444" stroke-width="1.5"/>
+  </g>
+
+  <!-- B. Plunger knob -->
+  <rect x="345" y="150" width="110" height="34" rx="16" fill="url(#steel)" stroke="#444" stroke-width="2"/>
+
+  <!-- C. Plunger rod -->
+  <rect x="388" y="184" width="24" height="148" fill="url(#steel)" stroke="#444" stroke-width="1.5"/>
+
+  <!-- D. Plunger frame (holder) -->
+  <rect x="290" y="330" width="220" height="22" rx="4" fill="url(#steel)" stroke="#444" stroke-width="2"/>
+  <g fill="white" stroke="#444" stroke-width="1">
+    <circle cx="320" cy="341" r="5"/><circle cx="350" cy="341" r="5"/>
+    <circle cx="380" cy="341" r="5"/><circle cx="420" cy="341" r="5"/>
+    <circle cx="450" cy="341" r="5"/><circle cx="480" cy="341" r="5"/>
+  </g>
+
+  <!-- E. Fine mesh screen (disc) -->
+  <rect x="280" y="366" width="240" height="12" rx="3" fill="url(#mesh)" stroke="#444" stroke-width="2"/>
+
+  <!-- H. Retaining cage (lower filter cylinder) -->
+  <path d="M300 392 L300 430 Q300 438 308 438 L492 438 Q500 438 500 430 L500 392" fill="url(#mesh)" stroke="#444" stroke-width="2"/>
+  <line x1="300" y1="392" x2="500" y2="392" stroke="#444" stroke-width="2"/>
+
+  <!-- F. Carafe -->
+  <path d="M250 480 L250 880 Q250 905 275 905 L525 905 Q550 905 550 880 L550 480 Z" fill="url(#glass)" fill-opacity="0.75" stroke="#2c5a73" stroke-width="2.5"/>
+  <path d="M250 480 L550 480" stroke="#2c5a73" stroke-width="3"/>
+  <path d="M262 500 L262 870" stroke="white" stroke-width="6" opacity="0.7"/>
+  <path d="M550 540 Q620 530 620 600 L620 760 Q620 830 550 820" fill="none" stroke="#2c5a73" stroke-width="16" stroke-linecap="round"/>
+  <path d="M550 540 Q620 530 620 600 L620 760 Q620 830 550 820" fill="none" stroke="#d9eef8" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- G. Base ring -->
+  <rect x="300" y="905" width="200" height="22" rx="6" fill="url(#steel)" stroke="#444" stroke-width="2"/>
+
+  <!-- Labels: right column -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">
+    <line x1="545" y1="102" x2="585" y2="102" stroke="#555"/>
+    <text x="592" y="107">A  Lid</text>
+
+    <line x1="458" y1="167" x2="585" y2="167" stroke="#555"/>
+    <text x="592" y="172">B  Plunger knob</text>
+
+    <line x1="412" y1="250" x2="585" y2="250" stroke="#555"/>
+    <text x="592" y="255">C  Plunger rod</text>
+
+    <line x1="508" y1="341" x2="585" y2="341" stroke="#555"/>
+    <text x="592" y="346">D  Plunger frame (holder)</text>
+
+    <line x1="518" y1="372" x2="585" y2="372" stroke="#555"/>
+    <text x="592" y="377">E  Fine mesh screen</text>
+
+    <line x1="508" y1="415" x2="585" y2="415" stroke="#555"/>
+    <text x="592" y="420">H  Retaining cage</text>
+  </g>
+
+  <!-- Labels: left column -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">
+    <line x1="252" y1="650" x2="150" y2="650" stroke="#555"/>
+    <text x="142" y="655" text-anchor="end">F  Carafe (glass)</text>
+
+    <line x1="300" y1="916" x2="150" y2="916" stroke="#555"/>
+    <text x="142" y="921" text-anchor="end">G  Base ring</text>
+  </g>
+
+  <!-- Lift direction arrow (left side, clear of labels) -->
+  <line x1="190" y1="240" x2="190" y2="70" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="182" y="150" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#333">lift</text>
+  <text x="182" y="166" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#333">to separate</text>
+
+  <text x="400" y="965" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555">Three-piece plunger filter: holder (D) and fine screen (E) stack on the rod; cage (H) sits beneath. Lid (A) rests on carafe rim.</text>
+</svg>

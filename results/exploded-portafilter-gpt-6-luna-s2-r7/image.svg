@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f7f4"/><stop offset=".24" stop-color="#b9c5c7"/><stop offset=".48" stop-color="#eef1ed"/><stop offset=".74" stop-color="#87999f"/><stop offset="1" stop-color="#dce3e1"/></linearGradient>
+  <linearGradient id="steelSide" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#63757c"/><stop offset=".25" stop-color="#d4dcda"/><stop offset=".58" stop-color="#829399"/><stop offset=".82" stop-color="#eff1ed"/><stop offset="1" stop-color="#71838a"/></linearGradient>
+  <linearGradient id="basket" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#71848b"/><stop offset=".23" stop-color="#e2e7e3"/><stop offset=".52" stop-color="#9aa9aa"/><stop offset=".8" stop-color="#f5f5ef"/><stop offset="1" stop-color="#77898f"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#654633"/><stop offset=".32" stop-color="#9d704d"/><stop offset=".65" stop-color="#724c36"/><stop offset="1" stop-color="#3d3029"/></linearGradient>
+  <linearGradient id="woodHi" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#583b2b"/><stop offset=".45" stop-color="#b2825b"/><stop offset=".8" stop-color="#80583d"/><stop offset="1" stop-color="#49372e"/></linearGradient>
+  <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8"><feGaussianBlur stdDeviation="10"/></filter>
+  <pattern id="perfs" width="18" height="13" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="2.1" fill="#52636a"/><circle cx="14" cy="11" r="1.7" fill="#66777b"/></pattern>
+  <pattern id="brushed" width="5" height="18" patternUnits="userSpaceOnUse"><path d="M1 0v18" stroke="#fff" stroke-opacity=".13"/><path d="M3 0v18" stroke="#526269" stroke-opacity=".08"/></pattern>
+  <style>
+  .ink{stroke:#273940;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
+  .fine{fill:none;stroke:#455960;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .label{font:600 15px 'Arial',sans-serif;letter-spacing:1.45px;fill:#263b42}
+  .sub{font:12px 'Arial',sans-serif;letter-spacing:.7px;fill:#657579}
+  .num{font:700 11px 'Arial',sans-serif;fill:#f7f4ec}
+  </style>
+</defs>
+<!-- drafting-paper ground -->
+<rect width="1200" height="900" fill="#f3f1e9"/>
+<path d="M48 112H1152M48 802H1152" stroke="#d4d6ce" stroke-width="1"/>
+<path d="M48 124H210M990 124H1152" stroke="#d8d9d1" stroke-width="1"/>
+<text x="54" y="72" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#7a8989">BARISTA TOOLING  /  COMPONENT STUDY</text>
+<text x="54" y="108" font-family="Georgia,serif" font-size="31" fill="#263940">Portafilter · exploded assembly</text>
+<text x="1145" y="76" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#7a8989">58 mm  /  DOUBLE SPOUT</text>
+<text x="1145" y="101" text-anchor="end" font-family="Arial,sans-serif" font-size="11" letter-spacing="1" fill="#9a6c43">01 — SERVICE VIEW</text>
+
+<!-- soft grounding shadow -->
+<ellipse cx="584" cy="711" rx="267" ry="30" fill="#607076" opacity=".13" filter="url(#shadow)"/>
+<!-- exploded alignment guide -->
+<path d="M566 175V655" stroke="#aab3ae" stroke-width="1.2" stroke-dasharray="4 8"/>
+<path d="M557 177l9-13 9 13M557 650l9 13 9-13" fill="none" stroke="#aab3ae" stroke-width="1.2"/>
+
+<!-- BASKET: lifted above the portafilter -->
+<!-- tapered perforated basket body, viewed into its open mouth -->
+<g fill="#53646a" opacity=".9">
+ <circle cx="489" cy="300" r="2.5"/><circle cx="518" cy="307" r="2.5"/><circle cx="547" cy="312" r="2.5"/><circle cx="576" cy="312" r="2.5"/><circle cx="605" cy="307" r="2.5"/><circle cx="634" cy="300" r="2.5"/>
+ <circle cx="497" cy="326" r="2.4"/><circle cx="525" cy="333" r="2.4"/><circle cx="553" cy="337" r="2.4"/><circle cx="581" cy="337" r="2.4"/><circle cx="609" cy="332" r="2.4"/><circle cx="637" cy="325" r="2.4"/>
+ <circle cx="506" cy="352" r="2.3"/><circle cx="532" cy="358" r="2.3"/><circle cx="558" cy="361" r="2.3"/><circle cx="584" cy="361" r="2.3"/><circle cx="610" cy="357" r="2.3"/><circle cx="636" cy="351" r="2.3"/>
+</g>
+<!-- rolled rim and visible hollow interior; perforated floor lies down inside cup -->
+<ellipse cx="566" cy="245" rx="153" ry="43" fill="url(#steel)" class="ink"/>
+<path d="M437 244 Q566 278 695 244 L626 391 Q566 409 506 391Z" fill="url(#basket)" stroke="#43565c" stroke-width="1.7"/>
+<path d="M437 244 Q566 278 695 244" fill="none" stroke="#34474d" stroke-width="2.2"/>
+<path d="M452 273 L510 383M680 273 L622 383" stroke="#fff" stroke-opacity=".48" stroke-width="2"/>
+<g fill="#53646a" opacity=".9">
+ <circle cx="489" cy="300" r="2.5"/><circle cx="518" cy="307" r="2.5"/><circle cx="547" cy="312" r="2.5"/><circle cx="576" cy="312" r="2.5"/><circle cx="605" cy="307" r="2.5"/><circle cx="634" cy="300" r="2.5"/>
+ <circle cx="497" cy="326" r="2.4"/><circle cx="525" cy="333" r="2.4"/><circle cx="553" cy="337" r="2.4"/><circle cx="581" cy="337" r="2.4"/><circle cx="609" cy="332" r="2.4"/><circle cx="637" cy="325" r="2.4"/>
+ <circle cx="506" cy="352" r="2.3"/><circle cx="532" cy="358" r="2.3"/><circle cx="558" cy="361" r="2.3"/><circle cx="584" cy="361" r="2.3"/><circle cx="610" cy="357" r="2.3"/><circle cx="636" cy="351" r="2.3"/>
+</g>
+<ellipse cx="566" cy="391" rx="60" ry="17" fill="#708287" stroke="#36494f" stroke-width="2"/>
+<ellipse cx="566" cy="389" rx="50" ry="11" fill="url(#perfs)" opacity=".95"/>
+<ellipse cx="566" cy="245" rx="137" ry="31" fill="none" stroke="#f4f4ed" stroke-width="3"/>
+<ellipse cx="566" cy="245" rx="130" ry="26" fill="none" stroke="#485a60" stroke-width="1.5"/>
+<path d="M432 251 Q566 286 700 251" fill="none" stroke="#fff" stroke-width="2" opacity=".65"/>
+
+<!-- MAIN PORTAFILTER HEAD + wings, under basket -->
+<!-- head body descending from flange -->
+<path d="M425 474 Q566 510 707 474 L690 534 Q677 554 566 563 Q455 554 442 534Z" fill="url(#steelSide)" class="ink"/>
+<path d="M444 494 Q566 522 688 494 L678 530 Q663 543 566 551 Q469 543 454 530Z" fill="url(#brushed)" opacity=".65"/>
+<!-- flange ears silhouette on back plane -->
+<path d="M421 424 L374 408 Q354 404 346 419 L330 448 Q325 461 343 468 L417 485Z" fill="url(#steelSide)" class="ink"/>
+<path d="M710 424 L758 408 Q778 404 786 419 L802 448 Q807 461 789 468 L714 485Z" fill="url(#steelSide)" class="ink"/>
+<!-- flange ring face -->
+<ellipse cx="566" cy="444" rx="194" ry="66" fill="url(#steel)" class="ink"/>
+<ellipse cx="566" cy="444" rx="159" ry="47" fill="#45575d" stroke="#263940" stroke-width="2.5"/>
+<ellipse cx="566" cy="439" rx="148" ry="38" fill="#26383e" stroke="#dce2de" stroke-width="3"/>
+<!-- top flange face surrounding the open basket well -->
+<path d="M374 442 Q388 385 566 378 Q744 385 758 442 Q738 480 566 489 Q394 480 374 442Z" fill="url(#steel)" opacity=".96"/>
+<!-- empty receiver cavity: chamfered mouth, sloping inner wall, dark bottom -->
+<ellipse cx="566" cy="440" rx="150" ry="39" fill="#405258" stroke="#f5f5ef" stroke-width="3"/>
+<path d="M419 440 Q566 475 713 440 L680 463 Q566 489 452 463Z" fill="url(#steelSide)" stroke="#34474d" stroke-width="1.8"/>
+<ellipse cx="566" cy="463" rx="116" ry="20" fill="#25373d" stroke="#d4dcda" stroke-width="2"/>
+<ellipse cx="566" cy="461" rx="96" ry="14" fill="#40545a" opacity=".72"/>
+<!-- clear outer flange edge and key lugs at left/right -->
+<path d="M389 421 Q412 383 478 380M654 380Q720 383 743 421" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/>
+<!-- ear locking faces -->
+<path d="M346 441 L373 421 L389 427 L376 458 L345 466 Q334 462 346 441Z" fill="#d4dcda" stroke="#34474d" stroke-width="2"/>
+<path d="M786 441 L759 421 L743 427 L756 458 L787 466 Q798 462 786 441Z" fill="#d4dcda" stroke="#34474d" stroke-width="2"/>
+<!-- small locking notches -->
+<path d="M356 438l16 6M776 438l-16 6" stroke="#75878b" stroke-width="2"/>
+
+<!-- HANDLE ferrule, collar and long ergonomic wooden grip -->
+<!-- connection boss from side of head -->
+<path d="M685 502 Q720 492 744 510 L760 533 Q739 548 703 541 L680 529Z" fill="url(#steelSide)" class="ink"/>
+<ellipse cx="741" cy="524" rx="20" ry="16" transform="rotate(18 741 524)" fill="#566a70" stroke="#263940" stroke-width="2"/>
+<path d="M744 513 L786 526 L798 553 L775 565 L746 548Z" fill="url(#steel)" class="ink"/>
+<path d="M786 526 Q801 525 808 539 L810 550 Q802 560 798 553Z" fill="#66797e" stroke="#293c42" stroke-width="2"/>
+<!-- wood grip tapers at neck, widening toward rounded pommel -->
+<path d="M803 531 Q823 529 847 541 L1037 623 Q1066 636 1056 665 Q1048 690 1015 683 L830 606 Q807 596 794 576 Q786 559 796 542Z" fill="url(#wood)" class="ink"/>
+<path d="M819 540 Q837 541 853 549 L1030 625 Q1052 635 1048 653 Q1044 665 1029 668 L839 588 Q818 579 809 564 Q804 552 819 540Z" fill="url(#woodHi)" opacity=".72"/>
+<path d="M827 547 Q855 553 884 568 L1020 626" fill="none" stroke="#d3a47a" stroke-width="2" opacity=".55"/>
+<path d="M811 572 Q825 589 846 596 L1023 672" fill="none" stroke="#342921" stroke-width="2" opacity=".45"/>
+<!-- end grain ring -->
+<ellipse cx="1039" cy="653" rx="16" ry="25" transform="rotate(-66 1039 653)" fill="#79553b" stroke="#352d28" stroke-width="2"/>
+
+<!-- DOUBLE SPOUT manifold and two curved outlets -->
+<path d="M505 543 Q566 565 627 543 L619 574 Q566 594 513 574Z" fill="url(#steelSide)" class="ink"/>
+<path d="M547 574 Q566 583 584 574 L584 598 Q581 610 565 612 Q550 609 547 598Z" fill="url(#steel)" class="ink"/>
+<!-- left branch -->
+<path d="M558 598 C548 612 518 613 500 626 C481 640 466 651 449 650 C436 649 429 640 432 629 L438 615 C442 606 453 608 458 615 C463 621 460 628 454 633 C463 634 474 626 484 617 C503 601 524 592 547 588Z" fill="url(#steelSide)" class="ink"/>
+<!-- right branch -->
+<path d="M575 598 C584 612 615 613 633 626 C652 640 667 651 684 650 C697 649 704 640 701 629 L695 615 C691 606 680 608 675 615 C670 621 673 628 679 633 C670 634 659 626 649 617 C630 601 609 592 586 588Z" fill="url(#steelSide)" class="ink"/>
+<!-- branch specular highlights -->
+<path d="M544 604C527 616 502 621 481 640M588 604C605 616 630 621 651 640" fill="none" stroke="#f4f4ed" stroke-width="3" opacity=".75"/>
+<!-- outlet rims, visibly two separate downturned mouths -->
+<ellipse cx="439" cy="635" rx="15" ry="8" transform="rotate(-20 439 635)" fill="#35484e" stroke="#202f34" stroke-width="2"/>
+<ellipse cx="439" cy="633" rx="9" ry="4" transform="rotate(-20 439 633)" fill="#19272c"/>
+<ellipse cx="694" cy="635" rx="15" ry="8" transform="rotate(20 694 635)" fill="#35484e" stroke="#202f34" stroke-width="2"/>
+<ellipse cx="694" cy="633" rx="9" ry="4" transform="rotate(20 694 633)" fill="#19272c"/>
+
+<!-- callouts and leaders -->
+<g class="fine">
+ <path d="M421 272 H292 L252 245"/><circle cx="421" cy="272" r="3" fill="#a36f42" stroke="none"/>
+ <path d="M452 366 H286 L250 386"/><circle cx="452" cy="366" r="3" fill="#a36f42" stroke="none"/>
+ <path d="M369 444 H266 L232 468"/><circle cx="369" cy="444" r="3" fill="#a36f42" stroke="none"/>
+ <path d="M451 641 H294 L256 671"/><circle cx="451" cy="641" r="3" fill="#a36f42" stroke="none"/>
+ <path d="M894 572 L964 535 H1000"/><circle cx="894" cy="572" r="3" fill="#a36f42" stroke="none"/>
+</g>
+<g>
+ <circle cx="79" cy="226" r="13" fill="#a36f42"/><text x="79" y="230" text-anchor="middle" class="num">01</text>
+ <text x="101" y="222" class="label">REMOVABLE BASKET</text><text x="101" y="242" class="sub">Perforated stainless cup</text>
+ <circle cx="79" cy="380" r="13" fill="#a36f42"/><text x="79" y="384" text-anchor="middle" class="num">02</text>
+ <text x="101" y="376" class="label">BASKET INTERIOR</text><text x="101" y="396" class="sub">Tapered cup · perforated floor</text>
+ <circle cx="79" cy="463" r="13" fill="#a36f42"/><text x="79" y="467" text-anchor="middle" class="num">03</text>
+ <text x="101" y="459" class="label">LOCKING FLANGE</text><text x="101" y="479" class="sub">Twin bayonet ears</text>
+ <circle cx="79" cy="666" r="13" fill="#a36f42"/><text x="79" y="670" text-anchor="middle" class="num">04</text>
+ <text x="101" y="662" class="label">TWIN OUTLETS</text><text x="101" y="682" class="sub">Split espresso flow</text>
+ <circle cx="1021" cy="523" r="13" fill="#a36f42"/><text x="1021" y="527" text-anchor="middle" class="num">05</text>
+ <text x="1043" y="519" class="label">TURNED HANDLE</text><text x="1043" y="539" class="sub">Hardwood grip</text>
+</g>
+<!-- base notes -->
+<text x="54" y="839" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2" fill="#7c8a89">PARTS SHOWN IN ASSEMBLY ORDER  /  BASKET LIFTS OUT FOR CLEANING</text>
+<text x="1145" y="839" text-anchor="end" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2" fill="#7c8a89">E.S. MACHINE GROUPHEAD INTERFACE</text>
+<text x="54" y="866" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#a36f42">Exploded view — not to scale</text>
+<text x="1145" y="866" text-anchor="end" font-family="Arial,sans-serif" font-size="10" letter-spacing="1" fill="#9ca6a2">PF / 58 / DS</text>
+</svg>

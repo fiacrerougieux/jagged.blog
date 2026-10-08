@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="940" viewBox="0 0 1100 940">
+<title>Double-spout espresso portafilter — exploded assembly</title>
+<desc>A removable perforated filter basket and retaining spring lifted above a closed portafilter body with bayonet lugs and a black handle. A threaded double-spout fitting is separated below the body.</desc>
+<defs>
+ <linearGradient id="steel" x1="0" x2="1"><stop stop-color="#84969c"/><stop offset=".22" stop-color="#e0e8e8"/><stop offset=".44" stop-color="#b4c3c6"/><stop offset=".68" stop-color="#f7fafa"/><stop offset="1" stop-color="#8b9ea5"/></linearGradient>
+ <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#a7b9bf"/></linearGradient>
+ <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#526972"/><stop offset=".48" stop-color="#9eb1b6"/><stop offset="1" stop-color="#d5e0e2"/></linearGradient>
+ <linearGradient id="grip" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#45525a"/><stop offset=".4" stop-color="#27343b"/><stop offset="1" stop-color="#101e26"/></linearGradient>
+ <pattern id="holes" width="10" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r="1.35" fill="#415862"/></pattern>
+ <clipPath id="basketInside"><ellipse cx="430" cy="222" rx="103" ry="32"/></clipPath>
+ <style>
+ .outline{stroke:#344e59;stroke-width:1.8;stroke-linejoin:round}
+ .label{font:600 17px Arial,sans-serif;fill:#243e49}
+ .small{font:13px Arial,sans-serif;fill:#657c84}
+ .leader{stroke:#7a9299;stroke-width:1.2;fill:none}
+ .axis{stroke:#4c9897;stroke-width:1.3;stroke-dasharray:6 7;fill:none}
+ .num{font:600 12px Arial,sans-serif;fill:#fff;text-anchor:middle}
+ </style>
+</defs>
+<rect width="1100" height="940" fill="#f5f6f2"/>
+<path d="M46 42H1054" stroke="#254e5a" stroke-width="3"/>
+<text x="48" y="74" font-family="Arial,sans-serif" font-size="12" letter-spacing="2.5" fill="#418282">COMPONENT STUDY / 01</text>
+<text x="46" y="116" font-family="Arial,sans-serif" font-size="34" font-weight="600" fill="#203c48">The espresso portafilter</text>
+<text x="48" y="145" font-family="Arial,sans-serif" font-size="15" fill="#627b84">Exploded assembly · removable basket · double-spout outlet</text>
+<text x="1052" y="78" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#627b84">58 mm / TYPICAL CONFIGURATION</text>
+
+<!-- Shared assembly axis; hidden by opaque components -->
+<path class="axis" d="M430 174V833"/>
+<path d="M424 184l6 -10 6 10M424 823l6 10 6 -10" fill="none" stroke="#4c9897" stroke-width="1.3"/>
+
+<!-- 01: basket. Rolled rim, tapered wall, perforated floor seen inside. -->
+<path d="M309 219L330 290C337 326 523 326 530 290L551 219Z" fill="url(#steel)" class="outline"/>
+<path d="M332 290C351 315 509 315 528 290" fill="none" stroke="#e9f0f0" stroke-width="2"/>
+<path d="M315 240C343 278 517 278 545 240" fill="none" stroke="#7f959d" stroke-width="1.2"/>
+<ellipse cx="430" cy="219" rx="121" ry="43" fill="url(#rim)" class="outline"/>
+<ellipse cx="430" cy="222" rx="103" ry="32" fill="url(#inside)" class="outline"/>
+<g clip-path="url(#basketInside)">
+ <ellipse cx="430" cy="242" rx="85" ry="25" fill="#ccd9dc" stroke="#697f88" stroke-width="1.3"/>
+ <ellipse cx="430" cy="242" rx="80" ry="22" fill="url(#holes)"/>
+</g>
+<path d="M321 213C345 167 516 171 540 213" fill="none" stroke="#fff" stroke-width="2"/>
+
+<!-- 02: spring wire, separate from its groove -->
+<path d="M463 397C516 392 556 376 552 362C548 344 497 333 430 334C365 334 310 346 309 364C308 380 354 394 405 397" fill="none" stroke="#344e59" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M463 396C516 391 554 375 551 362C547 345 496 335 430 335C365 335 311 347 310 364C309 379 354 392 405 396" fill="none" stroke="#d3e0e2" stroke-width="2" stroke-linecap="round"/>
+
+<!-- Body lugs: bayonet projections on opposite sides -->
+<path d="M303 461L271 452L253 468L255 485L294 497L316 480Z" fill="url(#steel)" class="outline"/>
+<path d="M271 452L307 464L294 480L253 468M294 480V497" fill="none" stroke="#344e59" stroke-width="1.4"/>
+<path d="M546 453L579 445L600 458L599 476L561 489L539 471Z" fill="url(#steel)" class="outline"/>
+<path d="M546 454L568 468L600 458M568 468V485" fill="none" stroke="#344e59" stroke-width="1.4"/>
+
+<!-- Handle attachment and long moulded grip -->
+<path d="M549 509L634 537L624 575L544 546Z" fill="url(#steel)" class="outline"/>
+<path d="M619 529L642 537L629 578L606 569Z" fill="url(#steel)" class="outline"/>
+<path d="M641 532C685 546 793 575 880 601C911 610 915 635 900 654C893 664 881 668 862 662L627 583C615 579 614 565 619 551C624 537 632 530 641 532Z" fill="url(#grip)" class="outline"/>
+<path d="M642 543L878 614C889 617 895 623 896 630" fill="none" stroke="#72818a" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+<path d="M640 572L863 650" fill="none" stroke="#0c1b23" stroke-width="2"/>
+
+<!-- Closed bowl and underside threaded outlet boss -->
+<path d="M406 586V614C406 625 454 625 454 614V586Z" fill="url(#steel)" class="outline"/>
+<ellipse cx="430" cy="614" rx="24" ry="9" fill="#94a8af" class="outline"/>
+<ellipse cx="430" cy="614" rx="14" ry="5" fill="#263f4b"/>
+<path d="M287 486L299 552C310 617 550 617 561 552L573 486Z" fill="url(#steel)" class="outline"/>
+<path d="M304 552C326 601 534 601 556 552" fill="none" stroke="#e9f1f2" stroke-width="2"/>
+<ellipse cx="430" cy="486" rx="143" ry="52" fill="url(#rim)" class="outline"/>
+<ellipse cx="430" cy="488" rx="123" ry="40" fill="url(#inside)" class="outline"/>
+<!-- The small drain in the solid floor distinguishes this from a bottomless body -->
+<path d="M320 497C352 526 508 526 540 497" fill="none" stroke="#dae7e9" stroke-width="1.5"/>
+<ellipse cx="430" cy="510" rx="14" ry="5" fill="#29444f" stroke="#81979f" stroke-width="1.5"/>
+<path d="M308 486C325 443 535 443 552 486" fill="none" stroke="#4d6873" stroke-width="2.3"/>
+
+<!-- 04: one removable double-spout fitting, threaded into the bowl -->
+<path d="M410 694V727H450V694Z" fill="url(#steel)" class="outline"/>
+<ellipse cx="430" cy="694" rx="20" ry="7" fill="url(#rim)" class="outline"/>
+<ellipse cx="430" cy="694" rx="11" ry="3.5" fill="#304e5a"/>
+<g fill="none" stroke="#647d87" stroke-width="1.4">
+ <path d="M411 699Q430 706 449 699M411 705Q430 712 449 705M411 711Q430 718 449 711M411 717Q430 724 449 717"/>
+</g>
+<path d="M407 723C400 739 382 743 353 751C332 757 318 774 318 800L347 804C347 784 355 780 374 776C396 771 416 766 430 755C444 766 464 771 486 776C505 780 513 784 513 804L542 800C542 774 528 757 507 751C478 743 460 739 453 723Z" fill="url(#steel)" class="outline"/>
+<ellipse cx="430" cy="724" rx="24" ry="8" fill="url(#rim)" class="outline"/>
+<path d="M406 733C395 750 349 751 338 774M454 733C465 750 511 751 522 774" fill="none" stroke="#f7fcfc" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="332.5" cy="801" rx="14.5" ry="7.5" fill="#9bb0b7" class="outline"/>
+<ellipse cx="332.5" cy="802" rx="9" ry="4.5" fill="#203c48"/>
+<ellipse cx="527.5" cy="801" rx="14.5" ry="7.5" fill="#9bb0b7" class="outline"/>
+<ellipse cx="527.5" cy="802" rx="9" ry="4.5" fill="#203c48"/>
+
+<!-- Labels with quiet elbow leaders -->
+<g>
+ <circle cx="64" cy="218" r="13" fill="#397d7f"/><text class="num" x="64" y="222">01</text>
+ <text class="label" x="86" y="217">Filter basket</text>
+ <text class="small" x="86" y="239">Removable stainless insert</text>
+ <text class="small" x="86" y="258">Perforated extraction floor</text>
+ <path class="leader" d="M87 274H260L325 247"/><circle cx="325" cy="247" r="2.5" fill="#397d7f"/>
+ <circle cx="64" cy="354" r="13" fill="#397d7f"/><text class="num" x="64" y="358">02</text>
+ <text class="label" x="86" y="353">Retaining spring</text>
+ <text class="small" x="86" y="375">Seats in the internal groove</text>
+ <path class="leader" d="M88 388H262L314 370"/><circle cx="314" cy="370" r="2.5" fill="#397d7f"/>
+ <circle cx="64" cy="530" r="13" fill="#397d7f"/><text class="num" x="64" y="534">03</text>
+ <text class="label" x="86" y="529">Portafilter body</text>
+ <text class="small" x="86" y="551">Closed bowl with drain outlet</text>
+ <path class="leader" d="M88 569H263L306 558"/><circle cx="306" cy="558" r="2.5" fill="#397d7f"/>
+ <text class="label" x="689" y="331">Bayonet lugs</text>
+ <text class="small" x="689" y="353">Lock into the machine's group head</text>
+ <path class="leader" d="M680 348H631L582 458"/><circle cx="582" cy="458" r="2.5" fill="#397d7f"/>
+ <text class="label" x="740" y="475">Handle &amp; ferrule</text>
+ <text class="small" x="740" y="497">Shown attached to the body</text>
+ <path class="leader" d="M738 511H718L699 553"/><circle cx="699" cy="553" r="2.5" fill="#397d7f"/>
+ <circle cx="686" cy="744" r="13" fill="#397d7f"/><text class="num" x="686" y="748">04</text>
+ <text class="label" x="708" y="743">Double-spout fitting</text>
+ <text class="small" x="708" y="765">Screws into the underside outlet</text>
+ <text class="small" x="708" y="787">Two separate pouring mouths</text>
+ <path class="leader" d="M695 799H608L537 780"/><circle cx="537" cy="780" r="2.5" fill="#397d7f"/>
+</g>
+<path d="M48 868H1052" stroke="#b3c3c6"/>
+<path class="axis" d="M49 896H96"/>
+<text class="small" x="107" y="900">Assembly axis</text>
+<text class="small" x="330" y="900">Parts separated for clarity · schematic, not to scale</text>
+<text x="1052" y="900" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.3" fill="#418282">ESPRESSO / HARDWARE</text>
+</svg>

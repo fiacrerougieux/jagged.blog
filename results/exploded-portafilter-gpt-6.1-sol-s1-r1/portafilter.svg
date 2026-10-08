@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1160" viewBox="0 0 1200 1160">
+<defs>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#687b86"/><stop offset=".18" stop-color="#d4dfe3"/><stop offset=".38" stop-color="#f8fbfc"/><stop offset=".58" stop-color="#b4c3cb"/><stop offset=".82" stop-color="#edf3f5"/><stop offset="1" stop-color="#738792"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fcffff"/><stop offset=".52" stop-color="#cbd8df"/><stop offset="1" stop-color="#879ca8"/></linearGradient>
+  <linearGradient id="well" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#283e4b"/><stop offset=".55" stop-color="#849aa6"/><stop offset="1" stop-color="#d7e2e6"/></linearGradient>
+  <linearGradient id="black" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53606a"/><stop offset=".2" stop-color="#26323b"/><stop offset=".6" stop-color="#17212a"/><stop offset="1" stop-color="#080f16"/></linearGradient>
+  <linearGradient id="spout" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#738893"/><stop offset=".25" stop-color="#e7f0f4"/><stop offset=".5" stop-color="#faffff"/><stop offset=".72" stop-color="#a3b6c0"/><stop offset="1" stop-color="#536b79"/></linearGradient>
+  <pattern id="holes" width="12" height="10" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#425a69"/><circle cx="9" cy="8" r="1.5" fill="#425a69"/></pattern>
+  <clipPath id="basketHole"><ellipse cx="480" cy="262" rx="142" ry="48"/></clipPath>
+  <style>
+    .outline{stroke:#4e6573;stroke-width:2;stroke-linejoin:round}
+    .leader{fill:none;stroke:#82969f;stroke-width:1.5;stroke-linejoin:round}
+    .dot{fill:#456b79}
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#203744;font-size:21px;font-weight:600}
+    .note{font-family:Arial,Helvetica,sans-serif;fill:#6b7f88;font-size:15px}
+    .small{font-family:Arial,Helvetica,sans-serif;fill:#72858e;font-size:12px;letter-spacing:1.7px}
+    .number{font-family:Arial,Helvetica,sans-serif;fill:#2a7284;font-size:13px;font-weight:700}
+  </style>
+</defs>
+<rect width="1200" height="1160" fill="#f5f7f6"/>
+<path d="M64 142H1136" stroke="#ccd6d9"/>
+<text x="64" y="58" class="small">COMPONENT STUDY / 01</text>
+<text x="64" y="108" font-family="Arial,Helvetica,sans-serif" font-size="39" font-weight="600" fill="#19323f">Espresso portafilter</text>
+<text x="1136" y="105" text-anchor="end" class="small">DOUBLE SPOUT · EXPLODED VIEW</text>
+
+<!-- Common assembly axis; interrupted by solid components -->
+<path d="M480 185V1048" stroke="#a4bcc5" stroke-width="1.5" stroke-dasharray="6 8"/>
+
+<!-- Removable, flanged filter basket -->
+<path d="M325 260C328 292 342 345 362 384C405 415 553 415 598 384C618 345 632 292 635 260Z" fill="url(#steel)" class="outline"/>
+<path d="M363 381C410 408 549 408 597 381L594 393C546 420 413 420 366 393Z" fill="url(#rim)" class="outline"/>
+<path d="M346 306C398 335 559 338 612 306" fill="none" stroke="#f5fafc" stroke-width="3" opacity=".65"/>
+<path d="M356 351C405 376 551 376 602 351" fill="none" stroke="#8eA3ad" stroke-width="1"/>
+<ellipse cx="480" cy="260" rx="158" ry="59" fill="url(#rim)" class="outline"/>
+<ellipse cx="480" cy="262" rx="142" ry="48" fill="url(#well)" stroke="#617884" stroke-width="2"/>
+<g clip-path="url(#basketHole)">
+  <ellipse cx="480" cy="282" rx="117" ry="34" fill="#b1c2ca" stroke="#758c98" stroke-width="2"/>
+  <ellipse cx="480" cy="282" rx="109" ry="29" fill="url(#holes)"/>
+  <path d="M338 261C347 295 385 309 407 313M622 261C613 295 575 309 553 313" fill="none" stroke="#edf5f8" stroke-width="2" opacity=".55"/>
+</g>
+<path d="M325 260C337 334 623 334 635 260" fill="none" stroke="#f9ffff" stroke-width="3"/>
+<path d="M369 384C417 406 546 406 591 384" fill="none" stroke="#f6fbfd" stroke-width="2"/>
+
+<!-- Spring wire: split to permit removal -->
+<path d="M452 457C374 461 329 480 337 500C347 526 429 541 508 534C578 529 627 510 622 491C618 474 573 460 517 457" fill="none" stroke="#566f7e" stroke-width="7" stroke-linecap="round"/>
+<path d="M452 455C374 459 329 478 337 498C347 524 429 539 508 532C578 527 627 508 622 489C618 472 573 458 517 455" fill="none" stroke="#dfe9ed" stroke-width="3" stroke-linecap="round"/>
+
+<!-- Handle remains installed; metal collar and dark molded grip -->
+<path d="M611 660L681 676L697 705L683 731L603 701Z" fill="url(#steel)" class="outline"/>
+<path d="M667 680L694 682L707 707L693 734L673 728Z" fill="url(#rim)" class="outline"/>
+<path d="M694 682C727 684 875 728 949 749C970 755 979 766 974 783C970 801 951 813 934 809L693 739C682 730 680 698 694 682Z" fill="url(#black)" stroke="#162a37" stroke-width="2"/>
+<path d="M708 693L946 761C954 764 959 768 959 771" fill="none" stroke="#74808a" stroke-width="3" opacity=".5"/>
+<path d="M703 727L932 795" fill="none" stroke="#0a121a" stroke-width="3"/>
+<path d="M939 751C925 764 919 785 932 807" fill="none" stroke="#41505c" stroke-width="2"/>
+
+<!-- Cast body and bayonet locking ears -->
+<path d="M318 618L285 622L286 649L337 655L352 629Z" fill="url(#steel)" class="outline"/>
+<path d="M285 622L307 607L354 612L337 635Z" fill="url(#rim)" class="outline"/>
+<path d="M608 607L650 612L674 631L624 649L602 628Z" fill="url(#steel)" class="outline"/>
+<path d="M607 607L629 594L669 610L650 625Z" fill="url(#rim)" class="outline"/>
+<path d="M322 634L339 734C349 781 408 803 480 805C552 803 612 781 621 734L638 634Z" fill="url(#steel)" class="outline"/>
+<path d="M345 743C391 782 569 782 616 743" fill="none" stroke="#f7fdff" stroke-width="3"/>
+<path d="M357 775C405 803 553 803 601 775" fill="none" stroke="#748d9a" stroke-width="2"/>
+<path d="M457 796L457 821C463 832 498 832 504 821L504 796" fill="url(#steel)" class="outline"/>
+<ellipse cx="480" cy="820" rx="24" ry="9" fill="#344f5e" stroke="#829ba7" stroke-width="2"/>
+<ellipse cx="480" cy="631" rx="160" ry="62" fill="url(#rim)" class="outline"/>
+<ellipse cx="480" cy="632" rx="140" ry="48" fill="url(#well)" stroke="#627986" stroke-width="2"/>
+<ellipse cx="480" cy="642" rx="115" ry="32" fill="#9bafb9" stroke="#7f96a2" stroke-width="2"/>
+<ellipse cx="480" cy="647" rx="16" ry="6" fill="#2d4757" stroke="#d7e1e5" stroke-width="2"/>
+<path d="M344 630C363 682 595 682 616 630" fill="none" stroke="#455f70" stroke-width="4"/>
+<path d="M324 637C345 704 615 704 636 637" fill="none" stroke="#f4fafc" stroke-width="3"/>
+
+<!-- Threaded double-spout fitting -->
+<path d="M459 898V871C466 861 494 861 501 871V898" fill="url(#steel)" class="outline"/>
+<ellipse cx="480" cy="871" rx="21" ry="8" fill="url(#rim)" class="outline"/>
+<ellipse cx="480" cy="871" rx="12" ry="4" fill="#3b5361"/>
+<path d="M459 877Q480 886 501 877M459 884Q480 893 501 884M459 891Q480 900 501 891" fill="none" stroke="#718b99" stroke-width="2"/>
+<path d="M451 898C441 921 421 931 392 935L370 938C356 941 353 954 359 965L376 986C386 996 398 992 407 982C415 971 421 966 439 963L465 960C475 959 484 959 495 960L521 963C539 966 546 975 554 986C563 997 577 999 587 988L602 970C610 959 604 944 591 941L568 936C539 931 519 921 509 898Z" fill="url(#spout)" class="outline"/>
+<ellipse cx="480" cy="898" rx="29" ry="11" fill="url(#rim)" class="outline"/>
+<path d="M461 914C449 939 413 942 386 947M499 914C511 939 546 942 577 950" fill="none" stroke="#f5fcff" stroke-width="4" stroke-linecap="round"/>
+<path d="M478 937C461 949 443 950 430 953M483 937C500 949 518 950 531 953" fill="none" stroke="#718a99" stroke-width="2"/>
+<ellipse cx="387" cy="982" rx="18" ry="10" transform="rotate(-25 387 982)" fill="#d8e5eb" stroke="#607987" stroke-width="2"/>
+<ellipse cx="387" cy="982" rx="12" ry="6" transform="rotate(-25 387 982)" fill="#253f50"/>
+<ellipse cx="574" cy="985" rx="18" ry="10" transform="rotate(25 574 985)" fill="#d8e5eb" stroke="#607987" stroke-width="2"/>
+<ellipse cx="574" cy="985" rx="12" ry="6" transform="rotate(25 574 985)" fill="#253f50"/>
+
+<!-- Callouts -->
+<circle cx="630" cy="251" r="3.5" class="dot"/>
+<path d="M630 251L716 222H811" class="leader"/>
+<text x="834" y="214" class="number">01</text><text x="865" y="214" class="label">Filter basket</text>
+<text x="865" y="239" class="note">Removable stainless steel</text><text x="865" y="260" class="note">Perforated base · rolled rim</text>
+
+<circle cx="613" cy="510" r="3.5" class="dot"/>
+<path d="M613 510L715 466H811" class="leader"/>
+<text x="834" y="458" class="number">02</text><text x="865" y="458" class="label">Retaining spring</text>
+<text x="865" y="483" class="note">Split wire ring holds basket</text><text x="865" y="504" class="note">in the body's inner groove</text>
+
+<circle cx="296" cy="631" r="3.5" class="dot"/>
+<path d="M296 631L251 593H85" class="leader"/>
+<text x="85" y="559" class="label">Locking ears</text>
+<text x="85" y="581" class="note">Engage the group head</text>
+
+<circle cx="357" cy="737" r="3.5" class="dot"/>
+<path d="M357 737L254 789H85" class="leader"/>
+<text x="85" y="821" class="number">03</text><text x="114" y="821" class="label">Portafilter body</text>
+<text x="85" y="846" class="note">Closed collector with outlet</text>
+
+<circle cx="871" cy="777" r="3.5" class="dot"/>
+<path d="M871 777L953 861H1096" class="leader"/>
+<text x="915" y="895" class="label">Handle</text>
+<text x="915" y="920" class="note">Shown attached to body</text>
+
+<circle cx="590" cy="944" r="3.5" class="dot"/>
+<path d="M590 944L715 1005H811" class="leader"/>
+<text x="834" y="997" class="number">04</text><text x="865" y="997" class="label">Double spout</text>
+<text x="865" y="1022" class="note">Threaded, removable fitting</text><text x="865" y="1043" class="note">Two outlets for two cups</text>
+
+<path d="M64 1087H1136" stroke="#ccd6d9"/>
+<text x="64" y="1120" class="small">ASSEMBLY ORDER: 04 → 03 → 02 → 01</text>
+<text x="1136" y="1120" text-anchor="end" class="small">SCHEMATIC · NOT TO SCALE</text>
+</svg>

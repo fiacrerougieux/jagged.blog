@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#dff1f7"/>
+      <stop offset="0.5" stop-color="#f7feff"/>
+      <stop offset="1" stop-color="#cfe7f0"/>
+    </linearGradient>
+    <linearGradient id="plastic" x1="0" x2="1">
+      <stop offset="0" stop-color="#e9e4da"/>
+      <stop offset="0.5" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#ddd6c8"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="1000" fill="#ffffff"/>
+  <text x="400" y="45" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#222">V60 Pour-Over: Exploded Assembly</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555">Cone dripper, paper filter, and glass server (side view, parts separated along the axis)</text>
+
+  <!-- central alignment axis -->
+  <line x1="400" y1="95" x2="400" y2="960" stroke="#999" stroke-width="1.2" stroke-dasharray="10,6 2,6"/>
+
+  <!-- ===== 1. DRIPPER (top) ===== -->
+  <g id="dripper">
+    <!-- cone body -->
+    <path d="M250,120 L375,300 L425,300 L550,120 Z" fill="url(#plastic)" stroke="#333" stroke-width="2"/>
+    <!-- rim ellipse (top opening) -->
+    <ellipse cx="400" cy="120" rx="150" ry="22" fill="#f4efe6" stroke="#333" stroke-width="2"/>
+    <ellipse cx="400" cy="120" rx="138" ry="17" fill="#8d8a84" opacity="0.35"/>
+    <!-- internal spiral ribs (visible on front face) -->
+    <g stroke="#7a766e" stroke-width="1.5" fill="none">
+      <path d="M300,128 L384,292"/>
+      <path d="M340,130 L390,292"/>
+      <path d="M460,128 L416,292"/>
+      <path d="M500,130 L410,292"/>
+    </g>
+    <!-- bottom outlet -->
+    <ellipse cx="400" cy="300" rx="25" ry="6" fill="#2b2b2b" stroke="#333" stroke-width="1.5"/>
+    <!-- label -->
+    <text x="570" y="128" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">
+      <tspan font-weight="bold">1  Dripper (cone)</tspan>
+    </text>
+  </g>
+
+  <!-- ===== 2. PAPER FILTER (middle) ===== -->
+  <g id="filter">
+    <!-- folded filter cone: open top, tip at bottom -->
+    <path d="M262,400 L382,525 L418,525 L538,400 Z" fill="#fbf8ef" stroke="#8c7f66" stroke-width="1.8"/>
+    <ellipse cx="400" cy="400" rx="138" ry="20" fill="#fdfbf5" stroke="#8c7f66" stroke-width="1.8"/>
+    <!-- fold seam lines -->
+    <g stroke="#b9ad90" stroke-width="1" fill="none">
+      <path d="M400,420 L400,525"/>
+      <path d="M330,420 L392,522"/>
+      <path d="M470,420 L408,522"/>
+    </g>
+    <!-- bottom tip -->
+    <ellipse cx="400" cy="525" rx="18" ry="4" fill="#e8e0cc" stroke="#8c7f66" stroke-width="1.2"/>
+    <text x="570" y="432" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">
+      <tspan font-weight="bold">2  Paper filter</tspan>
+    </text>
+    <text x="570" y="452" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#555">(cone, size 02; rinse before use)</text>
+  </g>
+
+  <!-- ===== 3. GLASS SERVER (bottom) ===== -->
+  <g id="server">
+    <!-- handle -->
+    <path d="M536,700 C610,690 618,800 540,812" fill="none" stroke="#4b6b78" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+    <path d="M536,700 C610,690 618,800 540,812" fill="none" stroke="#dff1f7" stroke-width="4" stroke-linecap="round"/>
+    <!-- carafe body -->
+    <path d="M335,640 L335,668 C280,680 258,700 258,760 L258,880 Q258,930 310,930 L490,930 Q542,930 542,880 L542,760 C542,700 520,680 465,668 L465,640 Z"
+          fill="url(#glass)" stroke="#4b6b78" stroke-width="2.5"/>
+    <!-- glass rim/neck opening -->
+    <ellipse cx="400" cy="640" rx="65" ry="12" fill="#e6f5fa" stroke="#4b6b78" stroke-width="2.5"/>
+    <ellipse cx="400" cy="640" rx="56" ry="8" fill="#9fb8c2" opacity="0.5"/>
+    <!-- liquid line and graduation marks -->
+    <path d="M262,790 Q400,806 538,790 L538,880 Q538,926 500,926 L300,926 Q262,926 262,880 Z" fill="#c9893a" opacity="0.18"/>
+    <g stroke="#4b6b78" stroke-width="1.2">
+      <line x1="262" y1="740" x2="284" y2="740"/>
+      <line x1="262" y1="800" x2="284" y2="800"/>
+      <line x1="262" y1="860" x2="284" y2="860"/>
+      <line x1="516" y1="740" x2="538" y2="740"/>
+      <line x1="516" y1="800" x2="538" y2="800"/>
+      <line x1="516" y1="860" x2="538" y2="860"/>
+    </g>
+    <!-- highlight -->
+    <path d="M280,760 L280,870" stroke="#ffffff" stroke-width="6" opacity="0.7" fill="none"/>
+    <text x="570" y="868" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">
+      <tspan font-weight="bold">3  Glass server (carafe)</tspan>
+    </text>
+    <text x="570" y="888" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#555">holds the brewed coffee</text>
+  </g>
+
+  <!-- assembly guide lines (dashed, show separation direction) -->
+  <g stroke="#777" stroke-width="1.2" stroke-dasharray="4,4" fill="none" marker-end="url(#arr)">
+    <line x1="400" y1="322" x2="400" y2="378"/>
+    <line x1="400" y1="545" x2="400" y2="612"/>
+  </g>
+  <text x="412" y="356" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666">insert</text>
+  <text x="412" y="584" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666">place on server</text>
+
+  <!-- leader lines for callouts -->
+  <g stroke="#bbb" stroke-width="1" fill="none">
+    <line x1="552" y1="118" x2="562" y2="122"/>
+  </g>
+
+  <!-- caption -->
+  <text x="400" y="975" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#555">Assembly: insert the paper filter into the dripper, then set the dripper on the glass server's neck.</text>
+</svg>

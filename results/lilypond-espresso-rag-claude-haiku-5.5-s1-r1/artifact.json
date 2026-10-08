@@ -1,0 +1,36 @@
+{
+  "name": "lilypond-espresso-rag-claude-haiku-5.5-s1-r1",
+  "exportedAt": "2026-10-08T00:53:28.796Z",
+  "run": "2026-10-08-lilypond-espresso-rag-1151",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "anthropic/claude-haiku-5.5",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "failed: right_hand_goes_on, crossing_marked"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.0\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \"for café piano\"\n  tagline = ##f\n}\n\n% Right hand starts in the treble staff, left hand in the bass staff.\n% In bars 9-12 the hands cross: the LH (now higher) moves to the treble\n% staff and the RH (now lower) moves to the bass staff. Switches happen\n% at barlines with \\change Staff.\n\nrhMusic = {\n  % bars 1-8: RH in treble\n  e'8 g' c'' g' e'4 c'4 |\n  d'8 g' b' g' d'4 g'4 |\n  c'8 f' a' f' c'4 f'4 |\n  c'8 e' a' e' c'4 e'4 |\n  d'8 g' b' g' d'4 f'4 |\n  c'8 e' g' e' c'4 e'4 |\n  b8 d' g' d' b4 d'4 |\n  <c' e' g'>1 |\n  % bars 9-12: RH crosses down to bass staff\n  \\change Staff = \"lower\"\n  c2 g2 | f2 c'2 | g2 d'2 | c1 |\n  % bars 13-16: RH back to treble\n  \\change Staff = \"upper\"\n  e'8 g' c'' g' e'4 c'4 |\n  f'8 a' c'' a' f'4 c'4 |\n  d'8 g' b' g' d'4 g'4 |\n  <c' e' g'>1 \\fermata \\bar \"|.\"\n}\n\nlhMusic = {\n  % bars 1-8: LH in bass\n  c,4 g,4 c4 g,4 |\n  g,4 d4 g4 d4 |\n  f,4 c4 f4 c4 |\n  f,4 c4 a,4 c4 |\n  g,4 d4 g4 d4 |\n  c,4 g,4 c4 g,4 |\n  g,4 d4 g4 d4 |\n  c,1 |\n  % bars 9-12: LH crosses up to treble staff, playing above the RH\n  \\change Staff = \"upper\"\n  g''8 e'' c'' e'' g''4 c'''4 |\n  a''8 f'' c'' f'' a''4 c'''4 |\n  b''8 g'' d'' g'' b''4 d'''4 |\n  c'''8 g'' e'' g'' c'''4 g''4 |\n  % bars 13-16: LH back to bass\n  \\change Staff = \"lower\"\n  c,4 g,4 c4 g,4 |\n  f,4 c4 f4 c4 |\n  g,4 d4 g4 d4 |\n  c,1 \\fermata\n}\n\n\\score {\n  \\new PianoStaff <<\n    \\new Staff = \"upper\" <<\n      \\tempo \"Allegro\" 4 = 116\n      \\clef treble\n      \\key c \\major\n      \\time 4/4\n      \\new Voice = \"rh\" { \\rhMusic }\n    >>\n    \\new Staff = \"lower\" <<\n      \\clef bass\n      \\key c \\major\n      \\time 4/4\n      \\new Voice = \"lh\" { \\lhMusic }\n    >>\n  >>\n  \\layout { }\n}\n",
+    "truncated": false,
+    "lines": 77
+  },
+  "output": null,
+  "notes": [
+    "the score has no \\midi block; the audio comes from a copy with one added."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "lilypond-espresso-rag-pareto-26.10-preview-s2-r2",
+  "exportedAt": "2026-10-04T23:34:39.225Z",
+  "run": "2026-10-05-lilypond-espresso-rag-1027",
+  "caseId": "lilypond-espresso-rag",
+  "caseTitle": "LilyPond: Espresso Rag hand crossing",
+  "category": "Music",
+  "prompt": "Write, in LilyPond, 16 bars of café piano music called \"Espresso Rag\" in which the left hand crosses over the right hand for bars 9 to 12.",
+  "model": "unbiased/pareto-26.10-preview",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": false,
+    "detail": "failed: left_hand_crosses, crossing_marked"
+  },
+  "recipe": "lilypond",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "audio": "audio.mp3",
+    "midi": "score.mid",
+    "source": "rag.ly"
+  },
+  "source": {
+    "file": "rag.ly",
+    "lang": "plaintext",
+    "text": "\\version \"2.24.1\"\n\n\\header {\n  title = \"Espresso Rag\"\n  subtitle = \\markup \\italic \"for café piano\"\n}\n\nglobal = { \\key c \\major \\time 2/4 }\n\nupper = {\n  \\tempo \"Allegretto\" 4 = 92\n  \\global\n  \\clef treble\n  % ---- A strain, bars 1-4 ----\n  c''8.\\mf e''16 g''8 e''16 g''16 |\n  a''8. g''16 e''8 c''8 |\n  f''8. e''16 d''8 f''8 |\n  g'16 c''16 e''16 g''16 c''4~ |\n  \\break\n  % ---- bars 5-8 ----\n  c''8. e''16 g''8 e''16 g''16 |\n  a''8. b''16 c'''8 a''16 c'''16 |\n  d'''8. c'''16 a''8 f''8 |\n  c'''16 g''8. e''4 |\n  \\break\n  % ---- B strain, bars 9-12: left hand crosses over the right ----\n  \\mark \\markup \\italic \"L.H. crosses over R.H.\"\n  <<\n    { g'8\\mp_\\markup \\small \\italic \"R.H.\" <c'' e''>8 g'8 <c'' e''>8 |\n      a'8 <d'' f''>8 a'8 <d'' f''>8 |\n      g'8 <c'' e''>8 g'8 <c'' e''>8 |\n      b'8 <d'' f''>8 b'8 <d'' f''>8 } \\\\\n    { c'''4^\\markup { \\bold \\italic \"L.H.\" } e'''8 f'''8 |\n      g'''4 f'''8 d'''8 |\n      e'''4 c'''8 e'''8 |\n      b''8 d'''8 f'''8 d'''8 }\n  >>\n  \\break\n  % ---- A strain return, bars 13-16 ----\n  c''8.\\mf e''16 g''8 e''16 g''16 |\n  a''8. g''16 e''8 c''8 |\n  g''8. f''16 d''8 b'8 |\n  c''4 r4 |\n  \\bar \"|.\"\n}\n\nlower = {\n  \\global\n  \\clef bass\n  % ---- oom-pah bass, bars 1-8 ----\n  c,8 <e g>8 g,8 <e g>8 |\n  c,8 <e g>8 g,8 <e g>8 |\n  g,8 <d f>8 b,8 <d f>8 |\n  c,8 <e g>8 g,8 <e g>8 |\n  c,8 <e g>8 g,8 <e g>8 |\n  f,8 <a c>8 c8 <a c>8 |\n  g,8 <d f>8 b,8 <d f>8 |\n  c,8 <e g c'>8 g,8 <e g c'>8 |\n  % ---- bars 9-12: bass staff rests while the left hand is up top ----\n  R2*4 |\n  % ---- bars 13-16 ----\n  c,8 <e g>8 g,8 <e g>8 |\n  c,8 <e g>8 g,8 <e g>8 |\n  g,8 <d f>8 b,8 <d f>8 |\n  c,4 <e g c'>4 |\n}\n\n\\score {\n  \\new PianoStaff <<\n    \\new Staff = \"up\" \\upper\n    \\new Staff = \"down\" \\lower\n  >>\n  \\layout {\n    \\context {\n      \\Score\n      barNumberVisibility = #all-bar-numbers-visible\n    }\n  }\n  \\midi { }\n}\n",
+    "truncated": false,
+    "lines": 81
+  },
+  "output": null,
+  "notes": []
+}
