@@ -1,0 +1,3 @@
+Here is an exploded French press diagram. Name everything wrong with it, most serious first. Say if you think nothing is wrong.
+
+The diagram is the picture `press.png` in /work. Use the read tool to look at it.

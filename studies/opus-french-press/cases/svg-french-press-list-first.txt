@@ -1,0 +1,1 @@
+Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press. Before you draw anything, write the parts from top to bottom to order.txt, one per line.
