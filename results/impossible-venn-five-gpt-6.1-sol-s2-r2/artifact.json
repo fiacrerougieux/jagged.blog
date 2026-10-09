@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-gpt-6.1-sol-s2-r2",
+  "exportedAt": "2026-10-09T08:36:19.739Z",
+  "run": "2026-10-09-impossible-venn-five-1916",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 2,
+  "round": 2,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\definecolor{espresso}{HTML}{98603F}\n\\definecolor{milk}{HTML}{5979AE}\n\\definecolor{cold}{HTML}{168A87}\n\\definecolor{sugar}{HTML}{B78314}\n\\definecolor{decaf}{HTML}{9C568F}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, line width=1.1pt]\n  % This is a maximal circle arrangement, not a five-set Venn diagram.\n  % Five circles have at most 22 planar regions (21 inside their union).\n  % A true five-set Venn diagram needs 32 planar regions, including outside.\n  \\node[font=\\sffamily\\bfseries\\Large, text=black!85] at (0,5.2)\n    {Five overlapping circles};\n  \\foreach \\angle/\\colour in\n    {90/espresso,162/milk,234/cold,306/sugar,18/decaf}{\n      \\fill[\\colour,fill opacity=0.09] (\\angle:1.55) circle (2.45);\n  }\n  \\foreach \\angle/\\colour in\n    {90/espresso,162/milk,234/cold,306/sugar,18/decaf}{\n      \\draw[\\colour] (\\angle:1.55) circle (2.45);\n  }\n  \\node[text=espresso,font=\\sffamily\\bfseries] at (0,4.35) {Has espresso};\n  \\node[text=milk,font=\\sffamily\\bfseries,anchor=east] at (-4.05,1.45) {Has milk};\n  \\node[text=cold,font=\\sffamily\\bfseries,anchor=north east] at (-2.85,-3.35) {Served cold};\n  \\node[text=sugar,font=\\sffamily\\bfseries,anchor=north west] at (2.85,-3.35) {Has sugar};\n  \\node[text=decaf,font=\\sffamily\\bfseries,anchor=west] at (4.05,1.45) {Is decaf};\n  \\node[align=center,text=black!75,font=\\sffamily\\small] at (0,-4.8)\n    {\\textbf{All 31 regions cannot be drawn using circles alone.}\\\\[4pt]\n     Five circles create at most 21 interior regions; a five-set Venn diagram needs 31.};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 33
+  },
+  "output": null,
+  "notes": []
+}

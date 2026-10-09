@@ -9685,9 +9685,564 @@
         "of": 5,
         "undecided": 0
       }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "impossible-venn-five-pareto-26.10-preview-s1-r3",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.047,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50990,
+        "tokensOut": 8713,
+        "reasoning": 0,
+        "wallSec": 74
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "impossible-venn-five-pareto-26.10-preview-s2-r2",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0984,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 37899,
+        "tokensOut": 25726,
+        "reasoning": 0,
+        "wallSec": 136
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "unbiased/pareto-26.10-preview",
+      "label": "Pareto 26.10 Preview",
+      "artifact": "impossible-venn-five-pareto-26.10-preview-s3-r2",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.1156,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 78762,
+        "tokensOut": 29599,
+        "reasoning": 0,
+        "wallSec": 175
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "impossible-venn-five-gpt-6.1-sol-s1-r2",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0311,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19661,
+        "tokensOut": 1705,
+        "reasoning": 744,
+        "wallSec": 72
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "impossible-venn-five-gpt-6.1-sol-s2-r2",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0271,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 17599,
+        "tokensOut": 1668,
+        "reasoning": 733,
+        "wallSec": 68
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "impossible-venn-five-gpt-6.1-sol-s3-r3",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0327,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 32322,
+        "tokensOut": 1634,
+        "reasoning": 467,
+        "wallSec": 88
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 4,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "artifact": "impossible-venn-five-qwen3.8-max-prime-s1-r3",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.2328,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 103041,
+        "tokensOut": 9877,
+        "reasoning": 7436,
+        "wallSec": 147
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "impossible-venn-five-gpt-6-luna-s1-r3",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.005,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 56010,
+        "tokensOut": 6586,
+        "reasoning": 4559,
+        "wallSec": 98
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "impossible-venn-five-gpt-6-luna-s2-r1",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.002,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8330,
+        "tokensOut": 3429,
+        "reasoning": 2838,
+        "wallSec": 45
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "impossible-venn-five-gpt-6-luna-s3-r1",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0021,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8269,
+        "tokensOut": 3567,
+        "reasoning": 3014,
+        "wallSec": 46
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": false
+      },
+      "quality": 3,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "impossible-venn-five-claude-sonnet-5.5-s1-r1",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0245,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10354,
+        "tokensOut": 1250,
+        "reasoning": 627,
+        "wallSec": 18
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "impossible-venn-five-claude-sonnet-5.5-s2-r1",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0592,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33391,
+        "tokensOut": 4555,
+        "reasoning": 2017,
+        "wallSec": 120
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "impossible-venn-five-claude-sonnet-5.5-s3-r5",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 5,
+      "cost": 0.1377,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 169019,
+        "tokensOut": 6903,
+        "reasoning": 3314,
+        "wallSec": 188
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "impossible-venn-five-deepseek-v4.1-flash-s1-r7",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 7,
+      "cost": 0.1834,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 2224246,
+        "tokensOut": 47750,
+        "reasoning": 40553,
+        "wallSec": 275
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "impossible-venn-five-deepseek-v4.1-flash-s2-r2",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0876,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 284778,
+        "tokensOut": 26036,
+        "reasoning": 24333,
+        "wallSec": 145
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "impossible-venn-five-deepseek-v4.1-flash-s3-r3",
+      "post": "2026-10-09-five-circles-cannot-make-this-venn",
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0546,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 306368,
+        "tokensOut": 19638,
+        "reasoning": 15510,
+        "wallSec": 120
+      },
+      "checks": {
+        "said": true,
+        "sets": true,
+        "fix": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 3,
+        "of": 3,
+        "undecided": 0
+      }
     }
   ],
   "blank": [
+    {
+      "task": "impossible-venn-five",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "seed": 2,
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "cost": 0.1594,
+      "why": "Twelve minutes, no render call. It decided only congruent circles in a symmetric ring fail, then searched numerically for five circles that make all 31 regions, and the clock ran out. The checker passed what it said, on that sentence, and I do not."
+    },
+    {
+      "task": "impossible-venn-five",
+      "model": "qwen/qwen3.8-max-prime",
+      "label": "Qwen3.8 Max Prime",
+      "seed": 3,
+      "date": "2026-10-09",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "cost": 0.1442,
+      "why": "Twelve minutes, no render call, spent on a numerical search for five circles that make all 31 regions. It said nothing about circles before the clock ran out."
+    },
     {
       "task": "svg-french-press",
       "model": "deepseek/deepseek-v4.1-flash",

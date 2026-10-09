@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-gpt-6-luna-s1-r3",
+  "exportedAt": "2026-10-09T08:36:29.031Z",
+  "run": "2026-10-09-impossible-venn-five-1916",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "openai/gpt-6-luna",
+  "seed": 1,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}[x=1cm,y=1cm]\n  % General-position placement: every pair intersects.  Five circles can\n  % form at most 22 planar regions (including the exterior), not 31.\n  \\def\\radius{1.62}\n  \\draw[blue!75!black,line width=1.1pt] (0.04,1.32) circle (\\radius);\n  \\draw[red!75!black,line width=1.1pt] (1.30,0.42) circle (\\radius);\n  \\draw[orange!85!black,line width=1.1pt] (0.78,-1.10) circle (\\radius);\n  \\draw[green!55!black,line width=1.1pt] (-0.88,-1.08) circle (\\radius);\n  \\draw[violet!75!black,line width=1.1pt] (-1.32,0.48) circle (\\radius);\n\n  \\node[font=\\sffamily\\bfseries\\small,text=blue!75!black,align=center] at (0,3.28) {Has espresso};\n  \\node[font=\\sffamily\\bfseries\\small,text=red!75!black,align=left] at (3.12,0.78) {Has milk};\n  \\node[font=\\sffamily\\bfseries\\small,text=orange!85!black,align=center] at (2.18,-3.14) {Served cold};\n  \\node[font=\\sffamily\\bfseries\\small,text=green!55!black,align=center] at (-2.16,-3.14) {Has sugar};\n  \\node[font=\\sffamily\\bfseries\\small,text=violet!75!black,align=right] at (-3.12,0.78) {Is decaf};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 21
+  },
+  "output": null,
+  "notes": []
+}

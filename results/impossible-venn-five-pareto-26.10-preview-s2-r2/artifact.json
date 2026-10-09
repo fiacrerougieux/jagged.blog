@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-pareto-26.10-preview-s2-r2",
+  "exportedAt": "2026-10-09T08:52:10.202Z",
+  "run": "2026-10-09-impossible-venn-five-1949",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "unbiased/pareto-26.10-preview",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[scale=1.05]\n  % pentagon circumradius and circle radius\n  \\def\\d{2}\n  \\def\\r{2.7}\n  % the five circles, centres on a regular pentagon\n  \\foreach \\a/\\c in {90/blue, 162/red, 234/green!65!black, 306/orange, 18/violet}{\n    \\fill[\\c, opacity=0.30] (\\a:\\d) circle (\\r);\n  }\n  % Draw outlines after all fills so every boundary remains crisp.\n  \\foreach \\a/\\c in {90/blue, 162/red, 234/green!65!black, 306/orange, 18/violet}{\n    \\draw[\\c!55!black, line width=1.1pt] (\\a:\\d) circle (\\r);\n  }\n  % labels\n  \\node[font=\\large, anchor=south] at (0, 4.95)     {Has espresso};\n  \\node[font=\\large, anchor=east]  at (-5.05, 1.0)  {Has milk};\n  \\node[font=\\large, anchor=north] at (-2.1, -4.75) {Served cold};\n  \\node[font=\\large, anchor=north] at (2.1, -4.75)  {Has sugar};\n  \\node[font=\\large, anchor=west]  at (5.05, 1.0)   {Is decaf};\n  \\node[align=center, text width=13cm, font=\\normalsize] at (0,-6.15)\n    {\\textbf{A complete five-set Venn diagram is impossible with circles.}\\\\[4pt]\n     Five circles yield at most 21 interior regions (22 including the exterior),\\\\\n     not the required $2^5-1=31$. The arrangement above shows 21.};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 27
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-gpt-6.1-sol-s3-r3",
+  "exportedAt": "2026-10-09T08:36:23.147Z",
+  "run": "2026-10-09-impossible-venn-five-1916",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 3,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=8pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\usetikzlibrary{calc}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, line width=1.15pt]\n  \\definecolor{espresso}{HTML}{9A531F}\n  \\definecolor{milk}{HTML}{2678B2}\n  \\definecolor{cold}{HTML}{168574}\n  \\definecolor{sugar}{HTML}{A73378}\n  \\definecolor{decaf}{HTML}{7051AE}\n\n  % All ten pairs intersect twice; no three circumferences meet.\n  % Thus this arrangement attains the maximum for five circles:\n  % 22 planar faces, of which 21 lie inside the union.\n  \\coordinate (E) at (90:1.35);\n  \\coordinate (M) at (18:1.35);\n  \\coordinate (C) at (-54:1.35);\n  \\coordinate (S) at (-126:1.35);\n  \\coordinate (D) at (162:1.35);\n\n  \\foreach \\center/\\colour in {E/espresso,M/milk,C/cold,S/sugar,D/decaf}\n    \\fill[\\colour,opacity=.055] (\\center) circle[radius=2.35cm];\n  \\foreach \\center/\\colour in {E/espresso,M/milk,C/cold,S/sugar,D/decaf}\n    \\draw[\\colour] (\\center) circle[radius=2.35cm];\n\n  \\node[text=espresso,font=\\sffamily\\bfseries,above] at (90:3.86) {Has espresso};\n  \\node[text=milk,font=\\sffamily\\bfseries,right] at (18:3.86) {Has milk};\n  \\node[text=cold,font=\\sffamily\\bfseries,below,yshift=-0.4cm] at (-54:3.86) {Served cold};\n  \\node[text=sugar,font=\\sffamily\\bfseries,below,yshift=-0.4cm] at (-126:3.86) {Has sugar};\n  \\node[text=decaf,font=\\sffamily\\bfseries,left] at (162:3.86) {Is decaf};\n\n  \\node[align=center,text width=12cm,anchor=north,font=\\sffamily\\small]\n    at (0,-4.45) {\\textbf{All 31 regions are impossible with circles.}\\\\[3pt]\n    Five circles have at most $2+5(5-1)=22$ planar regions,\\\\\n    including the exterior: at most 21 inside, not the required 31.};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 38
+  },
+  "output": null,
+  "notes": []
+}

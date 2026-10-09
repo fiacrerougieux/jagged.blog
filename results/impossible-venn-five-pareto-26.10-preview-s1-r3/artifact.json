@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-pareto-26.10-preview-s1-r3",
+  "exportedAt": "2026-10-09T08:52:07.512Z",
+  "run": "2026-10-09-impossible-venn-five-1949",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "unbiased/pareto-26.10-preview",
+  "seed": 1,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=14pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\definecolor{espresso}{HTML}{A65032}\n\\definecolor{milk}{HTML}{267C70}\n\\definecolor{cold}{HTML}{346CB0}\n\\definecolor{sugar}{HTML}{AC7620}\n\\definecolor{decaf}{HTML}{8254A0}\n\\begin{document}\n% Five circles have at most n(n-1)+2 = 22 plane regions,\n% including the exterior. Thus a 31-region Venn diagram is impossible.\n% These circles are in general position and attain 21 interior regions.\n\\begin{tikzpicture}[font=\\sffamily, line width=1pt]\n  \\node[font=\\sffamily\\bfseries\\Large, text=black!85] at (0,6.05)\n    {Five coffee attributes};\n  \\node[font=\\sffamily\\small, text=black!65] at (0,5.50)\n    {Circle-only overlap diagram};\n\n  \\coordinate (A) at (90:2);\n  \\coordinate (B) at (162:2);\n  \\coordinate (C) at (234:2);\n  \\coordinate (D) at (306:2);\n  \\coordinate (E) at (18:2);\n  % Fill first, then redraw every boundary so none is obscured.\n  \\foreach \\p/\\c in {A/espresso,B/milk,C/cold,D/sugar,E/decaf}\n    \\fill[\\c,fill opacity=.10] (\\p) circle[radius=2.6];\n  \\foreach \\p/\\c in {A/espresso,B/milk,C/cold,D/sugar,E/decaf}\n    \\draw[\\c] (\\p) circle[radius=2.6];\n\n  \\node[text=espresso,font=\\sffamily\\bfseries] at (0,4.90) {Has espresso};\n  \\node[text=milk,font=\\sffamily\\bfseries,anchor=east] at (-4.75,.62) {Has milk};\n  \\node[text=cold,font=\\sffamily\\bfseries] at (-2.40,-4.48) {Served cold};\n  \\node[text=sugar,font=\\sffamily\\bfseries] at (2.40,-4.48) {Has sugar};\n  \\node[text=decaf,font=\\sffamily\\bfseries,anchor=west] at (4.75,.62) {Is decaf};\n\n  \\node[align=center,text=black!75,font=\\sffamily\\small,text width=13cm] at (0,-5.55)\n    {\\textbf{All 31 regions cannot be obtained with circles.}\\\\[4pt]\n     Five circles create at most 22 regions including the exterior,\\\\\n     or 21 inside their union. This drawing attains that maximum.};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 41
+  },
+  "output": null,
+  "notes": []
+}

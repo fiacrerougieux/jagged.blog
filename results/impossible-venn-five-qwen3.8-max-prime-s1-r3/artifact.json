@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-qwen3.8-max-prime-s1-r3",
+  "exportedAt": "2026-10-09T08:36:25.675Z",
+  "run": "2026-10-09-impossible-venn-five-1916",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "qwen/qwen3.8-max-prime",
+  "seed": 1,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=12pt]{standalone}\n\\usepackage{xcolor}\n\\begin{document}\n\\begin{tikzpicture}[scale=2.4]\n\n% Five circles, centres on a regular pentagon of radius R, each of radius r.\n% This arrangement maximises the number of regions obtainable with circles.\n\\def\\R{0.75}\n\\def\\r{1.5}\n\n\\foreach \\i/\\name/\\col/\\anch in {\n  0/Has espresso/red/south,\n  1/Has milk/teal/south east,\n  2/Served cold/blue/north east,\n  3/Has sugar/violet/north west,\n  4/Is decaf/orange/south west}\n{\n  \\pgfmathsetmacro{\\ang}{90 + 72*\\i}\n  \\pgfmathsetmacro{\\cx}{\\R*cos(\\ang)}\n  \\pgfmathsetmacro{\\cy}{\\R*sin(\\ang)}\n  \\pgfmathsetmacro{\\lx}{(\\R+\\r+0.34)*cos(\\ang)}\n  \\pgfmathsetmacro{\\ly}{(\\R+\\r+0.34)*sin(\\ang)}\n  \\fill[\\col, fill opacity=0.18] (\\cx,\\cy) circle (\\r);\n  \\draw[\\col, thick] (\\cx,\\cy) circle (\\r);\n  \\node[\\col, anchor=\\anch, font=\\bfseries\\small] at (\\lx,\\ly) {\\name};\n}\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 30
+  },
+  "output": null,
+  "notes": []
+}

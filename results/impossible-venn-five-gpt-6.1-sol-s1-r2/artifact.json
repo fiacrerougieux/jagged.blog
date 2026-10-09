@@ -1,0 +1,34 @@
+{
+  "name": "impossible-venn-five-gpt-6.1-sol-s1-r2",
+  "exportedAt": "2026-10-09T08:36:17.140Z",
+  "run": "2026-10-09-impossible-venn-five-1916",
+  "caseId": "impossible-venn-five",
+  "caseTitle": "TikZ: a five-set Venn in circles, which cannot be drawn",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of five overlapping circles labelled Has espresso, Has milk, Served cold, Has sugar and Is decaf, with all 31 regions visible. Circles only.",
+  "model": "openai/gpt-6.1-sol",
+  "seed": 1,
+  "round": 2,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=9pt]{standalone}\n\\usepackage[T1]{fontenc}\n\\definecolor{espresso}{HTML}{98552C}\n\\definecolor{milk}{HTML}{476DB0}\n\\definecolor{cold}{HTML}{16877F}\n\\definecolor{sugar}{HTML}{AD4280}\n\\definecolor{decaf}{HTML}{7B7130}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily, line width=1.1pt]\n  % Five circles have at most n(n-1)+2 = 22 planar faces:\n  % one exterior face and 21 interior faces. A 5-set Venn diagram\n  % needs 31 interior faces, so the requested circle-only Venn is impossible.\n  % Equal circles on a regular pentagon attain the 21-interior-face bound.\n  \\foreach \\angle/\\colour in {90/espresso,18/milk,-54/cold,-126/sugar,162/decaf}{\n    \\fill[\\colour,fill opacity=.065] (\\angle:1.8) circle[radius=2.7];\n  }\n  \\foreach \\angle/\\colour in {90/espresso,18/milk,-54/cold,-126/sugar,162/decaf}{\n    \\draw[\\colour] (\\angle:1.8) circle[radius=2.7];\n  }\n  \\node[text=espresso,font=\\sffamily\\bfseries\\large] at (0,4.85) {Has espresso};\n  \\node[text=milk,font=\\sffamily\\bfseries\\large,anchor=south west] at (3.65,2.65) {Has milk};\n  \\node[text=decaf,font=\\sffamily\\bfseries\\large,anchor=south east] at (-3.65,2.65) {Is decaf};\n  \\node[text=cold,font=\\sffamily\\bfseries\\large] at (2.6,-4.65) {Served cold};\n  \\node[text=sugar,font=\\sffamily\\bfseries\\large] at (-2.6,-4.65) {Has sugar};\n  \\node[font=\\sffamily\\bfseries, text=black!85] at (0,-5.35)\n    {31 regions are impossible with five circles.};\n  \\node[font=\\sffamily\\small, text=black!65] at (0,-5.75)\n    {The maximum is 21 interior regions, all shown here.};\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 31
+  },
+  "output": null,
+  "notes": []
+}
