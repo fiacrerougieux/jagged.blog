@@ -1,0 +1,39 @@
+---
+title: "Astra vs DeepSeek 4.1 Flash both build a boiler"
+date: 2026-09-16
+type: "duel"
+tags: ["coffee", "engineering", "astra", "deepseek"]
+description: "All checks out with temps 92–96 °C"
+tldr: "All checks out with temps 92–96 °C"
+task: "spice-boiler-thermostat"
+caseId: "spice-boiler-thermostat"
+models: ["openai/gpt-6-astra", "deepseek/deepseek-v4.1-flash"]
+---
+
+<Correction date="2026-09-21">
+  There is a gap between the two model, but it is mostly due to DeepSeek's own spread from run to run. Every check still passed on every run. [Here is what changed](/posts/2026-09-21-two-of-my-headlines-did-not-survive-three-runs).
+</Correction>
+
+<SideBySide>
+  <Artifact name="spice-boiler-thermostat-gpt-6-astra-s1-r1" show="poster" code={false} />
+  <Artifact name="spice-boiler-thermostat-deepseek-v4.1-flash-s1-r2" show="poster" code={false} />
+</SideBySide>
+
+<Finding>
+  Both models passed all five checks.
+</Finding>
+
+<Prompt task="spice-boiler-thermostat" />
+
+<Setup task="spice-boiler-thermostat" />
+
+Both models used a voltage-controlled switch with a hysteresis voltage of 2, around an error signal of 94 minus the temperature.
+
+<Checks task="spice-boiler-thermostat" models={["openai/gpt-6-astra", "deepseek/deepseek-v4.1-flash"]} />
+
+## What's jagged here
+
+
+No failure here, so not much to report. DeepSeek cost $0.03 against Astra's $0.16, so about 5.8× cheaper for
+the run.
+You can find the netlist file and the schematic in the download.

@@ -1,0 +1,43 @@
+---
+title: "GLM 5.3 FlashX draws a French press without the cross-plate"
+date: 2026-09-20
+type: "check"
+tags: ["coffee", "spatial", "glm"]
+description: "It used a base and a handle instead of the cross-plate."
+tldr: "It used a base and a handle instead of the cross-plate."
+task: "svg-french-press"
+caseId: "svg-french-press"
+models: ["z-ai/glm-5.3-flashx"]
+---
+
+<Artifact
+  name="svg-french-press-glm-5.3-flashx-s1-r3"
+  code={false}
+  caption="GLM 5.3 FlashX, round 3. It has eight labels, and none of them is the cross-plate."
+/>
+
+<Finding>
+  GLM 5.3 FlashX numbers eight parts and leaves out the cross-plate, because it
+  spends the slot on a base and a handle instead. It also puts the
+  spiral plate below the mesh, the same way up as the two models in the duel.
+</Finding>
+
+<Prompt task="svg-french-press" ran="v1" />
+
+## Checks
+
+<Checks task="svg-french-press" models={["z-ai/glm-5.3-flashx"]} />
+
+Failure types: `completeness` and `part-order`.
+
+## Verdict
+
+<Verdict n="1 run">
+  It draws the cleanest press of the three and understands the object least.
+  So far every model tested on this task puts the spiral plate at the bottom.
+</Verdict>
+
+{/* cost: 2026-09-20-svg-french-press/z-ai_glm-5.3-flashx */}
+The whole run took three rounds, 66 seconds and $0.0206, while the two drawings
+in [the duel](/posts/2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack)
+cost $0.50 between them.

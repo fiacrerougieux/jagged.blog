@@ -1,0 +1,66 @@
+---
+title: "Sonnet 5.5 against Opus 5.5, which one costs more and does best on the Venn, the French press and the shrub?"
+date: 2026-09-29
+type: "check"
+tags: ["coffee", "claude"]
+description: "Pretty similar, with Sonnet being cheaper."
+tldr: "Opus wins the Venn, Sonnet wins the French press and the shrub, and Sonnet is cheaper a run on all three."
+models: ["anthropic/claude-sonnet-5.5", "anthropic/claude-opus-5.5"]
+skipProseCheck: true
+---
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+## Venn
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-claude-opus-5.5-s1-r2" code={false} caption="Opus 5.5, run 1. All three Opus runs keep every label clear of the lines." />
+  <Artifact name="tikz-coffee-venn-claude-sonnet-5.5-s3-r2" code={false} caption="Sonnet 5.5, run 3. Iced long black and milkshake sit on the lines." />
+</SideBySide>
+
+<Checks task="tikz-coffee-venn" model="anthropic/claude-sonnet-5.5" label="Sonnet 5.5" />
+
+<Checks task="tikz-coffee-venn" model="anthropic/claude-opus-5.5" label="Opus 5.5" />
+
+## French press
+
+The Opus runs are from 23 September, on the same prompt.
+
+<SideBySide>
+  <Artifact name="svg-french-press-claude-sonnet-5.5-s1-r2" code={false} caption="Sonnet 5.5, run 1. Spiral plate, mesh, cross plate, which is right." />
+  <Artifact name="svg-french-press-claude-opus-5.5-v2-s1-r3" code={false} caption="Opus 5.5, run 1. The cross plate is on top of the mesh." />
+</SideBySide>
+
+<Checks task="svg-french-press" model="anthropic/claude-sonnet-5.5" label="Sonnet 5.5" />
+
+<Checks task="svg-french-press" model="anthropic/claude-opus-5.5" label="Opus 5.5" />
+
+## Shrub
+
+<SideBySide>
+  <Artifact name="lsystem-pruned-coffee-shrub-claude-opus-5.5-s1-r2" code={false} caption="Opus 5.5, run 1. The right side is cut level, but all three Opus runs are combs, so none passes as a shrub." />
+  <Artifact name="lsystem-pruned-coffee-shrub-claude-sonnet-5.5-s3-r3" code={false} caption="Sonnet 5.5, run 3, the only run of the six that passes everything." />
+</SideBySide>
+
+<Checks task="lsystem-pruned-coffee-shrub" model="anthropic/claude-sonnet-5.5" label="Sonnet 5.5" />
+
+<Checks task="lsystem-pruned-coffee-shrub" model="anthropic/claude-opus-5.5" label="Opus 5.5" />
+
+## Cost
+
+| | Sonnet 5.5 | Opus 5.5 |
+|---|---|---|
+| Venn | $0.0597 a run, $0.0896 a pass | $0.0807 a run, $0.0807 a pass |
+| French press | $0.0486 a run, $0.0730 a pass | $0.2136 a run, no pass |
+| Shrub | $0.0870 a run, $0.2609 a pass | $0.1062 a run, no pass |
+
+Sonnet is cheaper a run on all three, from 18% on the shrub to 77% on the French press, though Opus is cheaper a pass on the Venn.
+
+<Verdict n="3 runs a model a task" p="1.0 on the Venn, 0.4 on the French press and 1.0 on the shrub, Fisher exact, after the runs">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-09-23-svg-french-press-1540, 2026-09-29-svg-french-press-0854, 2026-09-29-tikz-coffee-venn-1100, 2026-09-29-tikz-coffee-venn-1539, 2026-09-29-lsystem-pruned-coffee-shrub-1543 */}
+The 18 runs cost $1.79. Of that, $0.64 paid for runs an earlier post used first.

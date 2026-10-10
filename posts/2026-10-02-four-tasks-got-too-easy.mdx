@@ -1,0 +1,39 @@
+---
+title: "Four tasks got too easy including the new Penrose cafe floor task!"
+date: 2026-10-02
+type: "check"
+tags: ["coffee", "mathematics", "pareto", "sol"]
+description: "Whenever a task passes every check in three runs for two different models, it comes off the board."
+tldr: "Whenever a task passes every check in three runs for two different models, it comes off the board."
+task: "svg-penrose-cafe-floor"
+caseId: "svg-penrose-cafe-floor"
+models: ["unbiased/pareto-26.10-preview", "openai/gpt-6.1-sol"]
+---
+
+<SideBySide>
+  <Artifact name="svg-penrose-cafe-floor-pareto-26.10-preview-s3-r3" code={false} caption="Pareto 26.10 Preview, run 3, seen from above." />
+  <Artifact name="svg-penrose-cafe-floor-gpt-6.1-sol-s1-r2" code={false} caption="GPT-6.1 Sol, run 1, which drew the room around the floor." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+<Prompt task="svg-penrose-cafe-floor" />
+
+Whenever a task passes every check in three runs for two different models, it comes off the board. So all of these tasks below are now retired. Including a new task I just introduced: the Penrose cafe floor. I judged the Penrose floors by eye, and a script checks the other three.
+
+| Task | First model | Second model |
+|---|---|---|
+| Penrose floor | Pareto 26.10 Preview, 3 of 3 | GPT-6.1 Sol, 3 of 3 |
+| Café order | DeepSeek 4.1 Flash, 3 of 3 | Pareto 26.10 Preview, 3 of 3 |
+| Fluorocaffeine | DeepSeek 4.1 Flash, 3 of 3 | Sonnet 5.5, 3 of 3 |
+| Triangle wave | DeepSeek 4.1 Flash, 3 of 3 | GPT-6.1 Sol, 3 of 3 |
+
+<Verdict n="24 runs, two models a task">
+  Things are moving fast, so no point of keeping on doing saturated tasks on the board.
+  Gives me options to introduce new tasks.
+</Verdict>
+
+{/* cost: 2026-10-02-svg-penrose-cafe-floor-1100, 2026-10-02-svg-penrose-cafe-floor-1352, 2026-10-02-mermaid-order-cancel-1340, 2026-10-02-smiles-fluorocaffeine-1342, 2026-10-02-spice-frother-triangle-1343, 2026-09-22-mermaid-order-cancel-1230, 2026-09-22-spice-frother-triangle-1222, 2026-09-21-smiles-fluorocaffeine-2302/deepseek_deepseek-v4.1-flash */}
+The 24 runs cost $1.55. A provider timeout used up one more Penrose run, which cost $0.25 and was bought again.

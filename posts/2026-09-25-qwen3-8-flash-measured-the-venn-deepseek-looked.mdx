@@ -1,0 +1,42 @@
+---
+title: "Qwen3.8 Flash vs DeepSeek 4.1 Flash draw a coffee Venn"
+date: 2026-09-25
+type: "check"
+tags: ["coffee", "documents", "qwen", "deepseek"]
+description: "Qwen gets all three runs right and DeepSeek only one."
+tldr: "Qwen gets all three runs right and DeepSeek only one."
+task: "tikz-coffee-venn"
+caseId: "tikz-coffee-venn"
+models: ["qwen/qwen3.8-flash", "deepseek/deepseek-v4.1-flash"]
+---
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-deepseek-v4.1-flash-s1-r2" code={false} caption="DeepSeek 4.1 Flash, run 1. Every drink in its region, and six of the eight labels across an edge." />
+  <Artifact name="tikz-coffee-venn-qwen3.8-flash-s3-r1" code={false} caption="Qwen3.8 Flash, run 3. One render, and every label clear of every line." />
+</SideBySide>
+
+<Finding>
+  Both models knew where every drink goes, in all six runs. Qwen3.8 Flash
+  kept every label clear of the circle edges in three of three runs, and
+  DeepSeek 4.1 Flash did in one of three. The difference in how they worked is
+  that Qwen measured the layout in Python, and DeepSeek never did.
+</Finding>
+
+<Prompt task="tikz-coffee-venn" />
+
+## Checks
+
+<Checks task="tikz-coffee-venn" />
+
+The sorting is the easy half. An iced latte has espresso, milk and ice, so it goes in the middle, and a pour-over has none of them, so it goes outside. Both
+models got all eight drinks right every time. The hard half is fitting the words in, because the overlaps are small lens shapes and "iced long black" is
+wide. DeepSeek put labels across the circle lines in two of its three runs, and Qwen worked out where each label would land in Python first and got it right every time.
+
+## Verdict
+
+<Verdict n="3 runs a model" p="0.4, Fisher exact, after the runs">
+  Qwen3.8 Flash passes this in three of three runs and DeepSeek 4.1 Flash in one of three. The next thing to try is four sets, which three circles cannot draw.
+</Verdict>
+
+{/* cost: 2026-09-22-tikz-coffee-venn-1219, 2026-09-23-tikz-coffee-venn-1151 */}
+The six runs cost $0.18: $0.11 for Qwen and $0.07 for DeepSeek.

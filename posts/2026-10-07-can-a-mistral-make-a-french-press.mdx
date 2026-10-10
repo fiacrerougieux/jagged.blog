@@ -1,0 +1,45 @@
+---
+title: "Can Mistral Large 4 make a French press?"
+date: 2026-10-07
+type: "experiment"
+tags: ["coffee", "spatial", "mistral"]
+description: "It's a French model after all, it drew the French press filter upside down in one run, the right way up in another, and spent the third run thinking."
+tldr: "It’s a French model after all, and it got one drawing upside down, one the right way up and one unfinished."
+task: "svg-french-press"
+caseId: "svg-french-press"
+models: ["mistralai/mistral-large-4-0"]
+---
+
+<SideBySide>
+  <Artifact name="svg-french-press-mistral-large-4-0-s2-r1" code={false} caption="Run 2. Cross plate on top, spring at the bottom, and the lid under the filter." />
+  <Artifact name="svg-french-press-mistral-large-4-0-s3-r2" code={false} caption="Run 3. Spring, mesh, cross plate, which is the right order, but the spring is a coil." />
+</SideBySide>
+
+<Finding>
+  Mistral Large 4 got the filter the right way up in one of its two drawings. In its thinking, two of its three runs had the order upside down before drawing anything.
+</Finding>
+
+Mistral Large 4 went up on OpenRouter on 6 October, at $0.68 per million tokens in and $2.09 out, and it has vision as well, so it can look at its own drawing.
+
+<Prompt task="svg-french-press" />
+
+<Setup task="svg-french-press" extra={0.06} extraLabel="run 1, which was cut off before its reply finished and so recorded no cost (my estimate from what it wrote)" />
+
+## Three runs, three different stories
+
+Run 1 never drew anything. Run 2 wrote the whole file in one go, rendered it once and looked at it. It knew the hole was missing but did not have time to correct. Run 3 it got it right.
+
+## Checks
+
+<Checks task="svg-french-press" models={["mistralai/mistral-large-4-0"]} />
+
+17 of the 40 French press drawings where the order could be decided have it the right way up, so Mistral sits about where everyone else does.
+
+## Verdict
+
+<Verdict n="3 runs, 2 with a drawing">
+  Pretty good overall, but still some mistakes.
+</Verdict>
+
+{/* cost: 2026-10-07-svg-french-press-1929 */}
+The 2 runs cost $0.21, and one run that failed cost nothing.

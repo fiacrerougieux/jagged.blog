@@ -1,0 +1,40 @@
+---
+title: "L-systems are fun ways to get very varied output"
+date: 2026-09-29
+type: "check"
+tags: ["coffee", "mathematics", "deepseek", "luna", "qwen", "gemini"]
+description: "Models drawing a half pruned coffee tree"
+tldr: "Models drawing a half pruned coffee tree"
+task: "lsystem-pruned-coffee-shrub"
+caseId: "lsystem-pruned-coffee-shrub"
+models: ["deepseek/deepseek-v4.1-flash", "openai/gpt-6-luna", "qwen/qwen3.8-flash", "google/gemini-3.8-flash"]
+---
+
+<SideBySide>
+  <Artifact name="lsystem-pruned-coffee-shrub-deepseek-v4.1-flash-s1-r8" code={false} caption="DeepSeek 4.1 Flash, run 1. Every left branch is a short stub." />
+  <Artifact name="lsystem-pruned-coffee-shrub-gpt-6-luna-s2-r8" code={false} caption="GPT-6 Luna, run 2. Nothing grows right of the trunk." />
+  <Artifact name="lsystem-pruned-coffee-shrub-gemini-3.8-flash-s1-r1" code={false} caption="Gemini 3.8 Flash, run 1. Is this a tree?" />
+</SideBySide>
+
+<Finding>
+  L-systems are a fun way to see how models go about doing things
+</Finding>
+
+<Prompt task="lsystem-pruned-coffee-shrub" />
+
+## What I checked
+
+The checker fails two fakes: half a tree, or just a line on the side to emulate a shrubed tree.
+
+DeepSeek drew a tree with clear prunned branches on the left and non-pruned on the right. Luna also drew nice trees. Qwen3.8 Flash did not draw much as it kept measuring: in two runs it wrote its own scripts to score rules for flatness and hit the twelve minutes before rendering an answer. Gemini's three runs broke on provider errors, and mostly produced not so great looking trees.
+
+I added the half-shrub test after these runs.
+
+{/* <Checks task="lsystem-pruned-coffee-shrub" /> */}
+
+<Verdict n="10 runs, 9 with a file">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-09-29-lsystem-pruned-coffee-shrub-1112, 2026-09-29-lsystem-pruned-coffee-shrub-1210 */}
+The 10 runs cost $0.88, and 3 runs that failed cost $1.14 more.

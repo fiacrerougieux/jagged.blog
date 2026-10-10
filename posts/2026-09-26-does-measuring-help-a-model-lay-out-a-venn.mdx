@@ -1,0 +1,62 @@
+---
+title: "Does measuring help a model lay out a Venn?"
+date: 2026-09-26
+type: "experiment"
+tags: ["coffee", "documents", "method", "sol"]
+description: "Results seems to indicate that telling the models to keep labels off the lines worked as well as telling them to measure."
+tldr: "Results seems to indicate that telling the models to keep labels off the lines worked as well as telling them to measure."
+task: "tikz-coffee-venn"
+caseId: "tikz-coffee-venn"
+models: ["openai/gpt-6-sol", "openai/gpt-6-luna", "z-ai/glm-5.3-flashx", "qwen/qwen3.8-flash"]
+skipProseCheck: true
+---
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-gpt-6-sol-s1-r4" code={false} caption="GPT-6 Sol on the plain prompt, with flat white only just clear of both lines." />
+  <Artifact name="tikz-coffee-venn-told-rule-gpt-6-sol-s1-r2" code={false} caption="Sol told to keep labels off the lines. It ran no calculation and every label is clear." />
+  <Artifact name="tikz-coffee-venn-no-code-qwen3.8-flash-s3-r3" code={false} caption="Qwen3.8 Flash told not to run any code. Every label is still clear." />
+</SideBySide>
+
+<Finding>
+  Results seems to indicate that telling the models to keep labels off the lines worked as well as telling them to measure.
+</Finding>
+
+<Prompt task="tikz-coffee-venn" />
+
+## First try
+
+When Sol, Luna, or GLM are told the rule to avoid labels overlapping lines, results seems to show they improve. When they are told to measure the distance between lines and labels with coffee, results seems to indicate they also improve, but not as much as when told the rule. So on this limited sample, it seems they need the what, not the how.
+
+| Labels clear of the lines | Sol | Luna | GLM | Qwen3.8 Flash |
+|---|---|---|---|---|
+| Plain prompt | 2 of 3 | 0 of 3 | 1 of 3 | 3 of 3 |
+| Told the rule | 3 of 3 | 2 of 3 | 2 of 3 | |
+| Told to measure | 3 of 3 | 1 of 2 | 2 of 3 | |
+| Told not to run code | | | | 3 of 3 |
+
+Qwen did a lot of measuring in initial try, so I asked it specifically not to measure with code and it surprisingly still passed.
+
+## Measuring against looking
+
+This is the second of four posts. GLM 5.3 FlashX is asked to confirm labels don’t overlap by looking with vision only, or by code only.
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-told-measure-glm-5.3-flashx-s3-r1" code={false} caption="GLM told to measure, run 3. Every check passed." />
+  <Artifact name="tikz-coffee-venn-told-look-glm-5.3-flashx-s2-r2" code={false} caption="GLM told to look, run 2. The labels are clear but a drink is in the wrong region." />
+</SideBySide>
+
+| GLM 5.3 FlashX | Labels clear of the lines | Every check passed |
+|---|---|---|
+| Told to measure | 6 of 10 | 6 of 10 |
+| Told to look | 3 of 9 | 0 of 9 |
+
+The gap is 3, and I needed 6 (p = 0.37) to be more sure. The runs using vision put a drink in the wrong region six times, which I did not predict.
+
+Every number here comes from the edge check as loosened on 2026-09-26, which tests the letters themselves instead of each word's box.
+
+<Verdict n="10 runs told to measure and 9 told to look" p="0.37, Fisher exact, committed before the runs">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-09-26-tikz-coffee-venn-no-code-1205, 2026-09-26-tikz-coffee-venn-told-measure-1213, 2026-09-26-tikz-coffee-venn-told-rule-1128, 2026-09-27-tikz-coffee-venn-told-look-1814, 2026-09-27-tikz-coffee-venn-told-measure-1821 */}
+The 41 runs cost $1.24.

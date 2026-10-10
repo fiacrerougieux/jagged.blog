@@ -1,0 +1,42 @@
+---
+title: "Qwen3.8 Max Prime draws three coffee shrubs"
+date: 2026-09-25
+type: "check"
+tags: ["coffee", "mathematics", "qwen"]
+description: "Three very different shrubs, and only one looks right."
+tldr: "Three very different shrubs, and only one looks right."
+task: "lsystem-pruned-coffee-shrub"
+caseId: "lsystem-pruned-coffee-shrub"
+models: ["qwen/qwen3.8-max-prime"]
+---
+
+<SideBySide>
+  <Artifact name="lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s3-r7" code={false} caption="Run 3, round 7. An upright cut face and branches sweeping right." />
+  <Artifact name="lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s2-r5" code={false} caption="Run 2, round 5. A flat edge with lots of whatever on the right." />
+  <Artifact name="lsystem-pruned-coffee-shrub-qwen3.8-max-prime-s1-r8" code={false} caption="Run 1, round 8. A lattice of stubs on the left and a scribble on the right." />
+</SideBySide>
+
+<Finding>
+  Three runs gave three very different shrubs, and only run 3, the smallest at
+  906 segments, has a cut side.
+</Finding>
+
+<Prompt task="lsystem-pruned-coffee-shrub" />
+
+## Checks
+
+<Checks task="lsystem-pruned-coffee-shrub" />
+
+Each run found its own way to get a flat side out of the rewrite rules.
+
+Even though I cannot automate graders for this method, I like it for its variability and will use it again.
+
+## Verdict
+
+<Verdict n="3 runs">
+  One working shrub in three runs, and the prompt leaves the method open, which
+  explains part of the variability.
+</Verdict>
+
+{/* cost: 2026-09-25-lsystem-pruned-coffee-shrub-1026 */}
+The three runs cost $2.04 and took about six minutes each.

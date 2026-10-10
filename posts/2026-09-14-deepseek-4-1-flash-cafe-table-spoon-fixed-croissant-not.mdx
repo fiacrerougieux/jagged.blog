@@ -1,0 +1,47 @@
+---
+title: "DeepSeek 4.1 Flash cant make croissants"
+date: 2026-09-14
+type: "experiment"
+tags: ["coffee", "spatial", "deepseek"]
+description: "Twelve rounds of looking at its own render. The spoon went from three loose sticks to a proper spoon, but the croissant got seven parameter tweaks and stayed a banana."
+tldr: "Not a nice croissant"
+task: "blender-cafe-table"
+caseId: "blender-cafe-table"
+models: ["deepseek/deepseek-v4.1-flash"]
+---
+
+<Correction date="2026-09-21">
+ I ran the task three more times on the current prompt,
+  and DeepSeek drew a croissant that passes in two of the three. So the title
+  reads one run as the model.
+  The new runs are in the [gallery](/gallery/blender-cafe-table), and [here is what changed](/posts/2026-09-21-two-of-my-headlines-did-not-survive-three-runs).
+</Correction>
+
+<Artifact
+  name="blender-cafe-table-deepseek-v4.1-flash-s1-r12"
+  code={false}
+  caption="The last frame the model rendered before the run hit its time limit."
+/>
+
+<Finding>
+  With vision and twelve rounds, it found a coordinate bug that had turned the
+  spoon into three loose sticks, and fixed it. It also edited the croissant
+  seven times.
+</Finding>
+
+<Prompt task="blender-cafe-table" />
+
+<Setup task="blender-cafe-table" />
+
+## Spot the error
+
+Here is round one. Two things in it are wrong enough to name.
+
+<Artifact name="blender-cafe-table-deepseek-v4.1-flash-s1-r1" code={false} caption="Frame 1 of 12." />
+
+
+## What's jagged here
+
+Both problems were in the same render every round. So why was one fixed and not the other one.
+
+Failure type: `physical-plausibility`.

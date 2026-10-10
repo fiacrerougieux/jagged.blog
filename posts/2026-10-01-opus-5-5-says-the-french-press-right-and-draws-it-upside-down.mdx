@@ -1,0 +1,44 @@
+---
+title: "Opus 5.5 knows the order of filter in a french press, but can it draw it?"
+date: 2026-10-01
+type: "experiment"
+tags: ["coffee", "spatial", "claude"]
+description: "Asked in words, Opus 5.5 got the filter order right in 5 out of 5 runs. When you asked to draw it, it gets it right in 2 out of 5."
+tldr: "Asked in words, Opus 5.5 got the filter order right in 5 of 5 runs, and asked to draw it, in 2 of 5."
+task: "svg-french-press"
+caseId: "text-french-press-order"
+models: ["anthropic/claude-opus-5.5", "unbiased/pareto"]
+---
+
+<SideBySide>
+  <Artifact name="text-french-press-order-claude-opus-5.5-s1-r1" code={false} caption="Opus 5.5 in words, run 1. Spiral plate, mesh, cross plate, which is right." />
+  <Artifact name="svg-french-press-claude-opus-5.5-v2-s1-r3" code={false} caption="Opus 5.5 drawing, run 1. Cross plate on top, and its own subtitle lists it that way too." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+I tested many models to see whether I could get statistical significance where a model knows the order of a filter stack but cannot draw it.
+For most models I tested we cannot say much, but the Opus 5.5 runs somewhat suggest that it knows the order but often cannot draw it in order.
+
+<Checks task="svg-french-press" model="anthropic/claude-opus-5.5" label="Opus 5.5" />
+
+All seven models, as passed of decided on the order:
+
+| | In words | Drawn |
+|---|---|---|
+| Opus 5.5 | 5 of 5 | 2 of 5 |
+| Sonnet 5.5 | 5 of 5 | 2 of 3 |
+| GPT-5.6 Sol | 5 of 5 | 2 of 3 |
+| DeepSeek 4.1 Flash | 3 of 3, all after searching the web | 1 of 1 |
+| GLM 5.3 FlashX | 0 of 4 | 0 of 2 |
+| Qwen3.8 27B | 0 of 3 | 0 of 2 |
+| Pareto | 0 of 2 | 2 of 3 |
+
+<Verdict n="5 runs an arm for Opus, 2 to 5 decided for the others" p="0.17 for Opus, and 0.37 for all seven without the web runs, Fisher exact, committed before the runs">
+  With p at 0.17, the Opus 5.5 seems to indicate that, in general, it knows the order but cannot draw it in order, which is interesting.
+</Verdict>
+
+{/* cost: 2026-10-01-text-french-press-order-0933, 2026-09-23-svg-french-press-1540, 2026-10-01-svg-french-press-1010 */}
+The 35 runs in words cost $0.82, and the five Opus drawings $1.03, so $1.85 for the 40.

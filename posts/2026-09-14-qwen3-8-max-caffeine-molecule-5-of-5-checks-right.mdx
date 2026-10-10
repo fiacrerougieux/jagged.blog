@@ -1,0 +1,40 @@
+---
+title: "Qwen3.8 Max builds a caffeine molecule"
+date: 2026-09-14
+type: "experiment"
+tags: ["coffee", "chemistry", "qwen"]
+description: "Every check passes"
+tldr: "Every check passes"
+task: "pdb-caffeine"
+caseId: "pdb-caffeine"
+models: ["qwen/qwen3.8-max-0902"]
+---
+
+<Artifact name="pdb-caffeine-qwen3.8-max-0902-s1-r6" code={false} />
+
+<Finding>
+  Every check passes!
+</Finding>
+
+<Prompt task="pdb-caffeine" />
+
+<Setup task="pdb-caffeine" />
+
+<Checks task="pdb-caffeine" />
+
+## What six rounds looked like
+
+So how did it get there? Mostly by arguing with itself:
+
+> The angle between dv and axis: cos = -cos(th) = -0.334 → 109.5°. But the
+> measured angle N7-C12-H is the angle at C12 between the vectors C12→N7 (=axis)
+> and C12→H (=dv) [...] Measured is 70.5 → dot = +0.334 [...] unless axis is
+> defined as nrm(sub(C,N)) = C - N normalized → pointing from N to C! sub(a,b) =
+> a-b. sub(C,N) = C-N → vector from N to C. Oops: I named it axis = nrm(sub(C, N)),
+> but this is the direction N→C.
+
+
+## What's jagged here
+
+Nothing failed, so there is no failure type here. 
+The PDB file is under the picture if you want to open it and count the atoms yourself.

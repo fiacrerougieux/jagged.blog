@@ -1,0 +1,70 @@
+---
+title: "Luna against Haiku 5.5, which model wins the coffee tasks?"
+date: 2026-10-08
+type: "check"
+tags: ["coffee", "spatial", "luna", "claude"]
+description: "Luna was better on this set of tasks at similar cost"
+tldr: "Luna gets the parts in order in 12 of 15 drawings and Haiku in 1 of 14."
+models: ["openai/gpt-6-luna", "anthropic/claude-haiku-5.5"]
+skipProseCheck: true
+---
+
+<Correction date="2026-10-08">
+  The last line first read “The 66 runs cost $4.00”, which counted every model in the same runs and not just these two.
+  Luna’s and Haiku’s 48 runs cost $0.30.
+</Correction>
+
+<SideBySide>
+  <Artifact name="exploded-v60-claude-haiku-5.5-s1-r3" code={false} caption="Haiku 5.5, run 1. The dripper sits above the filter, though its own note says to put the filter in the dripper." />
+  <Artifact name="exploded-v60-gpt-6-luna-s1-r1" code={false} caption="GPT-6 Luna, run 1. Filter, dripper, server, which is right." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+Both cost under a cent a run, so I gave them the same eight tasks, three runs each. Haiku 5.5 is new on OpenRouter and pi has no settings for it so I borrowed  its settings from Haiku 4.5.
+
+## Taking things apart
+
+| Parts in the right order | Luna | Haiku 5.5 |
+|---|---|---|
+| French press | 2 of 3 | 0 of 3 |
+| AeroPress | 3 of 3 | 1 of 2 |
+| V60 | 3 of 3 | 0 of 3 |
+| Portafilter | 3 of 3 | 0 of 3 |
+| Grinder | 1 of 3 | 0 of 3 |
+
+<Checks task="exploded-v60" model="anthropic/claude-haiku-5.5" label="Haiku 5.5" />
+
+<Checks task="exploded-v60" model="openai/gpt-6-luna" label="Luna" />
+
+## The Venn goes the other way
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-claude-haiku-5.5-s1-r1" code={false} caption="Haiku 5.5, run 1. Every label clear of the lines." />
+  <Artifact name="tikz-coffee-venn-gpt-6-luna-s1-r4" code={false} caption="GPT-6 Luna, run 1. Flat white, short black and iced latte sit on the lines." />
+</SideBySide>
+
+<Checks task="tikz-coffee-venn" model="anthropic/claude-haiku-5.5" label="Haiku 5.5" />
+
+<Checks task="tikz-coffee-venn" model="openai/gpt-6-luna" label="Luna" />
+
+## The shrub and the rag
+
+Neither passes either one. Luna grows a full shrub and never prunes it, while Haiku prunes all three and gets the size wrong. On the rag, Haiku splits the stems in all three and Luna in one.
+
+<Checks task="lsystem-pruned-coffee-shrub" model="anthropic/claude-haiku-5.5" label="Haiku 5.5" />
+
+<Checks task="lsystem-pruned-coffee-shrub" model="openai/gpt-6-luna" label="Luna" />
+
+<Checks task="lilypond-espresso-rag" model="anthropic/claude-haiku-5.5" label="Haiku 5.5" />
+
+<Checks task="lilypond-espresso-rag" model="openai/gpt-6-luna" label="Luna" />
+
+<Verdict n="3 runs a model a task, 8 tasks" p="0.0001 on order across the five coffee makers, 0.4 on the Venn, Fisher exact, after the runs">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-10-08-lilypond-espresso-rag-1151, 2026-10-08-lsystem-pruned-coffee-shrub-1148, 2026-10-08-exploded-portafilter-1147, 2026-10-08-exploded-grinder-1140, 2026-10-08-exploded-aeropress-1139, 2026-10-08-exploded-v60-1138, 2026-10-08-tikz-coffee-venn-1122, 2026-10-08-svg-french-press-1121, 2026-10-05-exploded-grinder-1923, 2026-10-05-exploded-v60-1917, 2026-10-05-exploded-aeropress-1916, 2026-10-05-exploded-portafilter-1919, 2026-10-05-lilypond-espresso-rag-1053, 2026-10-03-svg-french-press-2037, 2026-09-29-lsystem-pruned-coffee-shrub-1112, 2026-09-25-tikz-coffee-venn-2019 */}
+Luna’s 24 runs cost $0.13 and Haiku’s 24 cost $0.16, so $0.30 for the 48.

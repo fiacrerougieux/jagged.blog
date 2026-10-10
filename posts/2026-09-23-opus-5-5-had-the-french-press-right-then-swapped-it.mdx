@@ -1,0 +1,45 @@
+---
+title: "Opus 5.5 got the French press right, then changed it"
+date: 2026-09-23
+type: "check"
+tags: ["coffee", "spatial", "claude"]
+description: "Nicest drawings so far, but the stack is right in only one of three runs."
+tldr: "Nicest drawings so far, but the stack is right in only one of three runs."
+task: "svg-french-press"
+caseId: "svg-french-press"
+models: ["anthropic/claude-opus-5.5"]
+---
+
+<SideBySide>
+  <Artifact name="svg-french-press-claude-opus-5.5-v2-s3-r1" code={false} caption="Opus 5.5, run 3, round 1. Spiral plate, mesh, cross-plate, top to bottom, which is right." />
+  <Artifact name="svg-french-press-claude-opus-5.5-v2-s3-r3" code={false} caption="Same run, round 3. The two plates are swapped, and the filter is now wider than the glass." />
+</SideBySide>
+
+<Finding>
+  Opus 5.5 drew the cleanest French presses on the bench, but it put the filter
+  stack the right way up in only one run of three. In the third run it had the
+  order right in round 1, then decided the spiral plate goes at the bottom and
+  swapped the two plates.
+</Finding>
+
+<Prompt task="svg-french-press" />
+
+## Checks
+
+<Checks task="svg-french-press" />
+
+Run 1 has the stack upside down. Run 2 has it right, but it draws the frame beside the glass, so it fails the axis check.
+
+Run 3 first had the right order then its reasoning said "Actually the correct Bodum order is cross plate, mesh, then spiral plate at the bottom with the spring edge facing the glass", and it moved both plates with a translate. In its closing note it said it was not certain of the order and had not checked a manufacturer diagram. So it knew it was guessing, and it guessed wrong.
+
+Failure types: `part-order` twice and `physical-plausibility` once.
+
+## Verdict
+
+<Verdict n="3 runs a model" p="1.0 against Pareto or Sol, Fisher exact, after the runs">
+  It draws better than anything else here and knows the French press no
+  better. Pareto and Sol each got the stack right in two runs of three.
+</Verdict>
+
+{/* cost: 2026-09-23-svg-french-press-1540 */}
+The three runs cost $0.64 and took about 85 seconds each.

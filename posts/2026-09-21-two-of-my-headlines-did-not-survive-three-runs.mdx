@@ -1,0 +1,32 @@
+---
+title: "Two of my headlines were wrong after three runs"
+date: 2026-09-21
+type: "experiment"
+tags: ["coffee", "method", "deepseek", "qwen", "astra"]
+description: "The croissant and the boiler headlines didn't hold up with more runs."
+tldr: "The croissant and the boiler headlines didn't hold up with more runs."
+---
+
+<SideBySide>
+  <Artifact name="blender-cafe-table-deepseek-v4.1-flash-s1-r3" show="poster" code={false} caption="DeepSeek 4.1 Flash, run 1. The croissant fails." />
+  <Artifact name="blender-cafe-table-deepseek-v4.1-flash-s2-r5" show="poster" code={false} caption="Same model, same prompt, run 2. It passes." />
+  <Artifact name="blender-cafe-table-deepseek-v4.1-flash-s3-r8" show="poster" code={false} caption="Run 3. It passes again." />
+</SideBySide>
+
+<Finding>
+  I ran two tasks three times each, on the current prompts and at the published
+  limits. DeepSeek 4.1 Flash drew a croissant that passes in two of three runs,
+  under a headline saying it never worked out what a croissant is. And on the
+  boiler, the 2.5× gap in size between two models turned out to be one model's
+  spread from run to run.
+</Finding>
+
+I ran the croissant and the boiler three times each. The croissant passed in two of the three runs, and the gap in boiler size was mostly DeepSeek changing its mind from run to run, so now a model needs three runs before it goes on [the board](/three-shots).
+
+<Verdict n="3 runs a task">
+  One run tells you what happened once. Twice last week I put one run in a
+  headline, and three runs took both back.
+</Verdict>
+
+{/* cost: 2026-09-21-blender-cafe-table-1049/deepseek_deepseek-v4.1-flash, 2026-09-21-spice-boiler-thermostat-1125 */}
+The 9 runs cost $0.53.

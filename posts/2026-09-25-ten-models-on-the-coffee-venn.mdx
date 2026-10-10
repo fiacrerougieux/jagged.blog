@@ -1,0 +1,37 @@
+---
+title: "Ten models draw a coffee Venn, some check with vision others with code"
+date: 2026-09-25
+type: "check"
+tags: ["coffee", "documents", "method"]
+description: "Almost all put the drinks in the right place, but only a few keep the labels off the lines."
+tldr: "Almost all put the drinks in the right place, but only a few keep the labels off the lines."
+task: "tikz-coffee-venn"
+caseId: "tikz-coffee-venn"
+models: ["openai/gpt-6-sol", "openai/gpt-6-luna", "google/gemini-3.8-flash", "x-ai/grok-4.7", "z-ai/glm-5.3-flashx", "xiaomi/mimo-v2.6-pro", "moonshotai/kimi-k3", "fireworks/ember-1"]
+---
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-gpt-6-sol-s1-r4" code={false} caption="GPT-6 Sol, run 1. Every drink in its region, with flat white only just clear of both lines." />
+  <Artifact name="tikz-coffee-venn-gemini-3.8-flash-s2-r3" code={false} caption="Gemini 3.8 Flash, run 2. It tested each overlap in Python before placing a label, and every label is clear." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+<Prompt task="tikz-coffee-venn" />
+
+<TaskTally task="tikz-coffee-venn" />
+
+The edge check was loosened on 2026-09-26 to test the letters themselves, because it had failed labels that sat clear by eye. Initially it compared the size of the text box compared to the circle position. But because of margins it rejected some working ones.
+
+Different strategies to keep the labels clear of the circle line between models with four of the nine runs checking the layout with a calculation, and five of the 22 runs that just looked at the render with vision.
+
+This is the first of four posts on whether measuring helps with achieving this task, in the [next post](/posts/2026-09-26-does-measuring-help-a-model-lay-out-a-venn) we check this in more details.
+
+<Verdict n="9 runs that measured and 22 that looked" p="0.39, Fisher exact, after the runs">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-09-25-tikz-coffee-venn-2019, 2026-09-25-tikz-coffee-venn-1828, 2026-09-25-tikz-coffee-venn-1832 */}
+The 24 new runs cost $2.07.

@@ -1,0 +1,38 @@
+---
+title: "Can models follow a musical instruction?"
+date: 2026-10-05
+type: "duel"
+tags: ["coffee", "music", "pareto", "sol", "luna"]
+description: "Nine runs of a 16-bar piano rag where the left hand crosses over the right."
+tldr: "Only Sol so far marks the crossing and keeps the stems apart."
+caseId: "lilypond-espresso-rag"
+models: ["openai/gpt-6.1-sol", "unbiased/pareto-26.10-preview", "openai/gpt-6-luna"]
+---
+
+<SideBySide>
+  <Artifact name="lilypond-espresso-rag-gpt-6.1-sol-s3-r4" code={false} caption="GPT-6.1 Sol, run 3. The left hand moves up to the treble staff for bars 9 to 12. I gave it 4 out of 5." />
+  <Artifact name="lilypond-espresso-rag-gpt-6-luna-s1-r2" code={false} caption="GPT-6 Luna, run 1. The left hand crosses, but its stems point down into the right hand's." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+<Prompt task="lilypond-espresso-rag" version="v1" text={`Write, in LilyPond, 16 bars of café piano music called "Espresso Rag" in which the left hand crosses over the right hand for bars 9 to 12.`} />
+
+In a hand crossing, the left hand reaches over the right, so its notes move up onto the treble staff. The trap is a left hand written high but left on the bass staff. The modesl did fine and did it in a few way: move the left hand up, swap the two hands' staves, or write the left hand into the treble staff as its own voice.
+
+| Run | Checks | My rating | Cost |
+|---|---|---|---|
+| Sol 1, 2, 3 | 6, 6, 6 of 6 | 4, 3, 4 | $0.11 |
+| Pareto 1, 2, 3 | 6, 4, 6 of 6 | 2, 3, 3 | $0.41 |
+| Luna 1, 2, 3 | 4, 4, 4 of 6 | 2, 2, 2 | $0.02 |
+
+A script reads LilyPond's record of every note (hand, staff, bar, stem) and does the checks. Written after hearing Sol and Pareto though, so Luna is its first fair test.
+
+<Verdict n="9 runs, three models">
+  Sol is the only one that gets every check every time, and it sounds the best to me.
+</Verdict>
+
+{/* cost: 2026-10-04-lilypond-espresso-rag-2017, 2026-10-05-lilypond-espresso-rag-1027, 2026-10-05-lilypond-espresso-rag-1053 */}
+The nine runs cost $0.55.

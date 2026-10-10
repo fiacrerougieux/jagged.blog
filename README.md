@@ -5,6 +5,7 @@ The prompts, checkers and scored files behind [jagged.blog](https://jagged.blog)
 - `tasks/` has each task's prompt, checks, checker and the known-bad files it fails.
 - `results/` has each file a model wrote and the render I scored.
 - `results.json` lists every run with its checks and cost.
+- `posts/` has each published post as I wrote it. They start from 2026-10-10, so earlier edits are not in the history.
 - `studies/` holds each prediction committed before its runs, with the prompts, the files the models are given and how the answers are graded. The date of the commit is the proof it came first.
 - `scripts/staircase.py` sorts every check by the share of models that fail it, and counts how often each model fails the easier of two checks and passes the harder.
 - `scripts/jaggedness.py` builds the per-model table of how uneven each model is across tasks.

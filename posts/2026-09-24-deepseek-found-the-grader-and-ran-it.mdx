@@ -1,0 +1,31 @@
+---
+title: "DeepSeek found the grader and ran it"
+date: 2026-09-24
+type: "note"
+tags: ["coffee", "chemistry", "method", "deepseek"]
+description: "It found my grading script and ran it on its own answer, so no score."
+tldr: "It found my grading script and ran it on its own answer, so no score."
+task: "pdb-caffeine"
+---
+
+<Finding>
+  On the caffeine task, two of DeepSeek 4.1 Flash's three runs found the
+  grader, read it and ran it on their own molecule. Both answers were right,
+  and I threw both away.
+</Finding>
+
+Until 2026-09-21 the model's container also held the checkers, the scripts that score its
+answer afterwards, though nothing in a run needs them. I always found it funny when leading labs have models escape or do bad stuff, but yes, it happens :)!
+
+So how did it find them? It searched. Run 2 ran `find / -iname "*caffeine*"`
+in its fifth tool call. Run 1 read the renderer's source for thirty calls, and said
+ "I found the actual grader (`/checkers/pdb-caffeine.py`) and used it
+to verify the answer directly."
+
+Is that cheating? I would do the same with a shell and a task to finish. But a
+pass from a model that ran the check first is a different measurement, so
+neither run gets a score. Run 3 never looked, and nor did Qwen3.8 Max in its
+three runs of the [same task](/gallery/pdb-caffeine).
+
+The checkers now run only after the model is done, in a fresh container. I
+searched every earlier run and no other published result touched them.

@@ -1,0 +1,44 @@
+---
+title: "How do model respond to an impossible tasks?"
+date: 2026-10-09
+type: "experiment"
+tags: ["coffee", "venn", "impossible"]
+description: "When models are asked to do a Venn with five circles, most know it can’t be done"
+tldr: "They knew it couldn't be done, and 15 of the 16 drawings are five circles anyway."
+task: "impossible-venn-five"
+caseId: "impossible-venn-five"
+models: ["openai/gpt-6.1-sol", "openai/gpt-6-luna", "anthropic/claude-sonnet-5.5", "deepseek/deepseek-v4.1-flash", "unbiased/pareto-26.10-preview", "qwen/qwen3.8-max-prime"]
+currentQuestion: true
+---
+
+<SideBySide>
+  <Artifact name="impossible-venn-five-deepseek-v4.1-flash-s1-r5" code={false} caption="DeepSeek 4.1 Flash, run 1, round 5. Five ellipses, all 31 regions." />
+  <Artifact name="impossible-venn-five-deepseek-v4.1-flash-s1-r7" code={false} caption="Round 7, its final answer. Back to five circles, because the prompt said circles only." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+Five circles make at most 22 regions and five sets need 31. The task is impossible as this can't be drawn as asked. I told the models they could decline and say why.
+
+None declined. 16 of 18 runs said circles can't do it. 15 drew five circles anyway with a note. Only Sonnet 5.5's third run and one of DeepSeek's intermediate runs handed over ellipses with all 31 regions, and said it broke "circles only" to get there. Sol and Luna never said what would work.
+
+Qwen3.8 Max Prime spent two runs searching for five circles that would, until the clock stopped both.
+
+So a model will tell you it can't be done, then hand you the closest wrong thing.
+
+<Prompt task="impossible-venn-five" />
+
+<Reveal label="Every check, run by run">
+  <Checks task="impossible-venn-five" />
+</Reveal>
+
+<Verdict n="3 runs a model, 6 models">
+  {/* Yours to write. */}
+</Verdict>
+
+Sonnet 5.5 and DeepSeek 4.1 Flash passed every check in all three runs, so the task retires.
+
+{/* cost: 2026-10-09-impossible-venn-five-1916, 2026-10-09-impossible-venn-five-1949 */}
+The 18 runs cost $1.44.

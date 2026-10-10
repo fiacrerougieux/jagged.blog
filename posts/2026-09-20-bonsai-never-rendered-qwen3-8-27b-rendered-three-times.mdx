@@ -1,0 +1,58 @@
+---
+title: "Bonsai vs Qwen3.8 27B draw a French press"
+date: 2026-09-20
+type: "experiment"
+tags: ["coffee", "spatial", "qwen", "bonsai"]
+description: "Bonsai never rendered and Qwen didn't change anything after three renders."
+tldr: "Neither of them drew a filter that works."
+task: "svg-french-press"
+caseId: "svg-french-press"
+models: ["prism-ml/ternary-bonsai-2-27b", "qwen/qwen3.8-27b"]
+---
+
+<Artifact
+  name="svg-french-press-qwen3.8-27b-s1-r3"
+  code={false}
+  caption="Qwen3.8 27B, round 3 of 3, with six parts. The mesh is there but the two plates that hold it are missing."
+/>
+
+<Finding>
+  Ternary Bonsai 2 27B is Qwen3.8 27B compressed, at a sixth of the price. I ran
+  it four times and it never rendered once. Three runs ran out of clock while
+  still planning, and the fourth stopped early, wrote its file and never opened
+  it. Qwen3.8 27B did look at its own render three times, but spent all three
+  rounds on spouts.
+</Finding>
+
+<Prompt task="svg-french-press" ran="v1" />
+
+<Setup task="svg-french-press" extra={0.007} extraLabel="four Bonsai runs that produced no result" />
+
+Bonsai wrote its file and never looked at it, and Qwen looked three times but only fixed the spouts, so neither of them noticed their filter wouldn't work.
+
+<Checks task="svg-french-press" models={["qwen/qwen3.8-27b"]} />
+
+`order` is left blank. That check reads three plates against each other, and
+this drawing has only one of them, so failing it would count the missing parts
+twice.
+
+## What's jagged here
+
+Five models have done this task now, and four of them drew a filter that would
+not hold grounds back. DeepSeek 4.1 Flash got it right for four cents, and that
+is the number Bonsai was meant to beat.
+
+So did compression take the knowledge? Bonsai's reasoning names the parts and
+argues about the gaps between them, so the knowledge is still there. What went
+is the step from planning to looking. It plans one geometry, writes another and
+stops.
+
+## Verdict
+
+<Verdict n="1 run of Qwen3.8 27B, and 4 of Bonsai with no file">
+  Qwen3.8 27B draws a good-looking French press with a mesh that nothing holds
+  in place. Bonsai drew one too, at a sixth of the price, and never found out
+  what it looked like.
+</Verdict>
+
+The other four presses are in the [gallery](/gallery/svg-french-press).

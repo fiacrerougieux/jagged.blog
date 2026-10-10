@@ -1,0 +1,38 @@
+---
+title: "Does measuring help a model lay out a Venn? With a bit more statistics."
+date: 2026-09-27
+type: "experiment"
+tags: ["coffee", "documents", "method", "sol"]
+description: "1 out of 10 runs on sol had labels overlapping line. Telling it to check label over lines did not improve that."
+tldr: "Sol kept the labels clear nine times out of ten whether I gave it a list, told it to check itself or said nothing."
+task: "tikz-coffee-venn"
+caseId: "tikz-coffee-venn"
+models: ["openai/gpt-6-sol"]
+skipProseCheck: true
+---
+
+<SideBySide>
+  <Artifact name="tikz-coffee-venn-gpt-6-sol-s1-r3" code={false} caption="Sol on the plain prompt, run 1. Every label clear." />
+  <Artifact name="tikz-coffee-venn-gpt-6-sol-s4-r5" code={false} caption="Run 4, the one plain run with a label on a line." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+<Prompt task="tikz-coffee-venn" />
+
+This is the last of four posts on whether specifying to measure helps model avoid overlapping text and lines. Here, with 10 runs instead of 3 for Sol. I had the plain prompt telling Sol to make a Venn diagram, another prompt to make a Venn and check that the text does not overlap with the lines and another to check its own render to ensure no overlap.
+
+| Labels clear of the lines | Sol, ten runs |
+|---|---|
+| Plain prompt | 9 of 10 |
+| Told the list | 9 of 10 |
+| Told to check its own render | 9 of 10 |
+
+<Verdict n="10 runs a prompt" p="1.0, Fisher exact, committed before the runs">
+  No indication of difference between prompt, but of course, to measure this statistically, I would need a very large sample. So really, we cannot tell yet.
+</Verdict>
+
+{/* cost: 2026-09-26-tikz-coffee-venn-self-check-1946, 2026-09-26-tikz-coffee-venn-told-list-1938, 2026-09-27-tikz-coffee-venn-1859 */}
+The 30 runs cost $1.92.

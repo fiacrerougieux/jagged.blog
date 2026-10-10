@@ -1,0 +1,38 @@
+---
+title: "Pareto knows the part order but can't draw it"
+date: 2026-09-20
+type: "note"
+tags: ["coffee", "spatial", "pareto", "sol", "deepseek"]
+description: "It lists the parts in the right order, but the drawing is upside down."
+tldr: "It lists the parts in the right order, but the drawing is upside down."
+task: "svg-french-press"
+---
+
+<Artifact
+  name="svg-french-press-pareto-s1-r3"
+  code={false}
+  caption="Pareto's drawing, with the cross-plate on top and the spiral plate at the bottom, so the stack is inverted."
+/>
+
+<Finding>
+  Pareto drew the filter stack upside down. But ask it in plain words and it
+  gives the correct order, calling the cross-plate "the bottom support plate",
+  which is the exact fact its own drawing contradicts.
+</Finding>
+
+[Both models in the duel](/posts/2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack)
+inverted the stack. So do they not know the order, or do they know it and fail
+to draw it?
+
+<Prompt task="svg-french-press" version="probe v1" text="List the parts of a French press plunger from top to bottom." />
+
+Pareto gave the right order in words, Sol gave it upside down, and DeepSeek 4.1 Flash got it half right but is the only one that drew it correctly.
+
+<Verdict n="1 run a model">
+  In one run Pareto stated the filter order correctly for a tenth of a cent,
+  and in one run it drew that order upside down for a quarter of a dollar. So
+  the knowledge question still needs asking properly.
+</Verdict>
+
+The whole thing cost $0.0123 across three models, against $0.50 of
+[drawings](/gallery/svg-french-press).
