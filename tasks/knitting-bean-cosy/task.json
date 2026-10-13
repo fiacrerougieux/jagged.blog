@@ -1,0 +1,36 @@
+{
+  "id": "knitting-bean-cosy",
+  "title": "A knitting chart for a coffee-bean cup cosy",
+  "short": "Bean cosy",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Make an SVG knitting chart for a cup cosy with a coffee-bean motif, drawn so the beans come out the right shape in the finished fabric.",
+  "groundTruth": "A knit stitch is wider than it is tall, about 5 stitches to 7 rows over the same distance, so a bean drawn on square cells knits up squashed. The chart is read from the SVG: its grid, which cells are coloured, and the gauge its cells are drawn at. Each bean is then measured as it would come out in the fabric, from its stitches and rows at that gauge, and a coffee bean is 1.3 to 1.8 times as long as it is wide.",
+  "checks": [
+    {
+      "id": "chart",
+      "label": "A real chart",
+      "how": "A grid of at least 10 stitches by 10 rows, with the beans made of whole cells of that grid.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "cells",
+      "label": "Stitches wider than tall",
+      "how": "The cells are drawn at least as wide as they are tall, so the chart shows the fabric the right way round.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "bean",
+      "label": "Bean knits true",
+      "how": "The beans as knitted are 1.3 to 1.8 times as long as they are wide.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "key",
+      "label": "Has a key",
+      "how": "Text on the page says what each colour or mark means.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "A motif that is not symmetric, such as a cup with a handle, worked flat, so the chart also has to be read in both directions."
+}

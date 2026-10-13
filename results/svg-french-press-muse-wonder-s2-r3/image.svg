@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="#d9dee2"/>
+      <path d="M0 0H7 M0 3.5H7" stroke="#6b7885" stroke-width="0.8"/>
+      <path d="M0 0V7 M3.5 0V7" stroke="#6b7885" stroke-width="0.8" transform="rotate(90 3.5 3.5)"/>
+    </pattern>
+    <pattern id="crosshatch" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#cfd6dc"/>
+      <path d="M0 6L6 0 M-1 1L1 -1 M5 7L7 5" stroke="#71808d" stroke-width="0.7"/>
+      <path d="M0 0L6 6 M-1 5L1 7 M5 -1L7 1" stroke="#71808d" stroke-width="0.7"/>
+    </pattern>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dceef5" stop-opacity=".85"/>
+      <stop offset=".18" stop-color="#f4fbfe" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#cfe6ef" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#a9c9d8" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa3ab"/>
+      <stop offset=".25" stop-color="#e8ecef"/>
+      <stop offset=".55" stop-color="#b9c1c8"/>
+      <stop offset="1" stop-color="#848e97"/>
+    </linearGradient>
+    <linearGradient id="lidmetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f3"/>
+      <stop offset="1" stop-color="#9fa9b1"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#7a8792"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="1000" fill="white"/>
+
+  <!-- Title -->
+  <text x="48" y="52" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17212b">French Press — Exploded Assembly</text>
+  <text x="48" y="80" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5a6873">Standard plunger filter  •  side / three-quarter view  •  parts separated along the plunger axis</text>
+  <line x1="48" y1="94" x2="952" y2="94" stroke="#17212b" stroke-width="2"/>
+
+  <!-- centreline -->
+  <line x1="330" y1="106" x2="330" y2="962" stroke="#8a97a3" stroke-width="1.4" stroke-dasharray="14 6 3 6"/>
+  <text x="322" y="116" font-family="Arial" font-size="9" fill="#8a97a3" text-anchor="end" transform="rotate(-90 322 116)"></text>
+
+  <!-- explode direction -->
+  <line x1="92" y1="210" x2="92" y2="860" stroke="#7a8792" stroke-width="1.4" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="78" y="540" font-family="Arial" font-size="11" letter-spacing="2" fill="#7a8792" transform="rotate(-90 78 540)" text-anchor="middle">EXPLODED VIEW</text>
+
+  <!-- ============ 1 KNOB + ROD ============ -->
+  <g stroke="#17212b" stroke-linejoin="round">
+    <!-- rod -->
+    <rect x="325" y="156" width="10" height="94" fill="url(#metal)" stroke-width="1.6"/>
+    <!-- threaded tip -->
+    <rect x="326.5" y="250" width="7" height="18" fill="#c8cfd5" stroke-width="1.2"/>
+    <path d="M326 254h8 M326 259h8 M326 264h8" stroke="#5f6b75" stroke-width="0.9"/>
+    <!-- collar under knob -->
+    <rect x="314" y="144" width="32" height="12" rx="3" fill="url(#metal)" stroke-width="1.6"/>
+    <!-- knob -->
+    <circle cx="330" cy="124" r="22" fill="#20262c" stroke-width="1.8"/>
+    <ellipse cx="322" cy="116" rx="8" ry="5" fill="#5a656e" stroke="none" transform="rotate(-25 322 116)"/>
+  </g>
+
+  <!-- ============ 2 LID ============ -->
+  <g stroke="#17212b" stroke-linejoin="round">
+    <!-- guide boss -->
+    <rect x="316" y="278" width="28" height="16" rx="4" fill="url(#metal)" stroke-width="1.6"/>
+    <circle cx="330" cy="286" r="4.5" fill="#42505b"/>
+    <!-- domed lid disc -->
+    <path d="M200 312 Q200 286 330 282 Q460 286 460 312 L452 326 Q330 340 208 326 Z" fill="url(#lidmetal)" stroke-width="1.8"/>
+    <ellipse cx="330" cy="313" rx="130" ry="17" fill="#d7dde2" stroke-width="1.6"/>
+    <ellipse cx="330" cy="311" rx="108" ry="12" fill="none" stroke="#8b979f" stroke-width="1"/>
+    <!-- pour opening: flattened lip on the near-left rim -->
+    <path d="M204 314 Q186 312 182 320 Q196 326 212 324" fill="#aebbc5" stroke-width="1.2"/>
+  </g>
+
+  <!-- ============ 3 CROSS PLATE (top of filter stack) ============ -->
+  <g stroke="#17212b">
+    <ellipse cx="330" cy="386" rx="112" ry="24" fill="url(#metal)" stroke-width="1.8"/>
+    <ellipse cx="330" cy="383" rx="112" ry="24" fill="#eef1f3" stroke-width="1.2"/>
+    <!-- cross arms -->
+    <path d="M238 376 L422 390 M330 361 L330 407 M252 396 L408 368 M252 368 L408 396" stroke="#7f8b95" stroke-width="1" opacity=".45"/>
+    <rect x="226" y="376" width="208" height="13" rx="6" fill="#c3ccd3" stroke-width="1.4" transform="rotate(-2 330 383)"/>
+    <rect x="323" y="361" width="14" height="45" rx="6" fill="#c3ccd3" stroke-width="1.4"/>
+    <!-- perforations -->
+    <g fill="#66727d" stroke="none">
+      <circle cx="268" cy="375" r="3"/><circle cx="292" cy="397" r="3"/><circle cx="368" cy="397" r="3"/><circle cx="392" cy="375" r="3"/><circle cx="280" cy="390" r="2.4"/><circle cx="380" cy="390" r="2.4"/>
+    </g>
+    <circle cx="330" cy="383" r="7" fill="#f7f9fa" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ 4 MESH SCREEN (middle) ============ -->
+  <g stroke="#17212b">
+    <ellipse cx="330" cy="462" rx="112" ry="24" fill="url(#crosshatch)" stroke-width="1.8"/>
+    <ellipse cx="330" cy="460" rx="100" ry="19" fill="none" stroke="#7c8a95" stroke-width="1"/>
+    <g stroke="#6f7e8a" stroke-width="0.7">
+      <path d="M245 452 L415 470 M245 470 L415 452 M260 443 L400 479 M260 479 L400 443"/>
+      <path d="M285 440 L375 482 M240 462 L420 462 M330 439 L330 485"/>
+    </g>
+    <circle cx="330" cy="461" r="6.5" fill="#eef1f3" stroke-width="1.4"/>
+    <text x="330" y="464.5" font-family="Arial" font-size="6" fill="#66727d" text-anchor="middle"></text>
+  </g>
+
+  <!-- ============ 5 SPIRAL / SPRING PLATE (bottom) ============ -->
+  <g stroke="#17212b">
+    <!-- coiled spring hugging the rim: drawn first so only the lower
+         halves of the coils peek out as a scalloped spring edge -->
+    <g fill="#dbe1e6" stroke-width="1.3">
+      <circle cx="224" cy="534" r="6"/><circle cx="242" cy="546" r="6"/><circle cx="266" cy="554" r="6"/><circle cx="292" cy="559" r="6"/><circle cx="318" cy="561" r="6"/><circle cx="344" cy="561" r="6"/><circle cx="370" cy="559" r="6"/><circle cx="396" cy="554" r="6"/><circle cx="418" cy="546" r="6"/><circle cx="432" cy="534" r="6"/>
+    </g>
+    <ellipse cx="330" cy="537" rx="104" ry="22" fill="url(#metal)" stroke-width="1.7"/>
+    <path d="M226 544 Q238 554 250 546 Q262 556 274 548 Q286 558 298 550 Q310 560 322 551 Q334 560 346 551 Q358 560 370 550 Q382 558 394 548 Q406 556 418 546 Q428 552 434 542" fill="none" stroke="#5f6b75" stroke-width="1.4"/>
+    <ellipse cx="330" cy="535" rx="88" ry="16" fill="#d5dce1" stroke="#8b979f" stroke-width="1"/>
+    <g fill="#66727d"><circle cx="285" cy="531" r="2.6"/><circle cx="330" cy="545" r="2.6"/><circle cx="375" cy="531" r="2.6"/></g>
+    <circle cx="330" cy="537" r="6.5" fill="#f7f9fa" stroke-width="1.4"/>
+    <!-- tiny centre screw below -->
+    <rect x="325" y="560" width="10" height="10" rx="2" fill="#9aa6af" stroke-width="1.2"/>
+  </g>
+
+  <!-- filter stack bracket -->
+  <g stroke="#5f7080" fill="none">
+    <path d="M472 372 h14 v176 h-14" stroke-width="1.3"/>
+  </g>
+  <text x="496" y="458" font-family="Arial" font-size="11" font-style="italic" fill="#405464">three-piece</text>
+  <text x="496" y="474" font-family="Arial" font-size="11" font-style="italic" fill="#405464">filter stack</text>
+
+  <!-- ============ 6 GLASS BEAKER ============ -->
+  <g stroke="#23404f">
+    <!-- body -->
+    <path d="M212 632 L222 784 Q224 808 252 812 L408 812 Q436 808 438 784 L448 632" fill="url(#glass)" stroke-width="2"/>
+    <!-- top rim ellipse -->
+    <ellipse cx="330" cy="632" rx="118" ry="22" fill="#eaf6fb" fill-opacity=".65" stroke-width="1.8"/>
+    <ellipse cx="330" cy="632" rx="104" ry="17" fill="white" fill-opacity=".45" stroke="#7fa8bb" stroke-width="1"/>
+    <!-- spout: small pouring lip formed in the rim, attached at the left -->
+    <path d="M226 620 Q204 606 192 610 Q190 622 208 630 Q220 635 230 632 Q226 626 226 620 Z" fill="#dceef5" stroke-width="1.6"/>
+    <!-- bottom thickness -->
+    <path d="M224 788 Q330 806 436 788 L434 796 Q330 820 226 796 Z" fill="#bcd9e5" stroke="none" opacity=".8"/>
+    <!-- highlight -->
+    <path d="M248 652 L256 780" stroke="white" stroke-width="9" stroke-linecap="round" opacity=".65" fill="none"/>
+    <!-- measure marks -->
+    <g stroke="#4a7184" stroke-width="1.4">
+      <line x1="402" y1="690" x2="422" y2="690"/><line x1="402" y1="720" x2="422" y2="720"/><line x1="402" y1="750" x2="422" y2="750"/>
+    </g>
+    <g font-family="Arial" font-size="9" fill="#4a7184"><text x="426" y="694">3</text><text x="426" y="724">2</text><text x="426" y="754">1</text></g>
+    <text x="388" y="672" font-family="Arial" font-size="8" fill="#4a7184">CUPS</text>
+  </g>
+
+  <!-- ============ 7 FRAME / HOLDER ============ -->
+  <g stroke="#17212b" stroke-linejoin="round">
+    <!-- handle on right: a closed D-loop joining collar (top) to base (bottom),
+         drawn behind the frame so its ends are hidden under collar and base -->
+    <path d="M446 876 C500 858 524 878 520 904 C516 932 486 944 442 932 L442 912 C478 922 498 916 500 902 C502 888 484 882 446 892 Z" fill="#2b333b" stroke-width="1.6"/>
+    <!-- base cup -->
+    <path d="M214 918 L222 946 Q226 962 254 964 L406 964 Q434 962 438 946 L446 918" fill="#2f3841" stroke-width="1.7"/>
+    <ellipse cx="330" cy="918" rx="116" ry="20" fill="#454f59" stroke-width="1.7"/>
+    <ellipse cx="330" cy="916" rx="98" ry="15" fill="#20262c" stroke-width="1.2"/>
+    <!-- collar band (top of frame) -->
+    <path d="M214 874 L214 900 Q330 924 446 900 L446 874 Q330 898 214 874 Z" fill="url(#metal)" stroke-width="1.7"/>
+    <ellipse cx="330" cy="875" rx="116" ry="19" fill="#d7dde2" stroke-width="1.5"/>
+    <ellipse cx="330" cy="875" rx="100" ry="14" fill="#aeb9c1" stroke="#7c8a95" stroke-width="1"/>
+    <!-- vertical supports connecting collar to base -->
+    <path d="M222 894 L226 930 L244 930 L240 898 Z" fill="#39434d" stroke-width="1.3"/>
+    <path d="M420 898 L416 930 L434 930 L438 894 Z" fill="#39434d" stroke-width="1.3"/>
+    <!-- collar rivet / handle joint -->
+    <circle cx="446" cy="888" r="6" fill="#e8ecef" stroke-width="1.3"/>
+    <circle cx="214" cy="888" r="4" fill="#e8ecef" stroke-width="1.1"/>
+  </g>
+
+  <!-- ============ LEADER LINES + LABELS ============ -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <!-- helper: line from part to label -->
+    <g stroke="#405464" stroke-width="1.2">
+      <line x1="354" y1="124" x2="590" y2="112"/><line x1="460" y1="310" x2="590" y2="292"/>
+      <line x1="442" y1="383" x2="590" y2="386"/><line x1="442" y1="461" x2="590" y2="462"/>
+      <line x1="442" y1="537" x2="590" y2="538"/><line x1="448" y1="700" x2="590" y2="660"/>
+      <line x1="446" y1="920" x2="590" y2="842"/>
+    </g>
+    <g fill="#405464"><circle cx="354" cy="124" r="3"/><circle cx="460" cy="310" r="3"/><circle cx="442" cy="383" r="3"/><circle cx="442" cy="461" r="3"/><circle cx="442" cy="537" r="3"/><circle cx="448" cy="700" r="3"/><circle cx="446" cy="920" r="3"/></g>
+
+    <!-- numbered labels -->
+    <g>
+      <!-- 1 -->
+      <circle cx="612" cy="112" r="14" fill="#17212b"/><text x="612" y="117" font-size="14" font-weight="700" fill="white" text-anchor="middle">1</text>
+      <text x="636" y="108" font-size="16" font-weight="700" fill="#17212b">Plunger knob &amp; rod</text>
+      <text x="636" y="126" font-size="12" fill="#5a6873">Knob on a steel rod; threaded tip at the lower end</text>
+      <!-- 2 -->
+      <circle cx="612" cy="292" r="14" fill="#17212b"/><text x="612" y="297" font-size="14" font-weight="700" fill="white" text-anchor="middle">2</text>
+      <text x="636" y="288" font-size="16" font-weight="700" fill="#17212b">Lid</text>
+      <text x="636" y="306" font-size="12" fill="#5a6873">Sits on the beaker rim; rod slides through its centre guide</text>
+      <!-- 3 -->
+      <circle cx="612" cy="386" r="14" fill="#17212b"/><text x="612" y="391" font-size="14" font-weight="700" fill="white" text-anchor="middle">3</text>
+      <text x="636" y="382" font-size="16" font-weight="700" fill="#17212b">Cross plate</text>
+      <text x="636" y="400" font-size="12" fill="#5a6873">Top of the filter stack — stiff cross, holds the mesh flat</text>
+      <!-- 4 -->
+      <circle cx="612" cy="462" r="14" fill="#17212b"/><text x="612" y="467" font-size="14" font-weight="700" fill="white" text-anchor="middle">4</text>
+      <text x="636" y="458" font-size="16" font-weight="700" fill="#17212b">Mesh filter screen</text>
+      <text x="636" y="476" font-size="12" fill="#5a6873">Middle — fine stainless mesh that strains the grounds</text>
+      <!-- 5 -->
+      <circle cx="612" cy="538" r="14" fill="#17212b"/><text x="612" y="543" font-size="14" font-weight="700" fill="white" text-anchor="middle">5</text>
+      <text x="636" y="534" font-size="16" font-weight="700" fill="#17212b">Spiral plate</text>
+      <text x="636" y="552" font-size="12" fill="#5a6873">Bottom — coiled spring edge seals the mesh to the glass</text>
+      <!-- 6 -->
+      <circle cx="612" cy="660" r="14" fill="#17212b"/><text x="612" y="665" font-size="14" font-weight="700" fill="white" text-anchor="middle">6</text>
+      <text x="636" y="656" font-size="16" font-weight="700" fill="#17212b">Glass beaker</text>
+      <text x="636" y="674" font-size="12" fill="#5a6873">Graduated, with pouring spout; lifts out of the frame</text>
+      <!-- 7 -->
+      <circle cx="612" cy="842" r="14" fill="#17212b"/><text x="612" y="847" font-size="14" font-weight="700" fill="white" text-anchor="middle">7</text>
+      <text x="636" y="838" font-size="16" font-weight="700" fill="#17212b">Holder frame</text>
+      <text x="636" y="856" font-size="12" fill="#5a6873">Collar, handle and base — supports and protects the beaker</text>
+    </g>
+  </g>
+
+  <!-- Assembly note -->
+  <g font-family="Arial" font-size="12" fill="#405464">
+    <rect x="590" y="892" width="362" height="66" rx="6" fill="#f1f5f7" stroke="#c3cfd8"/>
+    <text x="606" y="914" font-weight="700" fill="#17212b">Assembly note</text>
+    <text x="606" y="932">Stack 3 → 4 → 5 on the rod’s threaded tip,</text>
+    <text x="606" y="948">in that order, then lower the plunger through the lid.</text>
+  </g>
+
+  <text x="48" y="976" font-family="Arial" font-size="10" fill="#8a97a3">Not to scale. Filter pieces are shown enlarged in separation for clarity.</text>
+</svg>

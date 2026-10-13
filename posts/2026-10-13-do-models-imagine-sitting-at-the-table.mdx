@@ -1,0 +1,32 @@
+---
+title: "Are models as bad as humans in the spatial orientation test?"
+date: 2026-10-13
+type: "experiment"
+tags: ["coffee", "spatial", "angles"]
+description: "The Spatial Orientation Test asks you to imagine standing at one object, facing another, and point to a third. People get worse the further they have to turn from the way the page faces them."
+tldr: "They are really good and within a few degrees of the answer."
+task: "cafe-seats"
+caseId: "cafe-seats"
+models: ["anthropic/claude-opus-5.5", "openai/gpt-6-luna", "deepseek/deepseek-v4.1-flash"]
+skipProseCheck: true
+currentQuestion: true
+---
+
+<Artifact name="cafe-seats-table" code={false} downloads={false} alt="A café table seen from above with seven labelled dots: menu, flower vase, sugar bowl, water glass, espresso cup, croissant and milk jug." caption="The table every run was given. Each question picks a seat, a thing to face and a thing to point to." />
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+The Spatial Orientation Test asks you to imagine standing at one object, facing another, and point to a third. People get worse the further they have to turn from the way the page faces them. I made a café version with seven things on a table and ten questions, two at each turn from 0 to 180 degrees, and told the models to answer by imagining it.
+
+Opus 5.5 and DeepSeek 4.1 Flash were within a few degrees in all the runs.
+
+Opus and DeepSeek did the trigonometry, and DeepSeek used code in 3 runs when told not to.
+
+<Verdict n="10 runs a model">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-10-13-cafe-seats-1529 */}
+The 30 runs cost $0.58.

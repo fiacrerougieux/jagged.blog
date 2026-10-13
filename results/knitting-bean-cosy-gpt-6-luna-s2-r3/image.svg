@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="1100" viewBox="0 0 1200 1100">
+  <defs>
+    <!-- 9-stitch by 9-row bean. The chart cells are deliberately 15 x 9 px:
+         knit stitches are wider than they are tall in the finished fabric. -->
+    <g id="bean" shape-rendering="crispEdges" fill="#553523">
+      <rect x="4" y="0" width="1" height="1"/><rect x="3" y="1" width="3" height="1"/>
+      <rect x="2" y="2" width="5" height="1"/><rect x="1" y="3" width="7" height="1"/>
+      <rect x="0" y="4" width="9" height="1"/><rect x="0" y="5" width="9" height="1"/>
+      <rect x="1" y="6" width="7" height="1"/><rect x="2" y="7" width="5" height="1"/>
+      <rect x="3" y="8" width="3" height="1"/>
+    </g>
+    <g id="slit" fill="#f4ead8" shape-rendering="crispEdges">
+      <rect x="4" y="0" width="1" height="2"/><rect x="3" y="2" width="1" height="2"/>
+      <rect x="4" y="4" width="1" height="1"/><rect x="5" y="5" width="1" height="2"/>
+      <rect x="5" y="7" width="1" height="1"/><rect x="4" y="8" width="1" height="1"/>
+    </g>
+    <pattern id="paperTexture" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="6" r="0.65" fill="#dfd2be" opacity=".35"/><circle cx="19" cy="21" r=".55" fill="#dfd2be" opacity=".3"/>
+    </pattern>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#946b49"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="1100" fill="#f4ead8"/>
+  <rect width="1200" height="1100" fill="url(#paperTexture)"/>
+  <rect x="26" y="24" width="1148" height="1052" rx="18" fill="none" stroke="#c9b69c" stroke-width="1.5"/>
+
+  <!-- Heading -->
+  <text x="64" y="76" font-family="Georgia,serif" font-size="17" letter-spacing="4" fill="#946b49">A SMALL KNITTING PROJECT</text>
+  <text x="62" y="132" font-family="Georgia,serif" font-size="48" font-weight="bold" fill="#40291d">COFFEE BEAN</text>
+  <text x="64" y="171" font-family="Georgia,serif" font-size="25" fill="#76543b">CUP COSY</text>
+  <path d="M64 192H1136" stroke="#c9b69c" stroke-width="1.5"/>
+  <text x="1135" y="91" text-anchor="end" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" fill="#76543b">FLAT KNIT · SEAM TO FINISH</text>
+  <text x="1135" y="119" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#946b49">CHART: 36 STITCHES × 32 ROWS</text>
+  <text x="1135" y="145" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#946b49">6 BEANS · TWO-COLOUR MOTIF</text>
+
+  <!-- Chart labels -->
+  <text x="520" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#76543b">CHART — EACH CELL = 1 STITCH × 1 ROW</text>
+  <text x="208" y="612" transform="rotate(-90 208 612)" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#946b49">ROWS · WORK FROM BOTTOM UP</text>
+  <text x="530" y="800" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#946b49">STITCHES</text>
+
+  <!-- Chart field: 36 stitches wide, 32 rows high; chart cell = 15 × 22 px. -->
+  <rect x="260" y="468" width="540" height="288" fill="#f4ead8" stroke="#76543b" stroke-width="2"/>
+  <g transform="translate(260 468) scale(15 9)" shape-rendering="crispEdges">
+    <g transform="translate(2 2)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+    <g transform="translate(14 9)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+    <g transform="translate(26 2)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+    <g transform="translate(2 16)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+    <g transform="translate(14 23)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+    <g transform="translate(26 16)"><use xlink:href="#bean"/><use xlink:href="#slit"/></g>
+  </g>
+  <!-- Fine stitch grid; heavier guide lines every six stitches / rows. -->
+  <g stroke="#cbbca7" stroke-width=".7" shape-rendering="crispEdges">
+    <path d="M275 468V756 M290 468V756 M305 468V756 M320 468V756 M335 468V756 M350 468V756 M365 468V756 M380 468V756 M395 468V756 M410 468V756 M425 468V756 M440 468V756 M455 468V756 M470 468V756 M485 468V756 M500 468V756 M515 468V756 M530 468V756 M545 468V756 M560 468V756 M575 468V756 M590 468V756 M605 468V756 M620 468V756 M635 468V756 M650 468V756 M665 468V756 M680 468V756 M695 468V756 M710 468V756 M725 468V756 M740 468V756 M755 468V756 M770 468V756 M785 468V756"/>
+    <path d="M260 477H800 M260 486H800 M260 495H800 M260 504H800 M260 513H800 M260 522H800 M260 531H800 M260 540H800 M260 549H800 M260 558H800 M260 567H800 M260 576H800 M260 585H800 M260 594H800 M260 603H800 M260 612H800 M260 621H800 M260 630H800 M260 639H800 M260 648H800 M260 657H800 M260 666H800 M260 675H800 M260 684H800 M260 693H800 M260 702H800 M260 711H800 M260 720H800 M260 729H800 M260 738H800 M260 747H800"/>
+  </g>
+  <g stroke="#9e8468" stroke-width="1.35" shape-rendering="crispEdges">
+    <path d="M350 468V756 M440 468V756 M530 468V756 M620 468V756 M710 468V756"/>
+    <path d="M260 522H800 M260 576H800 M260 630H800 M260 684H800 M260 738H800"/>
+  </g>
+  <rect x="260" y="468" width="540" height="288" fill="none" stroke="#76543b" stroke-width="2"/>
+
+  <!-- Row numbers on the left, with direction arrows at the right edge. -->
+  <g font-family="Arial,sans-serif" font-size="9" fill="#76543b" text-anchor="end">
+    <text x="247" y="475">32</text><text x="247" y="484">31</text><text x="247" y="493">30</text><text x="247" y="502">29</text>
+    <text x="247" y="511">28</text><text x="247" y="520">27</text><text x="247" y="529">26</text><text x="247" y="538">25</text>
+    <text x="247" y="547">24</text><text x="247" y="556">23</text><text x="247" y="565">22</text><text x="247" y="574">21</text>
+    <text x="247" y="583">20</text><text x="247" y="592">19</text><text x="247" y="601">18</text><text x="247" y="610">17</text>
+    <text x="247" y="619">16</text><text x="247" y="628">15</text><text x="247" y="637">14</text><text x="247" y="646">13</text>
+    <text x="247" y="655">12</text><text x="247" y="664">11</text><text x="247" y="673">10</text><text x="247" y="682">9</text>
+    <text x="247" y="691">8</text><text x="247" y="700">7</text><text x="247" y="709">6</text><text x="247" y="718">5</text>
+    <text x="247" y="727">4</text><text x="247" y="736">3</text><text x="247" y="745">2</text><text x="247" y="754">1</text>
+  </g>
+  <g stroke="#946b49" stroke-width="1.2" marker-end="url(#arrowhead)">
+    <path d="M830 751h-24 M806 742h24 M830 733h-24 M806 724h24 M830 715h-24 M806 706h24 M830 697h-24 M806 688h24 M830 679h-24 M806 670h24 M830 661h-24 M806 652h24 M830 643h-24 M806 634h24 M830 625h-24 M806 616h24 M830 607h-24 M806 598h24 M830 589h-24 M806 580h24 M830 571h-24 M806 562h24 M830 553h-24 M806 544h24 M830 535h-24 M806 526h24 M830 517h-24 M806 508h24 M830 499h-24 M806 490h24 M830 481h-24 M806 472h24"/>
+  </g>
+
+  <!-- Stitch count numbers, every three stitches for clarity. -->
+  <g font-family="Arial,sans-serif" font-size="10" fill="#76543b" text-anchor="middle">
+    <text x="275" y="775">1</text><text x="320" y="775">4</text><text x="365" y="775">7</text><text x="410" y="775">10</text>
+    <text x="455" y="775">13</text><text x="500" y="775">16</text><text x="545" y="775">19</text><text x="590" y="775">22</text>
+    <text x="635" y="775">25</text><text x="680" y="775">28</text><text x="725" y="775">31</text><text x="770" y="775">34</text>
+  </g>
+
+  <!-- Instructions and key -->
+  <g font-family="Arial,sans-serif" fill="#40291d">
+    <rect x="866" y="260" width="270" height="704" rx="12" fill="#efe1cc" stroke="#c9b69c" stroke-width="1.4"/>
+    <text x="894" y="302" font-family="Georgia,serif" font-size="23" font-weight="bold">Read the chart</text>
+    <text x="894" y="335" font-size="14" fill="#76543b">Start at row 1, bottom right.</text>
+    <text x="894" y="359" font-size="14" fill="#76543b">Odd (RS) rows: read right to left.</text>
+    <text x="894" y="383" font-size="14" fill="#76543b">Even (WS) rows: read left to right.</text>
+    <path d="M894 410H1108" stroke="#c9b69c"/>
+    <text x="894" y="446" font-family="Georgia,serif" font-size="19" font-weight="bold">Colour key</text>
+    <rect x="895" y="468" width="29" height="29" fill="#f4ead8" stroke="#9e8468"/>
+    <text x="939" y="488" font-size="14">Cosy ground</text>
+    <rect x="895" y="509" width="29" height="29" fill="#553523"/>
+    <text x="939" y="529" font-size="14">Bean</text>
+    <text x="895" y="568" font-size="13" fill="#76543b">The pale curved slit is ground colour.</text>
+    <path d="M894 590H1108" stroke="#c9b69c"/>
+    <text x="894" y="628" font-family="Georgia,serif" font-size="19" font-weight="bold">Shaping the bean</text>
+    <text x="894" y="658" font-size="13" fill="#76543b">
+      <tspan x="894" dy="0">Chart cells are intentionally wider</tspan>
+      <tspan x="894" dy="21">than tall (15 × 9). Knitted stitches</tspan>
+      <tspan x="894" dy="21">are naturally squat; this extra chart</tspan>
+      <tspan x="894" dy="21">width lets each 9-stitch × 9-row bean</tspan>
+      <tspan x="894" dy="21">finish as a softly elongated oval, not</tspan>
+      <tspan x="894" dy="21">a narrow, stretched-out stripe.</tspan>
+    </text>
+    <path d="M894 802H1108" stroke="#c9b69c"/>
+    <text x="894" y="838" font-family="Georgia,serif" font-size="19" font-weight="bold">Cosy notes</text>
+    <text x="894" y="868" font-size="13" fill="#76543b">
+      <tspan x="894" dy="0">Work flat in two-colour stranded</tspan>
+      <tspan x="894" dy="21">colourwork; carry floats loosely. Knit</tspan>
+      <tspan x="894" dy="21">a plain border above and below, then</tspan>
+      <tspan x="894" dy="21">seam the short edges. Adjust repeats</tspan>
+      <tspan x="894" dy="21">to suit your cup and your gauge.</tspan>
+    </text>
+  </g>
+  <text x="64" y="1043" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5" fill="#946b49">SWATCH YOUR GAUGE · KEEP FLOATS LOOSE · ENJOY WITH COFFEE</text>
+  <text x="1136" y="1043" text-anchor="end" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#946b49">one warm cup at a time</text>
+</svg>

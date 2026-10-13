@@ -110,6 +110,9 @@
         "completeness",
         "part-order"
       ],
+      "modes": {
+        "parts": "substituted"
+      },
       "note": "Left the cross-plate out altogether, and still put the spiral plate under the mesh.",
       "score": {
         "passed": 3,
@@ -5052,6 +5055,7 @@
       "post": null,
       "date": "2026-10-02",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 1,
       "rounds": 2,
@@ -5078,6 +5082,7 @@
       "post": null,
       "date": "2026-10-02",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 2,
       "rounds": 3,
@@ -5107,6 +5112,7 @@
       "post": null,
       "date": "2026-10-02",
       "promptVersion": "v2",
+      "checksVersion": "c1",
       "tier": 3,
       "seed": 3,
       "rounds": 3,
@@ -10216,6 +10222,830 @@
       "score": {
         "passed": 3,
         "of": 3,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "knitting-bean-cosy-gpt-6.1-sol-s1-r1",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0605,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 21963,
+        "tokensOut": 4775,
+        "reasoning": 2131,
+        "wallSec": 102
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "knitting-bean-cosy-gpt-6.1-sol-s2-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0627,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 49722,
+        "tokensOut": 4170,
+        "reasoning": 1228,
+        "wallSec": 92
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "artifact": "knitting-bean-cosy-gpt-6.1-sol-s3-r1",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0666,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 26247,
+        "tokensOut": 5336,
+        "reasoning": 2514,
+        "wallSec": 114
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "knitting-bean-cosy-claude-opus-5.5-s1-r2",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1768,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 34186,
+        "tokensOut": 6442,
+        "reasoning": 2242,
+        "wallSec": 84
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": false,
+        "key": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "knitting-bean-cosy-claude-opus-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.1113,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 11829,
+        "tokensOut": 4871,
+        "reasoning": 2352,
+        "wallSec": 58
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "knitting-bean-cosy-claude-opus-5.5-s3-r2",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.144,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 36043,
+        "tokensOut": 5139,
+        "reasoning": 1778,
+        "wallSec": 68
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "knitting-bean-cosy-claude-haiku-5.5-s1-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0067,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 59937,
+        "tokensOut": 9579,
+        "reasoning": 5500,
+        "wallSec": 66
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "knitting-bean-cosy-claude-haiku-5.5-s2-r2",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.005,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 38994,
+        "tokensOut": 7741,
+        "reasoning": 4488,
+        "wallSec": 51
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "knitting-bean-cosy-claude-haiku-5.5-s3-r4",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 4,
+      "cost": 0.0101,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 101356,
+        "tokensOut": 14901,
+        "reasoning": 8929,
+        "wallSec": 96
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": false,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "knitting-bean-cosy-glm-5.3-flashx-s1-r2",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.013,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43676,
+        "tokensOut": 5175,
+        "reasoning": 2336,
+        "wallSec": 65
+      },
+      "checks": {
+        "chart": true,
+        "cells": false,
+        "bean": true,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "knitting-bean-cosy-glm-5.3-flashx-s2-r4",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "cost": 0.0147,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 79415,
+        "tokensOut": 3559,
+        "reasoning": 873,
+        "wallSec": 66
+      },
+      "checks": {
+        "chart": true,
+        "cells": false,
+        "bean": true,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "knitting-bean-cosy-glm-5.3-flashx-s3-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0117,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51480,
+        "tokensOut": 4171,
+        "reasoning": 1581,
+        "wallSec": 62
+      },
+      "checks": {
+        "chart": false,
+        "cells": true,
+        "bean": null,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 3,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "knitting-bean-cosy-gpt-6-luna-s1-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "cost": 0.0087,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 81931,
+        "tokensOut": 13202,
+        "reasoning": 6870,
+        "wallSec": 152
+      },
+      "checks": {
+        "chart": true,
+        "cells": false,
+        "bean": false,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "completeness",
+        "part-order"
+      ],
+      "score": {
+        "passed": 2,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "knitting-bean-cosy-gpt-6-luna-s2-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0136,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 151142,
+        "tokensOut": 20007,
+        "reasoning": 8526,
+        "wallSec": 202
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "knitting-bean-cosy-gpt-6-luna-s3-r3",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "cost": 0.0073,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 75007,
+        "tokensOut": 11036,
+        "reasoning": 5556,
+        "wallSec": 113
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": false,
+        "key": true
+      },
+      "quality": 2,
+      "failures": [
+        "part-order",
+        "physical-plausibility"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "knitting-bean-cosy-deepseek-v4.1-flash-s1-r7",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 7,
+      "cost": 0.0628,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1025099,
+        "tokensOut": 43275,
+        "reasoning": 32732,
+        "wallSec": 308
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": true,
+        "key": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "knitting-bean-cosy-deepseek-v4.1-flash-s2-r8",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 8,
+      "cost": 0.0513,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 569281,
+        "tokensOut": 37552,
+        "reasoning": 26231,
+        "wallSec": 254
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": false,
+        "key": true
+      },
+      "quality": 3,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "knitting-bean-cosy",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "knitting-bean-cosy-deepseek-v4.1-flash-s3-r8",
+      "post": null,
+      "date": "2026-10-11",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "cost": 0.0958,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1190823,
+        "tokensOut": 46470,
+        "reasoning": 35883,
+        "wallSec": 300
+      },
+      "checks": {
+        "chart": true,
+        "cells": true,
+        "bean": false,
+        "key": true
+      },
+      "quality": 4,
+      "failures": [
+        "part-order"
+      ],
+      "score": {
+        "passed": 3,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "svg-french-press-muse-wonder-s2-r3",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.3676,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 108230,
+        "tokensOut": 11836,
+        "reasoning": 3381,
+        "wallSec": 91
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "svg-french-press-muse-wonder-s3-r2",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.3653,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 68261,
+        "tokensOut": 12817,
+        "reasoning": 2773,
+        "wallSec": 85
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "svg-french-press",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "svg-french-press-muse-wonder-s1-r6",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v2",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 6,
+      "cost": 0.5548,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 276339,
+        "tokensOut": 14135,
+        "reasoning": 4748,
+        "wallSec": 166
+      },
+      "checks": {
+        "parts": true,
+        "order": false,
+        "diameter": true,
+        "axis": true,
+        "labels": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "tikz-coffee-venn-muse-wonder-s1-r2",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.1262,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33811,
+        "tokensOut": 3450,
+        "reasoning": 1228,
+        "wallSec": 39
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "tikz-coffee-venn-muse-wonder-s2-r6",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 6,
+      "cost": 0.4034,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 233133,
+        "tokensOut": 10125,
+        "reasoning": 6377,
+        "wallSec": 127
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "tikz-coffee-venn",
+      "model": "meta/muse-wonder",
+      "label": "Muse Wonder",
+      "artifact": "tikz-coffee-venn-muse-wonder-s3-r2",
+      "post": null,
+      "date": "2026-10-13",
+      "promptVersion": "v1",
+      "checksVersion": "c2",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.1432,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43764,
+        "tokensOut": 4757,
+        "reasoning": 2887,
+        "wallSec": 49
+      },
+      "checks": {
+        "compiles": true,
+        "regions": true,
+        "drinks": true,
+        "clear": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
         "undecided": 0
       }
     }

@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1070" viewBox="0 0 1200 1070">
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#8a929c"/><stop offset=".45" stop-color="#eef1f4"/>
+      <stop offset=".55" stop-color="#c9cfd6"/><stop offset="1" stop-color="#7d858f"/>
+    </linearGradient>
+    <linearGradient id="rodg" x1="0" x2="1">
+      <stop offset="0" stop-color="#6f777f"/><stop offset=".5" stop-color="#f2f4f6"/><stop offset="1" stop-color="#69717a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#dceef3" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#f4fbfd" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#c7e2ea" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="mesh" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="9" height="9" fill="#d7dde2"/>
+      <path d="M0 0H9M0 4.5H9M0 0V9M4.5 0V9" stroke="#7d8892" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1 1L7 4L1 7Z" fill="#3a78b7"/>
+    </marker>
+    <clipPath id="clipCross"><ellipse cx="420" cy="498" rx="128" ry="25"/></clipPath>
+    <clipPath id="clipMesh"><ellipse cx="420" cy="548" rx="132" ry="25"/></clipPath>
+    <clipPath id="clipPlate"><ellipse cx="420" cy="598" rx="128" ry="25"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="1070" fill="white"/>
+  <!-- Title -->
+  <text x="48" y="52" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#17212b">French press — exploded assembly</text>
+  <text x="48" y="80" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#56616c">Standard plunger with three-piece filter  •  all parts coaxial, separated for clarity</text>
+
+  <!-- centre axis -->
+  <line x1="420" y1="98" x2="420" y2="982" stroke="#3a78b7" stroke-width="1.6" stroke-dasharray="10 6 2 6" opacity=".65"/>
+  <text x="430" y="852" font-family="DejaVu Sans" font-size="11" fill="#3a78b7" letter-spacing="1">AXIS</text>
+
+  <!-- exploded movement arrows (left of axis) -->
+  <g stroke="#3a78b7" stroke-width="2" fill="none">
+    <line x1="248" y1="178" x2="248" y2="202" marker-end="url(#arr)"/>
+    <line x1="248" y1="428" x2="248" y2="462" marker-end="url(#arr)"/>
+  </g>
+  <text x="178" y="150" font-family="DejaVu Sans" font-size="12" fill="#3a78b7">assembly</text>
+  <text x="188" y="166" font-family="DejaVu Sans" font-size="12" fill="#3a78b7">direction ↓</text>
+
+  <!-- ===== 1 KNOB ===== -->
+  <g>
+    <circle cx="420" cy="126" r="26" fill="#20262c" stroke="#0e1114" stroke-width="2"/>
+    <ellipse cx="411" cy="116" rx="9" ry="6" fill="#fff" opacity=".55" transform="rotate(-25 411 116)"/>
+    <rect x="412" y="150" width="16" height="12" rx="2" fill="url(#metal)" stroke="#555" stroke-width="1.2"/>
+    <!-- threaded stud -->
+    <path d="M414 162h12M414 166h12M414 170h12" stroke="#666" stroke-width="1"/>
+  </g>
+
+  <!-- ===== 2 ROD (continuous, passes through lid & filter) ===== -->
+  <g>
+    <rect x="414" y="162" width="12" height="460" fill="url(#rodg)" stroke="#5b636b" stroke-width="1.2"/>
+    <!-- threads at bottom end -->
+    <path d="M414 585l12 6M414 595l12 6M414 605l12 6" stroke="#5b636b" stroke-width="1.1"/>
+  </g>
+
+  <!-- ===== 3 LID ===== -->
+  <g>
+    <!-- underside -->
+    <ellipse cx="420" cy="322" rx="168" ry="30" fill="#3a424b" stroke="#171c21" stroke-width="2"/>
+    <ellipse cx="420" cy="314" rx="168" ry="30" fill="url(#metal)" stroke="#171c21" stroke-width="2"/>
+    <!-- spout notch (left, aligned with beaker spout) -->
+    <path d="M252 312 L286 300 L290 314 L258 324 Z" fill="white" stroke="#171c21" stroke-width="1.6"/>
+    <!-- centre guide boss -->
+    <ellipse cx="420" cy="306" rx="24" ry="9" fill="#59626c" stroke="#222" stroke-width="1.4"/>
+    <circle cx="420" cy="305" r="7" fill="#222"/>
+    <!-- highlight -->
+    <path d="M292 298 Q420 282 540 298" fill="none" stroke="#fff" stroke-width="3" opacity=".5"/>
+  </g>
+
+  <!-- ===== 4 CROSS PLATE (top of filter stack) ===== -->
+  <g>
+    <ellipse cx="420" cy="502" rx="128" ry="25" fill="#aeb7bf" stroke="#39424b" stroke-width="2"/>
+    <g clip-path="url(#clipCross)">
+      <rect x="292" y="488" width="256" height="15" fill="#78838e" stroke="#39424b" stroke-width="1.4"/>
+      <rect x="412" y="473" width="16" height="50" fill="#78838e" stroke="#39424b" stroke-width="1.4"/>
+      <rect x="292" y="488" width="256" height="6" fill="#dfe5ea"/>
+    </g>
+    <ellipse cx="420" cy="498" rx="128" ry="25" fill="none" stroke="#39424b" stroke-width="2"/>
+    <circle cx="420" cy="498" r="11" fill="#59626c" stroke="#222" stroke-width="1.4"/>
+  </g>
+
+  <!-- ===== 5 MESH SCREEN ===== -->
+  <g>
+    <ellipse cx="420" cy="548" rx="132" ry="25" fill="url(#mesh)" stroke="#39424b" stroke-width="2"/>
+    <ellipse cx="420" cy="548" rx="132" ry="25" fill="none" stroke="#39424b" stroke-width="2"/>
+    <ellipse cx="420" cy="548" rx="118" ry="19" fill="none" stroke="#98a3ad" stroke-width="1"/>
+    <circle cx="420" cy="548" r="8" fill="#e8edf0" stroke="#39424b" stroke-width="1.3"/>
+  </g>
+
+  <!-- ===== 6 FILTER / SPRING PLATE (bottom) ===== -->
+  <g>
+    <!-- spring coil around rim: row of small arcs -->
+    <g fill="none" stroke="#39424b" stroke-width="2">
+      <ellipse cx="420" cy="598" rx="136" ry="27" fill="#c3ccd3"/>
+    </g>
+    <g fill="none" stroke="#596571" stroke-width="2.4">
+      <path d="M290 594 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 14 0"/>
+    </g>
+    <ellipse cx="420" cy="598" rx="124" ry="23" fill="#d3dae0" stroke="#39424b" stroke-width="1.6"/>
+    <!-- perforations -->
+    <g fill="#7c8792">
+      <circle cx="340" cy="594" r="4"/><circle cx="375" cy="588" r="4"/><circle cx="375" cy="604" r="4"/>
+      <circle cx="465" cy="588" r="4"/><circle cx="465" cy="604" r="4"/><circle cx="500" cy="594" r="4"/>
+      <circle cx="405" cy="584" r="4"/><circle cx="440" cy="610" r="4"/><circle cx="405" cy="610" r="4"/><circle cx="440" cy="584" r="4"/>
+    </g>
+    <circle cx="420" cy="598" r="9" fill="#59626c" stroke="#222" stroke-width="1.3"/>
+  </g>
+
+  <!-- ===== 7 LOCKING NUT under stack ===== -->
+  <g>
+    <path d="M406 628 h28 l6 10 -6 12 h-28 l-6 -12 Z" fill="url(#metal)" stroke="#39424b" stroke-width="1.6"/>
+    <line x1="413" y1="628" x2="413" y2="650" stroke="#78838e"/><line x1="427" y1="628" x2="427" y2="650" stroke="#78838e"/>
+  </g>
+  <!-- filter stack bracket -->
+  <path d="M575 478 h18 v142 h-18" fill="none" stroke="#8a5a12" stroke-width="1.6"/>
+  <text x="600" y="552" font-family="DejaVu Sans" font-size="12.5" font-weight="700" fill="#8a5a12">3-piece</text>
+  <text x="600" y="568" font-family="DejaVu Sans" font-size="12.5" font-weight="700" fill="#8a5a12">filter</text>
+
+  <!-- ===== 8 GLASS BEAKER ===== -->
+  <g>
+    <!-- spout (left): pouring lip pinched out of the rim; drawn first so body/rim hide its base -->
+    <path d="M312 676 C 292 650, 258 640, 224 648 C 240 680, 268 698, 286 700 C 302 698, 310 688, 312 676Z" fill="#eef8fa" stroke="#3d6572" stroke-width="2.2"/>
+    <!-- body -->
+    <path d="M272 700 L282 862 Q284 888 316 890 L524 890 Q556 888 558 862 L568 700
+             A148 30 0 1 1 272 700 Z" fill="url(#glass)" stroke="#3d6572" stroke-width="2.4"/>
+    <!-- top rim -->
+    <ellipse cx="420" cy="700" rx="148" ry="28" fill="#eef8fa" fill-opacity=".65" stroke="#3d6572" stroke-width="2.4"/>
+    <!-- base thickness -->
+    <path d="M288 864 Q420 884 552 864 L550 878 Q420 896 290 878Z" fill="#bcd9e1" opacity=".8"/>
+    <!-- measure marks -->
+    <g stroke="#3d6572" stroke-width="1.6">
+      <line x1="512" y1="752" x2="536" y2="752"/><line x1="512" y1="786" x2="536" y2="786"/><line x1="512" y1="820" x2="536" y2="820"/>
+    </g>
+    <g font-family="DejaVu Sans" font-size="11" fill="#3d6572">
+      <text x="540" y="756">3</text><text x="540" y="790">2</text><text x="540" y="824">1</text>
+      <text x="492" y="742">cups</text>
+    </g>
+  </g>
+
+  <!-- ===== 9 HOLDER / FRAME ===== -->
+  <g>
+    <!-- handle first (behind collar/base): loop on the right -->
+    <path d="M572 914 C 648 904, 682 922, 678 944 C 674 966, 634 972, 572 962" fill="none" stroke="#20262c" stroke-width="15" stroke-linecap="round"/>
+    <path d="M572 914 C 648 904, 682 922, 678 944 C 674 966, 634 972, 572 962" fill="none" stroke="#4a545f" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+    <!-- collar band the beaker sits in -->
+    <ellipse cx="420" cy="912" rx="158" ry="24" fill="#e8ecef" stroke="#20262c" stroke-width="2.4"/>
+    <path d="M262 912 A158 24 0 0 0 578 912 L574 930 A154 22 0 0 1 266 930Z" fill="#2b333c" stroke="#171c21" stroke-width="1.6"/>
+    <!-- struts collar -> base -->
+    <rect x="270" y="928" width="13" height="30" fill="#2b333c"/>
+    <rect x="557" y="928" width="13" height="30" fill="#2b333c"/>
+    <!-- base -->
+    <ellipse cx="420" cy="962" rx="156" ry="19" fill="#46505a" stroke="#0e1114" stroke-width="2"/>
+    <ellipse cx="420" cy="958" rx="156" ry="19" fill="#59636e" stroke="#0e1114" stroke-width="1.6"/>
+  </g>
+
+  <!-- ===== CALL OUTS ===== -->
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <!-- helper: leader lines -->
+    <g stroke="#5a6672" stroke-width="1.3">
+      <line x1="446" y1="126" x2="748" y2="126"/>
+      <line x1="426" y1="232" x2="748" y2="232"/>
+      <line x1="588" y1="314" x2="748" y2="314"/>
+      <line x1="548" y1="498" x2="748" y2="452"/>
+      <line x1="552" y1="548" x2="748" y2="512"/>
+      <line x1="556" y1="598" x2="748" y2="572"/>
+      <line x1="440" y1="639" x2="748" y2="632"/>
+      <line x1="568" y1="790" x2="748" y2="760"/>
+      <line x1="582" y1="950" x2="748" y2="900"/>
+    </g>
+    <g fill="#17212b">
+      <!-- numbered badges + labels -->
+      <g><circle cx="728" cy="126" r="13" fill="#17212b"/><text x="728" y="131" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text><text x="750" y="131" font-size="17" font-weight="700">Knob</text><text x="820" y="131" font-size="13.5" fill="#56616c">— screws onto rod</text></g>
+      <g><circle cx="728" cy="232" r="13" fill="#17212b"/><text x="728" y="237" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text><text x="750" y="237" font-size="17" font-weight="700">Plunger rod</text><text x="890" y="237" font-size="13.5" fill="#56616c">— threaded both ends</text></g>
+      <g><circle cx="728" cy="314" r="13" fill="#17212b"/><text x="728" y="319" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text><text x="750" y="319" font-size="17" font-weight="700">Lid</text><text x="795" y="319" font-size="13.5" fill="#56616c">— rod slides through centre; notch at spout</text></g>
+      <g><circle cx="728" cy="452" r="13" fill="#b7790d"/><text x="728" y="457" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text><text x="750" y="457" font-size="17" font-weight="700">Cross plate</text><text x="875" y="457" font-size="13.5" fill="#56616c">— top of stack</text></g>
+      <g><circle cx="728" cy="512" r="13" fill="#b7790d"/><text x="728" y="517" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">5</text><text x="750" y="517" font-size="17" font-weight="700">Mesh screen</text><text x="885" y="517" font-size="13.5" fill="#56616c">— fine filter, middle</text></g>
+      <g><circle cx="728" cy="572" r="13" fill="#b7790d"/><text x="728" y="577" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">6</text><text x="750" y="577" font-size="17" font-weight="700">Filter plate</text><text x="870" y="577" font-size="13.5" fill="#56616c">— spring edge seals to beaker</text></g>
+      <g><circle cx="728" cy="632" r="13" fill="#17212b"/><text x="728" y="637" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">7</text><text x="750" y="637" font-size="17" font-weight="700">Locking nut</text><text x="885" y="637" font-size="13.5" fill="#56616c">— clamps 4–6 to rod</text></g>
+      <g><circle cx="728" cy="760" r="13" fill="#17212b"/><text x="728" y="765" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">8</text><text x="750" y="765" font-size="17" font-weight="700">Glass beaker</text><text x="895" y="765" font-size="13.5" fill="#56616c">— spout &amp; cup marks</text></g>
+      <g><circle cx="728" cy="900" r="13" fill="#17212b"/><text x="728" y="905" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">9</text><text x="750" y="905" font-size="17" font-weight="700">Holder / frame</text><text x="915" y="905" font-size="13.5" fill="#56616c">— handle, collar &amp; base</text></g>
+    </g>
+  </g>
+
+  <!-- footer notes -->
+  <text x="48" y="1032" font-family="DejaVu Sans" font-size="13" fill="#56616c">Assemble 4 → 5 → 6 on the rod in that order and tighten nut 7; plunger then drops into beaker 8.</text>
+  <text x="48" y="1052" font-family="DejaVu Sans" font-size="13" fill="#56616c">Not to scale. Filter discs enlarged vertically for legibility.</text>
+</svg>

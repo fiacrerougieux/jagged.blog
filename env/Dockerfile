@@ -115,21 +115,11 @@ RUN (apt-get update && apt-get install -y --no-install-recommends gnupg \
      && echo "deb [signed-by=/usr/share/keyrings/openmodelica.gpg] https://build.openmodelica.org/apt bookworm stable" > /etc/apt/sources.list.d/openmodelica.list \
      && apt-get update && apt-get install -y --no-install-recommends omc \
      && rm -rf /var/lib/apt/lists/*) || echo "OPTIONAL: openmodelica not installed"
-#   Lean 4 with a prebuilt Mathlib, so a proof checks in seconds, not an hour
-RUN (curl -fsSL https://raw.githubusercontent.com/leanprover/elan/v4.2.4/elan-init.sh | sh -s -- -y --no-modify-path --default-toolchain none \
-     && export ELAN_HOME=/root/.elan PATH=/root/.elan/bin:$PATH \
-     && mkdir -p /opt/lean && cd /opt/lean \
-     && lake +leanprover-community/mathlib4:lean-toolchain new proof math \
-     && cd proof && lake exe cache get \
-     && mv /root/.elan /opt/elan && chmod -R a+rX /opt/elan /opt/lean) || echo "OPTIONAL: lean not installed"
-ENV ELAN_HOME=/opt/elan
-ENV PATH=/work/bin:/opt/elan/bin:$PATH
-# Runs use the host uid, not root. Without this git calls the Mathlib checkout
-# "dubious ownership", Lake decides the dependency changed and tries to
-# re-clone it into a read-only directory. The search path is also resolved
-# once here so a check never needs Lake at all.
-RUN git config --system --add safe.directory '*' \
-    && (cd /opt/lean/proof 2>/dev/null && lake env printenv LEAN_PATH > /opt/lean/leanpath) || true
+ENV PATH=/work/bin:$PATH
+# Runs use the host uid, not root, and git calls a checkout it does not own
+# "dubious ownership". Lean and Mathlib were here until 2026-10-10: 11 GB, the
+# install had failed silently, and its one task was a one-line proof.
+RUN git config --system --add safe.directory '*'
 
 # Blog export only: audio for the two score cases, STL to GLB so a model can
 # be turned in the browser, and spicelib so a SPICE netlist can be drawn as a

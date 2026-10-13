@@ -1,0 +1,34 @@
+---
+title: "Does a model know a knit stitch is wider than it is tall?"
+date: 2026-10-11
+type: "experiment"
+tags: ["coffee", "knitting", "gauge"]
+description: "Five of six models know a knit stitch is wider than it is tall."
+tldr: "Five of six models know it. GLM 5.3 flashx drew stitches tall and said so."
+task: "knitting-bean-cosy"
+caseId: "knitting-bean-cosy"
+models: ["openai/gpt-6.1-sol", "anthropic/claude-opus-5.5", "anthropic/claude-haiku-5.5", "deepseek/deepseek-v4.1-flash", "openai/gpt-6-luna", "z-ai/glm-5.3-flashx"]
+skipProseCheck: true
+---
+
+<SideBySide>
+  <Artifact name="knitting-bean-cosy-gpt-6.1-sol-s2-r3" code={false} caption="GPT-6.1 Sol, run 2. Cells at 24 stitches by 32 rounds to 10 cm, wider than tall like a real stitch." />
+  <Artifact name="knitting-bean-cosy-glm-5.3-flashx-s2-r4" code={false} caption="GLM 5.3 flashx, run 2. Cells taller than wide, with a note that knit stitches are about 4 by 5." />
+</SideBySide>
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+A knit stitch is wider than it is tall, so a bean drawn on square cells knits up squashed. I asked for a cup cosy chart with coffee beans "drawn so the beans come out the right shape in the finished fabric", which only works if the model knows this.
+
+Five of six models knew that stitch is wider than it is tall. GPT-6.1 Sol, Opus 5.5, Haiku 5.5 and DeepSeek 4.1 Flash drew stitch-shaped cells in all three runs, and GPT-6 Luna in two. GLM 5.3 flashx drew tall cells instead.
+
+Knowing it is not the same as drawing the bean right though and only Sol passed every check in all three runs. The others drew beans a little too round to knit up as beans.
+
+<Verdict n="3 runs a model">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-10-11-knitting-bean-cosy-0729, 2026-10-11-knitting-bean-cosy-1642 */}
+The 18 runs cost $0.92.

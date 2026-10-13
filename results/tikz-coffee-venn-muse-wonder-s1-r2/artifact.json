@@ -1,0 +1,34 @@
+{
+  "name": "tikz-coffee-venn-muse-wonder-s1-r2",
+  "exportedAt": "2026-10-13T03:35:09.064Z",
+  "run": "2026-10-13-tikz-coffee-venn-1420",
+  "caseId": "tikz-coffee-venn",
+  "caseTitle": "TikZ: a three-set coffee Venn diagram",
+  "category": "Documents",
+  "prompt": "Using LaTeX and TikZ, draw a Venn diagram of three overlapping circles labelled \"Has espresso\", \"Has milk\" and \"Served cold\". Write each of these drinks in the region where it belongs: short black, flat white, iced latte, iced long black, cold brew, babyccino, milkshake, pour-over.",
+  "model": "meta/muse-wonder",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz,border=10pt]{standalone}\n\\usepackage{tikz}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n\n  % Circle styles\n  \\tikzset{\n    venncircle/.style={draw, line width=1.2pt, fill opacity=0.35, text opacity=1}\n  }\n\n  % Three overlapping circles\n  \\filldraw[venncircle, fill=red!40, draw=red!70!black]    (-1.3, 0.9) circle (2.3cm);\n  \\filldraw[venncircle, fill=blue!35, draw=blue!70!black]  ( 1.3, 0.9) circle (2.3cm);\n  \\filldraw[venncircle, fill=teal!35, draw=teal!70!black]  ( 0.0,-1.1) circle (2.3cm);\n\n  % Circle labels (placed on the non-overlapping rim of each circle)\n  \\node[font=\\sffamily\\bfseries\\large, text=red!60!black]  at (-2.45, 3.55) {Has espresso};\n  \\node[font=\\sffamily\\bfseries\\large, text=blue!60!black] at ( 2.45, 3.55) {Has milk};\n  \\node[font=\\sffamily\\bfseries\\large, text=teal!55!black] at ( 0.0, -3.75) {Served cold};\n\n  % Drink labels\n\n  % Espresso only: short black\n  \\node[align=center, font=\\sffamily\\small] at (-2.35, 1.05) {short\\\\black};\n\n  % Milk only: babyccino\n  \\node[align=center, font=\\sffamily\\small] at (2.35, 1.05) {babyccino};\n\n  % Cold only: cold brew\n  \\node[align=center, font=\\sffamily\\small] at (0.0, -2.35) {cold brew};\n\n  % Espresso + Milk only (not cold): flat white\n  \\node[align=center, font=\\sffamily\\small] at (0.0, 1.85) {flat\\\\white};\n\n  % Espresso + Cold only (no milk): iced long black\n  \\node[align=center, font=\\sffamily\\small] at (-1.45, -0.75) {iced long\\\\black};\n\n  % Milk + Cold only (no espresso): milkshake\n  \\node[align=center, font=\\sffamily\\small] at (1.45, -0.75) {milkshake};\n\n  % All three: iced latte\n  \\node[align=center, font=\\sffamily\\small\\bfseries] at (0.0, 0.15) {iced\\\\latte};\n\n  % None of the three: pour-over, outside all circles\n  \\node[align=center, font=\\sffamily\\small, draw=black!40, rounded corners=3pt,\n        fill=white, inner sep=4pt] at (3.6, -2.9) {pour-over};\n\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 50
+  },
+  "output": null,
+  "notes": []
+}

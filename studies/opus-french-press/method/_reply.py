@@ -45,6 +45,29 @@ def said(src):
     return "\n".join(b["text"] for b in _blocks(src) if b.get("type") == "text" and b.get("text"))
 
 
+def last_said(src):
+    """The text of the last assistant turn that had any, which is the reply the
+    person reads when the run ends. Added 2026-10-10 for underspec-ask.py."""
+    last = ""
+    p = transcript_for(src)
+    if not p:
+        return ""
+    for line in open(p, encoding="utf-8", errors="replace"):
+        if '"turn_end"' not in line:
+            continue
+        try:
+            e = json.loads(line)
+        except Exception:
+            continue
+        m = e.get("message") if e.get("type") == "turn_end" else None
+        if not m or m.get("role") != "assistant":
+            continue
+        text = "\n".join(b["text"] for b in m.get("content") or [] if b.get("type") == "text" and (b.get("text") or "").strip())
+        if text:
+            last = text
+    return last
+
+
 def tool_calls(src):
     """Every tool the model called, as (name, arguments), oldest first."""
     return [(b.get("name"), b.get("arguments") or {}) for b in _blocks(src) if b.get("type") == "toolCall"]
