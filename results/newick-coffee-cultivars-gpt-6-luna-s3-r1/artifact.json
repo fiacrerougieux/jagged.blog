@@ -1,0 +1,32 @@
+{
+  "name": "newick-coffee-cultivars-gpt-6-luna-s3-r1",
+  "exportedAt": "2026-10-14T05:18:54.796Z",
+  "run": "2026-10-14-newick-coffee-cultivars-1613",
+  "caseId": "newick-coffee-cultivars",
+  "caseTitle": "Newick: coffee cultivar tree",
+  "category": "Chemistry and biology",
+  "prompt": "Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.",
+  "model": "openai/gpt-6-luna",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "tree.nwk"
+  },
+  "source": {
+    "file": "tree.nwk",
+    "lang": "plaintext",
+    "text": "((Bourbon:0.75,Typica:0.75,Caturra:0.75,Catuai:0.75):0.25,(((Mundo_Novo:0.1875,Maragogipe:0.1875):0.1875,(Pacas:0.1875,Villa_Sarchi:0.1875):0.1875):0.375,((SL28:0.1875,SL34:0.1875):0.1875,(Gesha:0.1875,Java:0.1875):0.1875):0.375):0.25);\n",
+    "truncated": false,
+    "lines": 2
+  },
+  "output": null,
+  "notes": []
+}

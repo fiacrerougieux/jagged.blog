@@ -19,11 +19,11 @@ models: ["openai/gpt-6.1-sol", "openai/gpt-6-luna", "anthropic/claude-sonnet-5.5
   {/* Yours to write. */}
 </Finding>
 
-Five circles make at most 22 regions and five sets need 31. The task is impossible as this can't be drawn as asked. I told the models they could decline and say why.
+Five circles make at most 21 regions inside them and five sets need 31. The task is impossible as this can't be drawn as asked. Alongside the prompt below, I told the models they could decline and say why.
 
 None declined. 16 of 18 runs said circles can't do it. 15 drew five circles anyway with a note. Only Sonnet 5.5's third run and one of DeepSeek's intermediate runs handed over ellipses with all 31 regions, and said it broke "circles only" to get there. Sol and Luna never said what would work.
 
-Qwen3.8 Max Prime spent two runs searching for five circles that would, until the clock stopped both.
+Qwen3.8 Max Prime spent two of its three runs searching for five circles that would, until the clock stopped both, so those two drew nothing and are not in the table.
 
 So a model will tell you it can't be done, then hand you the closest wrong thing.
 

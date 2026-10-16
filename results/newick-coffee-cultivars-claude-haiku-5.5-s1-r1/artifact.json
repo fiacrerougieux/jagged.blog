@@ -1,0 +1,32 @@
+{
+  "name": "newick-coffee-cultivars-claude-haiku-5.5-s1-r1",
+  "exportedAt": "2026-10-14T05:18:39.007Z",
+  "run": "2026-10-14-newick-coffee-cultivars-1613",
+  "caseId": "newick-coffee-cultivars",
+  "caseTitle": "Newick: coffee cultivar tree",
+  "category": "Chemistry and biology",
+  "prompt": "Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.",
+  "model": "anthropic/claude-haiku-5.5",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "tree.nwk"
+  },
+  "source": {
+    "file": "tree.nwk",
+    "lang": "plaintext",
+    "text": "((((Typica:4,Bourbon:4):2,MundoNovo:6):2,((Caturra:3,Catuai:3):3,Obata:6):2):2,((SL28:2,SL34:2):4,Geisha:6):4,(Pacamara:4,Maragogype:4):6,Catimor:10);\n",
+    "truncated": false,
+    "lines": 2
+  },
+  "output": null,
+  "notes": []
+}

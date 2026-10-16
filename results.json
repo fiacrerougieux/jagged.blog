@@ -42,7 +42,7 @@
     {
       "task": "svg-french-press",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "svg-french-press-gpt-5.6-sol-s1-r2",
       "post": "2026-09-18-pareto-vs-sol-french-press-both-inverted-the-stack",
       "date": "2026-09-18",
@@ -309,7 +309,7 @@
     {
       "task": "svg-french-press",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "svg-french-press-gpt-5.6-sol-v2-s1-r2",
       "post": null,
       "date": "2026-09-22",
@@ -347,7 +347,7 @@
     {
       "task": "svg-french-press",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "svg-french-press-gpt-5.6-sol-v2-s2-r1",
       "post": null,
       "date": "2026-09-22",
@@ -385,7 +385,7 @@
     {
       "task": "svg-french-press",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "svg-french-press-gpt-5.6-sol-v2-s3-r1",
       "post": null,
       "date": "2026-09-22",
@@ -6405,7 +6405,7 @@
     {
       "task": "lsystem-pruned-coffee-shrub",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "lsystem-pruned-coffee-shrub-gpt-5.6-sol-s2-r8",
       "post": null,
       "date": "2026-10-03",
@@ -6440,7 +6440,7 @@
     {
       "task": "lsystem-pruned-coffee-shrub",
       "model": "openai/gpt-5.6-sol",
-      "label": "Sol",
+      "label": "GPT-5.6 Sol",
       "artifact": "lsystem-pruned-coffee-shrub-gpt-5.6-sol-s1-r4",
       "post": null,
       "date": "2026-10-03",
@@ -11043,6 +11043,516 @@
         "clear": true
       },
       "quality": 5,
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "google/gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "artifact": "newick-coffee-cultivars-gemini-4-argon-s1-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0554,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14847,
+        "tokensOut": 3324,
+        "reasoning": 2874,
+        "wallSec": 53
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 4,
+      "note": "Bourbon, Caturra, Pacas and Villa Sarchi make the split of four, and Kona and Blue Mountain sit with Typica.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "google/gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "artifact": "newick-coffee-cultivars-gemini-4-argon-s2-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "cost": 0.0862,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 20158,
+        "tokensOut": 4591,
+        "reasoning": 4056,
+        "wallSec": 63
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 4,
+      "note": "Bourbon, Caturra, Pacas and Villa Sarchi make the split of four, and Kona sits with Typica.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "google/gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "artifact": "newick-coffee-cultivars-gemini-4-argon-s3-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0905,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28858,
+        "tokensOut": 4533,
+        "reasoning": 3780,
+        "wallSec": 79
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 4,
+      "note": "Bourbon, Caturra, Pacas and Villa Sarchi make the split of four, and Blue Mountain sits with Typica.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "newick-coffee-cultivars-claude-opus-5.5-s1-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0447,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 8542,
+        "tokensOut": 1376,
+        "reasoning": 748,
+        "wallSec": 30
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 4,
+      "note": "Bourbon, Caturra, Pacas and Villa Sarchi make the split of four.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "newick-coffee-cultivars-claude-opus-5.5-s2-r3",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0622,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 20912,
+        "tokensOut": 2294,
+        "reasoning": 1167,
+        "wallSec": 44
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 3,
+      "note": "Caturra, Pacas, Villa Sarchi and Catuai are the split of four, with Bourbon outside them.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "newick-coffee-cultivars-claude-opus-5.5-s3-r2",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "cost": 0.0476,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 11889,
+        "tokensOut": 2007,
+        "reasoning": 1208,
+        "wallSec": 32
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 3,
+      "note": "Caturra and Villa Sarchi sit under Bourbon, and the split of four is the Kenyan lines.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "newick-coffee-cultivars-claude-haiku-5.5-s1-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "cost": 0.0046,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 10411,
+        "tokensOut": 7977,
+        "reasoning": 6917,
+        "wallSec": 49
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 3,
+      "note": "Bourbon is paired with Typica and Caturra with Catuai.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "newick-coffee-cultivars-claude-haiku-5.5-s2-r2",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0027,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 12947,
+        "tokensOut": 4771,
+        "reasoning": 3968,
+        "wallSec": 34
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Typica, Bourbon, Caturra and Catuai level in the split of four, though some come from others there.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "newick-coffee-cultivars-claude-haiku-5.5-s3-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 33395,
+        "tokensOut": 17040,
+        "reasoning": 14368,
+        "wallSec": 116
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 3,
+      "note": "Bourbon is paired with Typica and Caturra with Catuai, under a split of four at the root.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "newick-coffee-cultivars-deepseek-v4.1-flash-s1-r2",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0074,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 77483,
+        "tokensOut": 7225,
+        "reasoning": 5699,
+        "wallSec": 40
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Caturra and Catuai level in the split of four, though Catuai comes from Caturra.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "newick-coffee-cultivars-deepseek-v4.1-flash-s2-r3",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "cost": 0.0093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 100280,
+        "tokensOut": 9013,
+        "reasoning": 7715,
+        "wallSec": 38
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Typica, Bourbon, Caturra and Catuai level in the split of four, though some come from others there.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "newick-coffee-cultivars-deepseek-v4.1-flash-s3-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0059,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 71652,
+        "tokensOut": 5474,
+        "reasoning": 3840,
+        "wallSec": 40
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Typica, Bourbon, Geisha and Caturra level in the split of four, though some come from others there.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "newick-coffee-cultivars-gpt-6-luna-s1-r2",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "cost": 0.0016,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 9760,
+        "tokensOut": 2428,
+        "reasoning": 2070,
+        "wallSec": 43
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Bourbon is in the split of four, and Bourbon Vermelho, which is Bourbon, is on the other side of the root.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "newick-coffee-cultivars-gpt-6-luna-s2-r2",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "cost": 0.0013,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19661,
+        "tokensOut": 1717,
+        "reasoning": 1228,
+        "wallSec": 35
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Bourbon, Typica, Caturra and Catuai level in the split of four, though some come from others there.",
+      "score": {
+        "passed": 4,
+        "of": 4,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "newick-coffee-cultivars",
+      "model": "openai/gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "artifact": "newick-coffee-cultivars-gpt-6-luna-s3-r1",
+      "post": "2026-10-14-gemini-4-argon-knows-the-coffee-family-tree",
+      "date": "2026-10-14",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "cost": 0.0007,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 6363,
+        "tokensOut": 1147,
+        "reasoning": 883,
+        "wallSec": 20
+      },
+      "checks": {
+        "valid": true,
+        "tips": true,
+        "ultrametric": true,
+        "polytomy": true
+      },
+      "quality": 2,
+      "note": "Bourbon, Typica, Caturra and Catuai level in the split of four, though some come from others there.",
       "score": {
         "passed": 4,
         "of": 4,

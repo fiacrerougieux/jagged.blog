@@ -31,7 +31,7 @@ Run 1 never drew anything. Run 2 wrote the whole file in one go, rendered it onc
 
 ## Checks
 
-<Checks task="svg-french-press" models={["mistralai/mistral-large-4-0"]} />
+<Checks task="svg-french-press" />
 
 17 of the 40 French press drawings where the order could be decided have it the right way up, so Mistral sits about where everyone else does.
 
@@ -42,4 +42,4 @@ Run 1 never drew anything. Run 2 wrote the whole file in one go, rendered it onc
 </Verdict>
 
 {/* cost: 2026-10-07-svg-french-press-1929 */}
-The 2 runs cost $0.21, and one run that failed cost nothing.
+The 2 runs cost $0.21. Run 1 was cut off before its reply finished, so it recorded no cost, and I estimate it at $0.06.

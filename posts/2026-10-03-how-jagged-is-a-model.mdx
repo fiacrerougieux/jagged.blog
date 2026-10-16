@@ -3,13 +3,13 @@ title: "How jagged is a model?"
 date: 2026-10-03
 type: "note"
 tags: ["method", "jaggedness"]
-description: "I was wondering of what metric we could use for jaggedness, here is one that shows how uneven the model is between tasks."
+description: "I was wondering what metric we could use for jaggedness, here is one that shows how uneven the model is between tasks."
 tldr: "Some models are great at doing hard things but poor at doing things that most models find easy, they are the most jagged."
 skipProseCheck: true
 ---
 
 The gap between a model's best and worst task measures how hard the tasks are, which is not jaggedness.
-I was wondering of what metric we could use for jaggedness, here is one that shows how uneven the model is between tasks.
+I was wondering what metric we could use for jaggedness, here is one that shows how uneven the model is between tasks.
 
 First, the share of models that fail an evaluation is difficulty. Now if you sort every check from the one most models pass to the one most fail, and a smooth model passes a block on the left and fails the rest. The jaggedness metric J counts how often a model breaks that order from easy to hard tasks.
 
@@ -25,8 +25,8 @@ Take every pair of checks where i is easier than j, with p the share of its runs
   </span>
 </div>
 
-The top is failing the easier check and passing the harder one. The bottom is failing hard check and passing easy checks.
-So 0 is a perfect staircase the model passes easy tasks and fail difficult ones and 0.5 is a model which fails disregarding how difficult the task is.
+The top is failing the easier check and passing the harder one. The bottom is every pair where it passed one check and failed the other, either way round.
+So 0 is a perfect staircase the model passes easy tasks and fails difficult ones and 0.5 is a model which fails disregarding how difficult the task is.
 
 <Staircase />
 
@@ -35,8 +35,8 @@ The p column says whether a J could be luck: shuffle which checks a model passed
 Some models are great at doing hard things but poor at doing things that most models find easy.
 
 <SideBySide>
-  <Artifact name="svg-french-press-gpt-6-luna-s1-r3" code={false} caption="GPT-6 Luna, J 0.25. The stack order is right, which most models get wrong, but the filter is too narrow for the glass." />
-  <Artifact name="blender-cafe-table-deepseek-v4.1-flash-s3-r8" show="poster" code={false} caption="DeepSeek 4.1 Flash, J 0.38. The croissant passes, which a third of models fail, and the spoon fails, which no other model did." />
+  <Artifact name="svg-french-press-gpt-6-luna-s1-r3" code={false} caption="GPT-6 Luna. The stack order is right, which most models get wrong, but the filter is too narrow for the glass." />
+  <Artifact name="blender-cafe-table-deepseek-v4.1-flash-s3-r8" show="poster" code={false} caption="DeepSeek 4.1 Flash. The croissant passes, which a third of models fail, and the spoon fails, which no other model did." />
 </SideBySide>
 
 Perceptron Mk1.5 gets a dash: it passes only the easiest check, and one pass only says where that check sits on the ladder. So J needs a model to pass and fail at least two checks each, which is where the metric stops working for very weak models.

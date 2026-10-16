@@ -1,0 +1,1 @@
+Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.

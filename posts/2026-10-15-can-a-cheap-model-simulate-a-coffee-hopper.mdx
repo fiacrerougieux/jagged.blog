@@ -1,0 +1,55 @@
+---
+title: "How do model fail when simulating a coffee hopper?"
+date: 2026-10-15
+type: "experiment"
+tags: ["coffee", "physics", "simulation"]
+description: "Five models built a grinder hopper in MuJoCo. Pareto 26.9 got all three runs right, Haiku 5.5 got two right, and Gemini 4 Argon never handed one in."
+tldr: "Pareto 26.9 got all three runs right. Haiku 5.5 got two right, and Gemini 4 Argon handed nothing in."
+task: "mujoco-grinder-hopper"
+caseId: "mujoco-grinder-hopper"
+models: ["anthropic/claude-haiku-5.5", "unbiased/pareto-26.9", "openai/gpt-6-luna", "deepseek/deepseek-v4.1-flash", "google/gemini-4-argon"]
+skipProseCheck: true
+currentQuestion: true
+---
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+MuJoCo is a physics engine for robots. I asked five models for a grinder hopper dropping 50 coffee beans through an 18 mm throat, with a gate that opens at 1 s. The checker loads each model and measures how it was built and whether the beans flow when they should.
+
+| | Run 1 | Run 2 | Run 3 |
+|---|---|---|---|
+| Pareto 26.9 | right | right | right |
+| Haiku 5.5 | broken | right | right |
+| GPT-6 Luna | broken | malformed | incomplete |
+| DeepSeek 4.1 Flash | no picture | built wrong | nothing |
+| Gemini 4 Argon | nothing | nothing | nothing |
+
+<SideBySide>
+  <Artifact name="mujoco-grinder-hopper-pareto-26.9-s2-r3" code={false} downloads={false} alt="A cutaway hopper in four frames, beans held until 1 s and all on the tray by 2 s, with a contact frame and a count that rises just after the gate opens." caption="Pareto 26.9, run 2. Right: held until 1 s, all 50 out by 1.5 s." />
+  <Artifact name="mujoco-grinder-hopper-claude-haiku-5.5-s3-r1" code={false} downloads={false} alt="A hopper drawn in four frames, beans in the cone at 0 s, through the throat by 5 s, with a count that rises after the gate opens at 1 s." caption="Haiku 5.5, run 3. Right. The count stalls at 31 while beans jam in the throat, then clears." />
+</SideBySide>
+
+These two pass every measured check, but the beans don't flow as asked, because the checker only measures how the hopper is built, and nothing times the beans. In both, beans a centimetre long wedge across the 18 mm throat. Haiku's own printout said 40 were stuck. Pareto drew the nicer figures, but Haiku is cheaper.
+
+<SideBySide>
+  <Artifact name="mujoco-grinder-hopper-claude-haiku-5.5-s1-r2" code={false} downloads={false} alt="A hopper with most beans still in the cone at 5 s, a count stuck at 10, and a plot of three beans falling tens of metres." caption="Haiku 5.5, run 1. Broken: only 10 of 50 beans get out, and three fall through the tray." />
+  <Artifact name="mujoco-grinder-hopper-gpt-6-luna-s1-r8" code={false} downloads={false} alt="A tall hopper with beans packed in the throat at 1 and 2 s, and a count that stays at 0 until 3.3 s." caption="GPT-6 Luna, run 1. Broken: the gate opens at 1 s, but nothing gets out until 3.3 s." />
+</SideBySide>
+
+These two fail on how they were built.
+
+<SideBySide>
+  <Artifact name="mujoco-grinder-hopper-deepseek-v4.1-flash-s2-r1" code={false} downloads={false} alt="A glass cone on a checked floor, beans in it at 0 and 1 s and on the floor by 2 s." caption="DeepSeek 4.1 Flash, run 2. Built wrong: 27 beans start in a column 19 cm high and drop into the cone in an extra second it runs before 0 s, so the picture never shows them." />
+  <Artifact name="mujoco-grinder-hopper-gpt-6-luna-s3-r7" code={false} downloads={false} alt="A hopper a metre tall, with 44 beans already on the tray at 1 s." caption="GPT-6 Luna, run 3. Incomplete: it left out the model.xml the brief asked for." />
+</SideBySide>
+
+Luna's second run crashed on its last round, and DeepSeek's first ran out of time before saving its picture. Gemini 4 Argon spent its twelve minutes testing the physics in scratch scripts. Maybe in the future, I can remove the 12 mins cap, but for now, I still want things to be completed in a decent time if possible.
+
+<Verdict n="3 runs a model">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-10-15-mujoco-grinder-hopper-0928 */}
+The 14 runs cost $1.73. Gemini’s three were $0.54 of it.

@@ -4,7 +4,7 @@ date: 2026-10-05
 type: "duel"
 tags: ["coffee", "music", "pareto", "sol", "luna"]
 description: "Nine runs of a 16-bar piano rag where the left hand crosses over the right."
-tldr: "Only Sol so far marks the crossing and keeps the stems apart."
+tldr: "Only Sol so far marks the crossing and keeps the stems apart in every run."
 caseId: "lilypond-espresso-rag"
 models: ["openai/gpt-6.1-sol", "unbiased/pareto-26.10-preview", "openai/gpt-6-luna"]
 ---
@@ -20,7 +20,7 @@ models: ["openai/gpt-6.1-sol", "unbiased/pareto-26.10-preview", "openai/gpt-6-lu
 
 <Prompt task="lilypond-espresso-rag" version="v1" text={`Write, in LilyPond, 16 bars of café piano music called "Espresso Rag" in which the left hand crosses over the right hand for bars 9 to 12.`} />
 
-In a hand crossing, the left hand reaches over the right, so its notes move up onto the treble staff. The trap is a left hand written high but left on the bass staff. The modesl did fine and did it in a few way: move the left hand up, swap the two hands' staves, or write the left hand into the treble staff as its own voice.
+In a hand crossing, the left hand reaches over the right, so its notes move up onto the treble staff. The trap is a left hand written high but left on the bass staff. The models did fine and did it in a few ways: move the left hand up, swap the two hands' staves, or write the left hand into the treble staff as its own voice.
 
 | Run | Checks | My rating | Cost |
 |---|---|---|---|

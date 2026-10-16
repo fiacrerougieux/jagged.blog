@@ -1,0 +1,35 @@
+---
+title: "Does Gemini 4 Argon know the coffee family tree?"
+date: 2026-10-14
+type: "experiment"
+tags: ["coffee", "biology", "trees"]
+description: "Only Gemini 4 Argon grouped Bourbon with its own mutants in every run of this coffee family tree."
+tldr: "Gemini 4 Argon got the Bourbon family right in all three runs."
+task: "newick-coffee-cultivars"
+caseId: "newick-coffee-cultivars"
+models: ["google/gemini-4-argon", "anthropic/claude-opus-5.5", "anthropic/claude-haiku-5.5", "openai/gpt-6-luna", "deepseek/deepseek-v4.1-flash"]
+skipProseCheck: true
+---
+
+<Finding>
+  The structure is right most of the time, but the grouping of cultivars is often wrong.
+</Finding>
+
+Biologists write family trees as Newick, a line of brackets and numbers. I asked five models for a family tree with twelve coffee cultivars. And that every tip be the same distance from the root, and exactly one point where four branches split at once.
+
+All 15 runs passed every check in the end, but the checker only reads the brackets, so we also have to check which cultivars sit together.
+
+Caturra, Pacas and Villa Sarchi are all mutations of Bourbon, so the four of them are a good split. Gemini 4 Argon used them in all three runs, each on the first try, and put Kona and Blue Mountain beside Typica, which they come from. Opus 5.5 found the Bourbon split once.
+
+<Artifact name="newick-coffee-cultivars-gemini-4-argon-s3-r1" code={false} downloads={false} alt="A tree of twelve coffee cultivars. Bourbon, Caturra, Pacas and Villa Sarchi branch from one point." caption="Gemini 4 Argon, run 3. Bourbon and its three mutants make the split of four." />
+
+Most other runs put a cultivar level with its own offspring which is not great.
+
+<Artifact name="newick-coffee-cultivars-gpt-6-luna-s1-r2" code={false} downloads={false} alt="A tree of twelve coffee cultivars. Bourbon is in the top group and Bourbon Vermelho is at the bottom, paired with Java." caption="GPT-6 Luna, run 1. Bourbon at the top, Bourbon Vermelho at the bottom." />
+
+<Verdict n="3 runs a model">
+  On this task Gemini seems to handle the cultivar better.
+</Verdict>
+
+{/* cost: 2026-10-14-newick-coffee-cultivars-1613 */}
+The 15 runs cost $0.43, and Gemini's three were $0.23 of it.

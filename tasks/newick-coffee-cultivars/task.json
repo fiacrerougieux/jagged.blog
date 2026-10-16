@@ -1,0 +1,40 @@
+{
+  "id": "newick-coffee-cultivars",
+  "title": "A family tree of twelve coffee cultivars",
+  "short": "Coffee tree",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.",
+  "groundTruth": "The tree read with Biopython, every path from the root to a tip added up from its branch lengths, and the children of every node counted. The checks only read the brackets. Whether a cultivar sits beside its relatives is not checked here, and the post of 14 October looks at that by eye.",
+  "checks": [
+    {
+      "id": "valid",
+      "label": "Valid Newick",
+      "how": "It reads as Newick and ends in a semicolon, no unquoted name has a blank in it, every branch has a length and none is negative, and no node has only one child.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "tips",
+      "label": "Twelve cultivars",
+      "how": "Twelve tips, each with a name, no two the same, and not numbered stand-ins like T1 to T12.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "ultrametric",
+      "label": "Every tip level",
+      "how": "Every path from the root to a tip adds up to the same length.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "polytomy",
+      "label": "One split of four",
+      "how": "Exactly one node has four children, and every other node has two.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Ask for the tree to follow how the cultivars were really bred, so Caturra, Pacas and Villa Sarchi have to sit with Bourbon.",
+  "saturated": {
+    "since": "2026-10-14",
+    "why": "All 15 runs, three from each of five models, passed every check. The checks only read the brackets, so the difference between the models was in which cultivars they put together, which the post looks at."
+  }
+}

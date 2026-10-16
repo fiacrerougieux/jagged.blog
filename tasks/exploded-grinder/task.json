@@ -17,7 +17,7 @@
     {
       "id": "order",
       "label": "Stack order",
-      "how": "Crank, body, outer burr, inner burr, spring, adjustment, catch jar, top to bottom along the axis, read from each part's coordinates in the SVG.",
+      "how": "Crank, body, outer burr, inner burr, spring if drawn, adjustment, catch jar, top to bottom along the axis, read from each part's coordinates in the SVG.",
       "decidedBy": "measured",
       "rule": "Fail if any two drawn parts come in the wrong order along the assembly axis, read from their coordinates in the SVG and never from comments or label text."
     },
@@ -31,7 +31,7 @@
     {
       "id": "axis",
       "label": "One assembly axis",
-      "how": "Body, burrs, spring, adjustment and jar centred on one vertical axis, with leader lines to one side. The knob may sit off it on the end of the crank.",
+      "how": "Body, burrs, spring if drawn, adjustment and jar centred on one vertical axis, with leader lines to one side. The knob may sit off it on the end of the crank.",
       "decidedBy": "eye",
       "rule": "Pass if one line runs through the middle of every part on each listed axis, and every leader line leaves from the same side. One part pushed off its axis fails it."
     },

@@ -3,8 +3,8 @@ title: "Opus 5.5 says a right French press is upside down"
 date: 2026-10-10
 type: "experiment"
 tags: ["coffee", "spatial", "claude"]
-description: "When shown french presses with the filter the right way up, Opus 5.5 think they are the wrong way about half the time."
-tldr: "When shown french presses with the filter the right way up, Opus 5.5 think they are the wrong way about half the time."
+description: "When shown french presses with the filter the right way up, Opus 5.5 thinks they are the wrong way about half the time."
+tldr: "When shown french presses with the filter the right way up, Opus 5.5 thinks they are the wrong way about half the time."
 task: "svg-french-press"
 caseId: "autopsy-png-opus55-1001-s2"
 models: ["anthropic/claude-opus-5.5", "unbiased/pareto"]
@@ -19,7 +19,7 @@ models: ["anthropic/claude-opus-5.5", "unbiased/pareto"]
   {/* Yours to write. */}
 </Finding>
 
-I gave each model these two pictures and asked: "Name everything wrong with it, most serious first. Say if you think nothing is wrong.” Both press have nothing wrong with them.
+I gave each model these two pictures and asked: "Name everything wrong with it, most serious first. Say if you think nothing is wrong." Neither press has anything wrong with it.
 
 | Says the filter is upside down | Opus's press | Pareto's press |
 |---|---|---|
@@ -31,7 +31,7 @@ I gave each model these two pictures and asked: "Name everything wrong with it, 
   Pareto, on the other hand, almost always (9 out of 10) does not think that the filter is upside down, and it is right.
 </Verdict>
 
-Looking back at when it drew the french press, everytime it drew it updside down, it also said it upside down. So it is consistent between its words and its drawing. But it is just that about half the time, it has a different belief about the order of the filter stack.
+Looking back at when it drew the french press, every time it drew it upside down, it also said it upside down. So it is consistent between its words and its drawing. But it is just that about half the time, it has a different belief about the order of the filter stack.
 
 {/* cost: 2026-10-10-autopsy-png-opus55-1001-s2-1453, 2026-10-10-autopsy-png-pareto-v2-s1-1504 */}
 The 20 runs cost $2.26.

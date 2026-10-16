@@ -1,0 +1,32 @@
+{
+  "name": "newick-coffee-cultivars-gemini-4-argon-s3-r1",
+  "exportedAt": "2026-10-14T05:27:41.254Z",
+  "run": "2026-10-14-newick-coffee-cultivars-1613",
+  "caseId": "newick-coffee-cultivars",
+  "caseTitle": "Newick: coffee cultivar tree",
+  "category": "Chemistry and biology",
+  "prompt": "Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.",
+  "model": "google/gemini-4-argon",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "tree.nwk"
+  },
+  "source": {
+    "file": "tree.nwk",
+    "lang": "plaintext",
+    "text": "((Geisha:0.60,Java:0.60):0.40,(((Typica:0.25,Blue_Mountain:0.25):0.25,(Kona:0.30,Maragogipe:0.30):0.20):0.30,((SL28:0.30,SL34:0.30):0.25,(Bourbon:0.25,Caturra:0.25,Pacas:0.25,Villa_Sarchi:0.25):0.30):0.25):0.20);\n",
+    "truncated": false,
+    "lines": 2
+  },
+  "output": null,
+  "notes": []
+}

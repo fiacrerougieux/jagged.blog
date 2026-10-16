@@ -1,0 +1,32 @@
+{
+  "name": "newick-coffee-cultivars-deepseek-v4.1-flash-s2-r3",
+  "exportedAt": "2026-10-14T05:19:02.375Z",
+  "run": "2026-10-14-newick-coffee-cultivars-1613",
+  "caseId": "newick-coffee-cultivars",
+  "caseTitle": "Newick: coffee cultivar tree",
+  "category": "Chemistry and biology",
+  "prompt": "Write an ultrametric Newick tree of twelve coffee cultivars with exactly one polytomy, of four.",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "seed": 2,
+  "round": 3,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "tree.nwk"
+  },
+  "source": {
+    "file": "tree.nwk",
+    "lang": "plaintext",
+    "text": "(('Typica':2,'Bourbon':2,'Caturra':2,'Catuai':2):2,((('Mundo Novo':0.5,'Geisha':0.5):0.5,('Pacamara':0.5,'Maragogype':0.5):0.5):1,(('SL28':0.5,'SL34':0.5):0.5,('Ruiru 11':0.5,'Batian':0.5):0.5):1):2);\n",
+    "truncated": false,
+    "lines": 2
+  },
+  "output": null,
+  "notes": []
+}
