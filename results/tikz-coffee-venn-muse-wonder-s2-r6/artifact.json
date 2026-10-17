@@ -30,5 +30,37 @@
     "lines": 64
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": true
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    }
+  ]
 }

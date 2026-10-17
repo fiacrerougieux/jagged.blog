@@ -1,0 +1,50 @@
+{
+  "id": "mujoco-grinder-hopper",
+  "title": "Beans leaving a grinder hopper, in MuJoCo",
+  "short": "Hopper",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Build a MuJoCo model of a grinder hopper releasing 50 roasted coffee beans through an 18 mm throat onto a tray, and simulate 5 s of it. Each bean is one free body made of two overlapping ellipsoids, giving it one flat face and one domed face. The hopper is a cone narrowing to the throat; a sliding gate under the throat opens at 1 s. Declare bean size, mass, friction and solver settings.\n\nDraw the hopper at 0, 1, 2 and 5 s, a diagnostic frame carrying contact points and force vectors, and beans through the throat over time. One figure, saved to the path in the OUT environment variable.\n\nWrite the MJCF out to model.xml beside the script. Print the maximum penetration into the hopper walls, the count through the throat at each drawn time, and any bean that left the model.",
+  "groundTruth": "The model.xml the script writes, loaded in MuJoCo and probed with rays against what a bean can actually hit. MuJoCo collides a mesh as its convex hull, so a cone made of one mesh is solid, and the probe counts it that way. The checker never runs the simulation, so whether the gate holds the beans and then lets them all out is judged by Claude Opus 5.5, GPT-6.1 Sol and Gemini 4 Argon, each shown the brief, the figure, the printed count and the rule, and never which model made it. On 2026-10-16 all three agreed on all ten results, and with the verdicts first published, for $0.52. The rule was written after Claude Opus 5.5 had looked at the runs.",
+  "checks": [
+    {
+      "id": "runs",
+      "label": "Runs in MuJoCo",
+      "how": "The script runs, steps a MuJoCo model, prints its report and saves the figure.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "mjcf",
+      "label": "model.xml written",
+      "how": "A model.xml beside the script that MuJoCo loads.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "beans",
+      "label": "Fifty two-part beans",
+      "how": "Exactly 50 free bodies, each made of two ellipsoids.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "gravity",
+      "label": "Gravity down",
+      "how": "Gravity in the model points down, at more than 1 m/s².",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "hollow",
+      "label": "Beans start inside a hollow hopper",
+      "how": "A ray dropped down the middle of the hopper gets past where the beans are, and rays cast sideways from every bean's starting place hit the hopper wall. A mesh counts as its convex hull, the way MuJoCo collides it.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "flows",
+      "label": "Held, then flows",
+      "how": "No bean through the throat before the gate opens at 1 s, then all 50 out by 5 s, with none lost from the model.",
+      "decidedBy": "model",
+      "judge": "Claude Opus 5.5, GPT-6.1 Sol and Gemini 4 Argon",
+      "rule": "Pass if the frames and the printed count show no bean through the throat at 1 s, beans coming through by 2 s, all 50 through by 5 s, and none falling out of the model. A count the frames contradict fails it."
+    }
+  ],
+  "harder": "Ask for the flow rate in beans a second as well, and have the checker run the model and time it, so a hopper that jams or empties early fails on a number."
+}

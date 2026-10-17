@@ -1,0 +1,5 @@
+Build a MuJoCo model of a grinder hopper releasing 50 roasted coffee beans through an 18 mm throat onto a tray, and simulate 5 s of it. Each bean is one free body made of two overlapping ellipsoids, giving it one flat face and one domed face. The hopper is a cone narrowing to the throat; a sliding gate under the throat opens at 1 s. Declare bean size, mass, friction and solver settings.
+
+Draw the hopper at 0, 1, 2 and 5 s, a diagnostic frame carrying contact points and force vectors, and beans through the throat over time. One figure, saved to the path in the OUT environment variable.
+
+Write the MJCF out to model.xml beside the script. Print the maximum penetration into the hopper walls, the count through the throat at each drawn time, and any bean that left the model.

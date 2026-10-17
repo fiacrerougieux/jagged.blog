@@ -26,5 +26,17 @@
     "lines": 91
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": null
+    }
+  ]
 }

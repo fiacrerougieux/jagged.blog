@@ -1,0 +1,10 @@
+% Five ellipses, as Grünbaum drew them: circles cannot give all 31 regions.
+\documentclass[tikz,border=10pt]{standalone}
+\begin{document}
+\begin{tikzpicture}
+\foreach \i/\name in {0/Has espresso,1/Has milk,2/Served cold,3/Has sugar,4/Is decaf} {
+  \draw[thick,rotate=72*\i] (0.6,0.2) ellipse (2.5 and 1.4);
+  \node[rotate=72*\i] at ({72*\i+8}:3.6) {\name};
+}
+\end{tikzpicture}
+\end{document}

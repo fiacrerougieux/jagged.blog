@@ -9,7 +9,7 @@
   "model": "anthropic/claude-opus-5.5",
   "seed": 2,
   "round": 3,
-  "rounds": 2,
+  "rounds": 3,
   "grade": {
     "pass": true,
     "detail": "all checks passed"
@@ -28,5 +28,22 @@
     "lines": 2
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.png",
+      "pass": true
+    }
+  ]
 }

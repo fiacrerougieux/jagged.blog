@@ -30,37 +30,37 @@
     {
       "round": 1,
       "png": "rounds/001.jpg",
-      "pass": null
+      "pass": false
     },
     {
       "round": 2,
       "png": "rounds/002.jpg",
-      "pass": null
+      "pass": false
     },
     {
       "round": 3,
       "png": "rounds/003.jpg",
-      "pass": null
+      "pass": true
     },
     {
       "round": 4,
       "png": "rounds/004.jpg",
-      "pass": null
+      "pass": false
     },
     {
       "round": 5,
       "png": "rounds/005.jpg",
-      "pass": null
+      "pass": false
     },
     {
       "round": 6,
       "png": "rounds/006.jpg",
-      "pass": null
+      "pass": false
     },
     {
       "round": 7,
       "png": "rounds/007.jpg",
-      "pass": null
+      "pass": false
     }
   ]
 }

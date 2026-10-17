@@ -32,5 +32,17 @@
   "output": null,
   "notes": [
     "the score has no \\midi block; the audio comes from a copy with one added."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": true
+    }
   ]
 }

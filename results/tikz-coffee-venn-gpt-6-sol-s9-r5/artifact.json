@@ -9,7 +9,7 @@
   "model": "openai/gpt-6-sol",
   "seed": 9,
   "round": 5,
-  "rounds": 4,
+  "rounds": 5,
   "grade": {
     "pass": true,
     "detail": "all checks passed"
@@ -30,5 +30,32 @@
     "lines": 28
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": true
+    }
+  ]
 }

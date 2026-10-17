@@ -2,7 +2,7 @@
 
 The prompts, checkers and scored files behind [jagged.blog](https://jagged.blog).
 
-- `tasks/` has each task's prompt, checks, checker and the known-bad files it fails.
+- `tasks/` has each task's prompt and checks. A task graded by script also has its checker, every file the checker loads, and the known-bad files it was proven on. The French press, café table, Penrose floor and coffee route have no checker: I measured those by hand.
 - `results/` has each file a model wrote and the render I scored.
 - `results.json` lists every run with its checks and cost.
 - `posts/` has each published post as I wrote it. They start from 2026-10-10, so earlier edits are not in the history.

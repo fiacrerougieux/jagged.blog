@@ -1,0 +1,28 @@
+{
+  "axiom": "BTGGGG[++++++CFD][------p]T[+++++CF[-F+d]La][------p]T[+++++CF[-F+d]LA][------P]M[+++++CF[-F+d]LA][------P]M[++++CF[-F+d]LA][------P]M[++++CF[-F+d]La][------P]U[++++CF[-F+W]LD][------O]U[+++CF[-F+W]LD][------O]U[++++CF[-G+W]Ld][+++CF[-G+W]LE][++CLE][+CLE][------O]GGGG[CLE][-CLE][--CLE][---CLE][------O]",
+  "rules": {
+    "F": "FG",
+    "B": "[+++++FF+F+F][++++++FFF-F][------FF-F-F][-----FFF+F][++GGGG--M[+++++CFD]M[++++CFD]U[+++CLE]][--GGGGGGGG++M[+CLE][--CLE]M[+CLE][--CLE]U[+CLE]]",
+    "T": "[+G-GGGGGGG-G+][-G+GGGGGGG+G-][++G--GGGGGGG--G++][--G++GGGGGGG++G--][+++G---GGGGGGG---G+++][---G+++GGGGGGG+++G---]GGGGGGGG",
+    "M": "[+G-GGGGGGG-G+][-G+GGGGGGG+G-][++G--GGGGGGG--G++][--G++GGGGGGG++G--]GGGGGGGG",
+    "U": "[+G-GGGGGG-G+][-G+GGGGGG+G-]GGGGGGG",
+    "K": "[++++G-G-G][++G+G+G][+++GGG][----G+G+G][--G-G-G][---GGG]",
+    "L": "[++++G-G-G-G][+G+G+G+G][++G+GG-G][----G+G+G+G][-G-G-G-G][--G-GG+G][++G-K][--G+K]",
+    "C": "[+G----G----G----G][+++G----G----G----G][-----G++++G++++G++++G][--G++++G++++G++++G]",
+    "A": "[+G-FFF][-G+FFF]FC[--F+d]FL[++F-d]F+La",
+    "a": "[+G-FFF]FCL[-F+d]FL[+F-d]FLA",
+    "D": "[+G-FF]FCL[-F+d]FL[+F-d]+d",
+    "d": "FL[-F+W]FL[+F-W]+D",
+    "E": "[+G-GGG]GGCL[--GG+W][++GG-W]+W",
+    "W": "GGGL[--GG+K][++GG-K]+K",
+    "O": "[+G-++GGGG--][--G+++GGGG--]++GGCGG--+GLG-Q",
+    "P": "[+G-++GG--GG][--G+++GG--GG]++GGC----GG+++GLG-Q",
+    "p": "[+G-+GG---GG][-G++GG---GG]+GGC---GG+GLG--GG++Q",
+    "Q": "+GG-L[++GGGG--LR][++GG----GG++LR][--GGGG++LR]",
+    "R": "+GG-K[++GGG--+G-KS][++GG----G+++G-KS][--GGG++-G+KS]",
+    "S": "+G-K[+GG-+++GG---][+GG-+++G---G][+GG----GG+++][+G--G++++GG---][-G++G+---GG+++][-GG++++GG---][-GG+---G+++G][-GG+---GG+++]"
+  },
+  "angle": 15,
+  "iterations": 4,
+  "start_heading": 90
+}

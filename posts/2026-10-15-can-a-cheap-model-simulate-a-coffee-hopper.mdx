@@ -1,5 +1,5 @@
 ---
-title: "How do model fail when simulating a coffee hopper?"
+title: "How do models fail when simulating a coffee hopper?"
 date: 2026-10-15
 type: "experiment"
 tags: ["coffee", "physics", "simulation"]
@@ -16,13 +16,13 @@ currentQuestion: true
   {/* Yours to write. */}
 </Finding>
 
-MuJoCo is a physics engine for robots. I asked five models for a grinder hopper dropping 50 coffee beans through an 18 mm throat, with a gate that opens at 1 s. The checker loads each model and measures how it was built and whether the beans flow when they should.
+MuJoCo is a physics engine for robots. I asked five models for a grinder hopper dropping 50 coffee beans through an 18 mm throat, with a gate that opens at 1 s. The checker loads each model and measures how it was built.
 
 | | Run 1 | Run 2 | Run 3 |
 |---|---|---|---|
 | Pareto 26.9 | right | right | right |
 | Haiku 5.5 | broken | right | right |
-| GPT-6 Luna | broken | malformed | incomplete |
+| GPT-6 Luna | broken | built wrong | incomplete |
 | DeepSeek 4.1 Flash | no picture | built wrong | nothing |
 | Gemini 4 Argon | nothing | nothing | nothing |
 

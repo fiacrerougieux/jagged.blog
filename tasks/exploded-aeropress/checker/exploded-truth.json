@@ -1,0 +1,88 @@
+{
+  "_about": "Ground truth for exploded.py, read at grading only. parts, stack and fits restate each member's case file (harness/cases/exploded-*.mjs) in a form the grader can read; the case file stays the source. names: the words that count as naming each part, tried in this order, the most specific first, so 'outer conical burr' is the outer burr before 'conical burr' can make it the inner one. Names are the part's usual names and plain descriptions of what it is, not one maker's catalogue word. Strict on which part, not on wording (decided 2026-10-05): a name that only says where a part sits ('top plate', 'lower piece') or what it is made of ('rubber') names no part, and neither does a part mentioned in another part's caption. stack: top to bottom. axis: the parts that must share the stack's centre line, when not the whole stack. fits: ratios of outside widths, a over b, measured only where the outside width is the one that matters (a disc, a thin wall); a fit with no min and max is about an inside width or an angle, which the drawing does not give, and is left to the eye. beside: a part off the stack, cut away from the stack part it is drawn joined to before that part is measured. Held-back members are in private/exploded-truth.json, which is gitignored. Written 2026-10-05.",
+  "members": {
+    "aeropress": {
+      "parts": ["plunger", "rubber seal", "chamber", "paper filter", "filter cap"],
+      "stack": ["plunger", "rubber seal", "chamber", "paper filter", "filter cap"],
+      "names": [
+        ["filter cap", "\\bcap\\b"],
+        ["rubber seal", "seal|gasket|stopper|plunger tip|piston head"],
+        ["paper filter", "filter|paper"],
+        ["plunger", "plunger|piston"],
+        ["chamber", "chamber|barrel|cylinder|\\btube\\b|brewer body"]
+      ],
+      "fits": [
+        {"a": "rubber seal", "b": "chamber", "min": 0.8, "max": 1.05},
+        {"a": "paper filter", "b": "filter cap", "min": 0.8, "max": 1.05}
+      ]
+    },
+    "v60": {
+      "parts": ["paper filter", "dripper", "server"],
+      "stack": ["paper filter", "dripper", "server"],
+      "names": [
+        ["paper filter", "filter|paper"],
+        ["server", "server|carafe|\\bjug\\b|decanter|\\bpot\\b|range"],
+        ["dripper", "dripper|brewer|\\bcone\\b|conical|v60"]
+      ],
+      "fits": [
+        {"a": "paper filter", "b": "the dripper cone", "ratio": "the same 60 degree cone angle, within 5 degrees"},
+        {"a": "dripper base ring", "b": "the server mouth", "ratio": "wider than the mouth, so it sits on it"}
+      ]
+    },
+    "portafilter": {
+      "parts": ["filter basket", "retaining spring", "portafilter body", "double spout", "handle"],
+      "stack": ["filter basket", "retaining spring", "portafilter body", "double spout"],
+      "names": [
+        ["retaining spring", "spring|retaining (ring|clip|wire)|\\bclip\\b"],
+        ["filter basket", "basket"],
+        ["double spout", "spout|outlet"],
+        ["handle", "handle|\\bgrip\\b"],
+        ["portafilter body", "body|\\bhead\\b|housing|portafilter\\b"]
+      ],
+      "fits": [
+        {"a": "filter basket", "b": "the inside of the portafilter body", "ratio": "90% to 100% of its inside width; the body's ears hide its outside width"},
+        {"a": "retaining spring", "b": "the inside of the portafilter body", "ratio": "90% to 100% of its inside width"}
+      ],
+      "beside": ["handle"]
+    },
+    "grinder": {
+      "parts": ["handle knob", "crank", "drive shaft", "body", "outer burr", "inner burr", "adjustment dial", "catch jar"],
+      "stack": ["crank", "body", "outer burr", "inner burr", "spring", "adjustment dial", "catch jar"],
+      "axis": ["body", "outer burr", "inner burr", "spring", "adjustment dial", "catch jar"],
+      "names": [
+        ["outer burr", "outer[a-z ]*burr|stationary[a-z ]*burr|burr ring|outer ring|fixed[a-z ]*burr"],
+        ["inner burr", "inner[a-z ]*(burr|cone)|rotating[a-z ]*(burr|cone)|conical burr|burr cone|moving[a-z ]*burr"],
+        ["adjustment dial", "adjust|setting|\\bdial\\b|collar"],
+        ["catch jar", "\\bjar\\b|catch|\\bcup\\b|container|\\bbin\\b|receptacle"],
+        ["handle knob", "knob|\\bgrip\\b"],
+        ["crank", "crank|handle|\\barm\\b"],
+        ["drive shaft", "shaft|axle|spindle"],
+        ["spring", "spring"],
+        ["body", "body|housing|\\bshell\\b|hopper"]
+      ],
+      "fits": [
+        {"a": "inner burr", "b": "the inside of the outer burr", "ratio": "nests inside it, 70% to 95% of its inside width; drawn burrs carry flanges and teeth that hide it"},
+        {"a": "outer burr", "b": "the inside of the body", "ratio": "90% to 100% of its inside width"}
+      ]
+    },
+    "french-press": {
+      "_about": "For checking the grader against the 49 French press results judged by eye. Not used to grade svg-french-press, whose case file has no grader.",
+      "parts": ["knob", "rod", "lid", "spiral plate", "mesh", "cross-plate", "carafe"],
+      "stack": ["lid", "spiral plate", "mesh", "cross-plate", "carafe"],
+      "names": [
+        ["spiral plate", "spiral|spring|coil"],
+        ["cross-plate", "cross"],
+        ["mesh", "mesh|screen"],
+        ["knob", "knob|finial"],
+        ["rod", "\\brod\\b|shaft|plunger"],
+        ["lid", "\\blid\\b|cover"],
+        ["carafe", "carafe|beaker|glass|\\bjug\\b|vessel"]
+      ],
+      "fits": [
+        {"a": "spiral plate", "b": "carafe", "min": 0.8, "max": 1.05},
+        {"a": "mesh", "b": "carafe", "min": 0.8, "max": 1.05},
+        {"a": "cross-plate", "b": "carafe", "min": 0.8, "max": 1.05}
+      ]
+    }
+  }
+}

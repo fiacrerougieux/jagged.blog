@@ -1,0 +1,13 @@
+{
+  "about": "The harness every run went through: the brief around the prompt, the render tool and what it prints back, the agent's tools and the sandbox. A change to any of those changes the question, the same way a new prompt wording does, so it gets a new version. Logging, resume and other plumbing the model never meets do not. The fingerprint is checked by harness/harness-version.mjs before any run starts. The limits are the round cap and clock a run gets unless it is given others, and every result records its own.",
+  "current": "h1",
+  "limits": { "rounds": 8, "clockMin": 12 },
+  "versions": [
+    {
+      "version": "h1",
+      "since": "2026-09-14",
+      "fingerprint": "45ddfcdff742",
+      "what": "The harness as it stood when versions began on 2026-10-16, covering every run before that. Its git history shows one change a model could notice in that time: until 2026-09-21 the checkers were also mounted inside the sandbox. Two caffeine runs read one and were voided, and a search of every earlier run found no published result that touched it, so runs either side of that date are counted together. Tools added to the image for a new task's renderer are not counted as a change."
+    }
+  ]
+}

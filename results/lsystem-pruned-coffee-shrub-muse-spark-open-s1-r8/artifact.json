@@ -1,0 +1,74 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-muse-spark-open-s1-r8",
+  "exportedAt": "2026-10-16T04:39:10.845Z",
+  "run": "2026-10-16-lsystem-pruned-coffee-shrub-1536",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "meta/muse-spark-open",
+  "seed": 1,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": true,
+    "detail": "grows on both sides with no drawn edge, so whether it looks pruned is for the eye; the sides stray left 3.5% and right 9.6% of the width from straight"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"FFFX\",\n  \"rules\": {\n    \"X\": \"F[+A][-B]F[+A][-B]X\",\n    \"A\": \"F[+A][-A]\",\n    \"B\": \"F[+B]F\",\n    \"F\": \"F\"\n  },\n  \"angle\": 28,\n  \"iterations\": 8,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 13
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": true
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": true
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": true
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   "model": "openai/gpt-6-sol",
   "seed": 4,
   "round": 5,
-  "rounds": 3,
+  "rounds": 5,
   "grade": {
     "pass": false,
     "detail": "iced latte crosses a circle's edge"
@@ -30,5 +30,32 @@
     "lines": 35
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": false
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    }
+  ]
 }

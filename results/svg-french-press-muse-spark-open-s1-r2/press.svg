@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200" role="img">
+<title>French Press Exploded Assembly Diagram</title>
+<rect width="1000" height="1200" fill="#ffffff"/>
+
+<!-- Title -->
+<text x="500" y="55" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#1a2a33">FRENCH PRESS — EXPLODED ASSEMBLY</text>
+<text x="500" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6a7a89" letter-spacing="3">1 LITRE / 8-CUP • THREE-PIECE PLUNGER FILTER</text>
+<line x1="380" y1="92" x2="620" y2="92" stroke="#c0cdd8" stroke-width="1.2"/>
+
+<!-- Center guide dashed line (explosion axis) -->
+<line x1="500" y1="115" x2="500" y2="1020" stroke="#b0becd" stroke-width="1.2" stroke-dasharray="8 8" opacity="0.9"/>
+
+<!-- ====== HELPERS: gradients ====== -->
+<defs>
+  <linearGradient id="metalSide" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#9aa0a6"/>
+    <stop offset="20%" stop-color="#d4d8db"/>
+    <stop offset="50%" stop-color="#b8bec3"/>
+    <stop offset="80%" stop-color="#d9dcdf"/>
+    <stop offset="100%" stop-color="#8f959b"/>
+  </linearGradient>
+  <linearGradient id="metalTop" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f0f3f5"/>
+    <stop offset="100%" stop-color="#b9c0c6"/>
+  </linearGradient>
+  <linearGradient id="glassSide" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#d6e8f0" stop-opacity="0.35"/>
+    <stop offset="25%" stop-color="#eaf4f9" stop-opacity="0.15"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>
+    <stop offset="75%" stop-color="#d6e8f0" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#a9c2d1" stop-opacity="0.45"/>
+  </linearGradient>
+  <linearGradient id="rodGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#7a8086"/>
+    <stop offset="35%" stop-color="#e6e9eb"/>
+    <stop offset="65%" stop-color="#b8bec3"/>
+    <stop offset="100%" stop-color="#5f666d"/>
+  </linearGradient>
+  <pattern id="meshPat" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+    <rect width="8" height="8" fill="#d8dcdf"/>
+    <path d="M0 4 H8 M4 0 V8" stroke="#8a9096" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="4" cy="4" r="1.2" fill="#6e757b"/>
+  </pattern>
+  <linearGradient id="knobGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3a3d40"/>
+    <stop offset="100%" stop-color="#0f1112"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+  </filter>
+</defs>
+
+<!-- ===================== -->
+<!-- 1. PLUNGER KNOB (top ball) -->
+<g id="knob">
+  <ellipse cx="500" cy="168" rx="28" ry="10" fill="#000" opacity="0.18"/>
+  <!-- ball -->
+  <circle cx="500" cy="135" r="26" fill="url(#knobGrad)" stroke="#000" stroke-width="1.2"/>
+  <!-- highlight -->
+  <ellipse cx="491" cy="126" rx="9" ry="6" fill="#fff" opacity="0.28"/>
+  <!-- stem connector -->
+  <rect x="494" y="157" width="12" height="10" rx="2" fill="#7a8086" stroke="#444" stroke-width="1"/>
+</g>
+
+<!-- 2. PLUNGER ROD -->
+<g id="rod">
+  <rect x="494.5" y="168" width="11" height="205" rx="5.5" fill="url(#rodGrad)" stroke="#5a6066" stroke-width="1.1"/>
+  <!-- highlight line -->
+  <line x1="498" y1="172" x2="498" y2="368" stroke="#fff" stroke-width="1.3" opacity="0.35"/>
+</g>
+
+<!-- 3. LID -->
+<g id="lid">
+  <!-- lid thickness side -->
+  <path d="M 395 405 L 395 424 Q 395 428 500 445 Q 605 428 605 424 L 605 405 Z" fill="url(#metalSide)" stroke="#7a8086" stroke-width="1.3"/>
+  <!-- top face -->
+  <ellipse cx="500" cy="405" rx="105" ry="32" fill="url(#metalTop)" stroke="#7a8086" stroke-width="1.4"/>
+  <!-- raised rim -->
+  <ellipse cx="500" cy="405" rx="96" ry="26" fill="none" stroke="#8e959b" stroke-width="1" opacity="0.7"/>
+  <!-- central hole with bushing -->
+  <ellipse cx="500" cy="405" rx="10" ry="7" fill="#2b2f33" stroke="#1a1d20" stroke-width="1"/>
+  <ellipse cx="500" cy="405" rx="6.5" ry="4.2" fill="#0f1112"/>
+  <!-- highlight on lid -->
+  <path d="M 430 388 Q 460 378 500 376 Q 540 378 570 388" fill="none" stroke="#fff" stroke-width="2" opacity="0.35" stroke-linecap="round"/>
+</g>
+
+<!-- EXPLODED GAP label arrow -->
+<g font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#8a9aa8">
+  <line x1="365" y1="440" x2="365" y2="505" stroke="#8a9aa8" stroke-width="0.8" marker-start="url(#none)"/>
+  <!-- custom arrows -->
+  <path d="M365 442 L362 452 L368 452 Z" fill="#8a9aa8"/>
+  <path d="M365 503 L362 493 L368 493 Z" fill="#8a9aa8"/>
+</g>
+
+<!-- 4. CROSS PLATE (top retainer) -->
+<g id="crossPlate">
+  <!-- side thickness -->
+  <path d="M 418 528 L 418 540 Q 418 544 500 558 Q 582 544 582 540 L 582 528 Z" fill="url(#metalSide)" stroke="#7a8086" stroke-width="1.2"/>
+  <ellipse cx="500" cy="528" rx="82" ry="24" fill="url(#metalTop)" stroke="#7a8086" stroke-width="1.2"/>
+  <!-- cross shape on top -->
+  <g stroke="#6b7278" stroke-width="8" stroke-linecap="round" opacity="0.95">
+    <line x1="500" y1="506" x2="500" y2="550"/>
+    <line x1="462" y1="528" x2="538" y2="528"/>
+  </g>
+  <g stroke="#aab2b8" stroke-width="1.2" opacity="0.6">
+    <line x1="500" y1="506" x2="500" y2="550"/>
+    <line x1="462" y1="528" x2="538" y2="528"/>
+  </g>
+  <!-- central hole -->
+  <circle cx="500" cy="528" r="7" fill="#2b2f33" stroke="#1a1d20" stroke-width="1"/>
+  <circle cx="500" cy="528" r="3.5" fill="#0e0f10"/>
+  <!-- outer holes -->
+  <circle cx="472" cy="521" r="4.2" fill="#2b2f33" stroke="#444" stroke-width="0.8"/>
+  <circle cx="528" cy="521" r="4.2" fill="#2b2f33" stroke="#444" stroke-width="0.8"/>
+  <circle cx="500" cy="542" r="4.2" fill="#2b2f33" stroke="#444" stroke-width="0.8"/>
+  <circle cx="500" cy="514" r="4.2" fill="#1a1d20" stroke="#444" stroke-width="0.8"/>
+</g>
+
+<!-- 5. MESH FILTER -->
+<g id="mesh">
+  <path d="M 412 585 L 412 593 Q 412 597 500 612 Q 588 597 588 593 L 588 585 Z" fill="#c9ced2" stroke="#7f868d" stroke-width="1.1"/>
+  <ellipse cx="500" cy="585" rx="88" ry="26" fill="url(#meshPat)" stroke="#7f868d" stroke-width="1.3"/>
+  <!-- rim -->
+  <ellipse cx="500" cy="585" rx="88" ry="26" fill="none" stroke="#5e656c" stroke-width="2.2" opacity="0.95"/>
+  <ellipse cx="500" cy="585" rx="80" ry="19" fill="none" stroke="#fff" stroke-width="1" opacity="0.28"/>
+  <!-- center hole -->
+  <ellipse cx="500" cy="585" rx="7.5" ry="5" fill="#1e2226" stroke="#000" stroke-width="1"/>
+  <ellipse cx="500" cy="585" rx="3.8" ry="2.6" fill="#000"/>
+</g>
+
+<!-- 6. SPIRAL PLATE -->
+<g id="spiral">
+  <path d="M 418 625 L 418 637 Q 418 641 500 655 Q 582 641 582 637 L 582 625 Z" fill="url(#metalSide)" stroke="#7a8086" stroke-width="1.2"/>
+  <ellipse cx="500" cy="625" rx="82" ry="24" fill="url(#metalTop)" stroke="#7a8086" stroke-width="1.2"/>
+  <!-- spiral groove depiction -->
+  <g fill="none" stroke="#6e757b" stroke-width="1.6" stroke-linecap="round">
+    <path d="M 500 648 m -38 0 a 38 10 0 1 0 76 0 a 28 7.5 0 1 0 -56 0 a 18 5 0 1 0 36 0 a 9 2.8 0 1 0 -18 0"/>
+    <!-- simplified spiral -->
+    <path d="M 468 620 Q 500 610 532 620 Q 548 626 532 634 Q 500 644 468 634 Q 452 626 468 620 Q 488 612 512 620" opacity="0.95"/>
+  </g>
+  <!-- center hole + outer notch -->
+  <circle cx="500" cy="625" r="6.5" fill="#1e2226" stroke="#000" stroke-width="1"/>
+  <circle cx="500" cy="625" r="3" fill="#000"/>
+  <!-- small perimeter holes for flow -->
+  <circle cx="460" cy="619" r="3" fill="#1e2226" stroke="#444" stroke-width="0.7"/>
+  <circle cx="540" cy="619" r="3" fill="#1e2226" stroke="#444" stroke-width="0.7"/>
+  <circle cx="472" cy="635" r="3" fill="#1e2226" stroke="#444" stroke-width="0.7"/>
+  <circle cx="528" cy="635" r="3" fill="#1e2226" stroke="#444" stroke-width="0.7"/>
+</g>
+
+<!-- 7. GLASS CARAFE -->
+<g id="carafe">
+  <!-- handle (behind glass, on right) -->
+  <path d="M 612 690 C 672 690 690 720 690 760 L 690 880 C 690 920 670 950 612 950 L 612 930 C 648 930 666 916 666 880 L 666 760 C 666 732 648 710 612 710 Z" fill="#1e2226" stroke="#000" stroke-width="1.4"/>
+  <path d="M 618 715 C 652 715 668 730 668 760 L 668 880 C 668 910 652 925 618 925" fill="none" stroke="#3a3d40" stroke-width="2" opacity="0.35"/>
+  <!-- outer glass outline with spout -->
+  <!-- spout lip on left? Usually front; show on right side near top -->
+  <path d="M 385 695 L 385 1000 Q 385 1015 500 1022 Q 615 1015 615 1000 L 615 695 
+           Q 615 680 630 675 L 640 672 L 628 658 Q 615 652 615 640 Z
+           M 388 715 Q 388 700 400 695"
+         fill="none" stroke="#7fa0b6" stroke-width="0"/>
+  <!-- glass body fill -->
+  <path d="M 382 748 L 382 1040 Q 382 1057 500 1065 Q 618 1057 618 1040 L 618 730 Q 618 710 632 702 L 642 697 L 630 680 Q 618 672 618 690 L 618 662 Q 618 647 500 640 Q 382 647 382 662 Z" fill="url(#glassSide)" stroke="#8aa8bc" stroke-width="1.6"/>
+  <!-- inner wall (thickness) -->
+  <path d="M 392 745 L 392 1035 Q 392 1047 500 1055 Q 608 1047 608 1035 L 608 745" fill="none" stroke="#aac4d6" stroke-width="1.1" opacity="0.9"/>
+  <!-- top rim ellipses -->
+  <ellipse cx="500" cy="662" rx="118" ry="22" fill="none" stroke="#5f7d94" stroke-width="2.2"/>
+  <ellipse cx="500" cy="662" rx="118" ry="22" fill="#dfeaf1" opacity="0.55"/>
+  <ellipse cx="500" cy="662" rx="108" ry="16.5" fill="#6b8ca3" opacity="0.18"/>
+  <ellipse cx="500" cy="662" rx="108" ry="16.5" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.75"/>
+  <!-- measurement marks -->
+  <g stroke="#8aa8bc" stroke-width="1" opacity="0.7">
+    <line x1="395" y1="820" x2="415" y2="820"/><line x1="395" y1="860" x2="415" y2="860"/><line x1="395" y1="900" x2="415" y2="900"/><line x1="395" y1="940" x2="415" y2="940"/>
+  </g>
+  <!-- highlight on glass -->
+  <path d="M 405 700 Q 400 850 412 1025" stroke="#fff" stroke-width="3.5" opacity="0.28" fill="none" stroke-linecap="round"/>
+  <path d="M 595 700 Q 600 850 588 1010" stroke="#5a7a92" stroke-width="1.2" opacity="0.18" fill="none" stroke-linecap="round"/>
+  <!-- spout pour lip -->
+  <path d="M 618 680 L 648 670 L 635 695 Q 622 702 618 698 Z" fill="#d6e6f0" stroke="#8aa8bc" stroke-width="1.3" opacity="0.95"/>
+  <path d="M 625 682 L 642 676 L 632 690 Z" fill="#fff" opacity="0.55"/>
+</g>
+
+<!-- 8-9 BASE / frame foot -->
+<g id="base">
+  <ellipse cx="500" cy="1080" rx="125" ry="22" fill="#0f1112" stroke="#000" stroke-width="1.4"/>
+  <path d="M 375 1064 L 375 1084 Q 375 1097 500 1104 Q 625 1097 625 1084 L 625 1064 Z" fill="#1e2226" stroke="#000" stroke-width="1.2"/>
+  <ellipse cx="500" cy="1064" rx="125" ry="20" fill="#2b2f33" stroke="#000" stroke-width="1"/>
+  <ellipse cx="500" cy="1064" rx="115" ry="14" fill="none" stroke="#4a5056" stroke-width="1" opacity="0.6"/>
+</g>
+
+<!-- Leader lines from parts to labels -->
+<g stroke="#9aabb8" stroke-width="1" fill="none" opacity="0.95">
+  <!-- knob -->
+  <path d="M 526 135 H 700"/>
+  <!-- rod -->
+  <path d="M 505 250 H 700"/>
+  <!-- lid -->
+  <path d="M 605 410 H 700"/>
+  <!-- cross plate -->
+  <path d="M 582 532 H 700"/>
+  <!-- mesh -->
+  <path d="M 588 588 H 700"/>
+  <!-- spiral -->
+  <path d="M 582 625 H 700"/>
+  <!-- carafe -->
+  <path d="M 645 790 H 700"/>
+  <!-- handle -->
+  <path d="M 690 820 H 700"/>
+  <!-- base -->
+  <path d="M 625 1070 H 700"/>
+</g>
+<g font-family="Helvetica, Arial, sans-serif">
+  <text x="708" y="138" font-size="13" font-weight="700" fill="#1a2a33">1 — Plunger knob</text>
+  <text x="708" y="150" font-size="10.5" fill="#6a7a89">stainless + silicone</text>
+
+  <text x="708" y="253" font-size="13" font-weight="700" fill="#1a2a33">2 — Plunger rod</text>
+  <text x="708" y="265" font-size="10.5" fill="#6a7a89">Ø 6 mm stainless steel</text>
+
+  <text x="708" y="413" font-size="13" font-weight="700" fill="#1a2a33">3 — Lid</text>
+  <text x="708" y="425" font-size="10.5" fill="#6a7a89">with centre guide bush</text>
+
+  <text x="708" y="535" font-size="13" font-weight="700" fill="#1a2a33">4 — Cross plate</text>
+  <text x="708" y="547" font-size="10.5" fill="#6a7a89">top retainer (piece 1 of 3)</text>
+
+  <text x="708" y="591" font-size="13" font-weight="700" fill="#1a2a33">5 — Mesh filter</text>
+  <text x="708" y="603" font-size="10.5" fill="#6a7a89">fine stainless mesh (piece 2 of 3)</text>
+
+  <text x="708" y="628" font-size="13" font-weight="700" fill="#1a2a33">6 — Spiral plate</text>
+  <text x="708" y="640" font-size="10.5" fill="#6a7a89">perforated support (piece 3 of 3)</text>
+
+  <text x="708" y="728" font-size="13" font-weight="700" fill="#1a2a33">7 — Glass beaker</text>
+  <text x="708" y="740" font-size="10.5" fill="#6a7a89">borosilicate, with spout</text>
+
+  <text x="708" y="768" font-size="13" font-weight="700" fill="#1a2a33">8 — Handle &amp; frame</text>
+  <text x="708" y="780" font-size="10.5" fill="#6a7a89">polypropylene / steel</text>
+
+  <text x="708" y="1073" font-size="13" font-weight="700" fill="#1a2a33">9 — Base collar</text>
+  <text x="708" y="1085" font-size="10.5" fill="#6a7a89">protective foot</text>
+</g>
+
+<!-- Left side annotation: assembly detail -->
+<g font-family="Helvetica, Arial, sans-serif">
+  <rect x="28" y="700" width="148" height="88" rx="8" fill="#f3f6f8" stroke="#c2d0dc" stroke-width="1"/>
+  <text x="102" y="720" text-anchor="middle" font-size="10" font-weight="700" fill="#1a2a33" letter-spacing="1">DETAIL</text>
+  <text x="102" y="736" text-anchor="middle" font-size="10.5" fill="#3a4a5a">Three-piece filter</text>
+  <text x="102" y="750" text-anchor="middle" font-size="10.5" fill="#3a4a5a">stacks on rod:</text>
+  <text x="36" y="770" font-size="11" fill="#1a2a33">↳ cross plate</text>
+  <text x="36" y="784" font-size="11" fill="#1a2a33">↳ mesh disc</text>
+  <text x="36" y="798" font-size="11" fill="#1a2a33">↳ spiral plate</text>
+</g>
+
+<!-- Arrow double-head between filter stack -->
+<g stroke="#8a9aa8" stroke-width="0.9" fill="none" marker-end="none">
+  <line x1="325" y1="545" x2="325" y2="575" stroke-dasharray="0"/>
+  <path d="M325 548 L322 556 L328 556 Z" fill="#8a9aa8" stroke="none"/>
+  <path d="M325 572 L322 564 L328 564 Z" fill="#8a9aa8" stroke="none"/>
+  <line x1="325" y1="602" x2="325" y2="634" />
+  <path d="M325 605 L322 613 L328 613 Z" fill="#8a9aa8" stroke="none"/>
+  <path d="M325 631 L322 623 L328 623 Z" fill="#8a9aa8" stroke="none"/>
+</g>
+
+<!-- Footer -->
+<text x="500" y="1115" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#8a9aa8" letter-spacing="2">EXPLODED VIEW — NOT TO SCALE • FILTER PARTS SHOWN SEPARATED ON COMMON AXIS</text>
+<text x="500" y="1132" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#a8b8c8">Mesh disc is clamped between cross plate (above) and spiral plate (below) and secured by a coiled spring/washer on the rod.</text>
+
+</svg>

@@ -1,0 +1,9 @@
+\documentclass[tikz,border=10pt]{standalone}
+\begin{document}
+\begin{tikzpicture}
+\foreach \i/\name in {0/Has espresso,1/Has milk,2/Served cold} {
+  \draw[thick] ({120*\i+90}:1) circle (1.6);
+  \node at ({120*\i+90}:3) {\name};
+}
+\end{tikzpicture}
+\end{document}

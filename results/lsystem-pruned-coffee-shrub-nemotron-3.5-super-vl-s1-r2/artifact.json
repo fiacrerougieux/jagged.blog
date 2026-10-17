@@ -1,0 +1,44 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-nemotron-3.5-super-vl-s1-r2",
+  "exportedAt": "2026-10-16T04:45:55.073Z",
+  "run": "2026-10-16-lsystem-pruned-coffee-shrub-1539",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "nvidia/nemotron-3.5-super-vl",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": false,
+    "detail": "half a shrub: 0 of 31 branches off the main stem head left"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"F\",\n  \"rules\": {\n    \"F\": \"F[-G]F\",\n    \"G\": \"G[-G]G\"\n  },\n  \"angle\": 25,\n  \"iterations\": 5,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 11
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    }
+  ]
+}

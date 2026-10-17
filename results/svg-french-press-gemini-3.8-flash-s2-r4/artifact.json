@@ -9,7 +9,7 @@
   "model": "google/gemini-3.8-flash",
   "seed": 2,
   "round": 4,
-  "rounds": 3,
+  "rounds": 4,
   "grade": null,
   "recipe": "svg",
   "files": {
@@ -26,5 +26,27 @@
     "lines": 953
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": null
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": null
+    }
+  ]
 }

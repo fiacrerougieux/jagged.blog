@@ -9,7 +9,7 @@
   "model": "perceptron/perceptron-mk1.5",
   "seed": 2,
   "round": 8,
-  "rounds": 4,
+  "rounds": 8,
   "grade": {
     "pass": false,
     "detail": "cold brew in Has espresso; flat white in Has espresso & Has milk & Served cold; iced long black in Has espresso & Has milk & Served cold; milkshake in Has espresso & Has milk; pour-over in Has espresso; babyccino crosses a circle's edge; cold brew crosses a circle's edge; iced long black crosses a circle's edge; milkshake crosses a circle's edge; pour-over crosses a circle's edge; short black crosses a circle's edge"
@@ -30,5 +30,47 @@
     "lines": 41
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": null,
+      "pass": false
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": false
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": false
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": false
+    }
+  ]
 }

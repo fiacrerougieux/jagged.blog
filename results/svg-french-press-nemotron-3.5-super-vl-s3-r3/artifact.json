@@ -1,0 +1,47 @@
+{
+  "name": "svg-french-press-nemotron-3.5-super-vl-s3-r3",
+  "exportedAt": "2026-10-16T09:03:49.999Z",
+  "run": "2026-10-16-svg-french-press-2000",
+  "caseId": "svg-french-press",
+  "caseTitle": "SVG: exploded French press",
+  "category": "Vector and 2D",
+  "prompt": "Draw an exploded assembly diagram of a French press, as an SVG. Use the standard three-piece plunger filter rather than a two-piece travel press.",
+  "model": "nvidia/nemotron-3.5-super-vl",
+  "seed": 3,
+  "round": 3,
+  "rounds": 3,
+  "grade": null,
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "press.svg"
+  },
+  "source": {
+    "file": "press.svg",
+    "lang": "xml",
+    "text": "<svg width=\"560\" height=\"950\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"3.5\" orient=\"auto\">\n      <polygon points=\"0 0, 10 3.5, 0 7\" fill=\"#666\"/>\n    </marker>\n  </defs>\n\n  <!-- Background -->\n  <rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/>\n\n  <!-- Title -->\n  <text x=\"280\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"17\" font-weight=\"bold\" fill=\"#333\">French Press — Exploded Assembly</text>\n\n  <!-- ========================================= -->\n  <!-- Vertical center line (assembly axis) -->\n  <!-- ========================================= -->\n  <line x1=\"300\" y1=\"140\" x2=\"300\" y2=\"650\" stroke=\"#bbb\" stroke-width=\"1.5\" stroke-dasharray=\"7,5\"/>\n\n  <!-- ========================================= -->\n  <!-- Carafe (glass beaker) — bottom -->\n  <!-- ========================================= -->\n  <g id=\"carafe\">\n    <!-- Glass body -->\n    <rect x=\"190\" y=\"660\" width=\"220\" height=\"190\" rx=\"14\" ry=\"14\" fill=\"#e8f4fd\" stroke=\"#5a9bd4\" stroke-width=\"2\"/>\n    <!-- Bottom rim -->\n    <ellipse cx=\"300\" cy=\"660\" rx=\"110\" ry=\"11\" fill=\"none\" stroke=\"#5a9bd4\" stroke-width=\"2\"/>\n    <!-- Handle -->\n    <path d=\"M 410 660 Q 455 660 455 770 Q 455 860 410 860\" fill=\"none\" stroke=\"#5a9bd4\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <!-- Fill line -->\n    <line x1=\"196\" y1=\"720\" x2=\"404\" y2=\"720\" stroke=\"#5a9bd4\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  </g>\n\n  <!-- ========================================= -->\n  <!-- Plunger lid (top) -->\n  <!-- ========================================= -->\n  <g id=\"lid\">\n    <rect x=\"210\" y=\"70\" width=\"180\" height=\"30\" rx=\"5\" ry=\"5\" fill=\"#d9d9d9\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n    <ellipse cx=\"300\" cy=\"85\" rx=\"6\" ry=\"6\" fill=\"#4d4d4d\"/>\n    <text x=\"300\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" fill=\"#333\">Lid</text>\n  </g>\n\n  <!-- ========================================= -->\n  <!-- Plunger rod -->\n  <!-- ========================================= -->\n  <g id=\"rod\">\n    <rect x=\"294\" y=\"100\" width=\"12\" height=\"540\" rx=\"3\" ry=\"3\" fill=\"#bfbfbf\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n    <text x=\"314\" y=\"120\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"12\" fill=\"#333\">Plunger rod</text>\n  </g>\n\n  <!-- ========================================= -->\n  <!-- Three-piece filter assembly (exploded to the left of the rod) -->\n  <!-- ========================================= -->\n  <g id=\"filter\">\n    <text x=\"300\" y=\"160\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#333\">Three-piece filter</text>\n\n    <!-- Top plate -->\n    <g id=\"topplate\">\n      <rect x=\"150\" y=\"260\" width=\"110\" height=\"10\" rx=\"2\" ry=\"2\" fill=\"#b0b0b0\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n      <rect x=\"204\" y=\"252\" width=\"32\" height=\"26\" rx=\"3\" ry=\"3\" fill=\"#b0b0b0\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n      <text x=\"140\" y=\"266\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"11\" fill=\"#333\">Top plate</text>\n      <line x1=\"260\" y1=\"265\" x2=\"294\" y2=\"265\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"4,3\" marker-end=\"url(#arrowhead)\"/>\n    </g>\n\n    <!-- Mesh filter -->\n    <g id=\"mesh\">\n      <rect x=\"150\" y=\"370\" width=\"110\" height=\"6\" rx=\"1\" ry=\"1\" fill=\"#c8c8c8\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n      <line x1=\"154\" y1=\"373\" x2=\"256\" y2=\"373\" stroke=\"#4d4d4d\" stroke-width=\"0.7\" stroke-dasharray=\"2,2\"/>\n      <text x=\"140\" y=\"376\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"11\" fill=\"#333\">Mesh filter</text>\n      <line x1=\"260\" y1=\"373\" x2=\"294\" y2=\"373\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"4,3\" marker-end=\"url(#arrowhead)\"/>\n    </g>\n\n    <!-- Spring / bottom plate -->\n    <g id=\"springplate\">\n      <rect x=\"150\" y=\"480\" width=\"110\" height=\"10\" rx=\"2\" ry=\"2\" fill=\"#b0b0b0\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n      <ellipse cx=\"205\" cy=\"485\" rx=\"18\" ry=\"5\" fill=\"none\" stroke=\"#4d4d4d\" stroke-width=\"2\"/>\n      <text x=\"140\" y=\"486\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"11\" fill=\"#333\">Spring plate</text>\n      <line x1=\"260\" y1=\"485\" x2=\"294\" y2=\"485\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"4,3\" marker-end=\"url(#arrowhead)\"/>\n    </g>\n  </g>\n\n  <!-- ========================================= -->\n  <!-- Carafe label -->\n  <!-- ========================================= -->\n  <text x=\"300\" y=\"870\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" fill=\"#333\">Carafe</text>\n\n</svg>",
+    "truncated": false,
+    "lines": 86
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": null
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": null
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.png",
+      "pass": null
+    }
+  ]
+}

@@ -28,5 +28,47 @@
     "lines": 11
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.png",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": false
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": false
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": false
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": false
+    }
+  ]
 }

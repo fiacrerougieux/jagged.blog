@@ -1,0 +1,12 @@
+{
+  "axiom": "FFFX",
+  "rules": {
+    "X": "F[+A][-B]F[+A][-B]X",
+    "A": "F[+A][-A]",
+    "B": "F[+B]F",
+    "F": "F"
+  },
+  "angle": 28,
+  "iterations": 8,
+  "start_heading": 90
+}

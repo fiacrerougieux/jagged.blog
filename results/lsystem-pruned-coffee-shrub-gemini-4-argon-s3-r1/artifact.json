@@ -1,0 +1,33 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-gemini-4-argon-s3-r1",
+  "exportedAt": "2026-10-16T06:04:46.753Z",
+  "run": "2026-10-16-lsystem-pruned-coffee-shrub-1539",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "google/gemini-4-argon",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "the right side is a drawn line: one straight stroke 61.3 long on a side 91.0 high"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"Z\",\n  \"angle\": 15,\n  \"iterations\": 6,\n  \"start_heading\": 90,\n  \"rules\": {\n    \"Z\": \"[+++++FFFF+FFFF[v]][-----FFFF-FFFF[v]][+FFFF-FFFF[M]FFFFFFFF[M]FFFFFFFF[++++++H][+++++E][M]FFFFFFFF[M]FFFFFFFF[+++++D][++++++E][N]FFFFFFFF[+++++E]][-FFFF+FFFF[M]FFFFFFFF[M]FFFFFFFF[M]FFFFFFFF[N]FFFFFFFF][M]FFFFFF[M]FFFFFFFF[C][++++++E][+++++++H][------R][------r][M]FFFFFFFF[C][+++++D][++++++E][------R][------r][M]FFFFFFFF[C][+++++L][++++++D][------R][------r]X\",\n    \"X\": \"[M]FFFFFFFF[C][+++++L][++++++D][------R][------r][M]FFFFFFFF[C][+++++L][++++++D][------R][------r][M]FFFFFFFF[C][+++++L][++++++E][------R][------r][M]FFFFFFFF[C][+++++D][++++++E][------R][------r]A\",\n    \"A\": \"[M]FFFFFFFF[C][+++++D][++++++E][------R][------r][M]FFFFFFFF[C][+++++E][++++++H][------R][------r]W\",\n    \"W\": \"[M]FFFFFFF[C][+++++H][++++++J][------R][------r][N]FFFFFFF[C][+++++J][++++++K][------R][------r]I\",\n    \"I\": \"[N]FFFFFF[C][++++K][+++++Q][------R]FFFFF[C][+++Q][++++Q][--Q][+V][-V][++V][--V][V]\",\n    \"M\": \"[+f+++++++++++f------------FFFFFFFF][-f-----------f++++++++++++FFFFFFFF]N\",\n    \"N\": \"[++f++++++++++f------------FFFFFFFF][--f----------f++++++++++++FFFFFFFF]O\",\n    \"O\": \"[+++f+++++++++f------------FFFFFFFF][---f---------f++++++++++++FFFFFFFF]\",\n    \"m\": \"[+f+++++++++++f------------FFFFFFFF][-f-----------f++++++++++++FFFFFFFF]n\",\n    \"n\": \"[++f++++++++++f------------FFFFFFFF][--f----------f++++++++++++FFFFFFFF]\",\n    \"L\": \"[m]FFFF[+++v][---v]FFFF[C][+++V][---V][++U][--U]D\",\n    \"D\": \"+[m]FFFF[+++v][---v]FFFF[C][+++V][---V][++U][--U]E\",\n    \"E\": \"[m]FFFF[+++v][---v]FFFF[C][+++V][---V][+Y][-Y]H\",\n    \"H\": \"+FFFF[+++v][---v]FFFF[C][+++V][---V][+U][-U]J\",\n    \"J\": \"FFF[+++v][---v]FFFF[C][+++V][---V][+U][-U]K\",\n    \"K\": \"+FFF[+++v][---v]FFFF[C][++V][--V]Q\",\n    \"Q\": \"FF[++v][--v]FF[+v][-v]FF[v]\",\n    \"Y\": \"FFFF[+++v][---v]FFFF[C][++V][--V]U\",\n    \"U\": \"FFFF[++v][--v]FFF[C][++v][--v]FF[v]\",\n    \"R\": \"+[m]FFFF[+++v][---v]FFFF-[C][+++V][---V][s]S\",\n    \"r\": \"-[m]FFFF[+++v][---v]FFFF+[C][+++V][---V][S]s\",\n    \"S\": \"+[m]FFFF[+++v][---v]FFFF-[C][+++V][---V][t]T\",\n    \"s\": \"-[m]FFFF[+++v][---v]FFFF+[C][+++V][---V][T]t\",\n    \"T\": \"+FFFF[++++v][----v]FFFF-[C]P\",\n    \"t\": \"-FFFF[++++v][----v]FFFF+[C]P\",\n    \"P\": \"[+++++++++V][---------V][++++++++v][--------v][++++++FF+++F+F][------FF---F-F]p\",\n    \"p\": \"[+++++++FF[-FF][++v][+++v]F[-F][++v]][-------FF[+FF][--v][---v]F[+F][--v]][++++++FFF++++v][------FFF----v]\",\n    \"V\": \"[+++F-F-F--F-F-F][---F+F+F++F+F+F][++F-F-F--F-F][--F+F+F++F+F]F[+++F][---F]F[++F][--F]F[++F][--F]FF\",\n    \"v\": \"[++F-F--F-F][--F+F++F+F]F[++F][--F]F[+F][-F]FF\",\n    \"C\": \"[+F----F----F----F----F----F][-F++++F++++F++++F++++F++++F][++++F----F----F----F----F----F][----F++++F++++F++++F++++F++++F]\"\n  }\n}\n",
+    "truncated": false,
+    "lines": 39
+  },
+  "output": null,
+  "notes": [
+    "the SVG was over 3 MB, so only the PNG was kept."
+  ]
+}

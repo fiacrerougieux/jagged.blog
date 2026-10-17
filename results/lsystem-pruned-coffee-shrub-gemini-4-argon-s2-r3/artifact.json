@@ -1,0 +1,50 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-gemini-4-argon-s2-r3",
+  "exportedAt": "2026-10-16T05:42:25.294Z",
+  "run": "2026-10-16-lsystem-pruned-coffee-shrub-1539",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "google/gemini-4-argon",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": false,
+    "detail": "the right side is a drawn line: one straight stroke 75.0 long on a side 76.7 high"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"M\",\n  \"angle\": 15,\n  \"iterations\": 6,\n  \"start_heading\": 90,\n  \"rules\": {\n    \"M\": \"[+++++FFFF++++FFF][-----FFFF----FFF][+++++++FFFFFF][-------FFFFFF][--FFFF----FFFF++++++[2][g][p]++FF----FFFF++++FF--[2][b][g]][--FFFFFF++FF--FFFFFF++[b][2]++FF----FFFF++++FF--[v][b]++FF----FFFF++++FF--[v][w][b]][+++FFFF--FFFF-[N][P]+++FFFF---FFFF[L][N]++FFFF--FFFF[K][L]]W[1][p][d][N][P]W[1][d][p][L][N]W[a][1][d][K][L]V[a][1][d][K][L]V[u][a][1][J][K]V[u][a][1][J][K]U[u][a][I][J]U[u][a][I][J]U[u][a][I][Q][+I][++Q][-Q][--Q]\",\n    \"W\": \"FFFFFF[+F-FFFFF+F][-F+FFFFF-F][++F--FFFF+F][--F++FFFF-F]\",\n    \"V\": \"FFFFFF[+F-FFFFF+F][-F+FFFFF-F]\",\n    \"U\": \"FFFFF[+F-FFFF][-F+FFFF]\",\n    \"o\": \"[+F----F----F][-----F++++F++++F][+++++++++F----F----F]\",\n    \"l\": \"[+F-F-F-F][-F+F+F+F][++F--F--F][--F++F++F]FFF\",\n    \"k\": \"[+F-F-F][-F+F+F]FF\",\n    \"1\": \"[--FF----FF++++++][+F---FF----FF++++++]--FFo[+l][-----l]----FF++++FFo[+l][-----l]----FF++++++o[2][g]\",\n    \"2\": \"--FFo[+l][-----l]----FF++++FFo[+l][----l]----FF++++++o[3][h]\",\n    \"3\": \"--FFo[+k][----k]----FF++++FFo[++k][---------k]----FF++++++[5][e]\",\n    \"a\": \"[--FF----F++++FF++]--FFo[+l][----l]----F++++FFo[+l][----l]----F++++FF[+k][----k]----F++++++o[b][2]\",\n    \"b\": \"--FFo[+l][----l]----F++++FFo[+k][----k]----F++++FF[+k][----k]----F++++++o[c][3]\",\n    \"c\": \"--FFo[+k][----k]----F++++FFo[++k][--------k]----F++++FF[+++k][----------k]----F++++++[5][z]\",\n    \"u\": \"--FFo[+l][----l]----F++++FFo[+l][----l]----F++++FFFF[+k][----k]++o[v][b]\",\n    \"v\": \"--FFo[+l][----l]----F++++FFo[+k][----k]----F++++FFFF[+k][---k]++o[w][c]\",\n    \"w\": \"--FFo[+k][----k]----F++++FFo[++k][--------k]----F++++FFFF[+++k][----------k]++[5][e]\",\n    \"d\": \"--FFo[+l][-----l]----FFFo[++l][-----l]FF++++++o[g][2]\",\n    \"g\": \"--FFo[+l][-----l]----FFFo[++k][-----k]FF++++++o[h][3]\",\n    \"h\": \"--FFo[+k][----k]----FFFo[++++k][------k]FF++++++[e][z]\",\n    \"p\": \"------FFFo[++l][----l]----FFo[++k][---k]++++FF++++++o[q][g]\",\n    \"q\": \"------FFFo[++l][----l]----FFo[++k][---k]++++FF++++++o[r][h]\",\n    \"r\": \"------FFFo[++k][---k]----FFo[+++++k][----k]++++FF++++++[e][z]\",\n    \"5\": \"[F[+k][+++l]][++++++++++++F[-k][---l]][++l][+++++k][++++++++l]\",\n    \"e\": \"[F[++k][++++l]][++++++++++++F[--k][----l]][+++l][+++++++k]\",\n    \"z\": \"[F[+k]][++++++++++++F[-k]][++k][+++++l][+++++++++k]\",\n    \"I\": \"[+FF+FF----]+FFFo[-l][+++l]+FFFo[--l][+++l]+FFF---o[J][Q]\",\n    \"J\": \"[++FF++FF----]++FFFo[-l][+++l]+FFFo[--l][+++l]+FFF----o[K][Q]\",\n    \"K\": \"[+++FF+FF----]+++FFFo[-l][+++l]+FFFo[--l][+++l]+FFFF-----o[L][Q][R]\",\n    \"L\": \"[++++FF+FF-----]++++FFFo[-l][+++l]+FFFFo[--l][+++l]+FFF------o[N][Q][R]\",\n    \"N\": \"+++++FFFo[--l][+++l]+FFFFo[--l][+++l]+FFF-------o[P][R]\",\n    \"P\": \"+++++FFo[--l][+++l]+FFFo[--k][+++k]+FFFo[--k][+++k]+FF--------o[R][S]\",\n    \"Q\": \"+++FFFo[-k][+++k]+FFFo[--k][+++k]+FF-----o[S][T]\",\n    \"R\": \"++++FFo[--k][+++k]+FFFo[--k][+++k]+FFF------o[T][Y]\",\n    \"S\": \"+++FFo[--k][+++k]+FFo[--k][+++k]+FF[--k][+k][+++l][----k]-----\",\n    \"T\": \"+++++FFo[--k][+++k]+FFo[--k][+++k]+FF[--k][+k][++l][----k]-------\",\n    \"Y\": \"++++++FFo[--k][+++k]+FFo[--k][+++k]+FF[--k][+k][++l][---k]--------\"\n  }\n}\n",
+    "truncated": false,
+    "lines": 45
+  },
+  "output": null,
+  "notes": [
+    "the SVG was over 3 MB, so only the PNG was kept."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": false
+    }
+  ]
+}

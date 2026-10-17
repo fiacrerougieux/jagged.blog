@@ -1,0 +1,45 @@
+{
+  "name": "lsystem-pruned-coffee-shrub-gemini-4-argon-s1-r2",
+  "exportedAt": "2026-10-16T06:04:42.705Z",
+  "run": "2026-10-16-lsystem-pruned-coffee-shrub-1539",
+  "caseId": "lsystem-pruned-coffee-shrub",
+  "caseTitle": "L-system: hedge-pruned coffee shrub",
+  "category": "Mathematics",
+  "prompt": "Write an L-system as JSON with the keys axiom, rules, angle, iterations and start_heading for a coffee shrub that has been hedge-pruned flat along one side. F and G draw forward, f moves without drawing, + and - turn by the angle, [ and ] save and restore position.",
+  "model": "google/gemini-4-argon",
+  "seed": 1,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "grows on both sides with no drawn edge, so whether it looks pruned is for the eye; the sides stray left 3.1% and right 1.1% of the width from straight"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "source": "shrub.json"
+  },
+  "source": {
+    "file": "shrub.json",
+    "lang": "json",
+    "text": "{\n  \"axiom\": \"BTGGGG[++++++CFD][------p]T[+++++CF[-F+d]La][------p]T[+++++CF[-F+d]LA][------P]M[+++++CF[-F+d]LA][------P]M[++++CF[-F+d]LA][------P]M[++++CF[-F+d]La][------P]U[++++CF[-F+W]LD][------O]U[+++CF[-F+W]LD][------O]U[++++CF[-G+W]Ld][+++CF[-G+W]LE][++CLE][+CLE][------O]GGGG[CLE][-CLE][--CLE][---CLE][------O]\",\n  \"rules\": {\n    \"F\": \"FG\",\n    \"B\": \"[+++++FF+F+F][++++++FFF-F][------FF-F-F][-----FFF+F][++GGGG--M[+++++CFD]M[++++CFD]U[+++CLE]][--GGGGGGGG++M[+CLE][--CLE]M[+CLE][--CLE]U[+CLE]]\",\n    \"T\": \"[+G-GGGGGGG-G+][-G+GGGGGGG+G-][++G--GGGGGGG--G++][--G++GGGGGGG++G--][+++G---GGGGGGG---G+++][---G+++GGGGGGG+++G---]GGGGGGGG\",\n    \"M\": \"[+G-GGGGGGG-G+][-G+GGGGGGG+G-][++G--GGGGGGG--G++][--G++GGGGGGG++G--]GGGGGGGG\",\n    \"U\": \"[+G-GGGGGG-G+][-G+GGGGGG+G-]GGGGGGG\",\n    \"K\": \"[++++G-G-G][++G+G+G][+++GGG][----G+G+G][--G-G-G][---GGG]\",\n    \"L\": \"[++++G-G-G-G][+G+G+G+G][++G+GG-G][----G+G+G+G][-G-G-G-G][--G-GG+G][++G-K][--G+K]\",\n    \"C\": \"[+G----G----G----G][+++G----G----G----G][-----G++++G++++G++++G][--G++++G++++G++++G]\",\n    \"A\": \"[+G-FFF][-G+FFF]FC[--F+d]FL[++F-d]F+La\",\n    \"a\": \"[+G-FFF]FCL[-F+d]FL[+F-d]FLA\",\n    \"D\": \"[+G-FF]FCL[-F+d]FL[+F-d]+d\",\n    \"d\": \"FL[-F+W]FL[+F-W]+D\",\n    \"E\": \"[+G-GGG]GGCL[--GG+W][++GG-W]+W\",\n    \"W\": \"GGGL[--GG+K][++GG-K]+K\",\n    \"O\": \"[+G-++GGGG--][--G+++GGGG--]++GGCGG--+GLG-Q\",\n    \"P\": \"[+G-++GG--GG][--G+++GG--GG]++GGC----GG+++GLG-Q\",\n    \"p\": \"[+G-+GG---GG][-G++GG---GG]+GGC---GG+GLG--GG++Q\",\n    \"Q\": \"+GG-L[++GGGG--LR][++GG----GG++LR][--GGGG++LR]\",\n    \"R\": \"+GG-K[++GGG--+G-KS][++GG----G+++G-KS][--GGG++-G+KS]\",\n    \"S\": \"+G-K[+GG-+++GG---][+GG-+++G---G][+GG----GG+++][+G--G++++GG---][-G++G+---GG+++][-GG++++GG---][-GG+---G+++G][-GG+---GG+++]\"\n  },\n  \"angle\": 15,\n  \"iterations\": 4,\n  \"start_heading\": 90\n}\n",
+    "truncated": false,
+    "lines": 29
+  },
+  "output": null,
+  "notes": [
+    "the SVG was over 3 MB, so only the PNG was kept."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    }
+  ]
+}

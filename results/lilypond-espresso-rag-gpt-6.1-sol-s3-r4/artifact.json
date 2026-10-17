@@ -9,7 +9,7 @@
   "model": "openai/gpt-6.1-sol",
   "seed": 3,
   "round": 4,
-  "rounds": 3,
+  "rounds": 4,
   "grade": null,
   "recipe": "lilypond",
   "files": {
@@ -27,5 +27,27 @@
     "lines": 82
   },
   "output": null,
-  "notes": []
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": null,
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.png",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.png",
+      "pass": true
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.png",
+      "pass": true
+    }
+  ]
 }
