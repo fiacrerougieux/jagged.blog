@@ -1,0 +1,83 @@
+---
+title: "What do models like to do when given the opportunity?"
+date: 2026-10-18
+type: "experiment"
+tags: ["taste", "interactive", "open-ended"]
+description: "I asked eight models for something small and interactive I would not have thought to ask for."
+tldr: "Three ideas came up more than once: moths at a light, slime moulds and paper boats."
+task: "unasked-piece"
+caseId: "unasked-piece"
+models: ["anthropic/claude-opus-5.5", "anthropic/claude-haiku-5.5", "openai/gpt-6.1-sol", "openai/gpt-6-luna", "mistralai/mistral-large-4-0", "deepseek/deepseek-v4.1-flash", "z-ai/glm-5.3-flashx", "google/gemini-4-argon"]
+skipProseCheck: true
+currentQuestion: true
+---
+
+<Finding>
+  {/* Yours to write. */}
+</Finding>
+
+The prompt was one line: make something small and interactive in piece.html that I would not have thought to ask for, any subject, working offline.
+
+All the pieces that came back are below, grouped by subject. They are the live pages, so you can click and drag them.
+
+## Real things to play with
+
+An orrery,  coastline, the tides, hermit crabs swapping shells, fireflies falling into step.
+
+<SideBySide>
+  <Artifact name="unasked-piece-mistral-large-4-0-s3-r2" code={false} downloads={false} alt="Coloured planets on orbits around a star, with more you can throw in." caption="Mistral Large 4, run 3. Pocket orrery." />
+  <Artifact name="unasked-piece-claude-opus-5.5-s2-r3" code={false} downloads={false} alt="Earth with two ocean bulges, a Moon and Sun to drag, and a harbour scene with a boat rising against a pier." caption="Opus 5.5, run 2. Pull the Tide." />
+  <Artifact name="unasked-piece-claude-opus-5.5-s1-r3" code={false} downloads={false} alt="An island coastline walked by a pair of dividers, with a ruler slider and a small plot of length against ruler size." caption="Opus 5.5, run 1. How long is this coast?" />
+  <Artifact name="unasked-piece-claude-haiku-5.5-s2-r3" code={false} downloads={false} alt="Fireflies in a dark field, some blinking together, with a meter in the corner showing how many are in step." caption="Haiku 5.5, run 2. Fireflies." />
+  <Artifact name="unasked-piece-claude-opus-5.5-s3-r3" code={false} downloads={false} alt="A beach with hermit crabs of different sizes lined up beside empty shells." caption="Opus 5.5, run 3. Vacancy Chain." />
+</SideBySide>
+
+## Moths and slime
+
+DeepSeek 4.1 Flash and Mistral Large 4 these sort of interactive content.
+
+<SideBySide>
+  <Artifact name="unasked-piece-deepseek-v4.1-flash-s2-r5" code={false} downloads={false} alt="Moths tracing spirals around a candle flame under a crescent moon." caption="DeepSeek 4.1 Flash, run 2. Moth and Flame." />
+  <Artifact name="unasked-piece-mistral-large-4-0-s1-r5" code={false} downloads={false} alt="Moths orbiting a warm hanging bulb in a dark, starry room." caption="Mistral Large 4, run 1. Moth Lamp." />
+  <Artifact name="unasked-piece-deepseek-v4.1-flash-s3-r3" code={false} downloads={false} alt="Glowing green veins of a slime mould spreading across a dark dish." caption="DeepSeek 4.1 Flash, run 3. Physarum." />
+  <Artifact name="unasked-piece-mistral-large-4-0-s2-r5" code={false} downloads={false} alt="Bright slime trails linking blobs of food on a dark background, with a crumbs counter." caption="Mistral Large 4, run 2. Plasmodium. It ran out of time." />
+</SideBySide>
+
+## Paper boats and thoughts
+
+Both OpenAI models made more text based content.
+
+<SideBySide cols={3}>
+  <Artifact name="unasked-piece-gpt-6-luna-s1-r3" code={false} downloads={false} alt="A dark sea with small paper boats, each carrying a folded note." caption="GPT-6 Luna, run 1. The Almost Ocean." />
+  <Artifact name="unasked-piece-gpt-6-luna-s2-r4" code={false} downloads={false} alt="An illustrated garden with flowers and a row of made-up seeds to plant." caption="GPT-6 Luna, run 2. The Garden for Unmade Things." />
+  <Artifact name="unasked-piece-gpt-6-luna-s3-r2" code={false} downloads={false} alt="A night sky of stars to join into a constellation, which then gets a name and a reading." caption="GPT-6 Luna, run 3. A pocket sky." />
+  <Artifact name="unasked-piece-gpt-6.1-sol-s3-r3" code={false} downloads={false} alt="A pond with paper boats floating on it, and controls below to add a thought or a gust." caption="GPT-6.1 Sol, run 3. Drift." />
+  <Artifact name="unasked-piece-gpt-6.1-sol-s1-r4" code={false} downloads={false} alt="A cloud raining words onto the page, with a rainfall slider and a sun to click." caption="GPT-6.1 Sol, run 1. The Pocket Weather Bureau." />
+  <Artifact name="unasked-piece-gpt-6.1-sol-s2-r2" code={false} downloads={false} alt="A rain cloud over five rooftops that each play a note, with a rainfall control." caption="GPT-6.1 Sol, run 2. The Rooftop Quintet." />
+</SideBySide>
+
+## Glowing nature
+
+GLM 5.3 FlashX made night gardenso.
+
+<SideBySide cols={3}>
+  <Artifact name="unasked-piece-glm-5.3-flashx-s1-r3" code={false} downloads={false} alt="Glowing trees and blossoms growing on a dark hill under stars, with fireflies." caption="GLM 5.3 FlashX, run 1. Ink Garden." />
+  <Artifact name="unasked-piece-glm-5.3-flashx-s3-r6" code={false} downloads={false} alt="Luminous trees swaying at night with fireflies drifting between them." caption="GLM 5.3 FlashX, run 3. Ink Garden again." />
+  <Artifact name="unasked-piece-glm-5.3-flashx-s2-r3" code={false} downloads={false} alt="A meadow of dandelion seed heads on a dark ground, with seeds blowing away." caption="GLM 5.3 FlashX, run 2. Seedhead." />
+  <Artifact name="unasked-piece-claude-haiku-5.5-s1-r3" code={false} downloads={false} alt="An orange fish in a pond at dusk among lily pads." caption="Haiku 5.5, run 1. A Shy Fish in a Small Pond." />
+  <Artifact name="unasked-piece-claude-haiku-5.5-s3-r3" code={false} downloads={false} alt="Patches of lichen spreading over grey granite." caption="Haiku 5.5, run 3. Lichen." />
+  <Artifact name="unasked-piece-deepseek-v4.1-flash-s1-r7" code={false} downloads={false} alt="Glowing coloured dots clustering into cell-like blobs on a dark background." caption="DeepSeek 4.1 Flash, run 1. Primordial." />
+</SideBySide>
+
+## Nothing
+
+Gemini 4 Argon made nothing. All three runs went quiet mid-reply and OpenRouter cut them off.
+
+The checker only tests whether poking the page changes the picture more than leaving it alone. It is no good here. Opus's tides and crabs move on their own, and random clicks miss the Moon, so it fails.
+
+<Verdict n="3 runs a model">
+  {/* Yours to write. */}
+</Verdict>
+
+{/* cost: 2026-10-17-unasked-piece-2039, 2026-10-18-unasked-piece-2003 */}
+The 21 runs cost $2.95, and 3 runs that failed cost $0.04 more.
