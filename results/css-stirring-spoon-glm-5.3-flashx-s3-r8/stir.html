@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+html,body{margin:0;padding:0;background:#f2ead9;}
+.stage{position:relative;width:600px;height:600px;overflow:hidden;background:#f2ead9;}
+
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes spinRev{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}
+
+/* saucer */
+.saucer{
+  position:absolute;left:140px;top:392px;width:320px;height:56px;
+  background:linear-gradient(180deg,#faf6ee,#cfc7b8);
+  border-radius:50%;
+  box-shadow:0 10px 14px rgba(0,0,0,.18);
+}
+.saucer:after{
+  content:"";position:absolute;left:60px;top:6px;width:200px;height:30px;
+  background:#e9e2d4;border-radius:50%;
+}
+/* cup */
+.cup{
+  position:absolute;left:185px;top:165px;width:230px;height:225px;
+  background:linear-gradient(90deg,#c74343,#f28383 30%,#e26060 65%,#a83a3a);
+  border-radius:14px 14px 80px 80px / 14px 14px 120px 120px;
+}
+/* cup handle */
+.cuphandle{
+  position:absolute;left:388px;top:225px;width:62px;height:74px;
+  border:17px solid #c24545;
+  border-left-color:transparent;
+  border-radius:50%;
+}
+.cup:before{ /* rim */
+  content:"";position:absolute;left:-9px;top:-15px;width:248px;height:66px;
+  background:linear-gradient(90deg,#bb3d3d,#f79a9a 40%,#cc4c4c);
+  border-radius:50%;
+  box-shadow:inset 0 5px 8px rgba(0,0,0,.18);
+}
+.coffee{
+  position:absolute;left:8px;top:-4px;width:214px;height:46px;
+  background:radial-gradient(ellipse at 40% 32%, #8a5a33, #4a2c15 65%, #2e1b0c);
+  border-radius:50%;
+  box-shadow:inset 0 4px 10px rgba(0,0,0,.55);
+}
+/* foam swirls rotating with spoon */
+.swirl{
+  position:absolute;left:193px;top:161px;width:214px;height:46px;
+  border-radius:50%;
+  animation:spin 3s linear infinite;
+}
+.swirl i{
+  position:absolute;border:2px solid rgba(215,175,125,.5);
+  border-radius:50%;border-top-color:transparent;
+}
+.swirl i:nth-child(1){left:50px;top:9px;width:115px;height:26px;}
+.swirl i:nth-child(2){left:80px;top:14px;width:58px;height:15px;}
+.swirl i:nth-child(3){left:98px;top:17px;width:24px;height:8px;}
+
+/* elliptical shadow of spoon on the coffee, rotating */
+.shadow{
+  position:absolute;left:300px;top:183px;width:0;height:0;
+  animation:spin 3s linear infinite;
+}
+.shadow i{
+  position:absolute;left:-46px;top:-6px;width:64px;height:12px;
+  background:rgba(15,8,0,.45);border-radius:50%;
+  filter:blur(3px);
+}
+
+/* spoon orbit around coffee-surface center; spoon tilted, bowl dips in */
+.orbit{
+  position:absolute;left:300px;top:180px;width:0;height:0;
+  animation:spin 3s linear infinite;
+}
+.counter{
+  position:absolute;left:19px;top:0;width:0;height:0;
+  animation:spinRev 3s linear infinite;
+}
+.spoon{
+  position:absolute;
+  width:30px;height:150px;
+  left:-63px;top:-128px;
+  transform:rotate(60deg);
+  transform-origin:15px 128px;       /* pivot at bowl center */
+}
+.bowl{
+  position:absolute;left:1px;top:110px;width:28px;height:36px;
+  background:linear-gradient(90deg,#9d9dab,#f4f4fa 45%,#84848f);
+  border-radius:14px 14px 15px 15px;
+}
+.bowl:after{
+  content:"";position:absolute;left:3px;top:4px;width:22px;height:28px;
+  background:linear-gradient(90deg,#3a2210,#6b4023 50%,#2e1b0c);
+  border-radius:50%;
+}
+.handle{
+  position:absolute;left:11px;top:-4px;width:9px;height:116px;
+  background:linear-gradient(90deg,#adadbb,#f0f0f6 45%,#8f8f9e);
+  border-radius:5px;
+}
+
+/* steam */
+.steam,.steam:before,.steam:after{
+  position:absolute;background:rgba(255,255,255,.55);
+  width:8px;height:80px;border-radius:8px;
+  filter:blur(5px);
+  animation:puff 3s ease-in-out infinite;
+}
+.steam{left:250px;top:40px;}
+.steam:before{content:"";left:55px;top:12px;animation-delay:.9s;}
+.steam:after{content:"";left:-55px;top:18px;animation-delay:1.7s;}
+@keyframes puff{
+  0%{opacity:0;transform:translateY(20px) scaleY(.7);}
+  50%{opacity:.75;}
+  100%{opacity:0;transform:translateY(-25px) scaleY(1.15);}
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="saucer"></div>
+  <div class="cuphandle"></div>
+  <div class="cup"><div class="coffee"></div></div>
+  <div class="swirl"><i></i><i></i><i></i></div>
+  <div class="shadow"><i></i></div>
+  <div class="orbit"><div class="counter">
+    <div class="spoon">
+      <div class="handle"></div>
+      <div class="bowl"></div>
+    </div>
+  </div></div>
+  <div class="steam"></div>
+</div>
+</body>
+</html>

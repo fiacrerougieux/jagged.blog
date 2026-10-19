@@ -1,0 +1,48 @@
+{
+  "id": "css-stirring-spoon",
+  "title": "A spoon stirring in a cup, in HTML and CSS",
+  "short": "Stirring spoon",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Using only HTML and CSS, with no JavaScript, SVG or images, make a cup of coffee with a spoon stirring round and round inside it.",
+  "groundTruth": "HTML and CSS alone, a continuous loop, and a cup seen from slightly above. The file is read for the brief and for the loop: an @keyframes rule that changes a position or a transform, named by an element, with the iteration count set to infinite. The picture is four moments of the animation, left to right, taken at 0.4 s, 1.2 s, 2.0 s and 2.8 s. Whether the rim reads as an ellipse seen from above, whether the spoon passes behind the far rim on the back half of its circuit, and whether the handle stays on the bowl are judged by eye from the page the run rendered, with the four frames as a first look.",
+  "checks": [
+    {
+      "id": "html_css_only",
+      "label": "HTML and CSS only",
+      "how": "No <script>, <svg>, <img>, <canvas>, <iframe>, external url(...) or javascript: URL in the file.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "loop",
+      "label": "A CSS loop that moves something",
+      "how": "An @keyframes rule that changes a transform, a translation, a rotation or an offset between stops, named in an animation on an element, with the iteration count infinite. It does not know which element moves: on 2026-10-19 a GLM run passed it by turning the coffee surface while the spoon stood still, and the eye checks are what caught that.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "surface",
+      "label": "Reads as a cup seen into",
+      "how": "The coffee surface is visible inside a rim that has some thickness, whether that is an ellipse seen from slightly above or a ring seen from straight down. A flat disc with no rim, or a cup whose inside cannot be seen, fails it.",
+      "decidedBy": "eye"
+    },
+    {
+      "id": "stirs",
+      "label": "The spoon does the stirring",
+      "how": "The spoon itself, bowl and handle together, travels round inside the opening, so its place changes across the loop. Judge it from the live page or the video, since the four still moments can show almost the same instant. A file whose only motion is in the coffee surface, with the spoon stood still at the rim, fails it.",
+      "decidedBy": "eye"
+    },
+    {
+      "id": "inside",
+      "label": "Reads as inside the cup",
+      "how": "The bowl stays within the rim of the opening and the handle leaves over the near edge, so the spoon reads as in the drink rather than laid on top of the picture. A spoon drawn across the cup mouth in front of the rim for the whole turn fails it, which is the trap.",
+      "decidedBy": "eye"
+    },
+    {
+      "id": "attached",
+      "label": "Handle stays on the bowl",
+      "how": "The handle meets the bowl of the spoon in every frame. A handle that separates, points the wrong way or is missing fails it.",
+      "decidedBy": "eye"
+    }
+  ],
+  "harder": "Ask for the spoon to stir along the side of the cup, so the bowl has to stay inside the rim at every angle of the loop while the four sampled moments show only four of them."
+}

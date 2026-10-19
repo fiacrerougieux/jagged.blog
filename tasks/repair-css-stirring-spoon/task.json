@@ -1,0 +1,25 @@
+{
+  "id": "repair-css-stirring-spoon",
+  "title": "Repair: a stirring spoon laid across the mouth of the cup",
+  "short": "Spoon repair",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "This cup of coffee with a spoon stirring in it was made for this board, in HTML and CSS. One thing is wrong with it: the spoon lies across the mouth of the cup instead of going into the drink, so it reads as resting on top while the coffee turns underneath. Fix that and change nothing else: the same cup, saucer, colours and movement.",
+  "groundTruth": "GLM 5.3 FlashX drew this cup on 2026-10-19. The spoon's bowl sits at the back of the opening with the handle laid across it toward the near rim, so the spoon reads as resting on the cup while the coffee surface turns under it. The fix is a change of z-order: the handle has to pass behind the near rim and the bowl has to sit in the drink. Nothing in the file can be measured for it, because both arrangements use the same shapes in the same places, so the eye decides it and `unchanged` guards the rest.",
+  "checks": [
+    {
+      "id": "inside",
+      "label": "In the drink",
+      "how": "The bowl stays within the rim of the opening and the handle leaves over the near edge. Judge it from the live page or the video, since the four still moments can land within a tenth of the loop.",
+      "decidedBy": "eye",
+      "rule": "A spoon drawn across the cup mouth in front of the rim for the whole turn fails, which is the file the run was handed."
+    },
+    {
+      "id": "unchanged",
+      "label": "Kept the brief and the loop",
+      "how": "The HTML and CSS survived, with no script, image or canvas added, and the loop still moves something.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Hand it a cup where the spoon is right and the coffee turns the wrong way, so the fixed spoon has to be left alone."
+}

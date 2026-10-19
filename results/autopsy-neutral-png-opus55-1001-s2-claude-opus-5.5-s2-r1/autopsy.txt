@@ -1,0 +1,20 @@
+Yes, the diagram is essentially correct.
+
+Explanation:
+- Stack order along the central axis, top to bottom, matches how a standard
+  (Bodum-style) French press goes together: knob, lid, plunger rod, filter
+  assembly, glass beaker, frame/handle.
+- The knob threads onto the top of the rod, and the rod passes through the
+  centre bore of the lid. The rod is drawn threaded at both ends, which is right.
+- Filter assembly order is right: the spiral plate is on top (its spring coil
+  rim seals against the glass), then the mesh screen, then the cross plate,
+  which clamps the mesh up against the spiral plate. The retaining nut at the
+  bottom threads onto the rod end and holds the stack together.
+- The beaker's spout and the lid's pour notch both face right, and the frame
+  handle is on the left, opposite the spout. That is the correct orientation.
+- The beaker drops into the frame, which has a base and feet.
+
+Minor nitpick (labelling, not assembly): the "3-piece filter" bracket also
+covers part 7, the retaining nut. The filter itself is three pieces (4-6), and
+the nut is a separate fastener. That is a small labelling inaccuracy, not a
+mistake in the parts or their order.

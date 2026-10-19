@@ -1,0 +1,67 @@
+{
+  "name": "css-stirring-spoon-glm-5.3-flashx-s2-r6",
+  "exportedAt": "2026-10-18T22:59:01.619Z",
+  "run": "2026-10-19-css-stirring-spoon",
+  "caseId": "css-stirring-spoon",
+  "caseTitle": "CSS: spoon stirring a cup",
+  "category": "Vector and 2D",
+  "prompt": "Using only HTML and CSS, with no JavaScript, SVG or images, make a cup of coffee with a spoon stirring round and round inside it.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 2,
+  "round": 6,
+  "rounds": 6,
+  "grade": {
+    "pass": true,
+    "detail": "4 @keyframes: rip, spin, steam, stir; spin changes transform; repeats forever"
+  },
+  "recipe": "snap-html",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "stir.html"
+  },
+  "source": {
+    "file": "stir.html",
+    "lang": "html",
+    "text": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nhtml,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}\n.scene{position:relative;width:100vw;height:100vh;\n  background:linear-gradient(#efe4d2,#dccbae);}\n.table{position:absolute;left:0;top:72%;width:100%;height:28%;\n  background:linear-gradient(#b98d5a,#8a5e35);}\n/* saucer */\n.saucer{position:absolute;left:22%;top:70%;width:56%;height:14%;\n  background:radial-gradient(ellipse at 50% 38%, #ffffff 42%, #e2ddd4 75%, #c9c2b3 100%);\n  border-radius:50%;\n  box-shadow:0 8px 14px rgba(0,0,0,.3);}\n/* cup body */\n.cup{position:absolute;left:31%;top:49%;width:38%;height:26%;\n  background:linear-gradient(90deg,#d8d2c8 0%,#ffffff 28%,#f4f1ea 55%,#c9c2b5 100%);\n  border-radius:0 0 50% 50% / 0 0 78% 78%;\n  box-shadow:inset 0 -14px 20px rgba(0,0,0,.12);}\n/* cup handle */\n.cuphandle{position:absolute;left:64.5%;top:53%;width:6.5%;height:11%;\n  border:14px solid #e8e2d8;border-radius:50%;\n  border-left-color:transparent;\n  box-shadow:3px 4px 5px rgba(0,0,0,.12);}\n/* rim */\n.rim{position:absolute;left:29%;top:41%;width:42%;height:12%;\n  background:#f7f4ee;border-radius:50%;\n  box-shadow:inset 0 5px 9px rgba(0,0,0,.18);}\n/* coffee */\n.coffee{position:absolute;left:30.4%;top:42.8%;width:39.2%;height:9.5%;\n  background:radial-gradient(ellipse at 50% 45%, #6b3d1e 55%, #4a2610 85%, #371b0a 100%);\n  border-radius:50%;\n  overflow:hidden;}\n/* rotating cream swirl */\n.swirl{position:absolute;left:50%;top:50%;width:0;height:0;\n  animation:spin 2.4s linear infinite;}\n.swirl i{position:absolute;left:-12px;top:-95px;width:24px;height:95px;\n  background:linear-gradient(rgba(238,200,150,1),rgba(238,200,150,0));\n  border-radius:50%;\n  transform-origin:12px 95px;\n  opacity:1;}\n.swirl i:nth-child(1){transform:rotate(0deg);}\n.swirl i:nth-child(2){transform:rotate(90deg);}\n.swirl i:nth-child(3){transform:rotate(180deg);}\n.swirl i:nth-child(4){transform:rotate(270deg);}\n@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}\n/* ripple rings */\n.ripple{position:absolute;left:50%;top:50%;border:3px solid rgba(230,190,140,.85);\n  border-radius:50%;animation:rip 2.4s linear infinite;}\n.r1{width:20%;height:44%;margin:-22% 0 0 -10%;}\n.r2{width:40%;height:88%;margin:-44% 0 0 -20%;animation-delay:.8s;}\n.r3{width:62%;height:132%;margin:-66% 0 0 -31%;animation-delay:1.6s;}\n@keyframes rip{0%{transform:scale(.25);opacity:0;}25%{opacity:.8;}100%{transform:scale(1.3);opacity:0;}}\n/* spoon: pivot above rim, handle dips into coffee, bowl sweeps through it */\n.spoon{position:absolute;left:44%;top:19%;width:0;height:0;\n  transform-origin:0 0;\n  animation:stir 2.4s ease-in-out infinite alternate;}\n@keyframes stir{from{transform:rotate(-20deg);}to{transform:rotate(20deg);}}\n.handle{position:absolute;left:-6px;top:0;width:12px;height:120px;\n  background:linear-gradient(90deg,#f4f4f4,#a7acb1 60%,#71777d);\n  border-radius:6px;\n  box-shadow:0 2px 3px rgba(0,0,0,.25);}\n.knob{position:absolute;left:-9px;top:-14px;width:15px;height:22px;\n  background:linear-gradient(#fdfdfd,#8b9096);border-radius:8px;}\n.bowl{position:absolute;left:-19px;top:110px;width:44px;height:38px;\n  background:radial-gradient(ellipse at 38% 32%, #f0f2f4, #9aa0a6 62%, #5f656b);\n  border-radius:50%;\n  box-shadow:0 3px 5px rgba(0,0,0,.35);}\n/* steam */\n.steam{position:absolute;top:12%;width:5px;height:24%;\n  background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.8),rgba(255,255,255,0));\n  border-radius:5px;\n  animation:steam 3s ease-in-out infinite;\n  transform-origin:bottom;}\n.s1{left:47%;}\n.s2{left:50%;animation-delay:1s;height:20%;}\n.s3{left:44%;animation-delay:2s;height:22%;}\n@keyframes steam{0%{transform:translateY(14px) scaleY(.4) rotate(-6deg);opacity:0;}\n  40%{opacity:.8;}100%{transform:translateY(-46px) scaleY(1.1) rotate(20deg);opacity:0;}}\n</style>\n</head>\n<body>\n<div class=\"scene\">\n  <div class=\"table\"></div>\n  <div class=\"saucer\"></div>\n  <div class=\"cuphandle\"></div>\n  <div class=\"cup\"></div>\n  <div class=\"rim\"></div>\n  <div class=\"coffee\">\n    <div class=\"swirl\"><i></i><i></i><i></i><i></i></div>\n    <div class=\"ripple r1\"></div>\n    <div class=\"ripple r2\"></div>\n    <div class=\"ripple r3\"></div>\n  </div>\n  <div class=\"spoon\">\n    <div class=\"knob\"></div>\n    <div class=\"handle\"></div>\n    <div class=\"bowl\"></div>\n  </div>\n  <div class=\"steam s1\"></div>\n  <div class=\"steam s2\"></div>\n  <div class=\"steam s3\"></div>\n</div>\n</body>\n</html>\n",
+    "truncated": false,
+    "lines": 106
+  },
+  "output": null,
+  "notes": [
+    "5s of CSS animation, seeked frame by frame."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": true
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    }
+  ]
+}

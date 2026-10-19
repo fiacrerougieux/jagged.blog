@@ -1,0 +1,1 @@
+Using only HTML and CSS, with no JavaScript, SVG or images, make a cup of coffee with a spoon stirring round and round inside it.

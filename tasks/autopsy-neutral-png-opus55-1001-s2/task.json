@@ -1,0 +1,18 @@
+{
+  "id": "autopsy-neutral-png-opus55-1001-s2",
+  "title": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "short": "Verdict, good press",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "groundTruth": "This is Opus 5.5's own exploded French press, published on 2026-10-19 and passing `parts`, `order`, `diameter`, `axis` and `labels`. Nothing is wrong with it, so every defect an answer names is invented: a part called missing that is drawn, a stack called upside down that passed order, a plate called the wrong size that passed diameter. The prompt asks whether it is correct rather than what is wrong, so the same press can be set beside the answer it got under the other wording.",
+  "checks": [
+    {
+      "id": "invented",
+      "label": "Invents nothing",
+      "how": "Nothing the answer calls wrong is something this press was checked and found right on. An answer that names no defect and says nothing is wrong passes; one that leaves no answer at all is undecided.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Ask a model to mark the same press out of ten, where a numeric score leaves less room to hedge."
+}

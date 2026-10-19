@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s1-r1",
+  "exportedAt": "2026-10-19T06:59:49.568Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1755",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "named 0 of 1, missed the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "Yes. As far as I can tell, the diagram is correct.\n\nWhy:\n- Stacking order: knob, lid, plunger rod, filter, retaining nut, glass beaker,\n  frame. That is the real assembly order from top to bottom.\n- Every part is centred on the red dash-dot axis, so the rod runs straight\n  through the knob, the lid bore, all three filter discs and the nut.\n- The 3-piece filter is a cross plate, a mesh screen and a spiral plate,\n  held on by a nut at the bottom of the rod. The spiral plate's coil edge is\n  drawn, and the filter discs are about as wide as the inside of the beaker,\n  which they need to be to seal.\n- The beaker spout and the lid's pour lip are both on the right. The frame\n  handle is on the left, opposite the spout, which is how a real press is\n  built. The beaker's volume marks are also on the right.\n- The callouts 1-9 each point at the right part, and the notes are accurate:\n  the knob threads onto the rod, the rod is threaded at both ends, and the\n  beaker drops into the frame.\n\nOne caveat: makers order the filter discs differently. Some put the spiral\nplate on top and the cross plate at the bottom. Either way the press works,\nand this drawing matches its own labels (\"clamps screen to spiral plate\"),\nso I don't count that as an error.\n",
+    "truncated": false,
+    "lines": 23
+  },
+  "output": null,
+  "notes": []
+}

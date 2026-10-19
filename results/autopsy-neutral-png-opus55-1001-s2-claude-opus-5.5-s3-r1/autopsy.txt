@@ -1,0 +1,23 @@
+NO - the diagram is not correct.
+
+Main error: the three filter pieces are stacked in the wrong order.
+- The diagram shows, from top to bottom: spiral plate (4), mesh screen (5),
+  cross plate (6), then the retaining nut (7).
+- On a real plunger the cross plate sits on top. It is the spoked disc you
+  see when you look down into the press. The mesh screen goes in the middle,
+  and the spiral plate goes on the bottom. Its spring coil around the rim
+  presses out against the glass, and the nut or threaded foot holds the
+  whole stack on the end of the rod.
+- So parts 4 and 6 need to swap places. The cross plate clamps the screen
+  down onto the spiral plate from above.
+
+Labeling error: the bracket marked "3-piece filter" covers four parts. It
+runs from the spiral plate down to the retaining nut. The nut is a fastener,
+not one of the three filter pieces, so the bracket should stop at the
+lowest filter plate.
+
+Parts that look right:
+- Knob, lid, rod and filter stack all sit on one center axis.
+- The lid's pour notch lines up with the beaker spout.
+- The handle is on the opposite side from the spout.
+- The beaker is drawn a little narrower than the frame, so it can drop in.

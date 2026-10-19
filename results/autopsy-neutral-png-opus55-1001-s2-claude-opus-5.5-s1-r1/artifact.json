@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s1-r1",
+  "exportedAt": "2026-10-19T06:55:59.370Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 1,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "2 invented"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No.\n\nThe filter stack (parts 4-6) is drawn in the wrong order.\n\nOn a standard French press plunger (Bodum-style), the order from the rod\ndownward is:\n\n  cross plate  ->  mesh filter screen  ->  spiral plate  ->  retaining nut\n\nThe cross plate with its spokes sits on top. It threads onto the rod and\nbacks the mesh. The spiral plate, whose spring-coil rim seals against the\nglass, sits at the bottom of the stack, and the retaining nut screws up\nagainst it. When you turn a real plunger over, the spiral plate and the nut\nare the parts you see.\n\nThe diagram flips this. It puts the spiral plate (4) on top and the cross\nplate (6) right above the nut (7). If you assembled it this way, the\nspoked cross plate would face the coffee grounds and the spiral plate\nwould not be clamped by the nut.\n\nFix: swap parts 4 and 6, so the order is 4 Cross plate, 5 Mesh, 6 Spiral\nplate, 7 Retaining nut. Then change the note on the cross plate to say it\n\"threads onto rod, backs the mesh\".\n\nThe rest looks right: knob on top of the rod, rod through the lid bore,\nrod threaded at both ends, all parts on one axis, and the beaker drops into\nthe frame. The beaker spout and the lid's pour opening are both on the\nright, opposite the handle on the left, which is correct.\n",
+    "truncated": false,
+    "lines": 29
+  },
+  "output": null,
+  "notes": []
+}

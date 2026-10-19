@@ -1,0 +1,20 @@
+No. The filter stack is shown in the wrong order for a conventional
+three-piece French press filter: the cross plate and spiral plate
+are reversed.
+
+The diagram shows, from top to bottom:
+  Cross plate (4) -> mesh screen (5) -> spiral plate (6).
+
+The correct order, from the lid toward the coffee grounds, is:
+  Spiral/spring plate (6) -> mesh screen (5) -> cross plate (4).
+
+The spiral plate belongs above the mesh. Its perimeter spring keeps
+the screen's edge snug against the glass, limiting grounds bypass.
+The cross plate belongs below the mesh, supporting it against the
+upward force from the grounds and liquid as the plunger is pressed.
+The mesh is sandwiched between these two plates.
+
+Swap parts 4 and 6 in the drawing and correct their descriptions.
+The knob, lid, rod, beaker, and frame are otherwise broadly plausible.
+The exact threaded fastener arrangement varies by model; a separate
+retaining nut is not universal and is not the main error here.

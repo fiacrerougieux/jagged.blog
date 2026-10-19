@@ -1,0 +1,77 @@
+{
+  "name": "css-stirring-spoon-glm-5.3-flashx-s3-r8",
+  "exportedAt": "2026-10-18T22:59:27.752Z",
+  "run": "2026-10-19-css-stirring-spoon",
+  "caseId": "css-stirring-spoon",
+  "caseTitle": "CSS: spoon stirring a cup",
+  "category": "Vector and 2D",
+  "prompt": "Using only HTML and CSS, with no JavaScript, SVG or images, make a cup of coffee with a spoon stirring round and round inside it.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 3,
+  "round": 8,
+  "rounds": 8,
+  "grade": {
+    "pass": true,
+    "detail": "3 @keyframes: puff, spin, spinRev; spin changes transform; repeats forever"
+  },
+  "recipe": "snap-html",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "stir.html"
+  },
+  "source": {
+    "file": "stir.html",
+    "lang": "html",
+    "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\nhtml,body{margin:0;padding:0;background:#f2ead9;}\n.stage{position:relative;width:600px;height:600px;overflow:hidden;background:#f2ead9;}\n\n@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}\n@keyframes spinRev{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}\n\n/* saucer */\n.saucer{\n  position:absolute;left:140px;top:392px;width:320px;height:56px;\n  background:linear-gradient(180deg,#faf6ee,#cfc7b8);\n  border-radius:50%;\n  box-shadow:0 10px 14px rgba(0,0,0,.18);\n}\n.saucer:after{\n  content:\"\";position:absolute;left:60px;top:6px;width:200px;height:30px;\n  background:#e9e2d4;border-radius:50%;\n}\n/* cup */\n.cup{\n  position:absolute;left:185px;top:165px;width:230px;height:225px;\n  background:linear-gradient(90deg,#c74343,#f28383 30%,#e26060 65%,#a83a3a);\n  border-radius:14px 14px 80px 80px / 14px 14px 120px 120px;\n}\n/* cup handle */\n.cuphandle{\n  position:absolute;left:388px;top:225px;width:62px;height:74px;\n  border:17px solid #c24545;\n  border-left-color:transparent;\n  border-radius:50%;\n}\n.cup:before{ /* rim */\n  content:\"\";position:absolute;left:-9px;top:-15px;width:248px;height:66px;\n  background:linear-gradient(90deg,#bb3d3d,#f79a9a 40%,#cc4c4c);\n  border-radius:50%;\n  box-shadow:inset 0 5px 8px rgba(0,0,0,.18);\n}\n.coffee{\n  position:absolute;left:8px;top:-4px;width:214px;height:46px;\n  background:radial-gradient(ellipse at 40% 32%, #8a5a33, #4a2c15 65%, #2e1b0c);\n  border-radius:50%;\n  box-shadow:inset 0 4px 10px rgba(0,0,0,.55);\n}\n/* foam swirls rotating with spoon */\n.swirl{\n  position:absolute;left:193px;top:161px;width:214px;height:46px;\n  border-radius:50%;\n  animation:spin 3s linear infinite;\n}\n.swirl i{\n  position:absolute;border:2px solid rgba(215,175,125,.5);\n  border-radius:50%;border-top-color:transparent;\n}\n.swirl i:nth-child(1){left:50px;top:9px;width:115px;height:26px;}\n.swirl i:nth-child(2){left:80px;top:14px;width:58px;height:15px;}\n.swirl i:nth-child(3){left:98px;top:17px;width:24px;height:8px;}\n\n/* elliptical shadow of spoon on the coffee, rotating */\n.shadow{\n  position:absolute;left:300px;top:183px;width:0;height:0;\n  animation:spin 3s linear infinite;\n}\n.shadow i{\n  position:absolute;left:-46px;top:-6px;width:64px;height:12px;\n  background:rgba(15,8,0,.45);border-radius:50%;\n  filter:blur(3px);\n}\n\n/* spoon orbit around coffee-surface center; spoon tilted, bowl dips in */\n.orbit{\n  position:absolute;left:300px;top:180px;width:0;height:0;\n  animation:spin 3s linear infinite;\n}\n.counter{\n  position:absolute;left:19px;top:0;width:0;height:0;\n  animation:spinRev 3s linear infinite;\n}\n.spoon{\n  position:absolute;\n  width:30px;height:150px;\n  left:-63px;top:-128px;\n  transform:rotate(60deg);\n  transform-origin:15px 128px;       /* pivot at bowl center */\n}\n.bowl{\n  position:absolute;left:1px;top:110px;width:28px;height:36px;\n  background:linear-gradient(90deg,#9d9dab,#f4f4fa 45%,#84848f);\n  border-radius:14px 14px 15px 15px;\n}\n.bowl:after{\n  content:\"\";position:absolute;left:3px;top:4px;width:22px;height:28px;\n  background:linear-gradient(90deg,#3a2210,#6b4023 50%,#2e1b0c);\n  border-radius:50%;\n}\n.handle{\n  position:absolute;left:11px;top:-4px;width:9px;height:116px;\n  background:linear-gradient(90deg,#adadbb,#f0f0f6 45%,#8f8f9e);\n  border-radius:5px;\n}\n\n/* steam */\n.steam,.steam:before,.steam:after{\n  position:absolute;background:rgba(255,255,255,.55);\n  width:8px;height:80px;border-radius:8px;\n  filter:blur(5px);\n  animation:puff 3s ease-in-out infinite;\n}\n.steam{left:250px;top:40px;}\n.steam:before{content:\"\";left:55px;top:12px;animation-delay:.9s;}\n.steam:after{content:\"\";left:-55px;top:18px;animation-delay:1.7s;}\n@keyframes puff{\n  0%{opacity:0;transform:translateY(20px) scaleY(.7);}\n  50%{opacity:.75;}\n  100%{opacity:0;transform:translateY(-25px) scaleY(1.15);}\n}\n</style>\n</head>\n<body>\n<div class=\"stage\">\n  <div class=\"saucer\"></div>\n  <div class=\"cuphandle\"></div>\n  <div class=\"cup\"><div class=\"coffee\"></div></div>\n  <div class=\"swirl\"><i></i><i></i><i></i></div>\n  <div class=\"shadow\"><i></i></div>\n  <div class=\"orbit\"><div class=\"counter\">\n    <div class=\"spoon\">\n      <div class=\"handle\"></div>\n      <div class=\"bowl\"></div>\n    </div>\n  </div></div>\n  <div class=\"steam\"></div>\n</div>\n</body>\n</html>\n",
+    "truncated": false,
+    "lines": 139
+  },
+  "output": null,
+  "notes": [
+    "4.7s of CSS animation, seeked frame by frame."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    },
+    {
+      "round": 4,
+      "png": "rounds/004.jpg",
+      "pass": true
+    },
+    {
+      "round": 5,
+      "png": "rounds/005.jpg",
+      "pass": true
+    },
+    {
+      "round": 6,
+      "png": "rounds/006.jpg",
+      "pass": true
+    },
+    {
+      "round": 7,
+      "png": "rounds/007.jpg",
+      "pass": true
+    },
+    {
+      "round": 8,
+      "png": "rounds/008.jpg",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s4-r1",
+  "exportedAt": "2026-10-19T06:56:06.575Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 4,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "Yes, mostly. As an exploded assembly of a standard French press (Bodum-style), the diagram is essentially correct.\n\nWhy it holds up:\n- Every part sits on one shared vertical axis (the red dash-dot center line), in the order the parts actually go together, from top to bottom.\n- 1 Knob threads onto the top of 2 the plunger rod. The rod passes through the center bore of 3 the lid, so the lid sits between the knob and the filter. That is right.\n- The plunger rod is threaded at both ends: the knob goes on the top end and the filter stack on the bottom end.\n- The 3-piece filter (4 spiral plate, 5 mesh screen, 6 cross plate) is a real stack. The spiral plate's coil spring seals against the glass, the mesh is held between the two plates, and the cross plate clamps it.\n- 7 Retaining nut goes on last, under the stack, and holds it on the rod.\n- 8 The glass beaker drops into 9 the frame. The beaker spout (right) lines up with the pour notch in the lid (right) and sits opposite the handle (left). That is correct.\n- The sizes make sense: the beaker fits inside the frame, and the filter discs are about the beaker's inside diameter.\n\nMinor nitpicks (they don't make it wrong):\n- There is a small unlabeled piece floating just above the lid. It looks like the top of the lid bore or a bushing. It should either get a label or be drawn as part of the lid.\n- The lid is drawn a little narrower than the beaker rim. Real lids are about the same width as the rim, or have a lip that fits into it.\n- Some makers stack the spiral plate and cross plate the other way around. The order shown is still a valid arrangement.\n",
+    "truncated": false,
+    "lines": 16
+  },
+  "output": null,
+  "notes": []
+}

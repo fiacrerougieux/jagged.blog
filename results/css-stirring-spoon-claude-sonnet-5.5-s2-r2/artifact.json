@@ -1,0 +1,47 @@
+{
+  "name": "css-stirring-spoon-claude-sonnet-5.5-s2-r2",
+  "exportedAt": "2026-10-18T23:01:08.255Z",
+  "run": "2026-10-19-css-stirring-spoon",
+  "caseId": "css-stirring-spoon",
+  "caseTitle": "CSS: spoon stirring a cup",
+  "category": "Vector and 2D",
+  "prompt": "Using only HTML and CSS, with no JavaScript, SVG or images, make a cup of coffee with a spoon stirring round and round inside it.",
+  "model": "anthropic/claude-sonnet-5.5",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "2 @keyframes: o, r; o changes transform; repeats forever"
+  },
+  "recipe": "snap-html",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "stir.html"
+  },
+  "source": {
+    "file": "stir.html",
+    "lang": "html",
+    "text": "<!DOCTYPE html><html><head><style>\nbody{margin:0;background:#d9c7ad;height:100vh;display:flex;align-items:center;justify-content:center}\n.s{position:relative;width:400px;height:400px;top:50px}\n.saucer{position:absolute;left:30px;top:290px;width:340px;height:70px;border-radius:50%;background:#eee;box-shadow:0 10px 15px #0004,inset 0 -6px 0 #ccc}\n.handle{position:absolute;left:285px;top:150px;width:80px;height:100px;border:20px solid #fafafa;border-radius:50%;box-sizing:border-box;box-shadow:inset 0 0 0 2px #ddd}\n.cup{position:absolute;left:60px;top:110px;width:260px;height:210px;background:linear-gradient(90deg,#ddd,#fff 30%,#fff 60%,#ccc);border-radius:0 0 130px 130px/0 0 190px 190px;box-shadow:inset -10px -8px 20px #0002}\n.rim{position:absolute;left:50px;top:90px;width:280px;height:70px;border-radius:50%;background:#fff;box-shadow:inset 0 -3px 4px #bbb}\n.cof{position:absolute;left:60px;top:97px;width:260px;height:56px;border-radius:50%;background:radial-gradient(ellipse,#6b3d1e,#3a1c0a 80%);overflow:hidden}\n.sw{position:absolute;left:50%;top:50%;width:150px;height:30px;margin:-15px 0 0 -75px;border-radius:50%;border:3px solid #a8703f;border-color:#a8703f transparent transparent transparent;animation:r 2s linear infinite}\n.sw2{width:90px;height:16px;margin:-8px 0 0 -45px;animation-duration:1.4s}\n@keyframes r{to{transform:rotate(360deg)}}\n.orbit{position:absolute;left:190px;top:125px;width:0;height:0;animation:o 1.6s linear infinite}\n@keyframes o{from{transform:translate(-55px,0)}25%{transform:translate(0,9px)}50%{transform:translate(55px,0)}75%{transform:translate(0,-9px)}to{transform:translate(-55px,0)}}\n.spoon{position:absolute;left:0;top:0;width:14px;height:175px;transform-origin:50% 100%;margin:-175px 0 0 -7px;transform:rotate(25deg)}\n.spoon:before{content:\"\";position:absolute;left:5px;top:0;width:5px;height:150px;background:linear-gradient(90deg,#999,#eee,#888);border-radius:3px}\n.spoon:after{content:\"\";position:absolute;left:-3px;top:145px;width:20px;height:30px;border-radius:50%;background:radial-gradient(#fff,#aaa)}\n.front{position:absolute;left:60px;top:125px;width:260px;height:100px;overflow:hidden;clip-path:inset(0 0 0 0)}\n</style></head><body><div class=\"s\">\n<div class=\"saucer\"></div><div class=\"handle\"></div><div class=\"cup\"></div><div class=\"rim\"></div>\n<div class=\"cof\"><div class=\"sw\"></div><div class=\"sw sw2\"></div></div>\n<div class=\"orbit\"><div class=\"spoon\"></div></div>\n</div></body></html>\n",
+    "truncated": false,
+    "lines": 23
+  },
+  "output": null,
+  "notes": [
+    "2s of CSS animation, seeked frame by frame."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    }
+  ]
+}

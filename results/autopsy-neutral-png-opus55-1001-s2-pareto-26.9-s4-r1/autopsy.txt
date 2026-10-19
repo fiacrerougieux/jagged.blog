@@ -1,0 +1,20 @@
+Yes, as a schematic of a conventional French press.
+
+The main parts and their assembly order are consistent:
+- The knob attaches to the top of the plunger rod, which slides through
+  the lid's central opening.
+- Below the rod, the filter stack is ordered correctly: spring/spiral
+  plate on top, fine mesh screen in the middle, and cross/support plate
+  underneath. The spring-loaded rim holds the mesh against the beaker
+  wall, helping keep grounds from passing around its edge.
+- The lower fastening holds the filter assembly together on the rod.
+- The glass beaker sits in the outer frame, which carries the handle.
+
+This is an exploded view: the gaps between parts are for illustration,
+not gaps that remain in the assembled press. The filter operates inside
+the beaker, with the lid seated at the top.
+
+Two minor qualifications: the fastening arrangement varies by model
+(some cross plates thread directly onto the rod), and the "3-piece
+filter" bracket should cover parts 4-6 only, not the separate nut at 7.
+Neither changes the basic assembly shown.

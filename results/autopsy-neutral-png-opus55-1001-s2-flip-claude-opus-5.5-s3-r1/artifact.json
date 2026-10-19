@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s3-r1",
+  "exportedAt": "2026-10-19T06:59:52.209Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1755",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No.\n\nMost of the diagram is right. Every part sits on one centre axis, in the\nright top-to-bottom order: knob, lid, plunger rod, filter, retaining nut,\nglass beaker, frame. The knob is above the lid, so it threads onto the rod\nafter the rod passes through the lid's bore. The lid's pour notch lines up\nwith the beaker's spout. The beaker drops into the frame.\n\nThe error is the 3-piece filter, which is drawn upside down. The diagram\nshows, from the top: cross plate (4), mesh screen (5), spiral plate (6),\nthen the nut (7).\n\nIn a real plunger (the Bodum-style design shown here) the order from the\nrod end is: spiral plate, then mesh screen, then cross plate, then the nut.\nThe spiral plate carries the spring coil that seals against the glass, and\nit sits on top. The mesh is sandwiched under it. The cross plate is the\nbottom piece, and the nut tightens against it. That is what squeezes the\nmesh up against the spiral plate.\n\nThe diagram's own label for part 4 says it \"clamps screen to spiral plate\".\nThat only works if the cross plate is on the side opposite the spiral\nplate, next to the nut. As drawn, the cross plate sits on top with nothing\nto press it down, and the nut bears straight on the spiral plate. So the\ncross plate clamps nothing.\n\nFix: reverse parts 4 and 6, giving spiral plate, mesh, cross plate, nut,\nfrom top to bottom.\n",
+    "truncated": false,
+    "lines": 28
+  },
+  "output": null,
+  "notes": []
+}

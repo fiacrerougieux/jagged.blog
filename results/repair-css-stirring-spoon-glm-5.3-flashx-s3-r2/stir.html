@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#f2ead9;}
+  .scene{position:relative;width:400px;height:420px;margin:0 auto;overflow:hidden;}
+  .saucer{position:absolute;left:60px;top:300px;width:280px;height:70px;background:#c94f3d;border-radius:50%;z-index:1;}
+  .saucer::after{content:"";position:absolute;left:90px;top:16px;width:100px;height:26px;background:#a83c2d;border-radius:50%;}
+  .cup{position:absolute;left:110px;top:135px;width:180px;height:175px;background:#fff;
+       border-radius:6px 6px 95px 95px / 6px 6px 135px 135px;
+       box-shadow:inset 0 14px 0 rgba(0,0,0,0.05);z-index:2;}
+  .handle{position:absolute;left:282px;top:170px;width:50px;height:75px;border:13px solid #fff;border-radius:50%;
+          border-left-color:transparent;z-index:2;}
+  .arm{position:absolute;left:120px;top:-22px;width:160px;height:300px;z-index:7;
+       animation:stir 2.4s linear infinite;}
+  .stick{position:absolute;left:120px;top:0;width:9px;height:184px;
+         background:linear-gradient(90deg,#bdbdbd,#f2f2f2,#a8a8a8);border-radius:5px;
+         transform:rotate(-18deg);transform-origin:50% 100%;}
+  .bowl{position:absolute;left:112px;top:160px;width:40px;height:26px;
+        background:radial-gradient(ellipse at 45% 35%,#f7f7f7 35%,#b5b5b5 75%,#8f8f8f);
+        border-radius:50%;transform:rotate(-18deg);z-index:6;}
+  @keyframes stir{
+    0%{transform:translate(0,0);}
+    25%{transform:translate(30px,8px);}
+    50%{transform:translate(0,16px);}
+    75%{transform:translate(-30px,8px);}
+    100%{transform:translate(0,0);}
+  }
+  .rim{position:absolute;left:102px;top:124px;width:196px;height:42px;background:#fff;border-radius:50%;z-index:4;}
+  .coffee{position:absolute;left:116px;top:131px;width:168px;height:31px;background:#4a2a12;border-radius:50%;
+          overflow:hidden;z-index:5;}
+  .crema{position:absolute;inset:0;border-radius:50%;
+         background:radial-gradient(ellipse at 50% 45%,#6b4322 55%,#4a2a12 100%);}
+  .swirl{position:absolute;left:20px;top:6px;width:120px;height:19px;border:5px solid #c08a4a;border-radius:50%;
+         transform-origin:50% 50%;animation:spin 2.4s linear infinite;}
+  .swirl2{position:absolute;left:45px;top:8px;width:70px;height:14px;border:4px solid #d9ac6e;border-radius:50%;
+          transform-origin:50% 50%;animation:spin 2.4s linear infinite reverse;}
+  @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="saucer"></div>
+  <div class="cup"></div>
+  <div class="handle"></div>
+  <div class="arm">
+    <div class="stick"></div>
+    <div class="bowl"></div>
+  </div>
+  <div class="rim"></div>
+  <div class="coffee">
+    <div class="crema"></div>
+    <div class="swirl"></div>
+    <div class="swirl2"></div>
+  </div>
+</div>
+</body>
+</html>

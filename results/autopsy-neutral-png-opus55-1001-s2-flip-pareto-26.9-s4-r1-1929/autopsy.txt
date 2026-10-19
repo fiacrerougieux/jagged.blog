@@ -1,0 +1,18 @@
+No. The filter stack is reversed for a conventional three-piece French press.
+
+The diagram puts the cross plate (4) above the mesh (5) and the spiral plate
+(6) below it. The usual order, from the lid toward the bottom of the beaker,
+is:
+
+  plunger rod -> spiral/spring plate -> mesh screen -> cross plate
+
+The spring-edged spiral plate belongs above the mesh, with its perimeter
+spring holding the mesh edge against the glass. The cross plate belongs
+underneath, supporting the mesh against the upward force during plunging.
+Swap parts 4 and 6 and revise the cross-plate description accordingly.
+
+The fastening arrangement varies by model: many presses screw the rod into
+a threaded hub on the bottom cross plate rather than use a separate retaining
+nut. A separate nut is not inherently wrong if the parts are designed for it.
+
+The knob, lid, rod, beaker, and outer frame are otherwise arranged plausibly.

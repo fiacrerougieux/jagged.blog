@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-pareto-26.9-s4-r1",
+  "exportedAt": "2026-10-19T06:59:58.447Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1755",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "unbiased/pareto-26.9",
+  "seed": 4,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No. The filter stack is upside down relative to the usual three-piece French press assembly.\n\nThe diagram puts the cross plate (4) above the mesh screen (5), with the spring-edged spiral plate (6) below it. The usual order, from the lid toward the coffee grounds, is:\n\n  Plunger rod\n  Spiral plate with its perimeter spring\n  Mesh filter screen\n  Cross plate\n  Threaded fastening at the bottom\n\nThe spiral plate's perimeter spring holds the mesh edge against the beaker wall, helping prevent grounds from bypassing the screen. The cross plate supports the mesh from below as the plunger pushes down. Swap parts 4 and 6 in the drawing; leave the mesh between them.\n\nThe separate retaining nut (7) is design-dependent, not necessarily an error. Many presses instead screw the rod directly into a threaded hub on the bottom cross plate. The drawing should specify which fastening arrangement it represents.\n\nThe rest of the overall layout is plausible: the knob attaches to the rod above the lid, the rod slides through the lid, and the glass beaker sits in the frame. This is a schematic, so its exploded spacing is not itself a problem. However, the bracket labeled \"3-piece filter\" should cover only the three filter layers, not also the separately labeled retaining nut.\n",
+    "truncated": false,
+    "lines": 16
+  },
+  "output": null,
+  "notes": []
+}

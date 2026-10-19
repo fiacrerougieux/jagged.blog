@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s5-r1",
+  "exportedAt": "2026-10-19T06:59:55.688Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1755",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 5,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No.\n\nMost of the diagram is right. The knob threads onto the rod, the rod passes through the lid, and the glass beaker drops into the frame with its spout opposite the handle. All parts sit on one centre line. The filter stack, though, is drawn upside down.\n\n1. The filter layers are in the wrong order. On a real plunger (Bodum style), the order from the top is: spiral plate, then mesh screen, then cross plate, then the retaining nut screwed onto the bottom of the rod. The spiral plate sits on top so its coil can wrap the edge of the mesh and seal against the glass. The cross plate is the stiff spoked disc at the bottom. It backs the mesh from below so the nut can clamp the stack tight. The diagram has the cross plate (4) on top and the spiral plate (6) at the bottom, right above the nut. As drawn, the nut would press on the spiral plate, and nothing would hold the mesh up from below.\n\n2. The bracket labelled \"3-piece filter\" also covers the retaining nut (7). So it brackets four parts, not three. The bracket should end at the spiral/cross plate, or the label should say \"filter assembly\".\n\nFix: swap parts 4 and 6, so the order from the top is spiral plate, mesh, cross plate, nut. Fix the cross plate caption to match, for example \"backs the screen; nut clamps against it\". Shorten the bracket so it covers only the three filter discs.\n",
+    "truncated": false,
+    "lines": 10
+  },
+  "output": null,
+  "notes": []
+}

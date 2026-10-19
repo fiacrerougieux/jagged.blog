@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-pareto-26.9-s4-r1-1929",
+  "exportedAt": "2026-10-19T08:31:11.955Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1929",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "unbiased/pareto-26.9",
+  "seed": 4,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No. The filter stack is reversed for a conventional three-piece French press.\n\nThe diagram puts the cross plate (4) above the mesh (5) and the spiral plate\n(6) below it. The usual order, from the lid toward the bottom of the beaker,\nis:\n\n  plunger rod -> spiral/spring plate -> mesh screen -> cross plate\n\nThe spring-edged spiral plate belongs above the mesh, with its perimeter\nspring holding the mesh edge against the glass. The cross plate belongs\nunderneath, supporting the mesh against the upward force during plunging.\nSwap parts 4 and 6 and revise the cross-plate description accordingly.\n\nThe fastening arrangement varies by model: many presses screw the rod into\na threaded hub on the bottom cross plate rather than use a separate retaining\nnut. A separate nut is not inherently wrong if the parts are designed for it.\n\nThe knob, lid, rod, beaker, and outer frame are otherwise arranged plausibly.\n",
+    "truncated": false,
+    "lines": 19
+  },
+  "output": null,
+  "notes": []
+}

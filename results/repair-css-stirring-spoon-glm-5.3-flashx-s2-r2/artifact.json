@@ -1,0 +1,47 @@
+{
+  "name": "repair-css-stirring-spoon-glm-5.3-flashx-s2-r2",
+  "exportedAt": "2026-10-19T01:14:54.755Z",
+  "run": "2026-10-19-repair-css-stirring-spoon-1159",
+  "caseId": "repair-css-stirring-spoon",
+  "caseTitle": "Repair: a stirring spoon laid across the mouth of the cup",
+  "category": "Vector and 2D",
+  "prompt": "This cup of coffee with a spoon stirring in it was made for this board, in HTML and CSS. One thing is wrong with it: the spoon lies across the mouth of the cup instead of going into the drink, so it reads as resting on top while the coffee turns underneath. Fix that and change nothing else: the same cup, saucer, colours and movement.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 2,
+  "round": 2,
+  "rounds": 2,
+  "grade": {
+    "pass": true,
+    "detail": "still passing: html_css_only, loop"
+  },
+  "recipe": "snap-html",
+  "files": {
+    "poster": "poster.png",
+    "video": "video.mp4",
+    "live": "live.html",
+    "source": "stir.html"
+  },
+  "source": {
+    "file": "stir.html",
+    "lang": "html",
+    "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n  html,body{margin:0;padding:0;background:#f2ead9;}\n  .scene{position:relative;width:400px;height:420px;margin:0 auto;overflow:hidden;}\n  .saucer{position:absolute;left:60px;top:300px;width:280px;height:70px;background:#c94f3d;border-radius:50%;z-index:1;}\n  .saucer::after{content:\"\";position:absolute;left:90px;top:16px;width:100px;height:26px;background:#a83c2d;border-radius:50%;}\n  .cup{position:absolute;left:110px;top:135px;width:180px;height:175px;background:#fff;\n       border-radius:6px 6px 95px 95px / 6px 6px 135px 135px;\n       box-shadow:inset 0 14px 0 rgba(0,0,0,0.05);z-index:2;}\n  .handle{position:absolute;left:282px;top:170px;width:50px;height:75px;border:13px solid #fff;border-radius:50%;\n          border-left-color:transparent;z-index:2;}\n  .arm{position:absolute;left:83px;top:-8px;width:160px;height:300px;z-index:7;\n       animation:stir 2.4s linear infinite;}\n  .stick{position:absolute;left:120px;top:0;width:9px;height:186px;\n         background:linear-gradient(90deg,#bdbdbd,#f2f2f2,#a8a8a8);border-radius:5px;\n         transform:rotate(-18deg);transform-origin:50% 100%;}\n  .bowl{position:absolute;left:112px;top:148px;width:40px;height:26px;\n        background:radial-gradient(ellipse at 45% 35%,#f7f7f7 35%,#b5b5b5 75%,#8f8f8f);\n        border-radius:50%;transform:rotate(-18deg);z-index:6;}\n  @keyframes stir{\n    0%{transform:translate(0,0);}\n    25%{transform:translate(30px,8px);}\n    50%{transform:translate(0,16px);}\n    75%{transform:translate(-30px,8px);}\n    100%{transform:translate(0,0);}\n  }\n  .rim{position:absolute;left:102px;top:124px;width:196px;height:42px;background:#fff;border-radius:50%;z-index:4;}\n  .coffee{position:absolute;left:116px;top:131px;width:168px;height:31px;background:#4a2a12;border-radius:50%;\n          overflow:hidden;z-index:5;}\n  .crema{position:absolute;inset:0;border-radius:50%;\n         background:radial-gradient(ellipse at 50% 45%,#6b4322 55%,#4a2a12 100%);}\n  .swirl{position:absolute;left:20px;top:6px;width:120px;height:19px;border:5px solid #c08a4a;border-radius:50%;\n         transform-origin:50% 50%;animation:spin 2.4s linear infinite;}\n  .swirl2{position:absolute;left:45px;top:8px;width:70px;height:14px;border:4px solid #d9ac6e;border-radius:50%;\n          transform-origin:50% 50%;animation:spin 2.4s linear infinite reverse;}\n  @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}\n</style>\n</head>\n<body>\n<div class=\"scene\">\n  <div class=\"saucer\"></div>\n  <div class=\"cup\"></div>\n  <div class=\"handle\"></div>\n  <div class=\"arm\">\n    <div class=\"stick\"></div>\n    <div class=\"bowl\"></div>\n  </div>\n  <div class=\"rim\"></div>\n  <div class=\"coffee\">\n    <div class=\"crema\"></div>\n    <div class=\"swirl\"></div>\n    <div class=\"swirl2\"></div>\n  </div>\n</div>\n</body>\n</html>\n",
+    "truncated": false,
+    "lines": 60
+  },
+  "output": null,
+  "notes": [
+    "2.4s of CSS animation, seeked frame by frame."
+  ],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": true
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "repair-exploded-v60-glm-5.3-flashx-s3-r1-1232",
+  "exportedAt": "2026-10-19T01:36:30.419Z",
+  "run": "2026-10-19-repair-exploded-v60-1232",
+  "caseId": "repair-exploded-v60",
+  "caseTitle": "Repair: a V60 exploded diagram with the filter under the cone",
+  "category": "Vector and 2D",
+  "prompt": "In this exploded diagram of a V60 pour-over dripper on its glass server, the parts are stacked in the wrong order. From the top down it should be paper filter, dripper, server. Put that right and change nothing else: the parts keep the sizes they are drawn at, the page and the one vertical axis stay as they are, each label stays on its own part, and the numbers on the labels can stay as they are. Leave alone anything else you would have drawn differently.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "order: was True on the file it was handed, now True; still passing: parts, axis"
+  },
+  "recipe": "svg",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "source": "v60.svg"
+  },
+  "source": {
+    "file": "v60.svg",
+    "lang": "xml",
+    "text": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"1000\" viewBox=\"0 0 800 1000\" font-family=\"Helvetica, Arial, sans-serif\">\n  <defs>\n    <linearGradient id=\"glass\" x1=\"0\" x2=\"1\">\n      <stop offset=\"0\" stop-color=\"#dfeef2\"/>\n      <stop offset=\"0.5\" stop-color=\"#f7fbfc\"/>\n      <stop offset=\"1\" stop-color=\"#cfe2e8\"/>\n    </linearGradient>\n    <linearGradient id=\"ceramic\" x1=\"0\" x2=\"1\">\n      <stop offset=\"0\" stop-color=\"#f1efe9\"/>\n      <stop offset=\"0.6\" stop-color=\"#ffffff\"/>\n      <stop offset=\"1\" stop-color=\"#d9d5cc\"/>\n    </linearGradient>\n    <linearGradient id=\"paper\" x1=\"0\" x2=\"1\">\n      <stop offset=\"0\" stop-color=\"#e9dcc0\"/>\n      <stop offset=\"0.5\" stop-color=\"#f6eedb\"/>\n      <stop offset=\"1\" stop-color=\"#e2d3b3\"/>\n    </linearGradient>\n    <marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8\" refY=\"5\" orient=\"auto\">\n      <path d=\"M0,0 L10,5 L0,10 z\" fill=\"#777\"/>\n    </marker>\n  </defs>\n\n  <rect width=\"800\" height=\"1000\" fill=\"#ffffff\"/>\n  <text x=\"400\" y=\"36\" text-anchor=\"middle\" font-size=\"22\" font-weight=\"bold\" fill=\"#222\">V60 Pour-Over: Exploded Assembly</text>\n  <text x=\"400\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" fill=\"#666\">Cone dripper, paper filter, glass server</text>\n\n  <!-- alignment guide lines -->\n  <g stroke=\"#999\" stroke-width=\"1.2\" stroke-dasharray=\"6,5\" fill=\"none\">\n    <line x1=\"400\" y1=\"215\" x2=\"400\" y2=\"313\"/>\n    <line x1=\"400\" y1=\"470\" x2=\"400\" y2=\"538\"/>\n  </g>\n  <!-- assembly direction arrows -->\n\n  <!-- 2. DRIPPER (middle) -->\n  <g id=\"dripper\" transform=\"translate(0,238)\">\n    <path d=\"M250,95 L365,225 L435,225 L550,95 Z\" fill=\"url(#ceramic)\" stroke=\"#555\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n    <!-- ribs -->\n    <g stroke=\"#b5b0a6\" stroke-width=\"2\" fill=\"none\">\n      <line x1=\"300\" y1=\"100\" x2=\"382\" y2=\"222\"/>\n      <line x1=\"350\" y1=\"97\" x2=\"390\" y2=\"222\"/>\n      <line x1=\"450\" y1=\"97\" x2=\"410\" y2=\"222\"/>\n      <line x1=\"500\" y1=\"100\" x2=\"418\" y2=\"222\"/>\n    </g>\n    <!-- rim -->\n    <ellipse cx=\"400\" cy=\"95\" rx=\"150\" ry=\"18\" fill=\"#fbfaf7\" stroke=\"#555\" stroke-width=\"2\"/>\n    <ellipse cx=\"400\" cy=\"97\" rx=\"136\" ry=\"12\" fill=\"#8c8578\"/>\n    <!-- bottom hole -->\n    <ellipse cx=\"400\" cy=\"225\" rx=\"12\" ry=\"4\" fill=\"#3b3731\" stroke=\"#555\" stroke-width=\"1\"/>\n  </g>\n  <text x=\"400\" y=\"262\" text-anchor=\"middle\" font-size=\"12\" fill=\"#444\" dy=\"0\"></text>\n\n  <!-- 1. PAPER FILTER (top) -->\n  <g id=\"filter\" transform=\"translate(0,-238)\">\n    <path d=\"M260,330 Q400,344 540,330 L430,440 Q400,448 370,440 Z\" fill=\"url(#paper)\" stroke=\"#9c8c6c\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/>\n    <ellipse cx=\"400\" cy=\"330\" rx=\"140\" ry=\"13\" fill=\"#fcf8ee\" stroke=\"#9c8c6c\" stroke-width=\"1.4\"/>\n    <!-- folded seam -->\n  </g>\n\n  <!-- 3. GLASS SERVER (bottom) -->\n  <g id=\"server\">\n    <!-- handle -->\n    <path d=\"M548,668 C628,648 636,772 548,772\" fill=\"none\" stroke=\"#7f9aa3\" stroke-width=\"16\" stroke-linecap=\"round\" opacity=\"0.9\"/>\n    <path d=\"M548,668 C628,648 636,772 548,772\" fill=\"none\" stroke=\"#e8f4f7\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n    <!-- body -->\n    <path d=\"M340,548 L340,600 C330,622 250,625 250,690 L250,822 Q250,852 282,852 L518,852 Q550,852 550,822 L550,690 C550,625 470,622 460,600 L460,548 Z\"\n          fill=\"url(#glass)\" stroke=\"#5d7a84\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- glass highlight -->\n    <path d=\"M268,700 L268,815\" stroke=\"#ffffff\" stroke-width=\"8\" stroke-linecap=\"round\" opacity=\"0.8\"/>\n    <!-- base -->\n    <ellipse cx=\"400\" cy=\"852\" rx=\"150\" ry=\"0\" fill=\"none\"/>\n    <!-- volume marks -->\n    <g stroke=\"#5d7a84\" stroke-width=\"1.5\">\n      <line x1=\"250\" y1=\"740\" x2=\"268\" y2=\"740\"/>\n      <line x1=\"250\" y1=\"780\" x2=\"264\" y2=\"780\"/>\n      <line x1=\"250\" y1=\"820\" x2=\"268\" y2=\"820\"/>\n    </g>\n    <text x=\"272\" y=\"744\" font-size=\"10\" fill=\"#5d7a84\">500</text>\n    <text x=\"272\" y=\"784\" font-size=\"10\" fill=\"#5d7a84\">250</text>\n    <!-- neck opening -->\n    <ellipse cx=\"400\" cy=\"548\" rx=\"60\" ry=\"9\" fill=\"#e4f0f4\" stroke=\"#5d7a84\" stroke-width=\"2\"/>\n    <ellipse cx=\"400\" cy=\"549\" rx=\"52\" ry=\"5\" fill=\"#9db9c1\"/>\n  </g>\n\n  <!-- labels with leader lines -->\n  <g stroke=\"#888\" stroke-width=\"1\" fill=\"none\">\n    <polyline points=\"520,147 600,147 620,130\"/>\n    <polyline points=\"502,390 600,390 620,390\"/>\n    <polyline points=\"560,700 600,700 620,700\"/>\n  </g>\n  <g font-size=\"14\" fill=\"#222\">\n    <text x=\"626\" y=\"391\"><tspan font-weight=\"bold\">1</tspan>  Dripper (cone, ribbed)</text>\n    <text x=\"626\" y=\"132\"><tspan font-weight=\"bold\">2</tspan>  Paper filter (cone)</text>\n    <text x=\"626\" y=\"705\"><tspan font-weight=\"bold\">3</tspan>  Glass server (carafe)</text>\n  </g>\n  <text x=\"400\" y=\"935\" text-anchor=\"middle\" font-size=\"13\" fill=\"#666\">Place filter in dripper, rinse, add grounds, set dripper on server</text>\n</svg>\n",
+    "truncated": false,
+    "lines": 97
+  },
+  "output": null,
+  "notes": []
+}

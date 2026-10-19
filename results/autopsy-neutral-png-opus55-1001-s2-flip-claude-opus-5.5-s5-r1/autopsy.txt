@@ -1,0 +1,9 @@
+No.
+
+Most of the diagram is right. The knob threads onto the rod, the rod passes through the lid, and the glass beaker drops into the frame with its spout opposite the handle. All parts sit on one centre line. The filter stack, though, is drawn upside down.
+
+1. The filter layers are in the wrong order. On a real plunger (Bodum style), the order from the top is: spiral plate, then mesh screen, then cross plate, then the retaining nut screwed onto the bottom of the rod. The spiral plate sits on top so its coil can wrap the edge of the mesh and seal against the glass. The cross plate is the stiff spoked disc at the bottom. It backs the mesh from below so the nut can clamp the stack tight. The diagram has the cross plate (4) on top and the spiral plate (6) at the bottom, right above the nut. As drawn, the nut would press on the spiral plate, and nothing would hold the mesh up from below.
+
+2. The bracket labelled "3-piece filter" also covers the retaining nut (7). So it brackets four parts, not three. The bracket should end at the spiral/cross plate, or the label should say "filter assembly".
+
+Fix: swap parts 4 and 6, so the order from the top is spiral plate, mesh, cross plate, nut. Fix the cross plate caption to match, for example "backs the screen; nut clamps against it". Shorten the bracket so it covers only the three filter discs.

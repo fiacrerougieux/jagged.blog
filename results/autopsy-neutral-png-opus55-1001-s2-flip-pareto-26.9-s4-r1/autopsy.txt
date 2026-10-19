@@ -1,0 +1,15 @@
+No. The filter stack is upside down relative to the usual three-piece French press assembly.
+
+The diagram puts the cross plate (4) above the mesh screen (5), with the spring-edged spiral plate (6) below it. The usual order, from the lid toward the coffee grounds, is:
+
+  Plunger rod
+  Spiral plate with its perimeter spring
+  Mesh filter screen
+  Cross plate
+  Threaded fastening at the bottom
+
+The spiral plate's perimeter spring holds the mesh edge against the beaker wall, helping prevent grounds from bypassing the screen. The cross plate supports the mesh from below as the plunger pushes down. Swap parts 4 and 6 in the drawing; leave the mesh between them.
+
+The separate retaining nut (7) is design-dependent, not necessarily an error. Many presses instead screw the rod directly into a threaded hub on the bottom cross plate. The drawing should specify which fastening arrangement it represents.
+
+The rest of the overall layout is plausible: the knob attaches to the rod above the lid, the rod slides through the lid, and the glass beaker sits in the frame. This is a schematic, so its exploded spacing is not itself a problem. However, the bracket labeled "3-piece filter" should cover only the three filter layers, not also the separately labeled retaining nut.

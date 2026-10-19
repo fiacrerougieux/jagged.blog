@@ -1,0 +1,28 @@
+{
+  "id": "repair-knitting-bean",
+  "title": "Repair: a knitting chart whose bean knits too long",
+  "short": "Knitting repair",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "In this knitting chart of a cup cosy with a coffee-bean motif, the bean comes out 2.4 times as long as it is wide once the fabric is knitted, where it should be between 1.3 and 1.8 times. Change the bean so it knits true. The stitches are drawn wider than the rows, so the motif needs rows added or stitches taken away. Change nothing else: the grid, the cell size, the key and the rest of the chart stay as they are.",
+  "groundTruth": "DeepSeek 4.1 Flash drew this chart on 2026-10-19. Its bean is 13 stitches by 8 rows in cells drawn 20 by 14.3, with a gauge of 1.399 stitches to the row, so the knitted bean comes out 2.43 times as long as it is wide against a band of 1.3 to 1.8. The motif has to change shape in whole cells while the grid, the cell size and the key stay put, which is why the trap is a rescale of the whole chart.",
+  "checks": [
+    {
+      "id": "fixed",
+      "label": "Repaired",
+      "how": "The `bean_knits_true` check of the knitting grader, run on the file the model was handed and on the file it gave back. Fixed means the knitted ratio was outside the band and is now inside it.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "unchanged",
+      "label": "Broke nothing else",
+      "how": "Everything that passed on the input still passes: the chart is a chart, the motif is in whole cells, the cells are not taller than they are wide, and the key is still there.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Hand it a chart whose gauge and grid disagree, so the fix has to be in the cells and not in either one.",
+  "saturated": {
+    "since": "2026-10-19",
+    "why": "GLM 5.3 FlashX and DeepSeek 4.1 Flash passed both checks in all three runs, and DeepSeek drew the chart it was handed. Claude Haiku 5.5 repaired one of three, so the trap is still live for a model that misses it, and the task stays as a fixed reference point. If a new model fails it, that is worth a line in the post."
+  }
+}

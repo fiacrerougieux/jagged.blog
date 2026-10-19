@@ -1,0 +1,15 @@
+Yes, mostly. As an exploded assembly of a standard French press (Bodum-style), the diagram is essentially correct.
+
+Why it holds up:
+- Every part sits on one shared vertical axis (the red dash-dot center line), in the order the parts actually go together, from top to bottom.
+- 1 Knob threads onto the top of 2 the plunger rod. The rod passes through the center bore of 3 the lid, so the lid sits between the knob and the filter. That is right.
+- The plunger rod is threaded at both ends: the knob goes on the top end and the filter stack on the bottom end.
+- The 3-piece filter (4 spiral plate, 5 mesh screen, 6 cross plate) is a real stack. The spiral plate's coil spring seals against the glass, the mesh is held between the two plates, and the cross plate clamps it.
+- 7 Retaining nut goes on last, under the stack, and holds it on the rod.
+- 8 The glass beaker drops into 9 the frame. The beaker spout (right) lines up with the pour notch in the lid (right) and sits opposite the handle (left). That is correct.
+- The sizes make sense: the beaker fits inside the frame, and the filter discs are about the beaker's inside diameter.
+
+Minor nitpicks (they don't make it wrong):
+- There is a small unlabeled piece floating just above the lid. It looks like the top of the lid bore or a bushing. It should either get a label or be drawn as part of the lid.
+- The lid is drawn a little narrower than the beaker rim. Real lids are about the same width as the rim, or have a lip that fits into it.
+- Some makers stack the spiral plate and cross plate the other way around. The order shown is still a valid arrangement.

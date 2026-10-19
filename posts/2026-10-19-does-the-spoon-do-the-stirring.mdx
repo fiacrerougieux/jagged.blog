@@ -1,0 +1,54 @@
+---
+title: "Do models know how to stir a coffee?"
+date: 2026-10-19
+type: "experiment"
+tags: ["coffee", "css", "animation"]
+description: "They don’t always, some have the spoon flat on the surface to stir and others have the spoon leaving the cup while it stirs."
+tldr: "Some models have the spoon flat on the surface to stir and others have the spoon leaving the cup while it stirs."
+task: "css-stirring-spoon"
+caseId: "css-stirring-spoon"
+models: ["anthropic/claude-sonnet-5.5", "z-ai/glm-5.3-flashx", "deepseek/deepseek-v4.1-flash"]
+---
+
+<Finding>
+  Some models have the spoon flat on the surface to stir and others have the spoon leaving the cup while it stirs.
+</Finding>
+
+I asked three models for a cup of coffee with a spoon stirring in it, in HTML and CSS. This is as I want more dynamic behaviour checks on the site.
+
+<SideBySide>
+  <Artifact name="css-stirring-spoon-claude-sonnet-5.5-s1-r2" code={false} downloads={false} alt="Four frames of a white cup on a saucer, the spoon standing in the coffee with its bowl just under the surface and the handle going up and over the near rim, the bowl in a slightly different place each time." caption="Sonnet 5.5, run 1. Bowl in the coffee, handle over the near rim." />
+  <Artifact name="css-stirring-spoon-claude-sonnet-5.5-s2-r2" code={false} downloads={false} alt="Four frames of a white cup and saucer, spoon standing nearly upright with the bowl in the middle of the coffee, and a small change of position between frames." caption="Sonnet 5.5, run 2. Upright, less paint." />
+</SideBySide>
+
+Sonnet stirs it in all three runs.
+
+<SideBySide>
+  <Artifact name="css-stirring-spoon-glm-5.3-flashx-s1-r6" code={false} downloads={false} alt="Four frames of a white cup on a red saucer, the spoon's bowl at the far rim and its handle standing up in front of the near rim, with swirling lines in the coffee." caption="GLM 5.3 FlashX, run 1. Bowl at the back rim, handle across the mouth." />
+  <Artifact name="css-stirring-spoon-glm-5.3-flashx-s3-r8" code={false} downloads={false} alt="Four frames of a red mug, the spoon's bowl at the back of the coffee and the handle laid across the opening toward the near rim." caption="GLM 5.3 FlashX, run 3. The same layout on a mug." />
+</SideBySide>
+
+GLM stirs, but the spoon leaves the cup.
+
+<SideBySide>
+  <Artifact name="css-stirring-spoon-deepseek-v4.1-flash-s1-r3" code={false} downloads={false} alt="Four frames of a white cup and saucer seen from above, a thin outline of a spoon's bowl and handle lying flat on the coffee, at a different angle in each frame." caption="DeepSeek 4.1 Flash, run 1. The spoon is an outline on the surface." />
+  <Artifact name="css-stirring-spoon-deepseek-v4.1-flash-s2-r6" code={false} downloads={false} alt="Four frames looking down into a cup on a saucer, an arm turning about the centre of the coffee with a pale bowl at its end, at four different clock positions." caption="DeepSeek 4.1 Flash, run 2. An arm turns about the centre." />
+</SideBySide>
+
+DeepSeek's spoon is lying on the surface.
+
+<TaskTally task="css-stirring-spoon" />
+
+| Failed | How many | Dimension | Property | Mode |
+|---|---|---|---|---|
+| The spoon does the stirring | DeepSeek, 3 runs | function | behaviour | missing |
+| Reads as inside the cup | GLM, 3 runs | validity | relation | transposed |
+| Reads as inside the cup | DeepSeek run 1 | validity | relation | transposed |
+| Handle stays on the bowl | DeepSeek run 1 | validity | geometry | distorted |
+
+<Verdict n="3 runs a model">
+  DeepSeek's failure is a missing behaviour, the failure of GLM is that the spoon leaves the cup while stirring.
+</Verdict>
+
+{/* cost: 2026-10-19-css-stirring-spoon */}
+The nine runs cost $0.96.

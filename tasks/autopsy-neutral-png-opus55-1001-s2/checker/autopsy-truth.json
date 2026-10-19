@@ -1,0 +1,142 @@
+{
+  "_about": "What is wrong with each French press handed to the autopsy cases, as written down when it was published. Read by autopsy.py at grading only, so no model ever sees it. Each input file is known by the first 16 hex of its sha256, so the grader can tell which press a run was given without being told. Defects come from the result's failed checks and its note in src/data/bench.ts. `also` holds things the note says that no check failed on: naming one is not counted as invented, and missing one is not counted against recall. `drawn` lists the parts that are there, so saying one of them is missing is invented. Written 2026-10-05, before any model saw the prompt. Added 2026-10-09: five Opus 5.5 presses, on the picture arm only (`arms`), to ask whether Opus can see the inverted stack it drew. Each was checked by eye against its picture before any model saw it. Added 2026-10-10: six presses made from the Opus 1001-s2 and Pareto v2-s1 controls by harness/autopsy/pairs.py, for proposal 12. `made` says what was changed. A flip has the spiral plate and cross-plate swapped and nothing else, and exploded-french-press.py fails it on order alone. A bare press has no labels, so labels is not in `passed`.",
+  "specimens": {
+    "glm53-v2-s2": {
+      "artifact": "svg-french-press-glm-5.3-flashx-v2-s2-r3",
+      "result": "GLM 5.3 FlashX, v2, seed 2, round 3",
+      "note": "Calls its top piece a spiral cross plate and puts the mesh at the bottom, with the lid below the whole filter and every plate wider than the carafe.",
+      "inputs": { "png": "0ff356c5b9df4476", "svg": "41496f6dac93e6c9", "prose": "afaac07cc3e3a994" },
+      "passed": ["parts", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        { "kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the mesh is at the bottom and the plate the rod screws into is on top" },
+        { "kind": "order:lid-below-filter", "check": "order", "what": "the lid is drawn below the whole filter, between it and the carafe" },
+        { "kind": "size:plates-too-wide", "check": "diameter", "what": "every filter plate is wider than the carafe it has to go into" }
+      ],
+      "also": [
+        { "kind": "labels:wrong", "what": "the top piece is called a spiral cross plate, two parts' names in one" }
+      ]
+    },
+    "qwen27b-v1-s1": {
+      "artifact": "svg-french-press-qwen3.8-27b-s1-r3",
+      "result": "Qwen3.8 27B, v1, seed 1, round 3",
+      "note": "Mesh drawn, spiral plate and cross-plate missing, and a frame smaller than the carafe it holds.",
+      "inputs": { "png": "86649767f6cf4170", "svg": "9c9ff5d56e878a91", "prose": "eeac679eac79d0fe" },
+      "passed": ["diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "mesh", "carafe"],
+      "defects": [
+        { "kind": "missing:spiral", "check": "parts", "what": "no spiral (spring) plate" },
+        { "kind": "missing:cross", "check": "parts", "what": "no cross-plate" },
+        { "kind": "size:frame-too-small", "check": null, "what": "the frame is smaller than the carafe it is meant to hold" }
+      ],
+      "also": []
+    },
+    "sol56-v2-s2": {
+      "artifact": "svg-french-press-gpt-5.6-sol-v2-s2-r1",
+      "result": "GPT-5.6 Sol, v2, seed 2, round 1",
+      "note": "Right order in one round, but the plates are under 80% of the glass width, and the cross-plate is drawn behind the carafe rim.",
+      "inputs": { "png": "3cb3ccbd0741980e", "svg": "8c5b0ce1583b053a", "prose": "0dac4136b06b9321" },
+      "passed": ["parts", "order", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        { "kind": "size:plates-too-narrow", "check": "diameter", "what": "the filter plates are under 80% of the glass width, so they cannot press against the wall" },
+        { "kind": "overlap:cross-plate-rim", "check": null, "what": "the cross-plate is drawn behind the carafe rim instead of clear of it" }
+      ],
+      "also": []
+    },
+    "pareto-v2-s1": {
+      "artifact": "svg-french-press-pareto-v2-s1-r5",
+      "result": "Pareto, v2, seed 1, round 5. Passed every check: the control.",
+      "note": "Seven parts, the stack the right way up, and labels on both sides of one axis.",
+      "inputs": { "png": "51b16f4e34db0c61", "svg": "83c3bbad366bf661", "prose": "3cdea5ca74b3d422" },
+      "passed": ["parts", "order", "diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [],
+      "also": []
+    },
+    "sol6-s1": {
+      "artifact": "svg-french-press-gpt-6-sol-s1-r2",
+      "result": "GPT-6 Sol, v2, seed 1, round 2. Passed every check: the control.",
+      "note": "",
+      "inputs": { "png": "5e00808cf226cd01", "svg": "fdfe45b9b8b36a67", "prose": "a8310ab9db074adf" },
+      "passed": ["parts", "order", "diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [],
+      "also": []
+    },
+    "opus55-0923-s1": {
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s1-r3",
+      "result": "Claude Opus 5.5, v2, seed 1, round 3, run 2026-09-23",
+      "note": "The cleanest press on the bench, with the cross-plate on top of the mesh.",
+      "inputs": { "png": "7bbc35d3472e6927", "svg": "4ff0c2a5a1455bea" },
+      "arms": ["png"],
+      "passed": ["parts", "diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        {"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}
+      ],
+      "also": [
+        {"kind": "labels:wrong", "what": "its subtitle lists the filter in the same wrong order"}
+      ]
+    },
+    "opus55-0923-s2": {
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s2-r2",
+      "result": "Claude Opus 5.5, v2, seed 2, round 2, run 2026-09-23",
+      "note": "The stack the right way up in two rounds, with the frame drawn beside the glass instead of under it.",
+      "inputs": { "png": "e323fa263c657c6c", "svg": "7a54d049c54dcb8a" },
+      "arms": ["png"],
+      "passed": ["parts", "order", "diameter", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        {"kind": "axis:off", "check": "axis", "what": "the frame and handle are drawn beside the glass, off the assembly axis"}
+      ],
+      "also": []
+    },
+    "opus55-0923-s3": {
+      "artifact": "svg-french-press-claude-opus-5.5-v2-s3-r3",
+      "result": "Claude Opus 5.5, v2, seed 3, round 3, run 2026-09-23",
+      "note": "Right in round 1, then it swapped the plates, and its filter is wider than the glass.",
+      "inputs": { "png": "d9229ab18de8c63a", "svg": "1b700883454ef8d3" },
+      "arms": ["png"],
+      "passed": ["parts", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        {"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"},
+        {"kind": "size:plates-too-wide", "check": "diameter", "what": "the filter plates are wider than the glass they go into"}
+      ],
+      "also": [
+        {"kind": "labels:wrong", "what": "its subtitle lists the filter in the same wrong order"}
+      ]
+    },
+    "opus55-1001-s1": {
+      "artifact": "svg-french-press-claude-opus-5.5-s1-r3",
+      "result": "Claude Opus 5.5, v2, seed 1, round 3, run 2026-10-01",
+      "note": "",
+      "inputs": { "png": "945c14b7ae492cdb", "svg": "225487368c4efd27" },
+      "arms": ["png"],
+      "passed": ["parts", "diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [
+        {"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}
+      ],
+      "also": []
+    },
+    "opus55-1001-s2": {
+      "artifact": "svg-french-press-claude-opus-5.5-s2-r2",
+      "result": "Claude Opus 5.5, v2, seed 2, round 2, run 2026-10-01. Passed every check: the control.",
+      "note": "",
+      "inputs": { "png": "c909e719feab0085", "svg": "5815d9b39cc8a564" },
+      "arms": ["png"],
+      "passed": ["parts", "order", "diameter", "axis", "labels"],
+      "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"],
+      "defects": [],
+      "also": []
+    },
+    "opus55-1001-s2-flip": {"artifact": "svg-french-press-claude-opus-5.5-s2-r2", "result": "Claude Opus 5.5, v2, seed 2, round 2, run 2026-10-01, with the spiral plate and the cross-plate swapped by hand, each keeping its own label. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "the spiral plate and the cross-plate swapped by hand, each keeping its own label", "note": "", "inputs": {"png": "ccd5177494adc842", "svg": "4eb109f5ae922b09"}, "arms": ["png"], "passed": ["parts", "diameter", "axis", "labels"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [{"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}], "also": []},
+    "opus55-1001-s2-bare": {"artifact": "svg-french-press-claude-opus-5.5-s2-r2", "result": "Claude Opus 5.5, v2, seed 2, round 2, run 2026-10-01, with every label, leader and caption taken off by hand. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "every label, leader and caption taken off by hand", "note": "", "inputs": {"png": "e009dec972538da5", "svg": "114dc6ec1f59a116"}, "arms": ["png"], "passed": ["parts", "diameter", "axis", "order"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [], "also": []},
+    "opus55-1001-s2-flip-bare": {"artifact": "svg-french-press-claude-opus-5.5-s2-r2", "result": "Claude Opus 5.5, v2, seed 2, round 2, run 2026-10-01, with the spiral plate and the cross-plate swapped and every label taken off, by hand. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "the spiral plate and the cross-plate swapped and every label taken off, by hand", "note": "", "inputs": {"png": "a5cd0af623b48d2a", "svg": "5564e4a9970efe5b"}, "arms": ["png"], "passed": ["parts", "diameter", "axis"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [{"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}], "also": []},
+    "pareto-v2-s1-flip": {"artifact": "svg-french-press-pareto-v2-s1-r5", "result": "Pareto, v2, seed 1, round 5, with the spiral plate and the cross-plate swapped by hand, each keeping its own label. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "the spiral plate and the cross-plate swapped by hand, each keeping its own label", "note": "", "inputs": {"png": "443abdf306e4dbc2", "svg": "59c1efc2a2a7aae5"}, "arms": ["png"], "passed": ["parts", "diameter", "axis", "labels"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [{"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}], "also": []},
+    "pareto-v2-s1-bare": {"artifact": "svg-french-press-pareto-v2-s1-r5", "result": "Pareto, v2, seed 1, round 5, with every label, leader and caption taken off by hand. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "every label, leader and caption taken off by hand", "note": "", "inputs": {"png": "51018dccac571af7", "svg": "a0f148909a3b7521"}, "arms": ["png"], "passed": ["parts", "diameter", "axis", "order"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [], "also": []},
+    "pareto-v2-s1-flip-bare": {"artifact": "svg-french-press-pareto-v2-s1-r5", "result": "Pareto, v2, seed 1, round 5, with the spiral plate and the cross-plate swapped and every label taken off, by hand. Made 2026-10-10 by harness/autopsy/pairs.py.", "made": "the spiral plate and the cross-plate swapped and every label taken off, by hand", "note": "", "inputs": {"png": "41c9a016b3cfe85e", "svg": "5f4a33114b7e6c53"}, "arms": ["png"], "passed": ["parts", "diameter", "axis"], "drawn": ["knob", "rod", "lid", "spiral", "mesh", "cross", "carafe"], "defects": [{"kind": "order:filter-inverted", "check": "order", "what": "the filter stack is upside down: the cross-plate is on top and the spiral plate at the bottom"}], "also": []}
+  }
+}

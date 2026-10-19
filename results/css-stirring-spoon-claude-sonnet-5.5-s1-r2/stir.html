@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;background:#2b2f3a;height:100vh;display:flex;align-items:center;justify-content:center}
+.s{position:relative;width:400px;height:360px}
+.plate{position:absolute;left:30px;top:290px;width:340px;height:60px;border-radius:50%;background:#e8e8ee;box-shadow:0 8px 12px #0006}
+.handle{position:absolute;left:290px;top:130px;width:60px;height:110px;border:22px solid #f4f4f8;border-left-color:transparent;border-radius:0 70px 70px 0;box-sizing:border-box;border-width:16px 16px 16px 0;border:16px solid #f4f4f8;border-left:none;border-radius:0 60px 60px 0;width:70px;height:100px}
+.cup{position:absolute;left:70px;top:90px;width:240px;height:220px;background:linear-gradient(90deg,#d8d8e0,#fff 40%,#ccd);border-radius:0 0 120px 120px/0 0 190px 190px}
+.rim{position:absolute;left:70px;top:60px;width:240px;height:70px;border-radius:50%;background:#f4f4f8;box-shadow:inset 0 -3px 6px #0003}
+.coffee{position:absolute;left:80px;top:68px;width:220px;height:54px;border-radius:50%;background:radial-gradient(ellipse,#6b3d20,#3a1c0c 70%);overflow:hidden}
+.swirl{position:absolute;left:55px;top:10px;width:110px;height:34px;border-radius:50%;border:3px solid #a9693a;border-color:#a9693a transparent transparent transparent;animation:r 2s linear infinite}
+.swirl.b{left:30px;top:3px;width:160px;height:48px;animation-duration:3s;opacity:.6}
+@keyframes r{to{transform:rotate(360deg)}}
+.orbit{position:absolute;left:140px;top:25px;width:100px;height:50px;animation:o 2s linear infinite}
+@keyframes o{0%{transform:translate(55px,0)}25%{transform:translate(0,14px)}50%{transform:translate(-55px,0)}75%{transform:translate(0,-14px)}100%{transform:translate(55px,0)}}
+.spoon{position:absolute;width:12px;height:150px;transform-origin:6px 140px;transform:rotate(22deg)}
+.spoon i{position:absolute;left:3px;top:0;width:6px;height:120px;background:linear-gradient(90deg,#999,#fff,#888);border-radius:3px}
+.spoon b{position:absolute;left:-4px;top:110px;width:20px;height:34px;border-radius:50%;background:#ccd}
+.front{position:absolute;left:80px;top:95px;width:220px;height:35px;overflow:hidden;border-radius:0 0 0 0;display:none}
+</style></head><body><div class="s">
+<div class="plate"></div><div class="handle"></div><div class="cup"></div>
+<div class="rim"></div>
+<div class="coffee"><div class="swirl"></div><div class="swirl b"></div></div>
+<div class="orbit" style="left:190px;top:100px"><div class="spoon" style="top:-140px;left:-6px"><i></i><b></b></div></div>
+</body></html>

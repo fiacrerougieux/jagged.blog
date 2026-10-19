@@ -1,0 +1,1 @@
+In this Venn diagram of three overlapping circles, the word "milkshake" sits on the outline of a circle. Move it clear of every line, still inside the region it belongs to. Change nothing else: the circles, the set names, the other seven drinks and the page stay as they are, and the file still has to compile with pdflatex as it does now.

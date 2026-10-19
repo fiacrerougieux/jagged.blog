@@ -1,0 +1,24 @@
+{
+  "id": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "title": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "short": "Verdict, flipped",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "groundTruth": "The same press as the control, with the filter stack flipped so the mesh sits above the spiral plate and the cross-plate below it. That is one defect and it is the one that stops the press working. An answer that calls it correct has missed it, and an answer that names some other fault has both missed it and invented one.",
+  "checks": [
+    {
+      "id": "recall",
+      "label": "Finds the flip",
+      "how": "The defect written down when this press was made is named somewhere in the answer.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "invented",
+      "label": "Invents nothing",
+      "how": "Nothing else the answer calls wrong is something this press was checked and found right on.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Flip one plate inside the stack so the order still reads right at a glance."
+}

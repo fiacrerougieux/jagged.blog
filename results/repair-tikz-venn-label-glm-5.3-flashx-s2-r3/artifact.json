@@ -1,0 +1,51 @@
+{
+  "name": "repair-tikz-venn-label-glm-5.3-flashx-s2-r3",
+  "exportedAt": "2026-10-19T03:02:53.074Z",
+  "run": "2026-10-19-repair-tikz-venn-label-1355",
+  "caseId": "repair-tikz-venn-label",
+  "caseTitle": "Repair: a Venn diagram with a drink on a circle's edge",
+  "category": "Documents",
+  "prompt": "In this Venn diagram of three overlapping circles, the word \"milkshake\" sits on the outline of a circle. Move it clear of every line, still inside the region it belongs to. Change nothing else: the circles, the set names, the other seven drinks and the page stay as they are, and the file still has to compile with pdflatex as it does now.",
+  "model": "z-ai/glm-5.3-flashx",
+  "seed": 2,
+  "round": 3,
+  "rounds": 3,
+  "grade": {
+    "pass": true,
+    "detail": "labels_clear_of_edges: was False on the file it was handed, now True; still passing: compiles, seven_regions, set_names, drinks_found, drinks_in_region"
+  },
+  "recipe": "latex",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "png": "image.png",
+    "pdf": "document.pdf",
+    "source": "venn.tex"
+  },
+  "source": {
+    "file": "venn.tex",
+    "lang": "latex",
+    "text": "\\documentclass[tikz]{standalone}\n\\begin{document}\n\\begin{tikzpicture}[font=\\sffamily]\n  % bounding box / outside region\n  \\draw[rounded corners] (-4.2,-4.1) rectangle (6.2,4.0);\n\n  % circles\n  \\draw[thick,fill=red!25,fill opacity=0.6]    (-1.1,0.6) circle (2.2);\n  \\draw[thick,fill=blue!25,fill opacity=0.6]   ( 1.1,0.6) circle (2.2);\n  \\draw[thick,fill=green!25,fill opacity=0.6]  ( 0.0,-1.2) circle (2.2);\n\n  % labels\n  \\node[font=\\bfseries] at (-2.6,2.5) {Has espresso};\n  \\node[font=\\bfseries] at ( 2.6,2.5) {Has milk};\n  \\node[font=\\bfseries] at ( 0.0,-3.7) {Served cold};\n\n  % drinks\n  \\node at (-1.9, 1.2) {short black};       % espresso only\n  \\node at ( 1.9, 1.2) {babyccino};         % milk only\n  \\node at ( 0.0,-2.3) {cold brew};         % cold only\n  \\node at ( 0.0, 1.35) {flat white};       % espresso + milk\n  \\node[align=center] at (-1.35,-0.95) {iced long\\\\black};  % espresso + cold\n  \\node at ( 1.30,-1.0) {milkshake};        % milk + cold\n  \\node at ( 0.0,-0.25) {iced latte};       % all three\n  \\node at ( 4.6,-2.8) {pour-over};         % outside all\n\\end{tikzpicture}\n\\end{document}\n",
+    "truncated": false,
+    "lines": 28
+  },
+  "output": null,
+  "notes": [],
+  "roundFrames": [
+    {
+      "round": 1,
+      "png": "rounds/001.jpg",
+      "pass": false
+    },
+    {
+      "round": 2,
+      "png": "rounds/002.jpg",
+      "pass": false
+    },
+    {
+      "round": 3,
+      "png": "rounds/003.jpg",
+      "pass": true
+    }
+  ]
+}

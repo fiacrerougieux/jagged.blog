@@ -197,9 +197,15 @@ r["says_ok"] = bool(re.search(
     r"nothing (?:is |seems |looks )?(?:seriously |obviously |really )?wrong|no (?:errors|problems|defects|issues|mistakes)\b|(?:can'?t|cannot|could not|couldn'?t) find anything wrong|I (?:see|found|find) nothing wrong",
     answer, re.I))
 
+# An answer with no words in it says nothing, and saying nothing names no
+# defects and invents none. Scoring it as a pass made every run that failed
+# before it could reply look clean: on 2026-10-19 ten runs returned 400 and all
+# ten were filed as `no_invented: true`. Undecided is what an empty answer is.
+empty = not re.sub(r"[^a-z]", "", answer, flags=re.I)
+r["empty_answer"] = empty
 if truth:
-    r["checks"]["recall"] = len(found) == len(truth)
-r["checks"]["no_invented"] = not made_up
+    r["checks"]["recall"] = None if empty else len(found) == len(truth)
+r["checks"]["no_invented"] = None if empty else not made_up
 
 if arm in ("svg", "prose"):
     PICTURE = re.compile(r"rsvg|cairosvg|inkscape|magick|\bconvert\b|chrom|librsvg|svg2png|PIL|matplotlib")
@@ -209,6 +215,8 @@ if arm in ("svg", "prose"):
     )
 
 problems = []
+if empty:
+    problems.append("left no answer")
 if truth and r["missed"]:
     problems.append(f"named {len(found)} of {len(truth)}, missed " + "; ".join(r["missed"]))
 if made_up:

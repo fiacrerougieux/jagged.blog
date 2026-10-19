@@ -1,0 +1,24 @@
+{
+  "id": "repair-tikz-venn-label",
+  "title": "Repair: a Venn diagram with a drink on a circle's edge",
+  "short": "Venn repair",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "In this Venn diagram of three overlapping circles, the word \"milkshake\" sits on the outline of a circle. Move it clear of every line, still inside the region it belongs to. Change nothing else: the circles, the set names, the other seven drinks and the page stay as they are, and the file still has to compile with pdflatex as it does now.",
+  "groundTruth": "Kimi K3 drew this Venn on 2026-10-19 and put `milkshake` on the outline of a circle. The word belongs in the region that names milk, and the fix is to move that one label until every letter sits clear of every drawn line without leaving its region. The other seven drinks, the seven regions and the set names were right on the file it was handed.",
+  "checks": [
+    {
+      "id": "fixed",
+      "label": "Repaired",
+      "how": "The `labels_clear_of_edges` check of the Venn grader, run on the file the model was handed and on the file it gave back, each letter tested against the drawn outline. Fixed means false became true.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "unchanged",
+      "label": "Broke nothing else",
+      "how": "Everything that passed on the input still passes: the file compiles with pdflatex, the seven regions are there, the set names are right and the drinks are found in their regions.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Put two labels on edges in different regions, and name only one."
+}

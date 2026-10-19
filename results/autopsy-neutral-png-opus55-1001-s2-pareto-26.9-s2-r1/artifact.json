@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-pareto-26.9-s2-r1",
+  "exportedAt": "2026-10-19T06:56:10.127Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "unbiased/pareto-26.9",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No — not as drawn, although the overall assembly order is broadly right.\n\nThe main problem is part 4, the spiral plate. It is depicted as a solid disk with a central rod hole and a spring around its rim. A working French press needs an open or perforated support plate: as the plunger descends, coffee must pass through the mesh and then through the support into the space above the plunger. With the rod occupying the central hole and the spring closing the edge gap, the solid plate shown would obstruct that flow. Concentric rings on its surface do not provide flow openings. Show cutouts or perforations, while retaining the perimeter spring.\n\nThere is also a labeling error: the bracket marked “3-piece filter” extends down to include part 7, the retaining nut. It therefore groups four listed parts. It should cover only parts 4–6, or explicitly distinguish the three filter layers from the fastener.\n\nThe spiral plate–mesh–cross plate order is plausible; those layers do not need to be reversed. The knob, sliding rod through the lid, beaker, and outer frame are also arranged sensibly. Exact fastening details vary by model.\n",
+    "truncated": false,
+    "lines": 8
+  },
+  "output": null,
+  "notes": []
+}

@@ -1,0 +1,27 @@
+No.
+
+Most of the diagram is right. Every part sits on one centre axis, in the
+right top-to-bottom order: knob, lid, plunger rod, filter, retaining nut,
+glass beaker, frame. The knob is above the lid, so it threads onto the rod
+after the rod passes through the lid's bore. The lid's pour notch lines up
+with the beaker's spout. The beaker drops into the frame.
+
+The error is the 3-piece filter, which is drawn upside down. The diagram
+shows, from the top: cross plate (4), mesh screen (5), spiral plate (6),
+then the nut (7).
+
+In a real plunger (the Bodum-style design shown here) the order from the
+rod end is: spiral plate, then mesh screen, then cross plate, then the nut.
+The spiral plate carries the spring coil that seals against the glass, and
+it sits on top. The mesh is sandwiched under it. The cross plate is the
+bottom piece, and the nut tightens against it. That is what squeezes the
+mesh up against the spiral plate.
+
+The diagram's own label for part 4 says it "clamps screen to spiral plate".
+That only works if the cross plate is on the side opposite the spiral
+plate, next to the nut. As drawn, the cross plate sits on top with nothing
+to press it down, and the nut bears straight on the spiral plate. So the
+cross plate clamps nothing.
+
+Fix: reverse parts 4 and 6, giving spiral plate, mesh, cross plate, nut,
+from top to bottom.

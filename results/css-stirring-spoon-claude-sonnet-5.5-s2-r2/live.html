@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;background:#d9c7ad;height:100vh;display:flex;align-items:center;justify-content:center}
+.s{position:relative;width:400px;height:400px;top:50px}
+.saucer{position:absolute;left:30px;top:290px;width:340px;height:70px;border-radius:50%;background:#eee;box-shadow:0 10px 15px #0004,inset 0 -6px 0 #ccc}
+.handle{position:absolute;left:285px;top:150px;width:80px;height:100px;border:20px solid #fafafa;border-radius:50%;box-sizing:border-box;box-shadow:inset 0 0 0 2px #ddd}
+.cup{position:absolute;left:60px;top:110px;width:260px;height:210px;background:linear-gradient(90deg,#ddd,#fff 30%,#fff 60%,#ccc);border-radius:0 0 130px 130px/0 0 190px 190px;box-shadow:inset -10px -8px 20px #0002}
+.rim{position:absolute;left:50px;top:90px;width:280px;height:70px;border-radius:50%;background:#fff;box-shadow:inset 0 -3px 4px #bbb}
+.cof{position:absolute;left:60px;top:97px;width:260px;height:56px;border-radius:50%;background:radial-gradient(ellipse,#6b3d1e,#3a1c0a 80%);overflow:hidden}
+.sw{position:absolute;left:50%;top:50%;width:150px;height:30px;margin:-15px 0 0 -75px;border-radius:50%;border:3px solid #a8703f;border-color:#a8703f transparent transparent transparent;animation:r 2s linear infinite}
+.sw2{width:90px;height:16px;margin:-8px 0 0 -45px;animation-duration:1.4s}
+@keyframes r{to{transform:rotate(360deg)}}
+.orbit{position:absolute;left:190px;top:125px;width:0;height:0;animation:o 1.6s linear infinite}
+@keyframes o{from{transform:translate(-55px,0)}25%{transform:translate(0,9px)}50%{transform:translate(55px,0)}75%{transform:translate(0,-9px)}to{transform:translate(-55px,0)}}
+.spoon{position:absolute;left:0;top:0;width:14px;height:175px;transform-origin:50% 100%;margin:-175px 0 0 -7px;transform:rotate(25deg)}
+.spoon:before{content:"";position:absolute;left:5px;top:0;width:5px;height:150px;background:linear-gradient(90deg,#999,#eee,#888);border-radius:3px}
+.spoon:after{content:"";position:absolute;left:-3px;top:145px;width:20px;height:30px;border-radius:50%;background:radial-gradient(#fff,#aaa)}
+.front{position:absolute;left:60px;top:125px;width:260px;height:100px;overflow:hidden;clip-path:inset(0 0 0 0)}
+</style></head><body><div class="s">
+<div class="saucer"></div><div class="handle"></div><div class="cup"></div><div class="rim"></div>
+<div class="cof"><div class="sw"></div><div class="sw sw2"></div></div>
+<div class="orbit"><div class="spoon"></div></div>
+</div></body></html>

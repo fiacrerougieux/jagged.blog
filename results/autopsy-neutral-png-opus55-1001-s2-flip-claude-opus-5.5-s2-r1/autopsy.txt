@@ -1,0 +1,23 @@
+Yes.
+
+The diagram shows a correct exploded assembly of a standard French press
+(Bodum style). Everything sits on one center axis, top to bottom:
+
+1. Knob: threads onto the top of the plunger rod, above the lid.
+2. Lid: the rod passes through its center bore. Its pour lip is on the same
+   side as the beaker spout (right), which is how it should be.
+3. Plunger rod: threaded at both ends, one end for the knob and one for the
+   filter nut.
+4-6. Filter stack, in the right order: cross plate on top, mesh screen in the
+   middle, spiral plate on the bottom. The cross plate clamps the mesh onto
+   the spiral plate, and the spiral spring rim presses against the glass.
+7. Retaining nut: goes under the stack and holds it on the rod.
+8. Glass beaker: the spout is opposite the handle, and its width matches the
+   frame and the filter.
+9. Frame and handle: the beaker drops into it, the handle is on the side
+   away from the spout, and the base has feet.
+
+The labels and notes match the parts they point to. I found no wrong order,
+missing part or wrong orientation. One small point: drawing styles differ
+(for example, the lid looks a bit narrower than the beaker rim), but that is
+style, not an error.

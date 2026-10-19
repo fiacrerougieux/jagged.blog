@@ -13428,6 +13428,2104 @@
         "of": 3,
         "undecided": 0
       }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "css-stirring-spoon-claude-sonnet-5.5-s1-r2",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0103,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 24248,
+        "tokensOut": 2634,
+        "reasoning": 340,
+        "wallSec": 50
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": true,
+        "attached": true
+      },
+      "quality": 4,
+      "eyeBlind": true,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "css-stirring-spoon-claude-sonnet-5.5-s2-r2",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0074,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 16940,
+        "tokensOut": 2045,
+        "reasoning": 128,
+        "wallSec": 43
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": true,
+        "attached": true
+      },
+      "quality": 4,
+      "eyeBlind": true,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "css-stirring-spoon-claude-sonnet-5.5-s3-r2",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0101,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 24768,
+        "tokensOut": 2522,
+        "reasoning": 249,
+        "wallSec": 51
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": true,
+        "attached": true
+      },
+      "quality": 4,
+      "eyeBlind": true,
+      "score": {
+        "passed": 6,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "css-stirring-spoon-deepseek-v4.1-flash-s1-r3",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "stoppedBy": "clock",
+      "cost": 0.282,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1000503,
+        "tokensOut": 50112,
+        "reasoning": 37413,
+        "wallSec": 720
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": false,
+        "inside": false,
+        "attached": false
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 3,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "css-stirring-spoon-deepseek-v4.1-flash-s2-r6",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 6,
+      "capRounds": 8,
+      "clockMin": 12,
+      "stoppedBy": "clock",
+      "cost": 0.2704,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1100168,
+        "tokensOut": 45324,
+        "reasoning": 30275,
+        "wallSec": 720
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": false,
+        "inside": true,
+        "attached": null
+      },
+      "quality": 2,
+      "eyeBlind": true,
+      "score": {
+        "passed": 4,
+        "of": 5,
+        "undecided": 1
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "css-stirring-spoon-deepseek-v4.1-flash-s3-r6",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 6,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.1996,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 948403,
+        "tokensOut": 31965,
+        "reasoning": 21144,
+        "wallSec": 526
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": false,
+        "inside": true,
+        "attached": true
+      },
+      "quality": 2,
+      "eyeBlind": true,
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "css-stirring-spoon-glm-5.3-flashx-s1-r6",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 6,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0385,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 157006,
+        "tokensOut": 5086,
+        "reasoning": 1434,
+        "wallSec": 133
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": false,
+        "attached": true
+      },
+      "quality": 2,
+      "eyeBlind": true,
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "css-stirring-spoon-glm-5.3-flashx-s2-r6",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 6,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0539,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 193369,
+        "tokensOut": 8831,
+        "reasoning": 3046,
+        "wallSec": 221
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": false,
+        "attached": true
+      },
+      "quality": 3,
+      "eyeBlind": true,
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "css-stirring-spoon-glm-5.3-flashx-s3-r8",
+      "post": "2026-10-19-does-the-spoon-do-the-stirring",
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 8,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0836,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 363333,
+        "tokensOut": 11560,
+        "reasoning": 5690,
+        "wallSec": 337
+      },
+      "checks": {
+        "html_css_only": true,
+        "loop": true,
+        "surface": true,
+        "stirs": true,
+        "inside": false,
+        "attached": true
+      },
+      "quality": 3,
+      "eyeBlind": true,
+      "score": {
+        "passed": 5,
+        "of": 6,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-knitting-bean-claude-haiku-5.5-s1-r4",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0867,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 261182,
+        "tokensOut": 21883,
+        "reasoning": 17179,
+        "wallSec": 135
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "unbiased/pareto-26.9",
+      "label": "Pareto 26.9",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-pareto-26.9-s4-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0245,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 31296,
+        "tokensOut": 5010,
+        "reasoning": 0,
+        "wallSec": 51
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s4-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0097,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14758,
+        "tokensOut": 2728,
+        "reasoning": 1531,
+        "wallSec": 41
+      },
+      "checks": {
+        "invented": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 1,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-tikz-venn-label-deepseek-v4.1-flash-s1-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0657,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 164144,
+        "tokensOut": 12615,
+        "reasoning": 10851,
+        "wallSec": 196
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "repair-tikz-venn-label-kimi-k3-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0728,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 31904,
+        "tokensOut": 2438,
+        "reasoning": 1842,
+        "wallSec": 25
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0068,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14165,
+        "tokensOut": 1724,
+        "reasoning": 753,
+        "wallSec": 34
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-knitting-bean-glm-5.3-flashx-s2-r4",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0519,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 190317,
+        "tokensOut": 8074,
+        "reasoning": 4614,
+        "wallSec": 139
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-tikz-venn-label-glm-5.3-flashx-s3-r3",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0177,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 56530,
+        "tokensOut": 2565,
+        "reasoning": 2108,
+        "wallSec": 59
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 4,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-knitting-bean-glm-5.3-flashx-s1-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0615,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 215336,
+        "tokensOut": 7001,
+        "reasoning": 5592,
+        "wallSec": 99
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s1-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0093,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 18207,
+        "tokensOut": 2498,
+        "reasoning": 1442,
+        "wallSec": 46
+      },
+      "checks": {
+        "recall": false,
+        "invented": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-tikz-venn-label-deepseek-v4.1-flash-s2-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.1068,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 327197,
+        "tokensOut": 19856,
+        "reasoning": 17491,
+        "wallSec": 151
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-exploded-v60-glm-5.3-flashx-s1-r2-1232",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0117,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 32165,
+        "tokensOut": 1514,
+        "reasoning": 790,
+        "wallSec": 38
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Good except the numbering is wrong",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-knitting-bean-deepseek-v4.1-flash-s2-r3",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.1768,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 357787,
+        "tokensOut": 34767,
+        "reasoning": 30546,
+        "wallSec": 203
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "repair-tikz-venn-label-kimi-k3-s1-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.3954,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 187237,
+        "tokensOut": 15878,
+        "reasoning": 13238,
+        "wallSec": 165
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-tikz-venn-label-glm-5.3-flashx-s1-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0144,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 43113,
+        "tokensOut": 1990,
+        "reasoning": 1554,
+        "wallSec": 53
+      },
+      "checks": {
+        "fixed": false,
+        "unchanged": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-exploded-v60-deepseek-v4.1-flash-s1-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0232,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 30295,
+        "tokensOut": 3320,
+        "reasoning": 2836,
+        "wallSec": 49
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Good except the numbering is wrong",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-exploded-v60-claude-haiku-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.015,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 20304,
+        "tokensOut": 4637,
+        "reasoning": 3618,
+        "wallSec": 27
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but the number are not in right order.",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-knitting-bean-claude-haiku-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.047,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 81920,
+        "tokensOut": 14269,
+        "reasoning": 12007,
+        "wallSec": 82
+      },
+      "checks": {
+        "fixed": false,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-exploded-v60-deepseek-v4.1-flash-s3-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0186,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 26794,
+        "tokensOut": 3279,
+        "reasoning": 2546,
+        "wallSec": 47
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but numbers are not in right order",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-tikz-venn-label-glm-5.3-flashx-s2-r3",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0276,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 88646,
+        "tokensOut": 4320,
+        "reasoning": 3777,
+        "wallSec": 78
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "moonshotai/kimi-k3",
+      "label": "Kimi K3",
+      "artifact": "repair-tikz-venn-label-kimi-k3-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.091,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 29692,
+        "tokensOut": 2270,
+        "reasoning": 1639,
+        "wallSec": 30
+      },
+      "checks": {
+        "fixed": false,
+        "unchanged": true
+      },
+      "quality": 2,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-exploded-v60-glm-5.3-flashx-s3-r1-1232",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0077,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 20665,
+        "tokensOut": 1498,
+        "reasoning": 778,
+        "wallSec": 24
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but number in wrong order.",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s4-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0099,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14409,
+        "tokensOut": 2833,
+        "reasoning": 1724,
+        "wallSec": 42
+      },
+      "checks": {
+        "recall": true,
+        "invented": false
+      },
+      "quality": 2,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0154,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28275,
+        "tokensOut": 4355,
+        "reasoning": 2817,
+        "wallSec": 66
+      },
+      "checks": {
+        "invented": false
+      },
+      "quality": 2,
+      "score": {
+        "passed": 0,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "unbiased/pareto-26.9",
+      "label": "Pareto 26.9",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-pareto-26.9-s4-r1-1929",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.019,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 26805,
+        "tokensOut": 2869,
+        "reasoning": 0,
+        "wallSec": 32
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s5-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 5,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0077,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14143,
+        "tokensOut": 2051,
+        "reasoning": 1053,
+        "wallSec": 33
+      },
+      "checks": {
+        "invented": false
+      },
+      "quality": 2,
+      "score": {
+        "passed": 0,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-knitting-bean-glm-5.3-flashx-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0528,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 141553,
+        "tokensOut": 9447,
+        "reasoning": 7199,
+        "wallSec": 132
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-tikz-venn-label",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-tikz-venn-label-deepseek-v4.1-flash-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0599,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 112421,
+        "tokensOut": 12065,
+        "reasoning": 11455,
+        "wallSec": 236
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-knitting-bean-claude-haiku-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0432,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 124612,
+        "tokensOut": 11425,
+        "reasoning": 9029,
+        "wallSec": 68
+      },
+      "checks": {
+        "fixed": false,
+        "unchanged": true
+      },
+      "quality": 3,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0076,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14091,
+        "tokensOut": 2120,
+        "reasoning": 1059,
+        "wallSec": 34
+      },
+      "checks": {
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 1,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s5-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 5,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0222,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 42514,
+        "tokensOut": 6224,
+        "reasoning": 4401,
+        "wallSec": 90
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-exploded-v60-deepseek-v4.1-flash-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0155,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19813,
+        "tokensOut": 3611,
+        "reasoning": 2852,
+        "wallSec": 55
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but numbering is wrong.",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-knitting-bean-deepseek-v4.1-flash-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.2133,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 763674,
+        "tokensOut": 34461,
+        "reasoning": 29095,
+        "wallSec": 186
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s3-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0257,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 46024,
+        "tokensOut": 7229,
+        "reasoning": 5367,
+        "wallSec": 105
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-exploded-v60-claude-haiku-5.5-s3-r2-1232",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0242,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 50697,
+        "tokensOut": 6694,
+        "reasoning": 4592,
+        "wallSec": 44
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but the numbering is wrong.",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-css-stirring-spoon-glm-5.3-flashx-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0079,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 25577,
+        "tokensOut": 1002,
+        "reasoning": 636,
+        "wallSec": 44
+      },
+      "checks": {
+        "inside": false,
+        "unchanged": true
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-knitting-bean",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-knitting-bean-deepseek-v4.1-flash-s1-r3",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.244,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 649696,
+        "tokensOut": 41778,
+        "reasoning": 36778,
+        "wallSec": 258
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2-flip",
+      "model": "unbiased/pareto-26.9",
+      "label": "Pareto 26.9",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-flip-pareto-26.9-s5-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 5,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0265,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 38861,
+        "tokensOut": 5073,
+        "reasoning": 0,
+        "wallSec": 45
+      },
+      "checks": {
+        "recall": true,
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "unbiased/pareto-26.9",
+      "label": "Pareto 26.9",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-pareto-26.9-s4-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 4,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0375,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 39428,
+        "tokensOut": 9302,
+        "reasoning": 0,
+        "wallSec": 83
+      },
+      "checks": {
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 1,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "anthropic/claude-opus-5.5",
+      "label": "Opus 5.5",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s1-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0072,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 14575,
+        "tokensOut": 1938,
+        "reasoning": 895,
+        "wallSec": 33
+      },
+      "checks": {
+        "invented": false
+      },
+      "quality": 2,
+      "score": {
+        "passed": 0,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "autopsy-neutral-png-opus55-1001-s2",
+      "model": "unbiased/pareto-26.9",
+      "label": "Pareto 26.9",
+      "artifact": "autopsy-neutral-png-opus55-1001-s2-pareto-26.9-s2-r1",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 1,
+      "clockMin": 12,
+      "cost": 0.0288,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 29075,
+        "tokensOut": 6768,
+        "reasoning": 0,
+        "wallSec": 75
+      },
+      "checks": {
+        "invented": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 1,
+        "of": 1,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-css-stirring-spoon-deepseek-v4.1-flash-s3-r7",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 7,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.6855,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 1830862,
+        "tokensOut": 58507,
+        "reasoning": 54801,
+        "wallSec": 680
+      },
+      "checks": {
+        "inside": true,
+        "unchanged": true
+      },
+      "quality": 3,
+      "eyeBlind": true,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "repair-css-stirring-spoon-claude-sonnet-5.5-s1-r5",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 5,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0222,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 78618,
+        "tokensOut": 4543,
+        "reasoning": 3038,
+        "wallSec": 85
+      },
+      "checks": {
+        "inside": true,
+        "unchanged": true
+      },
+      "quality": 4,
+      "eyeBlind": true,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-css-stirring-spoon-deepseek-v4.1-flash-s1-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.2795,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 457225,
+        "tokensOut": 41137,
+        "reasoning": 37926,
+        "wallSec": 406
+      },
+      "checks": {
+        "inside": true,
+        "unchanged": true
+      },
+      "quality": 2,
+      "eyeBlind": true,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-css-stirring-spoon-glm-5.3-flashx-s1-r4",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 4,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0259,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 96107,
+        "tokensOut": 3430,
+        "reasoning": 2083,
+        "wallSec": 105
+      },
+      "checks": {
+        "inside": false,
+        "unchanged": true
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek 4.1 Flash",
+      "artifact": "repair-css-stirring-spoon-deepseek-v4.1-flash-s2-r4",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 4,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.208,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 459575,
+        "tokensOut": 29090,
+        "reasoning": 25463,
+        "wallSec": 311
+      },
+      "checks": {
+        "inside": true,
+        "unchanged": true
+      },
+      "quality": 2,
+      "eyeBlind": true,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "repair-css-stirring-spoon-claude-sonnet-5.5-s2-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0092,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28436,
+        "tokensOut": 1887,
+        "reasoning": 1053,
+        "wallSec": 36
+      },
+      "checks": {
+        "inside": false,
+        "unchanged": true
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-css-stirring-spoon-glm-5.3-flashx-s2-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0077,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 25790,
+        "tokensOut": 1089,
+        "reasoning": 717,
+        "wallSec": 38
+      },
+      "checks": {
+        "inside": false,
+        "unchanged": true
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-css-stirring-spoon",
+      "model": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5",
+      "artifact": "repair-css-stirring-spoon-claude-sonnet-5.5-s3-r2",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 3,
+      "rounds": 2,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0099,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 28416,
+        "tokensOut": 2118,
+        "reasoning": 1367,
+        "wallSec": 39
+      },
+      "checks": {
+        "inside": false,
+        "unchanged": true
+      },
+      "quality": 1,
+      "eyeBlind": true,
+      "score": {
+        "passed": 1,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "z-ai/glm-5.3-flashx",
+      "label": "GLM 5.3 FlashX",
+      "artifact": "repair-exploded-v60-glm-5.3-flashx-s2-r1-1232",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 2,
+      "rounds": 1,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0088,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 19911,
+        "tokensOut": 1184,
+        "reasoning": 678,
+        "wallSec": 27
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
+    },
+    {
+      "task": "repair-exploded-v60",
+      "model": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5",
+      "artifact": "repair-exploded-v60-claude-haiku-5.5-s1-r3-1232",
+      "post": null,
+      "date": "2026-10-19",
+      "promptVersion": "v1",
+      "checksVersion": "c1",
+      "harnessVersion": "h1",
+      "tier": 3,
+      "seed": 1,
+      "rounds": 3,
+      "capRounds": 8,
+      "clockMin": 12,
+      "cost": 0.0316,
+      "usage": {
+        "thinking": "medium",
+        "tokensIn": 51825,
+        "tokensOut": 9367,
+        "reasoning": 7533,
+        "wallSec": 62
+      },
+      "checks": {
+        "fixed": true,
+        "unchanged": true
+      },
+      "quality": 5,
+      "note": "Great but number is wrong.",
+      "score": {
+        "passed": 2,
+        "of": 2,
+        "undecided": 0
+      }
     }
   ],
   "blank": [

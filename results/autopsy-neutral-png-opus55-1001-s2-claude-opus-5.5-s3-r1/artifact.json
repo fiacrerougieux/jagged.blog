@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s3-r1",
+  "exportedAt": "2026-10-19T06:56:04.960Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 3,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "2 invented"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "NO - the diagram is not correct.\n\nMain error: the three filter pieces are stacked in the wrong order.\n- The diagram shows, from top to bottom: spiral plate (4), mesh screen (5),\n  cross plate (6), then the retaining nut (7).\n- On a real plunger the cross plate sits on top. It is the spoked disc you\n  see when you look down into the press. The mesh screen goes in the middle,\n  and the spiral plate goes on the bottom. Its spring coil around the rim\n  presses out against the glass, and the nut or threaded foot holds the\n  whole stack on the end of the rod.\n- So parts 4 and 6 need to swap places. The cross plate clamps the screen\n  down onto the spiral plate from above.\n\nLabeling error: the bracket marked \"3-piece filter\" covers four parts. It\nruns from the spiral plate down to the retaining nut. The nut is a fastener,\nnot one of the three filter pieces, so the bracket should stop at the\nlowest filter plate.\n\nParts that look right:\n- Knob, lid, rod and filter stack all sit on one center axis.\n- The lid's pour notch lines up with the beaker spout.\n- The handle is on the opposite side from the spout.\n- The beaker is drawn a little narrower than the frame, so it can drop in.\n",
+    "truncated": false,
+    "lines": 24
+  },
+  "output": null,
+  "notes": []
+}

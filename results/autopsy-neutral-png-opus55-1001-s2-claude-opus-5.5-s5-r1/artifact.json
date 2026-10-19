@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s5-r1",
+  "exportedAt": "2026-10-19T06:56:08.003Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 5,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": false,
+    "detail": "1 invented"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "No.\n\nThe diagram has a labeling error. The bracket on the left says \"3-piece filter\",\nbut it runs from part 4 (spiral plate) all the way down to part 7 (retaining nut).\nThat puts four parts inside a 3-piece group. The filter is three pieces: spiral\nplate, mesh screen and cross plate (parts 4-6). The nut is a separate fastener\nthat holds the stack on the rod, so the bracket should stop at part 6.\n\nPossible second issue (less certain): the order of the filter stack. On a\nBodum-style press the cross plate usually goes on top and the spiral plate\n(the one with the spring coil that seals against the glass) goes at the bottom,\njust above the nut. The drawing shows them the other way round. The callouts\npartly match this order, since \"clamps screen to spiral plate\" works either way,\nso it depends on the exact design.\n\nEverything else looks consistent:\n- Parts 1-9 stack in a sensible order along the red center line.\n- The knob threads onto the rod and the rod passes through the lid bore.\n- The rod is drawn with threads at both ends.\n- The beaker's spout lines up with the lid's spout notch, both on the right,\n  opposite the frame handle on the left.\n- The beaker drops into the frame.\n",
+    "truncated": false,
+    "lines": 23
+  },
+  "output": null,
+  "notes": []
+}

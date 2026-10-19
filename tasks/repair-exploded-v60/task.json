@@ -1,0 +1,28 @@
+{
+  "id": "repair-exploded-v60",
+  "title": "Repair: a V60 exploded diagram with the filter under the cone",
+  "short": "V60 repair",
+  "version": "v1",
+  "checksVersion": "c1",
+  "prompt": "In this exploded diagram of a V60 pour-over dripper on its glass server, the parts are stacked in the wrong order. From the top down it should be paper filter, dripper, server. Put that right and change nothing else: the parts keep the sizes they are drawn at, the page and the one vertical axis stay as they are, each label stays on its own part, and the numbers on the labels can stay as they are. Leave alone anything else you would have drawn differently.",
+  "groundTruth": "Claude Haiku 5.5 drew this diagram on 2026-10-19 and failed `order`: the paper filter came below the cone. Read from the shapes' coordinates, the stack from the top down is paper filter, dripper, glass server, and the numbers printed on the labels are the file's own numbering, which the prompt lets stay wrong. The folded diagram also has a base narrower than the server's mouth and a cone of about 83 degrees, which the prompt tells the model to leave alone because the task is the order and nothing else.",
+  "checks": [
+    {
+      "id": "fixed",
+      "label": "Repaired",
+      "how": "The `order` check of the exploded V60 grader, run on the file the model was handed and on the file it gave back, both read from the shapes' coordinates. Fixed means false became true.",
+      "decidedBy": "measured"
+    },
+    {
+      "id": "unchanged",
+      "label": "Broke nothing else",
+      "how": "Every check that passed on the file it was handed still passes on the file it gave back: `parts` and `axis`.",
+      "decidedBy": "measured"
+    }
+  ],
+  "harder": "Hand it a file with two faults and name only one, so the second has to be found.",
+  "saturated": {
+    "since": "2026-10-19",
+    "why": "Claude Haiku 5.5, GLM 5.3 FlashX and DeepSeek 4.1 Flash each repaired all three runs, with parts and axis intact every time. The fix is a swap of two shapes the file already draws, and the prompt gives the order, so there is nothing left in it to separate models. Haiku drew the faulty diagram and repaired it, which is the within-model pair the family was built for."
+  }
+}

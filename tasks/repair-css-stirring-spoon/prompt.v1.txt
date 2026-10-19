@@ -1,0 +1,1 @@
+This cup of coffee with a spoon stirring in it was made for this board, in HTML and CSS. One thing is wrong with it: the spoon lies across the mouth of the cup instead of going into the drink, so it reads as resting on top while the coffee turns underneath. Fix that and change nothing else: the same cup, saucer, colours and movement.

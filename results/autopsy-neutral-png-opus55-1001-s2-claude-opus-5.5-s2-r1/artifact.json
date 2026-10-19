@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-claude-opus-5.5-s2-r1",
+  "exportedAt": "2026-10-19T06:56:03.380Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-1752",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture (control)",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "Yes, the diagram is essentially correct.\n\nExplanation:\n- Stack order along the central axis, top to bottom, matches how a standard\n  (Bodum-style) French press goes together: knob, lid, plunger rod, filter\n  assembly, glass beaker, frame/handle.\n- The knob threads onto the top of the rod, and the rod passes through the\n  centre bore of the lid. The rod is drawn threaded at both ends, which is right.\n- Filter assembly order is right: the spiral plate is on top (its spring coil\n  rim seals against the glass), then the mesh screen, then the cross plate,\n  which clamps the mesh up against the spiral plate. The retaining nut at the\n  bottom threads onto the rod end and holds the stack together.\n- The beaker's spout and the lid's pour notch both face right, and the frame\n  handle is on the left, opposite the spout. That is the correct orientation.\n- The beaker drops into the frame, which has a base and feet.\n\nMinor nitpick (labelling, not assembly): the \"3-piece filter\" bracket also\ncovers part 7, the retaining nut. The filter itself is three pieces (4-6), and\nthe nut is a separate fastener. That is a small labelling inaccuracy, not a\nmistake in the parts or their order.\n",
+    "truncated": false,
+    "lines": 21
+  },
+  "output": null,
+  "notes": []
+}

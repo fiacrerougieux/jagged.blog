@@ -1,0 +1,28 @@
+No.
+
+The filter stack (parts 4-6) is drawn in the wrong order.
+
+On a standard French press plunger (Bodum-style), the order from the rod
+downward is:
+
+  cross plate  ->  mesh filter screen  ->  spiral plate  ->  retaining nut
+
+The cross plate with its spokes sits on top. It threads onto the rod and
+backs the mesh. The spiral plate, whose spring-coil rim seals against the
+glass, sits at the bottom of the stack, and the retaining nut screws up
+against it. When you turn a real plunger over, the spiral plate and the nut
+are the parts you see.
+
+The diagram flips this. It puts the spiral plate (4) on top and the cross
+plate (6) right above the nut (7). If you assembled it this way, the
+spoked cross plate would face the coffee grounds and the spiral plate
+would not be clamped by the nut.
+
+Fix: swap parts 4 and 6, so the order is 4 Cross plate, 5 Mesh, 6 Spiral
+plate, 7 Retaining nut. Then change the note on the cross plate to say it
+"threads onto rod, backs the mesh".
+
+The rest looks right: knob on top of the rod, rod through the lid bore,
+rod threaded at both ends, all parts on one axis, and the beaker drops into
+the frame. The beaker spout and the lid's pour opening are both on the
+right, opposite the handle on the left, which is correct.

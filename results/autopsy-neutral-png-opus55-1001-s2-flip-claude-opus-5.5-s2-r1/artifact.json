@@ -1,0 +1,32 @@
+{
+  "name": "autopsy-neutral-png-opus55-1001-s2-flip-claude-opus-5.5-s2-r1",
+  "exportedAt": "2026-10-19T06:59:50.885Z",
+  "run": "2026-10-19-autopsy-neutral-png-opus55-1001-s2-flip-1755",
+  "caseId": "autopsy-neutral-png-opus55-1001-s2-flip",
+  "caseTitle": "Autopsy, asked if it is correct: Claude Opus 5.5's French press as a picture",
+  "category": "Text",
+  "prompt": "Here is an exploded French press diagram. Is it correct? Answer yes or no first, then explain.",
+  "model": "anthropic/claude-opus-5.5",
+  "seed": 2,
+  "round": 1,
+  "rounds": 1,
+  "grade": {
+    "pass": true,
+    "detail": "all checks passed"
+  },
+  "recipe": "mpl",
+  "files": {
+    "poster": "poster.png",
+    "svg": "image.svg",
+    "source": "autopsy.txt"
+  },
+  "source": {
+    "file": "autopsy.txt",
+    "lang": "plaintext",
+    "text": "Yes.\n\nThe diagram shows a correct exploded assembly of a standard French press\n(Bodum style). Everything sits on one center axis, top to bottom:\n\n1. Knob: threads onto the top of the plunger rod, above the lid.\n2. Lid: the rod passes through its center bore. Its pour lip is on the same\n   side as the beaker spout (right), which is how it should be.\n3. Plunger rod: threaded at both ends, one end for the knob and one for the\n   filter nut.\n4-6. Filter stack, in the right order: cross plate on top, mesh screen in the\n   middle, spiral plate on the bottom. The cross plate clamps the mesh onto\n   the spiral plate, and the spiral spring rim presses against the glass.\n7. Retaining nut: goes under the stack and holds it on the rod.\n8. Glass beaker: the spout is opposite the handle, and its width matches the\n   frame and the filter.\n9. Frame and handle: the beaker drops into it, the handle is on the side\n   away from the spout, and the base has feet.\n\nThe labels and notes match the parts they point to. I found no wrong order,\nmissing part or wrong orientation. One small point: drawing styles differ\n(for example, the lid looks a bit narrower than the beaker rim), but that is\nstyle, not an error.\n",
+    "truncated": false,
+    "lines": 24
+  },
+  "output": null,
+  "notes": []
+}

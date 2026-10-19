@@ -1,0 +1,22 @@
+Yes. As far as I can tell, the diagram is correct.
+
+Why:
+- Stacking order: knob, lid, plunger rod, filter, retaining nut, glass beaker,
+  frame. That is the real assembly order from top to bottom.
+- Every part is centred on the red dash-dot axis, so the rod runs straight
+  through the knob, the lid bore, all three filter discs and the nut.
+- The 3-piece filter is a cross plate, a mesh screen and a spiral plate,
+  held on by a nut at the bottom of the rod. The spiral plate's coil edge is
+  drawn, and the filter discs are about as wide as the inside of the beaker,
+  which they need to be to seal.
+- The beaker spout and the lid's pour lip are both on the right. The frame
+  handle is on the left, opposite the spout, which is how a real press is
+  built. The beaker's volume marks are also on the right.
+- The callouts 1-9 each point at the right part, and the notes are accurate:
+  the knob threads onto the rod, the rod is threaded at both ends, and the
+  beaker drops into the frame.
+
+One caveat: makers order the filter discs differently. Some put the spiral
+plate on top and the cross plate at the bottom. Either way the press works,
+and this drawing matches its own labels ("clamps screen to spiral plate"),
+so I don't count that as an error.
